@@ -1,0 +1,48 @@
+@font-face {
+    font-family: "Geizer";
+    src: url("../fonts/Geizer.otf");
+}
+
+body {
+    height: 100%;
+    font-family: "Geizer", sans-serif;
+    color: #F8F7F9;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    background-image: url("../media/background.gif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+
+#heading h1 {
+    font-size: 10em;
+}
+
+button {
+    height: 10vh;
+    width: 10vw;
+    font-size: 3em;
+    font-family: "Geizer";
+    background-color: lightcoral;
+    border-radius: 5px;
+    margin-inline: 1vw;
+    color: #F8F7F9;
+}
+
+button:hover {
+    transform: scale(1.5);
+    transition-duration: 0.5s;
+    cursor: pointer;
+}
+
+button:hover body {
+    background-image: url("../media/background_blurred.gif");
+}

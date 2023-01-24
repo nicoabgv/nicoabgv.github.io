@@ -1,0 +1,35 @@
+body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url("../media/background.gif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+
+#container {
+    width: 70vw;
+    height: 60vh;
+    padding-top: 2vh;
+    background-color: black;
+}
+
+i:hover {
+    cursor: pointer;
+}
+
+footer {
+    margin-bottom: 0vh;
+    position: absolute;
+    bottom: 0vh;
+    width: 100vw;
+    height: 5vh;
+    color: white;
+    font-size: 3em;
+    padding-bottom: 1vh;
+    background-color: rgba(0, 0, 0, 0.443);
+}
