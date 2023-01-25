@@ -26,9 +26,11 @@ function login(){
             alert("You are logged in!");
         } else {
             alert("Password does not match username");
+            return
         } 
     } else {
         alert("Username does not exist");
+        return
     }
     
     localStorage.setItem("usuario", usuario);

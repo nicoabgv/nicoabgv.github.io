@@ -18,8 +18,9 @@ body{
     background-color: black;
 }
 
-i:hover {
+i {
     cursor: pointer;
+    font-family: "fa-solid";
 }
 
 footer {
