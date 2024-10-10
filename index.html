@@ -1,23 +1,253 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>UltimateAI</title>
-
-    <link rel="stylesheet" href="css/style.css">
-    <script src="/js/app.js" defer></script>
+    <title>Nicolás Álvarez - Ingeniero de Software</title>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
-<body onload="onstart()">
-    <div class="fondo"></div>
-    <div id="heading">
-        <h1>UltimateAI</h1>
-    </div>
+<body>
+
+    <!-- Navbar -->
+    <header class="navbar fixed-top bg-dark navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">NICOABGV</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <nav class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#about" aria-label="Ir a la sección Sobre Mí"><i class="fas fa-user"></i> Sobre Mí</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills" aria-label="Ir a la sección Skills"><i class="fas fa-code"></i> Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#curriculum" aria-label="Ir a la sección Curriculum"><i class="fas fa-graduation-cap"></i> Curriculum</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#portfolio" aria-label="Ir a la sección Portfolio"><i class="fas fa-briefcase"></i> Portfolio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact" aria-label="Ir a la sección Contacto"><i class="fas fa-envelope"></i> Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Header con Parallax -->
+    <header class="header" id="header">
+        <div id="parallax-scene" class="parallax-scene">
+            <div class="layer">
+                <img src="assets/background.jpg" alt="Fondo gris texturizado" class="background">
+            </div>
+            <div data-depth="0.1" class="layer">
+                <img src="assets/wave-top.svg" alt="Ondas Superiores" class="waves-top">
+            </div>
+             <!-- Se puede poner 
+            <div data-depth="0.5" class="layer">
+                <img src="assets/layer-front.png" alt="Detalles de frente" class="foreground">
+            </div>
+            -->
+            <div data-depth="0.1" class="layer">
+                <img src="assets/wave-bottom.svg" alt="Ondas Inferiores" class="waves-bottom">
+            </div>
+        </div>
+        <div class="container header-content text-center">
+            <h1 class="display-4">Hola, soy <span class="highlight">Nicolás Álvarez</span></h1>
+            <h2 class="lead">Ingeniero de Software especializado en Ciberseguridad y Desarrollo de Aplicaciones Web</h2>
+            <a href="#projects" class="btn btn-primary btn-lg mt-4">Explora mis proyectos</a>
+        </div>
+    </header>
     
-    <section class="botones">
-        <button onmouseover="blur_background()" onmouseout="unblur_background()" onclick="login()" id="login">LOGIN</button>
-        <button onmouseover="blur_background()" onmouseout="unblur_background()" onclick="signup()" id="registrarse">SIGN UP</button>
+    <!-- Sección Sobre Mí -->
+    <section id="about" class="about py-5 bg-dark text-white">
+        <div class="container">
+            <h2 class="text-center mb-4">Sobre Mí</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <p>¡Hola! Soy Nicolás Álvarez, un ingeniero de software con una curiosidad insaciable por el mundo de la tecnología. Si algo me define, es mi pasión por fusionar creatividad y funcionalidad en cada proyecto que desarrollo.</p>
+                    <ul class="list-unstyled">
+                        <li><strong>Cumpleaños:</strong> 10/05/2004</li>
+                        <li><strong>Teléfono:</strong> <a href="tel:+601600034">601600034</a></li>
+                        <li><strong>Email:</strong> <a href="mailto:nicoabgv@gmail.com">nicoabgv@gmail.com</a></li>
+                        <li><strong>Dirección:</strong> Avenida Mallorca 16, 124, Madrid, España</li>
+                        <li><strong>Cargo:</strong> Estudiante</li>
+                    </ul>
+                </div>
+                <div class="col-md-6 text-center">
+                    <h3>Intereses</h3>
+                    <div class="d-flex flex-wrap justify-content-center">
+                        <div class="interest-item text-center p-3"><i class="fas fa-music fa-2x"></i> Música</div>
+                        <div class="interest-item text-center p-3"><i class="fas fa-utensils fa-2x"></i> Comida</div>
+                        <div class="interest-item text-center p-3"><i class="fas fa-bicycle fa-2x"></i> Bicicleta</div>
+                        <div class="interest-item text-center p-3"><i class="fas fa-hiking fa-2x"></i> Senderismo</div>
+                        <div class="interest-item text-center p-3"><i class="fas fa-car fa-2x"></i> Mundo del Motor</div>
+                        <div class="interest-item text-center p-3"><i class="fas fa-plane fa-2x"></i> Viajar</div>
+                        <div class="interest-item text-center p-3"><i class="fas fa-book fa-2x"></i> Lectura</div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-4">
+                <a href="assets/cv-nicolas-alvarez.pdf" class="btn btn-outline-light" download="CV-Nicolas-Alvarez">Descargar CV <i class="fas fa-download"></i></a>
+            </div>
+        </div>
     </section>
+
+    <!-- Sección Skills -->
+    <section id="skills" class="skills py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Skills</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <h3>Technical Skills</h3>
+                    <div class="progress mb-3">
+                        <div class="progress-bar bg-success skill-bar" role="progressbar" data-level="78%">C - 78%</div>
+                    </div>
+                    <div class="progress mb-3">
+                        <div class="progress-bar bg-success skill-bar" role="progressbar" data-level="70%">C++ - 70%</div>
+                    </div>
+                    <div class="progress mb-3">
+                        <div class="progress-bar bg-success skill-bar" role="progressbar" data-level="99%">Java - 99%</div>
+                    </div>
+                    <div class="progress mb-3">
+                        <div class="progress-bar bg-success skill-bar" role="progressbar" data-level="80%">Python - 80%</div>
+                    </div>
+                    <div class="progress mb-3">
+                        <div class="progress-bar bg-success skill-bar" role="progressbar" data-level="75%">MySQL - 75%</div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <h3>Professional Skills</h3>
+                    <div class="progress mb-3">
+                        <div class="progress-bar bg-info skill-bar" role="progressbar" data-level="95%">Comunicación - 95%</div>
+                    </div>
+                    <div class="progress mb-3">
+                        <div class="progress-bar bg-info skill-bar" role="progressbar" data-level="67%">Trabajo en Equipo - 67%</div>
+                    </div>
+                    <div class="progress mb-3">
+                        <div class="progress-bar bg-info skill-bar" role="progressbar" data-level="75%">Creatividad - 75%</div>
+                    </div>
+                    <div class="progress mb-3">
+                        <div class="progress-bar bg-info skill-bar" role="progressbar" data-level="82%">Dedicación - 82%</div>
+                    </div>
+                    <div class="progress mb-3">
+                        <div class="progress-bar bg-info skill-bar" role="progressbar" data-level="96%">Project Management - 96%</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Curriculum -->
+    <section id="curriculum" class="curriculum py-5 bg-dark text-white">
+        <div class="container">
+            <h2 class="text-center mb-4">Curriculum</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <h3>Educación</h3>
+                    <div class="timeline-item mb-4">
+                        <h4>Sage College - The British School of Jerez</h4>
+                        <p><strong>ESO y Bachillerato</strong> | 2020 - 2022</p>
+                        <p>Durante mi paso por Sage College, adquirí una sólida formación en diversas materias, incluyendo matemáticas avanzadas y ciencias. Participé en proyectos de ciencias que fomentaban mi interés por la programación.</p>
+                    </div>
+                    <div class="timeline-item mb-4">
+                        <h4>UTAD</h4>
+                        <p><strong>Ingeniería de Software</strong> | 2022 - Actualidad</p>
+                        <p>Me especializo en el desarrollo de software y ciberseguridad. He trabajado en proyectos que abarcan desde el desarrollo de aplicaciones web hasta la inteligencia artificial.</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <h3>Proyectos y Certificaciones</h3>
+                    <div class="timeline-item mb-4">
+                        <h4>BeatList</h4>
+                        <p>Web App que interactúa con la API de Spotify para gestionar y analizar playlists. BeatList permite fusionar, organizar y descubrir música eficientemente. | 2024</p>
+                    </div>
+                    <div class="timeline-item mb-4">
+                        <h4>MesasYA</h4>
+                        <p>Sistema de gestión y reservas de restaurantes que facilita la organización en tiempo real. Incluye un widget para reservas online. | En proceso</p>
+                    </div>
+                    <div class="timeline-item mb-4">
+                        <h4>IELTS y Cambridge English Assessment</h4>
+                        <p>Certificación de Inglés | 2023</p>
+                    </div>
+                </div>                    
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Portfolio -->
+    <section id="portfolio" class="portfolio py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Portfolio</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="card mb-4 card-equal">
+                        <img src="assets/BeatList.png" class="card-img-top" alt="Proyecto BeatList">
+                        <div class="card-body">
+                            <h5 class="card-title text-dark">BeatList</h5>
+                            <p class="card-text text-dark">BeatList es una web app que interactúa con la API de Spotify para gestionar playlists y explorar música. Diseñada para una experiencia fluida en la gestión de listas de reproducción.</p>
+                            <a href="https://beatlist.es" target="_blank" class="custom-button">Explora BeatList</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card mb-4 card-equal">
+                        <img src="assets/MesasYA.jpg" class="card-img-top" alt="Proyecto MesasYA">
+                        <div class="card-body">
+                            <h5 class="card-title text-dark">MesasYA!</h5>
+                            <p class="card-text text-dark">MesasYA! es un sistema de gestión y reservas para restaurantes que permite optimizar la disposición de mesas y servicios.</p>
+                            <a class="text-dark" style="font-style: italic;">En proceso de desarrollo</a>
+                        </div>
+                    </div>
+                </div>                
+            </div>
+        </div>
+    </section>
+    
+    <!-- Sección Contacto -->
+    <section id="contact" class="contact py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Contacto</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <form>
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Nombre:</label>
+                            <input type="text" id="name" name="name" class="form-control" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Correo electrónico:</label>
+                            <input type="email" id="email" name="email" class="form-control" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Mensaje:</label>
+                            <textarea id="message" name="message" class="form-control" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-lg">Enviar Mensaje</button>
+                    </form>
+                </div>
+                <div class="col-md-6 text-center">
+                    <div class="map-container">
+                        <img src="assets/mapa.png" alt="Mapa de ubicación de Nicolás Álvarez en Madrid">
+                    </div>                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer py-4 bg-dark text-white text-center">
+        <p>Conecta conmigo en 
+            <a href="https://www.linkedin.com/in/nicoabgv/" class="text-white">
+                <i class="fab fa-linkedin"></i> LinkedIn
+            </a> 
+            o 
+            <a href="https://github.com/nicoabgv" class="text-white">
+                <i class="fab fa-github"></i> GitHub
+            </a>
+        </p>
+    </footer>
+
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script defer src="scripts.js"></script>
 </body>
 </html>
