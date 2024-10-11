@@ -92,7 +92,7 @@ body {
 }
 
 .footer a {
-    color: #FFD700;
+    color: #ffffff;
     text-decoration: none;
     transition: color 0.3s ease;
 }
@@ -146,4 +146,21 @@ body {
 .btn-index:hover {
     background-color: #FF6B35;
     color: white;
+}
+
+footer {
+    background-color: #0A2A43;
+    color: #FFFFFF;
+    padding: 20px;
+    text-align: center;
+}
+
+footer a {
+    color: #FFD700;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #FFFFFF;
 }

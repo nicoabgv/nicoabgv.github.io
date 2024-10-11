@@ -22,6 +22,17 @@ form {
     overflow: hidden;
 }
 
+.navbar-brand {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-icon {
+    width: 40px;
+    height: auto;
+    margin-right: 10px;
+}
+
 .parallax-scene {
     position: relative;
     width: 100%;
@@ -291,7 +302,6 @@ ul li strong {
 
 .card-img-top {
     border-radius: 8px 8px 0 0;
-    height: 350px;
 }
 
 #contact {
