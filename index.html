@@ -10,7 +10,6 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
     <!-- Navbar -->
     <header class="navbar fixed-top bg-dark navbar-dark">
         <div class="container">
@@ -50,8 +49,10 @@
         </div>
         <div class="container header-content text-center">
             <h1 class="display-4">Hola, soy <span class="highlight">Nicolás Álvarez</span></h1>
-            <h2 class="lead">Ingeniero de Software especializado en Ciberseguridad y Desarrollo de Aplicaciones Web</h2>
-            <a href="#projects" class="btn btn-primary btn-lg mt-4">Explora mis proyectos</a>
+            <h2 class="lead">Ingeniero de Software enfocado en Ciberseguridad y Desarrollo Web, creando soluciones innovadoras y seguras.</h2>
+            <a href="projects.html" class="btn btn-primary btn-lg mt-4">
+                Explora mis proyectos <i class="fas fa-arrow-right"></i>
+            </a>
         </div>
     </header>
     
@@ -64,8 +65,8 @@
                     <p>¡Hola! Soy Nicolás Álvarez, un ingeniero de software con una curiosidad insaciable por el mundo de la tecnología. Si algo me define, es mi pasión por fusionar creatividad y funcionalidad en cada proyecto que desarrollo.</p>
                     <ul class="list-unstyled">
                         <li><strong>Cumpleaños:</strong> 10/05/2004</li>
-                        <li><strong>Teléfono:</strong> <a href="tel:+601600034">601600034</a></li>
-                        <li><strong>Email:</strong> <a href="mailto:nicoabgv@gmail.com">nicoabgv@gmail.com</a></li>
+                        <li><strong>Teléfono:</strong> <a href="tel:+601600034" class="contact-link">601600034</a></li>
+                        <li><strong>Email:</strong> <a href="mailto:nicoabgv@gmail.com" class="contact-link">nicoabgv@gmail.com</a></li>                        
                         <li><strong>Dirección:</strong> Avenida Mallorca 16, 124, Madrid, España</li>
                         <li><strong>Cargo:</strong> Estudiante</li>
                     </ul>
@@ -206,7 +207,8 @@
             <h2 class="text-center mb-4">Contacto</h2>
             <div class="row">
                 <div class="col-md-6">
-                    <form>
+                    <!-- Utiliza el action de Formspree para manejar el envío del formulario -->
+                    <form action="https://formspree.io/f/tu-id-formspree" method="POST">
                         <div class="mb-3">
                             <label for="name" class="form-label">Nombre:</label>
                             <input type="text" id="name" name="name" class="form-control" required>

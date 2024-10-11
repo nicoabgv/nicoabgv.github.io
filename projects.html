@@ -5,38 +5,129 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Proyectos - Nicolás Álvarez</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="projects.css">
 </head>
 <body>
-    <header class="header py-5 text-center" style="background-color: #0A2A43; color: #FFFFFF;">
-        <h1>Mis Proyectos</h1>
+
+    <!-- Header -->
+    <header class="header-projects" id="header">
+        <h1>Proyectos de Nicolás Álvarez</h1>
+        <p>Ingeniero de Software | Ciberseguridad | Desarrollo de Aplicaciones Web</p>
     </header>
     
-    <section id="proyectos" class="projects py-5">
+    <!-- Sección de Proyectos Destacados -->
+    <section id="proyectos" class="projects">
         <div class="container">
             <h2 class="text-center mb-4" style="color: #FFD700;">Proyectos Destacados</h2>
             <div class="row">
+                
+                <!-- Proyecto: BeatList -->
                 <div class="col-md-6 mb-4">
                     <div class="project-card">
                         <h3>BeatList</h3>
-                        <p>BeatList es una web app que interactúa con la API de Spotify, permitiendo a los usuarios gestionar y analizar sus playlists. Incluye funcionalidades como ordenar canciones, fusionar playlists y mucho más.</p>
-                        <a href="enlace_proyecto_beatlist" class="btn btn-primary">Ver Proyecto</a>
+                        <p>BeatList es una plataforma innovadora para gestionar y analizar playlists de Spotify de manera intuitiva. Algunas características incluyen:</p>
+                        <ul>
+                            <li>Ordenar y fusionar playlists personalizadas</li>
+                            <li>Analizar estadísticas detalladas de las canciones</li>
+                            <li>Generar listas personalizadas basadas en gustos</li>
+                            <li>Reproductor de música integrado para una experiencia fluida</li>
+                        </ul>
+                        <p>Desarrollado con <strong>Flask</strong>, <strong>JavaScript</strong> y la <strong>API de Spotify</strong>, BeatList es tu aliado para optimizar la experiencia musical.</p>
+                        <a href="https://beatlist.es" target="_blank">Explora BeatList</a>
+                    </div>
+                </div>
+
+                <!-- Proyecto: MesasYA -->
+                <div class="col-md-6 mb-4">
+                    <div class="project-card">
+                        <h3>MesasYA</h3>
+                        <p>MesasYA es un sistema completo de gestión de reservas para restaurantes que ofrece:</p>
+                        <ul>
+                            <li>Administración avanzada de mesas, zonas y servicios</li>
+                            <li>Asignación automática de mesas según disponibilidad</li>
+                            <li>Actualización de reservas en tiempo real</li>
+                            <li>Recordatorios automáticos por correo</li>
+                        </ul>
+                        <p>MesasYA utiliza <strong>Python</strong>, <strong>Flask</strong>, <strong>JavaScript</strong> y <strong>MySQL</strong>, brindando eficiencia en la gestión de restaurantes.</p>
+                        <a href="https://mesasya.example.com" target="_blank">Descubre MesasYA</a>
                     </div>
                 </div>
                 <div class="col-md-6 mb-4">
                     <div class="project-card">
-                        <h3>MesasYA</h3>
-                        <p>MesasYA es un sistema de gestión de reservas para restaurantes. En este proyecto, se permite a los restaurantes administrar mesas, servicios, y reservas en tiempo real. Actualmente en desarrollo.</p>
-                        <a href="enlace_proyecto_mesasya" class="btn btn-primary">Ver Proyecto</a>
-                    </div>
+                    <h3>Spotify Analyzer</h3>
+                    <p>Spotify Analyzer es un programa en Python que analiza todo tu historial de escucha de Spotify, almacenado en archivos JSON. Proporciona estadísticas detalladas y visualizaciones basadas en tus datos de escucha. Algunas características incluyen:</p>
+                    <ul>
+                        <li>Muestra el número total de canciones escuchadas</li>
+                        <li>Tiempo total dedicado a escuchar música</li>
+                        <li>Muestra las 5 canciones y artistas más escuchados</li>
+                        <li>Estadísticas anuales y patrones de escucha diaria</li>
+                        <li>Exportación de estadísticas a Excel</li>
+                    </ul>
+                    <p>Desarrollado con <strong>Python</strong>, <strong>matplotlib</strong>, y <strong>tkinter</strong>, Spotify Analyzer permite visualizar y exportar tus estadísticas de escucha.</p>
+                    <a href="https://github.com/nicoabgv/spotify-analyzer" target="_blank">Ver en GitHub</a>
                 </div>
             </div>
         </div>
     </section>
+
+    <section id="otros-proyectos" class="projects">
+        <div class="container">
+            <h2 class="text-center mb-4" style="color: #FFD700;">Otros Proyectos</h2>
+            <div class="row">
+                
+                <div class="col-md-6 mb-4">
+                    <div class="project-card">
+                        <h3>Bot de Trading Automatizado</h3>
+                        <p>Desarrollé un bot de trading automatizado que utiliza análisis de datos financieros en tiempo real para realizar operaciones de compra y venta. Implementado con:</p>
+                        <ul>
+                            <li><strong>Python</strong> para la lógica y control</li>
+                            <li>API de finanzas para datos de mercado</li>
+                        </ul>
+                        <a href="https://github.com/nicoabgv/bot-trading" target="_blank">Ver en GitHub</a>
+                    </div>
+                </div>
+
+                <div class="col-md-6 mb-4">
+                    <div class="project-card">
+                        <h3>Skill para Alexa</h3>
+                        <p>Desarrollé una skill para Amazon Alexa que informa sobre mi horario de clases universitarias, utilizando:</p>
+                        <ul>
+                            <li><strong>Node.js</strong> para la lógica de backend</li>
+                            <li>La <strong>API de Alexa</strong> para integrar las funcionalidades</li>
+                        </ul>
+                        <a href="https://github.com/nicoabgv/alexa-skill" target="_blank">Ver en GitHub</a>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
     
-    <footer class="footer py-4 bg-dark text-white text-center">
-        <p>Conecta conmigo en <a href="enlace_linkedin" class="text-white">LinkedIn</a> o <a href="enlace_github" class="text-white">GitHub</a></p>
+    <footer class="footer">
+        <p>Conecta conmigo en <a href="https://linkedin.com/in/nicoabgv" target="_blank">LinkedIn</a> o visita mi <a href="https://github.com/nicoabgv" target="_blank">GitHub</a></p>
     </footer>
-    
+
+    <a href="#header" class="btn-back-to-top">⬆ Volver al Inicio</a>
+    <a href="index.html" class="btn-index">Ir al Índice</a>
+
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        const backToTopButton = document.querySelector('.btn-back-to-top');
+        window.addEventListener('scroll', function() {
+            if (window.scrollY > 300) {
+                backToTopButton.classList.add('show');
+            } else {
+                backToTopButton.classList.remove('show');
+            }
+        });
+    </script>
 </body>
 </html>
