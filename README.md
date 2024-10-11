@@ -29,6 +29,7 @@ El objetivo de esta página es compartir mis experiencias, logros y proyectos, a
 El proyecto está estructurado de manera simple con archivos HTML, CSS y JavaScript, y está alojado en GitHub Pages para facilitar su visualización online.
 
 - `index.html`: Página principal que contiene las secciones 'About Me', 'Skills', 'Curriculum', 'Portfolio', y 'Contacto'.
+- `projects.html`: Página con los proyectos que contienen información mas detallada sobre ellos.
 - `styles.css`: Archivo que contiene todos los estilos personalizados para la página, incluyendo animaciones y la visualización de habilidades.
 - `scripts.js`: Archivo JavaScript para la animación de elementos y la interacción con el usuario.
 - `assets/`: Carpeta con las imágenes utilizadas en la página, como íconos, ilustraciones, y gráficos de fondo.
