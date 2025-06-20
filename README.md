@@ -12,7 +12,7 @@ El objetivo de esta página es compartir mis experiencias, logros y proyectos, a
 - **Skills:** Visualización de habilidades técnicas y profesionales con un diseño dinámico y visualmente atractivo.
 - **Currículum:** Listado de mi educación, certificaciones, y proyectos destacados.
 - **Portfolio:** Sección dedicada a los proyectos más relevantes que he desarrollado, con enlaces directos para explorarlos.
-- **Formulario de Contacto:** Un formulario funcional que permite a los usuarios ponerse en contacto directamente conmigo. (Usando [Formspree](https://formspree.io/) o Google Forms).
+- **Formulario de Contacto:** Un formulario funcional que permite a los usuarios ponerse en contacto directamente conmigo.
 - **Diseño Responsivo:** Adaptado para verse correctamente en dispositivos móviles y de escritorio.
 
 ## Tecnologías Utilizadas
@@ -37,16 +37,20 @@ El proyecto está estructurado de manera simple con archivos HTML, CSS y JavaScr
 ## Proyectos Destacados
 
 ### [BeatList](https://beatlist.es)
-**BeatList** es una aplicación web que interactúa con la API de Spotify, permitiendo a los usuarios gestionar y explorar sus listas de reproducción de manera avanzada.
+**BeatList** es una plataforma web avanzada para gestionar, analizar y descubrir música a través de la API de Spotify.  
+Ofrece funcionalidades como la organización inteligente de playlists, análisis detallado de hábitos musicales y recomendaciones personalizadas.  
+Además, **ha sido oficialmente aprobada por Spotify**, lo que garantiza una integración completa, acceso extendido y máxima fiabilidad en todas sus funciones.
 
-### [MesasYA](#)
-**MesasYA** es un sistema de gestión y reservas para restaurantes, desarrollado para optimizar la gestión de mesas, zonas y servicios dentro de un restaurante.
+### [MesasYa](https://mesasya.es)
+**MesasYa** es una solución profesional para la gestión integral de reservas en restaurantes.  
+Permite administrar de forma eficiente mesas, zonas y servicios, optimizando la ocupación y agilizando todos los procesos del local.  
+Incluye notificaciones en tiempo real, asignación inteligente de mesas y herramientas avanzadas de análisis, todo en una plataforma robusta, flexible y en funcionamiento en entornos reales.
 
 ## Cómo Ver el Proyecto
 
 La página está alojada en GitHub Pages y es accesible desde cualquier navegador:
 
-- [Ver página en vivo](https://tu-usuario.github.io/)
+- [Ver página en vivo](https://nicoabgv.github.io/)
 
 ## Contacto
 
@@ -54,11 +58,5 @@ Si deseas colaborar o conocer más acerca de mí, no dudes en ponerte en contact
 
 - **Email:** [nicoabgv@gmail.com](mailto:nicoabgv@gmail.com)
 - **Teléfono:** [+601600034](tel:+601600034)
-- **LinkedIn:** [Enlace a LinkedIn](https://www.linkedin.com/in/nicoabgv)
-- **GitHub:** [Enlace a GitHub](https://github.com/tu-usuario)
-
----
-
-### Licencia
-
-Este proyecto está bajo la licencia MIT. Puedes utilizarlo y modificarlo libremente, siempre y cuando se respeten los términos de la licencia.
+- **LinkedIn:** [Enlace a LinkedIn](https://www.linkedin.com/in/nicol%C3%A1s-%C3%A1lvarez-becerra-201773267/)
+- **GitHub:** [Enlace a GitHub](https://github.com/nicoabgv)
