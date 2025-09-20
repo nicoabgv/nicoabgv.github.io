@@ -77,7 +77,7 @@
                         <ul class="mt-4 space-y-3 text-sm text-slate-600">
                             <li><a class="inline-flex items-center gap-2 text-blue-600 transition hover:text-blue-700" href="#mesasya">01 — MesasYa <span class="text-xs text-slate-400">SaaS restauración</span></a></li>
                             <li><a class="inline-flex items-center gap-2 text-blue-600 transition hover:text-blue-700" href="#kobra">02 — Kobra <span class="text-xs text-slate-400">Fintech interna</span></a></li>
-                            <li><a class="inline-flex items-center gap-2 text-blue-600 transition hover:text-blue-700" href="#beatlist">03 — BeatList <span class="text-xs text-slate-400">Proyecto oficial Spotify</span></a></li>
+                            <li><a class="inline-flex items-center gap-2 text-blue-600 transition hover:text-blue-700" href="#beatlist">03 — BeatList <span class="text-xs text-slate-400">Spotify Approved</span></a></li>
                         </ul>
                     </div>
                 </div>
@@ -99,7 +99,7 @@
                             MesasYa es un <strong>SaaS en producción</strong> que digitaliza la gestión de reservas para restaurantes con múltiples sedes. Reúne planos interactivos, reglas personalizables y notificaciones en tiempo real para que cada servicio funcione sin sorpresas.
                         </p>
                         <p>
-                            El backend basado en <strong>Flask, Celery, MySQL y Docker</strong> mantiene despliegues reproducibles y seguros. Cada restaurante configura zonas, servicios, idiomas y workflows específicos sin perder estabilidad ni trazabilidad.
+                            El backend basado en <strong>Flask, Celery, MySQL y Docker</strong> utiliza Docker Compose y buenas prácticas de seguridad. Cada restaurante configura zonas, servicios, idiomas y workflows específicos sin perder estabilidad ni trazabilidad.
                         </p>
                         <div class="rounded-3xl border border-slate-200 bg-slate-50/70 p-6">
                             <h3 class="text-sm font-semibold uppercase tracking-widest text-slate-500">Impacto operativo</h3>
@@ -115,19 +115,24 @@
                             <h3 class="text-sm font-semibold uppercase tracking-widest text-slate-500">Stack</h3>
                             <ul class="mt-4 space-y-2 text-sm text-slate-600">
                                 <li>Flask · Python</li>
-                                <li>Celery + Redis</li>
+                                <li>Celery</li>
                                 <li>MySQL administrado</li>
                                 <li>Docker Compose</li>
                             </ul>
                         </div>
                         <div class="rounded-3xl border border-dashed border-emerald-200 bg-emerald-50/70 p-6">
                             <h3 class="text-sm font-semibold uppercase tracking-widest text-emerald-700">Próximos pasos</h3>
-                            <p class="mt-2 text-sm text-slate-600">Integración de informes automáticos y mejoras en la experiencia del gestor para acelerar la toma de decisiones.</p>
+                            <p class="mt-2 text-sm text-slate-600">Integración de informes automáticos y optimización de la experiencia de gestión.</p>
                         </div>
-                        <div class="rounded-3xl border border-slate-200 bg-white/90 p-6 shadow-sm">
-                            <h3 class="text-sm font-semibold uppercase tracking-widest text-slate-500">Espacio ampliable</h3>
-                            <p class="mt-2 text-sm text-slate-600">Material listo para incluir mapas de calor, modelos de demanda y documentación de despliegue.</p>
-                        </div>
+                        <details class="rounded-3xl border border-slate-200 bg-white/90 p-6 shadow-sm">
+                            <summary class="cursor-pointer text-sm font-semibold uppercase tracking-widest text-slate-500">Esquema técnico</summary>
+                            <pre class="mt-4 whitespace-pre-wrap rounded-2xl bg-slate-50/80 p-4 font-['Space_Mono',_monospace] text-xs text-slate-700">Reservas web / staff
+    ↓
+Flask API → MySQL
+    │
+    ├─ Celery workers → Correos/SMS
+    └─ Docker Compose coordina servicios</pre>
+                        </details>
                     </aside>
                 </div>
             </div>
@@ -148,14 +153,14 @@
                             Kobra es la solución a medida que mantiene la operativa financiera de Cybersur. Automatiza facturación, cobros y recordatorios desde un backend robusto en <strong>FastAPI, Celery, MySQL y Docker</strong>.
                         </p>
                         <p>
-                            Los cronjobs programados gestionan exportaciones, limpiezas de datos y conciliaciones automáticas, mientras que los dashboards internos ofrecen visibilidad en tiempo real sobre el flujo de caja y SLA por cliente.
+                            Los cronjobs programados gestionan exportaciones, limpiezas de datos y conciliaciones automáticas. Los paneles internos priorizan métricas de cobranza y SLA por cliente para que el equipo financiero tenga claridad diaria.
                         </p>
                         <div class="rounded-3xl border border-slate-200 bg-slate-50/70 p-6">
                             <h3 class="text-sm font-semibold uppercase tracking-widest text-slate-500">Resultados clave</h3>
                             <ul class="mt-4 space-y-3">
                                 <li class="flex items-start gap-3"><span class="mt-1 h-2 w-2 rounded-full bg-blue-500"></span>Workflows de avisos y recordatorios que reducen el tiempo de seguimiento de facturas.</li>
                                 <li class="flex items-start gap-3"><span class="mt-1 h-2 w-2 rounded-full bg-blue-500"></span>Cronjobs trazables para exportaciones contables y rutinas de limpieza de datos.</li>
-                                <li class="flex items-start gap-3"><span class="mt-1 h-2 w-2 rounded-full bg-blue-500"></span>Dashboards internos con indicadores de cobro y alertas proactivas.</li>
+                                <li class="flex items-start gap-3"><span class="mt-1 h-2 w-2 rounded-full bg-blue-500"></span>Paneles internos con indicadores de cobro y alertas sobre vencimientos.</li>
                             </ul>
                         </div>
                     </article>
@@ -164,19 +169,24 @@
                             <h3 class="text-sm font-semibold uppercase tracking-widest text-slate-500">Stack</h3>
                             <ul class="mt-4 space-y-2 text-sm text-slate-600">
                                 <li>FastAPI · Python 3.11</li>
-                                <li>Celery + Redis</li>
+                                <li>Celery</li>
                                 <li>MySQL administrado</li>
                                 <li>Docker Compose</li>
                             </ul>
                         </div>
                         <div class="rounded-3xl border border-dashed border-blue-200 bg-blue-50/70 p-6">
                             <h3 class="text-sm font-semibold uppercase tracking-widest text-blue-700">Roadmap</h3>
-                            <p class="mt-2 text-sm text-slate-600">Integraciones con ERPs externos y ampliación de reportes financieros internos.</p>
+                            <p class="mt-2 text-sm text-slate-600">Ampliación de reportes financieros internos y automatización de conciliaciones.</p>
                         </div>
-                        <div class="rounded-3xl border border-slate-200 bg-white/90 p-6 shadow-sm">
-                            <h3 class="text-sm font-semibold uppercase tracking-widest text-slate-500">Material adicional</h3>
-                            <p class="mt-2 text-sm text-slate-600">Preparando diagramas de flujo, auditorías de seguridad y documentación para nuevos módulos.</p>
-                        </div>
+                        <details class="rounded-3xl border border-slate-200 bg-white/90 p-6 shadow-sm">
+                            <summary class="cursor-pointer text-sm font-semibold uppercase tracking-widest text-slate-500">Esquema técnico</summary>
+                            <pre class="mt-4 whitespace-pre-wrap rounded-2xl bg-slate-50/80 p-4 font-['Space_Mono',_monospace] text-xs text-slate-700">Equipo Cybersur
+    ↓
+FastAPI API → MySQL
+    │
+    ├─ Celery workers → Emails y recordatorios
+    └─ Cronjobs → Reportes contables</pre>
+                        </details>
                     </aside>
                 </div>
             </div>
@@ -192,7 +202,7 @@
                             <svg class="h-3.5 w-3.5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
                                 <path fill-rule="evenodd" d="M16.704 5.29a.75.75 0 0 1 .006 1.06l-7.25 7.5a.75.75 0 0 1-1.086.02L3.29 8.536a.75.75 0 0 1 1.06-1.06l4.21 4.209 6.72-6.956a.75.75 0 0 1 1.064.061Z" clip-rule="evenodd" />
                             </svg>
-                            Proyecto oficial Spotify
+                            Spotify Approved
                         </span>
                     </div>
                     <img src="assets/beatlist-logo.svg" alt="Logo BeatList" width="140" height="140" loading="lazy" class="h-24 w-24 rounded-3xl border border-slate-100 bg-slate-50 p-4" />
@@ -200,7 +210,7 @@
                 <div class="grid gap-10 lg:grid-cols-[1.4fr,1fr]" data-animate>
                     <article class="space-y-6 text-base text-slate-600">
                         <p>
-                            BeatList es la plataforma para melómanos, curadores y creadores de contenido que buscan superar las limitaciones del gestor estándar de Spotify. Centraliza administración avanzada, descubrimiento y analítica en una experiencia fluida.
+                            BeatList es la plataforma para melómanos, curadores y creadores de contenido que necesitan más herramientas que el gestor estándar de Spotify. Centraliza administración avanzada, descubrimiento y analítica en una experiencia fluida.
                         </p>
                         <p>
                             El backend en <strong>Flask</strong> gestiona la autenticación <strong>OAuth 2.0</strong> aprobada por Spotify y accede a datos extendidos mediante su API oficial. El frontend en JavaScript dinamiza dashboards, recomendaciones y un reproductor web con animaciones suaves.
@@ -210,7 +220,7 @@
                             <ul class="mt-4 space-y-3">
                                 <li class="flex items-start gap-3"><span class="mt-1 h-2 w-2 rounded-full bg-amber-500"></span>Listas inteligentes basadas en reglas y métricas como energía o bailabilidad.</li>
                                 <li class="flex items-start gap-3"><span class="mt-1 h-2 w-2 rounded-full bg-amber-500"></span>Dashboard con tendencias temporales y hábitos de escucha segmentados por artistas y géneros.</li>
-                                <li class="flex items-start gap-3"><span class="mt-1 h-2 w-2 rounded-full bg-amber-500"></span>Reproductor web con animaciones personalizadas y continuidad entre sesiones gracias a MySQL y Redis.</li>
+                                <li class="flex items-start gap-3"><span class="mt-1 h-2 w-2 rounded-full bg-amber-500"></span>Reproductor web con animaciones personalizadas y continuidad entre sesiones gracias a MySQL.</li>
                             </ul>
                         </div>
                     </article>
@@ -221,17 +231,25 @@
                                 <li>Flask · Python</li>
                                 <li>Spotify API · OAuth 2.0</li>
                                 <li>JavaScript modular</li>
-                                <li>MySQL + Redis</li>
+                                <li>MySQL</li>
                             </ul>
                         </div>
                         <div class="rounded-3xl border border-dashed border-amber-200 bg-amber-50/70 p-6">
-                            <h3 class="text-sm font-semibold uppercase tracking-widest text-amber-700">Roadmap</h3>
-                            <p class="mt-2 text-sm text-slate-600">Modo colaborativo, exportación de insights y app móvil como siguientes iteraciones.</p>
+                            <h3 class="text-sm font-semibold uppercase tracking-widest text-amber-700">Posibles evoluciones</h3>
+                            <p class="mt-2 text-sm text-slate-600">Añadir modo colaborativo o exportación de insights en futuras versiones.</p>
                         </div>
-                        <div class="rounded-3xl border border-slate-200 bg-white/90 p-6 shadow-sm">
-                            <h3 class="text-sm font-semibold uppercase tracking-widest text-slate-500">Material extendido</h3>
-                            <p class="mt-2 text-sm text-slate-600">Espacio reservado para flujos de onboarding, mockups de dashboards y métricas avanzadas.</p>
-                        </div>
+                        <details class="rounded-3xl border border-slate-200 bg-white/90 p-6 shadow-sm">
+                            <summary class="cursor-pointer text-sm font-semibold uppercase tracking-widest text-slate-500">Esquema técnico</summary>
+                            <pre class="mt-4 whitespace-pre-wrap rounded-2xl bg-slate-50/80 p-4 font-['Space_Mono',_monospace] text-xs text-slate-700">Usuarios Spotify
+    ↓
+Flask API (OAuth 2.0)
+    ↓
+Spotify API oficial → Datos enriquecidos
+    ↓
+MySQL → Historial y métricas
+    ↓
+Frontend JS → Dashboards + reproductor</pre>
+                        </details>
                     </aside>
                 </div>
             </div>
@@ -239,8 +257,8 @@
         <section class="bg-slate-900 py-20">
             <div class="mx-auto flex max-w-5xl flex-col items-center gap-6 px-6 text-center text-white" data-animate>
                 <p class="text-xs font-semibold uppercase tracking-[0.3em] text-white/60">Conversemos</p>
-                <h2 class="text-3xl font-semibold sm:text-4xl">Si quieres conocer más sobre estos proyectos o charlar sobre nuevas ideas, contáctame en LinkedIn o GitHub.</h2>
-                <p class="max-w-3xl text-base text-white/80">Respondo personalmente cada mensaje y me gusta explorar colaboraciones donde la automatización, el SaaS y la ciberseguridad aplicada aporten valor real.</p>
+                <h2 class="text-3xl font-semibold sm:text-4xl">Si tienes curiosidad por estos proyectos o te gustaría explorar nuevas ideas técnicas, escríbeme en LinkedIn o GitHub.</h2>
+                <p class="max-w-3xl text-base text-white/80">Respondo personalmente cada mensaje y me interesa colaborar donde la automatización, el SaaS y la ciberseguridad aplicada aporten valor real.</p>
                 <div class="flex flex-wrap items-center justify-center gap-4">
                     <a href="https://www.linkedin.com/in/nicoabgv" class="inline-flex items-center gap-2 rounded-full bg-white px-6 py-3 text-sm font-semibold text-slate-900 transition hover:bg-slate-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white" target="_blank" rel="noreferrer">LinkedIn</a>
                     <a href="https://github.com/nicoabgv" class="inline-flex items-center gap-2 rounded-full border border-white/40 px-6 py-3 text-sm font-semibold text-white transition hover:border-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white" target="_blank" rel="noreferrer">GitHub</a>
