@@ -1,278 +1,623 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" class="scroll-smooth">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nicolás Álvarez - Ingeniero de Software</title>
-    <link href="https://fonts.googleapis.com/css2?family=Space+Mono&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <link rel="icon" type="image/ico" href="assets/logo.ico">
-    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Nicolás Álvarez · Ingeniero de Software</title>
+    <meta name="description" content="Portfolio minimalista de Nicolás Álvarez. Ingeniero de software especializado en plataformas SaaS, automatización y productos con foco en ciberseguridad." />
+    <meta name="theme-color" content="#0f172a" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="es_ES" />
+    <meta property="og:title" content="Portfolio · Nicolás Álvarez" />
+    <meta property="og:description" content="Explora proyectos empresariales, SaaS y herramientas musicales construidos con stacks modernos y procesos robustos." />
+    <meta property="og:image" content="assets/logo.png" />
+    <meta property="og:url" content="https://nicoabgv.github.io/" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Portfolio · Nicolás Álvarez" />
+    <meta name="twitter:description" content="Ingeniero de software. Desarrollo de productos escalables, automatizados y listos para producción." />
+    <meta name="twitter:image" content="assets/logo.png" />
+    <link rel="canonical" href="https://nicoabgv.github.io/" />
+    <link rel="icon" type="image/png" href="assets/logo.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@500;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.4.4/dist/tailwind.min.css" rel="stylesheet" />
+    <style>
+        :root {
+            color-scheme: light;
+        }
+    </style>
 </head>
-<body>
-    <!-- Navbar -->
-    <header class="navbar fixed-top bg-dark navbar-dark">
-        <div class="container">
-            <a class="navbar-brand" href="#">
-                NICOABGV
-                <img src="assets/logo.png" alt="Logo" class="navbar-icon">
-            </a>            
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+<body class="bg-slate-50 font-[\'Inter\',_sans-serif] text-slate-900 antialiased">
+    <header data-nav class="fixed inset-x-0 top-0 z-40 bg-white/70 backdrop-blur transition duration-300">
+        <nav class="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
+            <a href="#hero" class="flex items-center gap-2 text-lg font-semibold tracking-tight text-slate-900 transition hover:text-blue-600" aria-label="Inicio">
+                <span class="flex h-10 w-10 items-center justify-center rounded-full bg-slate-900 text-sm font-[\'Space_Mono\',_monospace] font-bold uppercase tracking-widest text-white">NA</span>
+                <span class="hidden sm:block">Nicolás Álvarez</span>
+            </a>
+            <button type="button" class="flex h-10 w-10 items-center justify-center rounded-full border border-slate-200 text-slate-700 transition hover:border-blue-500 hover:text-blue-600 lg:hidden" aria-controls="mobile-nav" aria-expanded="false" data-mobile-toggle>
+                <span class="sr-only">Abrir menú</span>
+                <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M4 7h16M4 12h16M4 17h16" />
+                </svg>
             </button>
-            <nav class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="#about" aria-label="Ir a la sección Sobre Mí"><i class="fas fa-user"></i> Sobre Mí</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#skills" aria-label="Ir a la sección Skills"><i class="fas fa-code"></i> Skills</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#curriculum" aria-label="Ir a la sección Curriculum"><i class="fas fa-graduation-cap"></i> Curriculum</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#portfolio" aria-label="Ir a la sección Portfolio"><i class="fas fa-briefcase"></i> Portfolio</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contact" aria-label="Ir a la sección Contacto"><i class="fas fa-envelope"></i> Contacto</a></li>
-                </ul>
-            </nav>
+            <div class="hidden items-center gap-8 text-sm font-medium text-slate-700 lg:flex">
+                <a class="transition hover:text-blue-600" href="#about">Sobre mí</a>
+                <a class="transition hover:text-blue-600" href="#skills">Skills</a>
+                <a class="transition hover:text-blue-600" href="#projects">Proyectos</a>
+                <a class="transition hover:text-blue-600" href="#contact">Contacto</a>
+                <a class="inline-flex items-center gap-2 rounded-full border border-slate-200 px-4 py-2 text-xs font-semibold uppercase tracking-widest text-slate-700 transition hover:border-blue-500 hover:text-blue-600" href="assets/cv-nicolas-alvarez.pdf" download>
+                    Descargar CV
+                    <svg class="h-3.5 w-3.5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                        <path d="M10 14.25a.75.75 0 0 1-.53-.22l-4-4a.75.75 0 0 1 1.06-1.06l2.72 2.72V3.75a.75.75 0 1 1 1.5 0v7.94l2.72-2.72a.75.75 0 0 1 1.06 1.06l-4 4a.75.75 0 0 1-.53.22Z" />
+                        <path d="M4.75 16a.75.75 0 0 1 0-1.5h10.5a.75.75 0 0 1 0 1.5H4.75Z" />
+                    </svg>
+                </a>
+            </div>
+        </nav>
+        <div id="mobile-nav" data-mobile-menu class="hidden border-t border-slate-200 bg-white/95 px-6 py-4 shadow-lg transition duration-300 lg:hidden">
+            <div class="flex flex-col gap-3 text-sm font-medium text-slate-700">
+                <a class="transition hover:text-blue-600" href="#about">Sobre mí</a>
+                <a class="transition hover:text-blue-600" href="#skills">Skills</a>
+                <a class="transition hover:text-blue-600" href="#projects">Proyectos</a>
+                <a class="transition hover:text-blue-600" href="#contact">Contacto</a>
+                <a class="inline-flex items-center gap-2 rounded-full border border-slate-200 px-4 py-2 text-xs font-semibold uppercase tracking-widest text-slate-700 transition hover:border-blue-500 hover:text-blue-600" href="assets/cv-nicolas-alvarez.pdf" download>
+                    Descargar CV
+                </a>
+            </div>
         </div>
     </header>
 
-    <!-- Header con Parallax -->
-    <header class="header" id="header">
-        <div id="parallax-scene" class="parallax-scene">
-            <div class="layer">
-                <img src="assets/background.jpg" alt="Fondo gris texturizado" class="background">
+    <main>
+        <section id="hero" class="relative flex min-h-screen items-center overflow-hidden pt-28">
+            <div class="pointer-events-none absolute inset-0 -z-10" data-parallax>
+                <div class="absolute inset-0 bg-gradient-to-b from-slate-100 via-white to-slate-100"></div>
+                <div class="absolute -left-20 top-20 h-56 w-56 rounded-full bg-blue-200/70 blur-3xl"></div>
+                <div class="absolute -right-24 bottom-12 hidden h-72 w-72 rounded-full bg-amber-200/60 blur-3xl md:block"></div>
+                <div class="absolute inset-x-0 bottom-0 h-40 bg-gradient-to-t from-white"></div>
             </div>
-            <div data-depth="0.1" class="layer">
-                <img src="assets/wave-top.svg" alt="Ondas Superiores" class="waves-top">
-            </div>
-             <!-- Se puede poner 
-            <div data-depth="0.5" class="layer">
-                <img src="assets/layer-front.png" alt="Detalles de frente" class="foreground">
-            </div>
-            -->
-            <div data-depth="0.1" class="layer">
-                <img src="assets/wave-bottom.svg" alt="Ondas Inferiores" class="waves-bottom">
-            </div>
-        </div>
-        <div class="container header-content text-center">
-            <h1 class="display-4">Hola, soy <span class="highlight">Nicolás Álvarez</span></h1>
-            <h2 class="lead">Ingeniero de Software enfocado en Ciberseguridad y Desarrollo Web.</h2>
-            <a href="projects.html" class="btn btn-primary btn-lg mt-4">
-                Explora mis proyectos <i class="fas fa-arrow-right"></i>
-            </a>
-        </div>
-    </header>
-    
-    <!-- Sección Sobre Mí -->
-    <section id="about" class="about py-5 bg-dark text-white">
-        <div class="container">
-            <h2 class="text-center mb-4">Sobre Mí</h2>
-            <div class="row">
-                <div class="col-md-6">
-                    <p>¡Hola! Soy Nicolás Álvarez, un ingeniero de software con una curiosidad insaciable por el mundo de la tecnología. Si algo me define, es mi pasión por fusionar creatividad y funcionalidad en cada proyecto que desarrollo.</p>
-                    <ul class="list-unstyled">
-                        <li><strong>Cumpleaños:</strong> 10/05/2004</li>
-                        <li><strong>Teléfono:</strong> <a href="tel:+601600034" class="contact-link">601600034</a></li>
-                        <li><strong>Email:</strong> <a href="mailto:nicoabgv@gmail.com" class="contact-link">nicoabgv@gmail.com</a></li>                        
-                        <li><strong>Dirección:</strong> Avenida Mallorca 16, 124, Madrid, España</li>
-                        <li><strong>Cargo:</strong> Estudiante</li>
-                    </ul>
+            <div class="mx-auto flex w-full max-w-6xl flex-col gap-16 px-6 py-20 lg:flex-row lg:items-center">
+                <div class="w-full space-y-8" data-animate>
+                    <p class="inline-flex items-center gap-3 text-xs font-semibold uppercase tracking-[0.4em] text-slate-500">
+                        <span class="h-px w-10 bg-slate-300"></span>
+                        Ingeniería de Software · Ciberseguridad
+                    </p>
+                    <h1 class="text-4xl font-bold leading-tight text-slate-900 sm:text-5xl">
+                        Construyo plataformas digitales confiables y listas para producción.
+                    </h1>
+                    <p class="max-w-2xl text-lg text-slate-600">
+                        Soy Nicolás Álvarez, ingeniero de software. Creo productos con foco en automatización, escalabilidad y experiencia de usuario, alineando la visión de negocio con implementaciones sólidas.
+                    </p>
+                    <div class="flex flex-wrap items-center gap-4">
+                        <a href="#projects" class="inline-flex items-center justify-center gap-2 rounded-full bg-blue-600 px-6 py-3 text-sm font-semibold text-white shadow-lg shadow-blue-600/20 transition hover:bg-blue-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600">
+                            Ver proyectos
+                            <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <path d="M5 12h14" />
+                                <path d="m12 5 7 7-7 7" />
+                            </svg>
+                        </a>
+                        <a href="https://www.linkedin.com/in/nicoabgv" target="_blank" rel="noreferrer" class="inline-flex items-center gap-2 rounded-full border border-slate-200 px-6 py-3 text-sm font-semibold text-slate-700 transition hover:border-blue-500 hover:text-blue-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600">
+                            LinkedIn
+                            <svg class="h-4 w-4" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                                <path d="M19 0H5C2.24 0 0 2.24 0 5v14c0 2.76 2.24 5 5 5h14c2.76 0 5-2.24 5-5V5c0-2.76-2.24-5-5-5ZM7.09 19.19H4.22V9h2.87v10.19ZM5.65 7.7c-.91 0-1.65-.74-1.65-1.65 0-.91.74-1.65 1.65-1.65.91 0 1.65.74 1.65 1.65 0 .91-.74 1.65-1.65 1.65Zm13.54 11.49h-2.87v-4.96c0-1.18-.02-2.7-1.65-2.7-1.65 0-1.9 1.29-1.9 2.62v5.04h-2.87V9h2.75v1.39h.04c.38-.72 1.31-1.47 2.7-1.47 2.89 0 3.42 1.9 3.42 4.36v5.91Z" />
+                            </svg>
+                        </a>
+                    </div>
                 </div>
-                <div class="col-md-6 text-center">
-                    <h3>Intereses</h3>
-                    <div class="d-flex flex-wrap justify-content-center">
-                        <div class="interest-item text-center p-3"><i class="fas fa-music fa-2x"></i> Música</div>
-                        <div class="interest-item text-center p-3"><i class="fas fa-utensils fa-2x"></i> Comida</div>
-                        <div class="interest-item text-center p-3"><i class="fas fa-bicycle fa-2x"></i> Bicicleta</div>
-                        <div class="interest-item text-center p-3"><i class="fas fa-hiking fa-2x"></i> Senderismo</div>
-                        <div class="interest-item text-center p-3"><i class="fas fa-car fa-2x"></i> Mundo del Motor</div>
-                        <div class="interest-item text-center p-3"><i class="fas fa-plane fa-2x"></i> Viajar</div>
-                        <div class="interest-item text-center p-3"><i class="fas fa-book fa-2x"></i> Lectura</div>
-                        <div class="interest-item text-center p-3"><i class="fas fa-film fa-2x"></i> Cine</div>
+                <div class="w-full lg:w-auto" data-animate>
+                    <div class="relative overflow-hidden rounded-3xl border border-slate-200 bg-white/80 p-10 shadow-xl shadow-slate-900/5 backdrop-blur">
+                        <div class="absolute -right-16 -top-16 h-48 w-48 rounded-full bg-blue-100 blur-3xl"></div>
+                        <div class="absolute -bottom-20 -left-10 h-56 w-56 rounded-full bg-amber-100 blur-3xl"></div>
+                        <div class="relative space-y-6">
+                            <p class="text-sm font-medium uppercase tracking-[0.3em] text-slate-400">Resumen Express</p>
+                            <p class="text-xl font-semibold text-slate-800">Transformo flujos críticos en plataformas seguras, medibles y automatizadas.</p>
+                            <ul class="space-y-4 text-sm text-slate-600">
+                                <li class="flex items-start gap-3">
+                                    <span class="mt-1 h-2 w-2 rounded-full bg-blue-500"></span>
+                                    Lidero productos end-to-end con stacks basados en Python, JavaScript y ecosistemas cloud.
+                                </li>
+                                <li class="flex items-start gap-3">
+                                    <span class="mt-1 h-2 w-2 rounded-full bg-blue-500"></span>
+                                    Diseño procesos con observabilidad, despliegues reproducibles y enfoque DevSecOps.
+                                </li>
+                                <li class="flex items-start gap-3">
+                                    <span class="mt-1 h-2 w-2 rounded-full bg-blue-500"></span>
+                                    Construyo experiencias limpias que comunican valor de negocio sin sacrificar detalle técnico.
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="text-center mt-4">
-                <a href="assets/cv-nicolas-alvarez.pdf" class="btn btn-outline-light" download="CV-Nicolas-Alvarez">Descargar CV <i class="fas fa-download"></i></a>
-            </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Sección Skills -->
-    <section id="skills" class="skills py-5">
-        <div class="container">
-            <h2 class="text-center mb-4">Skills</h2>
-            <div class="row">
-                <div class="col-md-6">
-                    <h3>Habilidades técnicas</h3>
-                    <div class="progress mb-3">
-                        <div class="progress-bar bg-success skill-bar" role="progressbar" data-level="90%">Desarrollo Web (HTML/CSS, JavaScript) - 90%</div>
-                    </div>
-                    <div class="progress mb-3">
-                        <div class="progress-bar bg-success skill-bar" role="progressbar" data-level="75%">Lenguajes de Programación de Bajo Nivel (C, C++) - 75%</div>
-                    </div>
-                    <div class="progress mb-3">
-                        <div class="progress-bar bg-success skill-bar" role="progressbar" data-level="84%">Python - 84%</div>
-                    </div>
-                    <div class="progress mb-3">
-                        <div class="progress-bar bg-success skill-bar" role="progressbar" data-level="75%">MySQL - 75%</div>
-                    </div>
-                    <div class="progress mb-3">
-                        <div class="progress-bar bg-success skill-bar" role="progressbar" data-level="65%">React - 65%</div>
-                    </div>
+        <section id="about" class="relative py-24">
+            <div class="pointer-events-none absolute inset-x-0 top-0 -z-10 h-40 bg-gradient-to-b from-slate-100 via-transparent to-transparent"></div>
+            <div class="mx-auto flex w-full max-w-6xl flex-col gap-12 px-6 lg:flex-row">
+                <div class="w-full space-y-6 lg:w-2/3" data-animate>
+                    <p class="text-xs font-semibold uppercase tracking-[0.3em] text-slate-500">Sobre mí</p>
+                    <h2 class="text-3xl font-semibold text-slate-900 sm:text-4xl">Estrategia, diseño técnico y entrega disciplinada.</h2>
+                    <p class="text-lg text-slate-600">
+                        Me especializo en construir plataformas a medida para empresas que necesitan precisión operativa. Combino habilidades técnicas con comunicación clara para alinear equipos de desarrollo, negocio y seguridad en torno a una misma hoja de ruta.
+                    </p>
+                    <p class="text-lg text-slate-600">
+                        Actualmente colaboro con organizaciones que buscan automatizar procesos, integrar datos críticos y ofrecer experiencias digitales impecables.
+                    </p>
                 </div>
-                <div class="col-md-6">
-                    <h3>Professional Skills</h3>
-                    <div class="progress mb-3">
-                        <div class="progress-bar bg-info skill-bar" role="progressbar" data-level="95%">Comunicación - 95%</div>
-                    </div>
-                    <div class="progress mb-3">
-                        <div class="progress-bar bg-info skill-bar" role="progressbar" data-level="67%">Trabajo en Equipo - 67%</div>
-                    </div>
-                    <div class="progress mb-3">
-                        <div class="progress-bar bg-info skill-bar" role="progressbar" data-level="90%">Creatividad - 90%</div>
-                    </div>
-                    <div class="progress mb-3">
-                        <div class="progress-bar bg-info skill-bar" role="progressbar" data-level="82%">Dedicación - 82%</div>
-                    </div>
-                    <div class="progress mb-3">
-                        <div class="progress-bar bg-info skill-bar" role="progressbar" data-level="76%">Project Management - 76%</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Sección Curriculum -->
-    <section id="curriculum" class="curriculum py-5 bg-dark text-white">
-        <div class="container">
-            <h2 class="text-center mb-4">Curriculum</h2>
-            <div class="row">
-                <div class="col-md-6">
-                    <h3>Educación</h3>
-                    <div class="timeline-item mb-4">
-                        <h4>Sage College - The British School of Jerez</h4>
-                        <p><strong>ESO y Bachillerato</strong> | 2020 - 2022</p>
-                        <p>Durante mi paso por Sage College, adquirí una sólida formación en diversas materias, incluyendo matemáticas avanzadas y ciencias.</p>
-                    </div>
-                    <div class="timeline-item mb-4">
-                        <h4>UTAD</h4>
-                        <p><strong>Ingeniería de Software</strong> | 2022 - Actualidad</p>
-                        <p>Me especializo en el desarrollo de software y ciberseguridad. He trabajado en proyectos que abarcan desde el desarrollo de aplicaciones web hasta la inteligencia artificial.</p>
-                    </div>
-    
-                    <h3>Certificaciones</h3>
-                    <div class="timeline-item mb-4">
-                        <h4>Certificaciones Google</h4>
-                        <p>Cloud Computing y Ciberseguridad en el Teletrabajo | 2022</p>
-                    </div>
-                    <div class="timeline-item mb-4">
-                        <h4>IELTS y Cambridge English Assessment</h4>
-                        <p>Certificación de Inglés | 2022</p>
-                    </div>
-                </div>
-    
-                <div class="col-md-6">
-                    <h3>Proyectos</h3>
-                    <div class="timeline-item mb-4">
-                        <h4>BeatList</h4>
-                        <p>Web App que interactúa con la API de Spotify para gestionar playlists de manera eficiente. Permite fusionar listas, ordenarlas y editar canciones dentro de cada playlist. Incluye un reproductor web y análisis estadísticos. | 2024</p>
-                    </div>
-                    
-                    <div class="timeline-item mb-4">
-                        <h4>MesasYA</h4>
-                        <p>Sistema integral de gestión de restaurantes, que abarca la administración de mesas y reservas en tiempo real. Incluye asignación automática de mesas y notificaciones a clientes y administradores. | En proceso</p>
-                    </div>
-                    
-                    <div class="timeline-item mb-4">
-                        <h4>Spotify Analyzer</h4>
-                        <p>Programa en Python que analiza el historial de escucha de Spotify, generando estadísticas y visualizaciones. Permite exportar los análisis a Excel para una revisión detallada. | 2023</p>
-                    </div>                    
-                </div>                    
-            </div>
-        </div>
-    </section> 
-
-    <!-- Sección Portfolio -->
-    <section id="portfolio" class="portfolio py-5">
-        <div class="container">
-            <h2 class="text-center mb-4">Portfolio</h2>
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="card mb-4 card-equal">
-                        <img src="assets/BeatList.png" class="card-img-top" alt="Proyecto BeatList">
-                        <div class="card-body">
-                            <h5 class="card-title text-dark">BeatList</h5>
-                            <p class="card-text text-dark">
-                                BeatList es una web app avanzada que interactúa con la API de Spotify para gestionar playlists, descubrir nueva música y analizar tus hábitos musicales en profundidad. <br>
-                                <strong>BeatList ha sido oficialmente aprobada por Spotify,</strong> lo que garantiza una integración completa y acceso extendido a todas las funcionalidades de la plataforma. El proyecto destaca por su experiencia de usuario fluida y su potente motor de estadísticas.
+                <div class="w-full space-y-6 lg:w-1/3" data-animate>
+                    <div class="grid gap-4">
+                        <div class="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm">
+                            <h3 class="text-sm font-semibold uppercase tracking-widest text-slate-500">Datos clave</h3>
+                            <dl class="mt-4 space-y-3 text-sm text-slate-600">
+                                <div class="flex justify-between gap-6">
+                                    <dt class="font-medium text-slate-500">Ubicación</dt>
+                                    <dd>Madrid · España</dd>
+                                </div>
+                                <div class="flex justify-between gap-6">
+                                    <dt class="font-medium text-slate-500">Email</dt>
+                                    <dd><a class="hover:text-blue-600" href="mailto:nicoabgv@gmail.com">nicoabgv@gmail.com</a></dd>
+                                </div>
+                                <div class="flex justify-between gap-6">
+                                    <dt class="font-medium text-slate-500">LinkedIn</dt>
+                                    <dd><a class="hover:text-blue-600" href="https://www.linkedin.com/in/nicoabgv" target="_blank" rel="noreferrer">/in/nicoabgv</a></dd>
+                                </div>
+                                <div class="flex justify-between gap-6">
+                                    <dt class="font-medium text-slate-500">Años de experiencia</dt>
+                                    <dd>3+</dd>
+                                </div>
+                            </dl>
+                        </div>
+                        <div class="rounded-3xl border border-dashed border-blue-200 bg-blue-50/60 p-6">
+                            <p class="text-sm font-semibold uppercase tracking-[0.3em] text-blue-600">Colaboraciones</p>
+                            <p class="mt-3 text-sm text-blue-800">
+                                Abierto a proyectos que requieran automatización de procesos, diseño de productos digitales o consultoría de ciberseguridad aplicada.
                             </p>
-                            <a href="https://beatlist.es" target="_blank" class="custom-button">Explora BeatList</a>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6">
-                <div class="card mb-4 card-equal">
-                    <img src="assets/MesasYa.png" class="card-img-top" alt="Proyecto MesasYA">
-                    <div class="card-body">
-                        <h5 class="card-title text-dark">MesasYa</h5>
-                        <p class="card-text text-dark">
-                            MesasYa es una solución integral y profesional para la gestión de reservas en restaurantes, diseñada para optimizar tanto la ocupación como los procesos diarios de cualquier local.<br>
-                            Con un sistema robusto, flexible y seguro, permite la personalización total de la experiencia, integra notificaciones en tiempo real y ofrece una interfaz intuitiva tanto para clientes como para gestores.<br>
-                            Actualmente, es mi proyecto principal y está en funcionamiento en varios restaurantes, demostrando su eficacia en entornos reales.
-                        </p>
-                        <a href="https://mesasya.es" target="_blank" class="custom-button">Explora MesasYa</a>
-                    </div>
-                </div>
             </div>
-        </div>
-    </section>
-    
-    <!-- Sección Contacto -->
-    <section id="contact" class="contact py-5">
-        <div class="container">
-            <h2 class="text-center mb-4">Contacto</h2>
-            <div class="row">
-                <div class="col-md-6">
-                    <form action="https://formspree.io/f/xdkooogo" method="POST">
-                        <div class="mb-3">
-                            <label for="name" class="form-label">Nombre:</label>
-                            <input type="text" id="name" name="name" class="form-control" required>
-                        </div>
-                        <div class="mb-3">
-                            <label for="email" class="form-label">Correo electrónico:</label>
-                            <input type="email" id="email" name="email" class="form-control" required>
-                        </div>
-                        <div class="mb-3">
-                            <label for="message" class="form-label">Mensaje:</label>
-                            <textarea id="message" name="message" class="form-control" rows="5" required></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary btn-lg">Enviar Mensaje</button>
-                    </form>
-                </div>
-                <div class="col-md-6 text-center">
-                    <div class="map-container">
-                        <img src="assets/mapa.png" alt="Mapa de ubicación de Nicolás Álvarez en Madrid">
-                    </div>                    
-                </div>
-            </div>
-        </div>
-    </section>       
+        </section>
 
-    <!-- Footer -->
-    <footer class="footer py-4 bg-dark text-white text-center">
-        <p>Conecta conmigo en 
-            <a href="https://www.linkedin.com/in/nicol%C3%A1s-%C3%A1lvarez-becerra-201773267/" class="text-white">
-                <i class="fab fa-linkedin"></i> LinkedIn
-            </a> 
-            o 
-            <a href="https://github.com/nicoabgv" class="text-white">
-                <i class="fab fa-github"></i> GitHub
-            </a>
-        </p>
+        <section id="skills" class="bg-white py-24">
+            <div class="mx-auto max-w-6xl space-y-12 px-6">
+                <div class="space-y-4" data-animate>
+                    <p class="text-xs font-semibold uppercase tracking-[0.3em] text-slate-500">Skills & Stack</p>
+                    <h2 class="text-3xl font-semibold text-slate-900 sm:text-4xl">Capas técnicas que utilizo para crear productos escalables.</h2>
+                </div>
+                <div class="grid gap-6 md:grid-cols-2 xl:grid-cols-4" data-animate>
+                    <article class="group flex flex-col gap-4 rounded-3xl border border-slate-200 bg-slate-50/80 p-6 transition hover:-translate-y-1 hover:border-blue-400 hover:shadow-lg">
+                        <div class="flex items-center gap-3">
+                            <span class="flex h-12 w-12 items-center justify-center rounded-2xl bg-blue-100 text-blue-700">
+                                <svg class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                    <path d="M4 4h16v4H4z" />
+                                    <path d="M4 12h16v8H4z" />
+                                    <path d="M9 4v16" />
+                                </svg>
+                            </span>
+                            <h3 class="text-lg font-semibold text-slate-900">Backend</h3>
+                        </div>
+                        <p class="text-sm text-slate-600">FastAPI, Flask, Celery, SQLAlchemy, arquitectura de servicios y orquestación con Docker.</p>
+                        <div class="flex flex-wrap gap-2 text-xs font-medium text-slate-500">
+                            <span class="rounded-full bg-white px-3 py-1">Python</span>
+                            <span class="rounded-full bg-white px-3 py-1">MySQL</span>
+                            <span class="rounded-full bg-white px-3 py-1">Redis</span>
+                        </div>
+                    </article>
+                    <article class="group flex flex-col gap-4 rounded-3xl border border-slate-200 bg-slate-50/80 p-6 transition hover:-translate-y-1 hover:border-blue-400 hover:shadow-lg">
+                        <div class="flex items-center gap-3">
+                            <span class="flex h-12 w-12 items-center justify-center rounded-2xl bg-blue-100 text-blue-700">
+                                <svg class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                    <path d="M12 20l9-5-9-5-9 5 9 5z" />
+                                    <path d="M12 12l9-5-9-5-9 5 9 5z" />
+                                    <path d="M12 12v8" />
+                                </svg>
+                            </span>
+                            <h3 class="text-lg font-semibold text-slate-900">Frontend</h3>
+                        </div>
+                        <p class="text-sm text-slate-600">Interfaces accesibles con Tailwind, componentes dinámicos en React/Vue y microinteracciones con GSAP.</p>
+                        <div class="flex flex-wrap gap-2 text-xs font-medium text-slate-500">
+                            <span class="rounded-full bg-white px-3 py-1">TypeScript</span>
+                            <span class="rounded-full bg-white px-3 py-1">React</span>
+                            <span class="rounded-full bg-white px-3 py-1">Vue</span>
+                        </div>
+                    </article>
+                    <article class="group flex flex-col gap-4 rounded-3xl border border-slate-200 bg-slate-50/80 p-6 transition hover:-translate-y-1 hover:border-blue-400 hover:shadow-lg">
+                        <div class="flex items-center gap-3">
+                            <span class="flex h-12 w-12 items-center justify-center rounded-2xl bg-blue-100 text-blue-700">
+                                <svg class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                    <path d="M3 19h18" />
+                                    <path d="M5 4h14v9H5z" />
+                                    <path d="M9 8h6" />
+                                </svg>
+                            </span>
+                            <h3 class="text-lg font-semibold text-slate-900">DevOps</h3>
+                        </div>
+                        <p class="text-sm text-slate-600">Pipelines CI/CD, despliegues con Docker y monitoreo con Prometheus, Grafana y alertas automatizadas.</p>
+                        <div class="flex flex-wrap gap-2 text-xs font-medium text-slate-500">
+                            <span class="rounded-full bg-white px-3 py-1">GitHub Actions</span>
+                            <span class="rounded-full bg-white px-3 py-1">Docker Compose</span>
+                            <span class="rounded-full bg-white px-3 py-1">Ansible</span>
+                        </div>
+                    </article>
+                    <article class="group flex flex-col gap-4 rounded-3xl border border-slate-200 bg-slate-50/80 p-6 transition hover:-translate-y-1 hover:border-blue-400 hover:shadow-lg">
+                        <div class="flex items-center gap-3">
+                            <span class="flex h-12 w-12 items-center justify-center rounded-2xl bg-blue-100 text-blue-700">
+                                <svg class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                    <path d="m19 3-1.5 1.5" />
+                                    <path d="M22 6l-5.17 5.17a4 4 0 0 1-1.42.94l-2.32.77a1 1 0 0 0-.66.66l-.77 2.32a4 4 0 0 1-.94 1.42L6 22" />
+                                    <path d="M14 8l2 2" />
+                                    <path d="M6 6h2" />
+                                    <path d="M6 10h2" />
+                                    <path d="M6 14h2" />
+                                </svg>
+                            </span>
+                            <h3 class="text-lg font-semibold text-slate-900">Ciberseguridad</h3>
+                        </div>
+                        <p class="text-sm text-slate-600">Análisis de superficie de ataque, hardening, pruebas de penetración y políticas Zero Trust desde el diseño.</p>
+                        <div class="flex flex-wrap gap-2 text-xs font-medium text-slate-500">
+                            <span class="rounded-full bg-white px-3 py-1">OWASP</span>
+                            <span class="rounded-full bg-white px-3 py-1">Threat Modeling</span>
+                            <span class="rounded-full bg-white px-3 py-1">SIEM</span>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="relative overflow-hidden py-24">
+            <div class="pointer-events-none absolute inset-x-0 top-0 -z-10 h-40 bg-gradient-to-b from-white via-transparent to-transparent"></div>
+            <div class="mx-auto max-w-6xl space-y-16 px-6">
+                <div class="flex flex-col gap-4 lg:flex-row lg:items-end lg:justify-between" data-animate>
+                    <div>
+                        <p class="text-xs font-semibold uppercase tracking-[0.3em] text-slate-500">Proyectos destacados</p>
+                        <h2 class="mt-2 text-3xl font-semibold text-slate-900 sm:text-4xl">Soluciones que sostienen operaciones reales.</h2>
+                    </div>
+                    <a href="projects.html" class="inline-flex items-center gap-2 text-sm font-semibold text-blue-600 transition hover:text-blue-700">
+                        Ver case studies completos
+                        <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <path d="m9 5 7 7-7 7" />
+                        </svg>
+                    </a>
+                </div>
+                <div class="space-y-12">
+                    <article class="flex flex-col gap-10 rounded-3xl border border-slate-200 bg-white/90 p-8 shadow-lg shadow-slate-900/5 transition hover:-translate-y-1 hover:shadow-xl lg:flex-row" data-animate>
+                        <figure class="flex w-full items-center justify-center rounded-2xl border border-slate-100 bg-slate-50/80 p-6 lg:w-64">
+                            <img src="assets/kobra-logo.svg" alt="Identidad del proyecto Kobra" width="160" height="160" loading="lazy" class="h-32 w-32 object-contain" />
+                        </figure>
+                        <div class="flex w-full flex-col gap-6">
+                            <div class="flex flex-wrap items-center gap-3">
+                                <span class="rounded-full bg-blue-100 px-3 py-1 text-xs font-semibold text-blue-700">Plataforma empresarial</span>
+                                <span class="text-xs uppercase tracking-[0.25em] text-slate-400 font-[\'Space_Mono\',_monospace]">FastAPI · Celery · MySQL · Docker</span>
+                            </div>
+                            <div class="space-y-4">
+                                <h3 class="text-2xl font-semibold text-slate-900">Kobra</h3>
+                                <p class="text-base text-slate-600">
+                                    Kobra es la plataforma operativa personalizada que impulsa la gestión financiera de Cybersur. Automatiza facturación, cobros y flujos críticos con un backend resiliente y orquestación distribuida.
+                                </p>
+                                <ul class="space-y-2 text-sm text-slate-600">
+                                    <li class="flex items-start gap-3">
+                                        <span class="mt-1 h-2 w-2 rounded-full bg-blue-500"></span>
+                                        Automatización de avisos y recordatorios con pipelines programados.
+                                    </li>
+                                    <li class="flex items-start gap-3">
+                                        <span class="mt-1 h-2 w-2 rounded-full bg-blue-500"></span>
+                                        Cronjobs para exportaciones y limpieza de datos con trazabilidad completa.
+                                    </li>
+                                    <li class="flex items-start gap-3">
+                                        <span class="mt-1 h-2 w-2 rounded-full bg-blue-500"></span>
+                                        Arquitectura segura desplegada en Docker, preparada para escalar con la compañía.
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="flex flex-wrap items-center gap-4">
+                                <button type="button" data-modal-target="modal-kobra" class="inline-flex items-center gap-2 rounded-full bg-slate-900 px-5 py-2.5 text-sm font-semibold text-white transition hover:bg-slate-800 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-slate-900">
+                                    Leer más
+                                    <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                        <path d="m9 5 7 7-7 7" />
+                                    </svg>
+                                </button>
+                                <a href="projects.html#kobra" class="inline-flex items-center gap-2 text-sm font-semibold text-blue-600 transition hover:text-blue-700">
+                                    Case study
+                                    <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                        <path d="m9 5 7 7-7 7" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="flex flex-col gap-10 rounded-3xl border border-slate-200 bg-white/90 p-8 shadow-lg shadow-slate-900/5 transition hover:-translate-y-1 hover:shadow-xl lg:flex-row" data-animate>
+                        <figure class="flex w-full items-center justify-center rounded-2xl border border-slate-100 bg-slate-50/80 p-6 lg:w-64">
+                            <img src="assets/beatlist-logo.svg" alt="Identidad del proyecto BeatList" width="160" height="160" loading="lazy" class="h-32 w-32 object-contain" />
+                        </figure>
+                        <div class="flex w-full flex-col gap-6">
+                            <div class="flex flex-wrap items-center gap-3">
+                                <span class="rounded-full bg-amber-100 px-3 py-1 text-xs font-semibold text-amber-700">Plataforma musical</span>
+                                <span class="text-xs uppercase tracking-[0.25em] text-slate-400 font-[\'Space_Mono\',_monospace]">Flask · OAuth · MySQL · Spotify API</span>
+                            </div>
+                            <div class="space-y-4">
+                                <h3 class="text-2xl font-semibold text-slate-900">BeatList</h3>
+                                <p class="text-base text-slate-600">
+                                    BeatList transforma la experiencia de gestionar playlists. Centraliza administración avanzada, recomendaciones inteligentes y métricas auditables para tomar decisiones musicales precisas.
+                                </p>
+                                <ul class="space-y-2 text-sm text-slate-600">
+                                    <li class="flex items-start gap-3">
+                                        <span class="mt-1 h-2 w-2 rounded-full bg-amber-500"></span>
+                                        Creación de listas inteligentes basadas en reglas y hábitos de escucha.
+                                    </li>
+                                    <li class="flex items-start gap-3">
+                                        <span class="mt-1 h-2 w-2 rounded-full bg-amber-500"></span>
+                                        Reproductor web con animaciones fluidas y métricas en tiempo real.
+                                    </li>
+                                    <li class="flex items-start gap-3">
+                                        <span class="mt-1 h-2 w-2 rounded-full bg-amber-500"></span>
+                                        Backend Flask que gestiona OAuth y persistencia de estadísticas aprobadas por Spotify.
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="flex flex-wrap items-center gap-4">
+                                <button type="button" data-modal-target="modal-beatlist" class="inline-flex items-center gap-2 rounded-full bg-slate-900 px-5 py-2.5 text-sm font-semibold text-white transition hover:bg-slate-800 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-slate-900">
+                                    Leer más
+                                    <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                        <path d="m9 5 7 7-7 7" />
+                                    </svg>
+                                </button>
+                                <a href="projects.html#beatlist" class="inline-flex items-center gap-2 text-sm font-semibold text-blue-600 transition hover:text-blue-700">
+                                    Case study
+                                    <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                        <path d="m9 5 7 7-7 7" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="flex flex-col gap-10 rounded-3xl border border-slate-200 bg-white/90 p-8 shadow-lg shadow-slate-900/5 transition hover:-translate-y-1 hover:shadow-xl lg:flex-row" data-animate>
+                        <figure class="flex w-full items-center justify-center rounded-2xl border border-slate-100 bg-slate-50/80 p-6 lg:w-64">
+                            <img src="assets/mesasya-logo.svg" alt="Identidad del proyecto MesasYa" width="160" height="160" loading="lazy" class="h-32 w-32 object-contain" />
+                        </figure>
+                        <div class="flex w-full flex-col gap-6">
+                            <div class="flex flex-wrap items-center gap-3">
+                                <span class="rounded-full bg-emerald-100 px-3 py-1 text-xs font-semibold text-emerald-700">SaaS para restauración</span>
+                                <span class="text-xs uppercase tracking-[0.25em] text-slate-400 font-[\'Space_Mono\',_monospace]">Flask · Celery · Docker · Observabilidad</span>
+                            </div>
+                            <div class="space-y-4">
+                                <h3 class="text-2xl font-semibold text-slate-900">MesasYa</h3>
+                                <p class="text-base text-slate-600">
+                                    MesasYa digitaliza reservas multi-sede con dashboards, notificaciones automatizadas y control exhaustivo de ocupación. Un SaaS desplegado en producción que crece junto a restaurantes reales.
+                                </p>
+                                <ul class="space-y-2 text-sm text-slate-600">
+                                    <li class="flex items-start gap-3">
+                                        <span class="mt-1 h-2 w-2 rounded-full bg-emerald-500"></span>
+                                        Planos de sala interactivos con reglas por zonas, servicios y días especiales.
+                                    </li>
+                                    <li class="flex items-start gap-3">
+                                        <span class="mt-1 h-2 w-2 rounded-full bg-emerald-500"></span>
+                                        Motor de notificaciones para clientes y staff con workflows configurables.
+                                    </li>
+                                    <li class="flex items-start gap-3">
+                                        <span class="mt-1 h-2 w-2 rounded-full bg-emerald-500"></span>
+                                        Métricas y exportaciones para decisiones informadas respaldadas por infraestructura robusta.
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="flex flex-wrap items-center gap-4">
+                                <button type="button" data-modal-target="modal-mesaysa" class="inline-flex items-center gap-2 rounded-full bg-slate-900 px-5 py-2.5 text-sm font-semibold text-white transition hover:bg-slate-800 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-slate-900">
+                                    Leer más
+                                    <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                        <path d="m9 5 7 7-7 7" />
+                                    </svg>
+                                </button>
+                                <a href="projects.html#mesasya" class="inline-flex items-center gap-2 text-sm font-semibold text-blue-600 transition hover:text-blue-700">
+                                    Case study
+                                    <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                        <path d="m9 5 7 7-7 7" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="bg-white py-24">
+            <div class="mx-auto max-w-6xl px-6">
+                <div class="grid gap-12 lg:grid-cols-[1.1fr,0.9fr]">
+                    <div class="space-y-4" data-animate>
+                        <p class="text-xs font-semibold uppercase tracking-[0.3em] text-slate-500">Contacto</p>
+                        <h2 class="text-3xl font-semibold text-slate-900 sm:text-4xl">¿Hablamos de tu próximo proyecto?</h2>
+                        <p class="text-lg text-slate-600">
+                            Cuéntame qué necesitas automatizar o construir. Respondo personalmente cada mensaje para asegurar que la propuesta se adapte a tus objetivos.
+                        </p>
+                        <div class="space-y-2 text-sm text-slate-600">
+                            <p class="font-medium text-slate-500">También puedes escribirme directamente:</p>
+                            <a class="flex items-center gap-2 text-blue-600 transition hover:text-blue-700" href="mailto:nicoabgv@gmail.com">
+                                <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                    <path d="M4 4h16v16H4z" />
+                                    <path d="m4 7 8 6 8-6" />
+                                </svg>
+                                nicoabgv@gmail.com
+                            </a>
+                            <a class="flex items-center gap-2 text-blue-600 transition hover:text-blue-700" href="https://github.com/nicoabgv" target="_blank" rel="noreferrer">
+                                <svg class="h-4 w-4" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                                    <path fill-rule="evenodd" d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.2 11.39.6.11.82-.26.82-.58 0-.29-.01-1.07-.02-2.09-3.34.73-4.04-1.61-4.04-1.61-.55-1.4-1.35-1.77-1.35-1.77-1.1-.76.08-.74.08-.74 1.22.08 1.86 1.25 1.86 1.25 1.08 1.85 2.84 1.32 3.53 1.01.11-.78.42-1.32.76-1.62-2.67-.3-5.48-1.34-5.48-5.95 0-1.31.47-2.38 1.24-3.22-.12-.3-.54-1.52.12-3.17 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 6 0c2.29-1.55 3.3-1.23 3.3-1.23.66 1.65.24 2.87.12 3.17.77.84 1.24 1.91 1.24 3.22 0 4.62-2.81 5.65-5.49 5.95.43.37.81 1.1.81 2.22 0 1.6-.02 2.88-.02 3.27 0 .32.22.7.83.58C20.56 21.79 24 17.29 24 12c0-6.63-5.37-12-12-12Z" clip-rule="evenodd" />
+                                GitHub
+                            </a>
+                        </div>
+                    </div>
+                    <div class="rounded-3xl border border-slate-200 bg-slate-50/70 p-8 shadow-sm" data-animate>
+                        <form class="space-y-6" action="https://formsubmit.co/nicoabgv@gmail.com" method="POST">
+                            <div>
+                                <label class="block text-sm font-semibold text-slate-700" for="name">Nombre</label>
+                                <input class="mt-2 w-full rounded-2xl border border-slate-200 bg-white px-4 py-3 text-sm text-slate-700 shadow-sm focus:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-200" type="text" id="name" name="name" placeholder="Tu nombre" required />
+                            </div>
+                            <div>
+                                <label class="block text-sm font-semibold text-slate-700" for="email">Email</label>
+                                <input class="mt-2 w-full rounded-2xl border border-slate-200 bg-white px-4 py-3 text-sm text-slate-700 shadow-sm focus:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-200" type="email" id="email" name="email" placeholder="nombre@empresa.com" required />
+                            </div>
+                            <div>
+                                <label class="block text-sm font-semibold text-slate-700" for="message">Proyecto</label>
+                                <textarea class="mt-2 min-h-[140px] w-full rounded-2xl border border-slate-200 bg-white px-4 py-3 text-sm text-slate-700 shadow-sm focus:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-200" id="message" name="message" placeholder="Cuéntame objetivos, plazos o retos técnicos" required></textarea>
+                            </div>
+                            <input type="hidden" name="_captcha" value="false" />
+                            <button type="submit" class="inline-flex w-full items-center justify-center gap-2 rounded-full bg-blue-600 px-6 py-3 text-sm font-semibold text-white shadow-lg shadow-blue-600/20 transition hover:bg-blue-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600">
+                                Enviar mensaje
+                                <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                    <path d="m5 12 7 7 7-7" />
+                                    <path d="M12 5v14" />
+                                </svg>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="border-t border-slate-200 bg-white/80">
+        <div class="mx-auto flex max-w-6xl flex-col gap-4 px-6 py-8 text-sm text-slate-500 md:flex-row md:items-center md:justify-between">
+            <p>&copy; <span id="year"></span> Nicolás Álvarez. Todos los derechos reservados.</p>
+            <div class="flex flex-wrap items-center gap-4">
+                <a class="transition hover:text-blue-600" href="projects.html">Case studies</a>
+                <a class="transition hover:text-blue-600" href="https://github.com/nicoabgv" target="_blank" rel="noreferrer">GitHub</a>
+                <a class="transition hover:text-blue-600" href="mailto:nicoabgv@gmail.com">Contacto directo</a>
+            </div>
+        </div>
     </footer>
 
-    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
-    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
-    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
-    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script defer src="scripts.js"></script>
+    <!-- Modales de proyectos -->
+    <div id="modal-kobra" data-modal class="fixed inset-0 z-50 hidden items-center justify-center px-4">
+        <div data-modal-overlay class="absolute inset-0 bg-slate-900/70"></div>
+        <article class="relative z-10 max-h-[90vh] w-full max-w-3xl overflow-y-auto rounded-3xl border border-slate-200 bg-white p-8 shadow-2xl">
+            <div class="flex items-start justify-between gap-6">
+                <div>
+                    <p class="text-xs font-semibold uppercase tracking-[0.3em] text-slate-500">Kobra</p>
+                    <h3 class="mt-2 text-2xl font-semibold text-slate-900">Infraestructura financiera que elimina fricciones.</h3>
+                </div>
+                <button type="button" class="rounded-full border border-slate-200 p-2 text-slate-500 transition hover:border-slate-400 hover:text-slate-700" data-modal-close aria-label="Cerrar modal">
+                    <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <path d="m7 7 10 10M7 17 17 7" />
+                    </svg>
+                </button>
+            </div>
+            <div class="mt-6 space-y-6 text-sm text-slate-600">
+                <p>
+                    Kobra es la plataforma empresarial a medida que diseñamos para impulsar la operativa de Cybersur. Construida sobre un stack robusto de <strong>FastAPI, Celery, MySQL y Docker</strong>, centraliza la gestión de facturas y cobros con flujos automatizados.
+                </p>
+                <p>
+                    Desde el envío programado de avisos y recordatorios hasta la ejecución de cronjobs para exportaciones y tareas de limpieza de datos, cada pieza está diseñada para eliminar fricciones y mantener la operación visible en tiempo real.
+                </p>
+                <ul class="space-y-2">
+                    <li class="flex items-start gap-3">
+                        <span class="mt-1 h-2 w-2 rounded-full bg-blue-500"></span>
+                        Arquitectura modular que permite integrar nuevos servicios financieros sin interrupciones.
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <span class="mt-1 h-2 w-2 rounded-full bg-blue-500"></span>
+                        Paneles internos con métricas de cobranza y SLA automatizados para cada cliente.
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <span class="mt-1 h-2 w-2 rounded-full bg-blue-500"></span>
+                        Canalizaciones de datos con validaciones y auditoría para cumplir estándares de ciberseguridad.
+                    </li>
+                </ul>
+                <div class="rounded-2xl border border-dashed border-slate-200 bg-slate-50/80 p-4">
+                    <p class="text-xs font-semibold uppercase tracking-[0.3em] text-slate-500">Listo para más</p>
+                    <p class="mt-2 text-sm text-slate-600">Espacio reservado para diagramas, métricas y documentación ampliada.</p>
+                </div>
+            </div>
+        </article>
+    </div>
+
+    <div id="modal-beatlist" data-modal class="fixed inset-0 z-50 hidden items-center justify-center px-4">
+        <div data-modal-overlay class="absolute inset-0 bg-slate-900/70"></div>
+        <article class="relative z-10 max-h-[90vh] w-full max-w-3xl overflow-y-auto rounded-3xl border border-slate-200 bg-white p-8 shadow-2xl">
+            <div class="flex items-start justify-between gap-6">
+                <div>
+                    <p class="text-xs font-semibold uppercase tracking-[0.3em] text-slate-500">BeatList</p>
+                    <h3 class="mt-2 text-2xl font-semibold text-slate-900">La suite de playlists que Spotify no ofrece.</h3>
+                </div>
+                <button type="button" class="rounded-full border border-slate-200 p-2 text-slate-500 transition hover:border-slate-400 hover:text-slate-700" data-modal-close aria-label="Cerrar modal">
+                    <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <path d="m7 7 10 10M7 17 17 7" />
+                    </svg>
+                </button>
+            </div>
+            <div class="mt-6 space-y-6 text-sm text-slate-600">
+                <p>
+                    BeatList es una plataforma web pensada para melómanos, curadores y creadores de contenido que quieren ir más allá del gestor de playlists de Spotify. Centraliza administración avanzada, descubrimiento y analítica en un solo lugar.
+                </p>
+                <p>
+                    El backend en <strong>Flask</strong> gestiona la autenticación OAuth y el intercambio con la API oficial de Spotify, mientras que el frontend dinámico orquesta visualizaciones, recomendaciones y un reproductor web con animaciones fluidas.
+                </p>
+                <ul class="space-y-2">
+                    <li class="flex items-start gap-3">
+                        <span class="mt-1 h-2 w-2 rounded-full bg-amber-500"></span>
+                        Fusión, depuración y reorganización de playlists con reglas personalizadas.
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <span class="mt-1 h-2 w-2 rounded-full bg-amber-500"></span>
+                        Motor de recomendaciones basado en artistas y géneros favoritos.
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <span class="mt-1 h-2 w-2 rounded-full bg-amber-500"></span>
+                        Paneles con métricas de energía, bailabilidad y tendencias temporales para comprender la evolución sonora.
+                    </li>
+                </ul>
+                <div class="rounded-2xl border border-dashed border-slate-200 bg-slate-50/80 p-4">
+                    <p class="text-xs font-semibold uppercase tracking-[0.3em] text-slate-500">Listo para más</p>
+                    <p class="mt-2 text-sm text-slate-600">Reservado para galerías, flujos de usuarios y documentación técnica extendida.</p>
+                </div>
+            </div>
+        </article>
+    </div>
+
+    <div id="modal-mesaysa" data-modal class="fixed inset-0 z-50 hidden items-center justify-center px-4">
+        <div data-modal-overlay class="absolute inset-0 bg-slate-900/70"></div>
+        <article class="relative z-10 max-h-[90vh] w-full max-w-3xl overflow-y-auto rounded-3xl border border-slate-200 bg-white p-8 shadow-2xl">
+            <div class="flex items-start justify-between gap-6">
+                <div>
+                    <p class="text-xs font-semibold uppercase tracking-[0.3em] text-slate-500">MesasYa</p>
+                    <h3 class="mt-2 text-2xl font-semibold text-slate-900">Reservas inteligentes para cadenas de restauración.</h3>
+                </div>
+                <button type="button" class="rounded-full border border-slate-200 p-2 text-slate-500 transition hover:border-slate-400 hover:text-slate-700" data-modal-close aria-label="Cerrar modal">
+                    <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <path d="m7 7 10 10M7 17 17 7" />
+                    </svg>
+                </button>
+            </div>
+            <div class="mt-6 space-y-6 text-sm text-slate-600">
+                <p>
+                    MesasYa es una plataforma <strong>SaaS en producción</strong> que digitaliza por completo la gestión de reservas para restaurantes con múltiples sedes. Ofrece control granular de ocupación, automatización de comunicaciones y estadísticas en vivo.
+                </p>
+                <p>
+                    El backend, construido sobre <strong>Flask, Celery, MySQL y Docker</strong>, garantiza estabilidad y despliegues confiables incluso en entornos de alta demanda. La arquitectura se complementa con tableros analíticos y exportación de datos.
+                </p>
+                <ul class="space-y-2">
+                    <li class="flex items-start gap-3">
+                        <span class="mt-1 h-2 w-2 rounded-full bg-emerald-500"></span>
+                        Planos de sala interactivos y configurables por sede, zona y servicio.
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <span class="mt-1 h-2 w-2 rounded-full bg-emerald-500"></span>
+                        Notificaciones automáticas para equipos internos y clientes finales.
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <span class="mt-1 h-2 w-2 rounded-full bg-emerald-500"></span>
+                        Indicadores de demanda, capacidad y rendimiento exportables para decisiones estratégicas.
+                    </li>
+                </ul>
+                <div class="rounded-2xl border border-dashed border-slate-200 bg-slate-50/80 p-4">
+                    <p class="text-xs font-semibold uppercase tracking-[0.3em] text-slate-500">Listo para más</p>
+                    <p class="mt-2 text-sm text-slate-600">Sección preparada para diagramas de arquitectura, flujos de colas y métricas de operación.</p>
+                </div>
+            </div>
+        </article>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+    <script src="scripts.js" defer></script>
 </body>
 </html>
