@@ -2,61 +2,54 @@
 
 ## Descripción
 
-Esta es la página personal de **Nicolás Álvarez**, Ingeniero de Software especializado en **Ciberseguridad** y **Desarrollo de Aplicaciones Web**. En esta página, presento información sobre mí, mis habilidades técnicas y profesionales, mis proyectos destacados, y ofrezco una forma de contacto directa.
-
-El objetivo de esta página es compartir mis experiencias, logros y proyectos, además de permitir a potenciales empleadores y colaboradores conocer mi trabajo de una manera visualmente atractiva y profesional.
+Portfolio minimalista y profesional construido con **Tailwind CSS** para presentar el trabajo de Nicolás Álvarez como ingeniero de software. El sitio enfatiza proyectos en producción, experiencia técnica y permite escalar con secciones ampliables.
 
 ## Características
 
-- **About Me:** Información general sobre mi carrera, especializaciones y datos de contacto.
-- **Skills:** Visualización de habilidades técnicas y profesionales con un diseño dinámico y visualmente atractivo.
-- **Currículum:** Listado de mi educación, certificaciones, y proyectos destacados.
-- **Portfolio:** Sección dedicada a los proyectos más relevantes que he desarrollado, con enlaces directos para explorarlos.
-- **Formulario de Contacto:** Un formulario funcional que permite a los usuarios ponerse en contacto directamente conmigo.
-- **Diseño Responsivo:** Adaptado para verse correctamente en dispositivos móviles y de escritorio.
+- **Hero interactivo:** Mensaje principal con animaciones suaves y CTA hacia los proyectos.
+- **Sobre mí:** Resumen profesional con datos clave y enlaces directos.
+- **Skills / Stack:** Categorías de Backend, Frontend, DevOps y Ciberseguridad con chips tecnológicos.
+- **Proyectos destacados:** Cards amplias con logos en SVG, bullets de valor y modales con la descripción extendida de Kobra, BeatList y MesasYa.
+- **Case studies completos:** Página `projects.html` con espacio para roadmap, métricas y material adicional.
+- **Contacto optimizado:** Formulario listo para integrarse con FormSubmit y enlaces rápidos a email, LinkedIn y GitHub.
+- **Animaciones accesibles:** Transiciones con GSAP e integración con `prefers-reduced-motion`.
+- **SEO y sharing:** Metadatos para buscadores y Open Graph/Twitter Cards.
 
 ## Tecnologías Utilizadas
 
 - **HTML5**
-- **CSS3**
-- **Bootstrap 5**
-- **JavaScript (GSAP, Parallax.js)**
-- **GitHub Pages** para alojar la página.
-- **Formspree** para gestionar el formulario de contacto sin necesidad de backend.
+- **Tailwind CSS** (CDN)
+- **JavaScript** para interacciones, modales y GSAP
+- **GSAP + ScrollTrigger** para animaciones suaves
+- **FormSubmit** para procesar el formulario de contacto
+- **GitHub Pages** para el hosting
 
 ## Estructura del Proyecto
 
-El proyecto está estructurado de manera simple con archivos HTML, CSS y JavaScript, y está alojado en GitHub Pages para facilitar su visualización online.
-
-- `index.html`: Página principal que contiene las secciones 'About Me', 'Skills', 'Curriculum', 'Portfolio', y 'Contacto'.
-- `projects.html`: Página con los proyectos que contienen información mas detallada sobre ellos.
-- `styles.css`: Archivo que contiene todos los estilos personalizados para la página, incluyendo animaciones y la visualización de habilidades.
-- `scripts.js`: Archivo JavaScript para la animación de elementos y la interacción con el usuario.
-- `assets/`: Carpeta con las imágenes utilizadas en la página, como íconos, ilustraciones, y gráficos de fondo.
+- `index.html`: Landing principal con hero, sobre mí, skills, proyectos y contacto.
+- `projects.html`: Case studies extendidos con espacio para documentación futura.
+- `scripts.js`: Lógica de navegación, GSAP, parallax y modales accesibles.
+- `assets/`: Logos en SVG, favicon y recursos descargables (CV).
 
 ## Proyectos Destacados
 
-### [BeatList](https://beatlist.es)
-**BeatList** es una plataforma web avanzada para gestionar, analizar y descubrir música a través de la API de Spotify.  
-Ofrece funcionalidades como la organización inteligente de playlists, análisis detallado de hábitos musicales y recomendaciones personalizadas.  
-Además, **ha sido oficialmente aprobada por Spotify**, lo que garantiza una integración completa, acceso extendido y máxima fiabilidad en todas sus funciones.
+### [Kobra](projects.html#kobra)
+Plataforma financiera a medida para Cybersur. Automatiza facturación, recordatorios y exportaciones mediante FastAPI, Celery, MySQL y Docker.
 
-### [MesasYa](https://mesasya.es)
-**MesasYa** es una solución profesional para la gestión integral de reservas en restaurantes.  
-Permite administrar de forma eficiente mesas, zonas y servicios, optimizando la ocupación y agilizando todos los procesos del local.  
-Incluye notificaciones en tiempo real, asignación inteligente de mesas y herramientas avanzadas de análisis, todo en una plataforma robusta, flexible y en funcionamiento en entornos reales.
+### [BeatList](projects.html#beatlist)
+Suite web para power users de Spotify. Gestiona playlists, recomendaciones y métricas avanzadas con Flask, OAuth y MySQL.
+
+### [MesasYa](projects.html#mesasya)
+SaaS de reservas multi-sede en producción. Controla ocupación, notificaciones y analítica para cadenas de restaurantes con Flask, Celery y Docker.
 
 ## Cómo Ver el Proyecto
 
-La página está alojada en GitHub Pages y es accesible desde cualquier navegador:
+El portfolio está publicado en GitHub Pages:
 
 - [Ver página en vivo](https://nicoabgv.github.io/)
 
 ## Contacto
 
-Si deseas colaborar o conocer más acerca de mí, no dudes en ponerte en contacto:
-
 - **Email:** [nicoabgv@gmail.com](mailto:nicoabgv@gmail.com)
-- **Teléfono:** [+601600034](tel:+601600034)
-- **LinkedIn:** [Enlace a LinkedIn](https://www.linkedin.com/in/nicol%C3%A1s-%C3%A1lvarez-becerra-201773267/)
-- **GitHub:** [Enlace a GitHub](https://github.com/nicoabgv)
+- **LinkedIn:** [linkedin.com/in/nicoabgv](https://www.linkedin.com/in/nicoabgv)
+- **GitHub:** [github.com/nicoabgv](https://github.com/nicoabgv)

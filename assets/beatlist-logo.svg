@@ -1,0 +1,20 @@
+<svg width="160" height="160" viewBox="0 0 160 160" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Logotipo del proyecto BeatList</title>
+  <desc id="desc">Letra B minimalista sobre degradado cálido.</desc>
+  <defs>
+    <linearGradient id="beatlist-gradient" x1="26" y1="26" x2="134" y2="134" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fcd34d" />
+      <stop offset="1" stop-color="#f97316" />
+    </linearGradient>
+    <radialGradient id="beatlist-light" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(60 52) rotate(50) scale(68)">
+      <stop offset="0" stop-color="#fff7ed" stop-opacity="0.9" />
+      <stop offset="1" stop-color="#fed7aa" stop-opacity="0.2" />
+    </radialGradient>
+  </defs>
+  <rect x="12" y="12" width="136" height="136" rx="36" fill="url(#beatlist-gradient)" />
+  <rect x="24" y="24" width="112" height="112" rx="28" fill="url(#beatlist-light)" />
+  <path d="M60 38h28c18.225 0 30 10.775 30 26 0 10.512-5.574 19.087-14.971 22.916C114.767 90.278 120 98.103 120 109c0 16.125-12.525 27-31.75 27H60V38Z" fill="#1c1917" fill-opacity="0.92" />
+  <path d="M76 54h11.5c8.65 0 14.5 4.748 14.5 11.75S96.15 77.5 87.5 77.5H76V54Z" fill="#f59e0b" />
+  <path d="M76 94h13c8.95 0 14.5 4.85 14.5 11.75 0 6.9-5.55 11.75-14.5 11.75H76V94Z" fill="#fbbf24" />
+  <circle cx="58" cy="56" r="6" fill="#1c1917" opacity="0.8" />
+</svg>

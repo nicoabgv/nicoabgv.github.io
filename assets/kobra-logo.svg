@@ -1,0 +1,19 @@
+<svg width="160" height="160" viewBox="0 0 160 160" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Logotipo del proyecto Kobra</title>
+  <desc id="desc">Figura geométrica con degradado azul y una letra K estilizada.</desc>
+  <defs>
+    <linearGradient id="kobra-gradient" x1="28" y1="18" x2="132" y2="142" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#1d4ed8" />
+      <stop offset="1" stop-color="#0f172a" />
+    </linearGradient>
+    <linearGradient id="kobra-highlight" x1="52" y1="36" x2="112" y2="120" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#e0f2fe" stop-opacity="0.9" />
+      <stop offset="1" stop-color="#bae6fd" stop-opacity="0.3" />
+    </linearGradient>
+  </defs>
+  <rect x="12" y="12" width="136" height="136" rx="36" fill="url(#kobra-gradient)" />
+  <path d="M40 40h20v80H40z" fill="url(#kobra-highlight)" />
+  <path d="M78 80L112 40h20l-36 40 36 40h-20L78 80Z" fill="#f8fafc" />
+  <path d="M60 40h16v80H60z" fill="#f8fafc" opacity="0.85" />
+  <circle cx="52" cy="52" r="8" fill="#38bdf8" />
+</svg>

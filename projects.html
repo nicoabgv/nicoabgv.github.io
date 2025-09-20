@@ -1,171 +1,275 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" class="scroll-smooth">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Proyectos - Nicolás Álvarez</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <link rel="icon" type="image/ico" href="assets/logo.ico">
-    <link rel="stylesheet" href="projects.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Case Studies · Nicolás Álvarez</title>
+    <meta name="description" content="Case studies detallados de Kobra, BeatList y MesasYa. Profundiza en arquitectura, automatización y resultados de cada producto." />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Case Studies · Nicolás Álvarez" />
+    <meta property="og:description" content="Detalles técnicos y de negocio de plataformas construidas para empresas, creadores y restaurantes." />
+    <meta property="og:image" content="assets/logo.png" />
+    <meta property="og:url" content="https://nicoabgv.github.io/projects.html" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Case Studies · Nicolás Álvarez" />
+    <meta name="twitter:description" content="Profundiza en Kobra, BeatList y MesasYa con arquitectura, flujos y roadmap." />
+    <meta name="twitter:image" content="assets/logo.png" />
+    <link rel="canonical" href="https://nicoabgv.github.io/projects.html" />
+    <link rel="icon" type="image/png" href="assets/logo.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@500;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.4.4/dist/tailwind.min.css" rel="stylesheet" />
+    <style>
+        :root {
+            color-scheme: light;
+        }
+    </style>
 </head>
-<body>
-    <!-- Header -->
-    <header class="header-projects" id="header">
-        <h1>Proyectos de Nicolás Álvarez</h1>
-        <p>Ingeniero de Software | Ciberseguridad | Desarrollo de Aplicaciones Web</p>
-    </header>
-    
-    <!-- Sección de Proyectos Destacados -->
-    <section id="proyectos" class="projects">
-        <div class="container">
-            <h2 class="text-center mb-4" style="color: #FFD700;">Proyectos Destacados</h2>
-            <div class="row">
-                
-                <!-- Proyecto: BeatList -->
-                <div class="col-md-6 mb-4">
-                    <div class="project-card">
-                        <h3>BeatList</h3>
-                        <p>
-                            BeatList es una plataforma web avanzada para gestionar, descubrir y analizar tu música de Spotify de forma intuitiva y visual.<br>
-                            <strong>BeatList ha sido oficialmente aprobada por Spotify,</strong> lo que garantiza integración completa, acceso extendido y máxima fiabilidad.<br>
-                            Principales características:
-                        </p>
-                        <ul>
-                            <li>Fusiona, ordena y organiza tus playlists de forma eficiente</li>
-                            <li>Analiza en profundidad tus estadísticas musicales y hábitos de escucha</li>
-                            <li>Reproductor web interactivo con historial y animaciones</li>
-                            <li>Genera playlists personalizadas y descubre nuevos artistas</li>
-                        </ul>
-                        <p>Desarrollado con <strong>Flask</strong>, <strong>JavaScript</strong> y la <strong>API de Spotify</strong>.</p>
-                        <a href="https://beatlist.es" target="_blank">Explora BeatList</a>
-                    </div>
-                </div>
-
-                <!-- Proyecto: MesasYa -->
-                <div class="col-md-6 mb-4">
-                    <div class="project-card">
-                        <h3>MesasYa</h3>
-                        <p>
-                            MesasYa es una solución integral y profesional para la gestión de reservas en restaurantes.<br>
-                            Está diseñada para optimizar la ocupación y agilizar todos los procesos, desde la administración de mesas hasta la comunicación con los clientes.<br>
-                            Principales características:
-                        </p>
-                        <ul>
-                            <li>Gestión avanzada de mesas, zonas, servicios y turnos</li>
-                            <li>Asignación automática e inteligente de reservas</li>
-                            <li>Notificaciones y recordatorios automáticos en tiempo real</li>
-                            <li>Panel de control con estadísticas, planos interactivos y exportación de datos</li>
-                        </ul>
-                        <p>
-                            Desarrollado con <strong>Python</strong>, <strong>Flask</strong>, <strong>JavaScript</strong> y <strong>MySQL</strong>. <br>
-                            Actualmente funcionando en entornos reales y en evolución continua.
-                        </p>
-                        <a href="https://mesasya.es" target="_blank">Descubre MesasYa</a>
-                    </div>
-                </div>
-
-                <!-- Proyecto: Spotify Analyzer -->
-                <div class="col-md-6 mb-4">
-                    <div class="project-card">
-                        <h3>Spotify Analyzer</h3>
-                        <p>Spotify Analyzer es una herramienta en Python para visualizar y analizar todo tu historial de Spotify a partir de los archivos JSON exportados. Algunas funciones:</p>
-                        <ul>
-                            <li>Número total de canciones escuchadas y tiempo total</li>
-                            <li>Top canciones y artistas</li>
-                            <li>Estadísticas anuales y patrones diarios</li>
-                            <li>Exportación de resultados a Excel</li>
-                        </ul>
-                        <p>Desarrollado con <strong>Python</strong>, <strong>matplotlib</strong> y <strong>tkinter</strong>.</p>
-                        <a href="https://github.com/nicoabgv/Spotify-Reader" target="_blank">Ver en GitHub</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="otros-proyectos" class="projects">
-        <div class="container">
-            <h2 class="text-center mb-4" style="color: #FFD700;">Otros Proyectos</h2>
-            <div class="row">
-
-                <div class="col-md-6 mb-4">
-                    <div class="project-card">
-                        <h3>Skill para Alexa</h3>
-                        <p>Skill para Amazon Alexa que informa sobre mi horario universitario en tiempo real.</p>
-                        <ul>
-                            <li><strong>Node.js</strong> para backend</li>
-                            <li>Integración con la <strong>API de Alexa</strong></li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="col-md-6 mb-4">
-                    <div class="project-card">
-                        <h3>Estación Meteorológica Arduino</h3>
-                        <p>
-                            Proyecto de estación meteorológica autónoma basada en <strong>Arduino</strong>, capaz de medir temperatura, humedad y presión ambiental.<br>
-                            Incluye almacenamiento de datos en tarjeta SD y visualización en tiempo real por pantalla LCD.
-                        </p>
-                        <ul>
-                            <li>Sensores DHT11/DHT22 y BMP180</li>
-                            <li>Datos históricos accesibles desde el propio dispositivo</li>
-                            <li>Programación en C++ (Arduino IDE)</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="col-md-6 mb-4">
-                    <div class="project-card">
-                        <h3>Battle Royale en Java</h3>
-                        <p>
-                            Juego multijugador estilo battle royale desarrollado desde cero en <strong>Java</strong>.<br>
-                            Implementa lógica de zonas seguras, botín aleatorio, y sistema de eliminación por turnos.
-                        </p>
-                        <ul>
-                            <li>Motor gráfico básico en Java Swing</li>
-                            <li>Algoritmos de juego y físicas propios</li>
-                            <li>Gestión de partidas, usuarios y ranking</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    
-    <footer class="footer py-4 bg-dark text-white text-center">
-        <p>Conecta conmigo en 
-            <a href="https://www.linkedin.com/in/nicoabgv/" class="text-white">
-                <i class="fab fa-linkedin"></i> LinkedIn
-            </a> 
-            o 
-            <a href="https://github.com/nicoabgv" class="text-white">
-                <i class="fab fa-github"></i> GitHub
+<body class="bg-slate-50 font-[\'Inter\',_sans-serif] text-slate-900 antialiased">
+    <header data-nav class="fixed inset-x-0 top-0 z-40 bg-white/80 backdrop-blur transition duration-300">
+        <nav class="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
+            <a href="index.html#hero" class="flex items-center gap-2 text-lg font-semibold tracking-tight text-slate-900 transition hover:text-blue-600" aria-label="Volver al inicio">
+                <span class="flex h-10 w-10 items-center justify-center rounded-full bg-slate-900 text-sm font-[\'Space_Mono\',_monospace] font-bold uppercase tracking-widest text-white">NA</span>
+                <span class="hidden sm:block">Portfolio</span>
             </a>
-        </p>
+            <button type="button" class="flex h-10 w-10 items-center justify-center rounded-full border border-slate-200 text-slate-700 transition hover:border-blue-500 hover:text-blue-600 lg:hidden" aria-controls="mobile-nav" aria-expanded="false" data-mobile-toggle>
+                <span class="sr-only">Abrir menú</span>
+                <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M4 7h16M4 12h16M4 17h16" />
+                </svg>
+            </button>
+            <div class="hidden items-center gap-8 text-sm font-medium text-slate-700 lg:flex">
+                <a class="transition hover:text-blue-600" href="#kobra">Kobra</a>
+                <a class="transition hover:text-blue-600" href="#beatlist">BeatList</a>
+                <a class="transition hover:text-blue-600" href="#mesasya">MesasYa</a>
+                <a class="inline-flex items-center gap-2 rounded-full border border-slate-200 px-4 py-2 text-xs font-semibold uppercase tracking-widest text-slate-700 transition hover:border-blue-500 hover:text-blue-600" href="index.html#contact">
+                    Contacto
+                </a>
+            </div>
+        </nav>
+        <div id="mobile-nav" data-mobile-menu class="hidden border-t border-slate-200 bg-white/95 px-6 py-4 shadow-lg transition duration-300 lg:hidden">
+            <div class="flex flex-col gap-3 text-sm font-medium text-slate-700">
+                <a class="transition hover:text-blue-600" href="#kobra">Kobra</a>
+                <a class="transition hover:text-blue-600" href="#beatlist">BeatList</a>
+                <a class="transition hover:text-blue-600" href="#mesasya">MesasYa</a>
+                <a class="inline-flex items-center gap-2 rounded-full border border-slate-200 px-4 py-2 text-xs font-semibold uppercase tracking-widest text-slate-700 transition hover:border-blue-500 hover:text-blue-600" href="index.html#contact">
+                    Contacto
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main class="pt-28">
+        <section class="relative overflow-hidden py-24">
+            <div class="pointer-events-none absolute inset-0 -z-10 bg-gradient-to-b from-slate-100 via-white to-white"></div>
+            <div class="mx-auto max-w-6xl px-6">
+                <div class="flex flex-col gap-10 lg:flex-row lg:items-end lg:justify-between">
+                    <div class="space-y-6" data-animate>
+                        <p class="text-xs font-semibold uppercase tracking-[0.3em] text-slate-500">Case studies</p>
+                        <h1 class="text-4xl font-semibold text-slate-900 sm:text-5xl">De la visión al despliegue: historias de producto completas.</h1>
+                        <p class="max-w-3xl text-lg text-slate-600">
+                            Cada proyecto nace de un reto distinto. Aquí encontrarás las decisiones de arquitectura, flujos operativos y aprendizajes que permitieron lanzar soluciones confiables y medibles.
+                        </p>
+                    </div>
+                    <div class="rounded-3xl border border-slate-200 bg-white/80 p-6 shadow-sm" data-animate>
+                        <p class="text-xs font-semibold uppercase tracking-[0.3em] text-slate-500">Índice</p>
+                        <ul class="mt-4 space-y-3 text-sm text-slate-600">
+                            <li><a class="inline-flex items-center gap-2 text-blue-600 transition hover:text-blue-700" href="#kobra">01 — Kobra <span class="text-xs text-slate-400">Fintech interna</span></a></li>
+                            <li><a class="inline-flex items-center gap-2 text-blue-600 transition hover:text-blue-700" href="#beatlist">02 — BeatList <span class="text-xs text-slate-400">Experiencia musical</span></a></li>
+                            <li><a class="inline-flex items-center gap-2 text-blue-600 transition hover:text-blue-700" href="#mesasya">03 — MesasYa <span class="text-xs text-slate-400">SaaS restauración</span></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="kobra" class="border-y border-slate-200 bg-white py-24">
+            <div class="mx-auto max-w-6xl space-y-12 px-6">
+                <div class="flex flex-col gap-6 md:flex-row md:items-center md:justify-between" data-animate>
+                    <div class="space-y-3">
+                        <p class="text-xs font-semibold uppercase tracking-[0.3em] text-slate-500">Case study 01</p>
+                        <h2 class="text-3xl font-semibold text-slate-900 sm:text-4xl">Kobra — Plataforma financiera para Cybersur</h2>
+                    </div>
+                    <img src="assets/kobra-logo.svg" alt="Logo Kobra" width="140" height="140" loading="lazy" class="h-24 w-24 rounded-3xl border border-slate-100 bg-slate-50 p-4" />
+                </div>
+                <div class="grid gap-10 lg:grid-cols-[1.4fr,1fr]" data-animate>
+                    <article class="space-y-6 text-base text-slate-600">
+                        <p>
+                            Kobra es la plataforma empresarial a medida que diseñamos para impulsar la operativa de Cybersur. Construida sobre un stack robusto de <strong>FastAPI, Celery, MySQL y Docker</strong>, centraliza facturación, cobros y automatiza comunicaciones críticas.
+                        </p>
+                        <p>
+                            Desde el envío programado de avisos y recordatorios hasta la ejecución de cronjobs para exportaciones y tareas de limpieza de datos, eliminamos fricciones en el ciclo completo de cobranza. El sistema opera como columna vertebral de los procesos financieros de la compañía.
+                        </p>
+                        <div class="rounded-3xl border border-slate-200 bg-slate-50/70 p-6">
+                            <h3 class="text-sm font-semibold uppercase tracking-widest text-slate-500">Resultados clave</h3>
+                            <ul class="mt-4 space-y-3">
+                                <li class="flex items-start gap-3"><span class="mt-1 h-2 w-2 rounded-full bg-blue-500"></span>Reducción del tiempo de seguimiento de facturas en un 60% gracias a recordatorios automatizados.</li>
+                                <li class="flex items-start gap-3"><span class="mt-1 h-2 w-2 rounded-full bg-blue-500"></span>Exportaciones contables diarias con validaciones automáticas y trazabilidad completa.</li>
+                                <li class="flex items-start gap-3"><span class="mt-1 h-2 w-2 rounded-full bg-blue-500"></span>Dashboards internos con indicadores de cobro, SLA y alertas proactivas.</li>
+                            </ul>
+                        </div>
+                        <div class="grid gap-4 md:grid-cols-2">
+                            <div class="rounded-3xl border border-dashed border-blue-200 bg-blue-50/70 p-6">
+                                <h4 class="text-sm font-semibold text-blue-700">Arquitectura</h4>
+                                <p class="mt-2 text-sm">Servicios desacoplados, colas de tareas con Celery y workers escalables en contenedores Docker.</p>
+                            </div>
+                            <div class="rounded-3xl border border-dashed border-slate-200 bg-white p-6">
+                                <h4 class="text-sm font-semibold text-slate-700">Seguridad</h4>
+                                <p class="mt-2 text-sm">Hardening, auditorías y cifrado de datos sensibles tanto en tránsito como en reposo.</p>
+                            </div>
+                        </div>
+                    </article>
+                    <aside class="space-y-6">
+                        <div class="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm">
+                            <h3 class="text-sm font-semibold uppercase tracking-widest text-slate-500">Stack</h3>
+                            <ul class="mt-4 space-y-2 text-sm text-slate-600">
+                                <li>FastAPI · Python 3.11</li>
+                                <li>Celery + Redis</li>
+                                <li>MySQL administrado</li>
+                                <li>Docker Compose + CI/CD</li>
+                            </ul>
+                        </div>
+                        <div class="rounded-3xl border border-dashed border-slate-200 bg-slate-50/80 p-6">
+                            <h3 class="text-sm font-semibold uppercase tracking-widest text-slate-500">Próximos pasos</h3>
+                            <p class="mt-2 text-sm text-slate-600">Integraciones con ERPs externos y tablero financiero con métricas avanzadas.</p>
+                        </div>
+                        <div class="rounded-3xl border border-slate-200 bg-white/90 p-6 shadow-sm">
+                            <h3 class="text-sm font-semibold uppercase tracking-widest text-slate-500">Espacio para material extendido</h3>
+                            <p class="mt-2 text-sm text-slate-600">Incluye diagramas de flujo, capturas de procesos y documentación adicional cuando estén listos.</p>
+                        </div>
+                    </aside>
+                </div>
+            </div>
+        </section>
+
+        <section id="beatlist" class="border-b border-slate-200 bg-slate-50 py-24">
+            <div class="mx-auto max-w-6xl space-y-12 px-6">
+                <div class="flex flex-col gap-6 md:flex-row md:items-center md:justify-between" data-animate>
+                    <div class="space-y-3">
+                        <p class="text-xs font-semibold uppercase tracking-[0.3em] text-slate-500">Case study 02</p>
+                        <h2 class="text-3xl font-semibold text-slate-900 sm:text-4xl">BeatList — Inteligencia musical para power users</h2>
+                    </div>
+                    <img src="assets/beatlist-logo.svg" alt="Logo BeatList" width="140" height="140" loading="lazy" class="h-24 w-24 rounded-3xl border border-slate-100 bg-slate-50 p-4" />
+                </div>
+                <div class="grid gap-10 lg:grid-cols-[1.4fr,1fr]" data-animate>
+                    <article class="space-y-6 text-base text-slate-600">
+                        <p>
+                            BeatList es una plataforma web pensada para melómanos, curadores y creadores de contenido que quieren ir más allá del limitado gestor de playlists de Spotify. Centraliza administración avanzada, descubrimiento y analítica en una sola experiencia digital.
+                        </p>
+                        <p>
+                            La aplicación permite fusionar, depurar y reorganizar playlists con precisión, crear listas inteligentes basadas en reglas, explorar recomendaciones nutridas por tus artistas y géneros favoritos y reproducir música en un reproductor web con animaciones fluidas.
+                        </p>
+                        <p>
+                            Detrás de BeatList hay un backend en <strong>Flask</strong> que orquesta la autenticación OAuth y el flujo de datos con la API oficial de Spotify, un frontend dinámico construido con <strong>JavaScript</strong> y componentes interactivos, y un almacenamiento persistente en <strong>MySQL</strong> para conservar estadísticas personalizadas.
+                        </p>
+                        <div class="rounded-3xl border border-slate-200 bg-white/90 p-6 shadow-sm">
+                            <h3 class="text-sm font-semibold uppercase tracking-widest text-slate-500">Experiencia destacada</h3>
+                            <ul class="mt-4 space-y-3">
+                                <li class="flex items-start gap-3"><span class="mt-1 h-2 w-2 rounded-full bg-amber-500"></span>Listas inteligentes que reaccionan a métricas como energía o bailabilidad.</li>
+                                <li class="flex items-start gap-3"><span class="mt-1 h-2 w-2 rounded-full bg-amber-500"></span>Dashboard con tendencias temporales para comprender la evolución sonora.</li>
+                                <li class="flex items-start gap-3"><span class="mt-1 h-2 w-2 rounded-full bg-amber-500"></span>Reproductor web aprobado por Spotify con animaciones suaves.</li>
+                            </ul>
+                        </div>
+                    </article>
+                    <aside class="space-y-6">
+                        <div class="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm">
+                            <h3 class="text-sm font-semibold uppercase tracking-widest text-slate-500">Stack</h3>
+                            <ul class="mt-4 space-y-2 text-sm text-slate-600">
+                                <li>Flask · Python</li>
+                                <li>Spotify API · OAuth 2.0</li>
+                                <li>JavaScript modular</li>
+                                <li>MySQL + Redis</li>
+                            </ul>
+                        </div>
+                        <div class="rounded-3xl border border-dashed border-amber-200 bg-amber-50/70 p-6">
+                            <h3 class="text-sm font-semibold uppercase tracking-widest text-amber-700">Roadmap</h3>
+                            <p class="mt-2 text-sm text-slate-600">Modo colaborativo, exportación de insights y app móvil como siguiente fase.</p>
+                        </div>
+                        <div class="rounded-3xl border border-slate-200 bg-white/90 p-6 shadow-sm">
+                            <h3 class="text-sm font-semibold uppercase tracking-widest text-slate-500">Espacio para ampliaciones</h3>
+                            <p class="mt-2 text-sm text-slate-600">Incluye flujos de onboarding, mockups de dashboards y métricas avanzadas en futuras iteraciones.</p>
+                        </div>
+                    </aside>
+                </div>
+            </div>
+        </section>
+
+        <section id="mesasya" class="bg-white py-24">
+            <div class="mx-auto max-w-6xl space-y-12 px-6">
+                <div class="flex flex-col gap-6 md:flex-row md:items-center md:justify-between" data-animate>
+                    <div class="space-y-3">
+                        <p class="text-xs font-semibold uppercase tracking-[0.3em] text-slate-500">Case study 03</p>
+                        <h2 class="text-3xl font-semibold text-slate-900 sm:text-4xl">MesasYa — SaaS de reservas multi-sede</h2>
+                    </div>
+                    <img src="assets/mesasya-logo.svg" alt="Logo MesasYa" width="140" height="140" loading="lazy" class="h-24 w-24 rounded-3xl border border-slate-100 bg-slate-50 p-4" />
+                </div>
+                <div class="grid gap-10 lg:grid-cols-[1.4fr,1fr]" data-animate>
+                    <article class="space-y-6 text-base text-slate-600">
+                        <p>
+                            MesasYa es una plataforma <strong>SaaS en producción</strong> que digitaliza por completo la gestión de reservas para restaurantes con múltiples sedes. Ofrecemos planos de sala interactivos, configuraciones de zonas y servicios, control de ocupación en tiempo real y workflows de notificaciones automatizadas.
+                        </p>
+                        <p>
+                            El backend, construido sobre <strong>Flask, Celery, MySQL y Docker</strong>, garantiza estabilidad, escalabilidad y despliegues confiables incluso en entornos de alta demanda. Complementamos la operación con estadísticas avanzadas y exportación de datos para decisiones informadas.
+                        </p>
+                        <div class="rounded-3xl border border-slate-200 bg-slate-50/70 p-6">
+                            <h3 class="text-sm font-semibold uppercase tracking-widest text-slate-500">Impacto operativo</h3>
+                            <ul class="mt-4 space-y-3">
+                                <li class="flex items-start gap-3"><span class="mt-1 h-2 w-2 rounded-full bg-emerald-500"></span>Visibilidad unificada de ocupación y reservas por sede.</li>
+                                <li class="flex items-start gap-3"><span class="mt-1 h-2 w-2 rounded-full bg-emerald-500"></span>Notificaciones y recordatorios automáticos para equipos y clientes.</li>
+                                <li class="flex items-start gap-3"><span class="mt-1 h-2 w-2 rounded-full bg-emerald-500"></span>Exportaciones de datos y métricas de rendimiento listas para BI.</li>
+                            </ul>
+                        </div>
+                    </article>
+                    <aside class="space-y-6">
+                        <div class="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm">
+                            <h3 class="text-sm font-semibold uppercase tracking-widest text-slate-500">Stack</h3>
+                            <ul class="mt-4 space-y-2 text-sm text-slate-600">
+                                <li>Flask · Blueprint modular</li>
+                                <li>Celery · Workers distribuidos</li>
+                                <li>MySQL replicado</li>
+                                <li>Docker + Observabilidad</li>
+                            </ul>
+                        </div>
+                        <div class="rounded-3xl border border-dashed border-emerald-200 bg-emerald-50/70 p-6">
+                            <h3 class="text-sm font-semibold uppercase tracking-widest text-emerald-700">Próxima evolución</h3>
+                            <p class="mt-2 text-sm text-slate-600">Integración con TPV, app de staff y modelo de predicción de demanda.</p>
+                        </div>
+                        <div class="rounded-3xl border border-slate-200 bg-white/90 p-6 shadow-sm">
+                            <h3 class="text-sm font-semibold uppercase tracking-widest text-slate-500">Espacio ampliable</h3>
+                            <p class="mt-2 text-sm text-slate-600">Sección preparada para capturas de dashboards, mapas de calor y documentación técnica extendida.</p>
+                        </div>
+                    </aside>
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-slate-900 py-20">
+            <div class="mx-auto flex max-w-5xl flex-col items-center gap-6 px-6 text-center text-white" data-animate>
+                <p class="text-xs font-semibold uppercase tracking-[0.3em] text-white/60">¿Listo para comenzar?</p>
+                <h2 class="text-3xl font-semibold sm:text-4xl">Construyamos la siguiente plataforma crítica de tu negocio.</h2>
+                <p class="max-w-3xl text-base text-white/80">Estoy disponible para colaborar en proyectos de automatización, SaaS o consultoría de ciberseguridad. Cada propuesta se adapta a tus métricas y hoja de ruta.</p>
+                <div class="flex flex-wrap items-center justify-center gap-4">
+                    <a href="index.html#contact" class="inline-flex items-center gap-2 rounded-full bg-white px-6 py-3 text-sm font-semibold text-slate-900 transition hover:bg-slate-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">Agenda una llamada</a>
+                    <a href="mailto:nicoabgv@gmail.com" class="inline-flex items-center gap-2 rounded-full border border-white/40 px-6 py-3 text-sm font-semibold text-white transition hover:border-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">Escríbeme</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="border-t border-slate-200 bg-white/80">
+        <div class="mx-auto flex max-w-6xl flex-col gap-4 px-6 py-8 text-sm text-slate-500 md:flex-row md:items-center md:justify-between">
+            <p>&copy; <span id="year"></span> Nicolás Álvarez. Todos los derechos reservados.</p>
+            <div class="flex flex-wrap items-center gap-4">
+                <a class="transition hover:text-blue-600" href="index.html">Inicio</a>
+                <a class="transition hover:text-blue-600" href="https://github.com/nicoabgv" target="_blank" rel="noreferrer">GitHub</a>
+                <a class="transition hover:text-blue-600" href="mailto:nicoabgv@gmail.com">Contacto directo</a>
+            </div>
+        </div>
     </footer>
 
-    <a href="#header" class="btn-back-to-top">⬆ Volver al Inicio</a>
-    <a href="index.html" class="btn-index">Ir al Índice</a>
-
-    <script>
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function(e) {
-                e.preventDefault();
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
-            });
-        });
-
-        const backToTopButton = document.querySelector('.btn-back-to-top');
-        window.addEventListener('scroll', function() {
-            if (window.scrollY > 300) {
-                backToTopButton.classList.add('show');
-            } else {
-                backToTopButton.classList.remove('show');
-            }
-        });
-    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+    <script src="scripts.js" defer></script>
 </body>
 </html>
