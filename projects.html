@@ -40,9 +40,9 @@
                 </svg>
             </button>
             <div class="hidden items-center gap-8 text-sm font-medium text-slate-700 lg:flex">
+                <a class="transition hover:text-blue-600" href="#mesasya">MesasYa</a>
                 <a class="transition hover:text-blue-600" href="#kobra">Kobra</a>
                 <a class="transition hover:text-blue-600" href="#beatlist">BeatList</a>
-                <a class="transition hover:text-blue-600" href="#mesasya">MesasYa</a>
                 <a class="inline-flex items-center gap-2 rounded-full border border-slate-200 px-4 py-2 text-xs font-semibold uppercase tracking-widest text-slate-700 transition hover:border-blue-500 hover:text-blue-600" href="index.html#contact">
                     Contacto
                 </a>
@@ -50,9 +50,9 @@
         </nav>
         <div id="mobile-nav" data-mobile-menu class="hidden border-t border-slate-200 bg-white/95 px-6 py-4 shadow-lg transition duration-300 lg:hidden">
             <div class="flex flex-col gap-3 text-sm font-medium text-slate-700">
+                <a class="transition hover:text-blue-600" href="#mesasya">MesasYa</a>
                 <a class="transition hover:text-blue-600" href="#kobra">Kobra</a>
                 <a class="transition hover:text-blue-600" href="#beatlist">BeatList</a>
-                <a class="transition hover:text-blue-600" href="#mesasya">MesasYa</a>
                 <a class="inline-flex items-center gap-2 rounded-full border border-slate-200 px-4 py-2 text-xs font-semibold uppercase tracking-widest text-slate-700 transition hover:border-blue-500 hover:text-blue-600" href="index.html#contact">
                     Contacto
                 </a>
@@ -75,20 +75,69 @@
                     <div class="rounded-3xl border border-slate-200 bg-white/80 p-6 shadow-sm" data-animate>
                         <p class="text-xs font-semibold uppercase tracking-[0.3em] text-slate-500">Índice</p>
                         <ul class="mt-4 space-y-3 text-sm text-slate-600">
-                            <li><a class="inline-flex items-center gap-2 text-blue-600 transition hover:text-blue-700" href="#kobra">01 — Kobra <span class="text-xs text-slate-400">Fintech interna</span></a></li>
-                            <li><a class="inline-flex items-center gap-2 text-blue-600 transition hover:text-blue-700" href="#beatlist">02 — BeatList <span class="text-xs text-slate-400">Experiencia musical</span></a></li>
-                            <li><a class="inline-flex items-center gap-2 text-blue-600 transition hover:text-blue-700" href="#mesasya">03 — MesasYa <span class="text-xs text-slate-400">SaaS restauración</span></a></li>
+                            <li><a class="inline-flex items-center gap-2 text-blue-600 transition hover:text-blue-700" href="#mesasya">01 — MesasYa <span class="text-xs text-slate-400">SaaS restauración</span></a></li>
+                            <li><a class="inline-flex items-center gap-2 text-blue-600 transition hover:text-blue-700" href="#kobra">02 — Kobra <span class="text-xs text-slate-400">Fintech interna</span></a></li>
+                            <li><a class="inline-flex items-center gap-2 text-blue-600 transition hover:text-blue-700" href="#beatlist">03 — BeatList <span class="text-xs text-slate-400">Proyecto oficial Spotify</span></a></li>
                         </ul>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="kobra" class="border-y border-slate-200 bg-white py-24">
+        <section id="mesasya" class="border-y border-slate-200 bg-white py-24">
             <div class="mx-auto max-w-6xl space-y-12 px-6">
                 <div class="flex flex-col gap-6 md:flex-row md:items-center md:justify-between" data-animate>
                     <div class="space-y-3">
                         <p class="text-xs font-semibold uppercase tracking-[0.3em] text-slate-500">Case study 01</p>
+                        <h2 class="text-3xl font-semibold text-slate-900 sm:text-4xl">MesasYa — SaaS de reservas multi-sede</h2>
+                    </div>
+                    <img src="assets/mesasya-logo.svg" alt="Logo MesasYa" width="140" height="140" loading="lazy" class="h-24 w-24 rounded-3xl border border-slate-100 bg-slate-50 p-4" />
+                </div>
+                <div class="grid gap-10 lg:grid-cols-[1.4fr,1fr]" data-animate>
+                    <article class="space-y-6 text-base text-slate-600">
+                        <p>
+                            MesasYa es un <strong>SaaS en producción</strong> que digitaliza la gestión de reservas para restaurantes con múltiples sedes. Reúne planos interactivos, reglas personalizables y notificaciones en tiempo real para que cada servicio funcione sin sorpresas.
+                        </p>
+                        <p>
+                            El backend basado en <strong>Flask, Celery, MySQL y Docker</strong> mantiene despliegues reproducibles y seguros. Cada restaurante configura zonas, servicios, idiomas y workflows específicos sin perder estabilidad ni trazabilidad.
+                        </p>
+                        <div class="rounded-3xl border border-slate-200 bg-slate-50/70 p-6">
+                            <h3 class="text-sm font-semibold uppercase tracking-widest text-slate-500">Impacto operativo</h3>
+                            <ul class="mt-4 space-y-3">
+                                <li class="flex items-start gap-3"><span class="mt-1 h-2 w-2 rounded-full bg-emerald-500"></span>Planos de sala configurables con reglas por sede, zonas y eventos especiales.</li>
+                                <li class="flex items-start gap-3"><span class="mt-1 h-2 w-2 rounded-full bg-emerald-500"></span>Asignación automática de mesas y notificaciones en tiempo real para staff y clientes.</li>
+                                <li class="flex items-start gap-3"><span class="mt-1 h-2 w-2 rounded-full bg-emerald-500"></span>Exportaciones y métricas listas para BI que acompañan las decisiones del negocio.</li>
+                            </ul>
+                        </div>
+                    </article>
+                    <aside class="space-y-6">
+                        <div class="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm">
+                            <h3 class="text-sm font-semibold uppercase tracking-widest text-slate-500">Stack</h3>
+                            <ul class="mt-4 space-y-2 text-sm text-slate-600">
+                                <li>Flask · Python</li>
+                                <li>Celery + Redis</li>
+                                <li>MySQL administrado</li>
+                                <li>Docker Compose</li>
+                            </ul>
+                        </div>
+                        <div class="rounded-3xl border border-dashed border-emerald-200 bg-emerald-50/70 p-6">
+                            <h3 class="text-sm font-semibold uppercase tracking-widest text-emerald-700">Próximos pasos</h3>
+                            <p class="mt-2 text-sm text-slate-600">Integración de informes automáticos y mejoras en la experiencia del gestor para acelerar la toma de decisiones.</p>
+                        </div>
+                        <div class="rounded-3xl border border-slate-200 bg-white/90 p-6 shadow-sm">
+                            <h3 class="text-sm font-semibold uppercase tracking-widest text-slate-500">Espacio ampliable</h3>
+                            <p class="mt-2 text-sm text-slate-600">Material listo para incluir mapas de calor, modelos de demanda y documentación de despliegue.</p>
+                        </div>
+                    </aside>
+                </div>
+            </div>
+        </section>
+
+        <section id="kobra" class="border-b border-slate-200 bg-slate-50 py-24">
+            <div class="mx-auto max-w-6xl space-y-12 px-6">
+                <div class="flex flex-col gap-6 md:flex-row md:items-center md:justify-between" data-animate>
+                    <div class="space-y-3">
+                        <p class="text-xs font-semibold uppercase tracking-[0.3em] text-slate-500">Case study 02</p>
                         <h2 class="text-3xl font-semibold text-slate-900 sm:text-4xl">Kobra — Plataforma financiera para Cybersur</h2>
                     </div>
                     <img src="assets/kobra-logo.svg" alt="Logo Kobra" width="140" height="140" loading="lazy" class="h-24 w-24 rounded-3xl border border-slate-100 bg-slate-50 p-4" />
@@ -96,28 +145,18 @@
                 <div class="grid gap-10 lg:grid-cols-[1.4fr,1fr]" data-animate>
                     <article class="space-y-6 text-base text-slate-600">
                         <p>
-                            Kobra es la plataforma empresarial a medida que diseñamos para impulsar la operativa de Cybersur. Construida sobre un stack robusto de <strong>FastAPI, Celery, MySQL y Docker</strong>, centraliza facturación, cobros y automatiza comunicaciones críticas.
+                            Kobra es la solución a medida que mantiene la operativa financiera de Cybersur. Automatiza facturación, cobros y recordatorios desde un backend robusto en <strong>FastAPI, Celery, MySQL y Docker</strong>.
                         </p>
                         <p>
-                            Desde el envío programado de avisos y recordatorios hasta la ejecución de cronjobs para exportaciones y tareas de limpieza de datos, eliminamos fricciones en el ciclo completo de cobranza. El sistema opera como columna vertebral de los procesos financieros de la compañía.
+                            Los cronjobs programados gestionan exportaciones, limpiezas de datos y conciliaciones automáticas, mientras que los dashboards internos ofrecen visibilidad en tiempo real sobre el flujo de caja y SLA por cliente.
                         </p>
                         <div class="rounded-3xl border border-slate-200 bg-slate-50/70 p-6">
                             <h3 class="text-sm font-semibold uppercase tracking-widest text-slate-500">Resultados clave</h3>
                             <ul class="mt-4 space-y-3">
-                                <li class="flex items-start gap-3"><span class="mt-1 h-2 w-2 rounded-full bg-blue-500"></span>Reducción del tiempo de seguimiento de facturas en un 60% gracias a recordatorios automatizados.</li>
-                                <li class="flex items-start gap-3"><span class="mt-1 h-2 w-2 rounded-full bg-blue-500"></span>Exportaciones contables diarias con validaciones automáticas y trazabilidad completa.</li>
-                                <li class="flex items-start gap-3"><span class="mt-1 h-2 w-2 rounded-full bg-blue-500"></span>Dashboards internos con indicadores de cobro, SLA y alertas proactivas.</li>
+                                <li class="flex items-start gap-3"><span class="mt-1 h-2 w-2 rounded-full bg-blue-500"></span>Workflows de avisos y recordatorios que reducen el tiempo de seguimiento de facturas.</li>
+                                <li class="flex items-start gap-3"><span class="mt-1 h-2 w-2 rounded-full bg-blue-500"></span>Cronjobs trazables para exportaciones contables y rutinas de limpieza de datos.</li>
+                                <li class="flex items-start gap-3"><span class="mt-1 h-2 w-2 rounded-full bg-blue-500"></span>Dashboards internos con indicadores de cobro y alertas proactivas.</li>
                             </ul>
-                        </div>
-                        <div class="grid gap-4 md:grid-cols-2">
-                            <div class="rounded-3xl border border-dashed border-blue-200 bg-blue-50/70 p-6">
-                                <h4 class="text-sm font-semibold text-blue-700">Arquitectura</h4>
-                                <p class="mt-2 text-sm">Servicios desacoplados, colas de tareas con Celery y workers escalables en contenedores Docker.</p>
-                            </div>
-                            <div class="rounded-3xl border border-dashed border-slate-200 bg-white p-6">
-                                <h4 class="text-sm font-semibold text-slate-700">Seguridad</h4>
-                                <p class="mt-2 text-sm">Hardening, auditorías y cifrado de datos sensibles tanto en tránsito como en reposo.</p>
-                            </div>
                         </div>
                     </article>
                     <aside class="space-y-6">
@@ -127,48 +166,51 @@
                                 <li>FastAPI · Python 3.11</li>
                                 <li>Celery + Redis</li>
                                 <li>MySQL administrado</li>
-                                <li>Docker Compose + CI/CD</li>
+                                <li>Docker Compose</li>
                             </ul>
                         </div>
-                        <div class="rounded-3xl border border-dashed border-slate-200 bg-slate-50/80 p-6">
-                            <h3 class="text-sm font-semibold uppercase tracking-widest text-slate-500">Próximos pasos</h3>
-                            <p class="mt-2 text-sm text-slate-600">Integraciones con ERPs externos y tablero financiero con métricas avanzadas.</p>
+                        <div class="rounded-3xl border border-dashed border-blue-200 bg-blue-50/70 p-6">
+                            <h3 class="text-sm font-semibold uppercase tracking-widest text-blue-700">Roadmap</h3>
+                            <p class="mt-2 text-sm text-slate-600">Integraciones con ERPs externos y ampliación de reportes financieros internos.</p>
                         </div>
                         <div class="rounded-3xl border border-slate-200 bg-white/90 p-6 shadow-sm">
-                            <h3 class="text-sm font-semibold uppercase tracking-widest text-slate-500">Espacio para material extendido</h3>
-                            <p class="mt-2 text-sm text-slate-600">Incluye diagramas de flujo, capturas de procesos y documentación adicional cuando estén listos.</p>
+                            <h3 class="text-sm font-semibold uppercase tracking-widest text-slate-500">Material adicional</h3>
+                            <p class="mt-2 text-sm text-slate-600">Preparando diagramas de flujo, auditorías de seguridad y documentación para nuevos módulos.</p>
                         </div>
                     </aside>
                 </div>
             </div>
         </section>
 
-        <section id="beatlist" class="border-b border-slate-200 bg-slate-50 py-24">
+        <section id="beatlist" class="bg-white py-24">
             <div class="mx-auto max-w-6xl space-y-12 px-6">
                 <div class="flex flex-col gap-6 md:flex-row md:items-center md:justify-between" data-animate>
                     <div class="space-y-3">
-                        <p class="text-xs font-semibold uppercase tracking-[0.3em] text-slate-500">Case study 02</p>
+                        <p class="text-xs font-semibold uppercase tracking-[0.3em] text-slate-500">Case study 03</p>
                         <h2 class="text-3xl font-semibold text-slate-900 sm:text-4xl">BeatList — Inteligencia musical para power users</h2>
+                        <span class="inline-flex items-center gap-2 rounded-full border border-emerald-300 bg-white px-3 py-1 text-xs font-semibold text-emerald-700">
+                            <svg class="h-3.5 w-3.5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                <path fill-rule="evenodd" d="M16.704 5.29a.75.75 0 0 1 .006 1.06l-7.25 7.5a.75.75 0 0 1-1.086.02L3.29 8.536a.75.75 0 0 1 1.06-1.06l4.21 4.209 6.72-6.956a.75.75 0 0 1 1.064.061Z" clip-rule="evenodd" />
+                            </svg>
+                            Proyecto oficial Spotify
+                        </span>
                     </div>
                     <img src="assets/beatlist-logo.svg" alt="Logo BeatList" width="140" height="140" loading="lazy" class="h-24 w-24 rounded-3xl border border-slate-100 bg-slate-50 p-4" />
                 </div>
                 <div class="grid gap-10 lg:grid-cols-[1.4fr,1fr]" data-animate>
                     <article class="space-y-6 text-base text-slate-600">
                         <p>
-                            BeatList es una plataforma web pensada para melómanos, curadores y creadores de contenido que quieren ir más allá del limitado gestor de playlists de Spotify. Centraliza administración avanzada, descubrimiento y analítica en una sola experiencia digital.
+                            BeatList es la plataforma para melómanos, curadores y creadores de contenido que buscan superar las limitaciones del gestor estándar de Spotify. Centraliza administración avanzada, descubrimiento y analítica en una experiencia fluida.
                         </p>
                         <p>
-                            La aplicación permite fusionar, depurar y reorganizar playlists con precisión, crear listas inteligentes basadas en reglas, explorar recomendaciones nutridas por tus artistas y géneros favoritos y reproducir música en un reproductor web con animaciones fluidas.
-                        </p>
-                        <p>
-                            Detrás de BeatList hay un backend en <strong>Flask</strong> que orquesta la autenticación OAuth y el flujo de datos con la API oficial de Spotify, un frontend dinámico construido con <strong>JavaScript</strong> y componentes interactivos, y un almacenamiento persistente en <strong>MySQL</strong> para conservar estadísticas personalizadas.
+                            El backend en <strong>Flask</strong> gestiona la autenticación <strong>OAuth 2.0</strong> aprobada por Spotify y accede a datos extendidos mediante su API oficial. El frontend en JavaScript dinamiza dashboards, recomendaciones y un reproductor web con animaciones suaves.
                         </p>
                         <div class="rounded-3xl border border-slate-200 bg-white/90 p-6 shadow-sm">
                             <h3 class="text-sm font-semibold uppercase tracking-widest text-slate-500">Experiencia destacada</h3>
                             <ul class="mt-4 space-y-3">
-                                <li class="flex items-start gap-3"><span class="mt-1 h-2 w-2 rounded-full bg-amber-500"></span>Listas inteligentes que reaccionan a métricas como energía o bailabilidad.</li>
-                                <li class="flex items-start gap-3"><span class="mt-1 h-2 w-2 rounded-full bg-amber-500"></span>Dashboard con tendencias temporales para comprender la evolución sonora.</li>
-                                <li class="flex items-start gap-3"><span class="mt-1 h-2 w-2 rounded-full bg-amber-500"></span>Reproductor web aprobado por Spotify con animaciones suaves.</li>
+                                <li class="flex items-start gap-3"><span class="mt-1 h-2 w-2 rounded-full bg-amber-500"></span>Listas inteligentes basadas en reglas y métricas como energía o bailabilidad.</li>
+                                <li class="flex items-start gap-3"><span class="mt-1 h-2 w-2 rounded-full bg-amber-500"></span>Dashboard con tendencias temporales y hábitos de escucha segmentados por artistas y géneros.</li>
+                                <li class="flex items-start gap-3"><span class="mt-1 h-2 w-2 rounded-full bg-amber-500"></span>Reproductor web con animaciones personalizadas y continuidad entre sesiones gracias a MySQL y Redis.</li>
                             </ul>
                         </div>
                     </article>
@@ -184,74 +226,24 @@
                         </div>
                         <div class="rounded-3xl border border-dashed border-amber-200 bg-amber-50/70 p-6">
                             <h3 class="text-sm font-semibold uppercase tracking-widest text-amber-700">Roadmap</h3>
-                            <p class="mt-2 text-sm text-slate-600">Modo colaborativo, exportación de insights y app móvil como siguiente fase.</p>
+                            <p class="mt-2 text-sm text-slate-600">Modo colaborativo, exportación de insights y app móvil como siguientes iteraciones.</p>
                         </div>
                         <div class="rounded-3xl border border-slate-200 bg-white/90 p-6 shadow-sm">
-                            <h3 class="text-sm font-semibold uppercase tracking-widest text-slate-500">Espacio para ampliaciones</h3>
-                            <p class="mt-2 text-sm text-slate-600">Incluye flujos de onboarding, mockups de dashboards y métricas avanzadas en futuras iteraciones.</p>
+                            <h3 class="text-sm font-semibold uppercase tracking-widest text-slate-500">Material extendido</h3>
+                            <p class="mt-2 text-sm text-slate-600">Espacio reservado para flujos de onboarding, mockups de dashboards y métricas avanzadas.</p>
                         </div>
                     </aside>
                 </div>
             </div>
         </section>
-
-        <section id="mesasya" class="bg-white py-24">
-            <div class="mx-auto max-w-6xl space-y-12 px-6">
-                <div class="flex flex-col gap-6 md:flex-row md:items-center md:justify-between" data-animate>
-                    <div class="space-y-3">
-                        <p class="text-xs font-semibold uppercase tracking-[0.3em] text-slate-500">Case study 03</p>
-                        <h2 class="text-3xl font-semibold text-slate-900 sm:text-4xl">MesasYa — SaaS de reservas multi-sede</h2>
-                    </div>
-                    <img src="assets/mesasya-logo.svg" alt="Logo MesasYa" width="140" height="140" loading="lazy" class="h-24 w-24 rounded-3xl border border-slate-100 bg-slate-50 p-4" />
-                </div>
-                <div class="grid gap-10 lg:grid-cols-[1.4fr,1fr]" data-animate>
-                    <article class="space-y-6 text-base text-slate-600">
-                        <p>
-                            MesasYa es una plataforma <strong>SaaS en producción</strong> que digitaliza por completo la gestión de reservas para restaurantes con múltiples sedes. Ofrecemos planos de sala interactivos, configuraciones de zonas y servicios, control de ocupación en tiempo real y workflows de notificaciones automatizadas.
-                        </p>
-                        <p>
-                            El backend, construido sobre <strong>Flask, Celery, MySQL y Docker</strong>, garantiza estabilidad, escalabilidad y despliegues confiables incluso en entornos de alta demanda. Complementamos la operación con estadísticas avanzadas y exportación de datos para decisiones informadas.
-                        </p>
-                        <div class="rounded-3xl border border-slate-200 bg-slate-50/70 p-6">
-                            <h3 class="text-sm font-semibold uppercase tracking-widest text-slate-500">Impacto operativo</h3>
-                            <ul class="mt-4 space-y-3">
-                                <li class="flex items-start gap-3"><span class="mt-1 h-2 w-2 rounded-full bg-emerald-500"></span>Visibilidad unificada de ocupación y reservas por sede.</li>
-                                <li class="flex items-start gap-3"><span class="mt-1 h-2 w-2 rounded-full bg-emerald-500"></span>Notificaciones y recordatorios automáticos para equipos y clientes.</li>
-                                <li class="flex items-start gap-3"><span class="mt-1 h-2 w-2 rounded-full bg-emerald-500"></span>Exportaciones de datos y métricas de rendimiento listas para BI.</li>
-                            </ul>
-                        </div>
-                    </article>
-                    <aside class="space-y-6">
-                        <div class="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm">
-                            <h3 class="text-sm font-semibold uppercase tracking-widest text-slate-500">Stack</h3>
-                            <ul class="mt-4 space-y-2 text-sm text-slate-600">
-                                <li>Flask · Blueprint modular</li>
-                                <li>Celery · Workers distribuidos</li>
-                                <li>MySQL replicado</li>
-                                <li>Docker + Observabilidad</li>
-                            </ul>
-                        </div>
-                        <div class="rounded-3xl border border-dashed border-emerald-200 bg-emerald-50/70 p-6">
-                            <h3 class="text-sm font-semibold uppercase tracking-widest text-emerald-700">Próxima evolución</h3>
-                            <p class="mt-2 text-sm text-slate-600">Integración con TPV, app de staff y modelo de predicción de demanda.</p>
-                        </div>
-                        <div class="rounded-3xl border border-slate-200 bg-white/90 p-6 shadow-sm">
-                            <h3 class="text-sm font-semibold uppercase tracking-widest text-slate-500">Espacio ampliable</h3>
-                            <p class="mt-2 text-sm text-slate-600">Sección preparada para capturas de dashboards, mapas de calor y documentación técnica extendida.</p>
-                        </div>
-                    </aside>
-                </div>
-            </div>
-        </section>
-
         <section class="bg-slate-900 py-20">
             <div class="mx-auto flex max-w-5xl flex-col items-center gap-6 px-6 text-center text-white" data-animate>
-                <p class="text-xs font-semibold uppercase tracking-[0.3em] text-white/60">¿Listo para comenzar?</p>
-                <h2 class="text-3xl font-semibold sm:text-4xl">Construyamos la siguiente plataforma crítica de tu negocio.</h2>
-                <p class="max-w-3xl text-base text-white/80">Estoy disponible para colaborar en proyectos de automatización, SaaS o consultoría de ciberseguridad. Cada propuesta se adapta a tus métricas y hoja de ruta.</p>
+                <p class="text-xs font-semibold uppercase tracking-[0.3em] text-white/60">Conversemos</p>
+                <h2 class="text-3xl font-semibold sm:text-4xl">Si quieres conocer más sobre estos proyectos o charlar sobre nuevas ideas, contáctame en LinkedIn o GitHub.</h2>
+                <p class="max-w-3xl text-base text-white/80">Respondo personalmente cada mensaje y me gusta explorar colaboraciones donde la automatización, el SaaS y la ciberseguridad aplicada aporten valor real.</p>
                 <div class="flex flex-wrap items-center justify-center gap-4">
-                    <a href="index.html#contact" class="inline-flex items-center gap-2 rounded-full bg-white px-6 py-3 text-sm font-semibold text-slate-900 transition hover:bg-slate-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">Agenda una llamada</a>
-                    <a href="mailto:nicoabgv@gmail.com" class="inline-flex items-center gap-2 rounded-full border border-white/40 px-6 py-3 text-sm font-semibold text-white transition hover:border-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">Escríbeme</a>
+                    <a href="https://www.linkedin.com/in/nicoabgv" class="inline-flex items-center gap-2 rounded-full bg-white px-6 py-3 text-sm font-semibold text-slate-900 transition hover:bg-slate-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white" target="_blank" rel="noreferrer">LinkedIn</a>
+                    <a href="https://github.com/nicoabgv" class="inline-flex items-center gap-2 rounded-full border border-white/40 px-6 py-3 text-sm font-semibold text-white transition hover:border-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white" target="_blank" rel="noreferrer">GitHub</a>
                 </div>
             </div>
         </section>
