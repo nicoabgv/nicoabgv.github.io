@@ -148,7 +148,7 @@ const translationBindings = {
     ],
     projects: [
         { selector: '[data-nav] a[href="index.html#hero"]', attribute: 'aria-label', key: 'nav.brandAria' },
-        { selector: '[data-nav] a[href="index.html#hero"] span.hidden.sm\:block', key: 'nav.brandName' },
+        { selector: '[data-nav] a[href="index.html#hero"] span.hidden.sm\\:block', key: 'nav.brandName' },
         { selector: '[data-nav] a[href="#mesasya"]', key: 'nav.mesaysa' },
         { selector: '[data-nav] a[href="#kobra"]', key: 'nav.kobra' },
         { selector: '[data-nav] a[href="#beatlist"]', key: 'nav.beatlist' },
