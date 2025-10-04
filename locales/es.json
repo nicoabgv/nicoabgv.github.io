@@ -1,0 +1,302 @@
+{
+    "common": {
+        "meta": {
+            "ogLocale": "es_ES"
+        },
+        "nav": {
+            "brandName": "Nicolás Álvarez",
+            "brandAria": "Inicio",
+            "about": "Sobre mí",
+            "skills": "Skills",
+            "projects": "Proyectos",
+            "contact": "Contacto",
+            "cv": "Descargar CV",
+            "openMenu": "Abrir menú"
+        },
+        "language": {
+            "toggleAria": "Cambiar idioma",
+            "toggleLabel": "ES / EN",
+            "desktopLabel": "EN"
+        },
+        "footer": {
+            "copyright": "&copy; <span id=\"year\"></span> Nicolás Álvarez. Todos los derechos reservados.",
+            "caseStudies": "Case studies",
+            "github": "GitHub",
+            "contact": "Contacto directo"
+        },
+        "modals": {
+            "closeAria": "Cerrar modal"
+        }
+    },
+    "index": {
+        "meta": {
+            "title": "Nicolás Álvarez · Ingeniero de Software",
+            "description": "Portfolio minimalista de Nicolás Álvarez. Ingeniero de software especializado en plataformas SaaS, automatización y productos con foco en ciberseguridad.",
+            "ogTitle": "Portfolio · Nicolás Álvarez",
+            "ogDescription": "Explora proyectos empresariales, SaaS y herramientas musicales construidos con stacks modernos y procesos robustos.",
+            "twitterTitle": "Portfolio · Nicolás Álvarez",
+            "twitterDescription": "Ingeniero de software. Desarrollo de productos escalables, automatizados y listos para producción."
+        },
+        "hero": {
+            "taglineHtml": "<span class=\"h-px w-10 bg-slate-300\"></span>Ingeniería de Software · Ciberseguridad",
+            "title": "Construyo plataformas digitales confiables y listas para producción.",
+            "description": "Soy Nicolás Álvarez, ingeniero de software en mi último año de carrera. Tras dos años de especialización universitaria en ciberseguridad aplicada, diseño productos que combinan automatización, escalabilidad y buenas prácticas de seguridad.",
+            "primaryCta": "Ver proyectos",
+            "secondaryCta": "LinkedIn",
+            "summaryLabel": "Resumen Express",
+            "summaryTitle": "Diseño y desarrollo plataformas web seguras, escalables y bien estructuradas.",
+            "summaryItems": {
+                "first": "<span class=\"mt-1 h-2 w-2 rounded-full bg-blue-500\"></span>Especialista en backend Python con Flask y FastAPI, apoyado en tareas asíncronas con Celery y bases de datos relacionales.",
+                "second": "<span class=\"mt-1 h-2 w-2 rounded-full bg-blue-500\"></span>Construyo interfaces limpias con JavaScript y React ligero cuando aporta valor a la experiencia.",
+                "third": "<span class=\"mt-1 h-2 w-2 rounded-full bg-blue-500\"></span>Aplico buenas prácticas de ciberseguridad en autenticación, despliegues y protección de datos."
+            }
+        },
+        "about": {
+            "label": "Sobre mí",
+            "title": "Formación técnica con foco en seguridad aplicada.",
+            "paragraph1": "Soy ingeniero de software en mi último año de carrera, con una especialización universitaria de dos años en ciberseguridad aplicada. Ese recorrido me permitió integrar buenas prácticas de seguridad en backend, autenticación y despliegues sin perder de vista la experiencia de usuario.",
+            "paragraph2": "Trabajo en soluciones SaaS, integraciones de APIs y automatizaciones sobre Python y JavaScript. No hago pentesting profesional ni threat modeling avanzado, pero sí cuido la documentación, los flujos de datos y la operativa diaria para que cada entrega sea mantenible y honesta con sus objetivos.",
+            "cardTitle": "Datos clave",
+            "details": {
+                "locationLabel": "Ubicación",
+                "locationValue": "Madrid · España",
+                "emailLabel": "Email",
+                "emailValue": "<a class=\"hover:text-blue-600\" href=\"mailto:nicoabgv@gmail.com\">nicoabgv@gmail.com</a>",
+                "linkedinLabel": "LinkedIn",
+                "linkedinValue": "<a class=\"hover:text-blue-600\" href=\"https://www.linkedin.com/in/nicol%C3%A1s-%C3%A1lvarez-becerra-201773267/\" target=\"_blank\" rel=\"noreferrer\">/in/nicoabgv</a>",
+                "experienceLabel": "Años de experiencia",
+                "experienceValue": "2+"
+            },
+            "collaborationLabel": "Colaboraciones",
+            "collaborationText": "Si quieres conocer más sobre estos proyectos o charlar sobre nuevas ideas técnicas, escríbeme en LinkedIn o GitHub."
+        },
+        "skills": {
+            "label": "Skills & Stack",
+            "title": "Capas técnicas que utilizo para crear productos escalables.",
+            "cards": {
+                "backend": {
+                    "title": "Backend",
+                    "description": "APIs con Flask y FastAPI, tareas distribuidas con Celery y persistencia en MySQL sobre infraestructura contenerizada.",
+                    "tags": [
+                        "Python",
+                        "Flask · FastAPI",
+                        "Celery",
+                        "MySQL"
+                    ]
+                },
+                "frontend": {
+                    "title": "Frontend",
+                    "description": "Interfaces limpias con JavaScript y Tailwind, apoyadas en componentes React cuando el proyecto lo requiere.",
+                    "tags": [
+                        "JavaScript",
+                        "Tailwind CSS",
+                        "React"
+                    ]
+                },
+                "devops": {
+                    "title": "DevOps",
+                    "description": "Contenedores con Docker y Compose, Nginx como proxy, automatizaciones con scripts y cronjobs sobre VPS Ubuntu.",
+                    "tags": [
+                        "Docker",
+                        "Docker Compose",
+                        "Nginx",
+                        "Ubuntu VPS"
+                    ]
+                },
+                "security": {
+                    "title": "Ciberseguridad",
+                    "description": "Buenas prácticas en backend, autenticación y despliegues reforzadas por mi formación en ciberseguridad aplicada.",
+                    "tags": [
+                        "Buenas prácticas backend",
+                        "Autenticación segura",
+                        "Despliegues revisados"
+                    ]
+                }
+            }
+        },
+        "projects": {
+            "label": "Proyectos destacados",
+            "title": "Soluciones que sostienen operaciones reales.",
+            "seeAll": "Ver case studies completos",
+            "mesasya": {
+                "badge": "SaaS en producción",
+                "tech": "Flask · Celery · Docker · MySQL",
+                "title": "MesasYa",
+                "description": "MesasYa es una plataforma integral para la gestión de reservas de restaurantes. Combina planos interactivos, automatización y analítica para ofrecer una operación robusta y personalizable que ya funciona en producción.",
+                "bullets": {
+                    "first": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#589E8C]\"></span>Planos de sala configurables por sede, zona y servicio con asignación automática de mesas.",
+                    "second": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#589E8C]\"></span>Notificaciones en tiempo real para clientes y staff mediante workflows ajustables.",
+                    "third": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#589E8C]\"></span>Estadísticas y exportaciones preparadas para negocio con despliegues en Docker Compose listos para crecer con seguridad."
+                }
+            },
+            "kobra": {
+                "badge": "Solución a medida",
+                "tech": "FastAPI · Celery · MySQL · Docker",
+                "title": "Kobra",
+                "description": "Kobra es la plataforma interna creada para Cybersur. Automatiza facturación y cobros con procesos diseñados a medida, convirtiéndose en una pieza clave de su operativa diaria.",
+                "bullets": {
+                    "first": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#f28d1f]\"></span>Avisos y recordatorios automáticos que reducen tiempos de seguimiento financiero.",
+                    "second": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#f28d1f]\"></span>Cronjobs y pipelines de limpieza de datos con trazabilidad completa.",
+                    "third": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#f28d1f]\"></span>Paneles internos para el equipo financiero y despliegues contenerizados preparados para crecer con la empresa."
+                }
+            },
+            "beatlist": {
+                "badge": "Plataforma musical",
+                "approval": "Spotify Approved",
+                "tech": "Flask · OAuth 2.0 · MySQL · Spotify API",
+                "title": "BeatList",
+                "description": "BeatList es la suite para melómanos y curadores que necesitan más que el gestor estándar de Spotify. Integra la API oficial con análisis profundos y experiencias interactivas avaladas por el programa de partners de Spotify.",
+                "bullets": {
+                    "first": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#111827]\"></span>Fusión y depuración de playlists con reglas inteligentes y métricas como energía o baile.",
+                    "second": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#111827]\"></span>Reproductor web con animaciones fluidas, recomendaciones y dashboards de hábitos de escucha.",
+                    "third": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#111827]\"></span>Autenticación OAuth 2.0 oficial para acceder a datos extendidos y mantener la estabilidad del servicio."
+                }
+            },
+            "cta": "Leer más",
+            "caseStudy": "Case study"
+        },
+        "contact": {
+            "label": "Contacto",
+            "title": "¿Hablamos de tu próximo proyecto?",
+            "description": "Si quieres conocer más sobre estos proyectos o charlar sobre nuevas ideas, contáctame en LinkedIn o GitHub.",
+            "direct": "También puedes escribirme directamente:",
+            "messageLabel": "Proyecto",
+            "messagePlaceholder": "Cuéntame objetivos, plazos o retos técnicos",
+            "submit": "Enviar mensaje",
+            "nameLabel": "Nombre",
+            "namePlaceholder": "Tu nombre",
+            "emailLabel": "Email",
+            "emailPlaceholder": "nombre@empresa.com"
+        },
+        "footerLinks": {
+            "projects": "Case studies",
+            "github": "GitHub",
+            "contact": "Contacto directo"
+        },
+        "modals": {
+            "kobra": {
+                "tag": "Kobra",
+                "title": "Plataforma financiera que sostiene el día a día de Cybersur.",
+                "paragraph1": "Kobra es la solución a medida que construí para Cybersur. Con un stack de <strong>FastAPI, Celery, MySQL y Docker</strong>, centraliza facturación, cobros y notificaciones para que el equipo financiero trabaje con información coherente y actualizada.",
+                "paragraph2": "Los cronjobs programados gestionan exportaciones y limpiezas de datos, mientras que los pipelines de avisos y recordatorios dejan registro de cada acción. Todo el flujo está pensado para dar visibilidad inmediata y reducir tareas manuales repetitivas.",
+                "bullets": {
+                    "first": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#f28d1f]\"></span>Workflows automáticos que reducen drásticamente los tiempos de seguimiento y cobranza.",
+                    "second": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#f28d1f]\"></span>Cronjobs trazables para exportaciones y rutinas de limpieza que mantienen los datos consistentes.",
+                    "third": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#f28d1f]\"></span>Paneles internos con métricas esenciales para el seguimiento de cobros y pendientes."
+                },
+                "next": "Siguiente iteración: ampliar reportes financieros internos y automatizar conciliaciones.",
+                "diagram": "Diagrama técnico",
+                "diagramContent": "Equipo Cybersur\n    ↓\nFastAPI API → MySQL\n    │\n    ├─ Celery workers → Emails y recordatorios\n    └─ Cronjobs programados → Reportes CSV"
+            },
+            "beatlist": {
+                "tag": "BeatList",
+                "title": "Gestión profesional de playlists con sello oficial de Spotify.",
+                "paragraph1": "BeatList es la plataforma para melómanos, curadores y creadores que necesitan algo más potente que el gestor nativo de Spotify. Reúne administración avanzada, descubrimiento y analítica en una experiencia fluida.",
+                "paragraph2": "Gracias a la integración oficial con la <strong>API de Spotify</strong> y a la autenticación <strong>OAuth 2.0</strong> aprobada, el backend en Flask accede a datos extendidos con estabilidad profesional. El frontend en JavaScript ofrece dashboards y un reproductor web con microinteracciones personalizadas.",
+                "bullets": {
+                    "first": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#111827]\"></span>Fusión, depuración y reorganización de playlists con reglas inteligentes basadas en métricas como energía o bailabilidad.",
+                    "second": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#111827]\"></span>Motor de recomendaciones por artistas y géneros favoritos, sumado a dashboards que muestran hábitos de escucha.",
+                    "third": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#111827]\"></span>Persistencia en MySQL para conservar estadísticas personalizadas y ofrecer continuidad entre sesiones."
+                },
+                "next": "Posibles evoluciones: sumar modo colaborativo o exportaciones de insights en futuras versiones.",
+                "diagram": "Diagrama técnico",
+                "diagramContent": "Cliente web\n    ↓\nFlask API (OAuth 2.0 Spotify)\n    ↓\nMySQL → Historial y métricas\n    ↓\nDashboards JS + Reproductor"
+            },
+            "mesasya": {
+                "tag": "MesasYa",
+                "title": "Reservas inteligentes para cadenas de restauración.",
+                "paragraph1": "MesasYa es una plataforma <strong>SaaS en producción</strong> que digitaliza la gestión de reservas para restaurantes con múltiples sedes. Ofrece control granular de ocupación, automatización de comunicaciones y dashboards listos para el gestor.",
+                "paragraph2": "Con <strong>Flask, Celery, MySQL y Docker</strong> como base, la solución se despliega con Docker Compose y buenas prácticas de seguridad, manteniendo workflows personalizables por zona, servicio y equipo. Las analíticas y exportaciones se adaptan a las decisiones del negocio.",
+                "bullets": {
+                    "first": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#589E8C]\"></span>Planos de sala interactivos y configurables por sede, zona y servicio.",
+                    "second": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#589E8C]\"></span>Notificaciones automáticas para equipos internos y clientes finales.",
+                    "third": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#589E8C]\"></span>Indicadores de demanda, capacidad y rendimiento exportables para decisiones estratégicas."
+                },
+                "next": "Próximos pasos: integrar informes automáticos y seguir mejorando la experiencia del gestor.",
+                "diagram": "Diagrama técnico",
+                "diagramContent": "Staff y reservas online\n    ↓\nFlask API → MySQL\n    │\n    ├─ Celery workers → Emails & SMS\n    └─ Docker Compose → Servicios coordinados"
+            }
+        }
+    },
+    "projects": {
+        "meta": {
+            "title": "Case Studies · Nicolás Álvarez",
+            "description": "Case studies detallados de Kobra, BeatList y MesasYa. Profundiza en arquitectura, automatización y resultados de cada producto.",
+            "ogTitle": "Case Studies · Nicolás Álvarez",
+            "ogDescription": "Detalles técnicos y de negocio de plataformas construidas para empresas, creadores y restaurantes.",
+            "twitterTitle": "Case Studies · Nicolás Álvarez",
+            "twitterDescription": "Profundiza en Kobra, BeatList y MesasYa con arquitectura, flujos y roadmap."
+        },
+        "nav": {
+            "brandAria": "Volver al inicio",
+            "brandName": "Portfolio",
+            "mesasya": "MesasYa",
+            "kobra": "Kobra",
+            "beatlist": "BeatList",
+            "contact": "Contacto"
+        },
+        "hero": {
+            "label": "Case studies",
+            "title": "De la visión al despliegue: historias de producto completas.",
+            "description": "Cada proyecto nace de un reto distinto. Aquí encontrarás las decisiones de arquitectura, flujos operativos y aprendizajes que permitieron lanzar soluciones confiables y medibles.",
+            "indexLabel": "Índice",
+            "indexItems": {
+                "mesasya": "01 — MesasYa <span class=\"text-xs text-slate-400\">SaaS restauración</span>",
+                "kobra": "02 — Kobra <span class=\"text-xs text-slate-400\">Fintech interna</span>",
+                "beatlist": "03 — BeatList <span class=\"text-xs text-slate-400\">Spotify Approved</span>"
+            }
+        },
+        "mesasya": {
+            "label": "Case study 01",
+            "title": "MesasYa — SaaS de reservas multi-sede",
+            "paragraph1": "MesasYa es un <strong>SaaS en producción</strong> que digitaliza la gestión de reservas para restaurantes con múltiples sedes. Reúne planos interactivos, reglas personalizables y notificaciones en tiempo real para que cada servicio funcione sin sorpresas.",
+            "paragraph2": "El backend basado en <strong>Flask, Celery, MySQL y Docker</strong> utiliza Docker Compose y buenas prácticas de seguridad. Cada restaurante configura zonas, servicios, idiomas y workflows específicos sin perder estabilidad ni trazabilidad.",
+            "impact": "Impacto operativo",
+            "bullets": {
+                "first": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#589E8C]\"></span>Planos de sala configurables con reglas por sede, zonas y eventos especiales.",
+                "second": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#589E8C]\"></span>Asignación automática de mesas y notificaciones en tiempo real para staff y clientes.",
+                "third": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#589E8C]\"></span>Exportaciones y métricas listas para BI que acompañan las decisiones del negocio."
+            },
+            "stack": "Stack",
+            "next": "Próximos pasos",
+            "nextText": "Integración de informes automáticos y optimización de la experiencia de gestión.",
+            "schema": "Esquema técnico",
+            "schemaContent": "Reservas web / staff\n    ↓\nFlask API → MySQL\n    │\n    ├─ Celery workers → Correos/SMS\n    └─ Docker Compose coordina servicios"
+        },
+        "kobra": {
+            "label": "Case study 02",
+            "title": "Kobra — Plataforma financiera para Cybersur",
+            "paragraph1": "Kobra es la solución a medida que mantiene la operativa financiera de Cybersur. Automatiza facturación, cobros y recordatorios desde un backend robusto en <strong>FastAPI, Celery, MySQL y Docker</strong>.",
+            "paragraph2": "Los cronjobs programados gestionan exportaciones, limpiezas de datos y conciliaciones automáticas. Los paneles internos priorizan métricas de cobranza y SLA por cliente para que el equipo financiero tenga claridad diaria.",
+            "results": "Resultados clave",
+            "bullets": {
+                "first": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#f28d1f]\"></span>Recordatorios y seguimiento automáticos que reducen la morosidad.",
+                "second": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#f28d1f]\"></span>Cronjobs y pipelines de limpieza de datos con auditoría completa.",
+                "third": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#f28d1f]\"></span>Paneles internos con métricas de cobranza y SLA por cliente."
+            },
+            "stack": "Stack",
+            "next": "Próximos pasos",
+            "nextText": "Automatización de reportes financieros y conciliaciones.",
+            "schema": "Esquema técnico",
+            "schemaContent": "Operativa Cybersur\n    ↓\nFastAPI → MySQL\n    │\n    ├─ Celery → Emails\n    └─ Cronjobs → Reportes"
+        },
+        "beatlist": {
+            "label": "Case study 03",
+            "title": "BeatList — Suite musical para creadores",
+            "approval": "Spotify Approved",
+            "paragraph1": "BeatList acompaña a curadores y creadores que necesitan superar el gestor estándar de Spotify. Conecta la <strong>API oficial</strong> con análisis avanzados y experiencias interactivas aprobadas por el programa Spotify for Developers.",
+            "paragraph2": "El backend en Flask con <strong>OAuth 2.0</strong> obtiene datos extendidos y los almacena en MySQL. El frontend ofrece reproductores, dashboards y herramientas de mezcla pensadas para profesionales y comunidades.",
+            "outcomes": "Resultados",
+            "bullets": {
+                "first": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#111827]\"></span>Reorganización inteligente de playlists con métricas de energía y ritmo.",
+                "second": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#111827]\"></span>Dashboards dinámicos y reproductor con experiencias interactivas.",
+                "third": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#111827]\"></span>Persistencia de insights personalizados para hábitos de escucha."
+            },
+            "stack": "Stack",
+            "next": "Próximos pasos",
+            "nextText": "Modo colaborativo y exportaciones avanzadas en la hoja de ruta.",
+            "schema": "Esquema técnico",
+            "schemaContent": "Usuarios\n    ↓\nFlask API (OAuth Spotify)\n    ↓\nMySQL → Insights\n    ↓\nDashboards + Reproductor"
+        }
+    }
+}

@@ -26,8 +26,7 @@
         }
     </style>
 </head>
-<body class="bg-slate-50 font-[\'Inter\',_sans-serif] text-slate-900 antialiased">
-    <header data-nav class="fixed inset-x-0 top-0 z-40 bg-white/80 backdrop-blur transition duration-300">
+<body class="bg-slate-50 font-[\'Inter\',_sans-serif] text-slate-900 antialiased" data-page="projects">    <header data-nav class="fixed inset-x-0 top-0 z-40 bg-white/80 backdrop-blur transition duration-300">
         <nav class="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
             <a href="index.html#hero" class="flex items-center gap-2 text-lg font-semibold tracking-tight text-slate-900 transition hover:text-blue-600" aria-label="Volver al inicio">
                 <span class="flex h-10 w-10 items-center justify-center rounded-full bg-slate-900 text-sm font-[\'Space_Mono\',_monospace] font-bold uppercase tracking-widest text-white">NA</span>
@@ -39,13 +38,16 @@
                     <path d="M4 7h16M4 12h16M4 17h16" />
                 </svg>
             </button>
-            <div class="hidden items-center gap-8 text-sm font-medium text-slate-700 lg:flex">
+            <div class="hidden items-center gap-4 text-sm font-medium text-slate-700 lg:flex">
                 <a class="transition hover:text-blue-600" href="#mesasya">MesasYa</a>
                 <a class="transition hover:text-blue-600" href="#kobra">Kobra</a>
                 <a class="transition hover:text-blue-600" href="#beatlist">BeatList</a>
                 <a class="inline-flex items-center gap-2 rounded-full border border-slate-200 px-4 py-2 text-xs font-semibold uppercase tracking-widest text-slate-700 transition hover:border-blue-500 hover:text-blue-600" href="index.html#contact">
                     Contacto
                 </a>
+                <button type="button" class="inline-flex items-center gap-2 rounded-full border border-slate-200 px-3 py-2 text-xs font-semibold uppercase tracking-widest text-slate-700 transition hover:border-blue-500 hover:text-blue-600" data-language-toggle aria-label="Cambiar idioma">
+                    <span aria-hidden="true" data-language-label>ES</span>
+                </button>
             </div>
         </nav>
         <div id="mobile-nav" data-mobile-menu class="hidden border-t border-slate-200 bg-white/95 px-6 py-4 shadow-lg transition duration-300 lg:hidden">
@@ -56,6 +58,9 @@
                 <a class="inline-flex items-center gap-2 rounded-full border border-slate-200 px-4 py-2 text-xs font-semibold uppercase tracking-widest text-slate-700 transition hover:border-blue-500 hover:text-blue-600" href="index.html#contact">
                     Contacto
                 </a>
+                <button type="button" class="inline-flex items-center justify-center gap-2 rounded-full border border-slate-200 px-4 py-2 text-xs font-semibold uppercase tracking-widest text-slate-700 transition hover:border-blue-500 hover:text-blue-600" data-language-toggle aria-label="Cambiar idioma">
+                    ES / EN
+                </button>
             </div>
         </div>
     </header>
@@ -202,7 +207,7 @@ FastAPI API → MySQL
                             <svg class="h-3.5 w-3.5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
                                 <path fill-rule="evenodd" d="M16.704 5.29a.75.75 0 0 1 .006 1.06l-7.25 7.5a.75.75 0 0 1-1.086.02L3.29 8.536a.75.75 0 0 1 1.06-1.06l4.21 4.209 6.72-6.956a.75.75 0 0 1 1.064.061Z" clip-rule="evenodd" />
                             </svg>
-                            Spotify Approved
+                            <span data-locale-element="projects.beatlist.approval">Spotify Approved</span>
                         </span>
                     </div>
                     <img src="assets/beatlist-logo.svg" alt="Logo BeatList" width="140" height="140" loading="lazy" class="h-24 w-24 rounded-3xl border border-slate-100 bg-slate-50 p-4" />

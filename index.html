@@ -28,42 +28,48 @@
         }
     </style>
 </head>
-<body class="bg-slate-50 font-[\'Inter\',_sans-serif] text-slate-900 antialiased">
+<body class="bg-slate-50 font-[\'Inter\',_sans-serif] text-slate-900 antialiased" data-page="index">
     <header data-nav class="fixed inset-x-0 top-0 z-40 bg-white/70 backdrop-blur transition duration-300">
         <nav class="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
-            <a href="#hero" class="flex items-center gap-2 text-lg font-semibold tracking-tight text-slate-900 transition hover:text-blue-600" aria-label="Inicio">
+            <a href="#hero" class="flex items-center gap-2 text-lg font-semibold tracking-tight text-slate-900 transition hover:text-blue-600" data-i18n="index.nav.brand" data-i18n-attr-aria-label="index.nav.brandAria">
                 <span class="flex h-10 w-10 items-center justify-center rounded-full bg-slate-900 text-sm font-[\'Space_Mono\',_monospace] font-bold uppercase tracking-widest text-white">NA</span>
-                <span class="hidden sm:block">Nicolás Álvarez</span>
+                <span class="hidden sm:block" data-i18n="common.nav.brandName">Nicolás Álvarez</span>
             </a>
-            <button type="button" class="flex h-10 w-10 items-center justify-center rounded-full border border-slate-200 text-slate-700 transition hover:border-blue-500 hover:text-blue-600 lg:hidden" aria-controls="mobile-nav" aria-expanded="false" data-mobile-toggle>
-                <span class="sr-only">Abrir menú</span>
+            <button type="button" class="flex h-10 w-10 items-center justify-center rounded-full border border-slate-200 text-slate-700 transition hover:border-blue-500 hover:text-blue-600 lg:hidden" aria-controls="mobile-nav" aria-expanded="false" data-mobile-toggle data-i18n-attr-aria-label="common.nav.openMenu">
+                <span class="sr-only" data-i18n="common.nav.openMenu">Abrir menú</span>
                 <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                     <path d="M4 7h16M4 12h16M4 17h16" />
                 </svg>
             </button>
-            <div class="hidden items-center gap-8 text-sm font-medium text-slate-700 lg:flex">
-                <a class="transition hover:text-blue-600" href="#about">Sobre mí</a>
-                <a class="transition hover:text-blue-600" href="#skills">Skills</a>
-                <a class="transition hover:text-blue-600" href="#projects">Proyectos</a>
-                <a class="transition hover:text-blue-600" href="#contact">Contacto</a>
-                <a class="inline-flex items-center gap-2 rounded-full border border-slate-200 px-4 py-2 text-xs font-semibold uppercase tracking-widest text-slate-700 transition hover:border-blue-500 hover:text-blue-600" href="assets/cv-nicolas-alvarez.pdf" download>
-                    Descargar CV
+            <div class="hidden items-center gap-4 text-sm font-medium text-slate-700 lg:flex">
+                <a class="transition hover:text-blue-600" href="#about" data-i18n="common.nav.about">Sobre mí</a>
+                <a class="transition hover:text-blue-600" href="#skills" data-i18n="common.nav.skills">Skills</a>
+                <a class="transition hover:text-blue-600" href="#projects" data-i18n="common.nav.projects">Proyectos</a>
+                <a class="transition hover:text-blue-600" href="#contact" data-i18n="common.nav.contact">Contacto</a>
+                <a class="inline-flex items-center gap-2 rounded-full border border-slate-200 px-4 py-2 text-xs font-semibold uppercase tracking-widest text-slate-700 transition hover:border-blue-500 hover:text-blue-600" href="assets/cv-nicolas-alvarez.pdf" download data-cv-link data-i18n="common.nav.cv">
+                    <span data-locale-element="nav.cv">Descargar CV</span>
                     <svg class="h-3.5 w-3.5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
                         <path d="M10 14.25a.75.75 0 0 1-.53-.22l-4-4a.75.75 0 0 1 1.06-1.06l2.72 2.72V3.75a.75.75 0 1 1 1.5 0v7.94l2.72-2.72a.75.75 0 0 1 1.06 1.06l-4 4a.75.75 0 0 1-.53.22Z" />
                         <path d="M4.75 16a.75.75 0 0 1 0-1.5h10.5a.75.75 0 0 1 0 1.5H4.75Z" />
                     </svg>
                 </a>
+                <button type="button" class="inline-flex items-center gap-2 rounded-full border border-slate-200 px-3 py-2 text-xs font-semibold uppercase tracking-widest text-slate-700 transition hover:border-blue-500 hover:text-blue-600" data-language-toggle data-i18n-attr-aria-label="common.language.toggleAria">
+                    <span aria-hidden="true" data-language-label>ES</span>
+                </button>
             </div>
         </nav>
         <div id="mobile-nav" data-mobile-menu class="hidden border-t border-slate-200 bg-white/95 px-6 py-4 shadow-lg transition duration-300 lg:hidden">
             <div class="flex flex-col gap-3 text-sm font-medium text-slate-700">
-                <a class="transition hover:text-blue-600" href="#about">Sobre mí</a>
-                <a class="transition hover:text-blue-600" href="#skills">Skills</a>
-                <a class="transition hover:text-blue-600" href="#projects">Proyectos</a>
-                <a class="transition hover:text-blue-600" href="#contact">Contacto</a>
-                <a class="inline-flex items-center gap-2 rounded-full border border-slate-200 px-4 py-2 text-xs font-semibold uppercase tracking-widest text-slate-700 transition hover:border-blue-500 hover:text-blue-600" href="assets/cv-nicolas-alvarez.pdf" download>
-                    Descargar CV
+                <a class="transition hover:text-blue-600" href="#about" data-i18n="common.nav.about">Sobre mí</a>
+                <a class="transition hover:text-blue-600" href="#skills" data-i18n="common.nav.skills">Skills</a>
+                <a class="transition hover:text-blue-600" href="#projects" data-i18n="common.nav.projects">Proyectos</a>
+                <a class="transition hover:text-blue-600" href="#contact" data-i18n="common.nav.contact">Contacto</a>
+                <a class="inline-flex items-center gap-2 rounded-full border border-slate-200 px-4 py-2 text-xs font-semibold uppercase tracking-widest text-slate-700 transition hover:border-blue-500 hover:text-blue-600" href="assets/cv-nicolas-alvarez.pdf" download data-cv-link data-i18n="common.nav.cv">
+                    <span data-locale-element="nav.cv">Descargar CV</span>
                 </a>
+                <button type="button" class="inline-flex items-center justify-center gap-2 rounded-full border border-slate-200 px-4 py-2 text-xs font-semibold uppercase tracking-widest text-slate-700 transition hover:border-blue-500 hover:text-blue-600" data-language-toggle data-i18n="common.language.toggleLabel" data-i18n-attr-aria-label="common.language.toggleAria">
+                    ES / EN
+                </button>
             </div>
         </div>
     </header>
@@ -90,7 +96,7 @@
                     </p>
                     <div class="flex flex-wrap items-center gap-4">
                         <a href="#projects" class="inline-flex items-center justify-center gap-2 rounded-full bg-blue-600 px-6 py-3 text-sm font-semibold text-white shadow-lg shadow-blue-600/20 transition hover:bg-blue-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600">
-                            Ver proyectos
+                            <span data-locale-element="hero.primaryCta">Ver proyectos</span>
                             <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                                 <path d="M5 12h14" />
                                 <path d="m12 5 7 7-7 7" />
@@ -275,7 +281,7 @@
                         <h2 class="mt-2 text-3xl font-semibold text-slate-900 sm:text-4xl">Soluciones que sostienen operaciones reales.</h2>
                     </div>
                     <a href="projects.html" class="inline-flex items-center gap-2 text-sm font-semibold text-blue-600 transition hover:text-blue-700">
-                        Ver case studies completos
+                        <span data-locale-element="projects.seeAll">Ver case studies completos</span>
                         <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                             <path d="m9 5 7 7-7 7" />
                         </svg>
@@ -313,13 +319,13 @@
                             </div>
                             <div class="flex flex-wrap items-center gap-4">
                                 <button type="button" data-modal-target="modal-mesaysa" class="inline-flex items-center gap-2 rounded-full bg-slate-900 px-5 py-2.5 text-sm font-semibold text-white transition hover:bg-slate-800 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-slate-900">
-                                    Leer más
+                                    <span data-locale-element="projects.cta">Leer más</span>
                                     <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                                         <path d="m9 5 7 7-7 7" />
                                     </svg>
                                 </button>
                                 <a href="projects.html#mesasya" class="inline-flex items-center gap-2 text-sm font-semibold text-blue-600 transition hover:text-blue-700">
-                                    Case study
+                                    <span data-locale-element="projects.caseStudy">Case study</span>
                                     <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                                         <path d="m9 5 7 7-7 7" />
                                     </svg>
@@ -359,13 +365,13 @@
                             </div>
                             <div class="flex flex-wrap items-center gap-4">
                                 <button type="button" data-modal-target="modal-kobra" class="inline-flex items-center gap-2 rounded-full bg-slate-900 px-5 py-2.5 text-sm font-semibold text-white transition hover:bg-slate-800 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-slate-900">
-                                    Leer más
+                                    <span data-locale-element="projects.cta">Leer más</span>
                                     <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                                         <path d="m9 5 7 7-7 7" />
                                     </svg>
                                 </button>
                                 <a href="projects.html#kobra" class="inline-flex items-center gap-2 text-sm font-semibold text-blue-600 transition hover:text-blue-700">
-                                    Case study
+                                    <span data-locale-element="projects.caseStudy">Case study</span>
                                     <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                                         <path d="m9 5 7 7-7 7" />
                                     </svg>
@@ -385,7 +391,7 @@
                                     <svg class="h-3.5 w-3.5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
                                         <path fill-rule="evenodd" d="M16.704 5.29a.75.75 0 0 1 .006 1.06l-7.25 7.5a.75.75 0 0 1-1.086.02L3.29 8.536a.75.75 0 0 1 1.06-1.06l4.21 4.209 6.72-6.956a.75.75 0 0 1 1.064.061Z" clip-rule="evenodd" />
                                     </svg>
-                                    Spotify Approved
+                                    <span data-locale-element="projects.beatlist.approval">Spotify Approved</span>
                                 </span>
                                 <span class="text-xs uppercase tracking-[0.25em] text-slate-400 font-['Space_Mono',_monospace]">Flask · OAuth 2.0 · MySQL · Spotify API</span>
                             </div>
@@ -411,13 +417,13 @@
                             </div>
                             <div class="flex flex-wrap items-center gap-4">
                                 <button type="button" data-modal-target="modal-beatlist" class="inline-flex items-center gap-2 rounded-full bg-slate-900 px-5 py-2.5 text-sm font-semibold text-white transition hover:bg-slate-800 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-slate-900">
-                                    Leer más
+                                    <span data-locale-element="projects.cta">Leer más</span>
                                     <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                                         <path d="m9 5 7 7-7 7" />
                                     </svg>
                                 </button>
                                 <a href="projects.html#beatlist" class="inline-flex items-center gap-2 text-sm font-semibold text-blue-600 transition hover:text-blue-700">
-                                    Case study
+                                    <span data-locale-element="projects.caseStudy">Case study</span>
                                     <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                                         <path d="m9 5 7 7-7 7" />
                                     </svg>
@@ -472,7 +478,7 @@
                             </div>
                             <input type="hidden" name="_captcha" value="false" />
                             <button type="submit" class="inline-flex w-full items-center justify-center gap-2 rounded-full bg-blue-600 px-6 py-3 text-sm font-semibold text-white shadow-lg shadow-blue-600/20 transition hover:bg-blue-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600">
-                                Enviar mensaje
+                                <span data-locale-element="contact.submit">Enviar mensaje</span>
                                 <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                                     <path d="m5 12 7 7 7-7" />
                                     <path d="M12 5v14" />
