@@ -56,6 +56,13 @@
                 "first": "<span class=\"mt-1 h-2 w-2 rounded-full bg-blue-500\"></span>Python backend specialist with Flask and FastAPI, with distributed tasks powered by Celery and efficient data handling.",
                 "second": "<span class=\"mt-1 h-2 w-2 rounded-full bg-blue-500\"></span>I craft clean interfaces with JavaScript and React, prioritizing simplicity and performance.",
                 "third": "<span class=\"mt-1 h-2 w-2 rounded-full bg-blue-500\"></span>I apply cybersecurity best practices to authentication, deployments, and data protection."
+            },
+            "live": {
+                "label": "Live products",
+                "links": {
+                    "mesasya": "→ MesasYa – SaaS platform for restaurant reservation management.",
+                    "beatlist": "→ BeatList – Advanced Spotify playlist analytics and management."
+                }
             }
         },
         "about": {
@@ -134,7 +141,8 @@
                     "first": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#589E8C]\"></span>Configurable floor plans per venue, area, and service with automatic table assignment.",
                     "second": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#589E8C]\"></span>Real-time notifications for guests and staff through adjustable workflows.",
                     "third": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#589E8C]\"></span>Stats and exports designed to scale securely in production environments."
-                }
+                },
+                "directAccess": "→ MesasYa – SaaS platform for restaurant reservation management."
             },
             "kobra": {
                 "badge": "Custom solution",
@@ -157,7 +165,8 @@
                     "first": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#111827]\"></span>Playlist merging and cleanup with intelligent rules and metrics like energy or danceability.",
                     "second": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#111827]\"></span>Web player with smooth animations, recommendations, and listening-habit dashboards.",
                     "third": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#111827]\"></span>Celery-powered analyses process data in the background to deliver precise metrics without disrupting the user experience."
-                }
+                },
+                "directAccess": "→ BeatList – Advanced Spotify playlist analytics and management."
             },
             "cta": "Read more",
             "caseStudy": "Case study"
@@ -251,6 +260,13 @@
                 "mesasya": "01 — MesasYa <span class=\"text-xs text-slate-400\">Restaurant SaaS</span>",
                 "kobra": "02 — Kobra <span class=\"text-xs text-slate-400\">Internal fintech</span>",
                 "beatlist": "03 — BeatList <span class=\"text-xs text-slate-400\">Spotify Approved</span>"
+            }
+        },
+        "directAccess": {
+            "label": "Direct access",
+            "links": {
+                "mesasya": "→ MesasYa – SaaS platform for restaurant reservation management.",
+                "beatlist": "→ BeatList – Advanced Spotify playlist analytics and management."
             }
         },
         "mesasya": {

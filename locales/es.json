@@ -56,6 +56,13 @@
                 "first": "<span class=\"mt-1 h-2 w-2 rounded-full bg-blue-500\"></span>Especialista en backend Python con Flask y FastAPI, con tareas distribuidas mediante Celery y gestión eficiente de datos.",
                 "second": "<span class=\"mt-1 h-2 w-2 rounded-full bg-blue-500\"></span>Construyo interfaces limpias con JavaScript y React, priorizando la simplicidad y el rendimiento.",
                 "third": "<span class=\"mt-1 h-2 w-2 rounded-full bg-blue-500\"></span>Aplico buenas prácticas de ciberseguridad en autenticación, despliegues y protección de datos."
+            },
+            "live": {
+                "label": "Proyectos en vivo",
+                "links": {
+                    "mesasya": "→ MesasYa – Plataforma SaaS de gestión de reservas para restaurantes.",
+                    "beatlist": "→ BeatList – Estadísticas y gestión avanzada de playlists de Spotify."
+                }
             }
         },
         "about": {
@@ -134,7 +141,8 @@
                     "first": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#589E8C]\"></span>Planos de sala configurables por sede, zona y servicio con asignación automática de mesas.",
                     "second": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#589E8C]\"></span>Notificaciones en tiempo real para clientes y staff mediante workflows ajustables.",
                     "third": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#589E8C]\"></span>Estadísticas y exportaciones diseñadas para escalar de forma segura en entornos de producción."
-                }
+                },
+                "directAccess": "→ MesasYa – Plataforma SaaS de gestión de reservas para restaurantes."
             },
             "kobra": {
                 "badge": "Solución a medida",
@@ -156,8 +164,9 @@
                 "bullets": {
                     "first": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#111827]\"></span>Fusión y depuración de playlists con reglas inteligentes y métricas como energía o baile.",
                     "second": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#111827]\"></span>Reproductor web con animaciones fluidas, recomendaciones y dashboards de hábitos de escucha.",
-                "third": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#111827]\"></span>Análisis gestionados con Celery para procesar datos en segundo plano y ofrecer métricas precisas sin afectar la experiencia del usuario."
-                }
+                    "third": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#111827]\"></span>Análisis gestionados con Celery para procesar datos en segundo plano y ofrecer métricas precisas sin afectar la experiencia del usuario."
+                },
+                "directAccess": "→ BeatList – Estadísticas y gestión avanzada de playlists de Spotify."
             },
             "cta": "Leer más",
             "caseStudy": "Case study"
@@ -251,6 +260,13 @@
                 "mesasya": "01 — MesasYa <span class=\"text-xs text-slate-400\">SaaS restauración</span>",
                 "kobra": "02 — Kobra <span class=\"text-xs text-slate-400\">Fintech interna</span>",
                 "beatlist": "03 — BeatList <span class=\"text-xs text-slate-400\">Spotify Approved</span>"
+            }
+        },
+        "directAccess": {
+            "label": "Acceso directo",
+            "links": {
+                "mesasya": "→ MesasYa – Plataforma SaaS de gestión de reservas para restaurantes.",
+                "beatlist": "→ BeatList – Estadísticas y gestión avanzada de playlists de Spotify."
             }
         },
         "mesasya": {
