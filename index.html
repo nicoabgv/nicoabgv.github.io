@@ -419,7 +419,7 @@
                                     </svg>
                                     <span data-locale-element="projects.beatlist.approval">Spotify Approved</span>
                                 </span>
-                                <span class="text-xs uppercase tracking-[0.25em] text-slate-400 font-['Space_Mono',_monospace]">Flask · OAuth 2.0 · MySQL · Spotify API</span>
+                                <span class="text-xs uppercase tracking-[0.25em] text-slate-400 font-['Space_Mono',_monospace]">Flask · OAuth 2.0 · Celery · Spotify API</span>
                             </div>
                             <div class="space-y-4">
                                 <h3 class="text-2xl font-semibold text-slate-900">BeatList</h3>
@@ -627,7 +627,7 @@ FastAPI API → MySQL
     ↓
 Flask API (OAuth 2.0 Spotify)
     ↓
-MySQL → Historial y métricas
+Celery workers → Análisis pesados y métricas
     ↓
 Dashboards JS + Reproductor</pre>
                 </details>

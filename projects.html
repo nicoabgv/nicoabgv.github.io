@@ -228,7 +228,7 @@ FastAPI API → MySQL
                             BeatList es la plataforma para melómanos, curadores y creadores de contenido que necesitan más herramientas que el gestor estándar de Spotify. Centraliza administración avanzada, descubrimiento y analítica en una experiencia fluida.
                         </p>
                         <p>
-                            El backend en <strong>Flask</strong> gestiona la autenticación <strong data-i18n="stack.oauth"></strong> aprobada por Spotify y accede a datos extendidos mediante su <strong data-i18n="stack.spotifyapi"></strong>. El frontend en JavaScript dinamiza dashboards, recomendaciones y un reproductor web con animaciones suaves.
+                            El backend en <strong>Flask</strong> gestiona la autenticación <strong data-i18n="stack.oauth"></strong> aprobada por Spotify, coordina análisis pesados con <strong>Celery</strong> y accede a datos extendidos mediante la <strong data-i18n="stack.spotifyapi"></strong>. El frontend en JavaScript dinamiza dashboards, recomendaciones y un reproductor web con animaciones suaves.
                         </p>
                         <div class="rounded-3xl border border-slate-200 bg-white/80 p-5 shadow-sm">
                             <p class="text-xs font-semibold uppercase tracking-[0.3em] text-slate-500" data-direct-access-label>Acceso directo</p>
@@ -256,7 +256,7 @@ FastAPI API → MySQL
                                 <li>Flask · Python</li>
                                 <li>Spotify API · OAuth 2.0</li>
                                 <li>JavaScript modular</li>
-                                <li>MySQL</li>
+                                <li>Celery para análisis asíncronos</li>
                             </ul>
                         </div>
                         <div class="rounded-3xl border border-dashed border-[#111827]/30 bg-[#111827]/10 p-6">
@@ -271,7 +271,7 @@ Flask API (OAuth 2.0)
     ↓
 Spotify API oficial → Datos enriquecidos
     ↓
-MySQL → Historial y métricas
+Celery workers → Análisis pesados y métricas
     ↓
 Frontend JS → Dashboards + reproductor</pre>
                         </details>

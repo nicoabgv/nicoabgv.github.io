@@ -37,7 +37,7 @@ Portfolio minimalista y profesional construido con **Tailwind CSS** para present
 Plataforma financiera a medida para Cybersur. Automatiza facturación, recordatorios y exportaciones mediante FastAPI, Celery, MySQL y Docker.
 
 ### [BeatList](projects.html#beatlist)
-Suite web para power users de Spotify. Gestiona playlists, recomendaciones y métricas avanzadas con Flask, OAuth y MySQL.
+Suite web para power users de Spotify. Gestiona playlists, recomendaciones y métricas avanzadas con Flask, OAuth y Celery para análisis en segundo plano.
 
 ### [MesasYa](projects.html#mesasya)
 SaaS de reservas multi-sede en producción. Controla ocupación, notificaciones y analítica para cadenas de restaurantes con Flask, Celery y Docker.
