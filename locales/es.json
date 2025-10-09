@@ -40,14 +40,14 @@
         "hero": {
             "taglineHtml": "<span class=\"h-px w-10 bg-slate-300\"></span>Ingeniería de Software · Ciberseguridad",
             "title": "Construyo plataformas digitales confiables y listas para producción.",
-            "description": "Soy Nicolás Álvarez, ingeniero de software en mi último año de carrera. Tras dos años de especialización universitaria en ciberseguridad aplicada, diseño productos que combinan automatización, escalabilidad y buenas prácticas de seguridad.",
+            "description": "Soy Nicolás Álvarez, ingeniero de software en mi último año de carrera. Con formación en ciberseguridad aplicada, desarrollo productos que combinan automatización, escalabilidad y una arquitectura sólida desde el inicio.",
             "primaryCta": "Ver proyectos",
             "secondaryCta": "LinkedIn",
             "summaryLabel": "Resumen Express",
             "summaryTitle": "Diseño y desarrollo plataformas web seguras, escalables y bien estructuradas.",
             "summaryItems": {
-                "first": "<span class=\"mt-1 h-2 w-2 rounded-full bg-blue-500\"></span>Especialista en backend Python con Flask y FastAPI, apoyado en tareas asíncronas con Celery y bases de datos relacionales.",
-                "second": "<span class=\"mt-1 h-2 w-2 rounded-full bg-blue-500\"></span>Construyo interfaces limpias con JavaScript y React ligero cuando aporta valor a la experiencia.",
+                "first": "<span class=\"mt-1 h-2 w-2 rounded-full bg-blue-500\"></span>Especialista en backend Python con Flask y FastAPI, con tareas distribuidas mediante Celery y gestión eficiente de datos.",
+                "second": "<span class=\"mt-1 h-2 w-2 rounded-full bg-blue-500\"></span>Construyo interfaces limpias con JavaScript y React, priorizando la simplicidad y el rendimiento.",
                 "third": "<span class=\"mt-1 h-2 w-2 rounded-full bg-blue-500\"></span>Aplico buenas prácticas de ciberseguridad en autenticación, despliegues y protección de datos."
             }
         },
@@ -55,7 +55,7 @@
             "label": "Sobre mí",
             "title": "Formación técnica con foco en seguridad aplicada.",
             "paragraph1": "Soy ingeniero de software en mi último año de carrera, con una especialización universitaria de dos años en ciberseguridad aplicada. Ese recorrido me permitió integrar buenas prácticas de seguridad en backend, autenticación y despliegues sin perder de vista la experiencia de usuario.",
-            "paragraph2": "Trabajo en soluciones SaaS, integraciones de APIs y automatizaciones sobre Python y JavaScript. No hago pentesting profesional ni threat modeling avanzado, pero sí cuido la documentación, los flujos de datos y la operativa diaria para que cada entrega sea mantenible y honesta con sus objetivos.",
+            "paragraph2": "Trabajo en soluciones SaaS, integraciones de APIs y automatizaciones sobre Python y JavaScript. Mi enfoque en seguridad está orientado a la práctica: diseño sistemas coherentes, bien documentados y con flujos de datos claros que facilitan la mantenibilidad y reducen riesgos.",
             "cardTitle": "Datos clave",
             "details": {
                 "locationLabel": "Ubicación",
@@ -68,7 +68,7 @@
                 "experienceValue": "2+"
             },
             "collaborationLabel": "Colaboraciones",
-            "collaborationText": "Si quieres conocer más sobre estos proyectos o charlar sobre nuevas ideas técnicas, escríbeme en LinkedIn o GitHub."
+            "collaborationText": "Abierto a colaboraciones técnicas, sinergias entre proyectos o simplemente compartir ideas sobre desarrollo y producto. Puedes contactarme a través de LinkedIn."
         },
         "skills": {
             "label": "Skills & Stack",
@@ -86,7 +86,7 @@
                 },
                 "frontend": {
                     "title": "Frontend",
-                    "description": "Interfaces limpias con JavaScript y Tailwind, apoyadas en componentes React cuando el proyecto lo requiere.",
+                    "description": "Interfaces limpias con JavaScript y Tailwind, apoyadas en React para aportar fluidez y modularidad.",
                     "tags": [
                         "JavaScript",
                         "Tailwind CSS",
@@ -126,7 +126,7 @@
                 "bullets": {
                     "first": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#589E8C]\"></span>Planos de sala configurables por sede, zona y servicio con asignación automática de mesas.",
                     "second": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#589E8C]\"></span>Notificaciones en tiempo real para clientes y staff mediante workflows ajustables.",
-                    "third": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#589E8C]\"></span>Estadísticas y exportaciones preparadas para negocio con despliegues en Docker Compose listos para crecer con seguridad."
+                    "third": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#589E8C]\"></span>Estadísticas y exportaciones diseñadas para escalar de forma segura en entornos de producción."
                 }
             },
             "kobra": {
@@ -158,8 +158,8 @@
         "contact": {
             "label": "Contacto",
             "title": "¿Hablamos de tu próximo proyecto?",
-            "description": "Si quieres conocer más sobre estos proyectos o charlar sobre nuevas ideas, contáctame en LinkedIn o GitHub.",
-            "direct": "También puedes escribirme directamente:",
+            "description": "Si quieres conocer más sobre estos proyectos o charlar sobre nuevas ideas, contáctame en LinkedIn.",
+            "direct": "También puedes escribirme directamente a nicoabgv@gmail.com o explorar mi código en GitHub.",
             "messageLabel": "Proyecto",
             "messagePlaceholder": "Cuéntame objetivos, plazos o retos técnicos",
             "submit": "Enviar mensaje",
@@ -196,7 +196,7 @@
                 "bullets": {
                     "first": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#111827]\"></span>Fusión, depuración y reorganización de playlists con reglas inteligentes basadas en métricas como energía o bailabilidad.",
                     "second": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#111827]\"></span>Motor de recomendaciones por artistas y géneros favoritos, sumado a dashboards que muestran hábitos de escucha.",
-                    "third": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#111827]\"></span>Persistencia en MySQL para conservar estadísticas personalizadas y ofrecer continuidad entre sesiones."
+                    "third": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#111827]\"></span>Análisis gestionados con Celery para procesar datos en segundo plano y ofrecer métricas precisas sin afectar la experiencia del usuario."
                 },
                 "next": "Posibles evoluciones: sumar modo colaborativo o exportaciones de insights en futuras versiones.",
                 "diagram": "Diagrama técnico",

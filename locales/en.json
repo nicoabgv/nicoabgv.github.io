@@ -40,14 +40,14 @@
         "hero": {
             "taglineHtml": "<span class=\"h-px w-10 bg-slate-300\"></span>Software Engineering · Cybersecurity",
             "title": "I build reliable digital platforms that are ready for production.",
-            "description": "I'm Nicolás Álvarez, a software engineer in my final year of university. After two years specializing in applied cybersecurity, I design products that blend automation, scalability, and security best practices.",
+            "description": "I'm Nicolás Álvarez, a software engineer in my final year of university. With training in applied cybersecurity, I build products that combine automation, scalability, and solid architecture from day one.",
             "primaryCta": "View projects",
             "secondaryCta": "LinkedIn",
             "summaryLabel": "Quick snapshot",
             "summaryTitle": "I design and build secure, scalable, and well-structured web platforms.",
             "summaryItems": {
-                "first": "<span class=\"mt-1 h-2 w-2 rounded-full bg-blue-500\"></span>Python backend specialist with Flask and FastAPI, powered by Celery tasks and relational databases.",
-                "second": "<span class=\"mt-1 h-2 w-2 rounded-full bg-blue-500\"></span>I craft clean interfaces with JavaScript and lightweight React when it truly enhances the experience.",
+                "first": "<span class=\"mt-1 h-2 w-2 rounded-full bg-blue-500\"></span>Python backend specialist with Flask and FastAPI, with distributed tasks powered by Celery and efficient data handling.",
+                "second": "<span class=\"mt-1 h-2 w-2 rounded-full bg-blue-500\"></span>I craft clean interfaces with JavaScript and React, prioritizing simplicity and performance.",
                 "third": "<span class=\"mt-1 h-2 w-2 rounded-full bg-blue-500\"></span>I apply cybersecurity best practices to authentication, deployments, and data protection."
             }
         },
@@ -55,7 +55,7 @@
             "label": "About me",
             "title": "Technical background with an applied security focus.",
             "paragraph1": "I'm a software engineer in my final year of studies, with a two-year university specialization in applied cybersecurity. That journey let me integrate security best practices into backend work, authentication, and deployments without losing sight of the user experience.",
-            "paragraph2": "I work on SaaS solutions, API integrations, and automation with Python and JavaScript. I don't do professional pentesting or advanced threat modeling, but I obsess over documentation, data flows, and day-to-day operations so every delivery stays maintainable and honest to its goals.",
+            "paragraph2": "I work on SaaS solutions, API integrations, and automation with Python and JavaScript. My security focus is practical: I design coherent systems with clear data flows and documentation that keep every delivery maintainable and lower risk.",
             "cardTitle": "Key facts",
             "details": {
                 "locationLabel": "Location",
@@ -68,7 +68,7 @@
                 "experienceValue": "2+"
             },
             "collaborationLabel": "Collaborations",
-            "collaborationText": "If you'd like to explore these projects or discuss new technical ideas, reach out on LinkedIn or GitHub."
+            "collaborationText": "Open to technical collaborations, cross-project synergies, or simply exchanging ideas about product and development. Reach out via LinkedIn."
         },
         "skills": {
             "label": "Skills & Stack",
@@ -86,7 +86,7 @@
                 },
                 "frontend": {
                     "title": "Frontend",
-                    "description": "Clean interfaces with JavaScript and Tailwind, backed by React components when the project benefits from it.",
+                    "description": "Clean interfaces with JavaScript and Tailwind, backed by React to add smoothness and modularity.",
                     "tags": [
                         "JavaScript",
                         "Tailwind CSS",
@@ -126,7 +126,7 @@
                 "bullets": {
                     "first": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#589E8C]\"></span>Configurable floor plans per venue, area, and service with automatic table assignment.",
                     "second": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#589E8C]\"></span>Real-time notifications for guests and staff through adjustable workflows.",
-                    "third": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#589E8C]\"></span>Business-ready stats and exports with secure Docker Compose deployments prepared to scale."
+                    "third": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#589E8C]\"></span>Stats and exports designed to scale securely in production environments."
                 }
             },
             "kobra": {
@@ -158,8 +158,8 @@
         "contact": {
             "label": "Contact",
             "title": "Shall we talk about your next project?",
-            "description": "If you want to learn more about these projects or chat about new ideas, get in touch on LinkedIn or GitHub.",
-            "direct": "You can also write to me directly:",
+            "description": "If you want to learn more about these projects or chat about new ideas, get in touch on LinkedIn.",
+            "direct": "You can also email me at nicoabgv@gmail.com or explore my code on GitHub.",
             "messageLabel": "Project",
             "messagePlaceholder": "Tell me about goals, timelines, or technical challenges",
             "submit": "Send message",
@@ -196,7 +196,7 @@
                 "bullets": {
                     "first": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#111827]\"></span>Playlist merging, cleanup, and reordering with intelligent rules based on metrics like energy or danceability.",
                     "second": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#111827]\"></span>Recommendation engine by favorite artists and genres, plus dashboards showing listening habits.",
-                    "third": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#111827]\"></span>MySQL persistence keeps personalized statistics so insights persist across sessions."
+                    "third": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#111827]\"></span>Celery-powered analyses process data in the background to deliver precise metrics without disrupting the user experience."
                 },
                 "next": "Future evolutions: collaborative mode or insight exports in upcoming versions.",
                 "diagram": "Technical diagram",
