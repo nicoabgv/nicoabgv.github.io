@@ -101,10 +101,10 @@
                 <div class="grid gap-10 lg:grid-cols-[1.4fr,1fr]" data-animate>
                     <article class="space-y-6 text-base text-slate-600">
                         <p>
-                            MesasYa es un <strong>SaaS en producción</strong> que digitaliza la gestión de reservas para restaurantes con múltiples sedes. Reúne planos interactivos, reglas personalizables y notificaciones en tiempo real para que cada servicio funcione sin sorpresas.
+                            MesasYa es un <strong data-i18n="stack.saas"></strong> que digitaliza la gestión de reservas para restaurantes con múltiples sedes. Reúne planos interactivos, reglas personalizables y notificaciones en tiempo real para que cada servicio funcione sin sorpresas.
                         </p>
                         <p>
-                            El backend basado en <strong>Flask, Celery, MySQL y Docker</strong> utiliza Docker Compose y buenas prácticas de seguridad. Cada restaurante configura zonas, servicios, idiomas y workflows específicos sin perder estabilidad ni trazabilidad.
+                            El backend basado en <strong data-i18n="stack.flaskcelery"></strong> utiliza Docker Compose y buenas prácticas de seguridad. Cada restaurante configura zonas, servicios, idiomas y workflows específicos sin perder estabilidad ni trazabilidad.
                         </p>
                         <div class="rounded-3xl border border-slate-200 bg-slate-50/70 p-6">
                             <h3 class="text-sm font-semibold uppercase tracking-widest text-slate-500">Impacto operativo</h3>
@@ -155,7 +155,7 @@ Flask API → MySQL
                 <div class="grid gap-10 lg:grid-cols-[1.4fr,1fr]" data-animate>
                     <article class="space-y-6 text-base text-slate-600">
                         <p>
-                            Kobra es la solución a medida que mantiene la operativa financiera de Cybersur. Automatiza facturación, cobros y recordatorios desde un backend robusto en <strong>FastAPI, Celery, MySQL y Docker</strong>.
+                            Kobra es la solución a medida que mantiene la operativa financiera de Cybersur. Automatiza facturación, cobros y recordatorios desde un backend robusto en <strong data-i18n="stack.fastapi"></strong>.
                         </p>
                         <p>
                             Los cronjobs programados gestionan exportaciones, limpiezas de datos y conciliaciones automáticas. Los paneles internos priorizan métricas de cobranza y SLA por cliente para que el equipo financiero tenga claridad diaria.
@@ -218,14 +218,14 @@ FastAPI API → MySQL
                             BeatList es la plataforma para melómanos, curadores y creadores de contenido que necesitan más herramientas que el gestor estándar de Spotify. Centraliza administración avanzada, descubrimiento y analítica en una experiencia fluida.
                         </p>
                         <p>
-                            El backend en <strong>Flask</strong> gestiona la autenticación <strong>OAuth 2.0</strong> aprobada por Spotify y accede a datos extendidos mediante su API oficial. El frontend en JavaScript dinamiza dashboards, recomendaciones y un reproductor web con animaciones suaves.
+                            El backend en <strong>Flask</strong> gestiona la autenticación <strong data-i18n="stack.oauth"></strong> aprobada por Spotify y accede a datos extendidos mediante su <strong data-i18n="stack.spotifyapi"></strong>. El frontend en JavaScript dinamiza dashboards, recomendaciones y un reproductor web con animaciones suaves.
                         </p>
                         <div class="rounded-3xl border border-slate-200 bg-white/90 p-6 shadow-sm">
                             <h3 class="text-sm font-semibold uppercase tracking-widest text-slate-500">Experiencia destacada</h3>
                             <ul class="mt-4 space-y-3">
                                 <li class="flex items-start gap-3"><span class="mt-1 h-2 w-2 rounded-full bg-[#111827]"></span>Listas inteligentes basadas en reglas y métricas como energía o bailabilidad.</li>
                                 <li class="flex items-start gap-3"><span class="mt-1 h-2 w-2 rounded-full bg-[#111827]"></span>Dashboard con tendencias temporales y hábitos de escucha segmentados por artistas y géneros.</li>
-                                <li class="flex items-start gap-3"><span class="mt-1 h-2 w-2 rounded-full bg-[#111827]"></span>Reproductor web con animaciones personalizadas y continuidad entre sesiones gracias a MySQL.</li>
+                                <li class="flex items-start gap-3"><span class="mt-1 h-2 w-2 rounded-full bg-[#111827]"></span>Análisis gestionados con Celery para procesar datos en segundo plano y ofrecer métricas precisas sin afectar la experiencia del usuario.</li>
                             </ul>
                         </div>
                     </article>
@@ -262,8 +262,8 @@ Frontend JS → Dashboards + reproductor</pre>
         <section class="bg-slate-900 py-20">
             <div class="mx-auto flex max-w-5xl flex-col items-center gap-6 px-6 text-center text-white" data-animate>
                 <p class="text-xs font-semibold uppercase tracking-[0.3em] text-white/60">Conversemos</p>
-                <h2 class="text-3xl font-semibold sm:text-4xl">Si tienes curiosidad por estos proyectos o te gustaría explorar nuevas ideas técnicas, escríbeme en LinkedIn o GitHub.</h2>
-                <p class="max-w-3xl text-base text-white/80">Respondo personalmente cada mensaje y me interesa colaborar donde la automatización, el SaaS y la ciberseguridad aplicada aporten valor real.</p>
+                <h2 class="text-3xl font-semibold sm:text-4xl">Si quieres hablar sobre estos proyectos o explorar nuevas ideas, escríbeme en LinkedIn.</h2>
+                <p class="max-w-3xl text-base text-white/80">Me interesa colaborar en iniciativas donde la tecnología y el desarrollo de producto puedan marcar una diferencia real.</p>
                 <div class="flex flex-wrap items-center justify-center gap-4">
                     <a href="https://www.linkedin.com/in/nicolas-alvarez-becerra/" class="inline-flex items-center gap-2 rounded-full bg-white px-6 py-3 text-sm font-semibold text-slate-900 transition hover:bg-slate-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white" target="_blank" rel="noreferrer">LinkedIn</a>
                     <a href="https://github.com/nicoabgv" class="inline-flex items-center gap-2 rounded-full border border-white/40 px-6 py-3 text-sm font-semibold text-white transition hover:border-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white" target="_blank" rel="noreferrer">GitHub</a>
