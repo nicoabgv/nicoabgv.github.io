@@ -228,6 +228,8 @@ document.addEventListener('DOMContentLoaded', () => {
             return null;
         }, object);
 
+    const missingTranslations = new Set();
+
     const applyBindings = (groupData, bindings) => {
         if (!groupData || !bindings) return;
         bindings.forEach((binding) => {
@@ -236,7 +238,10 @@ document.addEventListener('DOMContentLoaded', () => {
             if (binding.attributes) {
                 Object.entries(binding.attributes).forEach(([attribute, keyPath]) => {
                     const value = getNestedValue(groupData, keyPath);
-                    if (value == null) return;
+                    if (value == null) {
+                        missingTranslations.add(keyPath);
+                        return;
+                    }
                     elements.forEach((element) => {
                         element.setAttribute(attribute, value);
                     });
@@ -245,7 +250,10 @@ document.addEventListener('DOMContentLoaded', () => {
             }
             if (binding.attribute) {
                 const value = getNestedValue(groupData, binding.key);
-                if (value == null) return;
+                if (value == null) {
+                    missingTranslations.add(binding.key);
+                    return;
+                }
                 elements.forEach((element) => {
                     element.setAttribute(binding.attribute, value);
                 });
@@ -253,7 +261,10 @@ document.addEventListener('DOMContentLoaded', () => {
             }
             if (!binding.key) return;
             const value = getNestedValue(groupData, binding.key);
-            if (value == null) return;
+            if (value == null) {
+                missingTranslations.add(binding.key);
+                return;
+            }
             elements.forEach((element) => {
                 if (binding.type === 'html') {
                     element.innerHTML = value;
@@ -348,8 +359,13 @@ document.addEventListener('DOMContentLoaded', () => {
     };
 
     const applyTranslations = (langData, lang) => {
+        missingTranslations.clear();
         applyBindings(langData?.common, translationBindings.common);
         applyBindings(langData?.[pageKey], translationBindings[pageKey]);
+        applyBindings(langData?.common, translationBindings.common);
+        if (missingTranslations.size) {
+            console.warn('Missing translations for keys:', Array.from(missingTranslations));
+        }
         updateLanguageControls(langData, lang);
         updateCvLinks(lang);
         updateDocumentLanguage(langData, lang);
