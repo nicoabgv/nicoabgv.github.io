@@ -7,8 +7,8 @@ const LANGUAGE_FILES = {
     en: 'locales/en.json',
 };
 const CV_FILES = {
-    es: 'assets/docs/cv_es.pdf',
-    en: 'assets/docs/cv_en.pdf',
+    es: 'assets/cv_es.pdf',
+    en: 'assets/cv_en.pdf',
 };
 
 const translationBindings = {
