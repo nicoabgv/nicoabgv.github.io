@@ -158,9 +158,9 @@
             "beatlist": {
                 "badge": "Music platform",
                 "approval": "Spotify Approved",
-                "tech": "Flask · OAuth 2.0 · MySQL · Spotify API",
+                "tech": "Flask · OAuth 2.0 · Celery · Spotify API",
                 "title": "BeatList",
-                "description": "BeatList is the suite for music lovers and curators who need more than Spotify's default manager. It integrates the official API with deep analytics and interactive experiences validated by Spotify's partner program.",
+                "description": "BeatList is the suite for music lovers and curators who need more than Spotify's default manager. It integrates the official API with deep analytics orchestrated by Celery and interactive experiences validated by Spotify's partner program.",
                 "bullets": {
                     "first": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#111827]\"></span>Playlist merging and cleanup with intelligent rules and metrics like energy or danceability.",
                     "second": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#111827]\"></span>Web player with smooth animations, recommendations, and listening-habit dashboards.",
@@ -208,7 +208,7 @@
                 "tag": "BeatList",
                 "title": "Professional playlist management with Spotify's official seal.",
                 "paragraph1": "BeatList serves music lovers, curators, and creators who need more than Spotify's native manager. It combines advanced administration, discovery, and analytics in a fluid experience.",
-                "paragraph2": "Thanks to the official <strong data-i18n=\"stack.spotifyapi\"></strong> and approved <strong data-i18n=\"stack.oauth\"></strong> authentication, the Flask backend accesses extended data with professional-grade stability. The JavaScript frontend offers dashboards and a web player with custom micro-interactions.",
+                "paragraph2": "Thanks to the official <strong data-i18n=\"stack.spotifyapi\"></strong> and approved <strong data-i18n=\"stack.oauth\"></strong> authentication, the Flask backend accesses extended data with professional-grade stability and offloads heavy analyses to Celery to keep the experience smooth. The JavaScript frontend offers dashboards and a web player with custom micro-interactions.",
                 "bullets": {
                     "first": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#111827]\"></span>Playlist merging, cleanup, and reordering with intelligent rules based on metrics like energy or danceability.",
                     "second": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#111827]\"></span>Recommendation engine by favorite artists and genres, plus dashboards showing listening habits.",
@@ -216,7 +216,7 @@
                 },
                 "next": "Future evolutions: collaborative mode or insight exports in upcoming versions.",
                 "diagram": "Technical diagram",
-                "diagramContent": "Web client\n    ↓\nFlask API (Spotify OAuth 2.0)\n    ↓\nMySQL → History & metrics\n    ↓\nJS dashboards + Player"
+                "diagramContent": "Web client\n    ↓\nFlask API (Spotify OAuth 2.0)\n    ↓\nCelery workers → Heavy analyses & metrics\n    ↓\nJS dashboards + Player"
             },
             "mesasya": {
                 "tag": "MesasYa",
@@ -308,18 +308,24 @@
             "title": "BeatList — Music suite for creators",
             "approval": "Spotify Approved",
             "paragraph1": "BeatList empowers curators and creators to go beyond Spotify's default tooling. It connects the <strong data-i18n=\"stack.spotifyapi\"></strong> with advanced analysis and interactive experiences validated by Spotify for Developers.",
-            "paragraph2": "The Flask backend with <strong data-i18n=\"stack.oauth\"></strong> collects extended data and stores it in MySQL. The frontend delivers players, dashboards, and mixing tools built for professionals and communities.",
+            "paragraph2": "The Flask backend with <strong data-i18n=\"stack.oauth\"></strong> collects extended data and orchestrates Celery analyses to deliver metrics without blocking listeners. The frontend delivers players, dashboards, and mixing tools built for professionals and communities.",
             "outcomes": "Results",
             "bullets": {
                 "first": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#111827]\"></span>Intelligent playlist reorganization using energy and rhythm metrics.",
                 "second": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#111827]\"></span>Dynamic dashboards and player with interactive experiences.",
-                "third": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#111827]\"></span>Personalized insight storage that preserves listening habits."
+                "third": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#111827]\"></span>Celery-powered heavy processing keeps insights up to date on listening habits."
             },
             "stack": "Stack",
+            "stackItems": {
+                "first": "Flask · Python",
+                "second": "Spotify API · OAuth 2.0",
+                "third": "Modular JavaScript",
+                "fourth": "Celery for async analyses"
+            },
             "next": "Next steps",
             "nextText": "Collaborative mode and advanced exports are on the roadmap.",
             "schema": "Technical outline",
-            "schemaContent": "Users\n    ↓\nFlask API (Spotify OAuth)\n    ↓\nMySQL → Insights\n    ↓\nDashboards + Player"
+            "schemaContent": "Users\n    ↓\nFlask API (Spotify OAuth)\n    ↓\nCelery workers → Heavy analyses & insights\n    ↓\nDashboards + Player"
         }
     }
 }
