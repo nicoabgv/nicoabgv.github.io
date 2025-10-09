@@ -26,6 +26,11 @@ const translationBindings = {
         { selector: 'footer a[href="projects.html"]', key: 'footer.caseStudies' },
         { selector: 'footer a[href="https://github.com/nicoabgv"]', key: 'footer.github' },
         { selector: 'footer a[href^="mailto:"]', key: 'footer.contact' },
+        { selector: 'strong[data-i18n="stack.fastapi"]', key: 'stack.fastapi' },
+        { selector: 'strong[data-i18n="stack.spotifyapi"]', key: 'stack.spotifyapi' },
+        { selector: 'strong[data-i18n="stack.oauth"]', key: 'stack.oauth' },
+        { selector: 'strong[data-i18n="stack.saas"]', key: 'stack.saas' },
+        { selector: 'strong[data-i18n="stack.flaskcelery"]', key: 'stack.flaskcelery' },
     ],
     index: [
         { selector: '#hero p.inline-flex', key: 'hero.taglineHtml', type: 'html' },

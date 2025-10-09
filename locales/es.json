@@ -26,6 +26,13 @@
         },
         "modals": {
             "closeAria": "Cerrar modal"
+        },
+        "stack": {
+            "fastapi": "FastAPI, Celery, MySQL y Docker",
+            "spotifyapi": "API de Spotify",
+            "oauth": "OAuth 2.0",
+            "saas": "SaaS en producción",
+            "flaskcelery": "Flask, Celery, MySQL y Docker"
         }
     },
     "index": {
@@ -149,7 +156,7 @@
                 "bullets": {
                     "first": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#111827]\"></span>Fusión y depuración de playlists con reglas inteligentes y métricas como energía o baile.",
                     "second": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#111827]\"></span>Reproductor web con animaciones fluidas, recomendaciones y dashboards de hábitos de escucha.",
-                    "third": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#111827]\"></span>Autenticación OAuth 2.0 oficial para acceder a datos extendidos y mantener la estabilidad del servicio."
+                "third": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#111827]\"></span>Análisis gestionados con Celery para procesar datos en segundo plano y ofrecer métricas precisas sin afectar la experiencia del usuario."
                 }
             },
             "cta": "Leer más",
@@ -177,7 +184,7 @@
             "kobra": {
                 "tag": "Kobra",
                 "title": "Plataforma financiera que sostiene el día a día de Cybersur.",
-                "paragraph1": "Kobra es la solución a medida que construí para Cybersur. Con un stack de <strong>FastAPI, Celery, MySQL y Docker</strong>, centraliza facturación, cobros y notificaciones para que el equipo financiero trabaje con información coherente y actualizada.",
+                "paragraph1": "Kobra es la solución a medida que construí para Cybersur. Con un stack de <strong data-i18n=\"stack.fastapi\"></strong>, centraliza facturación, cobros y notificaciones para que el equipo financiero trabaje con información coherente y actualizada.",
                 "paragraph2": "Los cronjobs programados gestionan exportaciones y limpiezas de datos, mientras que los pipelines de avisos y recordatorios dejan registro de cada acción. Todo el flujo está pensado para dar visibilidad inmediata y reducir tareas manuales repetitivas.",
                 "bullets": {
                     "first": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#f28d1f]\"></span>Workflows automáticos que reducen drásticamente los tiempos de seguimiento y cobranza.",
@@ -192,7 +199,7 @@
                 "tag": "BeatList",
                 "title": "Gestión profesional de playlists con sello oficial de Spotify.",
                 "paragraph1": "BeatList es la plataforma para melómanos, curadores y creadores que necesitan algo más potente que el gestor nativo de Spotify. Reúne administración avanzada, descubrimiento y analítica en una experiencia fluida.",
-                "paragraph2": "Gracias a la integración oficial con la <strong>API de Spotify</strong> y a la autenticación <strong>OAuth 2.0</strong> aprobada, el backend en Flask accede a datos extendidos con estabilidad profesional. El frontend en JavaScript ofrece dashboards y un reproductor web con microinteracciones personalizadas.",
+                "paragraph2": "Gracias a la integración oficial con la <strong data-i18n=\"stack.spotifyapi\"></strong> y a la autenticación <strong data-i18n=\"stack.oauth\"></strong> aprobada, el backend en Flask accede a datos extendidos con estabilidad profesional. El frontend en JavaScript ofrece dashboards y un reproductor web con microinteracciones personalizadas.",
                 "bullets": {
                     "first": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#111827]\"></span>Fusión, depuración y reorganización de playlists con reglas inteligentes basadas en métricas como energía o bailabilidad.",
                     "second": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#111827]\"></span>Motor de recomendaciones por artistas y géneros favoritos, sumado a dashboards que muestran hábitos de escucha.",
@@ -205,8 +212,8 @@
             "mesasya": {
                 "tag": "MesasYa",
                 "title": "Reservas inteligentes para cadenas de restauración.",
-                "paragraph1": "MesasYa es una plataforma <strong>SaaS en producción</strong> que digitaliza la gestión de reservas para restaurantes con múltiples sedes. Ofrece control granular de ocupación, automatización de comunicaciones y dashboards listos para el gestor.",
-                "paragraph2": "Con <strong>Flask, Celery, MySQL y Docker</strong> como base, la solución se despliega con Docker Compose y buenas prácticas de seguridad, manteniendo workflows personalizables por zona, servicio y equipo. Las analíticas y exportaciones se adaptan a las decisiones del negocio.",
+                "paragraph1": "MesasYa es una plataforma <strong data-i18n=\"stack.saas\"></strong> que digitaliza la gestión de reservas para restaurantes con múltiples sedes. Ofrece control granular de ocupación, automatización de comunicaciones y dashboards listos para el gestor.",
+                "paragraph2": "Con <strong data-i18n=\"stack.flaskcelery\"></strong> como base, la solución se despliega con Docker Compose y buenas prácticas de seguridad, manteniendo workflows personalizables por zona, servicio y equipo. Las analíticas y exportaciones se adaptan a las decisiones del negocio.",
                 "bullets": {
                     "first": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#589E8C]\"></span>Planos de sala interactivos y configurables por sede, zona y servicio.",
                     "second": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#589E8C]\"></span>Notificaciones automáticas para equipos internos y clientes finales.",
@@ -249,8 +256,8 @@
         "mesasya": {
             "label": "Case study 01",
             "title": "MesasYa — SaaS de reservas multi-sede",
-            "paragraph1": "MesasYa es un <strong>SaaS en producción</strong> que digitaliza la gestión de reservas para restaurantes con múltiples sedes. Reúne planos interactivos, reglas personalizables y notificaciones en tiempo real para que cada servicio funcione sin sorpresas.",
-            "paragraph2": "El backend basado en <strong>Flask, Celery, MySQL y Docker</strong> utiliza Docker Compose y buenas prácticas de seguridad. Cada restaurante configura zonas, servicios, idiomas y workflows específicos sin perder estabilidad ni trazabilidad.",
+            "paragraph1": "MesasYa es un <strong data-i18n=\"stack.saas\"></strong> que digitaliza la gestión de reservas para restaurantes con múltiples sedes. Reúne planos interactivos, reglas personalizables y notificaciones en tiempo real para que cada servicio funcione sin sorpresas.",
+            "paragraph2": "El backend basado en <strong data-i18n=\"stack.flaskcelery\"></strong> utiliza Docker Compose y buenas prácticas de seguridad. Cada restaurante configura zonas, servicios, idiomas y workflows específicos sin perder estabilidad ni trazabilidad.",
             "impact": "Impacto operativo",
             "bullets": {
                 "first": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#589E8C]\"></span>Planos de sala configurables con reglas por sede, zonas y eventos especiales.",
@@ -266,7 +273,7 @@
         "kobra": {
             "label": "Case study 02",
             "title": "Kobra — Plataforma financiera para Cybersur",
-            "paragraph1": "Kobra es la solución a medida que mantiene la operativa financiera de Cybersur. Automatiza facturación, cobros y recordatorios desde un backend robusto en <strong>FastAPI, Celery, MySQL y Docker</strong>.",
+            "paragraph1": "Kobra es la solución a medida que mantiene la operativa financiera de Cybersur. Automatiza facturación, cobros y recordatorios desde un backend robusto en <strong data-i18n=\"stack.fastapi\"></strong>.",
             "paragraph2": "Los cronjobs programados gestionan exportaciones, limpiezas de datos y conciliaciones automáticas. Los paneles internos priorizan métricas de cobranza y SLA por cliente para que el equipo financiero tenga claridad diaria.",
             "results": "Resultados clave",
             "bullets": {
@@ -284,8 +291,8 @@
             "label": "Case study 03",
             "title": "BeatList — Suite musical para creadores",
             "approval": "Spotify Approved",
-            "paragraph1": "BeatList acompaña a curadores y creadores que necesitan superar el gestor estándar de Spotify. Conecta la <strong>API oficial</strong> con análisis avanzados y experiencias interactivas aprobadas por el programa Spotify for Developers.",
-            "paragraph2": "El backend en Flask con <strong>OAuth 2.0</strong> obtiene datos extendidos y los almacena en MySQL. El frontend ofrece reproductores, dashboards y herramientas de mezcla pensadas para profesionales y comunidades.",
+            "paragraph1": "BeatList acompaña a curadores y creadores que necesitan superar el gestor estándar de Spotify. Conecta la <strong data-i18n=\"stack.spotifyapi\"></strong> con análisis avanzados y experiencias interactivas aprobadas por el programa Spotify for Developers.",
+            "paragraph2": "El backend en Flask con <strong data-i18n=\"stack.oauth\"></strong> obtiene datos extendidos y los almacena en MySQL. El frontend ofrece reproductores, dashboards y herramientas de mezcla pensadas para profesionales y comunidades.",
             "outcomes": "Resultados",
             "bullets": {
                 "first": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#111827]\"></span>Reorganización inteligente de playlists con métricas de energía y ritmo.",
