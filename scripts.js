@@ -85,21 +85,21 @@ const translationBindings = {
         { selector: '#projects p.text-xs.font-semibold', key: 'projects.label' },
         { selector: '#projects h2', key: 'projects.title' },
         { selector: '[data-locale-element="projects.seeAll"]', key: 'projects.seeAll' },
-        { selector: '#projects article:nth-of-type(1) span.rounded-full', key: 'projects.mesasya.badge' },
+        { selector: '[data-locale-element="projects.mesasya.badge"]', key: 'projects.mesasya.badge' },
         { selector: '#projects article:nth-of-type(1) span.text-xs.uppercase', key: 'projects.mesasya.tech' },
         { selector: '#projects article:nth-of-type(1) h3', key: 'projects.mesasya.title' },
         { selector: '#projects article:nth-of-type(1) p.text-base', key: 'projects.mesasya.description' },
         { selector: '#projects article:nth-of-type(1) ul li:nth-child(1)', key: 'projects.mesasya.bullets.first', type: 'html' },
         { selector: '#projects article:nth-of-type(1) ul li:nth-child(2)', key: 'projects.mesasya.bullets.second', type: 'html' },
         { selector: '#projects article:nth-of-type(1) ul li:nth-child(3)', key: 'projects.mesasya.bullets.third', type: 'html' },
-        { selector: '#projects article:nth-of-type(2) span.rounded-full', key: 'projects.kobra.badge' },
+        { selector: '[data-locale-element="projects.kobra.badge"]', key: 'projects.kobra.badge' },
         { selector: '#projects article:nth-of-type(2) span.text-xs.uppercase', key: 'projects.kobra.tech' },
         { selector: '#projects article:nth-of-type(2) h3', key: 'projects.kobra.title' },
         { selector: '#projects article:nth-of-type(2) p.text-base', key: 'projects.kobra.description' },
         { selector: '#projects article:nth-of-type(2) ul li:nth-child(1)', key: 'projects.kobra.bullets.first', type: 'html' },
         { selector: '#projects article:nth-of-type(2) ul li:nth-child(2)', key: 'projects.kobra.bullets.second', type: 'html' },
         { selector: '#projects article:nth-of-type(2) ul li:nth-child(3)', key: 'projects.kobra.bullets.third', type: 'html' },
-        { selector: '#projects article:nth-of-type(3) span.rounded-full', key: 'projects.beatlist.badge' },
+        { selector: '[data-locale-element="projects.beatlist.badge"]', key: 'projects.beatlist.badge' },
         { selector: '[data-locale-element="projects.beatlist.approval"]', key: 'projects.beatlist.approval' },
         { selector: '#projects article:nth-of-type(3) span.text-xs.uppercase', key: 'projects.beatlist.tech' },
         { selector: '#projects article:nth-of-type(3) h3', key: 'projects.beatlist.title' },
@@ -228,6 +228,8 @@ document.addEventListener('DOMContentLoaded', () => {
             return null;
         }, object);
 
+    const missingTranslations = new Set();
+
     const applyBindings = (groupData, bindings) => {
         if (!groupData || !bindings) return;
         bindings.forEach((binding) => {
@@ -236,7 +238,10 @@ document.addEventListener('DOMContentLoaded', () => {
             if (binding.attributes) {
                 Object.entries(binding.attributes).forEach(([attribute, keyPath]) => {
                     const value = getNestedValue(groupData, keyPath);
-                    if (value == null) return;
+                    if (value == null) {
+                        missingTranslations.add(keyPath);
+                        return;
+                    }
                     elements.forEach((element) => {
                         element.setAttribute(attribute, value);
                     });
@@ -245,7 +250,10 @@ document.addEventListener('DOMContentLoaded', () => {
             }
             if (binding.attribute) {
                 const value = getNestedValue(groupData, binding.key);
-                if (value == null) return;
+                if (value == null) {
+                    missingTranslations.add(binding.key);
+                    return;
+                }
                 elements.forEach((element) => {
                     element.setAttribute(binding.attribute, value);
                 });
@@ -253,7 +261,10 @@ document.addEventListener('DOMContentLoaded', () => {
             }
             if (!binding.key) return;
             const value = getNestedValue(groupData, binding.key);
-            if (value == null) return;
+            if (value == null) {
+                missingTranslations.add(binding.key);
+                return;
+            }
             elements.forEach((element) => {
                 if (binding.type === 'html') {
                     element.innerHTML = value;
@@ -348,8 +359,13 @@ document.addEventListener('DOMContentLoaded', () => {
     };
 
     const applyTranslations = (langData, lang) => {
+        missingTranslations.clear();
         applyBindings(langData?.common, translationBindings.common);
         applyBindings(langData?.[pageKey], translationBindings[pageKey]);
+        applyBindings(langData?.common, translationBindings.common);
+        if (missingTranslations.size) {
+            console.warn('Missing translations for keys:', Array.from(missingTranslations));
+        }
         updateLanguageControls(langData, lang);
         updateCvLinks(lang);
         updateDocumentLanguage(langData, lang);
