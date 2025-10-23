@@ -163,7 +163,7 @@ Flask API → MySQL
                         <p class="text-xs font-semibold uppercase tracking-[0.3em] text-slate-500">Case study 02</p>
                         <h2 class="text-3xl font-semibold text-slate-900 sm:text-4xl">Trato — CRM ágil para equipos comerciales</h2>
                     </div>
-                    <img src="assets/trato-logo.svg" alt="Logo Trato" width="140" height="140" loading="lazy" class="h-24 w-24 rounded-3xl border border-slate-100 bg-slate-50 p-4" />
+                    <img src="assets/trato-logo.svg" alt="Logo Trato" width="140" height="140" loading="lazy" class="h-24 w-24 rounded-3xl border border-[#FBD2CD]/80 bg-[#FDE9E7] p-4 shadow-sm" />
                 </div>
                 <div class="grid gap-10 lg:grid-cols-[1.4fr,1fr]" data-animate>
                     <article class="space-y-6 text-base text-slate-600">
@@ -173,12 +173,22 @@ Flask API → MySQL
                         <p>
                             Las empresas acceden mediante códigos de invitación y gestionan pipelines con estados personalizables, timeline de interacciones y avisos automáticos. Las tareas en Celery coordinan recordatorios, envíos de emails y resúmenes diarios desde el VPS principal.
                         </p>
-                        <div class="rounded-3xl border border-slate-200 bg-white/80 p-6 shadow-sm">
-                            <h3 class="text-sm font-semibold uppercase tracking-widest text-slate-500">Impacto</h3>
+                        <div class="rounded-3xl border border-[#F9A8A3]/50 bg-[#FEECEC] p-5 shadow-sm">
+                            <p class="text-xs font-semibold uppercase tracking-[0.3em] text-[#B4232A]" data-direct-access-label>Acceso directo</p>
+                            <a href="https://tratocrm.com" target="_blank" rel="noopener noreferrer" class="mt-3 inline-flex items-center gap-2 text-sm font-semibold text-[#B4232A] transition hover:text-[#F97068] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#F97068]">
+                                <span data-direct-access-link="trato">→ Trato – CRM ágil para presupuestos, seguimientos y recordatorios.</span>
+                                <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                    <path d="M5 12h14" />
+                                    <path d="m12 5 7 7-7 7" />
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="rounded-3xl border border-[#F9A8A3]/40 bg-[#FFF0EF] p-6 shadow-sm">
+                            <h3 class="text-sm font-semibold uppercase tracking-widest text-[#B4232A]">Impacto</h3>
                             <ul class="mt-4 space-y-3">
-                                <li class="flex items-start gap-3"><span class="mt-1 h-2 w-2 rounded-full bg-[#0F766E]"></span>Altas controladas de empresas y usuarios mediante códigos de invitación.</li>
-                                <li class="flex items-start gap-3"><span class="mt-1 h-2 w-2 rounded-full bg-[#0F766E]"></span>Seguimientos con recordatorios automáticos y timeline centralizado por oportunidad.</li>
-                                <li class="flex items-start gap-3"><span class="mt-1 h-2 w-2 rounded-full bg-[#0F766E]"></span>Despliegue contenerizado en el VPS principal con backups y monitoreo de tareas Celery.</li>
+                                <li class="flex items-start gap-3"><span class="mt-1 h-2 w-2 rounded-full bg-[#F97068]"></span>Altas controladas de empresas y usuarios mediante códigos de invitación.</li>
+                                <li class="flex items-start gap-3"><span class="mt-1 h-2 w-2 rounded-full bg-[#F97068]"></span>Seguimientos con recordatorios automáticos y timeline centralizado por oportunidad.</li>
+                                <li class="flex items-start gap-3"><span class="mt-1 h-2 w-2 rounded-full bg-[#F97068]"></span>Despliegue contenerizado en el VPS principal con backups y monitoreo de tareas Celery.</li>
                             </ul>
                         </div>
                     </article>
@@ -192,23 +202,13 @@ Flask API → MySQL
                                 <li>Docker Compose</li>
                             </ul>
                         </div>
-                        <div class="rounded-3xl border border-dashed border-[#047857]/40 bg-[#BBF7D0]/30 p-6">
-                            <h3 class="text-sm font-semibold uppercase tracking-widest text-[#047857]">Estado</h3>
+                        <div class="rounded-3xl border border-dashed border-[#F97068]/40 bg-[#FDEAEA]/60 p-6">
+                            <h3 class="text-sm font-semibold uppercase tracking-widest text-[#B4232A]">Estado</h3>
                             <p class="mt-2 text-sm text-slate-600">Producción en VPS principal con monitoreo básico y backups diarios.</p>
                         </div>
-                        <div class="rounded-3xl border border-slate-200 bg-white/90 p-6 shadow-sm">
-                            <p class="text-xs font-semibold uppercase tracking-[0.3em] text-slate-500" data-direct-access-label>Acceso directo</p>
-                            <a href="https://tratocrm.com" target="_blank" rel="noopener noreferrer" class="mt-3 inline-flex items-center gap-2 text-sm font-semibold text-slate-700 transition hover:text-blue-600">
-                                <span data-direct-access-link="trato">→ Trato – CRM ágil para presupuestos, seguimientos y recordatorios.</span>
-                                <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                                    <path d="M5 12h14" />
-                                    <path d="m12 5 7 7-7 7" />
-                                </svg>
-                            </a>
-                        </div>
-                        <details class="rounded-3xl border border-slate-200 bg-white/90 p-6 shadow-sm">
-                            <summary class="cursor-pointer text-sm font-semibold uppercase tracking-widest text-slate-500">Esquema técnico</summary>
-                            <pre class="mt-4 whitespace-pre-wrap rounded-2xl bg-slate-50/80 p-4 font-['Space_Mono',_monospace] text-xs text-slate-700">Empresas invitadas
+                        <details class="rounded-3xl border border-dashed border-[#F9A8A3]/60 bg-[#FDEAEA]/60 p-6 shadow-sm">
+                            <summary class="cursor-pointer text-sm font-semibold uppercase tracking-widest text-[#B4232A]">Esquema técnico</summary>
+                            <pre class="mt-4 whitespace-pre-wrap rounded-2xl bg-white/70 p-4 font-['Space_Mono',_monospace] text-xs text-slate-700">Empresas invitadas
     ↓
 FastAPI + Uvicorn → MySQL
     │
