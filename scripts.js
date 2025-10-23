@@ -45,6 +45,7 @@ const translationBindings = {
         { selector: '#hero .relative ul li:nth-child(3)', key: 'hero.summaryItems.third', type: 'html' },
         { selector: '[data-live-projects-label]', key: 'hero.live.label' },
         { selector: '[data-live-project-link="mesasya"]', key: 'hero.live.links.mesasya', type: 'html' },
+        { selector: '[data-live-project-link="trato"]', key: 'hero.live.links.trato', type: 'html' },
         { selector: '[data-live-project-link="beatlist"]', key: 'hero.live.links.beatlist', type: 'html' },
         { selector: '#about [data-animate]:first-of-type p.text-xs', key: 'about.label' },
         { selector: '#about [data-animate]:first-of-type h2', key: 'about.title' },
