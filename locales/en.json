@@ -150,9 +150,9 @@
                 "title": "Trato",
                 "description": "Trato is a CRM optimized for managing quotes, follow-ups, and reminders. It lets companies join via invitation codes and operate from a fast, action-driven panel.",
                 "bullets": {
-                    "first": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#0F766E]\"></span>Invitation codes to control company and user onboarding.",
-                    "second": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#0F766E]\"></span>Opportunity tracking with automated reminders and a central timeline.",
-                    "third": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#0F766E]\"></span>Deployment on the main VPS with Celery tasks for notifications and daily summaries."
+                    "first": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#F97068]\"></span>Invitation codes to control company and user onboarding.",
+                    "second": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#F97068]\"></span>Opportunity tracking with automated reminders and a central timeline.",
+                    "third": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#F97068]\"></span>Deployment on the main VPS with Celery tasks for notifications and daily summaries."
                 },
                 "directAccess": "→ Trato – Agile CRM for quotes, follow-ups, and reminders."
             },
@@ -250,9 +250,9 @@
                 "paragraph1": "Trato is the lightweight CRM that centralizes quotes, follow-ups, and reminders into a fast workflow. Powered by a <strong data-i18n=\"stack.fastapi\"></strong> stack running on Uvicorn, it keeps sales teams moving without friction.",
                 "paragraph2": "Invitation codes govern how companies and users join, while Celery tasks automate reminders and daily summaries. The panel prioritizes operational speed on both desktop and mobile.",
                 "bullets": {
-                    "first": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#0F766E]\"></span>Guided quote flow with custom states and per-opportunity notes.",
-                    "second": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#0F766E]\"></span>Automated reminders handled by Celery plus internal notifications.",
-                    "third": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#0F766E]\"></span>Containerized deployment on the primary VPS with backups and basic monitoring."
+                    "first": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#F97068]\"></span>Guided quote flow with custom states and per-opportunity notes.",
+                    "second": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#F97068]\"></span>Automated reminders handled by Celery plus internal notifications.",
+                    "third": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#F97068]\"></span>Containerized deployment on the primary VPS with backups and basic monitoring."
                 },
                 "next": "Next steps: expand conversion metrics and automate leadership-ready reports.",
                 "diagram": "Technical diagram",
@@ -322,9 +322,9 @@
             "paragraph2": "Companies join through invitation codes and manage pipelines with custom stages, interaction timelines, and automated alerts. Celery orchestrates reminders, emails, and daily summaries from the primary VPS.",
             "impact": "Impact",
             "bullets": {
-                "first": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#0F766E]\"></span>Controlled onboarding for companies and users via invitation codes.",
-                "second": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#0F766E]\"></span>Follow-ups with automated reminders and a centralized opportunity timeline.",
-                "third": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#0F766E]\"></span>Containerized deployment on the main VPS with backups and Celery monitoring."
+                "first": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#F97068]\"></span>Controlled onboarding for companies and users via invitation codes.",
+                "second": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#F97068]\"></span>Follow-ups with automated reminders and a centralized opportunity timeline.",
+                "third": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#F97068]\"></span>Containerized deployment on the main VPS with backups and Celery monitoring."
             },
             "stack": "Stack",
             "status": {

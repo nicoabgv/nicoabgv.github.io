@@ -150,9 +150,9 @@
                 "title": "Trato",
                 "description": "Trato es un CRM optimizado para la gestión de presupuestos, seguimientos y recordatorios. Permite crear empresas por código de invitación y trabajar con un panel ágil orientado a la acción.",
                 "bullets": {
-                    "first": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#0F766E]\"></span>Altas de empresas y usuarios mediante códigos de invitación controlados.",
-                    "second": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#0F766E]\"></span>Seguimiento de oportunidades con recordatorios automáticos y timeline centralizado.",
-                    "third": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#0F766E]\"></span>Despliegue en VPS principal con tareas Celery para notificaciones y resúmenes diarios."
+                    "first": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#F97068]\"></span>Altas de empresas y usuarios mediante códigos de invitación controlados.",
+                    "second": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#F97068]\"></span>Seguimiento de oportunidades con recordatorios automáticos y timeline centralizado.",
+                    "third": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#F97068]\"></span>Despliegue en VPS principal con tareas Celery para notificaciones y resúmenes diarios."
                 },
                 "directAccess": "→ Trato – CRM ágil para presupuestos, seguimientos y recordatorios."
             },
@@ -250,9 +250,9 @@
                 "paragraph1": "Trato es el CRM ligero que centraliza presupuestos, seguimientos y recordatorios en un flujo rápido. Sobre un stack de <strong data-i18n=\"stack.fastapi\"></strong> desplegado con Uvicorn, permite a los equipos comerciales trabajar sin fricciones.",
                 "paragraph2": "Las invitaciones por código controlan el alta de empresas y usuarios, mientras que las tareas en Celery automatizan recordatorios y resúmenes diarios. El panel prioriza la velocidad operativa en escritorio y móvil.",
                 "bullets": {
-                    "first": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#0F766E]\"></span>Registro guiado de presupuestos con estados personalizables y comentarios por oportunidad.",
-                    "second": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#0F766E]\"></span>Recordatorios automáticos gestionados por Celery y notificaciones internas.",
-                    "third": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#0F766E]\"></span>Despliegue contenerizado en el VPS principal con backups y monitoreo básico."
+                    "first": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#F97068]\"></span>Registro guiado de presupuestos con estados personalizables y comentarios por oportunidad.",
+                    "second": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#F97068]\"></span>Recordatorios automáticos gestionados por Celery y notificaciones internas.",
+                    "third": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#F97068]\"></span>Despliegue contenerizado en el VPS principal con backups y monitoreo básico."
                 },
                 "next": "Próximos pasos: ampliar métricas de conversión e integrar reportes automáticos para dirección.",
                 "diagram": "Diagrama técnico",
@@ -322,9 +322,9 @@
             "paragraph2": "Las empresas acceden mediante códigos de invitación y gestionan pipelines con estados personalizables, timeline de interacciones y avisos automáticos. Las tareas en Celery coordinan recordatorios, envíos de emails y resúmenes diarios desde el VPS principal.",
             "impact": "Impacto",
             "bullets": {
-                "first": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#0F766E]\"></span>Altas controladas de empresas y usuarios mediante códigos de invitación.",
-                "second": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#0F766E]\"></span>Seguimientos con recordatorios automáticos y timeline centralizado por oportunidad.",
-                "third": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#0F766E]\"></span>Despliegue contenerizado en el VPS principal con backups y monitoreo de tareas Celery."
+                "first": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#F97068]\"></span>Altas controladas de empresas y usuarios mediante códigos de invitación.",
+                "second": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#F97068]\"></span>Seguimientos con recordatorios automáticos y timeline centralizado por oportunidad.",
+                "third": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#F97068]\"></span>Despliegue contenerizado en el VPS principal con backups y monitoreo de tareas Celery."
             },
             "stack": "Stack",
             "status": {
