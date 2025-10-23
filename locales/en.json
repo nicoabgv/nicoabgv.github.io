@@ -144,6 +144,18 @@
                 },
                 "directAccess": "→ MesasYa – SaaS platform for restaurant reservation management."
             },
+            "trato": {
+                "badge": "Production",
+                "tech": "FASTAPI · UVICORN · CELERY · MYSQL · DOCKER",
+                "title": "Trato",
+                "description": "Trato is a CRM optimized for managing quotes, follow-ups, and reminders. It lets companies join via invitation codes and operate from a fast, action-driven panel.",
+                "bullets": {
+                    "first": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#0F766E]\"></span>Invitation codes to control company and user onboarding.",
+                    "second": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#0F766E]\"></span>Opportunity tracking with automated reminders and a central timeline.",
+                    "third": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#0F766E]\"></span>Deployment on the main VPS with Celery tasks for notifications and daily summaries."
+                },
+                "directAccess": "→ Trato – Agile CRM for quotes, follow-ups, and reminders."
+            },
             "kobra": {
                 "badge": "Custom solution",
                 "tech": "FastAPI · Celery · MySQL · Docker",
@@ -231,22 +243,37 @@
                 "next": "Next steps: add automated reporting and keep improving the manager experience.",
                 "diagram": "Technical diagram",
                 "diagramContent": "Staff & online reservations\n    ↓\nFlask API → MySQL\n    │\n    ├─ Celery workers → Emails & SMS\n    └─ Docker Compose → Orchestrated services"
+            },
+            "trato": {
+                "tag": "Trato",
+                "title": "Agile CRM for quotes, follow-ups, and reminders.",
+                "paragraph1": "Trato is the lightweight CRM that centralizes quotes, follow-ups, and reminders into a fast workflow. Powered by a <strong data-i18n=\"stack.fastapi\"></strong> stack running on Uvicorn, it keeps sales teams moving without friction.",
+                "paragraph2": "Invitation codes govern how companies and users join, while Celery tasks automate reminders and daily summaries. The panel prioritizes operational speed on both desktop and mobile.",
+                "bullets": {
+                    "first": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#0F766E]\"></span>Guided quote flow with custom states and per-opportunity notes.",
+                    "second": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#0F766E]\"></span>Automated reminders handled by Celery plus internal notifications.",
+                    "third": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#0F766E]\"></span>Containerized deployment on the primary VPS with backups and basic monitoring."
+                },
+                "next": "Next steps: expand conversion metrics and automate leadership-ready reports.",
+                "diagram": "Technical diagram",
+                "diagramContent": "Invited companies\n    ↓\nFastAPI + Uvicorn → MySQL\n    │\n    ├─ Celery workers → Reminders\n    └─ Docker Compose → Primary VPS"
             }
         }
     },
     "projects": {
         "meta": {
             "title": "Case Studies · Nicolás Álvarez",
-            "description": "Detailed case studies for Kobra, BeatList, and MesasYa. Dive into architecture, automation, and results behind each product.",
+            "description": "In-depth case studies for MesasYa, Trato, Kobra, and BeatList. Explore architecture, automation, and tangible results.",
             "ogTitle": "Case Studies · Nicolás Álvarez",
-            "ogDescription": "Technical and business insights from platforms built for companies, creators, and restaurants.",
+            "ogDescription": "Technical and business insights behind MesasYa, Trato, Kobra, and BeatList.",
             "twitterTitle": "Case Studies · Nicolás Álvarez",
-            "twitterDescription": "Explore Kobra, BeatList, and MesasYa with architecture, workflows, and roadmaps."
+            "twitterDescription": "Dive into MesasYa, Trato, Kobra, and BeatList with architecture, workflows, and roadmaps."
         },
         "nav": {
             "brandAria": "Back to home",
             "brandName": "Portfolio",
             "mesasya": "MesasYa",
+            "trato": "Trato",
             "kobra": "Kobra",
             "beatlist": "BeatList",
             "contact": "Contact"
@@ -258,15 +285,17 @@
             "indexLabel": "Index",
             "indexItems": {
                 "mesasya": "01 — MesasYa <span class=\"text-xs text-slate-400\">Restaurant SaaS</span>",
-                "kobra": "02 — Kobra <span class=\"text-xs text-slate-400\">Internal fintech</span>",
-                "beatlist": "03 — BeatList <span class=\"text-xs text-slate-400\">Spotify Approved</span>"
+                "trato": "02 — Trato <span class=\"text-xs text-slate-400\">CRM for quotes</span>",
+                "kobra": "03 — Kobra <span class=\"text-xs text-slate-400\">Internal fintech</span>",
+                "beatlist": "04 — BeatList <span class=\"text-xs text-slate-400\">Spotify Approved</span>"
             }
         },
         "directAccess": {
             "label": "Direct access",
             "links": {
                 "mesasya": "→ MesasYa – SaaS platform for restaurant reservation management.",
-                "beatlist": "→ BeatList – Advanced Spotify playlist analytics and management."
+                "beatlist": "→ BeatList – Advanced Spotify playlist analytics and management.",
+                "trato": "→ Trato – Agile CRM for quotes, follow-ups, and reminders."
             }
         },
         "mesasya": {
@@ -286,8 +315,28 @@
             "schema": "Technical outline",
             "schemaContent": "Web / staff bookings\n    ↓\nFlask API → MySQL\n    │\n    ├─ Celery workers → Emails/SMS\n    └─ Docker Compose orchestrates services"
         },
-        "kobra": {
+        "trato": {
             "label": "Case study 02",
+            "title": "Trato — Agile CRM for sales teams",
+            "paragraph1": "Trato centralizes quotes, follow-ups, and reminders in a lightweight CRM built for sales teams. Powered by <strong data-i18n=\"stack.fastapi\"></strong> and Uvicorn, it keeps every opportunity clear and actionable.",
+            "paragraph2": "Companies join through invitation codes and manage pipelines with custom stages, interaction timelines, and automated alerts. Celery orchestrates reminders, emails, and daily summaries from the primary VPS.",
+            "impact": "Impact",
+            "bullets": {
+                "first": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#0F766E]\"></span>Controlled onboarding for companies and users via invitation codes.",
+                "second": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#0F766E]\"></span>Follow-ups with automated reminders and a centralized opportunity timeline.",
+                "third": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#0F766E]\"></span>Containerized deployment on the main VPS with backups and Celery monitoring."
+            },
+            "stack": "Stack",
+            "status": {
+                "title": "Status",
+                "description": "Live on the primary VPS with basic monitoring and daily backups."
+            },
+            "schema": "Technical diagram",
+            "schemaContent": "Invited companies\n    ↓\nFastAPI + Uvicorn → MySQL\n    │\n    ├─ Celery workers → Reminders & emails\n    └─ Docker Compose → Primary VPS",
+            "directAccess": "→ Trato – Agile CRM for quotes, follow-ups, and reminders."
+        },
+        "kobra": {
+            "label": "Case study 03",
             "title": "Kobra — Financial platform for Cybersur",
             "paragraph1": "Kobra keeps Cybersur's financial operations on track. It automates invoicing, collections, and reminders from a robust <strong data-i18n=\"stack.fastapi\"></strong> backend.",
             "paragraph2": "Scheduled jobs manage exports, data hygiene, and automatic reconciliations. Internal dashboards prioritize collection metrics and client SLAs so the finance team has day-to-day clarity.",
@@ -304,7 +353,7 @@
             "schemaContent": "Cybersur ops\n    ↓\nFastAPI → MySQL\n    │\n    ├─ Celery → Emails\n    └─ Cronjobs → Reports"
         },
         "beatlist": {
-            "label": "Case study 03",
+            "label": "Case study 04",
             "title": "BeatList — Music suite for creators",
             "approval": "Spotify Approved",
             "paragraph1": "BeatList empowers curators and creators to go beyond Spotify's default tooling. It connects the <strong data-i18n=\"stack.spotifyapi\"></strong> with advanced analysis and interactive experiences validated by Spotify for Developers.",

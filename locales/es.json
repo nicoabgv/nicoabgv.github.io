@@ -144,6 +144,18 @@
                 },
                 "directAccess": "→ MesasYa – Plataforma SaaS de gestión de reservas para restaurantes."
             },
+            "trato": {
+                "badge": "Producción",
+                "tech": "FASTAPI · UVICORN · CELERY · MYSQL · DOCKER",
+                "title": "Trato",
+                "description": "Trato es un CRM optimizado para la gestión de presupuestos, seguimientos y recordatorios. Permite crear empresas por código de invitación y trabajar con un panel ágil orientado a la acción.",
+                "bullets": {
+                    "first": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#0F766E]\"></span>Altas de empresas y usuarios mediante códigos de invitación controlados.",
+                    "second": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#0F766E]\"></span>Seguimiento de oportunidades con recordatorios automáticos y timeline centralizado.",
+                    "third": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#0F766E]\"></span>Despliegue en VPS principal con tareas Celery para notificaciones y resúmenes diarios."
+                },
+                "directAccess": "→ Trato – CRM ágil para presupuestos, seguimientos y recordatorios."
+            },
             "kobra": {
                 "badge": "Solución a medida",
                 "tech": "FastAPI · Celery · MySQL · Docker",
@@ -231,22 +243,37 @@
                 "next": "Próximos pasos: integrar informes automáticos y seguir mejorando la experiencia del gestor.",
                 "diagram": "Diagrama técnico",
                 "diagramContent": "Staff y reservas online\n    ↓\nFlask API → MySQL\n    │\n    ├─ Celery workers → Emails & SMS\n    └─ Docker Compose → Servicios coordinados"
+            },
+            "trato": {
+                "tag": "Trato",
+                "title": "CRM ágil para presupuestos, seguimientos y recordatorios.",
+                "paragraph1": "Trato es el CRM ligero que centraliza presupuestos, seguimientos y recordatorios en un flujo rápido. Sobre un stack de <strong data-i18n=\"stack.fastapi\"></strong> desplegado con Uvicorn, permite a los equipos comerciales trabajar sin fricciones.",
+                "paragraph2": "Las invitaciones por código controlan el alta de empresas y usuarios, mientras que las tareas en Celery automatizan recordatorios y resúmenes diarios. El panel prioriza la velocidad operativa en escritorio y móvil.",
+                "bullets": {
+                    "first": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#0F766E]\"></span>Registro guiado de presupuestos con estados personalizables y comentarios por oportunidad.",
+                    "second": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#0F766E]\"></span>Recordatorios automáticos gestionados por Celery y notificaciones internas.",
+                    "third": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#0F766E]\"></span>Despliegue contenerizado en el VPS principal con backups y monitoreo básico."
+                },
+                "next": "Próximos pasos: ampliar métricas de conversión e integrar reportes automáticos para dirección.",
+                "diagram": "Diagrama técnico",
+                "diagramContent": "Empresas invitadas\n    ↓\nFastAPI + Uvicorn → MySQL\n    │\n    ├─ Celery workers → Recordatorios\n    └─ Docker Compose → VPS principal"
             }
         }
     },
     "projects": {
         "meta": {
             "title": "Case Studies · Nicolás Álvarez",
-            "description": "Case studies detallados de Kobra, BeatList y MesasYa. Profundiza en arquitectura, automatización y resultados de cada producto.",
+            "description": "Case studies detallados de MesasYa, Trato, Kobra y BeatList. Profundiza en arquitectura, automatización y resultados de cada producto.",
             "ogTitle": "Case Studies · Nicolás Álvarez",
-            "ogDescription": "Detalles técnicos y de negocio de plataformas construidas para empresas, creadores y restaurantes.",
+            "ogDescription": "Detalles técnicos y de negocio de MesasYa, Trato, Kobra y BeatList.",
             "twitterTitle": "Case Studies · Nicolás Álvarez",
-            "twitterDescription": "Profundiza en Kobra, BeatList y MesasYa con arquitectura, flujos y roadmap."
+            "twitterDescription": "Profundiza en MesasYa, Trato, Kobra y BeatList con arquitectura, flujos y roadmap."
         },
         "nav": {
             "brandAria": "Volver al inicio",
             "brandName": "Portfolio",
             "mesasya": "MesasYa",
+            "trato": "Trato",
             "kobra": "Kobra",
             "beatlist": "BeatList",
             "contact": "Contacto"
@@ -258,15 +285,17 @@
             "indexLabel": "Índice",
             "indexItems": {
                 "mesasya": "01 — MesasYa <span class=\"text-xs text-slate-400\">SaaS restauración</span>",
-                "kobra": "02 — Kobra <span class=\"text-xs text-slate-400\">Fintech interna</span>",
-                "beatlist": "03 — BeatList <span class=\"text-xs text-slate-400\">Spotify Approved</span>"
+                "trato": "02 — Trato <span class=\"text-xs text-slate-400\">CRM presupuestos</span>",
+                "kobra": "03 — Kobra <span class=\"text-xs text-slate-400\">Fintech interna</span>",
+                "beatlist": "04 — BeatList <span class=\"text-xs text-slate-400\">Spotify Approved</span>"
             }
         },
         "directAccess": {
             "label": "Acceso directo",
             "links": {
                 "mesasya": "→ MesasYa – Plataforma SaaS de gestión de reservas para restaurantes.",
-                "beatlist": "→ BeatList – Estadísticas y gestión avanzada de playlists de Spotify."
+                "beatlist": "→ BeatList – Estadísticas y gestión avanzada de playlists de Spotify.",
+                "trato": "→ Trato – CRM ágil para presupuestos, seguimientos y recordatorios."
             }
         },
         "mesasya": {
@@ -286,8 +315,28 @@
             "schema": "Esquema técnico",
             "schemaContent": "Reservas web / staff\n    ↓\nFlask API → MySQL\n    │\n    ├─ Celery workers → Correos/SMS\n    └─ Docker Compose coordina servicios"
         },
-        "kobra": {
+        "trato": {
             "label": "Case study 02",
+            "title": "Trato — CRM ágil para equipos comerciales",
+            "paragraph1": "Trato centraliza presupuestos, seguimientos y recordatorios en un CRM ligero pensado para equipos comerciales. Con un backend basado en <strong data-i18n=\"stack.fastapi\"></strong> ejecutado con Uvicorn, prioriza la velocidad de respuesta y la claridad de cada oportunidad.",
+            "paragraph2": "Las empresas acceden mediante códigos de invitación y gestionan pipelines con estados personalizables, timeline de interacciones y avisos automáticos. Las tareas en Celery coordinan recordatorios, envíos de emails y resúmenes diarios desde el VPS principal.",
+            "impact": "Impacto",
+            "bullets": {
+                "first": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#0F766E]\"></span>Altas controladas de empresas y usuarios mediante códigos de invitación.",
+                "second": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#0F766E]\"></span>Seguimientos con recordatorios automáticos y timeline centralizado por oportunidad.",
+                "third": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#0F766E]\"></span>Despliegue contenerizado en el VPS principal con backups y monitoreo de tareas Celery."
+            },
+            "stack": "Stack",
+            "status": {
+                "title": "Estado",
+                "description": "Producción en VPS principal con monitoreo básico y backups diarios."
+            },
+            "schema": "Esquema técnico",
+            "schemaContent": "Empresas invitadas\n    ↓\nFastAPI + Uvicorn → MySQL\n    │\n    ├─ Celery workers → Recordatorios y emails\n    └─ Docker Compose → VPS principal",
+            "directAccess": "→ Trato – CRM ágil para presupuestos, seguimientos y recordatorios."
+        },
+        "kobra": {
+            "label": "Case study 03",
             "title": "Kobra — Plataforma financiera para Cybersur",
             "paragraph1": "Kobra es la solución a medida que mantiene la operativa financiera de Cybersur. Automatiza facturación, cobros y recordatorios desde un backend robusto en <strong data-i18n=\"stack.fastapi\"></strong>.",
             "paragraph2": "Los cronjobs programados gestionan exportaciones, limpiezas de datos y conciliaciones automáticas. Los paneles internos priorizan métricas de cobranza y SLA por cliente para que el equipo financiero tenga claridad diaria.",
@@ -304,7 +353,7 @@
             "schemaContent": "Operativa Cybersur\n    ↓\nFastAPI → MySQL\n    │\n    ├─ Celery → Emails\n    └─ Cronjobs → Reportes"
         },
         "beatlist": {
-            "label": "Case study 03",
+            "label": "Case study 04",
             "title": "BeatList — Suite musical para creadores",
             "approval": "Spotify Approved",
             "paragraph1": "BeatList acompaña a curadores y creadores que necesitan superar el gestor estándar de Spotify. Conecta la <strong data-i18n=\"stack.spotifyapi\"></strong> con análisis avanzados y experiencias interactivas aprobadas por el programa Spotify for Developers.",
