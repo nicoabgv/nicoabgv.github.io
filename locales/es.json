@@ -145,6 +145,18 @@
                 },
                 "directAccess": "→ MesasYa – Plataforma SaaS de gestión de reservas para restaurantes."
             },
+            "orderya": {
+                "badge": "SaaS PRODUCCIÓN",
+                "tech": "FastAPI · Docker · MySQL · Jinja2",
+                "title": "OrderYa",
+                "description": "Plataforma centralizada para la gestión de pedidos entre obradores y puntos de venta. Elimina la fricción de los pedidos por chat consolidando la demanda y automatizando las listas de producción y reparto.",
+                "bullets": {
+                    "first": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#ea580c]\"></span>Consola central del obrador para gestión de producción y reparto unificado.",
+                    "second": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#ea580c]\"></span>Portal de pedidos intuitivo para tiendas con histórico y estados en tiempo real.",
+                    "third": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#ea580c]\"></span>Gestión avanzada de catálogo, familias de productos y permisos de usuarios."
+                },
+                "directAccess": "→ OrderYa – Centralización de pedidos para obradores."
+            },
             "trato": {
                 "badge": "Producción",
                 "tech": "FASTAPI · UVICORN · CELERY · MYSQL · DOCKER",
@@ -245,6 +257,19 @@
                 "diagram": "Diagrama técnico",
                 "diagramContent": "Staff y reservas online\n    ↓\nFlask API → MySQL\n    │\n    ├─ Celery workers → Emails & SMS\n    └─ Docker Compose → Servicios coordinados"
             },
+            "orderya": {
+                "tag": "OrderYa",
+                "title": "Gestión unificada de producción y reparto.",
+                "paragraph1": "Construido con <strong data-i18n=\"stack.fastapi\"></strong> para máxima velocidad, permite gestionar catálogos complejos, precios y usuarios con roles diferenciados. Todo ello desplegado de forma segura y escalable.",
+                "bullets": {
+                    "first": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#ea580c]\"></span>Portal unificado de pedidos que elimina errores de transcripción.",
+                    "second": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#ea580c]\"></span>Generación automática de hojas de producción y albaranes.",
+                    "third": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#ea580c]\"></span>Infraestructura robusta con Docker preparada para múltiples clientes."
+                },
+                "next": "Evolución: Integración futura con sistemas de facturación.",
+                "diagram": "Diagrama técnico",
+                "diagramContent": "Tiendas / Obrador\n    ↓\nFastAPI\n    ↓\nMySQL\n    ↓\nProducción"
+            },
             "trato": {
                 "tag": "Trato",
                 "title": "CRM ágil para presupuestos, seguimientos y recordatorios.",
@@ -286,15 +311,17 @@
             "indexLabel": "Índice",
             "indexItems": {
                 "mesasya": "01 — MesasYa <span class=\"text-xs text-slate-400\">SaaS restauración</span>",
-                "trato": "02 — Trato <span class=\"text-xs text-slate-400\">CRM presupuestos</span>",
-                "kobra": "03 — Kobra <span class=\"text-xs text-slate-400\">Fintech interna</span>",
-                "beatlist": "04 — BeatList <span class=\"text-xs text-slate-400\">Spotify Approved</span>"
+                "orderya": "02 — OrderYa <span class=\"text-xs text-slate-400\">Gestión de pedidos</span>",
+                "trato": "03 — Trato <span class=\"text-xs text-slate-400\">CRM presupuestos</span>",
+                "kobra": "04 — Kobra <span class=\"text-xs text-slate-400\">Fintech interna</span>",
+                "beatlist": "05 — BeatList <span class=\"text-xs text-slate-400\">Spotify Approved</span>"
             }
         },
         "directAccess": {
             "label": "Acceso directo",
             "links": {
                 "mesasya": "→ MesasYa – Plataforma SaaS de gestión de reservas para restaurantes.",
+                "orderya": "→ OrderYa – Centralización y gestión de producción.",
                 "beatlist": "→ BeatList – Estadísticas y gestión avanzada de playlists de Spotify.",
                 "trato": "→ Trato – CRM ágil para presupuestos, seguimientos y recordatorios."
             }
@@ -316,8 +343,28 @@
             "schema": "Esquema técnico",
             "schemaContent": "Reservas web / staff\n    ↓\nFlask API → MySQL\n    │\n    ├─ Celery workers → Correos/SMS\n    └─ Docker Compose coordina servicios"
         },
-        "trato": {
+        "orderya": {
             "label": "Case study 02",
+            "title": "OrderYa — Gestión integral de pedidos",
+            "paragraph1": "OrderYa elimina el caos de la gestión de pedidos entre obradores y puntos de venta. Sustituye hojas de cálculo y mensajes dispersos por una plataforma centralizada donde cada tienda realiza sus pedidos de forma intuitiva y el obrador visualiza la demanda consolidada.",
+            "paragraph2": "Desarrollado con <strong data-i18n=\"stack.fastapi\"></strong> y renderizado server-side (Jinja2) para garantizar velocidad y simplicidad, el sistema gestiona catálogos complejos, listas de precios por cliente y generación automática de órdenes de reparto.",
+            "directAccess": "→ OrderYa – Centralización y gestión de producción.",
+            "keyFeatures": "Funcionalidades clave",
+            "bullets": {
+                "first": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#ea580c]\"></span>Portal de tiendas con histórico y estados en tiempo real.",
+                "second": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#ea580c]\"></span>Escaneo de código de barras para agilizar la creación de pedidos.",
+                "third": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#ea580c]\"></span>Creación de plantillas, gestión de productos y exportación de datos."
+            },
+            "stack": "Stack",
+            "status": {
+                "title": "Estado",
+                "description": "En producción. Gestionando pedidos diarios para obradores reales."
+            },
+            "schema": "Esquema técnico",
+            "schemaContent": "Tiendas\n    ↓\nNginx → FastAPI\n    ↓\nMySQL (Persistencia)\n    ↓\nProducción (Listas PDF/Vista)"
+        },
+        "trato": {
+            "label": "Case study 03",
             "title": "Trato — CRM ágil para equipos comerciales",
             "paragraph1": "Trato centraliza presupuestos, seguimientos y recordatorios en un CRM ligero pensado para equipos comerciales. Con un backend basado en <strong data-i18n=\"stack.fastapi\"></strong> ejecutado con Uvicorn, prioriza la velocidad de respuesta y la claridad de cada oportunidad.",
             "paragraph2": "Las empresas acceden mediante códigos de invitación y gestionan pipelines con estados personalizables, timeline de interacciones y avisos automáticos. Las tareas en Celery coordinan recordatorios, envíos de emails y resúmenes diarios desde el VPS principal.",
@@ -337,7 +384,7 @@
             "directAccess": "→ Trato – CRM ágil para presupuestos, seguimientos y recordatorios."
         },
         "kobra": {
-            "label": "Case study 03",
+            "label": "Case study 04",
             "title": "Kobra — Plataforma financiera para Cybersur",
             "paragraph1": "Kobra es la solución a medida que mantiene la operativa financiera de Cybersur. Automatiza facturación, cobros y recordatorios desde un backend robusto en <strong data-i18n=\"stack.fastapi\"></strong>.",
             "paragraph2": "Los cronjobs programados gestionan exportaciones, limpiezas de datos y conciliaciones automáticas. Los paneles internos priorizan métricas de cobranza y SLA por cliente para que el equipo financiero tenga claridad diaria.",
@@ -354,7 +401,7 @@
             "schemaContent": "Operativa Cybersur\n    ↓\nFastAPI → MySQL\n    │\n    ├─ Celery → Emails\n    └─ Cronjobs → Reportes"
         },
         "beatlist": {
-            "label": "Case study 04",
+            "label": "Case study 05",
             "title": "BeatList — Suite musical para creadores",
             "approval": "Spotify Approved",
             "paragraph1": "BeatList acompaña a curadores y creadores que necesitan superar el gestor estándar de Spotify. Conecta la <strong data-i18n=\"stack.spotifyapi\"></strong> con análisis avanzados y experiencias interactivas aprobadas por el programa Spotify for Developers.",

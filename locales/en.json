@@ -145,6 +145,18 @@
                 },
                 "directAccess": "→ MesasYa – SaaS platform for restaurant reservation management."
             },
+            "orderya": {
+                "badge": "SaaS PRODUCTION",
+                "tech": "FastAPI · Docker · MySQL · Jinja2",
+                "title": "OrderYa",
+                "description": "Centralized platform for order management between workshops and points of sale. Eliminates the friction of chat orders by consolidating demand and automating production and delivery lists.",
+                "bullets": {
+                    "first": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#ea580c]\"></span>Central workshop console for unified production and delivery management.",
+                    "second": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#ea580c]\"></span>Intuitive order portal for stores with history and real-time status.",
+                    "third": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#ea580c]\"></span>Advanced catalog management, product families, and user permissions."
+                },
+                "directAccess": "→ OrderYa – Centralization of orders for workshops."
+            },
             "trato": {
                 "badge": "Production",
                 "tech": "FASTAPI · UVICORN · CELERY · MYSQL · DOCKER",
@@ -245,6 +257,19 @@
                 "diagram": "Technical diagram",
                 "diagramContent": "Staff & online reservations\n    ↓\nFlask API → MySQL\n    │\n    ├─ Celery workers → Emails & SMS\n    └─ Docker Compose → Orchestrated services"
             },
+            "orderya": {
+                "tag": "OrderYa",
+                "title": "Unified production and delivery management.",
+                "paragraph1": "Built with <strong data-i18n=\"stack.fastapi\"></strong> for maximum speed, it allows managing complex catalogs, prices, and users with differentiated roles. All deployed securely and scalably.",
+                "bullets": {
+                    "first": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#ea580c]\"></span>Unified order portal that eliminates transcription errors.",
+                    "second": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#ea580c]\"></span>Automatic generation of production sheets and delivery notes.",
+                    "third": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#ea580c]\"></span>Robust Docker infrastructure ready for multiple clients."
+                },
+                "next": "Evolution: Future integration with billing systems.",
+                "diagram": "Technical diagram",
+                "diagramContent": "Shops / Workshop\n    ↓\nFastAPI\n    ↓\nMySQL\n    ↓\nProduction"
+            },
             "trato": {
                 "tag": "Trato",
                 "title": "Agile CRM for quotes, follow-ups, and reminders.",
@@ -286,15 +311,17 @@
             "indexLabel": "Index",
             "indexItems": {
                 "mesasya": "01 — MesasYa <span class=\"text-xs text-slate-400\">Restaurant SaaS</span>",
-                "trato": "02 — Trato <span class=\"text-xs text-slate-400\">CRM for quotes</span>",
-                "kobra": "03 — Kobra <span class=\"text-xs text-slate-400\">Internal fintech</span>",
-                "beatlist": "04 — BeatList <span class=\"text-xs text-slate-400\">Spotify Approved</span>"
+                "orderya": "02 — OrderYa <span class=\"text-xs text-slate-400\">Order management</span>",
+                "trato": "03 — Trato <span class=\"text-xs text-slate-400\">CRM for quotes</span>",
+                "kobra": "04 — Kobra <span class=\"text-xs text-slate-400\">Internal fintech</span>",
+                "beatlist": "05 — BeatList <span class=\"text-xs text-slate-400\">Spotify Approved</span>"
             }
         },
         "directAccess": {
             "label": "Direct access",
             "links": {
                 "mesasya": "→ MesasYa – SaaS platform for restaurant reservation management.",
+                "orderya": "→ OrderYa – Centralization and production management.",
                 "beatlist": "→ BeatList – Advanced Spotify playlist analytics and management.",
                 "trato": "→ Trato – Agile CRM for quotes, follow-ups, and reminders."
             }
@@ -316,8 +343,28 @@
             "schema": "Technical outline",
             "schemaContent": "Web / staff bookings\n    ↓\nFlask API → MySQL\n    │\n    ├─ Celery workers → Emails/SMS\n    └─ Docker Compose orchestrates services"
         },
-        "trato": {
+        "orderya": {
             "label": "Case study 02",
+            "title": "OrderYa — Integral order management",
+            "paragraph1": "OrderYa eliminates the chaos of order management between workshops and points of sale. It replaces spreadsheets and scattered messages with a centralized platform where each store places orders intuitively and the workshop views consolidated demand.",
+            "paragraph2": "Developed with <strong data-i18n=\"stack.fastapi\"></strong> and server-side rendering (Jinja2) to ensure speed and simplicity, the system manages complex catalogs, price lists per client, and automatic generation of delivery orders.",
+            "directAccess": "→ OrderYa – Centralization and production management.",
+            "keyFeatures": "Key features",
+            "bullets": {
+                "first": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#ea580c]\"></span>Store portal with history and real-time status.",
+                "second": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#ea580c]\"></span>Barcode scanning to streamline order creation.",
+                "third": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#ea580c]\"></span>Template creation, product management, and data export."
+            },
+            "stack": "Stack",
+            "status": {
+                "title": "Status",
+                "description": "In production. Managing daily orders for real workshops."
+            },
+            "schema": "Technical diagram",
+            "schemaContent": "Stores\n    ↓\nNginx → FastAPI\n    ↓\nMySQL (Persistence)\n    ↓\nProduction (PDF Lists/View)"
+        },
+        "trato": {
+            "label": "Case study 03",
             "title": "Trato — Agile CRM for sales teams",
             "paragraph1": "Trato centralizes quotes, follow-ups, and reminders in a lightweight CRM built for sales teams. Powered by <strong data-i18n=\"stack.fastapi\"></strong> and Uvicorn, it keeps every opportunity clear and actionable.",
             "paragraph2": "Companies join through invitation codes and manage pipelines with custom stages, interaction timelines, and automated alerts. Celery orchestrates reminders, emails, and daily summaries from the primary VPS.",
@@ -337,7 +384,7 @@
             "directAccess": "→ Trato – Agile CRM for quotes, follow-ups, and reminders."
         },
         "kobra": {
-            "label": "Case study 03",
+            "label": "Case study 04",
             "title": "Kobra — Financial platform for Cybersur",
             "paragraph1": "Kobra keeps Cybersur's financial operations on track. It automates invoicing, collections, and reminders from a robust <strong data-i18n=\"stack.fastapi\"></strong> backend.",
             "paragraph2": "Scheduled jobs manage exports, data hygiene, and automatic reconciliations. Internal dashboards prioritize collection metrics and client SLAs so the finance team has day-to-day clarity.",
@@ -354,7 +401,7 @@
             "schemaContent": "Cybersur ops\n    ↓\nFastAPI → MySQL\n    │\n    ├─ Celery → Emails\n    └─ Cronjobs → Reports"
         },
         "beatlist": {
-            "label": "Case study 04",
+            "label": "Case study 05",
             "title": "BeatList — Music suite for creators",
             "approval": "Spotify Approved",
             "paragraph1": "BeatList empowers curators and creators to go beyond Spotify's default tooling. It connects the <strong data-i18n=\"stack.spotifyapi\"></strong> with advanced analysis and interactive experiences validated by Spotify for Developers.",
