@@ -1,24 +1,30 @@
 <!DOCTYPE html>
 <html lang="es" class="scroll-smooth">
+
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Case Studies · Nicolás Álvarez</title>
-    <meta name="description" content="Case studies detallados de MesasYa, Trato, Kobra y BeatList. Profundiza en arquitectura, automatización y resultados de cada producto." />
+    <meta name="description"
+        content="Case studies detallados de MesasYa, Trato, Kobra y BeatList. Profundiza en arquitectura, automatización y resultados de cada producto." />
     <meta property="og:type" content="article" />
     <meta property="og:title" content="Case Studies · Nicolás Álvarez" />
-    <meta property="og:description" content="Detalles técnicos y de negocio de MesasYa, Trato, Kobra y BeatList: plataformas construidas para empresas, creadores y restaurantes." />
+    <meta property="og:description"
+        content="Detalles técnicos y de negocio de MesasYa, Trato, Kobra y BeatList: plataformas construidas para empresas, creadores y restaurantes." />
     <meta property="og:image" content="assets/logo.png" />
     <meta property="og:url" content="https://nicoabgv.github.io/projects.html" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Case Studies · Nicolás Álvarez" />
-    <meta name="twitter:description" content="Profundiza en MesasYa, Trato, Kobra y BeatList con arquitectura, flujos y roadmap." />
+    <meta name="twitter:description"
+        content="Profundiza en MesasYa, Trato, Kobra y BeatList con arquitectura, flujos y roadmap." />
     <meta name="twitter:image" content="assets/logo.png" />
     <link rel="canonical" href="https://nicoabgv.github.io/projects.html" />
     <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@500;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@500;700&family=Space+Mono:wght@400;700&display=swap"
+        rel="stylesheet" />
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
         :root {
@@ -26,15 +32,23 @@
         }
     </style>
 </head>
-<body class="bg-slate-50 font-[\'Inter\',_sans-serif] text-slate-900 antialiased" data-page="projects">    <header data-nav class="fixed inset-x-0 top-0 z-40 bg-white/80 backdrop-blur transition duration-300">
+
+<body class="bg-slate-50 font-[\'Inter\',_sans-serif] text-slate-900 antialiased" data-page="projects">
+    <header data-nav class="fixed inset-x-0 top-0 z-40 bg-white/80 backdrop-blur transition duration-300">
         <nav class="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
-            <a href="index.html#hero" class="flex items-center gap-2 text-lg font-semibold tracking-tight text-slate-900 transition hover:text-blue-600" aria-label="Volver al inicio">
-                <span class="flex h-10 w-10 items-center justify-center rounded-full bg-slate-900 text-sm font-[\'Space_Mono\',_monospace] font-bold uppercase tracking-widest text-white">NA</span>
+            <a href="index.html#hero"
+                class="flex items-center gap-2 text-lg font-semibold tracking-tight text-slate-900 transition hover:text-blue-600"
+                aria-label="Volver al inicio">
+                <span
+                    class="flex h-10 w-10 items-center justify-center rounded-full bg-slate-900 text-sm font-[\'Space_Mono\',_monospace] font-bold uppercase tracking-widest text-white">NA</span>
                 <span class="hidden sm:block">Portfolio</span>
             </a>
-            <button type="button" class="flex h-10 w-10 items-center justify-center rounded-full border border-slate-200 text-slate-700 transition hover:border-blue-500 hover:text-blue-600 lg:hidden" aria-controls="mobile-nav" aria-expanded="false" data-mobile-toggle>
+            <button type="button"
+                class="flex h-10 w-10 items-center justify-center rounded-full border border-slate-200 text-slate-700 transition hover:border-blue-500 hover:text-blue-600 lg:hidden"
+                aria-controls="mobile-nav" aria-expanded="false" data-mobile-toggle>
                 <span class="sr-only">Abrir menú</span>
-                <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"
+                    stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                     <path d="M4 7h16M4 12h16M4 17h16" />
                 </svg>
             </button>
@@ -43,24 +57,31 @@
                 <a class="transition hover:text-blue-600" href="#trato">Trato</a>
                 <a class="transition hover:text-blue-600" href="#kobra">Kobra</a>
                 <a class="transition hover:text-blue-600" href="#beatlist">BeatList</a>
-                <a class="inline-flex items-center gap-2 rounded-full border border-slate-200 px-4 py-2 text-xs font-semibold uppercase tracking-widest text-slate-700 transition hover:border-blue-500 hover:text-blue-600" href="index.html#contact">
+                <a class="inline-flex items-center gap-2 rounded-full border border-slate-200 px-4 py-2 text-xs font-semibold uppercase tracking-widest text-slate-700 transition hover:border-blue-500 hover:text-blue-600"
+                    href="index.html#contact">
                     Contacto
                 </a>
-                <button type="button" class="inline-flex items-center gap-2 rounded-full border border-slate-200 px-3 py-2 text-xs font-semibold uppercase tracking-widest text-slate-700 transition hover:border-blue-500 hover:text-blue-600" data-language-toggle aria-label="Cambiar idioma">
+                <button type="button"
+                    class="inline-flex items-center gap-2 rounded-full border border-slate-200 px-3 py-2 text-xs font-semibold uppercase tracking-widest text-slate-700 transition hover:border-blue-500 hover:text-blue-600"
+                    data-language-toggle aria-label="Cambiar idioma">
                     <span aria-hidden="true" data-language-label>ES</span>
                 </button>
             </div>
         </nav>
-        <div id="mobile-nav" data-mobile-menu class="hidden border-t border-slate-200 bg-white/95 px-6 py-4 shadow-lg transition duration-300 lg:hidden">
+        <div id="mobile-nav" data-mobile-menu
+            class="hidden border-t border-slate-200 bg-white/95 px-6 py-4 shadow-lg transition duration-300 lg:hidden">
             <div class="flex flex-col gap-3 text-sm font-medium text-slate-700">
                 <a class="transition hover:text-blue-600" href="#mesasya">MesasYa</a>
                 <a class="transition hover:text-blue-600" href="#trato">Trato</a>
                 <a class="transition hover:text-blue-600" href="#kobra">Kobra</a>
                 <a class="transition hover:text-blue-600" href="#beatlist">BeatList</a>
-                <a class="inline-flex items-center gap-2 rounded-full border border-slate-200 px-4 py-2 text-xs font-semibold uppercase tracking-widest text-slate-700 transition hover:border-blue-500 hover:text-blue-600" href="index.html#contact">
+                <a class="inline-flex items-center gap-2 rounded-full border border-slate-200 px-4 py-2 text-xs font-semibold uppercase tracking-widest text-slate-700 transition hover:border-blue-500 hover:text-blue-600"
+                    href="index.html#contact">
                     Contacto
                 </a>
-                <button type="button" class="inline-flex items-center justify-center gap-2 rounded-full border border-slate-200 px-4 py-2 text-xs font-semibold uppercase tracking-widest text-slate-700 transition hover:border-blue-500 hover:text-blue-600" data-language-toggle aria-label="Cambiar idioma">
+                <button type="button"
+                    class="inline-flex items-center justify-center gap-2 rounded-full border border-slate-200 px-4 py-2 text-xs font-semibold uppercase tracking-widest text-slate-700 transition hover:border-blue-500 hover:text-blue-600"
+                    data-language-toggle aria-label="Cambiar idioma">
                     ES / EN
                 </button>
             </div>
@@ -69,23 +90,37 @@
 
     <main class="pt-28">
         <section class="relative overflow-hidden py-24">
-            <div class="pointer-events-none absolute inset-0 -z-10 bg-gradient-to-b from-slate-100 via-white to-white"></div>
+            <div class="pointer-events-none absolute inset-0 -z-10 bg-gradient-to-b from-slate-100 via-white to-white">
+            </div>
             <div class="mx-auto max-w-6xl px-6">
                 <div class="flex flex-col gap-10 lg:flex-row lg:items-end lg:justify-between">
                     <div class="space-y-6" data-animate>
                         <p class="text-xs font-semibold uppercase tracking-[0.3em] text-slate-500">Case studies</p>
-                        <h1 class="text-4xl font-semibold text-slate-900 sm:text-5xl">De la visión al despliegue: historias de producto completas.</h1>
+                        <h1 class="text-4xl font-semibold text-slate-900 sm:text-5xl">De la visión al despliegue:
+                            historias de producto completas.</h1>
                         <p class="max-w-3xl text-lg text-slate-600">
-                            Cada proyecto nace de un reto distinto. Aquí encontrarás las decisiones de arquitectura, flujos operativos y aprendizajes que permitieron lanzar soluciones confiables y medibles.
+                            Cada proyecto nace de un reto distinto. Aquí encontrarás las decisiones de arquitectura,
+                            flujos operativos y aprendizajes que permitieron lanzar soluciones confiables y medibles.
                         </p>
                     </div>
                     <div class="rounded-3xl border border-slate-200 bg-white/80 p-6 shadow-sm" data-animate>
                         <p class="text-xs font-semibold uppercase tracking-[0.3em] text-slate-500">Índice</p>
                         <ul class="mt-4 space-y-3 text-sm text-slate-600">
-                            <li><a class="inline-flex items-center gap-2 text-blue-600 transition hover:text-blue-700" href="#mesasya">01 — MesasYa <span class="text-xs text-slate-400">SaaS restauración</span></a></li>
-                            <li><a class="inline-flex items-center gap-2 text-blue-600 transition hover:text-blue-700" href="#trato">02 — Trato <span class="text-xs text-slate-400">CRM presupuestos</span></a></li>
-                            <li><a class="inline-flex items-center gap-2 text-blue-600 transition hover:text-blue-700" href="#kobra">03 — Kobra <span class="text-xs text-slate-400">Fintech interna</span></a></li>
-                            <li><a class="inline-flex items-center gap-2 text-blue-600 transition hover:text-blue-700" href="#beatlist">04 — BeatList <span class="text-xs text-slate-400">Spotify Approved</span></a></li>
+                            <li><a class="inline-flex items-center gap-2 text-blue-600 transition hover:text-blue-700"
+                                    href="#mesasya">01 — MesasYa <span class="text-xs text-slate-400">SaaS
+                                        restauración</span></a></li>
+                            <li><a class="inline-flex items-center gap-2 text-blue-600 transition hover:text-blue-700"
+                                    href="#orderya">02 — OrderYa <span class="text-xs text-slate-400">SaaS
+                                        producción</span></a></li>
+                            <li><a class="inline-flex items-center gap-2 text-blue-600 transition hover:text-blue-700"
+                                    href="#trato">03 — Trato <span class="text-xs text-slate-400">CRM
+                                        presupuestos</span></a></li>
+                            <li><a class="inline-flex items-center gap-2 text-blue-600 transition hover:text-blue-700"
+                                    href="#kobra">04 — Kobra <span class="text-xs text-slate-400">Fintech
+                                        interna</span></a></li>
+                            <li><a class="inline-flex items-center gap-2 text-blue-600 transition hover:text-blue-700"
+                                    href="#beatlist">05 — BeatList <span class="text-xs text-slate-400">Spotify
+                                        Approved</span></a></li>
                         </ul>
                     </div>
                 </div>
@@ -97,34 +132,52 @@
                 <div class="flex flex-col gap-6 md:flex-row md:items-center md:justify-between" data-animate>
                     <div class="space-y-3">
                         <p class="text-xs font-semibold uppercase tracking-[0.3em] text-slate-500">Case study 01</p>
-                        <h2 class="text-3xl font-semibold text-slate-900 sm:text-4xl">MesasYa — SaaS de reservas multi-sede</h2>
+                        <h2 class="text-3xl font-semibold text-slate-900 sm:text-4xl">MesasYa — SaaS de reservas
+                            multi-sede</h2>
                     </div>
-                    <img src="assets/mesasya-logo.svg" alt="Logo MesasYa" width="140" height="140" loading="lazy" class="h-24 w-24 rounded-3xl border border-[#9DE1C1]/70 bg-[#F4FFF9] p-4" />
+                    <img src="assets/mesasya-logo.svg" alt="Logo MesasYa" width="140" height="140" loading="lazy"
+                        class="h-24 w-24 rounded-3xl border border-[#9DE1C1]/70 bg-[#F4FFF9] p-4" />
                 </div>
                 <div class="grid gap-10 lg:grid-cols-[1.4fr,1fr]" data-animate>
                     <article class="space-y-6 text-base text-slate-600">
                         <p>
-                            MesasYa es un <strong data-i18n="stack.saas"></strong> que digitaliza la gestión de reservas para restaurantes con múltiples sedes. Reúne planos interactivos, reglas personalizables y notificaciones en tiempo real para que cada servicio funcione sin sorpresas.
+                            MesasYa es un <strong data-i18n="stack.saas"></strong> que digitaliza la gestión de reservas
+                            para restaurantes con múltiples sedes. Reúne planos interactivos, reglas personalizables y
+                            notificaciones en tiempo real para que cada servicio funcione sin sorpresas.
                         </p>
                         <p>
-                            El backend basado en <strong data-i18n="stack.flaskcelery"></strong> utiliza Docker Compose y buenas prácticas de seguridad. Cada restaurante configura zonas, servicios, idiomas y workflows específicos sin perder estabilidad ni trazabilidad.
+                            El backend basado en <strong data-i18n="stack.flaskcelery"></strong> utiliza Docker Compose
+                            y buenas prácticas de seguridad. Cada restaurante configura zonas, servicios, idiomas y
+                            workflows específicos sin perder estabilidad ni trazabilidad.
                         </p>
                         <div class="rounded-3xl border border-[#9DE1C1]/60 bg-[#F4FFF9] p-5 shadow-sm">
-                            <p class="text-xs font-semibold uppercase tracking-[0.3em] text-[#1D494F]" data-direct-access-label>Acceso directo</p>
-                            <a href="https://mesasya.es" target="_blank" rel="noreferrer" class="mt-3 inline-flex items-center gap-2 text-sm font-semibold text-[#1D494F] transition hover:text-[#589E8C]">
-                                <span data-direct-access-link="mesasya">→ MesasYa – Plataforma SaaS de gestión de reservas para restaurantes.</span>
-                                <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <p class="text-xs font-semibold uppercase tracking-[0.3em] text-[#1D494F]"
+                                data-direct-access-label>Acceso directo</p>
+                            <a href="https://mesasya.es" target="_blank" rel="noreferrer"
+                                class="mt-3 inline-flex items-center gap-2 text-sm font-semibold text-[#1D494F] transition hover:text-[#589E8C]">
+                                <span data-direct-access-link="mesasya">→ MesasYa – Plataforma SaaS de gestión de
+                                    reservas para restaurantes.</span>
+                                <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"
+                                    aria-hidden="true">
                                     <path d="M5 12h14" />
                                     <path d="m12 5 7 7-7 7" />
                                 </svg>
                             </a>
                         </div>
                         <div class="rounded-3xl border border-slate-200 bg-slate-50/70 p-6">
-                            <h3 class="text-sm font-semibold uppercase tracking-widest text-slate-500">Impacto operativo</h3>
+                            <h3 class="text-sm font-semibold uppercase tracking-widest text-slate-500">Impacto operativo
+                            </h3>
                             <ul class="mt-4 space-y-3">
-                                <li class="flex items-start gap-3"><span class="mt-1 h-2 w-2 rounded-full bg-[#589E8C]"></span>Planos de sala configurables con reglas por sede, zonas y eventos especiales.</li>
-                                <li class="flex items-start gap-3"><span class="mt-1 h-2 w-2 rounded-full bg-[#589E8C]"></span>Asignación automática de mesas y notificaciones en tiempo real para staff y clientes.</li>
-                                <li class="flex items-start gap-3"><span class="mt-1 h-2 w-2 rounded-full bg-[#589E8C]"></span>Exportaciones y métricas listas para BI que acompañan las decisiones del negocio.</li>
+                                <li class="flex items-start gap-3"><span
+                                        class="mt-1 h-2 w-2 rounded-full bg-[#589E8C]"></span>Planos de sala
+                                    configurables con reglas por sede, zonas y eventos especiales.</li>
+                                <li class="flex items-start gap-3"><span
+                                        class="mt-1 h-2 w-2 rounded-full bg-[#589E8C]"></span>Asignación automática de
+                                    mesas y notificaciones en tiempo real para staff y clientes.</li>
+                                <li class="flex items-start gap-3"><span
+                                        class="mt-1 h-2 w-2 rounded-full bg-[#589E8C]"></span>Exportaciones y métricas
+                                    listas para BI que acompañan las decisiones del negocio.</li>
                             </ul>
                         </div>
                     </article>
@@ -139,12 +192,17 @@
                             </ul>
                         </div>
                         <div class="rounded-3xl border border-dashed border-[#589E8C]/40 bg-[#9DE1C1]/15 p-6">
-                            <h3 class="text-sm font-semibold uppercase tracking-widest text-[#1D494F]">Próximos pasos</h3>
-                            <p class="mt-2 text-sm text-slate-600">Integración de informes automáticos y optimización de la experiencia de gestión.</p>
+                            <h3 class="text-sm font-semibold uppercase tracking-widest text-[#1D494F]">Próximos pasos
+                            </h3>
+                            <p class="mt-2 text-sm text-slate-600">Integración de informes automáticos y optimización de
+                                la experiencia de gestión.</p>
                         </div>
                         <details class="rounded-3xl border border-slate-200 bg-white/90 p-6 shadow-sm">
-                            <summary class="cursor-pointer text-sm font-semibold uppercase tracking-widest text-slate-500">Esquema técnico</summary>
-                            <pre class="mt-4 whitespace-pre-wrap rounded-2xl bg-slate-50/80 p-4 font-['Space_Mono',_monospace] text-xs text-slate-700">Reservas web / staff
+                            <summary
+                                class="cursor-pointer text-sm font-semibold uppercase tracking-widest text-slate-500">
+                                Esquema técnico</summary>
+                            <pre
+                                class="mt-4 whitespace-pre-wrap rounded-2xl bg-slate-50/80 p-4 font-['Space_Mono',_monospace] text-xs text-slate-700">Reservas web / staff
     ↓
 Flask API → MySQL
     │
@@ -156,28 +214,126 @@ Flask API → MySQL
             </div>
         </section>
 
-        <section id="trato" class="bg-slate-50 py-24">
+        <section id="orderya" class="bg-slate-50 py-24">
             <div class="mx-auto max-w-6xl space-y-12 px-6">
                 <div class="flex flex-col gap-6 md:flex-row md:items-center md:justify-between" data-animate>
                     <div class="space-y-3">
                         <p class="text-xs font-semibold uppercase tracking-[0.3em] text-slate-500">Case study 02</p>
-                        <h2 class="text-3xl font-semibold text-slate-900 sm:text-4xl">Trato — CRM ágil para equipos comerciales</h2>
+                        <h2 class="text-3xl font-semibold text-slate-900 sm:text-4xl">OrderYa — Gestión integral de
+                            pedidos</h2>
                     </div>
-                    <img src="assets/trato-logo.svg" alt="Logo Trato" width="140" height="140" loading="lazy" class="h-24 w-24 rounded-3xl border border-[#FBD2CD]/80 bg-[#FDE9E7] p-4 shadow-sm" />
+                    <img src="assets/orderya-logo.png" alt="Logo OrderYa" width="140" height="140" loading="lazy"
+                        class="h-24 w-24 rounded-3xl border border-[#fb923c]/40 bg-[#fff7ed] p-4" />
                 </div>
                 <div class="grid gap-10 lg:grid-cols-[1.4fr,1fr]" data-animate>
                     <article class="space-y-6 text-base text-slate-600">
                         <p>
-                            Trato centraliza presupuestos, seguimientos y recordatorios en un CRM ligero pensado para equipos comerciales. Con un backend basado en <strong data-i18n="stack.fastapi"></strong> ejecutado con Uvicorn, prioriza la velocidad de respuesta y la claridad de cada oportunidad.
+                            OrderYa elimina el caos de la gestión de pedidos entre obradores y puntos de venta.
+                            Sustituye hojas de cálculo y mensajes dispersos por una plataforma centralizada donde cada
+                            tienda realiza sus pedidos de forma intuitiva y el obrador visualiza la demanda consolidada.
                         </p>
                         <p>
-                            Las empresas acceden mediante códigos de invitación y gestionan pipelines con estados personalizables, timeline de interacciones y avisos automáticos. Las tareas en Celery coordinan recordatorios, envíos de emails y resúmenes diarios desde el VPS principal.
+                            Desarrollado con <strong data-i18n="stack.fastapi"></strong> y renderizado server-side
+                            (Jinja2) para garantizar velocidad y simplicidad, el sistema gestiona catálogos complejos,
+                            listas de precios por cliente y generación automática de órdenes de reparto.
+                        </p>
+                        <div class="rounded-3xl border border-[#fb923c]/60 bg-[#fff7ed] p-5 shadow-sm">
+                            <p class="text-xs font-semibold uppercase tracking-[0.3em] text-[#9a3412]"
+                                data-direct-access-label>Acceso directo</p>
+                            <a href="https://orderya.es" target="_blank" rel="noreferrer"
+                                class="mt-3 inline-flex items-center gap-2 text-sm font-semibold text-[#9a3412] transition hover:text-[#ea580c]">
+                                <span data-direct-access-link="orderya">→ OrderYa – Centralización y gestión de
+                                    producción.</span>
+                                <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"
+                                    aria-hidden="true">
+                                    <path d="M5 12h14" />
+                                    <path d="m12 5 7 7-7 7" />
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="rounded-3xl border border-slate-200 bg-white p-6">
+                            <h3 class="text-sm font-semibold uppercase tracking-widest text-slate-500">Funcionalidades
+                                clave</h3>
+                            <ul class="mt-4 space-y-3">
+                                <li class="flex items-start gap-3"><span
+                                        class="mt-1 h-2 w-2 rounded-full bg-[#ea580c]"></span>Portal de tiendas con
+                                    histórico, favoritos y estados en tiempo real.</li>
+                                <li class="flex items-start gap-3"><span
+                                        class="mt-1 h-2 w-2 rounded-full bg-[#ea580c]"></span>Consolidación automática
+                                    para listas de producción y rutas de reparto.</li>
+                                <li class="flex items-start gap-3"><span
+                                        class="mt-1 h-2 w-2 rounded-full bg-[#ea580c]"></span>Gestión de usuarios, roles
+                                    y familias de productos desde panel administrativo.</li>
+                            </ul>
+                        </div>
+                    </article>
+                    <aside class="space-y-6">
+                        <div class="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm">
+                            <h3 class="text-sm font-semibold uppercase tracking-widest text-slate-500">Stack</h3>
+                            <ul class="mt-4 space-y-2 text-sm text-slate-600">
+                                <li>FastAPI + Jinja2</li>
+                                <li>MySQL 8.0</li>
+                                <li>Docker Compose</li>
+                                <li>Nginx Proxy</li>
+                            </ul>
+                        </div>
+                        <div class="rounded-3xl border border-dashed border-[#ea580c]/40 bg-[#fff7ed] p-6">
+                            <h3 class="text-sm font-semibold uppercase tracking-widest text-[#9a3412]">Estado</h3>
+                            <p class="mt-2 text-sm text-slate-600">En producción. Gestionando pedidos diarios para
+                                obradores reales.</p>
+                        </div>
+                        <details class="rounded-3xl border border-slate-200 bg-white/90 p-6 shadow-sm">
+                            <summary
+                                class="cursor-pointer text-sm font-semibold uppercase tracking-widest text-slate-500">
+                                Esquema técnico</summary>
+                            <pre
+                                class="mt-4 whitespace-pre-wrap rounded-2xl bg-slate-50/80 p-4 font-['Space_Mono',_monospace] text-xs text-slate-700">Tiendas
+    ↓
+Nginx → FastAPI
+    ↓
+MySQL (Persistencia)
+    ↓
+Producción (Listas PDF/Vista)</pre>
+                        </details>
+                    </aside>
+                </div>
+            </div>
+        </section>
+
+        <section id="trato" class="border-y border-slate-200 bg-white py-24">
+            <div class="mx-auto max-w-6xl space-y-12 px-6">
+                <div class="flex flex-col gap-6 md:flex-row md:items-center md:justify-between" data-animate>
+                    <div class="space-y-3">
+                        <p class="text-xs font-semibold uppercase tracking-[0.3em] text-slate-500">Case study 03</p>
+                        <h2 class="text-3xl font-semibold text-slate-900 sm:text-4xl">Trato — CRM ágil para equipos
+                            comerciales</h2>
+                    </div>
+                    <img src="assets/trato-logo.svg" alt="Logo Trato" width="140" height="140" loading="lazy"
+                        class="h-24 w-24 rounded-3xl border border-[#FBD2CD]/80 bg-[#FDE9E7] p-4 shadow-sm" />
+                </div>
+                <div class="grid gap-10 lg:grid-cols-[1.4fr,1fr]" data-animate>
+                    <article class="space-y-6 text-base text-slate-600">
+                        <p>
+                            Trato centraliza presupuestos, seguimientos y recordatorios en un CRM ligero pensado para
+                            equipos comerciales. Con un backend basado en <strong data-i18n="stack.fastapi"></strong>
+                            ejecutado con Uvicorn, prioriza la velocidad de respuesta y la claridad de cada oportunidad.
+                        </p>
+                        <p>
+                            Las empresas acceden mediante códigos de invitación y gestionan pipelines con estados
+                            personalizables, timeline de interacciones y avisos automáticos. Las tareas en Celery
+                            coordinan recordatorios, envíos de emails y resúmenes diarios desde el VPS principal.
                         </p>
                         <div class="rounded-3xl border border-[#F9A8A3]/50 bg-[#FEECEC] p-5 shadow-sm">
-                            <p class="text-xs font-semibold uppercase tracking-[0.3em] text-[#B4232A]" data-direct-access-label>Acceso directo</p>
-                            <a href="https://tratocrm.com" target="_blank" rel="noopener noreferrer" class="mt-3 inline-flex items-center gap-2 text-sm font-semibold text-[#B4232A] transition hover:text-[#F97068] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#F97068]">
-                                <span data-direct-access-link="trato">→ Trato – CRM ágil para presupuestos, seguimientos y recordatorios.</span>
-                                <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <p class="text-xs font-semibold uppercase tracking-[0.3em] text-[#B4232A]"
+                                data-direct-access-label>Acceso directo</p>
+                            <a href="https://tratocrm.com" target="_blank" rel="noopener noreferrer"
+                                class="mt-3 inline-flex items-center gap-2 text-sm font-semibold text-[#B4232A] transition hover:text-[#F97068] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#F97068]">
+                                <span data-direct-access-link="trato">→ Trato – CRM ágil para presupuestos, seguimientos
+                                    y recordatorios.</span>
+                                <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"
+                                    aria-hidden="true">
                                     <path d="M5 12h14" />
                                     <path d="m12 5 7 7-7 7" />
                                 </svg>
@@ -186,9 +342,15 @@ Flask API → MySQL
                         <div class="rounded-3xl border border-[#F9A8A3]/40 bg-[#FFF0EF] p-6 shadow-sm">
                             <h3 class="text-sm font-semibold uppercase tracking-widest text-[#B4232A]">Impacto</h3>
                             <ul class="mt-4 space-y-3">
-                                <li class="flex items-start gap-3"><span class="mt-1 h-2 w-2 rounded-full bg-[#F97068]"></span>Altas controladas de empresas y usuarios mediante códigos de invitación.</li>
-                                <li class="flex items-start gap-3"><span class="mt-1 h-2 w-2 rounded-full bg-[#F97068]"></span>Seguimientos con recordatorios automáticos y timeline centralizado por oportunidad.</li>
-                                <li class="flex items-start gap-3"><span class="mt-1 h-2 w-2 rounded-full bg-[#F97068]"></span>Despliegue contenerizado en el VPS principal con backups y monitoreo de tareas Celery.</li>
+                                <li class="flex items-start gap-3"><span
+                                        class="mt-1 h-2 w-2 rounded-full bg-[#F97068]"></span>Altas controladas de
+                                    empresas y usuarios mediante códigos de invitación.</li>
+                                <li class="flex items-start gap-3"><span
+                                        class="mt-1 h-2 w-2 rounded-full bg-[#F97068]"></span>Seguimientos con
+                                    recordatorios automáticos y timeline centralizado por oportunidad.</li>
+                                <li class="flex items-start gap-3"><span
+                                        class="mt-1 h-2 w-2 rounded-full bg-[#F97068]"></span>Despliegue contenerizado
+                                    en el VPS principal con backups y monitoreo de tareas Celery.</li>
                             </ul>
                         </div>
                     </article>
@@ -204,11 +366,16 @@ Flask API → MySQL
                         </div>
                         <div class="rounded-3xl border border-dashed border-[#F97068]/40 bg-[#FDEAEA]/60 p-6">
                             <h3 class="text-sm font-semibold uppercase tracking-widest text-[#B4232A]">Estado</h3>
-                            <p class="mt-2 text-sm text-slate-600">Producción en VPS principal con monitoreo básico y backups diarios.</p>
+                            <p class="mt-2 text-sm text-slate-600">Producción en VPS principal con monitoreo básico y
+                                backups diarios.</p>
                         </div>
-                        <details class="rounded-3xl border border-dashed border-[#F9A8A3]/60 bg-[#FDEAEA]/60 p-6 shadow-sm">
-                            <summary class="cursor-pointer text-sm font-semibold uppercase tracking-widest text-[#B4232A]">Esquema técnico</summary>
-                            <pre class="mt-4 whitespace-pre-wrap rounded-2xl bg-white/70 p-4 font-['Space_Mono',_monospace] text-xs text-slate-700">Empresas invitadas
+                        <details
+                            class="rounded-3xl border border-dashed border-[#F9A8A3]/60 bg-[#FDEAEA]/60 p-6 shadow-sm">
+                            <summary
+                                class="cursor-pointer text-sm font-semibold uppercase tracking-widest text-[#B4232A]">
+                                Esquema técnico</summary>
+                            <pre
+                                class="mt-4 whitespace-pre-wrap rounded-2xl bg-white/70 p-4 font-['Space_Mono',_monospace] text-xs text-slate-700">Empresas invitadas
     ↓
 FastAPI + Uvicorn → MySQL
     │
@@ -224,25 +391,38 @@ FastAPI + Uvicorn → MySQL
             <div class="mx-auto max-w-6xl space-y-12 px-6">
                 <div class="flex flex-col gap-6 md:flex-row md:items-center md:justify-between" data-animate>
                     <div class="space-y-3">
-                        <p class="text-xs font-semibold uppercase tracking-[0.3em] text-slate-500">Case study 03</p>
-                        <h2 class="text-3xl font-semibold text-slate-900 sm:text-4xl">Kobra — Plataforma financiera para Cybersur</h2>
+                        <p class="text-xs font-semibold uppercase tracking-[0.3em] text-slate-500">Case study 04</p>
+                        <h2 class="text-3xl font-semibold text-slate-900 sm:text-4xl">Kobra — Plataforma financiera para
+                            Cybersur</h2>
                     </div>
-                    <img src="assets/kobra-logo.svg" alt="Logo Kobra" width="140" height="140" loading="lazy" class="h-24 w-24 rounded-3xl border border-[#f28d1f]/50 bg-[#FFF4E6] p-4" />
+                    <img src="assets/kobra-logo.svg" alt="Logo Kobra" width="140" height="140" loading="lazy"
+                        class="h-24 w-24 rounded-3xl border border-[#f28d1f]/50 bg-[#FFF4E6] p-4" />
                 </div>
                 <div class="grid gap-10 lg:grid-cols-[1.4fr,1fr]" data-animate>
                     <article class="space-y-6 text-base text-slate-600">
                         <p>
-                            Kobra es la solución a medida que mantiene la operativa financiera de Cybersur. Automatiza facturación, cobros y recordatorios desde un backend robusto en <strong data-i18n="stack.fastapi"></strong>.
+                            Kobra es la solución a medida que mantiene la operativa financiera de Cybersur. Automatiza
+                            facturación, cobros y recordatorios desde un backend robusto en <strong
+                                data-i18n="stack.fastapi"></strong>.
                         </p>
                         <p>
-                            Los cronjobs programados gestionan exportaciones, limpiezas de datos y conciliaciones automáticas. Los paneles internos priorizan métricas de cobranza y SLA por cliente para que el equipo financiero tenga claridad diaria.
+                            Los cronjobs programados gestionan exportaciones, limpiezas de datos y conciliaciones
+                            automáticas. Los paneles internos priorizan métricas de cobranza y SLA por cliente para que
+                            el equipo financiero tenga claridad diaria.
                         </p>
                         <div class="rounded-3xl border border-slate-200 bg-slate-50/70 p-6">
-                            <h3 class="text-sm font-semibold uppercase tracking-widest text-slate-500">Resultados clave</h3>
+                            <h3 class="text-sm font-semibold uppercase tracking-widest text-slate-500">Resultados clave
+                            </h3>
                             <ul class="mt-4 space-y-3">
-                                <li class="flex items-start gap-3"><span class="mt-1 h-2 w-2 rounded-full bg-[#f28d1f]"></span>Workflows de avisos y recordatorios que reducen el tiempo de seguimiento de facturas.</li>
-                                <li class="flex items-start gap-3"><span class="mt-1 h-2 w-2 rounded-full bg-[#f28d1f]"></span>Cronjobs trazables para exportaciones contables y rutinas de limpieza de datos.</li>
-                                <li class="flex items-start gap-3"><span class="mt-1 h-2 w-2 rounded-full bg-[#f28d1f]"></span>Paneles internos con indicadores de cobro y alertas sobre vencimientos.</li>
+                                <li class="flex items-start gap-3"><span
+                                        class="mt-1 h-2 w-2 rounded-full bg-[#f28d1f]"></span>Workflows de avisos y
+                                    recordatorios que reducen el tiempo de seguimiento de facturas.</li>
+                                <li class="flex items-start gap-3"><span
+                                        class="mt-1 h-2 w-2 rounded-full bg-[#f28d1f]"></span>Cronjobs trazables para
+                                    exportaciones contables y rutinas de limpieza de datos.</li>
+                                <li class="flex items-start gap-3"><span
+                                        class="mt-1 h-2 w-2 rounded-full bg-[#f28d1f]"></span>Paneles internos con
+                                    indicadores de cobro y alertas sobre vencimientos.</li>
                             </ul>
                         </div>
                     </article>
@@ -258,11 +438,15 @@ FastAPI + Uvicorn → MySQL
                         </div>
                         <div class="rounded-3xl border border-dashed border-[#f28d1f]/40 bg-[#f28d1f]/10 p-6">
                             <h3 class="text-sm font-semibold uppercase tracking-widest text-[#f28d1f]">Roadmap</h3>
-                            <p class="mt-2 text-sm text-slate-600">Ampliación de reportes financieros internos y automatización de conciliaciones.</p>
+                            <p class="mt-2 text-sm text-slate-600">Ampliación de reportes financieros internos y
+                                automatización de conciliaciones.</p>
                         </div>
                         <details class="rounded-3xl border border-slate-200 bg-white/90 p-6 shadow-sm">
-                            <summary class="cursor-pointer text-sm font-semibold uppercase tracking-widest text-slate-500">Esquema técnico</summary>
-                            <pre class="mt-4 whitespace-pre-wrap rounded-2xl bg-slate-50/80 p-4 font-['Space_Mono',_monospace] text-xs text-slate-700">Equipo Cybersur
+                            <summary
+                                class="cursor-pointer text-sm font-semibold uppercase tracking-widest text-slate-500">
+                                Esquema técnico</summary>
+                            <pre
+                                class="mt-4 whitespace-pre-wrap rounded-2xl bg-slate-50/80 p-4 font-['Space_Mono',_monospace] text-xs text-slate-700">Equipo Cybersur
     ↓
 FastAPI API → MySQL
     │
@@ -278,41 +462,65 @@ FastAPI API → MySQL
             <div class="mx-auto max-w-6xl space-y-12 px-6">
                 <div class="flex flex-col gap-6 md:flex-row md:items-center md:justify-between" data-animate>
                     <div class="space-y-3">
-                        <p class="text-xs font-semibold uppercase tracking-[0.3em] text-slate-500">Case study 04</p>
-                        <h2 class="text-3xl font-semibold text-slate-900 sm:text-4xl">BeatList — Inteligencia musical para power users</h2>
-                        <span class="inline-flex items-center gap-2 rounded-full border border-[#111827]/30 bg-white px-3 py-1 text-xs font-semibold text-[#111827]">
+                        <p class="text-xs font-semibold uppercase tracking-[0.3em] text-slate-500">Case study 05</p>
+                        <h2 class="text-3xl font-semibold text-slate-900 sm:text-4xl">BeatList — Inteligencia musical
+                            para power users</h2>
+                        <span
+                            class="inline-flex items-center gap-2 rounded-full border border-[#111827]/30 bg-white px-3 py-1 text-xs font-semibold text-[#111827]">
                             <svg class="h-3.5 w-3.5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                                <path fill-rule="evenodd" d="M16.704 5.29a.75.75 0 0 1 .006 1.06l-7.25 7.5a.75.75 0 0 1-1.086.02L3.29 8.536a.75.75 0 0 1 1.06-1.06l4.21 4.209 6.72-6.956a.75.75 0 0 1 1.064.061Z" clip-rule="evenodd" />
+                                <path fill-rule="evenodd"
+                                    d="M16.704 5.29a.75.75 0 0 1 .006 1.06l-7.25 7.5a.75.75 0 0 1-1.086.02L3.29 8.536a.75.75 0 0 1 1.06-1.06l4.21 4.209 6.72-6.956a.75.75 0 0 1 1.064.061Z"
+                                    clip-rule="evenodd" />
                             </svg>
                             <span data-locale-element="projects.beatlist.approval">Spotify Approved</span>
                         </span>
                     </div>
-                    <img src="assets/beatlist-logo.svg" alt="Logo BeatList" width="140" height="140" loading="lazy" class="h-24 w-24 rounded-3xl border border-[#111827]/25 bg-[#F7F7FB] p-4" />
+                    <img src="assets/beatlist-logo.svg" alt="Logo BeatList" width="140" height="140" loading="lazy"
+                        class="h-24 w-24 rounded-3xl border border-[#111827]/25 bg-[#F7F7FB] p-4" />
                 </div>
                 <div class="grid gap-10 lg:grid-cols-[1.4fr,1fr]" data-animate>
                     <article class="space-y-6 text-base text-slate-600">
                         <p>
-                            BeatList es la plataforma para melómanos, curadores y creadores de contenido que necesitan más herramientas que el gestor estándar de Spotify. Centraliza administración avanzada, descubrimiento y analítica en una experiencia fluida.
+                            BeatList es la plataforma para melómanos, curadores y creadores de contenido que necesitan
+                            más herramientas que el gestor estándar de Spotify. Centraliza administración avanzada,
+                            descubrimiento y analítica en una experiencia fluida.
                         </p>
                         <p>
-                            El backend en <strong>Flask</strong> gestiona la autenticación <strong data-i18n="stack.oauth"></strong> aprobada por Spotify, coordina análisis pesados con <strong>Celery</strong> y accede a datos extendidos mediante la <strong data-i18n="stack.spotifyapi"></strong>. El frontend en JavaScript dinamiza dashboards, recomendaciones y un reproductor web con animaciones suaves.
+                            El backend en <strong>Flask</strong> gestiona la autenticación <strong
+                                data-i18n="stack.oauth"></strong> aprobada por Spotify, coordina análisis pesados con
+                            <strong>Celery</strong> y accede a datos extendidos mediante la <strong
+                                data-i18n="stack.spotifyapi"></strong>. El frontend en JavaScript dinamiza dashboards,
+                            recomendaciones y un reproductor web con animaciones suaves.
                         </p>
                         <div class="rounded-3xl border border-[#111827]/25 bg-[#F7F7FB] p-5 shadow-sm">
-                            <p class="text-xs font-semibold uppercase tracking-[0.3em] text-[#111827]" data-direct-access-label>Acceso directo</p>
-                            <a href="https://beatlist.es" target="_blank" rel="noreferrer" class="mt-3 inline-flex items-center gap-2 text-sm font-semibold text-[#111827] transition hover:text-[#1f2937]">
-                                <span data-direct-access-link="beatlist">→ BeatList – Estadísticas y gestión avanzada de playlists de Spotify.</span>
-                                <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <p class="text-xs font-semibold uppercase tracking-[0.3em] text-[#111827]"
+                                data-direct-access-label>Acceso directo</p>
+                            <a href="https://beatlist.es" target="_blank" rel="noreferrer"
+                                class="mt-3 inline-flex items-center gap-2 text-sm font-semibold text-[#111827] transition hover:text-[#1f2937]">
+                                <span data-direct-access-link="beatlist">→ BeatList – Estadísticas y gestión avanzada de
+                                    playlists de Spotify.</span>
+                                <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"
+                                    aria-hidden="true">
                                     <path d="M5 12h14" />
                                     <path d="m12 5 7 7-7 7" />
                                 </svg>
                             </a>
                         </div>
                         <div class="rounded-3xl border border-slate-200 bg-white/90 p-6 shadow-sm">
-                            <h3 class="text-sm font-semibold uppercase tracking-widest text-slate-500">Experiencia destacada</h3>
+                            <h3 class="text-sm font-semibold uppercase tracking-widest text-slate-500">Experiencia
+                                destacada</h3>
                             <ul class="mt-4 space-y-3">
-                                <li class="flex items-start gap-3"><span class="mt-1 h-2 w-2 rounded-full bg-[#111827]"></span>Listas inteligentes basadas en reglas y métricas como energía o bailabilidad.</li>
-                                <li class="flex items-start gap-3"><span class="mt-1 h-2 w-2 rounded-full bg-[#111827]"></span>Dashboard con tendencias temporales y hábitos de escucha segmentados por artistas y géneros.</li>
-                                <li class="flex items-start gap-3"><span class="mt-1 h-2 w-2 rounded-full bg-[#111827]"></span>Análisis gestionados con Celery para procesar datos en segundo plano y ofrecer métricas precisas sin afectar la experiencia del usuario.</li>
+                                <li class="flex items-start gap-3"><span
+                                        class="mt-1 h-2 w-2 rounded-full bg-[#111827]"></span>Listas inteligentes
+                                    basadas en reglas y métricas como energía o bailabilidad.</li>
+                                <li class="flex items-start gap-3"><span
+                                        class="mt-1 h-2 w-2 rounded-full bg-[#111827]"></span>Dashboard con tendencias
+                                    temporales y hábitos de escucha segmentados por artistas y géneros.</li>
+                                <li class="flex items-start gap-3"><span
+                                        class="mt-1 h-2 w-2 rounded-full bg-[#111827]"></span>Análisis gestionados con
+                                    Celery para procesar datos en segundo plano y ofrecer métricas precisas sin afectar
+                                    la experiencia del usuario.</li>
                             </ul>
                         </div>
                     </article>
@@ -327,12 +535,17 @@ FastAPI API → MySQL
                             </ul>
                         </div>
                         <div class="rounded-3xl border border-dashed border-[#111827]/30 bg-[#111827]/10 p-6">
-                            <h3 class="text-sm font-semibold uppercase tracking-widest text-[#111827]">Posibles evoluciones</h3>
-                            <p class="mt-2 text-sm text-slate-600">Añadir modo colaborativo o exportación de insights en futuras versiones.</p>
+                            <h3 class="text-sm font-semibold uppercase tracking-widest text-[#111827]">Posibles
+                                evoluciones</h3>
+                            <p class="mt-2 text-sm text-slate-600">Añadir modo colaborativo o exportación de insights en
+                                futuras versiones.</p>
                         </div>
                         <details class="rounded-3xl border border-slate-200 bg-white/90 p-6 shadow-sm">
-                            <summary class="cursor-pointer text-sm font-semibold uppercase tracking-widest text-slate-500">Esquema técnico</summary>
-                            <pre class="mt-4 whitespace-pre-wrap rounded-2xl bg-slate-50/80 p-4 font-['Space_Mono',_monospace] text-xs text-slate-700">Usuarios Spotify
+                            <summary
+                                class="cursor-pointer text-sm font-semibold uppercase tracking-widest text-slate-500">
+                                Esquema técnico</summary>
+                            <pre
+                                class="mt-4 whitespace-pre-wrap rounded-2xl bg-slate-50/80 p-4 font-['Space_Mono',_monospace] text-xs text-slate-700">Usuarios Spotify
     ↓
 Flask API (OAuth 2.0)
     ↓
@@ -349,22 +562,30 @@ Frontend JS → Dashboards + reproductor</pre>
         <section class="bg-slate-900 py-20">
             <div class="mx-auto flex max-w-5xl flex-col items-center gap-6 px-6 text-center text-white" data-animate>
                 <p class="text-xs font-semibold uppercase tracking-[0.3em] text-white/60">Conversemos</p>
-                <h2 class="text-3xl font-semibold sm:text-4xl">Si quieres hablar sobre estos proyectos o explorar nuevas ideas, escríbeme en LinkedIn.</h2>
-                <p class="max-w-3xl text-base text-white/80">Me interesa colaborar en iniciativas donde la tecnología y el desarrollo de producto puedan marcar una diferencia real.</p>
+                <h2 class="text-3xl font-semibold sm:text-4xl">Si quieres hablar sobre estos proyectos o explorar nuevas
+                    ideas, escríbeme en LinkedIn.</h2>
+                <p class="max-w-3xl text-base text-white/80">Me interesa colaborar en iniciativas donde la tecnología y
+                    el desarrollo de producto puedan marcar una diferencia real.</p>
                 <div class="flex flex-wrap items-center justify-center gap-4">
-                    <a href="https://www.linkedin.com/in/nicolas-alvarez-becerra/" class="inline-flex items-center gap-2 rounded-full bg-white px-6 py-3 text-sm font-semibold text-slate-900 transition hover:bg-slate-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white" target="_blank" rel="noreferrer">LinkedIn</a>
-                    <a href="https://github.com/nicoabgv" class="inline-flex items-center gap-2 rounded-full border border-white/40 px-6 py-3 text-sm font-semibold text-white transition hover:border-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white" target="_blank" rel="noreferrer">GitHub</a>
+                    <a href="https://www.linkedin.com/in/nicolas-alvarez-becerra/"
+                        class="inline-flex items-center gap-2 rounded-full bg-white px-6 py-3 text-sm font-semibold text-slate-900 transition hover:bg-slate-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+                        target="_blank" rel="noreferrer">LinkedIn</a>
+                    <a href="https://github.com/nicoabgv"
+                        class="inline-flex items-center gap-2 rounded-full border border-white/40 px-6 py-3 text-sm font-semibold text-white transition hover:border-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+                        target="_blank" rel="noreferrer">GitHub</a>
                 </div>
             </div>
         </section>
     </main>
 
     <footer class="border-t border-slate-200 bg-white/80">
-        <div class="mx-auto flex max-w-6xl flex-col gap-4 px-6 py-8 text-sm text-slate-500 md:flex-row md:items-center md:justify-between">
+        <div
+            class="mx-auto flex max-w-6xl flex-col gap-4 px-6 py-8 text-sm text-slate-500 md:flex-row md:items-center md:justify-between">
             <p>&copy; <span id="year"></span> Nicolás Álvarez. Todos los derechos reservados.</p>
             <div class="flex flex-wrap items-center gap-4">
                 <a class="transition hover:text-blue-600" href="index.html">Inicio</a>
-                <a class="transition hover:text-blue-600" href="https://github.com/nicoabgv" target="_blank" rel="noreferrer">GitHub</a>
+                <a class="transition hover:text-blue-600" href="https://github.com/nicoabgv" target="_blank"
+                    rel="noreferrer">GitHub</a>
                 <a class="transition hover:text-blue-600" href="mailto:nicoabgv@gmail.com">Contacto directo</a>
             </div>
         </div>
@@ -374,4 +595,5 @@ Frontend JS → Dashboards + reproductor</pre>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
     <script src="scripts.js" defer></script>
 </body>
+
 </html>
