@@ -61,8 +61,10 @@
                 "label": "Proyectos en vivo",
                 "links": {
                     "mesasya": "→ MesasYa – Plataforma SaaS de gestión de reservas para restaurantes.",
+                    "micartaya": "→ MiCartaYa – Menú digital y pedidos online para restaurantes.",
                     "trato": "→ Trato – CRM ágil para presupuestos, seguimientos y recordatorios.",
-                    "beatlist": "→ BeatList – Estadísticas y gestión avanzada de playlists de Spotify."
+                    "beatlist": "→ BeatList – Estadísticas y gestión avanzada de playlists de Spotify.",
+                    "ponme": "→ Ponme – Tu armario inteligente potenciado por IA."
                 }
             }
         },
@@ -145,6 +147,18 @@
                 },
                 "directAccess": "→ MesasYa – Plataforma SaaS de gestión de reservas para restaurantes."
             },
+            "micartaya": {
+                "badge": "SaaS Producción",
+                "tech": "FastAPI · WebSockets · Docker · MySQL",
+                "title": "MiCartaYa",
+                "description": "Ecosistema digital para restaurantes que transforma la experiencia del comensal. Gestión de cartas QR, pedidos en mesa y sistema de impresión TPV en tiempo real.",
+                "bullets": {
+                    "first": "<span class=\"mt-1 h-2 w-2 rounded-full bg-blue-500\"></span>Cartas interactivas multiidioma con actualización instantánea y control de stock.",
+                    "second": "<span class=\"mt-1 h-2 w-2 rounded-full bg-blue-500\"></span>Comunicación mediante WebSockets para recepción de pedidos en menos de 1 segundo.",
+                    "third": "<span class=\"mt-1 h-2 w-2 rounded-full bg-blue-500\"></span>Integración de impresión térmica remota para comandas automáticas en cocina."
+                },
+                "directAccess": "→ MiCartaYa – Plataforma de menú digital y pedidos online."
+            },
             "orderya": {
                 "badge": "SaaS PRODUCCIÓN",
                 "tech": "FastAPI · Docker · MySQL · Jinja2",
@@ -192,6 +206,18 @@
                     "third": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#111827]\"></span>Análisis gestionados con Celery para procesar datos en segundo plano y ofrecer métricas precisas sin afectar la experiencia del usuario."
                 },
                 "directAccess": "→ BeatList – Estadísticas y gestión avanzada de playlists de Spotify."
+            },
+            "ponme": {
+                "badge": "B2C / IA",
+                "tech": "FastAPI · React · Gemini · Docker",
+                "title": "Ponme",
+                "description": "Asistente de moda inteligente que digitaliza tu armario. Utiliza IA para sugerir looks personalizados basándose en tu propia ropa y el contexto del día.",
+                "bullets": {
+                    "first": "<span class=\"mt-1 h-2 w-2 rounded-full bg-blue-500\"></span>Análisis multimodal con Google Gemini para catalogar prendas por estilo y temporada.",
+                    "second": "<span class=\"mt-1 h-2 w-2 rounded-full bg-blue-500\"></span>Eliminación automática de fondos local para un catálogo de ropa profesional y limpio.",
+                    "third": "<span class=\"mt-1 h-2 w-2 rounded-full bg-blue-500\"></span>Generador de outfits adaptado a eventos, clima y estado de limpieza de las prendas."
+                },
+                "directAccess": "→ Ponme – Tu armario inteligente potenciado por IA."
             },
             "cta": "Leer más",
             "caseStudy": "Case study"
@@ -283,6 +309,34 @@
                 "next": "Próximos pasos: ampliar métricas de conversión e integrar reportes automáticos para dirección.",
                 "diagram": "Diagrama técnico",
                 "diagramContent": "Empresas invitadas\n    ↓\nFastAPI + Uvicorn → MySQL\n    │\n    ├─ Celery workers → Recordatorios\n    └─ Docker Compose → VPS principal"
+            },
+            "micartaya": {
+                "tag": "MiCartaYa",
+                "title": "Gestión 360º de la experiencia en restauración.",
+                "paragraph1": "MiCartaYa es una solución integral para digitalizar la interacción entre el restaurante y el cliente. Basada en <strong data-i18n=\"stack.fastapi\"></strong> y comunicación bidireccional, permite que el flujo de pedidos sea instantáneo y sin errores.",
+                "paragraph2": "El sistema destaca por su motor de impresión remota que conecta la nube con impresoras físicas de cocina, y un panel de administración que permite gestionar menús complejos con vídeos y multiidioma de forma dinámica.",
+                "bullets": {
+                    "first": "<span class=\"mt-1 h-2 w-2 rounded-full bg-blue-500\"></span>Recepción de pedidos en tiempo real con latencia inferior a 1 segundo gracias a WebSockets.",
+                    "second": "<span class=\"mt-1 h-2 w-2 rounded-full bg-blue-500\"></span>Control total de stock y disponibilidad de productos con reflejo inmediato en el menú público.",
+                    "third": "<span class=\"mt-1 h-2 w-2 rounded-full bg-blue-500\"></span>Gestión centralizada de múltiples sedes, alérgenos y personalización visual de la marca."
+                },
+                "next": "Próximos pasos: integración con pasarelas de pago y soporte para pedidos a domicilio.",
+                "diagram": "Diagrama técnico",
+                "diagramContent": "Comensal (QR) / Staff\n    ↓\nFastAPI (WebSockets) → MySQL\n    │\n    ├─ Printer Client (Local) → Ticket Cocina\n    └─ Dashboard (React) → Notificaciones"
+            },
+            "ponme": {
+                "tag": "Ponme",
+                "title": "IA aplicada a la gestión inteligente de estilo personal.",
+                "paragraph1": "Ponme democratiza el uso de la IA generativa para resolver el dilema diario de 'qué me pongo'. Integra la API de <strong data-i18n=\"stack.gemini\">Gemini</strong> para entender no solo qué ropa tienes, sino cómo combinarla según el contexto.",
+                "paragraph2": "La aplicación procesa imágenes localmente para eliminar fondos y utiliza modelos multimodales para extraer metadatos de las prendas (color, tejido, estilo), permitiendo crear un 'armario digital' en minutos.",
+                "bullets": {
+                    "first": "<span class=\"mt-1 h-2 w-2 rounded-full bg-blue-500\"></span>Generación de outfits inteligentes basados en planes específicos y variables climatológicas.",
+                    "second": "<span class=\"mt-1 h-2 w-2 rounded-full bg-blue-500\"></span>Tratamiento de imágenes en el dispositivo para garantizar privacidad y velocidad.",
+                    "third": "<span class=\"mt-1 h-2 w-2 rounded-full bg-blue-500\"></span>Sistema de tracking de uso que ayuda a rotar las prendas y mejorar la sostenibilidad."
+                },
+                "next": "Próximos pasos: planificador de maletas inteligente y sugerencias de compra basadas en huecos del armario.",
+                "diagram": "Diagrama técnico",
+                "diagramContent": "Usuario (Mobile/PWA)\n    ↓\nFastAPI → PostgreSQL\n    │\n    ├─ Google Gemini API → Análisis de imágenes\n    └─ Rembg (Local) → Segmentación de prendas"
             }
         }
     },
@@ -311,19 +365,23 @@
             "indexLabel": "Índice",
             "indexItems": {
                 "mesasya": "01 — MesasYa <span class=\"text-xs text-slate-400\">SaaS restauración</span>",
-                "orderya": "02 — OrderYa <span class=\"text-xs text-slate-400\">Gestión de pedidos</span>",
-                "trato": "03 — Trato <span class=\"text-xs text-slate-400\">CRM presupuestos</span>",
-                "kobra": "04 — Kobra <span class=\"text-xs text-slate-400\">Fintech interna</span>",
-                "beatlist": "05 — BeatList <span class=\"text-xs text-slate-400\">Spotify Approved</span>"
+                "micartaya": "02 — MiCartaYa <span class=\"text-xs text-slate-400\">Menú QR y Pedidos</span>",
+                "orderya": "03 — OrderYa <span class=\"text-xs text-slate-400\">Gestión de pedidos</span>",
+                "trato": "04 — Trato <span class=\"text-xs text-slate-400\">CRM presupuestos</span>",
+                "kobra": "05 — Kobra <span class=\"text-xs text-slate-400\">Fintech interna</span>",
+                "beatlist": "06 — BeatList <span class=\"text-xs text-slate-400\">Spotify Approved</span>",
+                "ponme": "07 — Ponme <span class=\"text-xs text-slate-400\">AI Fashion Assistant</span>"
             }
         },
         "directAccess": {
             "label": "Acceso directo",
             "links": {
                 "mesasya": "→ MesasYa – Plataforma SaaS de gestión de reservas para restaurantes.",
+                "micartaya": "→ MiCartaYa – Menú digital y pedidos online.",
                 "orderya": "→ OrderYa – Centralización y gestión de producción.",
+                "trato": "→ Trato – CRM ágil para presupuestos, seguimientos y recordatorios.",
                 "beatlist": "→ BeatList – Estadísticas y gestión avanzada de playlists de Spotify.",
-                "trato": "→ Trato – CRM ágil para presupuestos, seguimientos y recordatorios."
+                "ponme": "→ Ponme – Tu armario inteligente potenciado por IA."
             }
         },
         "mesasya": {
@@ -343,8 +401,25 @@
             "schema": "Esquema técnico",
             "schemaContent": "Reservas web / staff\n    ↓\nFlask API → MySQL\n    │\n    ├─ Celery workers → Correos/SMS\n    └─ Docker Compose coordina servicios"
         },
-        "orderya": {
+        "micartaya": {
             "label": "Case study 02",
+            "title": "MiCartaYa — Digitalización integral de la mesa",
+            "paragraph1": "MiCartaYa redefine la interacción en el restaurante mediante una plataforma <strong data-i18n=\"stack.saas\"></strong> de menús digitales y pedidos autogestionados. Resuelve el cuello de botella de la toma de pedidos manual y garantiza que la información de la carta esté siempre actualizada.",
+            "paragraph2": "El núcleo del proyecto es un sistema de WebSockets de alta disponibilidad que conecta a los comensales con el dashboard del restaurante y el hardware de impresión, eliminando errores de transcripción y optimizando los tiempos de servicio.",
+            "impact": "Resultados operativos",
+            "bullets": {
+                "first": "<span class=\"mt-1 h-2 w-2 rounded-full bg-blue-500\"></span>Reducción drástica del tiempo de espera para pedidos y cobros.",
+                "second": "<span class=\"mt-1 h-2 w-2 rounded-full bg-blue-500\"></span>Gestión dinámica de precios y disponibilidad con un solo click.",
+                "third": "<span class=\"mt-1 h-2 w-2 rounded-full bg-blue-500\"></span>Impresión automática de tickets en cocina y barra mediante protocolos TCP/IP y USB."
+            },
+            "stack": "Stack",
+            "next": "Próximos pasos",
+            "nextText": "Pagos integrados desde la mesa y funciones de fidelización para clientes.",
+            "schema": "Arquitectura",
+            "schemaContent": "Comensal (Móvil)\n    ↓\nNginx → FastAPI (WS)\n    │\n    ├─ PostgreSQL / Redis\n    └─ Printer Script (Local) → TPV"
+        },
+        "orderya": {
+            "label": "Case study 03",
             "title": "OrderYa — Gestión integral de pedidos",
             "paragraph1": "OrderYa elimina el caos de la gestión de pedidos entre obradores y puntos de venta. Sustituye hojas de cálculo y mensajes dispersos por una plataforma centralizada donde cada tienda realiza sus pedidos de forma intuitiva y el obrador visualiza la demanda consolidada.",
             "paragraph2": "Desarrollado con <strong data-i18n=\"stack.fastapi\"></strong> y renderizado server-side (Jinja2) para garantizar velocidad y simplicidad, el sistema gestiona catálogos complejos, listas de precios por cliente y generación automática de órdenes de reparto.",
@@ -364,7 +439,7 @@
             "schemaContent": "Tiendas\n    ↓\nNginx → FastAPI\n    ↓\nMySQL (Persistencia)\n    ↓\nProducción (Listas PDF/Vista)"
         },
         "trato": {
-            "label": "Case study 03",
+            "label": "Case study 04",
             "title": "Trato — CRM ágil para equipos comerciales",
             "paragraph1": "Trato centraliza presupuestos, seguimientos y recordatorios en un CRM ligero pensado para equipos comerciales. Con un backend basado en <strong data-i18n=\"stack.fastapi\"></strong> ejecutado con Uvicorn, prioriza la velocidad de respuesta y la claridad de cada oportunidad.",
             "paragraph2": "Las empresas acceden mediante códigos de invitación y gestionan pipelines con estados personalizables, timeline de interacciones y avisos automáticos. Las tareas en Celery coordinan recordatorios, envíos de emails y resúmenes diarios desde el VPS principal.",
@@ -384,7 +459,7 @@
             "directAccess": "→ Trato – CRM ágil para presupuestos, seguimientos y recordatorios."
         },
         "kobra": {
-            "label": "Case study 04",
+            "label": "Case study 05",
             "title": "Kobra — Plataforma financiera para Cybersur",
             "paragraph1": "Kobra es la solución a medida que mantiene la operativa financiera de Cybersur. Automatiza facturación, cobros y recordatorios desde un backend robusto en <strong data-i18n=\"stack.fastapi\"></strong>.",
             "paragraph2": "Los cronjobs programados gestionan exportaciones, limpiezas de datos y conciliaciones automáticas. Los paneles internos priorizan métricas de cobranza y SLA por cliente para que el equipo financiero tenga claridad diaria.",
@@ -401,7 +476,7 @@
             "schemaContent": "Operativa Cybersur\n    ↓\nFastAPI → MySQL\n    │\n    ├─ Celery → Emails\n    └─ Cronjobs → Reportes"
         },
         "beatlist": {
-            "label": "Case study 05",
+            "label": "Case study 06",
             "title": "BeatList — Suite musical para creadores",
             "approval": "Spotify Approved",
             "paragraph1": "BeatList acompaña a curadores y creadores que necesitan superar el gestor estándar de Spotify. Conecta la <strong data-i18n=\"stack.spotifyapi\"></strong> con análisis avanzados y experiencias interactivas aprobadas por el programa Spotify for Developers.",
@@ -423,6 +498,23 @@
             "nextText": "Modo colaborativo y exportaciones avanzadas en la hoja de ruta.",
             "schema": "Esquema técnico",
             "schemaContent": "Usuarios\n    ↓\nFlask API (OAuth Spotify)\n    ↓\nCelery workers → Análisis pesados e insights\n    ↓\nDashboards + Reproductor"
+        },
+        "ponme": {
+            "label": "Case study 07",
+            "title": "Ponme — Asistente de moda e IA personalizada",
+            "paragraph1": "Ponme es una plataforma B2C que aplica modelos multimodales para la gestión del armario personal. Permite a los usuarios digitalizar su ropa y recibir sugerencias de outfits inteligentes generados por <strong data-i18n=\"stack.gemini\">Gemini</strong>.",
+            "paragraph2": "Utilizando técnicas de visión artificial local para la segmentación de imágenes y el razonamiento avanzado de LLMs para la combinación de estilos, Ponme ofrece una experiencia fluida que optimiza el uso de las prendas existentes.",
+            "impact": "Características IA",
+            "bullets": {
+                "first": "<span class=\"mt-1 h-2 w-2 rounded-full bg-blue-500\"></span>Combinaciones sugeridas por IA que consideran el contexto del evento y el clima local.",
+                "second": "<span class=\"mt-1 h-2 w-2 rounded-full bg-blue-500\"></span>Catalogación automática de prendas (tipo, color, material) mediante análisis visual.",
+                "third": "<span class=\"mt-1 h-2 w-2 rounded-full bg-blue-500\"></span>Modo PWA para una experiencia nativa en móviles con carga rápida y offline funcional."
+            },
+            "stack": "Stack",
+            "next": "Próximos pasos",
+            "nextText": "Algoritmos de recomendación de compra circular y social fashion sharing.",
+            "schema": "Arquitectura",
+            "schemaContent": "Usuario (PWA)\n    ↓\nFastAPI → PostgreSQL\n    │\n    ├─ Rembg API → Fondo\n    └─ Google Gemini → Análisis"
         }
     }
 }
