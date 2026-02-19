@@ -1185,134 +1185,136 @@ Producción</pre>
                 </details>
             </div>
         </article>
-        <div id="modal-micartaya" data-modal class="fixed inset-0 z-50 hidden items-center justify-center px-4">
-            <div data-modal-overlay class="absolute inset-0 bg-slate-900/70"></div>
-            <article
-                class="relative z-10 max-h-[90vh] w-full max-w-3xl overflow-y-auto rounded-3xl border border-slate-200 bg-white p-8 shadow-2xl">
-                <div class="flex items-start justify-between gap-6">
-                    <div>
-                        <p class="text-xs font-semibold uppercase tracking-[0.3em] text-slate-500"
-                            data-i18n="index.modals.micartaya.tag">MiCartaYa</p>
-                        <h3 class="mt-2 text-2xl font-semibold text-slate-900" data-i18n="index.modals.micartaya.title">
-                            Ecosistema digital completo para la gestión de restaurantes.</h3>
-                    </div>
-                    <button type="button"
-                        class="rounded-full border border-slate-200 p-2 text-slate-500 transition hover:border-slate-400 hover:text-slate-700"
-                        data-modal-close aria-label="Cerrar modal" data-i18n-attr-aria-label="modals.closeAria">
-                        <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"
-                            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                            <path d="m7 7 10 10M7 17 17 7" />
-                        </svg>
-                    </button>
+    </div>
+
+    <div id="modal-micartaya" data-modal class="fixed inset-0 z-50 hidden items-center justify-center px-4">
+        <div data-modal-overlay class="absolute inset-0 bg-slate-900/70"></div>
+        <article
+            class="relative z-10 max-h-[90vh] w-full max-w-3xl overflow-y-auto rounded-3xl border border-slate-200 bg-white p-8 shadow-2xl">
+            <div class="flex items-start justify-between gap-6">
+                <div>
+                    <p class="text-xs font-semibold uppercase tracking-[0.3em] text-slate-500"
+                        data-i18n="index.modals.micartaya.tag">MiCartaYa</p>
+                    <h3 class="mt-2 text-2xl font-semibold text-slate-900" data-i18n="index.modals.micartaya.title">
+                        Ecosistema digital completo para la gestión de restaurantes.</h3>
                 </div>
-                <div class="mt-6 space-y-6 text-sm text-slate-600">
-                    <p data-i18n-html="index.modals.micartaya.paragraph1">
-                        MiCartaYa nace de la necesidad de modernizar la interacción entre restaurante y comensal. No es
-                        solo una carta QR; es un sistema bidireccional donde los pedidos fluyen directamente a la cocina
-                        mediante WebSockets, eliminando esperas y errores.
-                    </p>
-                    <p data-i18n-html="index.modals.micartaya.paragraph2">
-                        La plataforma permite a los gerentes actualizar precios, fotos y stock en segundos. Además, se
-                        integra con impresoras térmicas para que las comandas salgan automáticamente en los centros de
-                        preparación, cerrando el círculo de la digitalización operativa.
-                    </p>
-                    <ul class="space-y-2">
-                        <li class="flex items-start gap-3" data-i18n-html="index.modals.micartaya.bullets.first">
-                            <span class="mt-1 h-2 w-2 rounded-full bg-blue-500"></span>
-                            Gestión centralizada de cartas multiidioma con analítica de consumo.
-                        </li>
-                        <li class="flex items-start gap-3" data-i18n-html="index.modals.micartaya.bullets.second">
-                            <span class="mt-1 h-2 w-2 rounded-full bg-blue-500"></span>
-                            Recepción de pedidos instantánea a través de canales WebSocket seguros.
-                        </li>
-                        <li class="flex items-start gap-3" data-i18n-html="index.modals.micartaya.bullets.third">
-                            <span class="mt-1 h-2 w-2 rounded-full bg-blue-500"></span>
-                            Infraestructura basada en FastAPI y Docker, optimizada para baja latencia.
-                        </li>
-                    </ul>
-                    <p class="mt-4 text-sm text-slate-600" data-i18n="index.modals.micartaya.next">Evolución:
-                        Integración de pagos directos mediante Stripe.</p>
-                    <details class="rounded-2xl border border-dashed border-slate-200 bg-slate-50/80 p-4">
-                        <summary class="cursor-pointer text-xs font-semibold uppercase tracking-[0.3em] text-slate-500"
-                            data-i18n="index.modals.micartaya.diagram">
-                            Diagrama técnico</summary>
-                        <pre class="mt-3 whitespace-pre-wrap rounded-xl bg-white/80 p-4 font-['Space_Mono',_monospace] text-xs text-slate-700"
-                            data-i18n="index.modals.micartaya.diagramContent">Comensal (App) ↔ WebSockets ↔ Backend (FastAPI)
+                <button type="button"
+                    class="rounded-full border border-slate-200 p-2 text-slate-500 transition hover:border-slate-400 hover:text-slate-700"
+                    data-modal-close aria-label="Cerrar modal" data-i18n-attr-aria-label="modals.closeAria">
+                    <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"
+                        stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <path d="m7 7 10 10M7 17 17 7" />
+                    </svg>
+                </button>
+            </div>
+            <div class="mt-6 space-y-6 text-sm text-slate-600">
+                <p data-i18n-html="index.modals.micartaya.paragraph1">
+                    MiCartaYa nace de la necesidad de modernizar la interacción entre restaurante y comensal. No es
+                    solo una carta QR; es un sistema bidireccional donde los pedidos fluyen directamente a la cocina
+                    mediante WebSockets, eliminando esperas y errores.
+                </p>
+                <p data-i18n-html="index.modals.micartaya.paragraph2">
+                    La plataforma permite a los gerentes actualizar precios, fotos y stock en segundos. Además, se
+                    integra con impresoras térmicas para que las comandas salgan automáticamente en los centros de
+                    preparación, cerrando el círculo de la digitalización operativa.
+                </p>
+                <ul class="space-y-2">
+                    <li class="flex items-start gap-3" data-i18n-html="index.modals.micartaya.bullets.first">
+                        <span class="mt-1 h-2 w-2 rounded-full bg-blue-500"></span>
+                        Gestión centralizada de cartas multiidioma con analítica de consumo.
+                    </li>
+                    <li class="flex items-start gap-3" data-i18n-html="index.modals.micartaya.bullets.second">
+                        <span class="mt-1 h-2 w-2 rounded-full bg-blue-500"></span>
+                        Recepción de pedidos instantánea a través de canales WebSocket seguros.
+                    </li>
+                    <li class="flex items-start gap-3" data-i18n-html="index.modals.micartaya.bullets.third">
+                        <span class="mt-1 h-2 w-2 rounded-full bg-blue-500"></span>
+                        Infraestructura basada en FastAPI y Docker, optimizada para baja latencia.
+                    </li>
+                </ul>
+                <p class="mt-4 text-sm text-slate-600" data-i18n="index.modals.micartaya.next">Evolución:
+                    Integración de pagos directos mediante Stripe.</p>
+                <details class="rounded-2xl border border-dashed border-slate-200 bg-slate-50/80 p-4">
+                    <summary class="cursor-pointer text-xs font-semibold uppercase tracking-[0.3em] text-slate-500"
+                        data-i18n="index.modals.micartaya.diagram">
+                        Diagrama técnico</summary>
+                    <pre class="mt-3 whitespace-pre-wrap rounded-xl bg-white/80 p-4 font-['Space_Mono',_monospace] text-xs text-slate-700"
+                        data-i18n="index.modals.micartaya.diagramContent">Comensal (App) ↔ WebSockets ↔ Backend (FastAPI)
                                     ↓
                                 MySQL DB
                                     ↓
                           Impresión Térmica TPV</pre>
-                    </details>
-                </div>
-            </article>
-        </div>
+                </details>
+            </div>
+        </article>
+    </div>
 
-        <div id="modal-ponme" data-modal class="fixed inset-0 z-50 hidden items-center justify-center px-4">
-            <div data-modal-overlay class="absolute inset-0 bg-slate-900/70"></div>
-            <article
-                class="relative z-10 max-h-[90vh] w-full max-w-3xl overflow-y-auto rounded-3xl border border-slate-200 bg-white p-8 shadow-2xl">
-                <div class="flex items-start justify-between gap-6">
-                    <div>
-                        <p class="text-xs font-semibold uppercase tracking-[0.3em] text-slate-500"
-                            data-i18n="index.modals.ponme.tag">Ponme</p>
-                        <h3 class="mt-2 text-2xl font-semibold text-slate-900" data-i18n="index.modals.ponme.title">Tu
-                            asistente personal de moda impulsado por Inteligencia Artificial.</h3>
-                    </div>
-                    <button type="button"
-                        class="rounded-full border border-slate-200 p-2 text-slate-500 transition hover:border-slate-400 hover:text-slate-700"
-                        data-modal-close aria-label="Cerrar modal" data-i18n-attr-aria-label="modals.closeAria">
-                        <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"
-                            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                            <path d="m7 7 10 10M7 17 17 7" />
-                        </svg>
-                    </button>
+    <div id="modal-ponme" data-modal class="fixed inset-0 z-50 hidden items-center justify-center px-4">
+        <div data-modal-overlay class="absolute inset-0 bg-slate-900/70"></div>
+        <article
+            class="relative z-10 max-h-[90vh] w-full max-w-3xl overflow-y-auto rounded-3xl border border-slate-200 bg-white p-8 shadow-2xl">
+            <div class="flex items-start justify-between gap-6">
+                <div>
+                    <p class="text-xs font-semibold uppercase tracking-[0.3em] text-slate-500"
+                        data-i18n="index.modals.ponme.tag">Ponme</p>
+                    <h3 class="mt-2 text-2xl font-semibold text-slate-900" data-i18n="index.modals.ponme.title">Tu
+                        asistente personal de moda impulsado por Inteligencia Artificial.</h3>
                 </div>
-                <div class="mt-6 space-y-6 text-sm text-slate-600">
-                    <p data-i18n-html="index.modals.ponme.paragraph1">
-                        Ponme utiliza Inteligencia Artificial para digitalizar y gestionar tu armario personal.
-                        Mediante modelos de visión, analiza tus prendas y ofrece recomendaciones de outfits basadas
-                        en estilismo, clima y agenda.
-                    </p>
-                    <p data-i18n-html="index.modals.ponme.paragraph2">
-                        Implementado con <strong>FastAPI</strong> y <strong>React</strong>, el núcleo de la
-                        inteligencia reside en la integración con <strong data-i18n="stack.gemini"></strong> para el
-                        análisis multimodal. Además, incluye procesamiento local de imágenes para la eliminación
-                        automática de fondos, garantizando un catálogo visual coherente y profesional.
-                    </p>
-                    <ul class="space-y-2">
-                        <li class="flex items-start gap-3" data-i18n-html="index.modals.ponme.bullets.first">
-                            <span class="mt-1 h-2 w-2 rounded-full bg-purple-500"></span>
-                            Análisis multimodal con Google Gemini para catalogar prendas por estilo y temporada.
-                        </li>
-                        <li class="flex items-start gap-3" data-i18n-html="index.modals.ponme.bullets.second">
-                            <span class="mt-1 h-2 w-2 rounded-full bg-purple-500"></span>
-                            Eliminación automática de fondos local para un catálogo de ropa profesional y uniforme.
-                        </li>
-                        <li class="flex items-start gap-3" data-i18n-html="index.modals.ponme.bullets.third">
-                            <span class="mt-1 h-2 w-2 rounded-full bg-purple-500"></span>
-                            Generador de outfits adaptado a eventos, clima y estado de limpieza de las prendas.
-                        </li>
-                    </ul>
-                    <p class="mt-4 text-sm text-slate-600" data-i18n="index.modals.ponme.next">Próximos pasos:
-                        planificador de maletas inteligente y sugerencias de compra basadas en huecos del armario.</p>
-                    <details class="rounded-2xl border border-dashed border-slate-200 bg-slate-50/80 p-4">
-                        <summary class="cursor-pointer text-xs font-semibold uppercase tracking-[0.3em] text-slate-500"
-                            data-i18n="index.modals.ponme.diagram">
-                            Diagrama técnico</summary>
-                        <pre class="mt-3 whitespace-pre-wrap rounded-xl bg-white/80 p-4 font-['Space_Mono',_monospace] text-xs text-slate-700"
-                            data-i18n="index.modals.ponme.diagramContent">Usuario (React) ↔ FastAPI ↔ Gemini Vision API
+                <button type="button"
+                    class="rounded-full border border-slate-200 p-2 text-slate-500 transition hover:border-slate-400 hover:text-slate-700"
+                    data-modal-close aria-label="Cerrar modal" data-i18n-attr-aria-label="modals.closeAria">
+                    <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"
+                        stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <path d="m7 7 10 10M7 17 17 7" />
+                    </svg>
+                </button>
+            </div>
+            <div class="mt-6 space-y-6 text-sm text-slate-600">
+                <p data-i18n-html="index.modals.ponme.paragraph1">
+                    Ponme utiliza Inteligencia Artificial para digitalizar y gestionar tu armario personal.
+                    Mediante modelos de visión, analiza tus prendas y ofrece recomendaciones de outfits basadas
+                    en estilismo, clima y agenda.
+                </p>
+                <p data-i18n-html="index.modals.ponme.paragraph2">
+                    Implementado con <strong>FastAPI</strong> y <strong>React</strong>, el núcleo de la
+                    inteligencia reside en la integración con <strong data-i18n="stack.gemini"></strong> para el
+                    análisis multimodal. Además, incluye procesamiento local de imágenes para la eliminación
+                    automática de fondos, garantizando un catálogo visual coherente y profesional.
+                </p>
+                <ul class="space-y-2">
+                    <li class="flex items-start gap-3" data-i18n-html="index.modals.ponme.bullets.first">
+                        <span class="mt-1 h-2 w-2 rounded-full bg-purple-500"></span>
+                        Análisis multimodal con Google Gemini para catalogar prendas por estilo y temporada.
+                    </li>
+                    <li class="flex items-start gap-3" data-i18n-html="index.modals.ponme.bullets.second">
+                        <span class="mt-1 h-2 w-2 rounded-full bg-purple-500"></span>
+                        Eliminación automática de fondos local para un catálogo de ropa profesional y uniforme.
+                    </li>
+                    <li class="flex items-start gap-3" data-i18n-html="index.modals.ponme.bullets.third">
+                        <span class="mt-1 h-2 w-2 rounded-full bg-purple-500"></span>
+                        Generador de outfits adaptado a eventos, clima y estado de limpieza de las prendas.
+                    </li>
+                </ul>
+                <p class="mt-4 text-sm text-slate-600" data-i18n="index.modals.ponme.next">Próximos pasos:
+                    planificador de maletas inteligente y sugerencias de compra basadas en huecos del armario.</p>
+                <details class="rounded-2xl border border-dashed border-slate-200 bg-slate-50/80 p-4">
+                    <summary class="cursor-pointer text-xs font-semibold uppercase tracking-[0.3em] text-slate-500"
+                        data-i18n="index.modals.ponme.diagram">
+                        Diagrama técnico</summary>
+                    <pre class="mt-3 whitespace-pre-wrap rounded-xl bg-white/80 p-4 font-['Space_Mono',_monospace] text-xs text-slate-700"
+                        data-i18n="index.modals.ponme.diagramContent">Usuario (React) ↔ FastAPI ↔ Gemini Vision API
                                     ↓
                                 PostgreSQL
                                     ↓
                           Local Image Processing</pre>
-                    </details>
-                </div>
-            </article>
-        </div>
+                </details>
+            </div>
+        </article>
+    </div>
 
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
-        <script src="scripts.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+    <script src="scripts.js" defer></script>
 </body>
 
 </html>
