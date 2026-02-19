@@ -17,28 +17,14 @@ const translationBindings = {
         { selector: '[data-nav] a[href="#skills"]', key: 'nav.skills' },
         { selector: '[data-nav] a[href="#projects"]', key: 'nav.projects' },
         { selector: '[data-nav] a[href="#contact"]', key: 'nav.contact' },
-        { selector: '[data-locale-element="nav.cv"]', key: 'nav.cv' },
         { selector: '[data-mobile-toggle] .sr-only', key: 'nav.openMenu' },
         { selector: '[data-mobile-toggle]', attribute: 'aria-label', key: 'nav.openMenu' },
         { selector: '[data-nav] a[href="#hero"]', attribute: 'aria-label', key: 'nav.brandAria' },
         { selector: '[data-modal-close]', attribute: 'aria-label', key: 'modals.closeAria' },
-        { selector: 'footer p', key: 'footer.copyright', type: 'html' },
-        { selector: 'footer a[href="projects.html"]', key: 'footer.caseStudies' },
         { selector: 'footer a[href="https://github.com/nicoabgv"]', key: 'footer.github' },
         { selector: 'footer a[href^="mailto:"]', key: 'footer.contact' },
-        { selector: 'strong[data-i18n="stack.fastapi"]', key: 'stack.fastapi' },
-        { selector: 'strong[data-i18n="stack.spotifyapi"]', key: 'stack.spotifyapi' },
-        { selector: 'strong[data-i18n="stack.oauth"]', key: 'stack.oauth' },
-        { selector: 'strong[data-i18n="stack.saas"]', key: 'stack.saas' },
-        { selector: 'strong[data-i18n="stack.flaskcelery"]', key: 'stack.flaskcelery' },
-        { selector: 'strong[data-i18n="stack.gemini"]', key: 'stack.gemini' },
     ],
     index: [
-        { selector: '#hero p.inline-flex', key: 'hero.taglineHtml', type: 'html' },
-        { selector: '#hero h1', key: 'hero.title' },
-        { selector: '#hero p.max-w-2xl', key: 'hero.description' },
-        { selector: '[data-locale-element="hero.primaryCta"]', key: 'hero.primaryCta' },
-        { selector: '[data-locale-element="hero.secondaryCta"]', key: 'hero.secondaryCta' },
         { selector: '#hero .relative p.text-sm.font-medium', key: 'hero.summaryLabel' },
         { selector: '#hero .relative p.text-xl', key: 'hero.summaryTitle' },
         { selector: '#hero .relative ul li:nth-child(1)', key: 'hero.summaryItems.first', type: 'html' },
@@ -92,61 +78,42 @@ const translationBindings = {
         { selector: '#projects p.text-xs.font-semibold', key: 'projects.label' },
         { selector: '#projects h2', key: 'projects.title' },
         { selector: '[data-locale-element="projects.seeAll"]', key: 'projects.seeAll' },
-        { selector: '[data-locale-element="projects.mesasya.badge"]', key: 'projects.mesasya.badge' },
-        { selector: '#projects article:nth-of-type(1) span.text-xs.uppercase', key: 'projects.mesasya.tech' },
-        { selector: '#projects article:nth-of-type(1) h3', key: 'projects.mesasya.title' },
-        { selector: '#projects article:nth-of-type(1) p.text-base', key: 'projects.mesasya.description' },
-        { selector: '#projects article:nth-of-type(1) ul li:nth-child(1)', key: 'projects.mesasya.bullets.first', type: 'html' },
-        { selector: '#projects article:nth-of-type(1) ul li:nth-child(2)', key: 'projects.mesasya.bullets.second', type: 'html' },
-        { selector: '#projects article:nth-of-type(1) ul li:nth-child(3)', key: 'projects.mesasya.bullets.third', type: 'html' },
+        // MesasYa
+        { selector: '[data-project-id="mesasya"] [data-locale-element="projects.mesasya.badge"]', key: 'projects.mesasya.badge' },
+        { selector: '[data-project-id="mesasya"] span.text-xs.uppercase', key: 'projects.mesasya.tech' },
+        { selector: '[data-project-id="mesasya"] h3', key: 'projects.mesasya.title' },
+        { selector: '[data-project-id="mesasya"] p.text-base', key: 'projects.mesasya.description' },
+        { selector: '[data-project-id="mesasya"] ul li:nth-child(1)', key: 'projects.mesasya.bullets.first', type: 'html' },
+        { selector: '[data-project-id="mesasya"] ul li:nth-child(2)', key: 'projects.mesasya.bullets.second', type: 'html' },
+        { selector: '[data-project-id="mesasya"] ul li:nth-child(3)', key: 'projects.mesasya.bullets.third', type: 'html' },
         { selector: '[data-project-direct-link="mesasya"]', key: 'projects.mesasya.directAccess', type: 'html' },
-        { selector: '[data-locale-element="projects.micartaya.badge"]', key: 'projects.micartaya.badge' },
-        { selector: '#projects article:nth-of-type(2) span.text-xs.uppercase', key: 'projects.micartaya.tech' },
-        { selector: '#projects article:nth-of-type(2) h3', key: 'projects.micartaya.title' },
-        { selector: '#projects article:nth-of-type(2) p.text-base', key: 'projects.micartaya.description' },
-        { selector: '#projects article:nth-of-type(2) ul li:nth-child(1)', key: 'projects.micartaya.bullets.first', type: 'html' },
-        { selector: '#projects article:nth-of-type(2) ul li:nth-child(2)', key: 'projects.micartaya.bullets.second', type: 'html' },
-        { selector: '#projects article:nth-of-type(2) ul li:nth-child(3)', key: 'projects.micartaya.bullets.third', type: 'html' },
+        // MiCartaYa
+        { selector: '[data-project-id="micartaya"] [data-locale-element="projects.micartaya.badge"]', key: 'projects.micartaya.badge' },
+        { selector: '[data-project-id="micartaya"] span.text-xs.uppercase', key: 'projects.micartaya.tech' },
+        { selector: '[data-project-id="micartaya"] h3', key: 'projects.micartaya.title' },
+        { selector: '[data-project-id="micartaya"] p.text-base', key: 'projects.micartaya.description' },
+        { selector: '[data-project-id="micartaya"] ul li:nth-child(1)', key: 'projects.micartaya.bullets.first', type: 'html' },
+        { selector: '[data-project-id="micartaya"] ul li:nth-child(2)', key: 'projects.micartaya.bullets.second', type: 'html' },
+        { selector: '[data-project-id="micartaya"] ul li:nth-child(3)', key: 'projects.micartaya.bullets.third', type: 'html' },
         { selector: '[data-project-direct-link="micartaya"]', key: 'projects.micartaya.directAccess', type: 'html' },
-        { selector: '[data-locale-element="projects.orderya.badge"]', key: 'projects.orderya.badge' },
-        { selector: '#projects article:nth-of-type(3) span.text-xs.uppercase', key: 'projects.orderya.tech' },
-        { selector: '#projects article:nth-of-type(3) h3', key: 'projects.orderya.title' },
-        { selector: '#projects article:nth-of-type(3) p.text-base', key: 'projects.orderya.description' },
-        { selector: '#projects article:nth-of-type(3) ul li:nth-child(1)', key: 'projects.orderya.bullets.first', type: 'html' },
-        { selector: '#projects article:nth-of-type(3) ul li:nth-child(2)', key: 'projects.orderya.bullets.second', type: 'html' },
-        { selector: '#projects article:nth-of-type(3) ul li:nth-child(3)', key: 'projects.orderya.bullets.third', type: 'html' },
-        { selector: '[data-project-direct-link="orderya"]', key: 'projects.orderya.directAccess', type: 'html' },
-        { selector: '[data-locale-element="projects.trato.badge"]', key: 'projects.trato.badge' },
-        { selector: '#projects article:nth-of-type(4) span.text-xs.uppercase', key: 'projects.trato.tech' },
-        { selector: '#projects article:nth-of-type(4) h3', key: 'projects.trato.title' },
-        { selector: '#projects article:nth-of-type(4) p.text-base', key: 'projects.trato.description' },
-        { selector: '#projects article:nth-of-type(4) ul li:nth-child(1)', key: 'projects.trato.bullets.first', type: 'html' },
-        { selector: '#projects article:nth-of-type(4) ul li:nth-child(2)', key: 'projects.trato.bullets.second', type: 'html' },
-        { selector: '#projects article:nth-of-type(4) ul li:nth-child(3)', key: 'projects.trato.bullets.third', type: 'html' },
-        { selector: '[data-project-direct-link="trato"]', key: 'projects.trato.directAccess', type: 'html' },
-        { selector: '[data-locale-element="projects.kobra.badge"]', key: 'projects.kobra.badge' },
-        { selector: '#projects article:nth-of-type(5) span.text-xs.uppercase', key: 'projects.kobra.tech' },
-        { selector: '#projects article:nth-of-type(5) h3', key: 'projects.kobra.title' },
-        { selector: '#projects article:nth-of-type(5) p.text-base', key: 'projects.kobra.description' },
-        { selector: '#projects article:nth-of-type(5) ul li:nth-child(1)', key: 'projects.kobra.bullets.first', type: 'html' },
-        { selector: '#projects article:nth-of-type(5) ul li:nth-child(2)', key: 'projects.kobra.bullets.second', type: 'html' },
-        { selector: '#projects article:nth-of-type(5) ul li:nth-child(3)', key: 'projects.kobra.bullets.third', type: 'html' },
-        { selector: '[data-locale-element="projects.beatlist.badge"]', key: 'projects.beatlist.badge' },
-        { selector: '[data-locale-element="projects.beatlist.approval"]', key: 'projects.beatlist.approval' },
-        { selector: '#projects article:nth-of-type(6) span.text-xs.uppercase', key: 'projects.beatlist.tech' },
-        { selector: '#projects article:nth-of-type(6) h3', key: 'projects.beatlist.title' },
-        { selector: '#projects article:nth-of-type(6) p.text-base', key: 'projects.beatlist.description' },
-        { selector: '#projects article:nth-of-type(6) ul li:nth-child(1)', key: 'projects.beatlist.bullets.first', type: 'html' },
-        { selector: '#projects article:nth-of-type(6) ul li:nth-child(2)', key: 'projects.beatlist.bullets.second', type: 'html' },
-        { selector: '#projects article:nth-of-type(6) ul li:nth-child(3)', key: 'projects.beatlist.bullets.third', type: 'html' },
+        // BeatList
+        { selector: '[data-project-id="beatlist"] [data-locale-element="projects.beatlist.badge"]', key: 'projects.beatlist.badge' },
+        { selector: '[data-project-id="beatlist"] [data-locale-element="projects.beatlist.approval"]', key: 'projects.beatlist.approval' },
+        { selector: '[data-project-id="beatlist"] span.text-xs.uppercase', key: 'projects.beatlist.tech' },
+        { selector: '[data-project-id="beatlist"] h3', key: 'projects.beatlist.title' },
+        { selector: '[data-project-id="beatlist"] [data-locale-element="projects.beatlist.description"]', key: 'projects.beatlist.description' },
+        { selector: '[data-project-id="beatlist"] [data-locale-element="projects.beatlist.bullets.first"]', key: 'projects.beatlist.bullets.first', type: 'html' },
+        { selector: '[data-project-id="beatlist"] [data-locale-element="projects.beatlist.bullets.second"]', key: 'projects.beatlist.bullets.second', type: 'html' },
+        { selector: '[data-project-id="beatlist"] [data-locale-element="projects.beatlist.bullets.third"]', key: 'projects.beatlist.bullets.third', type: 'html' },
         { selector: '[data-project-direct-link="beatlist"]', key: 'projects.beatlist.directAccess', type: 'html' },
-        { selector: '[data-locale-element="projects.ponme.badge"]', key: 'projects.ponme.badge' },
-        { selector: '#projects article:nth-of-type(7) span.text-xs.uppercase', key: 'projects.ponme.tech' },
-        { selector: '#projects article:nth-of-type(7) h3', key: 'projects.ponme.title' },
-        { selector: '#projects article:nth-of-type(7) p.text-base', key: 'projects.ponme.description' },
-        { selector: '#projects article:nth-of-type(7) ul li:nth-child(1)', key: 'projects.ponme.bullets.first', type: 'html' },
-        { selector: '#projects article:nth-of-type(7) ul li:nth-child(2)', key: 'projects.ponme.bullets.second', type: 'html' },
-        { selector: '#projects article:nth-of-type(7) ul li:nth-child(3)', key: 'projects.ponme.bullets.third', type: 'html' },
+        // Ponme
+        { selector: '[data-project-id="ponme"] [data-locale-element="projects.ponme.badge"]', key: 'projects.ponme.badge' },
+        { selector: '[data-project-id="ponme"] span.text-xs.uppercase', key: 'projects.ponme.tech' },
+        { selector: '[data-project-id="ponme"] h3', key: 'projects.ponme.title' },
+        { selector: '[data-project-id="ponme"] [data-locale-element="projects.ponme.description"]', key: 'projects.ponme.description' },
+        { selector: '[data-project-id="ponme"] [data-locale-element="projects.ponme.bullets.first"]', key: 'projects.ponme.bullets.first', type: 'html' },
+        { selector: '[data-project-id="ponme"] [data-locale-element="projects.ponme.bullets.second"]', key: 'projects.ponme.bullets.second', type: 'html' },
+        { selector: '[data-project-id="ponme"] [data-locale-element="projects.ponme.bullets.third"]', key: 'projects.ponme.bullets.third', type: 'html' },
         { selector: '[data-project-direct-link="ponme"]', key: 'projects.ponme.directAccess', type: 'html' },
         { selector: '[data-locale-element="projects.cta"]', key: 'projects.cta' },
         { selector: '[data-locale-element="projects.caseStudy"]', key: 'projects.caseStudy' },
@@ -511,9 +478,52 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const applyTranslations = (langData, lang) => {
         missingTranslations.clear();
+
+        // 1. Aplicar bindings estáticos existentes
         applyBindings(langData?.common, translationBindings.common);
         applyBindings(langData?.[pageKey], translationBindings[pageKey]);
-        applyBindings(langData?.common, translationBindings.common);
+
+        // 2. Descubrimiento automático de elementos con data-i18n
+        const allData = { ...langData?.common, ...langData?.[pageKey], ...langData };
+
+        document.querySelectorAll('[data-i18n]').forEach(el => {
+            const key = el.getAttribute('data-i18n');
+            const value = getNestedValue(langData, key);
+            if (value != null) {
+                el.textContent = value;
+            } else {
+                missingTranslations.add(key);
+            }
+        });
+
+        document.querySelectorAll('[data-i18n-html]').forEach(el => {
+            const key = el.getAttribute('data-i18n-html');
+            const value = getNestedValue(langData, key);
+            if (value != null) {
+                el.innerHTML = value;
+            } else {
+                missingTranslations.add(key);
+            }
+        });
+
+        // 3. Descubrimiento automático de atributos con data-i18n-attr-*
+        document.querySelectorAll('*').forEach(el => {
+            if (!el.attributes) return;
+            for (let i = 0; i < el.attributes.length; i++) {
+                const attr = el.attributes[i];
+                if (attr.name.startsWith('data-i18n-attr-')) {
+                    const targetAttr = attr.name.slice(15);
+                    const key = attr.value;
+                    const value = getNestedValue(langData, key);
+                    if (value != null) {
+                        el.setAttribute(targetAttr, value);
+                    } else {
+                        missingTranslations.add(key);
+                    }
+                }
+            }
+        });
+
         if (missingTranslations.size) {
             console.warn('Missing translations for keys:', Array.from(missingTranslations));
         }

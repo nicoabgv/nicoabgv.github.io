@@ -19,8 +19,8 @@
             "desktopLabel": "ES"
         },
         "footer": {
-            "copyright": "&copy; <span id=\"year\"></span> Nicolás Álvarez. All rights reserved.",
-            "caseStudies": "Case studies",
+            "rights": "All rights reserved.",
+            "home": "Home",
             "github": "GitHub",
             "contact": "Direct contact"
         },
@@ -32,7 +32,8 @@
             "spotifyapi": "Spotify API",
             "oauth": "OAuth 2.0",
             "saas": "SaaS in production",
-            "flaskcelery": "Flask, Celery, MySQL and Docker"
+            "flaskcelery": "Flask, Celery, MySQL and Docker",
+            "gemini": "Google Gemini"
         }
     },
     "index": {
@@ -45,26 +46,26 @@
             "twitterDescription": "Software engineer. I build scalable, automated, production-ready products."
         },
         "hero": {
-            "taglineHtml": "<span class=\"h-px w-10 bg-slate-300\"></span>Software Engineering · Cybersecurity",
-            "title": "I build reliable digital platforms that are ready for production.",
-            "description": "I'm Nicolás Álvarez, a software engineer in my final year of university. With training in applied cybersecurity, I build products that combine automation, scalability, and solid architecture from day one.",
+            "taglineHtml": "<span class=\"h-px w-10 bg-slate-300\"></span>Software Architecture · Applied Cybersecurity",
+            "title": "I protect your business by building robust and automated digital platforms.",
+            "description": "Specialist in scaling products with a security mindset. I help companies automate complex operations and secure critical data flows from the first deployment.",
             "primaryCta": "View projects",
             "secondaryCta": "LinkedIn",
             "summaryLabel": "Quick snapshot",
             "summaryTitle": "I design and build secure, scalable, and well-structured web platforms.",
             "summaryItems": {
-                "first": "<span class=\"mt-1 h-2 w-2 rounded-full bg-blue-500\"></span>Python backend specialist with Flask and FastAPI, with distributed tasks powered by Celery and efficient data handling.",
-                "second": "<span class=\"mt-1 h-2 w-2 rounded-full bg-blue-500\"></span>I craft clean interfaces with JavaScript and React, prioritizing simplicity and performance.",
-                "third": "<span class=\"mt-1 h-2 w-2 rounded-full bg-blue-500\"></span>I apply cybersecurity best practices to authentication, deployments, and data protection."
+                "first": "<span class=\"mt-1 h-2 w-2 rounded-full bg-blue-500\"></span>Python backend specialist with Flask and FastAPI, optimizing distributed processes through Celery.",
+                "second": "<span class=\"mt-1 h-2 w-2 rounded-full bg-blue-500\"></span>I build high-performance interfaces with React and Tailwind, prioritizing simplicity and speed.",
+                "third": "<span class=\"mt-1 h-2 w-2 rounded-full bg-blue-500\"></span>I integrate advanced cybersecurity into authentication, data handling, and automated deployments."
             },
             "live": {
                 "label": "Live products",
                 "links": {
-                    "mesasya": "→ MesasYa – SaaS platform for restaurant reservation management.",
-                    "micartaya": "→ MiCartaYa – Digital menu and online ordering for restaurants.",
-                    "trato": "→ Trato – Agile CRM for quotes, follow-ups, and reminders.",
-                    "beatlist": "→ BeatList – Advanced Spotify playlist analytics and management.",
-                    "ponme": "→ Ponme – Your AI-powered smart closet assistant."
+                    "mesasya": "→ MesasYa – Managing +50 restaurants and automated reservations.",
+                    "micartaya": "→ MiCartaYa – Real-time ordering and multi-language digital menu.",
+                    "trato": "→ Trato – Agile CRM with smart reminders and optimized pipeline.",
+                    "beatlist": "→ BeatList – Officially approved advanced Spotify analytics.",
+                    "ponme": "→ Ponme – Your intelligent fashion assistant powered by Gemini AI."
                 }
             }
         },
@@ -135,89 +136,134 @@
             "label": "Highlighted projects",
             "title": "Solutions that support real operations.",
             "seeAll": "See full case studies",
+            "index": {
+                "caseStudies": "Case studies"
+            },
             "mesasya": {
-                "badge": "SaaS in production",
+                "badge": "Managing +50 restaurants",
                 "tech": "Flask · Celery · Docker · MySQL",
                 "title": "MesasYa",
-                "description": "MesasYa is an end-to-end platform for restaurant reservations. It merges interactive floor plans, automation, and analytics to deliver a robust, customizable operation already running in production.",
+                "description": "Integrated reservation platform that eliminates operational chaos. Digitizes the floor and automates customer contact.",
                 "bullets": {
-                    "first": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#589E8C]\"></span>Configurable floor plans per venue, area, and service with automatic table assignment.",
-                    "second": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#589E8C]\"></span>Real-time notifications for guests and staff through adjustable workflows.",
-                    "third": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#589E8C]\"></span>Stats and exports designed to scale securely in production environments."
+                    "first": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#589E8C]\"></span>-40% reservation management time through intelligent automatic assignment.",
+                    "second": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#589E8C]\"></span>Drastic reduction in 'no-shows' with an automated reminder system.",
+                    "third": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#589E8C]\"></span>Proven scalability: handling peak demand across multiple venues in real-time."
                 },
-                "directAccess": "→ MesasYa – SaaS platform for restaurant reservation management."
+                "directAccess": "→ MesasYa – Managing +50 restaurants and automated reservations.",
+                "caseStudy": {
+                    "impactTitle": "Operational Impact",
+                    "stackTitle": "Technical Stack",
+                    "nextTitle": "Next Phase",
+                    "nextTag": "Automatic report integration and management experience optimization."
+                }
             },
             "micartaya": {
-                "badge": "Production SaaS",
+                "badge": "Orders in <1s",
                 "tech": "FastAPI · WebSockets · Docker · MySQL",
                 "title": "MiCartaYa",
-                "description": "Digital ecosystem for restaurants transforming the dining experience. QR menu management, at-table ordering, and real-time TPV printing system.",
+                "description": "Digital ecosystem transforming the ordering experience. Unifies QR menus with automatic kitchen printing.",
                 "bullets": {
-                    "first": "<span class=\"mt-1 h-2 w-2 rounded-full bg-blue-500\"></span>Interactive multi-language menus with instant updates and stock control.",
-                    "second": "<span class=\"mt-1 h-2 w-2 rounded-full bg-blue-500\"></span>WebSocket communication for order reception in under 1 second.",
-                    "third": "<span class=\"mt-1 h-2 w-2 rounded-full bg-blue-500\"></span>Remote thermal printing integration for automatic kitchen tickets."
+                    "first": "<span class=\"mt-1 h-2 w-2 rounded-full bg-blue-500\"></span>Instant ordering via WebSockets: from table to kitchen in under a second.",
+                    "second": "<span class=\"mt-1 h-2 w-2 rounded-full bg-blue-500\"></span>Real-time stock control: immediate sync between menu and warehouse.",
+                    "third": "<span class=\"mt-1 h-2 w-2 rounded-full bg-blue-500\"></span>Zero transcription errors: direct integration with TPV printing systems."
                 },
-                "directAccess": "→ MiCartaYa – Digital menu and online ordering platform."
+                "directAccess": "→ MiCartaYa – Real-time ordering and multi-language digital menu.",
+                "caseStudy": {
+                    "impactTitle": "Floor Impact",
+                    "stackTitle": "Stack",
+                    "nextTitle": "Roadmap",
+                    "nextTag": "Integrated payment module and customer loyalty features."
+                }
             },
             "orderya": {
-                "badge": "SaaS PRODUCTION",
+                "badge": "Optimized logistics",
                 "tech": "FastAPI · Docker · MySQL · Jinja2",
                 "title": "OrderYa",
-                "description": "Centralized platform for order management between workshops and points of sale. Eliminates the friction of chat orders by consolidating demand and automating production and delivery lists.",
+                "description": "Centralized ordering for workshops. Replaces spreadsheets with an automated production and delivery flow.",
                 "bullets": {
-                    "first": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#ea580c]\"></span>Central workshop console for unified production and delivery management.",
-                    "second": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#ea580c]\"></span>Intuitive order portal for stores with history and real-time status.",
-                    "third": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#ea580c]\"></span>Advanced catalog management, product families, and user permissions."
+                    "first": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#ea580c]\"></span>-30% data entry time by eliminating orders via informal channels (WhatsApp).",
+                    "second": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#ea580c]\"></span>Automatic generation of labels and delivery sheets by route and client.",
+                    "third": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#ea580c]\"></span>100% accuracy in daily production based on consolidated real demand."
                 },
-                "directAccess": "→ OrderYa – Centralization of orders for workshops."
+                "directAccess": "→ OrderYa – Centralization and automation of orders for workshops.",
+                "caseStudy": {
+                    "impactTitle": "Logistics Results",
+                    "stackTitle": "Infrastructure",
+                    "nextTitle": "Evolution",
+                    "nextTag": "Demand prediction based on historical data and holiday calendars."
+                }
             },
             "trato": {
-                "badge": "Production",
+                "badge": "Sales efficiency",
                 "tech": "FASTAPI · UVICORN · CELERY · MYSQL · DOCKER",
                 "title": "Trato",
-                "description": "Trato is a CRM optimized for managing quotes, follow-ups, and reminders. It lets companies join via invitation codes and operate from a fast, action-driven panel.",
+                "description": "Agile CRM designed to close sales. Prioritizes opportunity tracking via automated reminders.",
                 "bullets": {
-                    "first": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#F97068]\"></span>Invitation codes to control company and user onboarding.",
-                    "second": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#F97068]\"></span>Opportunity tracking with automated reminders and a central timeline.",
-                    "third": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#F97068]\"></span>Deployment on the main VPS with Celery tasks for notifications and daily summaries."
+                    "first": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#F97068]\"></span>Accelerated pipeline: clear visualization of each quote's lifecycle.",
+                    "second": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#F97068]\"></span>Smart reminders: Celery manages follow-ups so no offer is lost.",
+                    "third": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#F97068]\"></span>Secure access control through a robust invitation code system."
                 },
-                "directAccess": "→ Trato – Agile CRM for quotes, follow-ups, and reminders."
+                "directAccess": "→ Trato – Agile CRM with smart reminders and optimized pipeline.",
+                "caseStudy": {
+                    "impactTitle": "Sales Impact",
+                    "stackTitle": "Backend",
+                    "nextTitle": "Improvements",
+                    "nextTag": "Integration with WhatsApp API for direct follow-up."
+                }
             },
             "kobra": {
-                "badge": "Custom solution",
+                "badge": "Debt reduction",
                 "tech": "FastAPI · Celery · MySQL · Docker",
                 "title": "Kobra",
-                "description": "Kobra is the internal platform built for Cybersur. It automates billing and collections with tailored processes, becoming a key piece of their daily operations.",
+                "description": "Financial management platform for Cybersur. Automates the billing and collection cycle.",
                 "bullets": {
-                    "first": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#f28d1f]\"></span>Automated reminders and follow-ups that cut financial chasing time.",
-                    "second": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#f28d1f]\"></span>Cronjobs and data-cleaning pipelines with complete traceability.",
-                    "third": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#f28d1f]\"></span>Internal dashboards for the finance team and containerized deployments ready to grow with the company."
+                    "first": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#f28d1f]\"></span>Improved cash flow through automatic payment alerts to clients.",
+                    "second": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#f28d1f]\"></span>Full audit: total traceability of collections and financial status.",
+                    "third": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#f28d1f]\"></span>+20% operational efficiency for the finance team by eliminating repetitive tasks."
+                },
+                "caseStudy": {
+                    "impactTitle": "Financial Control",
+                    "stackTitle": "Core",
+                    "nextTitle": "Future",
+                    "nextTag": "Automatic bank reconciliation via API."
                 }
             },
             "beatlist": {
-                "badge": "Music platform",
+                "badge": "Spotify Approved",
                 "approval": "Spotify Approved",
                 "tech": "Flask · OAuth 2.0 · Celery · Spotify API",
                 "title": "BeatList",
-                "description": "BeatList is the suite for music lovers and curators who need more than Spotify's default manager. It integrates the official API with deep analytics orchestrated by Celery and interactive experiences validated by Spotify's partner program.",
+                "description": "Advanced music analytics suite. Uses the official API to provide metrics Spotify doesn't show by default.",
                 "bullets": {
-                    "first": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#111827]\"></span>Playlist merging and cleanup with intelligent rules and metrics like energy or danceability.",
-                    "second": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#111827]\"></span>Web player with smooth animations, recommendations, and listening-habit dashboards.",
-                    "third": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#111827]\"></span>Celery-powered analyses process data in the background to deliver precise metrics without disrupting the user experience."
+                    "first": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#111827]\"></span>Smart data cleanup: duplicate debugging algorithms and audio filters.",
+                    "second": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#111827]\"></span>Guaranteed security: official OAuth 2.0 authentication validated by Spotify.",
+                    "third": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#111827]\"></span>High-impact UX: interactive dashboards with real-time audio analytics."
                 },
-                "directAccess": "→ BeatList – Advanced Spotify playlist analytics and management."
+                "directAccess": "→ BeatList – Officially approved advanced Spotify analytics.",
+                "caseStudy": {
+                    "impactTitle": "User Value",
+                    "stackTitle": "Integration",
+                    "nextTitle": "Growth",
+                    "nextTag": "Recommendations based on related artist graphs."
+                }
             },
             "ponme": {
-                "badge": "B2C / AI",
+                "badge": "AI / Gemini Vision",
                 "tech": "FastAPI · React · Gemini · Docker",
                 "title": "Ponme",
-                "description": "Intelligent fashion assistant that digitizes your closet. Uses AI to suggest personalized looks based on your own clothes and daily context.",
+                "description": "Closet digitization via multimodal IA. Analyzes garments and generates combinations based on context.",
                 "bullets": {
-                    "first": "<span class=\"mt-1 h-2 w-2 rounded-full bg-blue-500\"></span>Multimodal analysis with Google Gemini to catalog clothes by style and season.",
-                    "second": "<span class=\"mt-1 h-2 w-2 rounded-full bg-blue-500\"></span>Local automatic background removal for a professional and clean clothing catalog.",
-                    "third": "<span class=\"mt-1 h-2 w-2 rounded-full bg-blue-500\"></span>Outfit generator adapted to events, weather, and garment cleanliness status."
+                    "first": "<span class=\"mt-1 h-2 w-2 rounded-full bg-blue-500\"></span>AI Analysis (Gemini): automatic cataloging of style, color and season.",
+                    "second": "<span class=\"mt-1 h-2 w-2 rounded-full bg-blue-500\"></span>Zero latency image processing: local segmentation for background removal.",
+                    "third": "<span class=\"mt-1 h-2 w-2 rounded-full bg-blue-500\"></span>Intelligent outfits: generated according to real weather and user agenda in seconds."
                 },
-                "directAccess": "→ Ponme – Your AI-powered smart closet assistant."
+                "directAccess": "→ Ponme – Your intelligent fashion assistant powered by Gemini AI.",
+                "caseStudy": {
+                    "impactTitle": "AI Innovation",
+                    "stackTitle": "AI + Frontend",
+                    "nextTitle": "Roadmap",
+                    "nextTag": "AR 'Virtual Fitting Room' mode."
+                }
             },
             "cta": "Read more",
             "caseStudy": "Case study"
@@ -353,9 +399,12 @@
             "brandAria": "Back to home",
             "brandName": "Portfolio",
             "mesasya": "MesasYa",
+            "micartaya": "MiCartaYa",
+            "orderya": "OrderYa",
             "trato": "Trato",
             "kobra": "Kobra",
             "beatlist": "BeatList",
+            "ponme": "Ponme",
             "contact": "Contact"
         },
         "hero": {

@@ -13,13 +13,13 @@
     <meta property="og:title" content="Portfolio · Nicolás Álvarez" />
     <meta property="og:description"
         content="Explora proyectos empresariales, SaaS y herramientas musicales construidos con stacks modernos y procesos robustos." />
-    <meta property="og:image" content="assets/logo.png" />
+    <meta property="og:image" content="assets/favicon.svg" />
     <meta property="og:url" content="https://nicoabgv.github.io/" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Portfolio · Nicolás Álvarez" />
     <meta name="twitter:description"
         content="Ingeniero de software. Desarrollo de productos escalables, automatizados y listos para producción." />
-    <meta name="twitter:image" content="assets/logo.png" />
+    <meta name="twitter:image" content="assets/favicon.svg" />
     <link rel="canonical" href="https://nicoabgv.github.io/" />
     <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -62,7 +62,7 @@
                 <a class="transition hover:text-blue-600" href="#contact" data-i18n="common.nav.contact">Contacto</a>
                 <a class="inline-flex items-center gap-2 rounded-full border border-slate-200 px-4 py-2 text-xs font-semibold uppercase tracking-widest text-slate-700 transition hover:border-blue-500 hover:text-blue-600"
                     href="assets/cv_es.pdf" download data-cv-link data-i18n="common.nav.cv">
-                    <span data-locale-element="nav.cv">Descargar CV</span>
+                    <span data-i18n="nav.cv">Descargar CV</span>
                     <svg class="h-3.5 w-3.5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
                         <path
                             d="M10 14.25a.75.75 0 0 1-.53-.22l-4-4a.75.75 0 0 1 1.06-1.06l2.72 2.72V3.75a.75.75 0 1 1 1.5 0v7.94l2.72-2.72a.75.75 0 0 1 1.06 1.06l-4 4a.75.75 0 0 1-.53.22Z" />
@@ -85,7 +85,7 @@
                 <a class="transition hover:text-blue-600" href="#contact" data-i18n="common.nav.contact">Contacto</a>
                 <a class="inline-flex items-center gap-2 rounded-full border border-slate-200 px-4 py-2 text-xs font-semibold uppercase tracking-widest text-slate-700 transition hover:border-blue-500 hover:text-blue-600"
                     href="assets/cv_es.pdf" download data-cv-link data-i18n="common.nav.cv">
-                    <span data-locale-element="nav.cv">Descargar CV</span>
+                    <span data-i18n="nav.cv">Descargar CV</span>
                 </a>
                 <button type="button"
                     class="inline-flex items-center justify-center gap-2 rounded-full border border-slate-200 px-4 py-2 text-xs font-semibold uppercase tracking-widest text-slate-700 transition hover:border-blue-500 hover:text-blue-600"
@@ -109,23 +109,22 @@
             </div>
             <div class="mx-auto flex w-full max-w-6xl flex-col gap-16 px-6 py-20 lg:flex-row lg:items-center">
                 <div class="w-full space-y-8" data-animate>
-                    <p
-                        class="inline-flex items-center gap-3 text-xs font-semibold uppercase tracking-[0.4em] text-slate-500">
+                    <p class="inline-flex items-center gap-3 text-xs font-semibold uppercase tracking-[0.4em] text-slate-500"
+                        data-i18n-html="hero.taglineHtml">
                         <span class="h-px w-10 bg-slate-300"></span>
-                        Ingeniería de Software · Ciberseguridad
+                        Arquitectura de Software · Ciberseguridad Aplicada
                     </p>
-                    <h1 class="text-4xl font-bold leading-tight text-slate-900 sm:text-5xl">
-                        Construyo plataformas digitales confiables y listas para producción.
+                    <h1 class="text-4xl font-bold leading-tight text-slate-900 sm:text-5xl" data-i18n="hero.title">
+                        Protejo tu negocio construyendo plataformas digitales robustas y automatizadas.
                     </h1>
-                    <p class="max-w-2xl text-lg text-slate-600">
-                        Soy Nicolás Álvarez, ingeniero de software en mi último año de carrera. Con formación en
-                        ciberseguridad aplicada, desarrollo productos que combinan automatización, escalabilidad y una
-                        arquitectura sólida desde el inicio.
+                    <p class="max-w-2xl text-lg text-slate-600" data-i18n="hero.description">
+                        Especialista en escalar productos con mentalidad de seguridad. Ayudo a empresas a automatizar
+                        operaciones complejas y asegurar sus flujos de datos críticos desde el primer despliegue.
                     </p>
                     <div class="flex flex-wrap items-center gap-4">
                         <a href="#projects"
                             class="inline-flex items-center justify-center gap-2 rounded-full bg-blue-600 px-6 py-3 text-sm font-semibold text-white shadow-lg shadow-blue-600/20 transition hover:bg-blue-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600">
-                            <span data-locale-element="hero.primaryCta">Ver proyectos</span>
+                            <span data-i18n="hero.primaryCta">Ver proyectos</span>
                             <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                                 stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                                 <path d="M5 12h14" />
@@ -134,7 +133,7 @@
                         </a>
                         <a href="https://www.linkedin.com/in/nicolas-alvarez-becerra/" target="_blank" rel="noreferrer"
                             class="inline-flex items-center gap-2 rounded-full border border-slate-200 px-6 py-3 text-sm font-semibold text-slate-700 transition hover:border-blue-500 hover:text-blue-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600">
-                            LinkedIn
+                            <span data-i18n="hero.secondaryCta">LinkedIn</span>
                             <svg class="h-4 w-4" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
                                 <path
                                     d="M19 0H5C2.24 0 0 2.24 0 5v14c0 2.76 2.24 5 5 5h14c2.76 0 5-2.24 5-5V5c0-2.76-2.24-5-5-5ZM7.09 19.19H4.22V9h2.87v10.19ZM5.65 7.7c-.91 0-1.65-.74-1.65-1.65 0-.91.74-1.65 1.65-1.65.91 0 1.65.74 1.65 1.65 0 .91-.74 1.65-1.65 1.65Zm13.54 11.49h-2.87v-4.96c0-1.18-.02-2.7-1.65-2.7-1.65 0-1.9 1.29-1.9 2.62v5.04h-2.87V9h2.75v1.39h.04c.38-.72 1.31-1.47 2.7-1.47 2.89 0 3.42 1.9 3.42 4.36v5.91Z" />
@@ -143,31 +142,45 @@
                     </div>
                     <div class="mt-6 space-y-3 text-sm text-slate-600">
                         <p class="text-xs font-semibold uppercase tracking-[0.3em] text-slate-500"
-                            data-live-projects-label>Proyectos en vivo</p>
-                        <div class="flex flex-col gap-2 sm:flex-row sm:items-center sm:gap-4">
-                            <a href="https://mesasya.com" target="_blank" rel="noreferrer"
+                            data-i18n="hero.live.label">Proyectos en vivo</p>
+                        <div class="flex flex-wrap gap-2 gap-y-4 sm:gap-4">
+                            <a href="https://mesasya.es" target="_blank" rel="noreferrer"
                                 class="group inline-flex items-center gap-2 text-sm font-semibold text-slate-600 transition hover:text-[#1D494F]">
                                 <span
                                     class="flex h-8 w-8 items-center justify-center rounded-full bg-[#9DE1C1]/30 text-[10px] font-bold uppercase tracking-wide text-[#1D494F] transition group-hover:bg-[#9DE1C1] group-hover:text-[#112A2E]">MY</span>
-                                <span>MesasYa</span>
+                                <span data-i18n-html="hero.live.links.mesasya">→ MesasYa – Plataforma SaaS de gestión de
+                                    reservas para restaurantes.</span>
                             </a>
                             <a href="https://micartaya.es" target="_blank" rel="noreferrer"
                                 class="group inline-flex items-center gap-2 text-sm font-semibold text-slate-600 transition hover:text-blue-600">
                                 <span
                                     class="flex h-8 w-8 items-center justify-center rounded-full bg-blue-100 text-[10px] font-bold uppercase tracking-wide text-blue-600 transition group-hover:bg-blue-600 group-hover:text-white">MC</span>
-                                <span>MiCartaYa</span>
+                                <span data-i18n-html="hero.live.links.micartaya">→ MiCartaYa – Menú digital y pedidos
+                                    online
+                                    para restaurantes.</span>
                             </a>
                             <a href="https://beatlist.es" target="_blank" rel="noreferrer"
                                 class="group inline-flex items-center gap-2 text-sm font-semibold text-slate-600 transition hover:text-[#111827]">
                                 <span
                                     class="flex h-8 w-8 items-center justify-center rounded-full border border-slate-200 bg-white text-[10px] font-bold uppercase tracking-wide text-[#111827] transition group-hover:border-[#111827] group-hover:bg-[#111827] group-hover:text-white">BL</span>
-                                <span>BeatList</span>
+                                <span data-i18n-html="hero.live.links.beatlist">→ BeatList – Estadísticas y gestión
+                                    avanzada de
+                                    playlists de Spotify.</span>
+                            </a>
+                            <a href="https://tratocrm.com" target="_blank" rel="noreferrer"
+                                class="group inline-flex items-center gap-2 text-sm font-semibold text-slate-600 transition hover:text-[#F97068]">
+                                <span
+                                    class="flex h-8 w-8 items-center justify-center rounded-full bg-red-100 text-[10px] font-bold uppercase tracking-wide text-[#F97068] transition group-hover:bg-[#F97068] group-hover:text-white">TR</span>
+                                <span data-i18n-html="hero.live.links.trato">→ Trato – CRM ágil para presupuestos y
+                                    seguimientos.</span>
                             </a>
                             <a href="https://ponme.es" target="_blank" rel="noreferrer"
                                 class="group inline-flex items-center gap-2 text-sm font-semibold text-slate-600 transition hover:text-purple-600">
                                 <span
                                     class="flex h-8 w-8 items-center justify-center rounded-full bg-purple-100 text-[10px] font-bold uppercase tracking-wide text-purple-600 transition group-hover:bg-purple-600 group-hover:text-white">PM</span>
-                                <span>Ponme</span>
+                                <span data-i18n-html="hero.live.links.ponme">→ Ponme – Tu armario inteligente potenciado
+                                    por
+                                    IA.</span>
                             </a>
                         </div>
                     </div>
@@ -178,21 +191,23 @@
                         <div class="absolute -right-16 -top-16 h-48 w-48 rounded-full bg-blue-100 blur-3xl"></div>
                         <div class="absolute -bottom-20 -left-10 h-56 w-56 rounded-full bg-amber-100 blur-3xl"></div>
                         <div class="relative space-y-6">
-                            <p class="text-sm font-medium uppercase tracking-[0.3em] text-slate-400">Resumen Express</p>
-                            <p class="text-xl font-semibold text-slate-800">Diseño y desarrollo plataformas web seguras,
+                            <p class="text-sm font-medium uppercase tracking-[0.3em] text-slate-400"
+                                data-i18n="hero.summaryLabel">Resumen Express</p>
+                            <p class="text-xl font-semibold text-slate-800" data-i18n="hero.summaryTitle">Diseño y
+                                desarrollo plataformas web seguras,
                                 escalables y bien estructuradas.</p>
                             <ul class="space-y-4 text-sm text-slate-600">
-                                <li class="flex items-start gap-3">
+                                <li class="flex items-start gap-3" data-i18n-html="hero.summaryItems.first">
                                     <span class="mt-1 h-2 w-2 rounded-full bg-blue-500"></span>
                                     Especialista en backend Python con Flask y FastAPI, con tareas distribuidas mediante
                                     Celery y gestión eficiente de datos.
                                 </li>
-                                <li class="flex items-start gap-3">
+                                <li class="flex items-start gap-3" data-i18n-html="hero.summaryItems.second">
                                     <span class="mt-1 h-2 w-2 rounded-full bg-blue-500"></span>
                                     Construyo interfaces limpias con JavaScript y React, priorizando la simplicidad y el
                                     rendimiento.
                                 </li>
-                                <li class="flex items-start gap-3">
+                                <li class="flex items-start gap-3" data-i18n-html="hero.summaryItems.third">
                                     <span class="mt-1 h-2 w-2 rounded-full bg-blue-500"></span>
                                     Aplico buenas prácticas de ciberseguridad en autenticación, despliegues y protección
                                     de datos.
@@ -210,15 +225,17 @@
             </div>
             <div class="mx-auto flex w-full max-w-6xl flex-col gap-12 px-6 lg:flex-row">
                 <div class="w-full space-y-6 lg:w-2/3" data-animate>
-                    <p class="text-xs font-semibold uppercase tracking-[0.3em] text-slate-500">Sobre mí</p>
-                    <h2 class="text-3xl font-semibold text-slate-900 sm:text-4xl">Formación técnica con foco en
+                    <p class="text-xs font-semibold uppercase tracking-[0.3em] text-slate-500" data-i18n="about.label">
+                        Sobre mí</p>
+                    <h2 class="text-3xl font-semibold text-slate-900 sm:text-4xl" data-i18n="about.title">Formación
+                        técnica con foco en
                         seguridad aplicada.</h2>
-                    <p class="text-lg text-slate-600">
+                    <p class="text-lg text-slate-600" data-i18n="about.paragraph1">
                         Soy ingeniero de software en mi último año de carrera, con una especialización universitaria de
                         dos años en ciberseguridad aplicada. Ese recorrido me permitió integrar buenas prácticas de
                         seguridad en backend, autenticación y despliegues sin perder de vista la experiencia de usuario.
                     </p>
-                    <p class="text-lg text-slate-600">
+                    <p class="text-lg text-slate-600" data-i18n="about.paragraph2">
                         Trabajo en soluciones SaaS, integraciones de APIs y automatizaciones sobre Python y JavaScript.
                         Mi enfoque en seguridad está orientado a la práctica: diseño sistemas coherentes, bien
                         documentados y con flujos de datos claros que facilitan la mantenibilidad y reducen riesgos.
@@ -227,32 +244,38 @@
                 <div class="w-full space-y-6 lg:w-1/3" data-animate>
                     <div class="grid gap-4">
                         <div class="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm">
-                            <h3 class="text-sm font-semibold uppercase tracking-widest text-slate-500">Datos clave</h3>
+                            <h3 class="text-sm font-semibold uppercase tracking-widest text-slate-500"
+                                data-i18n="about.cardTitle">Datos clave</h3>
                             <dl class="mt-4 space-y-3 text-sm text-slate-600">
                                 <div class="flex justify-between gap-6">
-                                    <dt class="font-medium text-slate-500">Ubicación</dt>
-                                    <dd>Madrid · España</dd>
+                                    <dt class="font-medium text-slate-500" data-i18n="about.details.locationLabel">
+                                        Ubicación</dt>
+                                    <dd data-i18n-html="about.details.locationValue">Madrid · España</dd>
                                 </div>
                                 <div class="flex justify-between gap-6">
-                                    <dt class="font-medium text-slate-500">Email</dt>
-                                    <dd><a class="hover:text-blue-600"
+                                    <dt class="font-medium text-slate-500" data-i18n="about.details.emailLabel">Email
+                                    </dt>
+                                    <dd data-i18n-html="about.details.emailValue"><a class="hover:text-blue-600"
                                             href="mailto:nicoabgv@gmail.com">nicoabgv@gmail.com</a></dd>
                                 </div>
                                 <div class="flex justify-between gap-6">
-                                    <dt class="font-medium text-slate-500">LinkedIn</dt>
-                                    <dd><a class="hover:text-blue-600"
+                                    <dt class="font-medium text-slate-500" data-i18n="about.details.linkedinLabel">
+                                        LinkedIn</dt>
+                                    <dd data-i18n-html="about.details.linkedinValue"><a class="hover:text-blue-600"
                                             href="https://www.linkedin.com/in/nicolas-alvarez-becerra/" target="_blank"
                                             rel="noreferrer">/in/nicoabgv</a></dd>
                                 </div>
                                 <div class="flex justify-between gap-6">
-                                    <dt class="font-medium text-slate-500">Años de experiencia</dt>
-                                    <dd>2+</dd>
+                                    <dt class="font-medium text-slate-500" data-i18n="about.details.experienceLabel">
+                                        Años de experiencia</dt>
+                                    <dd data-i18n="about.details.experienceValue">2+</dd>
                                 </div>
                             </dl>
                         </div>
                         <div class="rounded-3xl border border-dashed border-blue-200 bg-blue-50/60 p-6">
-                            <p class="text-sm font-semibold uppercase tracking-[0.3em] text-blue-600">Colaboraciones</p>
-                            <p class="mt-3 text-sm text-blue-800">
+                            <p class="text-sm font-semibold uppercase tracking-[0.3em] text-blue-600"
+                                data-i18n="about.collaborationLabel">Colaboraciones</p>
+                            <p class="mt-3 text-sm text-blue-800" data-i18n="about.collaborationText">
                                 Abierto a colaboraciones técnicas, sinergias entre proyectos o simplemente compartir
                                 ideas sobre desarrollo y producto. Puedes contactarme a través de LinkedIn.
                             </p>
@@ -265,8 +288,10 @@
         <section id="skills" class="bg-white py-24">
             <div class="mx-auto max-w-6xl space-y-12 px-6">
                 <div class="space-y-4" data-animate>
-                    <p class="text-xs font-semibold uppercase tracking-[0.3em] text-slate-500">Skills & Stack</p>
-                    <h2 class="text-3xl font-semibold text-slate-900 sm:text-4xl">Capas técnicas que utilizo para crear
+                    <p class="text-xs font-semibold uppercase tracking-[0.3em] text-slate-500" data-i18n="skills.label">
+                        Skills & Stack</p>
+                    <h2 class="text-3xl font-semibold text-slate-900 sm:text-4xl" data-i18n="skills.title">Capas
+                        técnicas que utilizo para crear
                         productos escalables.</h2>
                 </div>
                 <div class="grid gap-6 md:grid-cols-2 xl:grid-cols-4" data-animate>
@@ -283,15 +308,21 @@
                                     <path d="M9 4v16" />
                                 </svg>
                             </span>
-                            <h3 class="text-lg font-semibold text-slate-900">Backend</h3>
+                            <h3 class="text-lg font-semibold text-slate-900" data-i18n="skills.cards.backend.title">
+                                Backend</h3>
                         </div>
-                        <p class="text-sm text-slate-600">APIs con Flask y FastAPI, tareas distribuidas con Celery y
+                        <p class="text-sm text-slate-600" data-i18n="skills.cards.backend.description">APIs con Flask y
+                            FastAPI, tareas distribuidas con Celery y
                             persistencia en MySQL sobre infraestructura contenerizada.</p>
                         <div class="flex flex-wrap gap-2 text-xs font-medium text-slate-500">
-                            <span class="rounded-full bg-white px-3 py-1">Python</span>
-                            <span class="rounded-full bg-white px-3 py-1">Flask · FastAPI</span>
-                            <span class="rounded-full bg-white px-3 py-1">Celery</span>
-                            <span class="rounded-full bg-white px-3 py-1">MySQL</span>
+                            <span class="rounded-full bg-white px-3 py-1"
+                                data-i18n="skills.cards.backend.tags.0">Python</span>
+                            <span class="rounded-full bg-white px-3 py-1" data-i18n="skills.cards.backend.tags.1">Flask
+                                · FastAPI</span>
+                            <span class="rounded-full bg-white px-3 py-1"
+                                data-i18n="skills.cards.backend.tags.2">Celery</span>
+                            <span class="rounded-full bg-white px-3 py-1"
+                                data-i18n="skills.cards.backend.tags.3">MySQL</span>
                         </div>
                     </article>
                     <article
@@ -307,14 +338,19 @@
                                     <path d="M12 12v8" />
                                 </svg>
                             </span>
-                            <h3 class="text-lg font-semibold text-slate-900">Frontend</h3>
+                            <h3 class="text-lg font-semibold text-slate-900" data-i18n="skills.cards.frontend.title">
+                                Frontend</h3>
                         </div>
-                        <p class="text-sm text-slate-600">Interfaces limpias con JavaScript y Tailwind, apoyadas en
+                        <p class="text-sm text-slate-600" data-i18n="skills.cards.frontend.description">Interfaces
+                            limpias con JavaScript y Tailwind, apoyadas en
                             React para aportar fluidez y modularidad.</p>
                         <div class="flex flex-wrap gap-2 text-xs font-medium text-slate-500">
-                            <span class="rounded-full bg-white px-3 py-1">JavaScript</span>
-                            <span class="rounded-full bg-white px-3 py-1">Tailwind CSS</span>
-                            <span class="rounded-full bg-white px-3 py-1">React</span>
+                            <span class="rounded-full bg-white px-3 py-1"
+                                data-i18n="skills.cards.frontend.tags.0">JavaScript</span>
+                            <span class="rounded-full bg-white px-3 py-1"
+                                data-i18n="skills.cards.frontend.tags.1">Tailwind CSS</span>
+                            <span class="rounded-full bg-white px-3 py-1"
+                                data-i18n="skills.cards.frontend.tags.2">React</span>
                         </div>
                     </article>
                     <article
@@ -330,15 +366,21 @@
                                     <path d="M9 8h6" />
                                 </svg>
                             </span>
-                            <h3 class="text-lg font-semibold text-slate-900">DevOps</h3>
+                            <h3 class="text-lg font-semibold text-slate-900" data-i18n="skills.cards.devops.title">
+                                DevOps</h3>
                         </div>
-                        <p class="text-sm text-slate-600">Contenedores con Docker y Compose, Nginx como proxy,
+                        <p class="text-sm text-slate-600" data-i18n="skills.cards.devops.description">Contenedores con
+                            Docker y Compose, Nginx como proxy,
                             automatizaciones con scripts y cronjobs sobre VPS Ubuntu.</p>
                         <div class="flex flex-wrap gap-2 text-xs font-medium text-slate-500">
-                            <span class="rounded-full bg-white px-3 py-1">Docker</span>
-                            <span class="rounded-full bg-white px-3 py-1">Docker Compose</span>
-                            <span class="rounded-full bg-white px-3 py-1">Nginx</span>
-                            <span class="rounded-full bg-white px-3 py-1">Ubuntu VPS</span>
+                            <span class="rounded-full bg-white px-3 py-1"
+                                data-i18n="skills.cards.devops.tags.0">Docker</span>
+                            <span class="rounded-full bg-white px-3 py-1" data-i18n="skills.cards.devops.tags.1">Docker
+                                Compose</span>
+                            <span class="rounded-full bg-white px-3 py-1"
+                                data-i18n="skills.cards.devops.tags.2">Nginx</span>
+                            <span class="rounded-full bg-white px-3 py-1" data-i18n="skills.cards.devops.tags.3">Ubuntu
+                                VPS</span>
                         </div>
                     </article>
                     <article
@@ -358,14 +400,19 @@
                                     <path d="M6 14h2" />
                                 </svg>
                             </span>
-                            <h3 class="text-lg font-semibold text-slate-900">Ciberseguridad</h3>
+                            <h3 class="text-lg font-semibold text-slate-900" data-i18n="skills.cards.security.title">
+                                Ciberseguridad</h3>
                         </div>
-                        <p class="text-sm text-slate-600">Buenas prácticas en backend, autenticación y despliegues
+                        <p class="text-sm text-slate-600" data-i18n="skills.cards.security.description">Buenas prácticas
+                            en backend, autenticación y despliegues
                             reforzadas por mi formación en ciberseguridad aplicada.</p>
                         <div class="flex flex-wrap gap-2 text-xs font-medium text-slate-500">
-                            <span class="rounded-full bg-white px-3 py-1">Buenas prácticas backend</span>
-                            <span class="rounded-full bg-white px-3 py-1">Autenticación segura</span>
-                            <span class="rounded-full bg-white px-3 py-1">Despliegues revisados</span>
+                            <span class="rounded-full bg-white px-3 py-1"
+                                data-i18n="skills.cards.security.tags.0">Buenas prácticas backend</span>
+                            <span class="rounded-full bg-white px-3 py-1"
+                                data-i18n="skills.cards.security.tags.1">Autenticación segura</span>
+                            <span class="rounded-full bg-white px-3 py-1"
+                                data-i18n="skills.cards.security.tags.2">Despliegues revisados</span>
                         </div>
                     </article>
                 </div>
@@ -379,14 +426,16 @@
             <div class="mx-auto max-w-6xl space-y-16 px-6">
                 <div class="flex flex-col gap-4 lg:flex-row lg:items-end lg:justify-between" data-animate>
                     <div>
-                        <p class="text-xs font-semibold uppercase tracking-[0.3em] text-slate-500">Proyectos destacados
+                        <p class="text-xs font-semibold uppercase tracking-[0.3em] text-slate-500"
+                            data-i18n="projects.label">Proyectos destacados
                         </p>
-                        <h2 class="mt-2 text-3xl font-semibold text-slate-900 sm:text-4xl">Soluciones que sostienen
+                        <h2 class="mt-2 text-3xl font-semibold text-slate-900 sm:text-4xl" data-i18n="projects.title">
+                            Soluciones que sostienen
                             operaciones reales.</h2>
                     </div>
                     <a href="projects.html"
                         class="inline-flex items-center gap-2 text-sm font-semibold text-blue-600 transition hover:text-blue-700">
-                        <span data-locale-element="projects.seeAll">Ver case studies completos</span>
+                        <span data-i18n="projects.seeAll">Ver case studies completos</span>
                         <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"
                             stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                             <path d="m9 5 7 7-7 7" />
@@ -394,7 +443,7 @@
                     </a>
                 </div>
                 <div class="space-y-12">
-                    <article
+                    <article data-project-id="mesasya"
                         class="flex flex-col gap-10 rounded-3xl border border-slate-200 bg-white/90 p-8 shadow-lg shadow-slate-900/5 transition hover:-translate-y-1 hover:shadow-xl lg:flex-row"
                         data-animate>
                         <figure
@@ -406,30 +455,30 @@
                             <div class="flex flex-wrap items-center gap-3">
                                 <span
                                     class="rounded-full bg-[#9DE1C1]/20 px-3 py-1 text-xs font-semibold text-[#1D494F]"
-                                    data-locale-element="projects.mesasya.badge">SaaS en producción</span>
+                                    data-i18n="projects.mesasya.badge">SaaS en producción</span>
                                 <span
                                     class="text-xs uppercase tracking-[0.25em] text-slate-400 font-['Space_Mono',_monospace]">Flask
                                     · Celery · Docker · MySQL</span>
                             </div>
                             <div class="space-y-4">
                                 <h3 class="text-2xl font-semibold text-slate-900">MesasYa</h3>
-                                <p class="text-base text-slate-600">
+                                <p class="text-base text-slate-600" data-i18n="projects.mesasya.description">
                                     MesasYa es una plataforma integral para la gestión de reservas de restaurantes.
                                     Combina planos interactivos, automatización y analítica para ofrecer una operación
                                     robusta y personalizable que ya funciona en producción.
                                 </p>
                                 <ul class="space-y-2 text-sm text-slate-600">
-                                    <li class="flex items-start gap-3">
+                                    <li class="flex items-start gap-3" data-i18n-html="projects.mesasya.bullets.first">
                                         <span class="mt-1 h-2 w-2 rounded-full bg-[#589E8C]"></span>
                                         Planos de sala configurables por sede, zona y servicio con asignación automática
                                         de mesas.
                                     </li>
-                                    <li class="flex items-start gap-3">
+                                    <li class="flex items-start gap-3" data-i18n-html="projects.mesasya.bullets.second">
                                         <span class="mt-1 h-2 w-2 rounded-full bg-[#589E8C]"></span>
                                         Notificaciones en tiempo real para clientes y staff mediante workflows
                                         ajustables.
                                     </li>
-                                    <li class="flex items-start gap-3">
+                                    <li class="flex items-start gap-3" data-i18n-html="projects.mesasya.bullets.third">
                                         <span class="mt-1 h-2 w-2 rounded-full bg-[#589E8C]"></span>
                                         Estadísticas y exportaciones diseñadas para escalar de forma segura en entornos
                                         de producción.
@@ -439,7 +488,7 @@
                             <div class="flex flex-wrap items-center gap-4">
                                 <button type="button" data-modal-target="modal-mesaysa"
                                     class="inline-flex items-center gap-2 rounded-full bg-slate-900 px-5 py-2.5 text-sm font-semibold text-white transition hover:bg-slate-800 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-slate-900">
-                                    <span data-locale-element="projects.cta">Leer más</span>
+                                    <span data-i18n="projects.cta">Leer más</span>
                                     <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                                         stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"
                                         aria-hidden="true">
@@ -448,7 +497,7 @@
                                 </button>
                                 <a href="projects.html#mesasya"
                                     class="inline-flex items-center gap-2 text-sm font-semibold text-[#1D494F] transition hover:text-[#589E8C]">
-                                    <span data-locale-element="projects.caseStudy">Case study</span>
+                                    <span data-i18n="projects.caseStudy">Case study</span>
                                     <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                                         stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"
                                         aria-hidden="true">
@@ -469,7 +518,7 @@
                             </div>
                         </div>
                     </article>
-                    <article
+                    <article data-project-id="micartaya"
                         class="flex flex-col gap-10 rounded-3xl border border-slate-200 bg-white/90 p-8 shadow-lg shadow-slate-900/5 transition hover:-translate-y-1 hover:shadow-xl lg:flex-row"
                         data-animate>
                         <figure
@@ -480,33 +529,32 @@
                         <div class="flex w-full flex-col gap-6">
                             <div class="flex flex-wrap items-center gap-3">
                                 <span class="rounded-full bg-blue-100 px-3 py-1 text-xs font-semibold text-blue-700"
-                                    data-locale-element="projects.micartaya.badge">SaaS Producción</span>
+                                    data-i18n="projects.micartaya.badge">SaaS Producción</span>
                                 <span
                                     class="text-xs uppercase tracking-[0.25em] text-slate-400 font-['Space_Mono',_monospace]">FastAPI
                                     · WebSockets · Docker · MySQL</span>
                             </div>
                             <div class="space-y-4">
                                 <h3 class="text-2xl font-semibold text-slate-900">MiCartaYa</h3>
-                                <p class="text-base text-slate-600"
-                                    data-locale-element="projects.micartaya.description">
+                                <p class="text-base text-slate-600" data-i18n="projects.micartaya.description">
                                     Ecosistema digital para restaurantes que transforma la experiencia del comensal.
                                     Gestión de cartas QR, pedidos en mesa y sistema de impresión TPV en tiempo real.
                                 </p>
                                 <ul class="space-y-2 text-sm text-slate-600">
                                     <li class="flex items-start gap-3"
-                                        data-locale-element="projects.micartaya.bullets.first">
+                                        data-i18n-html="projects.micartaya.bullets.first">
                                         <span class="mt-1 h-2 w-2 rounded-full bg-blue-500"></span>
                                         Cartas interactivas multiidioma con actualización instantánea y control de
                                         stock.
                                     </li>
                                     <li class="flex items-start gap-3"
-                                        data-locale-element="projects.micartaya.bullets.second">
+                                        data-i18n-html="projects.micartaya.bullets.second">
                                         <span class="mt-1 h-2 w-2 rounded-full bg-blue-500"></span>
                                         Comunicación mediante WebSockets para recepción de pedidos en menos de 1
                                         segundo.
                                     </li>
                                     <li class="flex items-start gap-3"
-                                        data-locale-element="projects.micartaya.bullets.third">
+                                        data-i18n-html="projects.micartaya.bullets.third">
                                         <span class="mt-1 h-2 w-2 rounded-full bg-blue-500"></span>
                                         Integración de impresión térmica remota para comandas automáticas en cocina.
                                     </li>
@@ -515,7 +563,7 @@
                             <div class="flex flex-wrap items-center gap-4">
                                 <button type="button" data-modal-target="modal-micartaya"
                                     class="inline-flex items-center gap-2 rounded-full bg-slate-900 px-5 py-2.5 text-sm font-semibold text-white transition hover:bg-slate-800 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-slate-900">
-                                    <span data-locale-element="projects.cta">Leer más</span>
+                                    <span data-i18n="projects.cta">Leer más</span>
                                     <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                                         stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"
                                         aria-hidden="true">
@@ -524,7 +572,7 @@
                                 </button>
                                 <a href="projects.html#micartaya"
                                     class="inline-flex items-center gap-2 text-sm font-semibold text-blue-600 transition hover:text-blue-700">
-                                    <span data-locale-element="projects.caseStudy">Case study</span>
+                                    <span data-i18n="projects.caseStudy">Case study</span>
                                     <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                                         stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"
                                         aria-hidden="true">
@@ -545,178 +593,173 @@
                                 </a>
                             </div>
                         </div>
+                    </article>
 
-
-
-                        <article
-                            class="flex flex-col gap-10 rounded-3xl border border-slate-200 bg-white/90 p-8 shadow-lg shadow-slate-900/5 transition hover:-translate-y-1 hover:shadow-xl lg:flex-row"
-                            data-animate>
-                            <figure
-                                class="flex w-full items-center justify-center rounded-2xl border border-[#111827]/20 bg-[#F7F7FB] p-6 lg:w-64">
-                                <img src="assets/beatlist-logo.svg" alt="Identidad del proyecto BeatList" width="160"
-                                    height="160" loading="lazy" class="h-32 w-32 object-contain" />
-                            </figure>
-                            <div class="flex w-full flex-col gap-6">
-                                <div class="flex flex-wrap items-center gap-3">
-                                    <span
-                                        class="rounded-full bg-[#111827]/10 px-3 py-1 text-xs font-semibold text-[#111827]"
-                                        data-locale-element="projects.beatlist.badge">Plataforma musical</span>
-                                    <span
-                                        class="inline-flex items-center gap-1 rounded-full border border-[#111827]/30 bg-white px-3 py-1 text-xs font-semibold text-[#111827]">
-                                        <svg class="h-3.5 w-3.5" viewBox="0 0 20 20" fill="currentColor"
-                                            aria-hidden="true">
-                                            <path fill-rule="evenodd"
-                                                d="M16.704 5.29a.75.75 0 0 1 .006 1.06l-7.25 7.5a.75.75 0 0 1-1.086.02L3.29 8.536a.75.75 0 0 1 1.06-1.06l4.21 4.209 6.72-6.956a.75.75 0 0 1 1.064.061Z"
-                                                clip-rule="evenodd" />
-                                        </svg>
-                                        <span data-locale-element="projects.beatlist.approval">Spotify Approved</span>
-                                    </span>
-                                    <span
-                                        class="text-xs uppercase tracking-[0.25em] text-slate-400 font-['Space_Mono',_monospace]">Flask
-                                        · OAuth 2.0 · Celery · Spotify API</span>
-                                </div>
-                                <div class="space-y-4">
-                                    <h3 class="text-2xl font-semibold text-slate-900">BeatList</h3>
-                                    <p class="text-base text-slate-600">
-                                        BeatList es la suite para melómanos y curadores que necesitan más que el gestor
-                                        estándar de Spotify. Integra la API oficial con análisis profundos y
-                                        experiencias
-                                        interactivas avaladas por el programa de partners de Spotify.
-                                    </p>
-                                    <ul class="space-y-2 text-sm text-slate-600">
-                                        <li class="flex items-start gap-3">
-                                            <span class="mt-1 h-2 w-2 rounded-full bg-[#111827]"></span>
-                                            Fusión y depuración de playlists con reglas inteligentes y métricas como
-                                            energía
-                                            o baile.
-                                        </li>
-                                        <li class="flex items-start gap-3">
-                                            <span class="mt-1 h-2 w-2 rounded-full bg-[#111827]"></span>
-                                            Reproductor web con animaciones fluidas, recomendaciones y dashboards de
-                                            hábitos
-                                            de escucha.
-                                        </li>
-                                        <li class="flex items-start gap-3">
-                                            <span class="mt-1 h-2 w-2 rounded-full bg-[#111827]"></span>
-                                            Análisis gestionados con Celery para procesar datos en segundo plano y
-                                            ofrecer
-                                            métricas precisas sin afectar la experiencia del usuario.
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div class="flex flex-wrap items-center gap-4">
-                                    <button type="button" data-modal-target="modal-beatlist"
-                                        class="inline-flex items-center gap-2 rounded-full bg-slate-900 px-5 py-2.5 text-sm font-semibold text-white transition hover:bg-slate-800 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-slate-900">
-                                        <span data-locale-element="projects.cta">Leer más</span>
-                                        <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                            stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"
-                                            aria-hidden="true">
-                                            <path d="m9 5 7 7-7 7" />
-                                        </svg>
-                                    </button>
-                                    <a href="projects.html#beatlist"
-                                        class="inline-flex items-center gap-2 text-sm font-semibold text-[#111827] transition hover:text-[#1f2937]">
-                                        <span data-locale-element="projects.caseStudy">Case study</span>
-                                        <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                            stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"
-                                            aria-hidden="true">
-                                            <path d="m9 5 7 7-7 7" />
-                                        </svg>
-                                    </a>
-                                    <a href="https://beatlist.es" target="_blank" rel="noreferrer"
-                                        class="inline-flex items-center gap-2 rounded-full border border-[#111827]/30 px-5 py-2.5 text-sm font-semibold text-[#111827] transition hover:border-[#1f2937] hover:text-[#1f2937] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#1f2937]">
-                                        <span data-project-direct-link="beatlist">→ BeatList – Estadísticas y gestión
-                                            avanzada de playlists de Spotify.</span>
-                                        <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                            stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"
-                                            aria-hidden="true">
-                                            <path d="M5 12h14" />
-                                            <path d="m12 5 7 7-7 7" />
-                                        </svg>
-                                    </a>
-                                </div>
+                    <article data-project-id="beatlist"
+                        class="flex flex-col gap-10 rounded-3xl border border-slate-200 bg-white/90 p-8 shadow-lg shadow-slate-900/5 transition hover:-translate-y-1 hover:shadow-xl lg:flex-row"
+                        data-animate>
+                        <figure
+                            class="flex w-full items-center justify-center rounded-2xl border border-[#111827]/20 bg-[#F7F7FB] p-6 lg:w-64">
+                            <img src="assets/beatlist-logo.svg" alt="Identidad del proyecto BeatList" width="160"
+                                height="160" loading="lazy" class="h-32 w-32 object-contain" />
+                        </figure>
+                        <div class="flex w-full flex-col gap-6">
+                            <div class="flex flex-wrap items-center gap-3">
+                                <span
+                                    class="rounded-full bg-[#111827]/10 px-3 py-1 text-xs font-semibold text-[#111827]"
+                                    data-i18n="projects.beatlist.badge">Plataforma musical</span>
+                                <span
+                                    class="inline-flex items-center gap-1 rounded-full border border-[#111827]/30 bg-white px-3 py-1 text-xs font-semibold text-[#111827]">
+                                    <svg class="h-3.5 w-3.5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                        <path fill-rule="evenodd"
+                                            d="M16.704 5.29a.75.75 0 0 1 .006 1.06l-7.25 7.5a.75.75 0 0 1-1.086.02L3.29 8.536a.75.75 0 0 1 1.06-1.06l4.21 4.209 6.72-6.956a.75.75 0 0 1 1.064.061Z"
+                                            clip-rule="evenodd" />
+                                    </svg>
+                                    <span data-i18n="projects.beatlist.approval">Spotify Approved</span>
+                                </span>
+                                <span
+                                    class="text-xs uppercase tracking-[0.25em] text-slate-400 font-['Space_Mono',_monospace]">Flask
+                                    · OAuth 2.0 · Celery · Spotify API</span>
                             </div>
-                        </article>
-
-                        <article
-                            class="flex flex-col gap-10 rounded-3xl border border-slate-200 bg-white/90 p-8 shadow-lg shadow-slate-900/5 transition hover:-translate-y-1 hover:shadow-xl lg:flex-row"
-                            data-animate>
-                            <figure
-                                class="flex w-full items-center justify-center rounded-2xl border border-purple-200 bg-purple-50 p-6 lg:w-64">
-                                <img src="assets/ponme-logo.png" alt="Identidad del proyecto Ponme" width="160"
-                                    height="160" loading="lazy" class="h-32 w-32 object-contain" />
-                            </figure>
-                            <div class="flex w-full flex-col gap-6">
-                                <div class="flex flex-wrap items-center gap-3">
-                                    <span
-                                        class="rounded-full bg-purple-100 px-3 py-1 text-xs font-semibold text-purple-700"
-                                        data-locale-element="projects.ponme.badge">B2C / IA</span>
-                                    <span
-                                        class="text-xs uppercase tracking-[0.25em] text-slate-400 font-['Space_Mono',_monospace]">FastAPI
-                                        · React · Gemini · Docker</span>
-                                </div>
-                                <div class="space-y-4">
-                                    <h3 class="text-2xl font-semibold text-slate-900">Ponme</h3>
-                                    <p class="text-base text-slate-600"
-                                        data-locale-element="projects.ponme.description">
-                                        Asistente de moda inteligente que digitaliza tu armario. Utiliza IA para sugerir
-                                        looks personalizados basándose en tu propia ropa y el contexto del día.
-                                    </p>
-                                    <ul class="space-y-2 text-sm text-slate-600">
-                                        <li class="flex items-start gap-3"
-                                            data-locale-element="projects.ponme.bullets.first">
-                                            <span class="mt-1 h-2 w-2 rounded-full bg-purple-500"></span>
-                                            Análisis multimodal con Google Gemini para catalogar prendas por estilo y
-                                            temporada.
-                                        </li>
-                                        <li class="flex items-start gap-3"
-                                            data-locale-element="projects.ponme.bullets.second">
-                                            <span class="mt-1 h-2 w-2 rounded-full bg-purple-500"></span>
-                                            Eliminación automática de fondos local para un catálogo de ropa profesional
-                                            y
-                                            limpio.
-                                        </li>
-                                        <li class="flex items-start gap-3"
-                                            data-locale-element="projects.ponme.bullets.third">
-                                            <span class="mt-1 h-2 w-2 rounded-full bg-purple-500"></span>
-                                            Generador de outfits adaptado a eventos, clima y estado de limpieza de las
-                                            prendas.
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div class="flex flex-wrap items-center gap-4">
-                                    <button type="button" data-modal-target="modal-ponme"
-                                        class="inline-flex items-center gap-2 rounded-full bg-slate-900 px-5 py-2.5 text-sm font-semibold text-white transition hover:bg-slate-800 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-slate-900">
-                                        <span data-locale-element="projects.cta">Leer más</span>
-                                        <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                            stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"
-                                            aria-hidden="true">
-                                            <path d="m9 5 7 7-7 7" />
-                                        </svg>
-                                    </button>
-                                    <a href="projects.html#ponme"
-                                        class="inline-flex items-center gap-2 text-sm font-semibold text-purple-600 transition hover:text-purple-700">
-                                        <span data-locale-element="projects.caseStudy">Case study</span>
-                                        <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                            stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"
-                                            aria-hidden="true">
-                                            <path d="m9 5 7 7-7 7" />
-                                        </svg>
-                                    </a>
-                                    <a href="https://ponme.es" target="_blank" rel="noreferrer"
-                                        class="inline-flex items-center gap-2 rounded-full border border-purple-200 px-5 py-2.5 text-sm font-semibold text-purple-700 transition hover:border-purple-500 hover:text-purple-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-purple-500">
-                                        <span data-project-direct-link="ponme">→ Ponme – Tu armario inteligente
-                                            potenciado
-                                            por IA.</span>
-                                        <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                            stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"
-                                            aria-hidden="true">
-                                            <path d="M5 12h14" />
-                                            <path d="m12 5 7 7-7 7" />
-                                        </svg>
-                                    </a>
-                                </div>
+                            <div class="space-y-4">
+                                <h3 class="text-2xl font-semibold text-slate-900">BeatList</h3>
+                                <p class="text-base text-slate-600" data-i18n="projects.beatlist.description">
+                                    BeatList es la suite para melómanos y curadores que necesitan más que el gestor
+                                    estándar de Spotify. Integra la API oficial con análisis profundos y
+                                    experiencias
+                                    interactivas avaladas por el programa de partners de Spotify.
+                                </p>
+                                <ul class="space-y-2 text-sm text-slate-600">
+                                    <li class="flex items-start gap-3" data-i18n-html="projects.beatlist.bullets.first">
+                                        <span class="mt-1 h-2 w-2 rounded-full bg-[#111827]"></span>
+                                        Fusión y depuración de playlists con reglas inteligentes y métricas como
+                                        energía
+                                        o baile.
+                                    </li>
+                                    <li class="flex items-start gap-3"
+                                        data-i18n-html="projects.beatlist.bullets.second">
+                                        <span class="mt-1 h-2 w-2 rounded-full bg-[#111827]"></span>
+                                        Reproductor web con animaciones fluidas, recomendaciones y dashboards de
+                                        hábitos
+                                        de escucha.
+                                    </li>
+                                    <li class="flex items-start gap-3" data-i18n-html="projects.beatlist.bullets.third">
+                                        <span class="mt-1 h-2 w-2 rounded-full bg-[#111827]"></span>
+                                        Análisis gestionados con Celery para procesar datos en segundo plano y
+                                        ofrecer
+                                        métricas precisas sin afectar la experiencia del usuario.
+                                    </li>
+                                </ul>
                             </div>
+                            <div class="flex flex-wrap items-center gap-4">
+                                <button type="button" data-modal-target="modal-beatlist"
+                                    class="inline-flex items-center gap-2 rounded-full bg-slate-900 px-5 py-2.5 text-sm font-semibold text-white transition hover:bg-slate-800 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-slate-900">
+                                    <span data-i18n="projects.cta">Leer más</span>
+                                    <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"
+                                        aria-hidden="true">
+                                        <path d="m9 5 7 7-7 7" />
+                                    </svg>
+                                </button>
+                                <a href="projects.html#beatlist"
+                                    class="inline-flex items-center gap-2 text-sm font-semibold text-[#111827] transition hover:text-[#1f2937]">
+                                    <span data-i18n="projects.caseStudy">Case study</span>
+                                    <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"
+                                        aria-hidden="true">
+                                        <path d="m9 5 7 7-7 7" />
+                                    </svg>
+                                </a>
+                                <a href="https://beatlist.es" target="_blank" rel="noreferrer"
+                                    class="inline-flex items-center gap-2 rounded-full border border-[#111827]/30 px-5 py-2.5 text-sm font-semibold text-[#111827] transition hover:border-[#1f2937] hover:text-[#1f2937] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#1f2937]">
+                                    <span data-project-direct-link="beatlist">→ BeatList – Estadísticas y gestión
+                                        avanzada de playlists de Spotify.</span>
+                                    <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"
+                                        aria-hidden="true">
+                                        <path d="M5 12h14" />
+                                        <path d="m12 5 7 7-7 7" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article data-project-id="ponme"
+                        class="flex flex-col gap-10 rounded-3xl border border-slate-200 bg-white/90 p-8 shadow-lg shadow-slate-900/5 transition hover:-translate-y-1 hover:shadow-xl lg:flex-row"
+                        data-animate>
+                        <figure
+                            class="flex w-full items-center justify-center rounded-2xl border border-purple-200 bg-purple-50 p-6 lg:w-64">
+                            <img src="assets/ponme-logo.png" alt="Identidad del proyecto Ponme" width="160" height="160"
+                                loading="lazy" class="h-32 w-32 object-contain" />
+                        </figure>
+                        <div class="flex w-full flex-col gap-6">
+                            <div class="flex flex-wrap items-center gap-3">
+                                <span class="rounded-full bg-purple-100 px-3 py-1 text-xs font-semibold text-purple-700"
+                                    data-i18n="projects.ponme.badge">B2C / IA</span>
+                                <span
+                                    class="text-xs uppercase tracking-[0.25em] text-slate-400 font-['Space_Mono',_monospace]">FastAPI
+                                    · React · Gemini · Docker</span>
+                            </div>
+                            <div class="space-y-4">
+                                <h3 class="text-2xl font-semibold text-slate-900">Ponme</h3>
+                                <p class="text-base text-slate-600" data-i18n="projects.ponme.description">
+                                    Asistente de moda inteligente que digitaliza tu armario. Utiliza IA para sugerir
+                                    looks personalizados basándose en tu propia ropa y el contexto del día.
+                                </p>
+                                <ul class="space-y-2 text-sm text-slate-600">
+                                    <li class="flex items-start gap-3" data-i18n-html="projects.ponme.bullets.first">
+                                        <span class="mt-1 h-2 w-2 rounded-full bg-purple-500"></span>
+                                        Análisis multimodal con Google Gemini para catalogar prendas por estilo y
+                                        temporada.
+                                    </li>
+                                    <li class="flex items-start gap-3" data-i18n-html="projects.ponme.bullets.second">
+                                        <span class="mt-1 h-2 w-2 rounded-full bg-purple-500"></span>
+                                        Eliminación automática de fondos local para un catálogo de ropa profesional
+                                        y
+                                        limpio.
+                                    </li>
+                                    <li class="flex items-start gap-3" data-i18n-html="projects.ponme.bullets.third">
+                                        <span class="mt-1 h-2 w-2 rounded-full bg-purple-500"></span>
+                                        Generador de outfits adaptado a eventos, clima y estado de limpieza de las
+                                        prendas.
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="flex flex-wrap items-center gap-4">
+                                <button type="button" data-modal-target="modal-ponme"
+                                    class="inline-flex items-center gap-2 rounded-full bg-slate-900 px-5 py-2.5 text-sm font-semibold text-white transition hover:bg-slate-800 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-slate-900">
+                                    <span data-i18n="projects.cta">Leer más</span>
+                                    <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"
+                                        aria-hidden="true">
+                                        <path d="m9 5 7 7-7 7" />
+                                    </svg>
+                                </button>
+                                <a href="projects.html#ponme"
+                                    class="inline-flex items-center gap-2 text-sm font-semibold text-purple-600 transition hover:text-purple-700">
+                                    <span data-i18n="projects.caseStudy">Case study</span>
+                                    <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"
+                                        aria-hidden="true">
+                                        <path d="m9 5 7 7-7 7" />
+                                    </svg>
+                                </a>
+                                <a href="https://ponme.es" target="_blank" rel="noreferrer"
+                                    class="inline-flex items-center gap-2 rounded-full border border-purple-200 px-5 py-2.5 text-sm font-semibold text-purple-700 transition hover:border-purple-500 hover:text-purple-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-purple-500">
+                                    <span data-project-direct-link="ponme">→ Ponme – Tu armario inteligente
+                                        potenciado
+                                        por IA.</span>
+                                    <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"
+                                        aria-hidden="true">
+                                        <path d="M5 12h14" />
+                                        <path d="m12 5 7 7-7 7" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
                 </div>
             </div>
         </section>
@@ -736,7 +779,7 @@
                             <p class="font-medium text-slate-500">También puedes escribirme directamente a
                                 nicoabgv@gmail.com o explorar mi código en GitHub.</p>
                             <a class="flex items-center gap-2 text-blue-600 transition hover:text-blue-700"
-                                href="mailto:nicoabgv@gmail.com">
+                                href="mailto:nicoabgv@gmail.com" data-i18n="contact.directEmail">
                                 <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                                     stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"
                                     aria-hidden="true">
@@ -746,7 +789,8 @@
                                 nicoabgv@gmail.com
                             </a>
                             <a class="flex items-center gap-2 text-blue-600 transition hover:text-blue-700"
-                                href="https://github.com/nicoabgv" target="_blank" rel="noreferrer">
+                                href="https://github.com/nicoabgv" target="_blank" rel="noreferrer"
+                                data-i18n="contact.github">
                                 <svg class="h-4 w-4" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
                                     <path fill-rule="evenodd"
                                         d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.2 11.39.6.11.82-.26.82-.58 0-.29-.01-1.07-.02-2.09-3.34.73-4.04-1.61-4.04-1.61-.55-1.4-1.35-1.77-1.35-1.77-1.1-.76.08-.74.08-.74 1.22.08 1.86 1.25 1.86 1.25 1.08 1.85 2.84 1.32 3.53 1.01.11-.78.42-1.32.76-1.62-2.67-.3-5.48-1.34-5.48-5.95 0-1.31.47-2.38 1.24-3.22-.12-.3-.54-1.52.12-3.17 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 6 0c2.29-1.55 3.3-1.23 3.3-1.23.66 1.65.24 2.87.12 3.17.77.84 1.24 1.91 1.24 3.22 0 4.62-2.81 5.65-5.49 5.95.43.37.81 1.1.81 2.22 0 1.6-.02 2.88-.02 3.27 0 .32.22.7.83.58C20.56 21.79 24 17.29 24 12c0-6.63-5.37-12-12-12Z"
@@ -759,28 +803,34 @@
                     <div class="rounded-3xl border border-slate-200 bg-slate-50/70 p-8 shadow-sm" data-animate>
                         <form class="space-y-6" action="https://formsubmit.co/nicoabgv@gmail.com" method="POST">
                             <div>
-                                <label class="block text-sm font-semibold text-slate-700" for="name">Nombre</label>
+                                <label class="block text-sm font-semibold text-slate-700" for="name"
+                                    data-i18n="contact.nameLabel">Nombre</label>
                                 <input
                                     class="mt-2 w-full rounded-2xl border border-slate-200 bg-white px-4 py-3 text-sm text-slate-700 shadow-sm focus:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-200"
-                                    type="text" id="name" name="name" placeholder="Tu nombre" required />
+                                    type="text" id="name" name="name" placeholder="Tu nombre" required
+                                    data-i18n-attr-placeholder="contact.namePlaceholder" />
                             </div>
                             <div>
-                                <label class="block text-sm font-semibold text-slate-700" for="email">Email</label>
+                                <label class="block text-sm font-semibold text-slate-700" for="email"
+                                    data-i18n="contact.emailLabel">Email</label>
                                 <input
                                     class="mt-2 w-full rounded-2xl border border-slate-200 bg-white px-4 py-3 text-sm text-slate-700 shadow-sm focus:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-200"
-                                    type="email" id="email" name="email" placeholder="nombre@empresa.com" required />
+                                    type="email" id="email" name="email" placeholder="nombre@empresa.com" required
+                                    data-i18n-attr-placeholder="contact.emailPlaceholder" />
                             </div>
                             <div>
-                                <label class="block text-sm font-semibold text-slate-700" for="message">Proyecto</label>
+                                <label class="block text-sm font-semibold text-slate-700" for="message"
+                                    data-i18n="contact.messageLabel">Proyecto</label>
                                 <textarea
                                     class="mt-2 min-h-[140px] w-full rounded-2xl border border-slate-200 bg-white px-4 py-3 text-sm text-slate-700 shadow-sm focus:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-200"
                                     id="message" name="message"
-                                    placeholder="Cuéntame objetivos, plazos o retos técnicos" required></textarea>
+                                    placeholder="Cuéntame objetivos, plazos o retos técnicos" required
+                                    data-i18n-attr-placeholder="contact.messagePlaceholder"></textarea>
                             </div>
                             <input type="hidden" name="_captcha" value="false" />
                             <button type="submit"
                                 class="inline-flex w-full items-center justify-center gap-2 rounded-full bg-blue-600 px-6 py-3 text-sm font-semibold text-white shadow-lg shadow-blue-600/20 transition hover:bg-blue-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600">
-                                <span data-locale-element="contact.submit">Enviar mensaje</span>
+                                <span data-i18n="contact.submit">Enviar mensaje</span>
                                 <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                                     stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"
                                     aria-hidden="true">
@@ -798,12 +848,15 @@
     <footer class="border-t border-slate-200 bg-white/80">
         <div
             class="mx-auto flex max-w-6xl flex-col gap-4 px-6 py-8 text-sm text-slate-500 md:flex-row md:items-center md:justify-between">
-            <p>&copy; <span id="year"></span> Nicolás Álvarez. Todos los derechos reservados.</p>
+            <p>&copy; <span id="year"></span> Nicolás Álvarez. <span data-i18n="common.footer.rights"></span>Todos los
+                derechos reservados.</span></p>
             <div class="flex flex-wrap items-center gap-4">
-                <a class="transition hover:text-blue-600" href="projects.html">Case studies</a>
+                <a class="transition hover:text-blue-600" href="projects.html"
+                    data-i18n="projects.index.caseStudies">Case studies</a>
                 <a class="transition hover:text-blue-600" href="https://github.com/nicoabgv" target="_blank"
-                    rel="noreferrer">GitHub</a>
-                <a class="transition hover:text-blue-600" href="mailto:nicoabgv@gmail.com">Contacto directo</a>
+                    rel="noreferrer" data-i18n="common.footer.github">GitHub</a>
+                <a class="transition hover:text-blue-600" href="mailto:nicoabgv@gmail.com"
+                    data-i18n="common.footer.contact">Contacto directo</a>
             </div>
         </div>
     </footer>
@@ -815,9 +868,10 @@
             class="relative z-10 max-h-[90vh] w-full max-w-3xl overflow-y-auto rounded-3xl border border-slate-200 bg-white p-8 shadow-2xl">
             <div class="flex items-start justify-between gap-6">
                 <div>
-                    <p class="text-xs font-semibold uppercase tracking-[0.3em] text-slate-500">Kobra</p>
-                    <h3 class="mt-2 text-2xl font-semibold text-slate-900">Plataforma financiera que sostiene el día a
-                        día de Cybersur.</h3>
+                    <p class="text-xs font-semibold uppercase tracking-[0.3em] text-slate-500"
+                        data-i18n="index.modals.kobra.tag">Kobra</p>
+                    <h3 class="mt-2 text-2xl font-semibold text-slate-900" data-i18n="index.modals.kobra.title">
+                        Plataforma financiera que sostiene el día a día de Cybersur.</h3>
                 </div>
                 <button type="button"
                     class="rounded-full border border-slate-200 p-2 text-slate-500 transition hover:border-slate-400 hover:text-slate-700"
@@ -829,38 +883,40 @@
                 </button>
             </div>
             <div class="mt-6 space-y-6 text-sm text-slate-600">
-                <p>
+                <p data-i18n-html="index.modals.kobra.paragraph1">
                     Kobra es la solución a medida que construí para Cybersur. Con un stack de <strong
                         data-i18n="stack.fastapi"></strong>, centraliza facturación, cobros y notificaciones para que el
                     equipo financiero trabaje con información coherente y actualizada.
                 </p>
-                <p>
+                <p data-i18n-html="index.modals.kobra.paragraph2">
                     Los cronjobs programados gestionan exportaciones y limpiezas de datos, mientras que los pipelines de
                     avisos y recordatorios dejan registro de cada acción. Todo el flujo está pensado para dar
                     visibilidad inmediata y reducir tareas manuales repetitivas.
                 </p>
                 <ul class="space-y-2">
-                    <li class="flex items-start gap-3">
+                    <li class="flex items-start gap-3" data-i18n-html="index.modals.kobra.bullets.first">
                         <span class="mt-1 h-2 w-2 rounded-full bg-[#f28d1f]"></span>
                         Workflows automáticos que reducen drásticamente los tiempos de seguimiento y cobranza.
                     </li>
-                    <li class="flex items-start gap-3">
+                    <li class="flex items-start gap-3" data-i18n-html="index.modals.kobra.bullets.second">
                         <span class="mt-1 h-2 w-2 rounded-full bg-[#f28d1f]"></span>
                         Cronjobs trazables para exportaciones y rutinas de limpieza que mantienen los datos
                         consistentes.
                     </li>
-                    <li class="flex items-start gap-3">
+                    <li class="flex items-start gap-3" data-i18n-html="index.modals.kobra.bullets.third">
                         <span class="mt-1 h-2 w-2 rounded-full bg-[#f28d1f]"></span>
                         Paneles internos con métricas esenciales para el seguimiento de cobros y pendientes.
                     </li>
                 </ul>
-                <p class="mt-4 text-sm text-slate-600">Siguiente iteración: ampliar reportes financieros internos y
+                <p class="mt-4 text-sm text-slate-600" data-i18n="index.modals.kobra.next">Siguiente iteración: ampliar
+                    reportes financieros internos y
                     automatizar conciliaciones.</p>
                 <details class="rounded-2xl border border-dashed border-[#F9A8A3]/60 bg-[#FDEAEA]/60 p-4">
-                    <summary class="cursor-pointer text-xs font-semibold uppercase tracking-[0.3em] text-slate-500">
+                    <summary class="cursor-pointer text-xs font-semibold uppercase tracking-[0.3em] text-slate-500"
+                        data-i18n="index.modals.kobra.diagram">
                         Diagrama técnico</summary>
-                    <pre
-                        class="mt-3 whitespace-pre-wrap rounded-xl bg-white/80 p-4 font-['Space_Mono',_monospace] text-xs text-slate-700">Equipo Cybersur
+                    <pre class="mt-3 whitespace-pre-wrap rounded-xl bg-white/80 p-4 font-['Space_Mono',_monospace] text-xs text-slate-700"
+                        data-i18n="index.modals.kobra.diagramContent">Equipo Cybersur
     ↓
 FastAPI API → MySQL
     │
@@ -877,9 +933,10 @@ FastAPI API → MySQL
             class="relative z-10 max-h-[90vh] w-full max-w-3xl overflow-y-auto rounded-3xl border border-slate-200 bg-white p-8 shadow-2xl">
             <div class="flex items-start justify-between gap-6">
                 <div>
-                    <p class="text-xs font-semibold uppercase tracking-[0.3em] text-slate-500">Trato</p>
-                    <h3 class="mt-2 text-2xl font-semibold text-slate-900">CRM ágil para presupuestos, seguimientos y
-                        recordatorios.</h3>
+                    <p class="text-xs font-semibold uppercase tracking-[0.3em] text-slate-500"
+                        data-i18n="index.modals.trato.tag">Trato</p>
+                    <h3 class="mt-2 text-2xl font-semibold text-slate-900" data-i18n="index.modals.trato.title">CRM ágil
+                        para presupuestos, seguimientos y recordatorios.</h3>
                 </div>
                 <button type="button"
                     class="rounded-full border border-slate-200 p-2 text-slate-500 transition hover:border-slate-400 hover:text-slate-700"
@@ -891,37 +948,39 @@ FastAPI API → MySQL
                 </button>
             </div>
             <div class="mt-6 space-y-6 text-sm text-slate-600">
-                <p>
+                <p data-i18n-html="index.modals.trato.paragraph1">
                     Trato es el CRM ligero que centraliza presupuestos, seguimientos y recordatorios en un flujo rápido.
                     Sobre un backend en <strong data-i18n="stack.fastapi"></strong> desplegado con Uvicorn, permite a
                     los equipos comerciales trabajar sin fricciones ni tiempos muertos.
                 </p>
-                <p>
+                <p data-i18n-html="index.modals.trato.paragraph2">
                     Las invitaciones por código controlan el alta de empresas y usuarios, mientras que las tareas en
                     Celery automatizan recordatorios y resúmenes diarios. El panel prioriza la velocidad operativa en
                     dispositivos de escritorio y móviles.
                 </p>
                 <ul class="space-y-2">
-                    <li class="flex items-start gap-3">
+                    <li class="flex items-start gap-3" data-i18n-html="index.modals.trato.bullets.first">
                         <span class="mt-1 h-2 w-2 rounded-full bg-[#F97068]"></span>
                         Registro guiado de presupuestos con estados personalizables y comentarios por oportunidad.
                     </li>
-                    <li class="flex items-start gap-3">
+                    <li class="flex items-start gap-3" data-i18n-html="index.modals.trato.bullets.second">
                         <span class="mt-1 h-2 w-2 rounded-full bg-[#F97068]"></span>
                         Recordatorios automáticos vía email gestionados por Celery y notificaciones internas.
                     </li>
-                    <li class="flex items-start gap-3">
+                    <li class="flex items-start gap-3" data-i18n-html="index.modals.trato.bullets.third">
                         <span class="mt-1 h-2 w-2 rounded-full bg-[#F97068]"></span>
                         Despliegue contenerizado en el VPS principal con backups y monitoreo básico integrado.
                     </li>
                 </ul>
-                <p class="mt-4 text-sm text-slate-600">Próximos pasos: ampliar métricas de conversión e integrar
+                <p class="mt-4 text-sm text-slate-600" data-i18n="index.modals.trato.next">Próximos pasos: ampliar
+                    métricas de conversión e integrar
                     reportes automáticos para dirección.</p>
                 <details class="rounded-2xl border border-dashed border-[#F9A8A3]/60 bg-[#FDEAEA]/60 p-4">
-                    <summary class="cursor-pointer text-xs font-semibold uppercase tracking-[0.3em] text-slate-500">
+                    <summary class="cursor-pointer text-xs font-semibold uppercase tracking-[0.3em] text-slate-500"
+                        data-i18n="index.modals.trato.diagram">
                         Diagrama técnico</summary>
-                    <pre
-                        class="mt-3 whitespace-pre-wrap rounded-xl bg-white/80 p-4 font-['Space_Mono',_monospace] text-xs text-slate-700">Empresas invitadas
+                    <pre class="mt-3 whitespace-pre-wrap rounded-xl bg-white/80 p-4 font-['Space_Mono',_monospace] text-xs text-slate-700"
+                        data-i18n="index.modals.trato.diagramContent">Empresas invitadas
     ↓
 FastAPI + Uvicorn → MySQL
     │
@@ -938,9 +997,10 @@ FastAPI + Uvicorn → MySQL
             class="relative z-10 max-h-[90vh] w-full max-w-3xl overflow-y-auto rounded-3xl border border-slate-200 bg-white p-8 shadow-2xl">
             <div class="flex items-start justify-between gap-6">
                 <div>
-                    <p class="text-xs font-semibold uppercase tracking-[0.3em] text-slate-500">BeatList</p>
-                    <h3 class="mt-2 text-2xl font-semibold text-slate-900">Gestión profesional de playlists con sello
-                        oficial de Spotify.</h3>
+                    <p class="text-xs font-semibold uppercase tracking-[0.3em] text-slate-500"
+                        data-i18n="index.modals.beatlist.tag">BeatList</p>
+                    <h3 class="mt-2 text-2xl font-semibold text-slate-900" data-i18n="index.modals.beatlist.title">
+                        Gestión profesional de playlists con sello oficial de Spotify.</h3>
                 </div>
                 <button type="button"
                     class="rounded-full border border-slate-200 p-2 text-slate-500 transition hover:border-slate-400 hover:text-slate-700"
@@ -952,41 +1012,43 @@ FastAPI + Uvicorn → MySQL
                 </button>
             </div>
             <div class="mt-6 space-y-6 text-sm text-slate-600">
-                <p>
+                <p data-i18n-html="index.modals.beatlist.paragraph1">
                     BeatList es la plataforma para melómanos, curadores y creadores que necesitan algo más potente que
                     el gestor nativo de Spotify. Reúne administración avanzada, descubrimiento y analítica en una
                     experiencia fluida.
                 </p>
-                <p>
+                <p data-i18n-html="index.modals.beatlist.paragraph2">
                     Gracias a la integración oficial con la <strong data-i18n="stack.spotifyapi"></strong> y a la
                     autenticación <strong data-i18n="stack.oauth"></strong> aprobada, el backend en Flask accede a datos
                     extendidos con estabilidad profesional. El frontend en JavaScript ofrece dashboards y un reproductor
                     web con microinteracciones personalizadas.
                 </p>
                 <ul class="space-y-2">
-                    <li class="flex items-start gap-3">
+                    <li class="flex items-start gap-3" data-i18n-html="index.modals.beatlist.bullets.first">
                         <span class="mt-1 h-2 w-2 rounded-full bg-[#111827]"></span>
                         Fusión, depuración y reorganización de playlists con reglas inteligentes basadas en métricas
                         como energía o bailabilidad.
                     </li>
-                    <li class="flex items-start gap-3">
+                    <li class="flex items-start gap-3" data-i18n-html="index.modals.beatlist.bullets.second">
                         <span class="mt-1 h-2 w-2 rounded-full bg-[#111827]"></span>
                         Motor de recomendaciones por artistas y géneros favoritos, sumado a dashboards que muestran
                         hábitos de escucha.
                     </li>
-                    <li class="flex items-start gap-3">
+                    <li class="flex items-start gap-3" data-i18n-html="index.modals.beatlist.bullets.third">
                         <span class="mt-1 h-2 w-2 rounded-full bg-[#111827]"></span>
                         Análisis gestionados con Celery para procesar datos en segundo plano y ofrecer métricas precisas
                         sin afectar la experiencia del usuario.
                     </li>
                 </ul>
-                <p class="mt-4 text-sm text-slate-600">Posibles evoluciones: sumar modo colaborativo o exportaciones de
+                <p class="mt-4 text-sm text-slate-600" data-i18n="index.modals.beatlist.next">Posibles evoluciones:
+                    sumar modo colaborativo o exportaciones de
                     insights en futuras versiones.</p>
                 <details class="rounded-2xl border border-dashed border-slate-200 bg-slate-50/80 p-4">
-                    <summary class="cursor-pointer text-xs font-semibold uppercase tracking-[0.3em] text-slate-500">
+                    <summary class="cursor-pointer text-xs font-semibold uppercase tracking-[0.3em] text-slate-500"
+                        data-i18n="index.modals.beatlist.diagram">
                         Diagrama técnico</summary>
-                    <pre
-                        class="mt-3 whitespace-pre-wrap rounded-xl bg-white/80 p-4 font-['Space_Mono',_monospace] text-xs text-slate-700">Cliente web
+                    <pre class="mt-3 whitespace-pre-wrap rounded-xl bg-white/80 p-4 font-['Space_Mono',_monospace] text-xs text-slate-700"
+                        data-i18n="index.modals.beatlist.diagramContent">Cliente web
     ↓
 Flask API (OAuth 2.0 Spotify)
     ↓
@@ -1004,9 +1066,10 @@ Dashboards JS + Reproductor</pre>
             class="relative z-10 max-h-[90vh] w-full max-w-3xl overflow-y-auto rounded-3xl border border-slate-200 bg-white p-8 shadow-2xl">
             <div class="flex items-start justify-between gap-6">
                 <div>
-                    <p class="text-xs font-semibold uppercase tracking-[0.3em] text-slate-500">MesasYa</p>
-                    <h3 class="mt-2 text-2xl font-semibold text-slate-900">Reservas inteligentes para cadenas de
-                        restauración.</h3>
+                    <p class="text-xs font-semibold uppercase tracking-[0.3em] text-slate-500"
+                        data-i18n="index.modals.mesaysa.tag">MesasYa</p>
+                    <h3 class="mt-2 text-2xl font-semibold text-slate-900" data-i18n="index.modals.mesaysa.title">
+                        Reservas inteligentes para cadenas de restauración.</h3>
                 </div>
                 <button type="button"
                     class="rounded-full border border-slate-200 p-2 text-slate-500 transition hover:border-slate-400 hover:text-slate-700"
@@ -1018,37 +1081,39 @@ Dashboards JS + Reproductor</pre>
                 </button>
             </div>
             <div class="mt-6 space-y-6 text-sm text-slate-600">
-                <p>
+                <p data-i18n-html="index.modals.mesaysa.paragraph1">
                     MesasYa es una plataforma <strong data-i18n="stack.saas"></strong> que digitaliza la gestión de
                     reservas para restaurantes con múltiples sedes. Ofrece control granular de ocupación, automatización
                     de comunicaciones y dashboards listos para el gestor.
                 </p>
-                <p>
+                <p data-i18n-html="index.modals.mesaysa.paragraph2">
                     Con <strong data-i18n="stack.flaskcelery"></strong> como base, la solución se despliega con Docker
                     Compose y buenas prácticas de seguridad, manteniendo workflows personalizables por zona, servicio y
                     equipo. Las analíticas y exportaciones se adaptan a las decisiones del negocio.
                 </p>
                 <ul class="space-y-2">
-                    <li class="flex items-start gap-3">
+                    <li class="flex items-start gap-3" data-i18n-html="index.modals.mesaysa.bullets.first">
                         <span class="mt-1 h-2 w-2 rounded-full bg-[#589E8C]"></span>
                         Planos de sala interactivos y configurables por sede, zona y servicio.
                     </li>
-                    <li class="flex items-start gap-3">
+                    <li class="flex items-start gap-3" data-i18n-html="index.modals.mesaysa.bullets.second">
                         <span class="mt-1 h-2 w-2 rounded-full bg-[#589E8C]"></span>
                         Notificaciones automáticas para equipos internos y clientes finales.
                     </li>
-                    <li class="flex items-start gap-3">
+                    <li class="flex items-start gap-3" data-i18n-html="index.modals.mesaysa.bullets.third">
                         <span class="mt-1 h-2 w-2 rounded-full bg-[#589E8C]"></span>
                         Indicadores de demanda, capacidad y rendimiento exportables para decisiones estratégicas.
                     </li>
                 </ul>
-                <p class="mt-4 text-sm text-slate-600">Próximos pasos: integrar informes automáticos y seguir mejorando
+                <p class="mt-4 text-sm text-slate-600" data-i18n="index.modals.mesaysa.next">Próximos pasos: integrar
+                    informes automáticos y seguir mejorando
                     la experiencia del gestor.</p>
                 <details class="rounded-2xl border border-dashed border-slate-200 bg-slate-50/80 p-4">
-                    <summary class="cursor-pointer text-xs font-semibold uppercase tracking-[0.3em] text-slate-500">
+                    <summary class="cursor-pointer text-xs font-semibold uppercase tracking-[0.3em] text-slate-500"
+                        data-i18n="index.modals.mesaysa.diagram">
                         Diagrama técnico</summary>
-                    <pre
-                        class="mt-3 whitespace-pre-wrap rounded-xl bg-white/80 p-4 font-['Space_Mono',_monospace] text-xs text-slate-700">Staff y reservas online
+                    <pre class="mt-3 whitespace-pre-wrap rounded-xl bg-white/80 p-4 font-['Space_Mono',_monospace] text-xs text-slate-700"
+                        data-i18n="index.modals.mesaysa.diagramContent">Staff y reservas online
     ↓
 Flask API → MySQL
     │
@@ -1065,9 +1130,10 @@ Flask API → MySQL
             class="relative z-10 max-h-[90vh] w-full max-w-3xl overflow-y-auto rounded-3xl border border-slate-200 bg-white p-8 shadow-2xl">
             <div class="flex items-start justify-between gap-6">
                 <div>
-                    <p class="text-xs font-semibold uppercase tracking-[0.3em] text-slate-500">OrderYa</p>
-                    <h3 class="mt-2 text-2xl font-semibold text-slate-900">Coordinación total entre producción y puntos
-                        de venta.</h3>
+                    <p class="text-xs font-semibold uppercase tracking-[0.3em] text-slate-500"
+                        data-i18n="index.modals.orderya.tag">OrderYa</p>
+                    <h3 class="mt-2 text-2xl font-semibold text-slate-900" data-i18n="index.modals.orderya.title">
+                        Coordinación total entre producción y puntos de venta.</h3>
                 </div>
                 <button type="button"
                     class="rounded-full border border-slate-200 p-2 text-slate-500 transition hover:border-slate-400 hover:text-slate-700"
@@ -1079,37 +1145,38 @@ Flask API → MySQL
                 </button>
             </div>
             <div class="mt-6 space-y-6 text-sm text-slate-600">
-                <p>
+                <p data-i18n-html="index.modals.orderya.paragraph1">
                     OrderYa es la respuesta a la gestión caótica de pedidos en el sector de la alimentación y retail.
                     Centraliza todas las solicitudes de las tiendas en un único panel para el obrador, generando
                     automáticamente las listas de producción y reparto necesarias para la jornada.
                 </p>
-                <p>
+                <p data-i18n-html="index.modals.orderya.paragraph2">
                     Construido con <strong data-i18n="stack.fastapi"></strong> para máxima velocidad, permite gestionar
                     catálogos complejos, precios y usuarios con roles diferenciados. Todo ello desplegado de forma
-                    segura y
-                    escalable.
+                    segura y escalable.
                 </p>
                 <ul class="space-y-2">
-                    <li class="flex items-start gap-3">
+                    <li class="flex items-start gap-3" data-i18n-html="index.modals.orderya.bullets.first">
                         <span class="mt-1 h-2 w-2 rounded-full bg-[#ea580c]"></span>
                         Portal unificado de pedidos que elimina errores de transcripción.
                     </li>
-                    <li class="flex items-start gap-3">
+                    <li class="flex items-start gap-3" data-i18n-html="index.modals.orderya.bullets.second">
                         <span class="mt-1 h-2 w-2 rounded-full bg-[#ea580c]"></span>
                         Generación automática de hojas de producción y albaranes.
                     </li>
-                    <li class="flex items-start gap-3">
+                    <li class="flex items-start gap-3" data-i18n-html="index.modals.orderya.bullets.third">
                         <span class="mt-1 h-2 w-2 rounded-full bg-[#ea580c]"></span>
                         Infraestructura robusta con Docker preparada para múltiples clientes.
                     </li>
                 </ul>
-                <p class="mt-4 text-sm text-slate-600">Evolución: Integración futura con sistemas de facturación.</p>
+                <p class="mt-4 text-sm text-slate-600" data-i18n="index.modals.orderya.next">Evolución: Integración
+                    futura con sistemas de facturación.</p>
                 <details class="rounded-2xl border border-dashed border-slate-200 bg-slate-50/80 p-4">
-                    <summary class="cursor-pointer text-xs font-semibold uppercase tracking-[0.3em] text-slate-500">
+                    <summary class="cursor-pointer text-xs font-semibold uppercase tracking-[0.3em] text-slate-500"
+                        data-i18n="index.modals.orderya.diagram">
                         Diagrama técnico</summary>
-                    <pre
-                        class="mt-3 whitespace-pre-wrap rounded-xl bg-white/80 p-4 font-['Space_Mono',_monospace] text-xs text-slate-700">Tiendas / Obrador
+                    <pre class="mt-3 whitespace-pre-wrap rounded-xl bg-white/80 p-4 font-['Space_Mono',_monospace] text-xs text-slate-700"
+                        data-i18n="index.modals.orderya.diagramContent">Tiendas / Obrador
     ↓
 FastAPI
     ↓
@@ -1125,10 +1192,10 @@ Producción</pre>
                 class="relative z-10 max-h-[90vh] w-full max-w-3xl overflow-y-auto rounded-3xl border border-slate-200 bg-white p-8 shadow-2xl">
                 <div class="flex items-start justify-between gap-6">
                     <div>
-                        <p class="text-xs font-semibold uppercase tracking-[0.3em] text-slate-500">MiCartaYa</p>
-                        <h3 class="mt-2 text-2xl font-semibold text-slate-900">Ecosistema digital completo para la
-                            gestión
-                            de restaurantes.</h3>
+                        <p class="text-xs font-semibold uppercase tracking-[0.3em] text-slate-500"
+                            data-i18n="index.modals.micartaya.tag">MiCartaYa</p>
+                        <h3 class="mt-2 text-2xl font-semibold text-slate-900" data-i18n="index.modals.micartaya.title">
+                            Ecosistema digital completo para la gestión de restaurantes.</h3>
                     </div>
                     <button type="button"
                         class="rounded-full border border-slate-200 p-2 text-slate-500 transition hover:border-slate-400 hover:text-slate-700"
@@ -1140,38 +1207,38 @@ Producción</pre>
                     </button>
                 </div>
                 <div class="mt-6 space-y-6 text-sm text-slate-600">
-                    <p>
+                    <p data-i18n-html="index.modals.micartaya.paragraph1">
                         MiCartaYa nace de la necesidad de modernizar la interacción entre restaurante y comensal. No es
-                        solo
-                        una carta QR; es un sistema bidireccional donde los pedidos fluyen directamente a la cocina
-                        mediante
-                        WebSockets, eliminando esperas y errores.
+                        solo una carta QR; es un sistema bidireccional donde los pedidos fluyen directamente a la cocina
+                        mediante WebSockets, eliminando esperas y errores.
                     </p>
-                    <p>
+                    <p data-i18n-html="index.modals.micartaya.paragraph2">
                         La plataforma permite a los gerentes actualizar precios, fotos y stock en segundos. Además, se
                         integra con impresoras térmicas para que las comandas salgan automáticamente en los centros de
                         preparación, cerrando el círculo de la digitalización operativa.
                     </p>
                     <ul class="space-y-2">
-                        <li class="flex items-start gap-3">
+                        <li class="flex items-start gap-3" data-i18n-html="index.modals.micartaya.bullets.first">
                             <span class="mt-1 h-2 w-2 rounded-full bg-blue-500"></span>
                             Gestión centralizada de cartas multiidioma con analítica de consumo.
                         </li>
-                        <li class="flex items-start gap-3">
+                        <li class="flex items-start gap-3" data-i18n-html="index.modals.micartaya.bullets.second">
                             <span class="mt-1 h-2 w-2 rounded-full bg-blue-500"></span>
                             Recepción de pedidos instantánea a través de canales WebSocket seguros.
                         </li>
-                        <li class="flex items-start gap-3">
+                        <li class="flex items-start gap-3" data-i18n-html="index.modals.micartaya.bullets.third">
                             <span class="mt-1 h-2 w-2 rounded-full bg-blue-500"></span>
                             Infraestructura basada en FastAPI y Docker, optimizada para baja latencia.
                         </li>
                     </ul>
-                    <p class="mt-4 text-sm text-slate-600">Evolución: Integración de pagos directos mediante Stripe.</p>
+                    <p class="mt-4 text-sm text-slate-600" data-i18n="index.modals.micartaya.next">Evolución:
+                        Integración de pagos directos mediante Stripe.</p>
                     <details class="rounded-2xl border border-dashed border-slate-200 bg-slate-50/80 p-4">
-                        <summary class="cursor-pointer text-xs font-semibold uppercase tracking-[0.3em] text-slate-500">
+                        <summary class="cursor-pointer text-xs font-semibold uppercase tracking-[0.3em] text-slate-500"
+                            data-i18n="index.modals.micartaya.diagram">
                             Diagrama técnico</summary>
-                        <pre
-                            class="mt-3 whitespace-pre-wrap rounded-xl bg-white/80 p-4 font-['Space_Mono',_monospace] text-xs text-slate-700">Comensal (App) ↔ WebSockets ↔ Backend (FastAPI)
+                        <pre class="mt-3 whitespace-pre-wrap rounded-xl bg-white/80 p-4 font-['Space_Mono',_monospace] text-xs text-slate-700"
+                            data-i18n="index.modals.micartaya.diagramContent">Comensal (App) ↔ WebSockets ↔ Backend (FastAPI)
                                     ↓
                                 MySQL DB
                                     ↓
@@ -1187,10 +1254,10 @@ Producción</pre>
                 class="relative z-10 max-h-[90vh] w-full max-w-3xl overflow-y-auto rounded-3xl border border-slate-200 bg-white p-8 shadow-2xl">
                 <div class="flex items-start justify-between gap-6">
                     <div>
-                        <p class="text-xs font-semibold uppercase tracking-[0.3em] text-slate-500">Ponme</p>
-                        <h3 class="mt-2 text-2xl font-semibold text-slate-900">Tu asistente personal de moda impulsado
-                            por
-                            Inteligencia Artificial.</h3>
+                        <p class="text-xs font-semibold uppercase tracking-[0.3em] text-slate-500"
+                            data-i18n="index.modals.ponme.tag">Ponme</p>
+                        <h3 class="mt-2 text-2xl font-semibold text-slate-900" data-i18n="index.modals.ponme.title">Tu
+                            asistente personal de moda impulsado por Inteligencia Artificial.</h3>
                     </div>
                     <button type="button"
                         class="rounded-full border border-slate-200 p-2 text-slate-500 transition hover:border-slate-400 hover:text-slate-700"
@@ -1202,40 +1269,39 @@ Producción</pre>
                     </button>
                 </div>
                 <div class="mt-6 space-y-6 text-sm text-slate-600">
-                    <p>
-                        Ponme reinventa la forma en que interactuamos con nuestro armario. Utilizando modelos de visión
-                        de
-                        vanguardia como Google Gemini, la aplicación analiza cada prenda que subes, extrayendo
-                        automáticamente atributos como color, tipo de cuello, estilo y temporada.
+                    <p data-i18n-html="index.modals.ponme.paragraph1">
+                        Ponme utiliza Inteligencia Artificial para digitalizar y gestionar tu armario personal.
+                        Mediante modelos de visión, analiza tus prendas y ofrece recomendaciones de outfits basadas
+                        en estilismo, clima y agenda.
                     </p>
-                    <p>
-                        El motor de sugerencias no solo mira la estética; combina tu catálogo personal con el clima
-                        local y
-                        el tipo de evento para proponerte el outfit perfecto. Además, cuenta con un sistema local de
-                        recorte
-                        de imágenes para asegurar que tu catálogo digital luzca siempre impecable.
+                    <p data-i18n-html="index.modals.ponme.paragraph2">
+                        Implementado con <strong>FastAPI</strong> y <strong>React</strong>, el núcleo de la
+                        inteligencia reside en la integración con <strong data-i18n="stack.gemini"></strong> para el
+                        análisis multimodal. Además, incluye procesamiento local de imágenes para la eliminación
+                        automática de fondos, garantizando un catálogo visual coherente y profesional.
                     </p>
                     <ul class="space-y-2">
-                        <li class="flex items-start gap-3">
+                        <li class="flex items-start gap-3" data-i18n-html="index.modals.ponme.bullets.first">
                             <span class="mt-1 h-2 w-2 rounded-full bg-purple-500"></span>
-                            Etiquetado inteligente de prendas mediante IA multimodal.
+                            Análisis multimodal con Google Gemini para catalogar prendas por estilo y temporada.
                         </li>
-                        <li class="flex items-start gap-3">
+                        <li class="flex items-start gap-3" data-i18n-html="index.modals.ponme.bullets.second">
                             <span class="mt-1 h-2 w-2 rounded-full bg-purple-500"></span>
-                            Remoción automática de fondos para un catálogo profesional.
+                            Eliminación automática de fondos local para un catálogo de ropa profesional y uniforme.
                         </li>
-                        <li class="flex items-start gap-3">
+                        <li class="flex items-start gap-3" data-i18n-html="index.modals.ponme.bullets.third">
                             <span class="mt-1 h-2 w-2 rounded-full bg-purple-500"></span>
-                            Algoritmo de recomendación adaptativo basado en contexto real.
+                            Generador de outfits adaptado a eventos, clima y estado de limpieza de las prendas.
                         </li>
                     </ul>
-                    <p class="mt-4 text-sm text-slate-600">Evolución: Modo "Probador Virtual" con realidad aumentada.
-                    </p>
+                    <p class="mt-4 text-sm text-slate-600" data-i18n="index.modals.ponme.next">Próximos pasos:
+                        planificador de maletas inteligente y sugerencias de compra basadas en huecos del armario.</p>
                     <details class="rounded-2xl border border-dashed border-slate-200 bg-slate-50/80 p-4">
-                        <summary class="cursor-pointer text-xs font-semibold uppercase tracking-[0.3em] text-slate-500">
+                        <summary class="cursor-pointer text-xs font-semibold uppercase tracking-[0.3em] text-slate-500"
+                            data-i18n="index.modals.ponme.diagram">
                             Diagrama técnico</summary>
-                        <pre
-                            class="mt-3 whitespace-pre-wrap rounded-xl bg-white/80 p-4 font-['Space_Mono',_monospace] text-xs text-slate-700">Usuario (React) ↔ FastAPI ↔ Gemini Vision API
+                        <pre class="mt-3 whitespace-pre-wrap rounded-xl bg-white/80 p-4 font-['Space_Mono',_monospace] text-xs text-slate-700"
+                            data-i18n="index.modals.ponme.diagramContent">Usuario (React) ↔ FastAPI ↔ Gemini Vision API
                                     ↓
                                 PostgreSQL
                                     ↓

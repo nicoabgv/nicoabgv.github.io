@@ -11,13 +11,13 @@
     <meta property="og:title" content="Case Studies · Nicolás Álvarez" />
     <meta property="og:description"
         content="Detalles técnicos y de negocio de mis proyectos: SaaS, IA con Gemini y plataformas musicales." />
-    <meta property="og:image" content="assets/logo.png" />
+    <meta property="og:image" content="assets/favicon.svg" />
     <meta property="og:url" content="https://nicoabgv.github.io/projects.html" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Case Studies · Nicolás Álvarez" />
     <meta name="twitter:description"
-        content="Profundiza en mis proyectos técnicos: arquitectura, flujos y roadmap detallado." />
-    <meta name="twitter:image" content="assets/logo.png" />
+        content="In-depth case studies for MesasYa, Trato, Kobra, and BeatList. Explore architecture, automation, and tangible results." />
+    <meta name="twitter:image" content="assets/favicon.svg" />
     <link rel="canonical" href="https://nicoabgv.github.io/projects.html" />
     <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -38,10 +38,10 @@
         <nav class="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
             <a href="index.html#hero"
                 class="flex items-center gap-2 text-lg font-semibold tracking-tight text-slate-900 transition hover:text-blue-600"
-                aria-label="Volver al inicio">
+                aria-label="Volver al inicio" data-i18n-attr-aria-label="common.nav.brandAria">
                 <span
                     class="flex h-10 w-10 items-center justify-center rounded-xl bg-slate-900 text-sm font-['Space_Mono',_monospace] font-bold uppercase tracking-widest text-white shadow-lg shadow-slate-900/10 transition group-hover:bg-blue-600">NA</span>
-                <span class="hidden sm:block">Portfolio</span>
+                <span class="hidden sm:block" data-i18n="common.nav.brandName">Portfolio</span>
             </a>
             <button type="button"
                 class="flex h-10 w-10 items-center justify-center rounded-full border border-slate-200 text-slate-700 transition hover:border-blue-500 hover:text-blue-600 lg:hidden"
@@ -53,12 +53,17 @@
                 </svg>
             </button>
             <div class="hidden items-center gap-4 text-sm font-medium text-slate-700 lg:flex">
-                <a class="transition hover:text-blue-600" href="#mesasya">MesasYa</a>
-                <a class="transition hover:text-blue-600" href="#micartaya">MiCartaYa</a>
-                <a class="transition hover:text-blue-600" href="#ponme">Ponme</a>
-                <a class="transition hover:text-blue-600" href="#beatlist">BeatList</a>
+                <a class="transition hover:text-blue-600" href="#mesasya" data-i18n="projects.nav.mesasya">MesasYa</a>
+                <a class="transition hover:text-blue-600" href="#micartaya"
+                    data-i18n="projects.nav.micartaya">MiCartaYa</a>
+                <a class="transition hover:text-blue-600" href="#orderya" data-i18n="projects.nav.orderya">OrderYa</a>
+                <a class="transition hover:text-blue-600" href="#trato" data-i18n="projects.nav.trato">Trato</a>
+                <a class="transition hover:text-blue-600" href="#kobra" data-i18n="projects.nav.kobra">Kobra</a>
+                <a class="transition hover:text-blue-600" href="#beatlist"
+                    data-i18n="projects.nav.beatlist">BeatList</a>
+                <a class="transition hover:text-blue-600" href="#ponme" data-i18n="projects.nav.ponme">Ponme</a>
                 <a class="inline-flex items-center gap-2 rounded-full border border-slate-200 px-4 py-2 text-xs font-semibold uppercase tracking-widest text-slate-700 transition hover:border-blue-500 hover:text-blue-600"
-                    href="index.html#contact">
+                    href="index.html#contact" data-i18n="common.nav.contact">
                     Contacto
                 </a>
                 <button type="button"
@@ -71,15 +76,17 @@
         <div id="mobile-nav" data-mobile-menu
             class="hidden border-t border-slate-200 bg-white/95 px-6 py-4 shadow-lg transition duration-300 lg:hidden">
             <div class="flex flex-col gap-3 text-sm font-medium text-slate-700">
-                <a class="transition hover:text-blue-600" href="#mesasya">MesasYa</a>
-                <a class="transition hover:text-blue-600" href="#micartaya">MiCartaYa</a>
-                <a class="transition hover:text-blue-600" href="#orderya">OrderYa</a>
-                <a class="transition hover:text-blue-600" href="#trato">Trato</a>
-                <a class="transition hover:text-blue-600" href="#kobra">Kobra</a>
-                <a class="transition hover:text-blue-600" href="#beatlist">BeatList</a>
-                <a class="transition hover:text-blue-600" href="#ponme">Ponme</a>
+                <a class="transition hover:text-blue-600" href="#mesasya" data-i18n="projects.nav.mesasya">MesasYa</a>
+                <a class="transition hover:text-blue-600" href="#micartaya"
+                    data-i18n="projects.nav.micartaya">MiCartaYa</a>
+                <a class="transition hover:text-blue-600" href="#orderya" data-i18n="projects.nav.orderya">OrderYa</a>
+                <a class="transition hover:text-blue-600" href="#trato" data-i18n="projects.nav.trato">Trato</a>
+                <a class="transition hover:text-blue-600" href="#kobra" data-i18n="projects.nav.kobra">Kobra</a>
+                <a class="transition hover:text-blue-600" href="#beatlist"
+                    data-i18n="projects.nav.beatlist">BeatList</a>
+                <a class="transition hover:text-blue-600" href="#ponme" data-i18n="projects.nav.ponme">Ponme</a>
                 <a class="inline-flex items-center gap-2 rounded-full border border-slate-200 px-4 py-2 text-xs font-semibold uppercase tracking-widest text-slate-700 transition hover:border-blue-500 hover:text-blue-600"
-                    href="index.html#contact">
+                    href="index.html#contact" data-i18n="common.nav.contact">
                     Contacto
                 </a>
                 <button type="button"
@@ -97,40 +104,104 @@
             </div>
             <div class="mx-auto max-w-6xl px-6">
                 <div class="flex flex-col gap-10 lg:flex-row lg:items-end lg:justify-between">
-                    <div class="space-y-6" data-animate>
-                        <p class="text-xs font-semibold uppercase tracking-[0.3em] text-slate-500">Case studies</p>
-                        <h1 class="text-4xl font-semibold text-slate-900 sm:text-5xl">De la visión al despliegue:
-                            historias de producto completas.</h1>
-                        <p class="max-w-3xl text-lg text-slate-600">
-                            Cada proyecto nace de un reto distinto. Aquí encontrarás las decisiones de arquitectura,
-                            flujos operativos y aprendizajes que permitieron lanzar soluciones confiables y medibles.
+                    <div class="w-full space-y-6" data-animate>
+                        <p class="text-xs font-semibold uppercase tracking-[0.4em] text-slate-500"
+                            data-i18n="projects.hero.label">Casos de estudio</p>
+                        <h1 class="text-4xl font-bold leading-tight text-slate-900 sm:text-5xl"
+                            data-i18n="projects.hero.title">
+                            Inmersión técnica en soluciones reales.
+                        </h1>
+                        <p class="max-w-3xl text-lg text-slate-600" data-i18n="projects.hero.description">
+                            Aquí detallo la arquitectura, los retos y los resultados de mis proyectos más relevantes.
+                            Cada solución está diseñada para escalar con seguridad y automatizar lo que antes era
+                            manual.
                         </p>
                     </div>
-                    <div class="rounded-3xl border border-slate-200 bg-white/80 p-6 shadow-sm" data-animate>
-                        <p class="text-xs font-semibold uppercase tracking-[0.3em] text-slate-500">Índice</p>
-                        <ul class="mt-4 space-y-3 text-sm text-slate-600">
-                            <li><a class="inline-flex items-center gap-2 text-slate-600 transition hover:text-[#1D494F]"
-                                    href="#mesasya">01 — MesasYa <span class="text-xs text-slate-400">SaaS
-                                        restauración</span></a></li>
-                            <li><a class="inline-flex items-center gap-2 text-slate-600 transition hover:text-blue-600"
-                                    href="#micartaya">02 — MiCartaYa <span class="text-xs text-slate-400">SaaS
-                                        restauración</span></a></li>
-                            <li><a class="inline-flex items-center gap-2 text-slate-600 transition hover:text-[#9a3412]"
-                                    href="#orderya">03 — OrderYa <span class="text-xs text-slate-400">SaaS
-                                        producción</span></a></li>
-                            <li><a class="inline-flex items-center gap-2 text-slate-600 transition hover:text-[#B4232A]"
-                                    href="#trato">04 — Trato <span class="text-xs text-slate-400">CRM
-                                        presupuestos</span></a></li>
-                            <li><a class="inline-flex items-center gap-2 text-slate-600 transition hover:text-[#f28d1f]"
-                                    href="#kobra">05 — Kobra <span class="text-xs text-slate-400">Fintech
-                                        interna</span></a></li>
-                            <li><a class="inline-flex items-center gap-2 text-slate-600 transition hover:text-[#111827]"
-                                    href="#beatlist">06 — BeatList <span class="text-xs text-slate-400">Spotify
-                                        Approved</span></a></li>
-                            <li><a class="inline-flex items-center gap-2 text-slate-600 transition hover:text-purple-600"
-                                    href="#ponme">07 — Ponme <span class="text-xs text-slate-400">IA / Moda</span></a>
-                            </li>
-                        </ul>
+                    <div class="rounded-3xl border border-slate-200 bg-white/90 p-8 shadow-md" data-animate>
+                        <p class="text-xs font-semibold uppercase tracking-[0.3em] text-slate-500"
+                            data-i18n="projects.hero.indexLabel">Índice de Proyectos
+                        </p>
+                        <nav class="mt-6">
+                            <ul class="grid gap-2 text-sm">
+                                <li>
+                                    <a class="group flex items-center justify-between rounded-xl p-3 transition hover:bg-[#9DE1C1]/10"
+                                        href="#mesasya">
+                                        <div class="flex items-center gap-3">
+                                            <span class="font-mono text-xs text-slate-400">01</span>
+                                            <span
+                                                class="font-semibold text-slate-700 group-hover:text-[#1D494F]">MesasYa</span>
+                                        </div>
+                                        <span class="text-[10px] uppercase tracking-wider text-slate-400">SaaS</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="group flex items-center justify-between rounded-xl p-3 transition hover:bg-blue-50"
+                                        href="#micartaya">
+                                        <div class="flex items-center gap-3">
+                                            <span class="font-mono text-xs text-slate-400">02</span>
+                                            <span
+                                                class="font-semibold text-slate-700 group-hover:text-blue-600">MiCartaYa</span>
+                                        </div>
+                                        <span class="text-[10px] uppercase tracking-wider text-slate-400">SaaS</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="group flex items-center justify-between rounded-xl p-3 transition hover:bg-orange-50"
+                                        href="#orderya">
+                                        <div class="flex items-center gap-3">
+                                            <span class="font-mono text-xs text-slate-400">03</span>
+                                            <span
+                                                class="font-semibold text-slate-700 group-hover:text-orange-600">OrderYa</span>
+                                        </div>
+                                        <span class="text-[10px] uppercase tracking-wider text-slate-400">Prod</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="group flex items-center justify-between rounded-xl p-3 transition hover:bg-red-50"
+                                        href="#trato">
+                                        <div class="flex items-center gap-3">
+                                            <span class="font-mono text-xs text-slate-400">04</span>
+                                            <span
+                                                class="font-semibold text-slate-700 group-hover:text-red-600">Trato</span>
+                                        </div>
+                                        <span class="text-[10px] uppercase tracking-wider text-slate-400">CRM</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="group flex items-center justify-between rounded-xl p-3 transition hover:bg-amber-50"
+                                        href="#kobra">
+                                        <div class="flex items-center gap-3">
+                                            <span class="font-mono text-xs text-slate-400">05</span>
+                                            <span
+                                                class="font-semibold text-slate-700 group-hover:text-amber-600">Kobra</span>
+                                        </div>
+                                        <span class="text-[10px] uppercase tracking-wider text-slate-400">Fintech</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="group flex items-center justify-between rounded-xl p-3 transition hover:bg-slate-100"
+                                        href="#beatlist">
+                                        <div class="flex items-center gap-3">
+                                            <span class="font-mono text-xs text-slate-400">06</span>
+                                            <span
+                                                class="font-semibold text-slate-700 group-hover:text-slate-900">BeatList</span>
+                                        </div>
+                                        <span class="text-[10px] uppercase tracking-wider text-slate-400">Music</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="group flex items-center justify-between rounded-xl p-3 transition hover:bg-purple-50"
+                                        href="#ponme">
+                                        <div class="flex items-center gap-3">
+                                            <span class="font-mono text-xs text-slate-400">07</span>
+                                            <span
+                                                class="font-semibold text-slate-700 group-hover:text-purple-600">Ponme</span>
+                                        </div>
+                                        <span class="text-[10px] uppercase tracking-wider text-slate-400">IA</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
                     </div>
                 </div>
             </div>
@@ -140,31 +211,27 @@
             <div class="mx-auto max-w-6xl space-y-12 px-6">
                 <div class="flex flex-col gap-6 md:flex-row md:items-center md:justify-between" data-animate>
                     <div class="space-y-3">
-                        <p class="text-xs font-semibold uppercase tracking-[0.3em] text-slate-500">Case study 01</p>
-                        <h2 class="text-3xl font-semibold text-slate-900 sm:text-4xl">MesasYa — SaaS de reservas
-                            multi-sede</h2>
+                        <p class="text-xs font-semibold uppercase tracking-[0.3em] text-slate-500"
+                            data-i18n="projects.mesasya.label">Case study 01</p>
+                        <h2 class="text-3xl font-semibold text-slate-900 sm:text-4xl"
+                            data-i18n="projects.mesasya.title">MesasYa — SaaS de reservas mulit-sede</h2>
                     </div>
                     <img src="assets/mesasya-logo.svg" alt="Logo MesasYa" width="140" height="140" loading="lazy"
                         class="h-24 w-24 rounded-3xl border border-[#9DE1C1]/70 bg-[#F4FFF9] p-4" />
                 </div>
                 <div class="grid gap-10 lg:grid-cols-[1.4fr,1fr]" data-animate>
                     <article class="space-y-6 text-base text-slate-600">
-                        <p>
-                            MesasYa es un <strong data-i18n="stack.saas"></strong> que digitaliza la gestión de reservas
-                            para restaurantes con múltiples sedes. Reúne planos interactivos, reglas personalizables y
-                            notificaciones en tiempo real para que cada servicio funcione sin sorpresas.
-                        </p>
-                        <p>
-                            El backend basado en <strong data-i18n="stack.flaskcelery"></strong> utiliza Docker Compose
-                            y buenas prácticas de seguridad. Cada restaurante configura zonas, servicios, idiomas y
-                            workflows específicos sin perder estabilidad ni trazabilidad.
+                        <p data-i18n="projects.mesasya.description">
+                            Plataforma integral de reservas que elimina el caos operativo. Digitaliza la sala y
+                            automatiza el contacto con el cliente.
                         </p>
                         <div class="rounded-3xl border border-[#9DE1C1]/60 bg-[#F4FFF9] p-5 shadow-sm">
                             <p class="text-xs font-semibold uppercase tracking-[0.3em] text-[#1D494F]"
-                                data-direct-access-label>Acceso directo</p>
+                                data-i18n="projects.common.directAccess">Acceso directo</p>
                             <a href="https://mesasya.es" target="_blank" rel="noreferrer"
                                 class="mt-3 inline-flex items-center gap-2 text-sm font-semibold text-[#1D494F] transition hover:text-[#589E8C]">
-                                <span data-direct-access-link="mesasya">→ MesasYa – Plataforma SaaS de gestión de
+                                <span data-i18n="projects.mesasya.directAccess">→ MesasYa – Plataforma SaaS de gestión
+                                    de
                                     reservas para restaurantes.</span>
                                 <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                                     stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"
@@ -175,16 +242,18 @@
                             </a>
                         </div>
                         <div class="rounded-3xl border border-[#9DE1C1]/40 bg-[#F4FFF9] p-6 shadow-sm">
-                            <h3 class="text-sm font-semibold uppercase tracking-widest text-[#1D494F]">Impacto operativo
+                            <h3 class="text-sm font-semibold uppercase tracking-widest text-[#1D494F]"
+                                data-i18n="projects.mesasya.impact">Impacto operativo
                             </h3>
                             <ul class="mt-4 space-y-3">
-                                <li class="flex items-start gap-3"><span
+                                <li class="flex items-start gap-3" data-i18n-html="projects.mesasya.bullets.first"><span
                                         class="mt-1 h-2 w-2 rounded-full bg-[#589E8C]"></span>Planos de sala
                                     configurables con reglas por sede, zonas y eventos especiales.</li>
-                                <li class="flex items-start gap-3"><span
-                                        class="mt-1 h-2 w-2 rounded-full bg-[#589E8C]"></span>Asignación automática de
-                                    mesas y notificaciones en tiempo real para staff y clientes.</li>
-                                <li class="flex items-start gap-3"><span
+                                <li class="flex items-start gap-3" data-i18n-html="projects.mesasya.bullets.second">
+                                    <span class="mt-1 h-2 w-2 rounded-full bg-[#589E8C]"></span>Asignación automática de
+                                    mesas y notificaciones en tiempo real para staff y clientes.
+                                </li>
+                                <li class="flex items-start gap-3" data-i18n-html="projects.mesasya.bullets.third"><span
                                         class="mt-1 h-2 w-2 rounded-full bg-[#589E8C]"></span>Exportaciones y métricas
                                     listas para BI que acompañan las decisiones del negocio.</li>
                             </ul>
@@ -192,7 +261,8 @@
                     </article>
                     <aside class="space-y-6">
                         <div class="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm">
-                            <h3 class="text-sm font-semibold uppercase tracking-widest text-slate-500">Stack</h3>
+                            <h3 class="text-sm font-semibold uppercase tracking-widest text-slate-500"
+                                data-i18n="projects.mesasya.stack">Stack</h3>
                             <ul class="mt-4 space-y-2 text-sm text-slate-600">
                                 <li>Flask · Python</li>
                                 <li>Celery</li>
@@ -201,18 +271,20 @@
                             </ul>
                         </div>
                         <div class="rounded-3xl border border-dashed border-[#589E8C]/40 bg-[#9DE1C1]/15 p-6">
-                            <h3 class="text-sm font-semibold uppercase tracking-widest text-[#1D494F]">Próximos pasos
+                            <h3 class="text-sm font-semibold uppercase tracking-widest text-[#1D494F]"
+                                data-i18n="projects.mesasya.caseStudy.nextTitle">Próximos pasos
                             </h3>
-                            <p class="mt-2 text-sm text-slate-600">Integración de informes automáticos y optimización de
-                                la experiencia de gestión.</p>
+                            <p class="mt-2 text-sm text-slate-600" data-i18n="projects.mesasya.caseStudy.nextTag">
+                                Integración de informes automáticos y optimización de la experiencia de gestión.</p>
                         </div>
                         <details
                             class="rounded-3xl border border-dashed border-[#9DE1C1]/60 bg-[#F4FFF9] p-6 shadow-sm">
                             <summary
-                                class="cursor-pointer text-sm font-semibold uppercase tracking-widest text-[#1D494F]">
+                                class="cursor-pointer text-sm font-semibold uppercase tracking-widest text-[#1D494F]"
+                                data-i18n="projects.mesasya.schema">
                                 Esquema técnico</summary>
-                            <pre
-                                class="mt-4 whitespace-pre-wrap rounded-2xl bg-white/70 p-4 font-['Space_Mono',_monospace] text-xs text-slate-700">Reservas web / staff
+                            <pre class="mt-4 whitespace-pre-wrap rounded-2xl bg-white/70 p-4 font-['Space_Mono',_monospace] text-xs text-slate-700"
+                                data-i18n="projects.mesasya.schemaContent">Reservas web / staff
     ↓
 Flask API → MySQL
     │
@@ -228,34 +300,34 @@ Flask API → MySQL
             <div class="mx-auto max-w-6xl space-y-12 px-6">
                 <div class="flex flex-col gap-6 md:flex-row md:items-center md:justify-between" data-animate>
                     <div class="space-y-3">
-                        <p class="text-xs font-semibold uppercase tracking-[0.3em] text-slate-500">Case study 02</p>
-                        <h2 class="text-3xl font-semibold text-slate-900 sm:text-4xl">MiCartaYa — Ecosistema para
-                            restaurantes</h2>
+                        <p class="text-xs font-semibold uppercase tracking-[0.3em] text-slate-500"
+                            data-i18n="projects.micartaya.label">Case study 02</p>
+                        <h2 class="text-3xl font-semibold text-slate-900 sm:text-4xl"
+                            data-i18n="projects.micartaya.title">MiCartaYa — Ecosistema para restaurantes</h2>
                     </div>
                     <img src="assets/micartaya-logo.png" alt="Logo MiCartaYa" width="140" height="140" loading="lazy"
                         class="h-24 w-24 rounded-3xl border border-blue-200 bg-blue-50 p-4" />
                 </div>
                 <div class="grid gap-10 lg:grid-cols-[1.4fr,1fr]" data-animate>
                     <article class="space-y-6 text-base text-slate-600">
-                        <p>
-                            MiCartaYa transforma la experiencia en el restaurante mediante una plataforma de pedidos en
-                            mesa y gestión de menús digitales. Combina la agilidad de los <strong
-                                data-i18n="stack.websockets"></strong> con una interfaz intuitiva para comensales y
-                            staff.
+                        <p data-i18n="projects.micartaya.paragraph1">
+                            MiCartaYa redefine la interacción en el restaurante mediante una plataforma <strong
+                                data-i18n="stack.saas">SaaS</strong> de menús digitales y pedidos autogestionados.
+                            Resuelve el cuello de botella de la toma de pedidos manual y garantiza que la información de
+                            la carta esté siempre actualizada.
                         </p>
-                        <p>
-                            El backend desarrollado con <strong data-i18n="stack.fastapi"></strong> asegura latencias
-                            mínimas en la recepción de comandas. El sistema permite la actualización instantánea de
-                            cartas, control de alérgenos y stock, además de integrarse directamente con sistemas de
-                            impresión térmica.
+                        <p data-i18n="projects.micartaya.paragraph2">
+                            El núcleo del proyecto es un sistema de WebSockets de alta disponibilidad que conecta a los
+                            comensales con el dashboard del restaurante y el hardware de impresión, eliminando errores
+                            de transcripción y optimizando los tiempos de servicio.
                         </p>
                         <div class="rounded-3xl border border-blue-200 bg-blue-50 p-5 shadow-sm">
-                            <p class="text-xs font-semibold uppercase tracking-[0.3em] text-blue-700"
-                                data-direct-access-label>Acceso directo</p>
+                            <p class="text-xs font-semibold uppercase tracking-[0.3em] text-blue-800"
+                                data-i18n="projects.common.directAccess">Acceso directo</p>
                             <a href="https://micartaya.es" target="_blank" rel="noreferrer"
                                 class="mt-3 inline-flex items-center gap-2 text-sm font-semibold text-blue-700 transition hover:text-blue-500">
-                                <span data-direct-access-link="micartaya">→ MiCartaYa – Plataforma de menú digital y
-                                    pedidos online.</span>
+                                <span data-i18n="projects.micartaya.directAccess">→ MiCartaYa – Pedidos en tiempo real y
+                                    menú digital multiidioma.</span>
                                 <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                                     stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"
                                     aria-hidden="true">
@@ -265,24 +337,28 @@ Flask API → MySQL
                             </a>
                         </div>
                         <div class="rounded-3xl border border-blue-200 bg-blue-50 p-6 shadow-sm">
-                            <h3 class="text-sm font-semibold uppercase tracking-widest text-blue-700">Impacto operativo
-                            </h3>
+                            <h3 class="text-sm font-semibold uppercase tracking-widest text-blue-700"
+                                data-i18n="projects.micartaya.caseStudy.impactTitle">Impacto en sala</h3>
                             <ul class="mt-4 space-y-3">
-                                <li class="flex items-start gap-3"><span
-                                        class="mt-1 h-2 w-2 rounded-full bg-blue-500"></span>Cartas interactivas
-                                    multiidioma con actualización instantánea y control de stock.</li>
-                                <li class="flex items-start gap-3"><span
-                                        class="mt-1 h-2 w-2 rounded-full bg-blue-500"></span>Comunicación mediante
-                                    WebSockets para recepción de pedidos en menos de 1 segundo.</li>
-                                <li class="flex items-start gap-3"><span
-                                        class="mt-1 h-2 w-2 rounded-full bg-blue-500"></span>Integración de impresión
-                                    térmica remota para comandas automáticas en cocina.</li>
+                                <li class="flex items-start gap-3" data-i18n-html="projects.micartaya.bullets.first">
+                                    <span class="mt-1 h-2 w-2 rounded-full bg-blue-500"></span>Cartas interactivas
+                                    multiidioma con actualización instantánea y control de stock.
+                                </li>
+                                <li class="flex items-start gap-3" data-i18n-html="projects.micartaya.bullets.second">
+                                    <span class="mt-1 h-2 w-2 rounded-full bg-blue-500"></span>Comunicación mediante
+                                    WebSockets para recepción de pedidos en menos de 1 segundo.
+                                </li>
+                                <li class="flex items-start gap-3" data-i18n-html="projects.micartaya.bullets.third">
+                                    <span class="mt-1 h-2 w-2 rounded-full bg-blue-500"></span>Integración de impresión
+                                    térmica remota para comandas automáticas en cocina.
+                                </li>
                             </ul>
                         </div>
                     </article>
                     <aside class="space-y-6">
                         <div class="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm">
-                            <h3 class="text-sm font-semibold uppercase tracking-widest text-slate-500">Stack</h3>
+                            <h3 class="text-sm font-semibold uppercase tracking-widest text-slate-500"
+                                data-i18n="projects.micartaya.stack">Stack</h3>
                             <ul class="mt-4 space-y-2 text-sm text-slate-600">
                                 <li>FastAPI · Python</li>
                                 <li>WebSockets (FastAPI)</li>
@@ -290,15 +366,17 @@ Flask API → MySQL
                                 <li>Docker · Nginx</li>
                             </ul>
                         </div>
-                        <div class="rounded-3xl border border-dashed border-blue-400 bg-blue-50 p-6">
-                            <h3 class="text-sm font-semibold uppercase tracking-widest text-blue-700">Próximos pasos
-                            </h3>
-                            <p class="mt-2 text-sm text-slate-600">Integración de pasarela de pagos integrada y gestión
-                                de fidelización.</p>
+                        <div class="rounded-3xl border border-dashed border-blue-400/40 bg-blue-50 p-6">
+                            <h3 class="text-sm font-semibold uppercase tracking-widest text-blue-800"
+                                data-i18n="projects.micartaya.caseStudy.nextTitle">Roadmap</h3>
+                            <p class="mt-2 text-sm text-slate-600" data-i18n="projects.micartaya.caseStudy.nextTag">
+                                Módulo de pagos integrados y
+                                fidelización de clientes.</p>
                         </div>
-                        <details class="rounded-3xl border border-dashed border-blue-300 bg-blue-50 p-6 shadow-sm">
+                        <details class="rounded-3xl border border-dashed border-blue-200 bg-blue-50/50 p-6 shadow-sm">
                             <summary
-                                class="cursor-pointer text-sm font-semibold uppercase tracking-widest text-blue-700">
+                                class="cursor-pointer text-sm font-semibold uppercase tracking-widest text-blue-800"
+                                data-i18n="projects.micartaya.caseStudy.schemaTitle">
                                 Esquema técnico</summary>
                             <pre
                                 class="mt-4 whitespace-pre-wrap rounded-2xl bg-white/70 p-4 font-['Space_Mono',_monospace] text-xs text-slate-700">Comensal (App) ↔ WebSockets ↔ Backend (FastAPI)
@@ -316,31 +394,26 @@ Flask API → MySQL
             <div class="mx-auto max-w-6xl space-y-12 px-6">
                 <div class="flex flex-col gap-6 md:flex-row md:items-center md:justify-between" data-animate>
                     <div class="space-y-3">
-                        <p class="text-xs font-semibold uppercase tracking-[0.3em] text-slate-500">Case study 03</p>
-                        <h2 class="text-3xl font-semibold text-slate-900 sm:text-4xl">OrderYa — Gestión integral de
-                            pedidos</h2>
+                        <p class="text-xs font-semibold uppercase tracking-[0.3em] text-slate-500"
+                            data-i18n="projects.orderya.label">Case study 03</p>
+                        <h2 class="text-3xl font-semibold text-slate-900 sm:text-4xl"
+                            data-i18n="projects.orderya.title">OrderYa — Gestión integral de pedidos</h2>
                     </div>
                     <img src="assets/orderya-logo.svg" alt="Logo OrderYa" width="140" height="140" loading="lazy"
                         class="h-24 w-24 rounded-3xl border border-[#fb923c]/40 bg-[#fff7ed] p-4" />
                 </div>
                 <div class="grid gap-10 lg:grid-cols-[1.4fr,1fr]" data-animate>
                     <article class="space-y-6 text-base text-slate-600">
-                        <p>
-                            OrderYa elimina el caos de la gestión de pedidos entre obradores y puntos de venta.
-                            Sustituye hojas de cálculo y mensajes dispersos por una plataforma centralizada donde cada
-                            tienda realiza sus pedidos de forma intuitiva y el obrador visualiza la demanda consolidada.
-                        </p>
-                        <p>
-                            Desarrollado con <strong data-i18n="stack.fastapi"></strong> y renderizado server-side
-                            (Jinja2) para garantizar velocidad y simplicidad, el sistema gestiona catálogos complejos,
-                            listas de precios por cliente y generación automática de órdenes de reparto.
+                        <p data-i18n="projects.orderya.description">
+                            Centralización de pedidos para obradores. Sustituye hojas de cálculo por un flujo
+                            automatizado de producción y reparto.
                         </p>
                         <div class="rounded-3xl border border-[#fb923c]/60 bg-[#fff7ed] p-5 shadow-sm">
                             <p class="text-xs font-semibold uppercase tracking-[0.3em] text-[#9a3412]"
-                                data-direct-access-label>Acceso directo</p>
+                                data-i18n="projects.common.directAccess">Acceso directo</p>
                             <a href="https://orderya.es" target="_blank" rel="noreferrer"
                                 class="mt-3 inline-flex items-center gap-2 text-sm font-semibold text-[#9a3412] transition hover:text-[#ea580c]">
-                                <span data-direct-access-link="orderya">→ OrderYa – Centralización y gestión de
+                                <span data-i18n="projects.orderya.directAccess">→ OrderYa – Centralización y gestión de
                                     producción.</span>
                                 <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                                     stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"
@@ -351,16 +424,17 @@ Flask API → MySQL
                             </a>
                         </div>
                         <div class="rounded-3xl border border-[#fb923c]/40 bg-[#fff7ed] p-6 shadow-sm">
-                            <h3 class="text-sm font-semibold uppercase tracking-widest text-[#9a3412]">Funcionalidades
-                                clave</h3>
+                            <h3 class="text-sm font-semibold uppercase tracking-widest text-[#9a3412]"
+                                data-i18n="projects.orderya.keyFeatures">Funcionalidades clave</h3>
                             <ul class="mt-4 space-y-3">
-                                <li class="flex items-start gap-3"><span
+                                <li class="flex items-start gap-3" data-i18n-html="projects.orderya.bullets.first"><span
                                         class="mt-1 h-2 w-2 rounded-full bg-[#ea580c]"></span>Portal de tiendas con
                                     histórico y estados en tiempo real.</li>
-                                <li class="flex items-start gap-3"><span
-                                        class="mt-1 h-2 w-2 rounded-full bg-[#ea580c]"></span>Escaneo de código de
-                                    barras para agilizar la creación de pedidos.</li>
-                                <li class="flex items-start gap-3"><span
+                                <li class="flex items-start gap-3" data-i18n-html="projects.orderya.bullets.second">
+                                    <span class="mt-1 h-2 w-2 rounded-full bg-[#ea580c]"></span>Escaneo de código de
+                                    barras para agilizar la creación de pedidos.
+                                </li>
+                                <li class="flex items-start gap-3" data-i18n-html="projects.orderya.bullets.third"><span
                                         class="mt-1 h-2 w-2 rounded-full bg-[#ea580c]"></span>Creación de plantillas,
                                     gestión de productos y exportación de datos.</li>
                             </ul>
@@ -368,7 +442,8 @@ Flask API → MySQL
                     </article>
                     <aside class="space-y-6">
                         <div class="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm">
-                            <h3 class="text-sm font-semibold uppercase tracking-widest text-slate-500">Stack</h3>
+                            <h3 class="text-sm font-semibold uppercase tracking-widest text-slate-500"
+                                data-i18n="projects.orderya.stack">Stack</h3>
                             <ul class="mt-4 space-y-2 text-sm text-slate-600">
                                 <li>FastAPI + Jinja2</li>
                                 <li>MySQL 8.0</li>
@@ -377,17 +452,19 @@ Flask API → MySQL
                             </ul>
                         </div>
                         <div class="rounded-3xl border border-dashed border-[#ea580c]/40 bg-[#fff7ed] p-6">
-                            <h3 class="text-sm font-semibold uppercase tracking-widest text-[#9a3412]">Estado</h3>
-                            <p class="mt-2 text-sm text-slate-600">En producción. Gestionando pedidos diarios para
-                                obradores reales.</p>
+                            <h3 class="text-sm font-semibold uppercase tracking-widest text-[#9a3412]"
+                                data-i18n="projects.orderya.status.title">Estado</h3>
+                            <p class="mt-2 text-sm text-slate-600" data-i18n="projects.orderya.status.description">En
+                                producción. Gestionando pedidos diarios para obradores reales.</p>
                         </div>
                         <details
                             class="rounded-3xl border border-dashed border-[#fb923c]/60 bg-[#fff7ed] p-6 shadow-sm">
                             <summary
-                                class="cursor-pointer text-sm font-semibold uppercase tracking-widest text-[#9a3412]">
+                                class="cursor-pointer text-sm font-semibold uppercase tracking-widest text-[#9a3412]"
+                                data-i18n="projects.orderya.caseStudy.schemaTitle">
                                 Esquema técnico</summary>
-                            <pre
-                                class="mt-4 whitespace-pre-wrap rounded-2xl bg-white/70 p-4 font-['Space_Mono',_monospace] text-xs text-slate-700">Tiendas
+                            <pre class="mt-4 whitespace-pre-wrap rounded-2xl bg-white/70 p-4 font-['Space_Mono',_monospace] text-xs text-slate-700"
+                                data-i18n="projects.orderya.schemaContent">Tiendas
     ↓
 Nginx → FastAPI
     ↓
@@ -404,31 +481,34 @@ Producción (Listas PDF/Vista)</pre>
             <div class="mx-auto max-w-6xl space-y-12 px-6">
                 <div class="flex flex-col gap-6 md:flex-row md:items-center md:justify-between" data-animate>
                     <div class="space-y-3">
-                        <p class="text-xs font-semibold uppercase tracking-[0.3em] text-slate-500">Case study 04</p>
-                        <h2 class="text-3xl font-semibold text-slate-900 sm:text-4xl">Trato — CRM ágil para equipos
-                            comerciales</h2>
+                        <p class="text-xs font-semibold uppercase tracking-[0.3em] text-slate-500"
+                            data-i18n="projects.trato.label">Case study 04</p>
+                        <h2 class="text-3xl font-semibold text-slate-900 sm:text-4xl" data-i18n="projects.trato.title">
+                            Trato — CRM ágil para equipos comerciales</h2>
                     </div>
                     <img src="assets/trato-logo.svg" alt="Logo Trato" width="140" height="140" loading="lazy"
                         class="h-24 w-24 rounded-3xl border border-[#FBD2CD]/80 bg-[#FDE9E7] p-4 shadow-sm" />
                 </div>
                 <div class="grid gap-10 lg:grid-cols-[1.4fr,1fr]" data-animate>
                     <article class="space-y-6 text-base text-slate-600">
-                        <p>
+                        <p data-i18n="projects.trato.paragraph1">
                             Trato centraliza presupuestos, seguimientos y recordatorios en un CRM ligero pensado para
-                            equipos comerciales. Con un backend basado en <strong data-i18n="stack.fastapi"></strong>
-                            ejecutado con Uvicorn, prioriza la velocidad de respuesta y la claridad de cada oportunidad.
+                            equipos comerciales. Con un backend basado en <strong
+                                data-i18n="stack.fastapi">FastAPI</strong> ejecutado con Uvicorn, prioriza la velocidad
+                            de respuesta y la claridad de cada oportunidad.
                         </p>
-                        <p>
+                        <p data-i18n="projects.trato.paragraph2">
                             Las empresas acceden mediante códigos de invitación y gestionan pipelines con estados
                             personalizables, timeline de interacciones y avisos automáticos. Las tareas en Celery
                             coordinan recordatorios, envíos de emails y resúmenes diarios desde el VPS principal.
                         </p>
                         <div class="rounded-3xl border border-[#F9A8A3]/50 bg-[#FEECEC] p-5 shadow-sm">
                             <p class="text-xs font-semibold uppercase tracking-[0.3em] text-[#B4232A]"
-                                data-direct-access-label>Acceso directo</p>
+                                data-i18n="projects.common.directAccess">Acceso directo</p>
                             <a href="https://tratocrm.com" target="_blank" rel="noopener noreferrer"
                                 class="mt-3 inline-flex items-center gap-2 text-sm font-semibold text-[#B4232A] transition hover:text-[#F97068] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#F97068]">
-                                <span data-direct-access-link="trato">→ Trato – CRM ágil para presupuestos, seguimientos
+                                <span data-i18n="projects.trato.directAccess">→ Trato – CRM ágil para presupuestos,
+                                    seguimientos
                                     y recordatorios.</span>
                                 <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                                     stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"
@@ -439,23 +519,25 @@ Producción (Listas PDF/Vista)</pre>
                             </a>
                         </div>
                         <div class="rounded-3xl border border-[#F9A8A3]/40 bg-[#FFF0EF] p-6 shadow-sm">
-                            <h3 class="text-sm font-semibold uppercase tracking-widest text-[#B4232A]">Impacto</h3>
+                            <h3 class="text-sm font-semibold uppercase tracking-widest text-[#B4232A]"
+                                data-i18n="projects.trato.impact">Impacto</h3>
                             <ul class="mt-4 space-y-3">
-                                <li class="flex items-start gap-3"><span
-                                        class="mt-1 h-2 w-2 rounded-full bg-[#F97068]"></span>Altas controladas de
-                                    empresas y usuarios mediante códigos de invitación.</li>
-                                <li class="flex items-start gap-3"><span
-                                        class="mt-1 h-2 w-2 rounded-full bg-[#F97068]"></span>Seguimientos con
-                                    recordatorios automáticos y timeline centralizado por oportunidad.</li>
-                                <li class="flex items-start gap-3"><span
-                                        class="mt-1 h-2 w-2 rounded-full bg-[#F97068]"></span>Despliegue contenerizado
-                                    en el VPS principal con backups y monitoreo de tareas Celery.</li>
+                                <li class="flex items-start gap-3" data-i18n-html="projects.trato.bullets.first"><span
+                                        class="mt-1 h-2 w-2 rounded-full bg-[#F97068]"></span>Pipeline acelerado:
+                                    visualización clara del ciclo de vida de cada presupuesto.</li>
+                                <li class="flex items-start gap-3" data-i18n-html="projects.trato.bullets.second"><span
+                                        class="mt-1 h-2 w-2 rounded-full bg-[#F97068]"></span>Recordatorios
+                                    inteligentes: Celery gestiona el 'follow-up' para que ninguna oferta se pierda.</li>
+                                <li class="flex items-start gap-3" data-i18n-html="projects.trato.bullets.third"><span
+                                        class="mt-1 h-2 w-2 rounded-full bg-[#F97068]"></span>Control de acceso seguro
+                                    mediante sistema robusto de códigos de invitación.</li>
                             </ul>
                         </div>
                     </article>
                     <aside class="space-y-6">
                         <div class="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm">
-                            <h3 class="text-sm font-semibold uppercase tracking-widest text-slate-500">Stack</h3>
+                            <h3 class="text-sm font-semibold uppercase tracking-widest text-slate-500"
+                                data-i18n="projects.trato.stack">Stack</h3>
                             <ul class="mt-4 space-y-2 text-sm text-slate-600">
                                 <li>FastAPI · Uvicorn</li>
                                 <li>Celery</li>
@@ -464,17 +546,19 @@ Producción (Listas PDF/Vista)</pre>
                             </ul>
                         </div>
                         <div class="rounded-3xl border border-dashed border-[#F97068]/40 bg-[#FDEAEA]/60 p-6">
-                            <h3 class="text-sm font-semibold uppercase tracking-widest text-[#B4232A]">Estado</h3>
-                            <p class="mt-2 text-sm text-slate-600">Producción en VPS principal con monitoreo básico y
-                                backups diarios.</p>
+                            <h3 class="text-sm font-semibold uppercase tracking-widest text-[#B4232A]"
+                                data-i18n="projects.trato.status.title">Estado</h3>
+                            <p class="mt-2 text-sm text-slate-600" data-i18n="projects.trato.status.description">
+                                Producción en VPS principal con monitoreo básico y backups diarios.</p>
                         </div>
                         <details
                             class="rounded-3xl border border-dashed border-[#F9A8A3]/60 bg-[#FDEAEA]/60 p-6 shadow-sm">
                             <summary
-                                class="cursor-pointer text-sm font-semibold uppercase tracking-widest text-[#B4232A]">
+                                class="cursor-pointer text-sm font-semibold uppercase tracking-widest text-[#B4232A]"
+                                data-i18n="projects.trato.schema">
                                 Esquema técnico</summary>
-                            <pre
-                                class="mt-4 whitespace-pre-wrap rounded-2xl bg-white/70 p-4 font-['Space_Mono',_monospace] text-xs text-slate-700">Empresas invitadas
+                            <pre class="mt-4 whitespace-pre-wrap rounded-2xl bg-white/70 p-4 font-['Space_Mono',_monospace] text-xs text-slate-700"
+                                data-i18n="projects.trato.schemaContent">Empresas invitadas
     ↓
 FastAPI + Uvicorn → MySQL
     │
@@ -490,44 +574,46 @@ FastAPI + Uvicorn → MySQL
             <div class="mx-auto max-w-6xl space-y-12 px-6">
                 <div class="flex flex-col gap-6 md:flex-row md:items-center md:justify-between" data-animate>
                     <div class="space-y-3">
-                        <p class="text-xs font-semibold uppercase tracking-[0.3em] text-slate-500">Case study 05</p>
-                        <h2 class="text-3xl font-semibold text-slate-900 sm:text-4xl">Kobra — Plataforma financiera para
-                            Cybersur</h2>
+                        <p class="text-xs font-semibold uppercase tracking-[0.3em] text-slate-500"
+                            data-i18n="projects.kobra.label">Case study 05</p>
+                        <h2 class="text-3xl font-semibold text-slate-900 sm:text-4xl" data-i18n="projects.kobra.title">
+                            Kobra — Plataforma financiera para Cybersur</h2>
                     </div>
                     <img src="assets/kobra-logo.svg" alt="Logo Kobra" width="140" height="140" loading="lazy"
                         class="h-24 w-24 rounded-3xl border border-[#f28d1f]/50 bg-[#FFF4E6] p-4" />
                 </div>
                 <div class="grid gap-10 lg:grid-cols-[1.4fr,1fr]" data-animate>
                     <article class="space-y-6 text-base text-slate-600">
-                        <p>
+                        <p data-i18n="projects.kobra.paragraph1">
                             Kobra es la solución a medida que mantiene la operativa financiera de Cybersur. Automatiza
                             facturación, cobros y recordatorios desde un backend robusto en <strong
-                                data-i18n="stack.fastapi"></strong>.
+                                data-i18n="stack.fastapi">FastAPI</strong>.
                         </p>
-                        <p>
+                        <p data-i18n="projects.kobra.paragraph2">
                             Los cronjobs programados gestionan exportaciones, limpiezas de datos y conciliaciones
                             automáticas. Los paneles internos priorizan métricas de cobranza y SLA por cliente para que
                             el equipo financiero tenga claridad diaria.
                         </p>
                         <div class="rounded-3xl border border-[#f28d1f]/40 bg-[#FFF4E6] p-6 shadow-sm">
-                            <h3 class="text-sm font-semibold uppercase tracking-widest text-[#9a3412]">Resultados clave
-                            </h3>
+                            <h3 class="text-sm font-semibold uppercase tracking-widest text-[#9a3412]"
+                                data-i18n="projects.kobra.results">Resultados clave</h3>
                             <ul class="mt-4 space-y-3">
-                                <li class="flex items-start gap-3"><span
-                                        class="mt-1 h-2 w-2 rounded-full bg-[#f28d1f]"></span>Workflows de avisos y
-                                    recordatorios que reducen el tiempo de seguimiento de facturas.</li>
-                                <li class="flex items-start gap-3"><span
-                                        class="mt-1 h-2 w-2 rounded-full bg-[#f28d1f]"></span>Cronjobs trazables para
-                                    exportaciones contables y rutinas de limpieza de datos.</li>
-                                <li class="flex items-start gap-3"><span
-                                        class="mt-1 h-2 w-2 rounded-full bg-[#f28d1f]"></span>Paneles internos con
-                                    indicadores de cobro y alertas sobre vencimientos.</li>
+                                <li class="flex items-start gap-3" data-i18n-html="projects.kobra.bullets.first"><span
+                                        class="mt-1 h-2 w-2 rounded-full bg-[#f28d1f]"></span>Mejora del flujo de caja
+                                    mediante flujos de avisos automáticos a clientes.</li>
+                                <li class="flex items-start gap-3" data-i18n-html="projects.kobra.bullets.second"><span
+                                        class="mt-1 h-2 w-2 rounded-full bg-[#f28d1f]"></span>Auditoría completa:
+                                    trazabilidad total de cobros y estados financieros.</li>
+                                <li class="flex items-start gap-3" data-i18n-html="projects.kobra.bullets.third"><span
+                                        class="mt-1 h-2 w-2 rounded-full bg-[#f28d1f]"></span>+20% de eficiencia
+                                    operativa en el equipo financiero al eliminar tareas repetitivas.</li>
                             </ul>
                         </div>
                     </article>
                     <aside class="space-y-6">
                         <div class="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm">
-                            <h3 class="text-sm font-semibold uppercase tracking-widest text-slate-500">Stack</h3>
+                            <h3 class="text-sm font-semibold uppercase tracking-widest text-slate-500"
+                                data-i18n="projects.kobra.stack">Stack</h3>
                             <ul class="mt-4 space-y-2 text-sm text-slate-600">
                                 <li>FastAPI · Python 3.11</li>
                                 <li>Celery</li>
@@ -536,22 +622,24 @@ FastAPI + Uvicorn → MySQL
                             </ul>
                         </div>
                         <div class="rounded-3xl border border-dashed border-[#f28d1f]/40 bg-[#FFF4E6] p-6">
-                            <h3 class="text-sm font-semibold uppercase tracking-widest text-[#9a3412]">Roadmap</h3>
-                            <p class="mt-2 text-sm text-slate-600">Ampliación de reportes financieros internos y
-                                automatización de conciliaciones.</p>
+                            <h3 class="text-sm font-semibold uppercase tracking-widest text-[#9a3412]"
+                                data-i18n="projects.kobra.next">Próximos pasos</h3>
+                            <p class="mt-2 text-sm text-slate-600" data-i18n="projects.kobra.nextText">Automatización de
+                                reportes financieros y conciliaciones.</p>
                         </div>
                         <details
                             class="rounded-3xl border border-dashed border-[#f28d1f]/60 bg-[#FFF4E6] p-6 shadow-sm">
                             <summary
-                                class="cursor-pointer text-sm font-semibold uppercase tracking-widest text-[#9a3412]">
+                                class="cursor-pointer text-sm font-semibold uppercase tracking-widest text-[#9a3412]"
+                                data-i18n="projects.kobra.schema">
                                 Esquema técnico</summary>
-                            <pre
-                                class="mt-4 whitespace-pre-wrap rounded-2xl bg-white/70 p-4 font-['Space_Mono',_monospace] text-xs text-slate-700">Equipo Cybersur
+                            <pre class="mt-4 whitespace-pre-wrap rounded-2xl bg-white/70 p-4 font-['Space_Mono',_monospace] text-xs text-slate-700"
+                                data-i18n="projects.kobra.schemaContent">Operativa Cybersur
     ↓
-FastAPI API → MySQL
+FastAPI → MySQL
     │
-    ├─ Celery workers → Emails y recordatorios
-    └─ Cronjobs → Reportes contables</pre>
+    ├─ Celery → Emails
+    └─ Cronjobs → Reportes</pre>
                         </details>
                     </aside>
                 </div>
@@ -562,9 +650,10 @@ FastAPI API → MySQL
             <div class="mx-auto max-w-6xl space-y-12 px-6">
                 <div class="flex flex-col gap-6 md:flex-row md:items-center md:justify-between" data-animate>
                     <div class="space-y-3">
-                        <p class="text-xs font-semibold uppercase tracking-[0.3em] text-slate-500">Case study 06</p>
-                        <h2 class="text-3xl font-semibold text-slate-900 sm:text-4xl">BeatList — Inteligencia musical
-                            para power users</h2>
+                        <p class="text-xs font-semibold uppercase tracking-[0.3em] text-slate-500"
+                            data-i18n="projects.beatlist.label">Case study 06</p>
+                        <h2 class="text-3xl font-semibold text-slate-900 sm:text-4xl"
+                            data-i18n="projects.beatlist.title">BeatList — Analítica avanzada de Spotify</h2>
                         <span
                             class="inline-flex items-center gap-2 rounded-full border border-[#111827]/30 bg-white px-3 py-1 text-xs font-semibold text-[#111827]">
                             <svg class="h-3.5 w-3.5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
@@ -572,7 +661,7 @@ FastAPI API → MySQL
                                     d="M16.704 5.29a.75.75 0 0 1 .006 1.06l-7.25 7.5a.75.75 0 0 1-1.086.02L3.29 8.536a.75.75 0 0 1 1.06-1.06l4.21 4.209 6.72-6.956a.75.75 0 0 1 1.064.061Z"
                                     clip-rule="evenodd" />
                             </svg>
-                            <span data-locale-element="projects.beatlist.approval">Spotify Approved</span>
+                            <span data-i18n="projects.beatlist.approval">Spotify Approved</span>
                         </span>
                     </div>
                     <img src="assets/beatlist-logo.svg" alt="Logo BeatList" width="140" height="140" loading="lazy"
@@ -580,24 +669,24 @@ FastAPI API → MySQL
                 </div>
                 <div class="grid gap-10 lg:grid-cols-[1.4fr,1fr]" data-animate>
                     <article class="space-y-6 text-base text-slate-600">
-                        <p>
-                            BeatList es la plataforma para melómanos, curadores y creadores de contenido que necesitan
-                            más herramientas que el gestor estándar de Spotify. Centraliza administración avanzada,
-                            descubrimiento y analítica en una experiencia fluida.
+                        <p data-i18n="projects.beatlist.paragraph1">
+                            BeatList acompaña a curadores y creadores que necesitan superar el gestor estándar de
+                            Spotify. Conecta la <strong data-i18n="stack.spotifyapi">Spotify API</strong> con análisis
+                            avanzados y experiencias interactivas aprobadas por el programa Spotify for Developers.
                         </p>
-                        <p>
-                            El backend en <strong>Flask</strong> gestiona la autenticación <strong
-                                data-i18n="stack.oauth"></strong> aprobada por Spotify, coordina análisis pesados con
-                            <strong>Celery</strong> y accede a datos extendidos mediante la <strong
-                                data-i18n="stack.spotifyapi"></strong>. El frontend en JavaScript dinamiza dashboards,
-                            recomendaciones y un reproductor web con animaciones suaves.
+                        <p data-i18n="projects.beatlist.paragraph2">
+                            El backend en Flask con <strong data-i18n="stack.oauth">OAuth 2.0</strong> obtiene datos
+                            extendidos y coordina análisis con Celery para generar métricas sin bloquear a los usuarios.
+                            El frontend ofrece reproductores, dashboards y herramientas de mezcla pensadas para
+                            profesionales y comunidades.
                         </p>
                         <div class="rounded-3xl border border-[#111827]/25 bg-[#F7F7FB] p-5 shadow-sm">
                             <p class="text-xs font-semibold uppercase tracking-[0.3em] text-[#111827]"
-                                data-direct-access-label>Acceso directo</p>
+                                data-i18n="projects.common.directAccess">Acceso directo</p>
                             <a href="https://beatlist.es" target="_blank" rel="noreferrer"
                                 class="mt-3 inline-flex items-center gap-2 text-sm font-semibold text-[#111827] transition hover:text-[#424b5a]">
-                                <span data-direct-access-link="beatlist">→ BeatList – Estadísticas y gestión avanzada de
+                                <span data-i18n="projects.beatlist.directAccess">→ BeatList – Estadísticas y gestión
+                                    avanzada de
                                     playlists de Spotify.</span>
                                 <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                                     stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"
@@ -608,25 +697,28 @@ FastAPI API → MySQL
                             </a>
                         </div>
                         <div class="rounded-3xl border border-[#111827]/25 bg-[#F7F7FB] p-6 shadow-sm">
-                            <h3 class="text-sm font-semibold uppercase tracking-widest text-[#111827]">Experiencia
-                                destacada</h3>
+                            <h3 class="text-sm font-semibold uppercase tracking-widest text-[#111827]"
+                                data-i18n="projects.beatlist.outcomes">Resultados</h3>
                             <ul class="mt-4 space-y-3">
-                                <li class="flex items-start gap-3"><span
-                                        class="mt-1 h-2 w-2 rounded-full bg-[#111827]"></span>Listas inteligentes
-                                    basadas en reglas y métricas como energía o bailabilidad.</li>
-                                <li class="flex items-start gap-3"><span
-                                        class="mt-1 h-2 w-2 rounded-full bg-[#111827]"></span>Dashboard con tendencias
-                                    temporales y hábitos de escucha segmentados por artistas y géneros.</li>
-                                <li class="flex items-start gap-3"><span
-                                        class="mt-1 h-2 w-2 rounded-full bg-[#111827]"></span>Análisis gestionados con
-                                    Celery para procesar datos en segundo plano y ofrecer métricas precisas sin afectar
-                                    la experiencia del usuario.</li>
+                                <li class="flex items-start gap-3" data-i18n-html="projects.beatlist.bullets.first">
+                                    <span class="mt-1 h-2 w-2 rounded-full bg-[#111827]"></span>Smart data cleanup:
+                                    duplicate debugging algorithms and audio filters.
+                                </li>
+                                <li class="flex items-start gap-3" data-i18n-html="projects.beatlist.bullets.second">
+                                    <span class="mt-1 h-2 w-2 rounded-full bg-[#111827]"></span>Guaranteed security:
+                                    official OAuth 2.0 authentication validated by Spotify.
+                                </li>
+                                <li class="flex items-start gap-3" data-i18n-html="projects.beatlist.bullets.third">
+                                    <span class="mt-1 h-2 w-2 rounded-full bg-[#111827]"></span>High-impact UX:
+                                    interactive dashboards with real-time audio analytics.
+                                </li>
                             </ul>
                         </div>
                     </article>
                     <aside class="space-y-6">
                         <div class="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm">
-                            <h3 class="text-sm font-semibold uppercase tracking-widest text-slate-500">Stack</h3>
+                            <h3 class="text-sm font-semibold uppercase tracking-widest text-slate-500"
+                                data-i18n="projects.beatlist.stack">Stack</h3>
                             <ul class="mt-4 space-y-2 text-sm text-slate-600">
                                 <li>Flask · Python</li>
                                 <li>Spotify API · OAuth 2.0</li>
@@ -635,26 +727,19 @@ FastAPI API → MySQL
                             </ul>
                         </div>
                         <div class="rounded-3xl border border-dashed border-[#111827]/30 bg-[#F7F7FB] p-6">
-                            <h3 class="text-sm font-semibold uppercase tracking-widest text-[#111827]">Posibles
-                                evoluciones</h3>
-                            <p class="mt-2 text-sm text-slate-600">Añadir modo colaborativo o exportación de insights en
-                                futuras versiones.</p>
+                            <h3 class="text-sm font-semibold uppercase tracking-widest text-[#111827]"
+                                data-i18n="projects.beatlist.next">Próximos pasos</h3>
+                            <p class="mt-2 text-sm text-slate-600" data-i18n="projects.beatlist.nextText">Modo
+                                colaborativo y exportaciones avanzadas en la hoja de ruta.</p>
                         </div>
                         <details
                             class="rounded-3xl border border-dashed border-[#111827]/30 bg-[#F7F7FB] p-6 shadow-sm">
                             <summary
-                                class="cursor-pointer text-sm font-semibold uppercase tracking-widest text-[#111827]">
+                                class="cursor-pointer text-sm font-semibold uppercase tracking-widest text-[#111827]"
+                                data-i18n="projects.beatlist.schema">
                                 Esquema técnico</summary>
-                            <pre
-                                class="mt-4 whitespace-pre-wrap rounded-2xl bg-white/70 p-4 font-['Space_Mono',_monospace] text-xs text-slate-700">Usuarios Spotify
-    ↓
-Flask API (OAuth 2.0)
-    ↓
-Spotify API oficial → Datos enriquecidos
-    ↓
-Celery workers → Análisis pesados y métricas
-    ↓
-Frontend JS → Dashboards + reproductor</pre>
+                            <pre class="mt-4 whitespace-pre-wrap rounded-2xl bg-white/70 p-4 font-['Space_Mono',_monospace] text-xs text-slate-700"
+                                data-i18n="projects.beatlist.schemaContent">Usuarios\n    ↓\nFlask API (OAuth Spotify)\n    ↓\nCelery workers → Análisis pesados e insights\n    ↓\nDashboards + Reproductor</pre>
                         </details>
                     </aside>
                 </div>
@@ -665,32 +750,33 @@ Frontend JS → Dashboards + reproductor</pre>
             <div class="mx-auto max-w-6xl space-y-12 px-6">
                 <div class="flex flex-col gap-6 md:flex-row md:items-center md:justify-between" data-animate>
                     <div class="space-y-3">
-                        <p class="text-xs font-semibold uppercase tracking-[0.3em] text-slate-500">Case study 07</p>
-                        <h2 class="text-3xl font-semibold text-slate-900 sm:text-4xl">Ponme — Armario inteligente con IA
-                        </h2>
+                        <p class="text-xs font-semibold uppercase tracking-[0.3em] text-slate-500"
+                            data-i18n="projects.ponme.label">Case study 07</p>
+                        <h2 class="text-3xl font-semibold text-slate-900 sm:text-4xl" data-i18n="projects.ponme.title">
+                            Ponme — Asistente de moda inteligente</h2>
                     </div>
                     <img src="assets/ponme-logo.png" alt="Logo Ponme" width="140" height="140" loading="lazy"
                         class="h-24 w-24 rounded-3xl border border-purple-200 bg-purple-50 p-4" />
                 </div>
                 <div class="grid gap-10 lg:grid-cols-[1.4fr,1fr]" data-animate>
                     <article class="space-y-6 text-base text-slate-600">
-                        <p>
-                            Ponme utiliza Inteligencia Artificial para digitalizar y gestionar tu armario personal.
-                            Mediante modelos de visión, analiza tus prendas y ofrece recomendaciones de outfits basadas
-                            en estilismo, clima y agenda.
+                        <p data-i18n="projects.ponme.paragraph1">
+                            Ponme democratiza el uso de la IA generativa para resolver el dilema diario de 'qué me
+                            pongo'. Integra la API de <strong data-i18n="stack.gemini">Gemini</strong> para entender no
+                            solo qué ropa tienes, sino cómo combinarla según el contexto.
                         </p>
-                        <p>
-                            Implementado con <strong>FastAPI</strong> y <strong>React</strong>, el núcleo de la
-                            inteligencia reside en la integración con <strong data-i18n="stack.gemini"></strong> para el
-                            análisis multimodal. Además, incluye procesamiento local de imágenes para la eliminación
-                            automática de fondos, garantizando un catálogo visual coherente y profesional.
+                        <p data-i18n="projects.ponme.paragraph2">
+                            La aplicación procesa imágenes localmente para eliminar fondos y utiliza modelos
+                            multimodales para extraer metadatos de las prendas (color, tejido, estilo), permitiendo
+                            crear un 'armario digital' en minutos.
                         </p>
                         <div class="rounded-3xl border border-purple-200 bg-purple-50 p-5 shadow-sm">
                             <p class="text-xs font-semibold uppercase tracking-[0.3em] text-purple-700"
-                                data-direct-access-label>Acceso directo</p>
+                                data-i18n="projects.common.directAccess">Acceso directo</p>
                             <a href="https://ponme.es" target="_blank" rel="noreferrer"
                                 class="mt-3 inline-flex items-center gap-2 text-sm font-semibold text-purple-700 transition hover:text-purple-500">
-                                <span data-direct-access-link="ponme">→ Ponme – Tu armario inteligente potenciado por
+                                <span data-i18n="projects.ponme.directAccess">→ Ponme – Tu armario inteligente
+                                    potenciado por
                                     IA.</span>
                                 <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                                     stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"
@@ -701,16 +787,16 @@ Frontend JS → Dashboards + reproductor</pre>
                             </a>
                         </div>
                         <div class="rounded-3xl border border-purple-200 bg-purple-50 p-6 shadow-sm">
-                            <h3 class="text-sm font-semibold uppercase tracking-widest text-purple-700">Resultados e
-                                innovación</h3>
+                            <h3 class="text-sm font-semibold uppercase tracking-widest text-purple-700"
+                                data-i18n="projects.ponme.impact">Características IA</h3>
                             <ul class="mt-4 space-y-3">
-                                <li class="flex items-start gap-3"><span
+                                <li class="flex items-start gap-3" data-i18n-html="projects.ponme.bullets.first"><span
                                         class="mt-1 h-2 w-2 rounded-full bg-purple-500"></span>Etiquetado automático y
                                     categorización de prendas mediante IA multimodal (Google Gemini).</li>
-                                <li class="flex items-start gap-3"><span
+                                <li class="flex items-start gap-3" data-i18n-html="projects.ponme.bullets.second"><span
                                         class="mt-1 h-2 w-2 rounded-full bg-purple-500"></span>Algoritmo de sugerencias
                                     que optimiza el uso de la ropa según contexto real y estado de las prendas.</li>
-                                <li class="flex items-start gap-3"><span
+                                <li class="flex items-start gap-3" data-i18n-html="projects.ponme.bullets.third"><span
                                         class="mt-1 h-2 w-2 rounded-full bg-purple-500"></span>Pipeline de procesamiento
                                     de imagen eficiente para dispositivos móviles.</li>
                             </ul>
@@ -718,7 +804,8 @@ Frontend JS → Dashboards + reproductor</pre>
                     </article>
                     <aside class="space-y-6">
                         <div class="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm">
-                            <h3 class="text-sm font-semibold uppercase tracking-widest text-slate-500">Stack</h3>
+                            <h3 class="text-sm font-semibold uppercase tracking-widest text-slate-500"
+                                data-i18n="projects.ponme.stack">Stack</h3>
                             <ul class="mt-4 space-y-2 text-sm text-slate-600">
                                 <li>FastAPI · Python</li>
                                 <li>React · Tailwind</li>
@@ -727,20 +814,18 @@ Frontend JS → Dashboards + reproductor</pre>
                             </ul>
                         </div>
                         <div class="rounded-3xl border border-dashed border-purple-400 bg-purple-50 p-6">
-                            <h3 class="text-sm font-semibold uppercase tracking-widest text-purple-700">Roadmap</h3>
-                            <p class="mt-2 text-sm text-slate-600">Integración de realidad aumentada para probador
-                                virtual y analítica de sostenibilidad.</p>
+                            <h3 class="text-sm font-semibold uppercase tracking-widest text-purple-700"
+                                data-i18n="projects.ponme.next">Próximos pasos</h3>
+                            <p class="mt-2 text-sm text-slate-600" data-i18n="projects.ponme.nextText">Sugerencias de
+                                compra basadas en huecos del armario e inteligencia predictiva.</p>
                         </div>
                         <details class="rounded-3xl border border-dashed border-purple-300 bg-purple-50 p-6 shadow-sm">
                             <summary
-                                class="cursor-pointer text-sm font-semibold uppercase tracking-widest text-purple-700">
+                                class="cursor-pointer text-sm font-semibold uppercase tracking-widest text-purple-700"
+                                data-i18n="projects.ponme.schema">
                                 Esquema técnico</summary>
-                            <pre
-                                class="mt-4 whitespace-pre-wrap rounded-2xl bg-white/70 p-4 font-['Space_Mono',_monospace] text-xs text-slate-700">Usuario (React) ↔ FastAPI ↔ Gemini Vision API
-                                    ↓
-                                PostgreSQL
-                                    ↓
-                          Local Image Processing</pre>
+                            <pre class="mt-4 whitespace-pre-wrap rounded-2xl bg-white/70 p-4 font-['Space_Mono',_monospace] text-xs text-slate-700"
+                                data-i18n="projects.ponme.schemaContent">Usuario (PWA)\n    ↓\nFastAPI → PostgreSQL\n    │\n    ├─ Rembg API → Fondo\n    └─ Google Gemini → Análisis</pre>
                         </details>
                     </aside>
                 </div>
@@ -749,15 +834,16 @@ Frontend JS → Dashboards + reproductor</pre>
 
         <section class="bg-slate-900 py-20">
             <div class="mx-auto flex max-w-5xl flex-col items-center gap-6 px-6 text-center text-white" data-animate>
-                <p class="text-xs font-semibold uppercase tracking-[0.3em] text-white/60">Conversemos</p>
-                <h2 class="text-3xl font-semibold sm:text-4xl">Si quieres hablar sobre estos proyectos o explorar nuevas
-                    ideas, escríbeme en LinkedIn.</h2>
-                <p class="max-w-3xl text-base text-white/80">Me interesa colaborar en iniciativas donde la tecnología y
-                    el desarrollo de producto puedan marcar una diferencia real.</p>
+                <p class="text-xs font-semibold uppercase tracking-[0.3em] text-white/60" data-i18n="contact.label">
+                    Conversemos</p>
+                <h2 class="text-3xl font-semibold sm:text-4xl" data-i18n="contact.title">Si quieres hablar sobre estos
+                    proyectos o explorar nuevas ideas, escríbeme en LinkedIn.</h2>
+                <p class="max-w-3xl text-base text-white/80" data-i18n="contact.description">Me interesa colaborar en
+                    iniciativas donde la tecnología y el desarrollo de producto puedan marcar una diferencia real.</p>
                 <div class="flex flex-wrap items-center justify-center gap-4">
                     <a href="https://www.linkedin.com/in/nicolas-alvarez-becerra/"
                         class="inline-flex items-center gap-2 rounded-full bg-white px-6 py-3 text-sm font-semibold text-slate-900 transition hover:bg-slate-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
-                        target="_blank" rel="noreferrer">LinkedIn</a>
+                        target="_blank" rel="noreferrer" data-i18n="hero.secondaryCta">LinkedIn</a>
                     <a href="https://github.com/nicoabgv"
                         class="inline-flex items-center gap-2 rounded-full border border-white/40 px-6 py-3 text-sm font-semibold text-white transition hover:border-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
                         target="_blank" rel="noreferrer">GitHub</a>
@@ -769,12 +855,14 @@ Frontend JS → Dashboards + reproductor</pre>
     <footer class="border-t border-slate-200 bg-white/80">
         <div
             class="mx-auto flex max-w-6xl flex-col gap-4 px-6 py-8 text-sm text-slate-500 md:flex-row md:items-center md:justify-between">
-            <p>&copy; <span id="year"></span> Nicolás Álvarez. Todos los derechos reservados.</p>
+            <p>&copy; <span id="year"></span> Nicolás Álvarez. <span data-i18n="common.footer.rights">Todos los derechos
+                    reservados.</span></p>
             <div class="flex flex-wrap items-center gap-4">
-                <a class="transition hover:text-blue-600" href="index.html">Inicio</a>
+                <a class="transition hover:text-blue-600" href="index.html" data-i18n="footer.home">Inicio</a>
                 <a class="transition hover:text-blue-600" href="https://github.com/nicoabgv" target="_blank"
-                    rel="noreferrer">GitHub</a>
-                <a class="transition hover:text-blue-600" href="mailto:nicoabgv@gmail.com">Contacto directo</a>
+                    rel="noreferrer" data-i18n="footer.github">GitHub</a>
+                <a class="transition hover:text-blue-600" href="mailto:nicoabgv@gmail.com"
+                    data-i18n="footer.contact">Contacto</a>
             </div>
         </div>
     </footer>
