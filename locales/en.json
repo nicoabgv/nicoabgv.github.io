@@ -22,7 +22,8 @@
             "rights": "All rights reserved.",
             "home": "Home",
             "github": "GitHub",
-            "contact": "Direct contact"
+            "contact": "Direct contact",
+            "projects": "Case studies"
         },
         "modals": {
             "closeAria": "Close modal"
@@ -34,6 +35,19 @@
             "saas": "SaaS in production",
             "flaskcelery": "Flask, Celery, MySQL and Docker",
             "gemini": "Google Gemini"
+        },
+        "contact": {
+            "label": "Contact",
+            "title": "Shall we talk about your next project?",
+            "description": "If you want to learn more about these projects or chat about new ideas, get in touch on LinkedIn.",
+            "direct": "You can also email me at nicoabgv@gmail.com or explore my code on GitHub.",
+            "messageLabel": "Project",
+            "messagePlaceholder": "Tell me about goals, timelines, or technical challenges",
+            "submit": "Send message",
+            "nameLabel": "Name",
+            "namePlaceholder": "Your name",
+            "emailLabel": "Email",
+            "emailPlaceholder": "name@company.com"
         }
     },
     "index": {
@@ -59,7 +73,7 @@
                 "third": "<span class=\"mt-1 h-2 w-2 rounded-full bg-blue-500\"></span>I integrate advanced cybersecurity into authentication, data handling, and automated deployments."
             },
             "live": {
-                "label": "Live products",
+                "label": "Live projects",
                 "links": {
                     "mesasya": "→ MesasYa – Managing +50 restaurants and automated reservations.",
                     "micartaya": "→ MiCartaYa – Real-time ordering and multi-language digital menu.",
@@ -104,7 +118,7 @@
                 },
                 "frontend": {
                     "title": "Frontend",
-                    "description": "Clean interfaces with JavaScript and Tailwind, backed by React to add smoothness and modularity.",
+                    "description": "Clean interfaces with JavaScript and Tailwind, leveraging React for fluidity and modularity.",
                     "tags": [
                         "JavaScript",
                         "Tailwind CSS",
@@ -113,7 +127,7 @@
                 },
                 "devops": {
                     "title": "DevOps",
-                    "description": "Docker and Compose for containers, Nginx as proxy, and automation scripts and cronjobs on Ubuntu VPS.",
+                    "description": "Docker and Compose containers, Nginx as a proxy, and automation via scripts and cronjobs on Ubuntu VPS.",
                     "tags": [
                         "Docker",
                         "Docker Compose",
@@ -123,19 +137,19 @@
                 },
                 "security": {
                     "title": "Cybersecurity",
-                    "description": "Security best practices across backend, authentication, and deployments strengthened by my cybersecurity training.",
+                    "description": "Backend best practices, authentication, and deployments reinforced by my education in applied cybersecurity.",
                     "tags": [
-                        "Backend best practices",
-                        "Secure authentication",
+                        "Secure backend practices",
+                        "Robust authentication",
                         "Reviewed deployments"
                     ]
                 }
             }
         },
         "projects": {
-            "label": "Highlighted projects",
-            "title": "Solutions that support real operations.",
-            "seeAll": "See full case studies",
+            "label": "Featured projects",
+            "title": "Solutions that support real-world operations.",
+            "seeAll": "View all case studies",
             "index": {
                 "caseStudies": "Case studies"
             },
@@ -143,17 +157,17 @@
                 "badge": "Managing +50 restaurants",
                 "tech": "Flask · Celery · Docker · MySQL",
                 "title": "MesasYa",
-                "description": "Integrated reservation platform that eliminates operational chaos. Digitizes the floor and automates customer contact.",
+                "description": "A comprehensive booking platform that eliminates operational chaos. Digitizes the floor plan and automates customer contact.",
                 "bullets": {
-                    "first": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#589E8C]\"></span>-40% reservation management time through intelligent automatic assignment.",
-                    "second": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#589E8C]\"></span>Drastic reduction in 'no-shows' with an automated reminder system.",
-                    "third": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#589E8C]\"></span>Proven scalability: handling peak demand across multiple venues in real-time."
+                    "first": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#589E8C]\"></span>-40% management time via intelligent automatic table assignment.",
+                    "second": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#589E8C]\"></span>Drastic reduction in 'no-shows' through an automated reminder system.",
+                    "third": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#589E8C]\"></span>Proven scalability: handling peak demand across multiple locations in real time."
                 },
                 "directAccess": "→ MesasYa – Managing +50 restaurants and automated reservations.",
                 "caseStudy": {
                     "impactTitle": "Operational Impact",
                     "stackTitle": "Technical Stack",
-                    "nextTitle": "Next Phase",
+                    "nextTitle": "Next phase",
                     "nextTag": "Automatic report integration and management experience optimization."
                 }
             },
@@ -164,43 +178,43 @@
                 "description": "Digital ecosystem transforming the ordering experience. Unifies QR menus with automatic kitchen printing.",
                 "bullets": {
                     "first": "<span class=\"mt-1 h-2 w-2 rounded-full bg-blue-500\"></span>Instant ordering via WebSockets: from table to kitchen in under a second.",
-                    "second": "<span class=\"mt-1 h-2 w-2 rounded-full bg-blue-500\"></span>Real-time stock control: immediate sync between menu and warehouse.",
-                    "third": "<span class=\"mt-1 h-2 w-2 rounded-full bg-blue-500\"></span>Zero transcription errors: direct integration with TPV printing systems."
+                    "second": "<span class=\"mt-1 h-2 w-2 rounded-full bg-blue-500\"></span>Real-time stock control: immediate synchronization between menu and inventory.",
+                    "third": "<span class=\"mt-1 h-2 w-2 rounded-full bg-blue-500\"></span>Zero transcription errors: direct integration with POS printing systems."
                 },
                 "directAccess": "→ MiCartaYa – Real-time ordering and multi-language digital menu.",
                 "caseStudy": {
                     "impactTitle": "Floor Impact",
                     "stackTitle": "Stack",
                     "nextTitle": "Roadmap",
-                    "nextTag": "Integrated payment module and customer loyalty features."
+                    "nextTag": "Integrated payments and customer loyalty features."
                 }
             },
             "orderya": {
                 "badge": "Optimized logistics",
                 "tech": "FastAPI · Docker · MySQL · Jinja2",
                 "title": "OrderYa",
-                "description": "Centralized ordering for workshops. Replaces spreadsheets with an automated production and delivery flow.",
+                "description": "Order centralization for bakeries. Replaces spreadsheets with an automated production and delivery flow.",
                 "bullets": {
-                    "first": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#ea580c]\"></span>-30% data entry time by eliminating orders via informal channels (WhatsApp).",
-                    "second": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#ea580c]\"></span>Automatic generation of labels and delivery sheets by route and client.",
-                    "third": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#ea580c]\"></span>100% accuracy in daily production based on consolidated real demand."
+                    "first": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#ea580c]\"></span>-30% data entry time by eliminating informal order channels (WhatsApp).",
+                    "second": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#ea580c]\"></span>Automatic label and delivery sheet generation by route and customer.",
+                    "third": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#ea580c]\"></span>100% precision in daily production based on consolidated actual demand."
                 },
-                "directAccess": "→ OrderYa – Centralization and automation of orders for workshops.",
+                "directAccess": "→ OrderYa – Order centralization and automation for bakeries.",
                 "caseStudy": {
-                    "impactTitle": "Logistics Results",
+                    "impactTitle": "Logistical Results",
                     "stackTitle": "Infrastructure",
                     "nextTitle": "Evolution",
-                    "nextTag": "Demand prediction based on historical data and holiday calendars."
+                    "nextTag": "Demand prediction based on historical data and holidays."
                 }
             },
             "trato": {
-                "badge": "Sales efficiency",
+                "badge": "Sales effectiveness",
                 "tech": "FASTAPI · UVICORN · CELERY · MYSQL · DOCKER",
                 "title": "Trato",
                 "description": "Agile CRM designed to close sales. Prioritizes opportunity tracking via automated reminders.",
                 "bullets": {
                     "first": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#F97068]\"></span>Accelerated pipeline: clear visualization of each quote's lifecycle.",
-                    "second": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#F97068]\"></span>Smart reminders: Celery manages follow-ups so no offer is lost.",
+                    "second": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#F97068]\"></span>Smart reminders: Celery handles follow-ups so no deal is lost.",
                     "third": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#F97068]\"></span>Secure access control through a robust invitation code system."
                 },
                 "directAccess": "→ Trato – Agile CRM with smart reminders and optimized pipeline.",
@@ -208,17 +222,17 @@
                     "impactTitle": "Sales Impact",
                     "stackTitle": "Backend",
                     "nextTitle": "Improvements",
-                    "nextTag": "Integration with WhatsApp API for direct follow-up."
+                    "nextTag": "WhatsApp API integration for direct follow-ups."
                 }
             },
             "kobra": {
                 "badge": "Debt reduction",
                 "tech": "FastAPI · Celery · MySQL · Docker",
                 "title": "Kobra",
-                "description": "Financial management platform for Cybersur. Automates the billing and collection cycle.",
+                "description": "Financial management platform for Cybersur. Automates billing cycles and payment alerts.",
                 "bullets": {
-                    "first": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#f28d1f]\"></span>Improved cash flow through automatic payment alerts to clients.",
-                    "second": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#f28d1f]\"></span>Full audit: total traceability of collections and financial status.",
+                    "first": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#f28d1f]\"></span>Improved cash flow through automated client alert workflows.",
+                    "second": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#f28d1f]\"></span>Full audit: total traceability of payments and financial statuses.",
                     "third": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#f28d1f]\"></span>+20% operational efficiency for the finance team by eliminating repetitive tasks."
                 },
                 "caseStudy": {
@@ -230,13 +244,12 @@
             },
             "beatlist": {
                 "badge": "Spotify Approved",
-                "approval": "Spotify Approved",
                 "tech": "Flask · OAuth 2.0 · Celery · Spotify API",
                 "title": "BeatList",
-                "description": "Advanced music analytics suite. Uses the official API to provide metrics Spotify doesn't show by default.",
+                "description": "Advanced music analytics suite. Uses the official API to offer metrics that Spotify doesn't show by default.",
                 "bullets": {
-                    "first": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#111827]\"></span>Smart data cleanup: duplicate debugging algorithms and audio filters.",
-                    "second": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#111827]\"></span>Guaranteed security: official OAuth 2.0 authentication validated by Spotify.",
+                    "first": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#111827]\"></span>Smart data cleaning: duplicate removal and audio filter algorithms.",
+                    "second": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#111827]\"></span>Guaranteed security: official authentication via OAuth 2.0 validated by Spotify.",
                     "third": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#111827]\"></span>High-impact UX: interactive dashboards with real-time audio analytics."
                 },
                 "directAccess": "→ BeatList – Officially approved advanced Spotify analytics.",
@@ -251,137 +264,120 @@
                 "badge": "AI / Gemini Vision",
                 "tech": "FastAPI · React · Gemini · Docker",
                 "title": "Ponme",
-                "description": "Closet digitization via multimodal IA. Analyzes garments and generates combinations based on context.",
+                "description": "Wardrobe digitization through multimodal IA. Analyzes garments and generates combinations based on context.",
                 "bullets": {
-                    "first": "<span class=\"mt-1 h-2 w-2 rounded-full bg-blue-500\"></span>AI Analysis (Gemini): automatic cataloging of style, color and season.",
-                    "second": "<span class=\"mt-1 h-2 w-2 rounded-full bg-blue-500\"></span>Zero latency image processing: local segmentation for background removal.",
-                    "third": "<span class=\"mt-1 h-2 w-2 rounded-full bg-blue-500\"></span>Intelligent outfits: generated according to real weather and user agenda in seconds."
+                    "first": "<span class=\"mt-1 h-2 w-2 rounded-full bg-blue-500\"></span>AI-driven outfits based on specific plans and weather variables.",
+                    "second": "<span class=\"mt-1 h-2 w-2 rounded-full bg-blue-500\"></span>Device-side image processing to guarantee privacy and speed.",
+                    "third": "<span class=\"mt-1 h-2 w-2 rounded-full bg-blue-500\"></span>Usage tracking system to help rotate clothes and improve sustainability."
                 },
                 "directAccess": "→ Ponme – Your intelligent fashion assistant powered by Gemini AI.",
                 "caseStudy": {
                     "impactTitle": "AI Innovation",
                     "stackTitle": "AI + Frontend",
                     "nextTitle": "Roadmap",
-                    "nextTag": "AR 'Virtual Fitting Room' mode."
+                    "nextTag": "'Virtual Fitting Room' mode with augmented reality (AR)."
                 }
             },
             "cta": "Read more",
             "caseStudy": "Case study"
         },
-        "contact": {
-            "label": "Contact",
-            "title": "Shall we talk about your next project?",
-            "description": "If you want to learn more about these projects or chat about new ideas, get in touch on LinkedIn.",
-            "direct": "You can also email me at nicoabgv@gmail.com or explore my code on GitHub.",
-            "messageLabel": "Project",
-            "messagePlaceholder": "Tell me about goals, timelines, or technical challenges",
-            "submit": "Send message",
-            "nameLabel": "Name",
-            "namePlaceholder": "Your name",
-            "emailLabel": "Email",
-            "emailPlaceholder": "name@company.com"
-        },
-        "footerLinks": {
-            "projects": "Case studies",
-            "github": "GitHub",
-            "contact": "Direct contact"
-        },
         "modals": {
             "kobra": {
                 "tag": "Kobra",
-                "title": "Financial platform supporting Cybersur's daily operations.",
-                "paragraph1": "Kobra is the tailor-made solution I built for Cybersur. With a stack of <strong data-i18n=\"stack.fastapi\"></strong>, it centralizes billing, collections, and notifications so the finance team works with coherent, up-to-date information.",
-                "paragraph2": "Scheduled cronjobs manage exports and data cleanup, while alert pipelines log every action. The entire flow is designed to provide instant visibility and cut repetitive manual work.",
+                "title": "Financial platform supporting Cybersur daily operations.",
+                "paragraph1": "Kobra is the custom solution I built for Cybersur. With a <strong data-i18n=\"stack.fastapi\"></strong> stack, it centralizes billing, payments, and notifications so the finance team works with coherent, up-to-date information.",
+                "paragraph2": "Scheduled cronjobs manage data exports and cleaning, while alert and reminder pipelines log every action. The entire flow is designed for immediate visibility and to reduce manual, repetitive tasks.",
                 "bullets": {
-                    "first": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#f28d1f]\"></span>Automated workflows that drastically reduce collection follow-up times.",
-                    "second": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#f28d1f]\"></span>Traceable cronjobs for exports and cleanup routines that keep data consistent.",
-                    "third": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#f28d1f]\"></span>Internal dashboards with the metrics needed to monitor payments and outstanding balances."
+                    "first": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#f28d1f]\"></span>Automatic workflows that drastically reduce follow-up and collection times.",
+                    "second": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#f28d1f]\"></span>Traceable cronjobs for exports and cleaning routines to keep data consistent.",
+                    "third": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#f28d1f]\"></span>Internal dashboards with essential metrics for tracking payments and pendings."
                 },
                 "next": "Next iteration: expand internal financial reports and automate reconciliations.",
-                "diagram": "Technical diagram",
-                "diagramContent": "Cybersur team\n    ↓\nFastAPI API → MySQL\n    │\n    ├─ Celery workers → Emails & reminders\n    └─ Scheduled cronjobs → CSV reports"
+                "diagram": "Technical Diagram",
+                "diagramContent": "Cybersur Team\n    ↓\nFastAPI API → MySQL\n    │\n    ├─ Celery workers → Emails & Reminders\n    └─ Scheduled Cronjobs → CSV Reports"
             },
             "beatlist": {
                 "tag": "BeatList",
-                "title": "Professional playlist management with Spotify's official seal.",
-                "paragraph1": "BeatList serves music lovers, curators, and creators who need more than Spotify's native manager. It combines advanced administration, discovery, and analytics in a fluid experience.",
-                "paragraph2": "Thanks to the official <strong data-i18n=\"stack.spotifyapi\"></strong> and approved <strong data-i18n=\"stack.oauth\"></strong> authentication, the Flask backend accesses extended data with professional-grade stability and offloads heavy analyses to Celery to keep the experience smooth. The JavaScript frontend offers dashboards and a web player with custom micro-interactions.",
+                "title": "Professional playlist management with the official Spotify seal.",
+                "paragraph1": "BeatList is the platform for music lovers, curators, and creators who need something more powerful than the native Spotify manager. It brings together advanced administration, discovery, and analytics in a seamless experience.",
+                "paragraph2": "Thanks to official integration with the <strong data-i18n=\"stack.spotifyapi\"></strong> and approved <strong data-i18n=\"stack.oauth\"></strong> authentication, the Flask backend accesses extended data with professional stability and delegates heavy analysis to Celery to keep the experience smooth. The JavaScript frontend offers dashboards and a web player with custom micro-interactions.",
                 "bullets": {
-                    "first": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#111827]\"></span>Playlist merging, cleanup, and reordering with intelligent rules based on metrics like energy or danceability.",
+                    "first": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#111827]\"></span>Merge, clean up, and reorganize playlists with smart rules based on metrics like energy or danceability.",
                     "second": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#111827]\"></span>Recommendation engine by favorite artists and genres, plus dashboards showing listening habits.",
-                    "third": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#111827]\"></span>Celery-powered analyses process data in the background to deliver precise metrics without disrupting the user experience."
+                    "third": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#111827]\"></span>Analyses handled by Celery to process data in the background and offer precise metrics without affecting user experience."
                 },
-                "next": "Future evolutions: collaborative mode or insight exports in upcoming versions.",
-                "diagram": "Technical diagram",
-                "diagramContent": "Web client\n    ↓\nFlask API (Spotify OAuth 2.0)\n    ↓\nCelery workers → Heavy analyses & metrics\n    ↓\nJS dashboards + Player"
+                "next": "Possible evolutions: add collaborative mode or insight exports in future versions.",
+                "diagram": "Technical Diagram",
+                "diagramContent": "Web Client\n    ↓\nFlask API (OAuth 2.0 Spotify)\n    ↓\nCelery workers → Heavy analysis & metrics\n    ↓\nJS Dashboards + Player"
             },
             "mesasya": {
                 "tag": "MesasYa",
                 "title": "Smart reservations for restaurant chains.",
-                "paragraph1": "MesasYa is a <strong>production-ready SaaS</strong> that digitalizes reservations for multi-location restaurants. It offers granular occupancy control, automated communications, and dashboards tailored for managers.",
-                "paragraph2": "With <strong data-i18n=\"stack.flaskcelery\"></strong> as a base, the solution ships via Docker Compose with strong security practices, keeping workflows customizable per area, service, and team. Analytics and exports adapt to business decisions.",
+                "paragraph1": "MesasYa is a <strong data-i18n=\"stack.saas\"></strong> platform that digitizes reservation management for restaurants with multiple locations. It offers granular occupancy control, communication automation, and manager-ready dashboards.",
+                "paragraph2": "With <strong data-i18n=\"stack.flaskcelery\"></strong> as the base, the solution is deployed with Docker Compose and security best practices, maintaining customizable workflows by zone, service, and team. Analytics and exports adapt to business decisions.",
                 "bullets": {
-                    "first": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#589E8C]\"></span>Interactive, configurable floor plans per venue, area, and service.",
-                    "second": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#589E8C]\"></span>Automatic notifications for internal teams and final guests.",
-                    "third": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#589E8C]\"></span>Exportable demand, capacity, and performance indicators for strategic decisions."
+                    "first": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#589E8C]\"></span>Interactive floor plans configurable by location, zone, and service.",
+                    "second": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#589E8C]\"></span>Automatic notifications for internal teams and end customers.",
+                    "third": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#589E8C]\"></span>Demand, capacity, and performance indicators exportable for strategic decisions."
                 },
-                "next": "Next steps: add automated reporting and keep improving the manager experience.",
-                "diagram": "Technical diagram",
-                "diagramContent": "Staff & online reservations\n    ↓\nFlask API → MySQL\n    │\n    ├─ Celery workers → Emails & SMS\n    └─ Docker Compose → Orchestrated services"
+                "next": "Next steps: integrate automatic reports and continue improving the manager experience.",
+                "diagram": "Technical Diagram",
+                "diagramContent": "Staff and online bookings\n    ↓\nFlask API → MySQL\n    │\n    ├─ Celery workers → Emails & SMS\n    └─ Docker Compose → Coordinated services"
             },
             "orderya": {
                 "tag": "OrderYa",
                 "title": "Unified production and delivery management.",
                 "paragraph1": "Built with <strong data-i18n=\"stack.fastapi\"></strong> for maximum speed, it allows managing complex catalogs, prices, and users with differentiated roles. All deployed securely and scalably.",
+                "paragraph2": "Built with <strong data-i18n=\"stack.fastapi\"></strong> for maximum speed, it allows managing complex catalogs, prices, and users with differentiated roles. All of this is deployed securely and scalably.",
                 "bullets": {
                     "first": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#ea580c]\"></span>Unified order portal that eliminates transcription errors.",
                     "second": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#ea580c]\"></span>Automatic generation of production sheets and delivery notes.",
-                    "third": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#ea580c]\"></span>Robust Docker infrastructure ready for multiple clients."
+                    "third": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#ea580c]\"></span>Robust infrastructure with Docker ready for multiple clients."
                 },
                 "next": "Evolution: Future integration with billing systems.",
-                "diagram": "Technical diagram",
-                "diagramContent": "Shops / Workshop\n    ↓\nFastAPI\n    ↓\nMySQL\n    ↓\nProduction"
+                "diagram": "Technical Diagram",
+                "diagramContent": "Stores / Bakery\n    ↓\nFastAPI\n    ↓\nMySQL\n    ↓\nProduction"
             },
             "trato": {
                 "tag": "Trato",
                 "title": "Agile CRM for quotes, follow-ups, and reminders.",
-                "paragraph1": "Trato is the lightweight CRM that centralizes quotes, follow-ups, and reminders into a fast workflow. Powered by a <strong data-i18n=\"stack.fastapi\"></strong> stack running on Uvicorn, it keeps sales teams moving without friction.",
-                "paragraph2": "Invitation codes govern how companies and users join, while Celery tasks automate reminders and daily summaries. The panel prioritizes operational speed on both desktop and mobile.",
+                "paragraph1": "Trato is the lightweight CRM that centralizes quotes, follow-ups, and reminders in a fast flow. On a <strong data-i18n=\"stack.fastapi\"></strong> stack deployed with Uvicorn, it lets sales teams work without friction.",
+                "paragraph2": "Invite codes control company and user sign-ups, while Celery tasks automate reminders and daily summaries. The panel prioritizes operational speed on desktop and mobile.",
                 "bullets": {
-                    "first": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#F97068]\"></span>Guided quote flow with custom states and per-opportunity notes.",
-                    "second": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#F97068]\"></span>Automated reminders handled by Celery plus internal notifications.",
-                    "third": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#F97068]\"></span>Containerized deployment on the primary VPS with backups and basic monitoring."
+                    "first": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#F97068]\"></span>Guided quote entry with customizable statuses and opportunity comments.",
+                    "second": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#F97068]\"></span>Automatic reminders managed by Celery and internal notifications.",
+                    "third": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#F97068]\"></span>Containerized deployment on the main VPS with backups and basic monitoring."
                 },
-                "next": "Next steps: expand conversion metrics and automate leadership-ready reports.",
-                "diagram": "Technical diagram",
-                "diagramContent": "Invited companies\n    ↓\nFastAPI + Uvicorn → MySQL\n    │\n    ├─ Celery workers → Reminders\n    └─ Docker Compose → Primary VPS"
+                "next": "Next steps: expand conversion metrics and integrate automatic reports for management.",
+                "diagram": "Technical Diagram",
+                "diagramContent": "Invited Companies\n    ↓\nFastAPI + Uvicorn → MySQL\n    │\n    ├─ Celery workers → Reminders\n    └─ Docker Compose → Main VPS"
             },
             "micartaya": {
                 "tag": "MiCartaYa",
                 "title": "360º management of the restaurant experience.",
-                "paragraph1": "MiCartaYa is a comprehensive solution to digitize the interaction between restaurant and customer. Based on <strong data-i18n=\"stack.fastapi\"></strong> and bidirectional communication, it enables instant and error-free order flows.",
-                "paragraph2": "The system stands out for its remote printing engine connecting the cloud with physical kitchen printers, and an admin panel that dynamically manages complex menus with videos and multi-language support.",
+                "paragraph1": "MiCartaYa is a comprehensive solution to digitize interaction between the restaurant and the customer. Based on <strong data-i18n=\"stack.fastapi\"></strong> and two-way communication, it makes order flow instant and error-free.",
+                "paragraph2": "The system stands out for its remote printing engine that connects the cloud with physical kitchen printers, and an administration panel that allows managing complex menus with videos and multi-language support dynamically.",
                 "bullets": {
                     "first": "<span class=\"mt-1 h-2 w-2 rounded-full bg-blue-500\"></span>Real-time order reception with latency under 1 second thanks to WebSockets.",
-                    "second": "<span class=\"mt-1 h-2 w-2 rounded-full bg-blue-500\"></span>Total stock and availability control with immediate reflection on the public menu.",
-                    "third": "<span class=\"mt-1 h-2 w-2 rounded-full bg-blue-500\"></span>Centralized management of multiple venues, allergens, and visual brand customization."
+                    "second": "<span class=\"mt-1 h-2 w-2 rounded-full bg-blue-500\"></span>Total stock control and product availability with immediate reflection in the public menu.",
+                    "third": "<span class=\"mt-1 h-2 w-2 rounded-full bg-blue-500\"></span>Centralized management of multiple sedes, allergens, and visual brand customization."
                 },
-                "next": "Next steps: integration with payment gateways and support for home delivery.",
-                "diagram": "Technical diagram",
-                "diagramContent": "Customer (QR) / Staff\n    ↓\nFastAPI (WebSockets) → MySQL\n    │\n    ├─ Printer Client (Local) → Kitchen Ticket\n    └─ Dashboard (React) → Notifications"
+                "next": "Next steps: payment gateway integration and support for home delivery.",
+                "diagram": "Technical Diagram",
+                "diagramContent": "Diner (QR) / Staff\n    ↓\nFastAPI (WebSockets) → MySQL\n    │\n    ├─ Printer Client (Local) → Kitchen Ticket\n    └─ Dashboard (React) → Notifications"
             },
             "ponme": {
                 "tag": "Ponme",
-                "title": "AI applied to intelligent personal style management.",
-                "paragraph1": "Ponme democratizes the use of generative AI to solve the daily 'what should I wear' dilemma. It integrates the <strong data-i18n=\"stack.gemini\">Gemini</strong> API to understand not just what clothes you have, but how to combine them based on context.",
-                "paragraph2": "The application processes images locally to remove backgrounds and uses multimodal models to extract garment metadata (color, fabric, style), allowing for a 'digital closet' in minutes.",
+                "title": "AI applied to smart personal style management.",
+                "paragraph1": "Ponme democratizes use of generative AI to solve the daily 'what do I wear' dilemma. It integrates the <strong data-i18n=\"stack.gemini\">Gemini</strong> API to understand not just what clothes you have, but how to combine them by context.",
+                "paragraph2": "The app processes images locally to remove backgrounds and uses multimodal models to extract garment metadata (color, fabric, style), allowing you to create a 'digital wardrobe' in minutes.",
                 "bullets": {
-                    "first": "<span class=\"mt-1 h-2 w-2 rounded-full bg-blue-500\"></span>Intelligent outfit generation based on specific plans and weather variables.",
-                    "second": "<span class=\"mt-1 h-2 w-2 rounded-full bg-blue-500\"></span>On-device image processing to ensure privacy and speed.",
-                    "third": "<span class=\"mt-1 h-2 w-2 rounded-full bg-blue-500\"></span>Usage tracking system that helps rotate garments and improve sustainability."
+                    "first": "<span class=\"mt-1 h-2 w-2 rounded-full bg-blue-500\"></span>Smart outfit generation based on specific plans and weather variables.",
+                    "second": "<span class=\"mt-1 h-2 w-2 rounded-full bg-blue-500\"></span>Device-side image processing to guarantee privacy and speed.",
+                    "third": "<span class=\"mt-1 h-2 w-2 rounded-full bg-blue-500\"></span>Usage tracking system to help rotate garments and improve sustainability."
                 },
-                "next": "Next steps: intelligent suitcase planner and shopping suggestions based on closet gaps.",
-                "diagram": "Technical diagram",
+                "next": "Next steps: smart packing planner and purchase suggestions based on closet gaps.",
+                "diagram": "Technical Diagram",
                 "diagramContent": "User (Mobile/PWA)\n    ↓\nFastAPI → PostgreSQL\n    │\n    ├─ Google Gemini API → Image Analysis\n    └─ Rembg (Local) → Garment Segmentation"
             }
         }
@@ -389,14 +385,14 @@
     "projects": {
         "meta": {
             "title": "Case Studies · Nicolás Álvarez",
-            "description": "In-depth case studies for MesasYa, Trato, Kobra, and BeatList. Explore architecture, automation, and tangible results.",
+            "description": "Detailed case studies for MesasYa, Trato, Kobra, and BeatList. Dive into the architecture, automation, and results of each product.",
             "ogTitle": "Case Studies · Nicolás Álvarez",
-            "ogDescription": "Technical and business insights behind MesasYa, Trato, Kobra, and BeatList.",
+            "ogDescription": "Technical and business details for MesasYa, Trato, Kobra, and BeatList.",
             "twitterTitle": "Case Studies · Nicolás Álvarez",
-            "twitterDescription": "Dive into MesasYa, Trato, Kobra, and BeatList with architecture, workflows, and roadmaps."
+            "twitterDescription": "Dive into MesasYa, Trato, Kobra, and BeatList with architecture, flows, and roadmap."
         },
         "nav": {
-            "brandAria": "Back to home",
+            "brandAria": "Back to Home",
             "brandName": "Portfolio",
             "mesasya": "MesasYa",
             "micartaya": "MiCartaYa",
@@ -410,158 +406,158 @@
         "hero": {
             "label": "Case studies",
             "title": "From vision to deployment: complete product stories.",
-            "description": "Every project starts from a different challenge. Here you'll find the architecture decisions, operational flows, and lessons that enabled reliable, measurable launches.",
-            "indexLabel": "Index",
+            "description": "Every project starts from a different challenge. Here you will find the architecture decisions, operational flows, and learnings that allowed launching reliable and measurable solutions.",
+            "indexLabel": "Project Index",
             "indexItems": {
-                "mesasya": "01 — MesasYa <span class=\"text-xs text-slate-400\">Restaurant SaaS</span>",
-                "micartaya": "02 — MiCartaYa <span class=\"text-xs text-slate-400\">QR Menu & Ordering</span>",
-                "orderya": "03 — OrderYa <span class=\"text-xs text-slate-400\">Order management</span>",
-                "trato": "04 — Trato <span class=\"text-xs text-slate-400\">CRM for quotes</span>",
-                "kobra": "05 — Kobra <span class=\"text-xs text-slate-400\">Internal fintech</span>",
-                "beatlist": "06 — BeatList <span class=\"text-xs text-slate-400\">Spotify Approved</span>",
+                "mesasya": "01 — MesasYa <span class=\"text-xs text-slate-400\">SaaS Restaurant</span>",
+                "micartaya": "02 — MiCartaYa <span class=\"text-xs text-slate-400\">QR Menu / Orders</span>",
+                "orderya": "03 — OrderYa <span class=\"text-xs text-slate-400\">Order Management</span>",
+                "trato": "04 — Trato <span class=\"text-xs text-slate-400\">Agile CRM</span>",
+                "kobra": "05 — Kobra <span class=\"text-xs text-slate-400\">Internal Fintech</span>",
+                "beatlist": "06 — BeatList <span class=\"text-xs text-slate-400\">Music Analysis</span>",
                 "ponme": "07 — Ponme <span class=\"text-xs text-slate-400\">AI Fashion Assistant</span>"
             }
         },
         "directAccess": {
             "label": "Direct access",
             "links": {
-                "mesasya": "→ MesasYa – SaaS platform for restaurant reservation management.",
+                "mesasya": "→ MesasYa – SaaS reservation management platform for restaurants.",
                 "micartaya": "→ MiCartaYa – Digital menu and online ordering.",
                 "orderya": "→ OrderYa – Centralization and production management.",
                 "trato": "→ Trato – Agile CRM for quotes, follow-ups, and reminders.",
-                "beatlist": "→ BeatList – Advanced Spotify playlist analytics and management.",
-                "ponme": "→ Ponme – Your AI-powered smart closet assistant."
+                "beatlist": "→ BeatList – Advanced Spotify stats and playlist management.",
+                "ponme": "→ Ponme – Your AI-powered smart wardrobe."
             }
         },
         "mesasya": {
             "label": "Case study 01",
-            "title": "MesasYa — Multi-location reservation SaaS",
-            "paragraph1": "MesasYa is a <strong>production SaaS</strong> that digitizes reservation management for restaurants with multiple venues. It combines interactive layouts, customizable rules, and real-time notifications so each service runs smoothly.",
-            "paragraph2": "The backend built with <strong data-i18n=\"stack.flaskcelery\"></strong> relies on Docker Compose and solid security practices. Each restaurant configures zones, services, languages, and workflows without losing stability or traceability.",
-            "impact": "Operational impact",
+            "title": "MesasYa — Multi-location SaaS Reservations",
+            "paragraph1": "MesasYa is a <strong data-i18n=\"stack.saas\"></strong> digitalizing booking management for restaurants with multiple locations. It brings interactive floor plans, customizable rules, and real-time notifications so every service runs without surprises.",
+            "paragraph2": "The <strong data-i18n=\"stack.flaskcelery\"></strong> backend uses Docker Compose and security best practices. Each restaurant configures zones, services, languages, and specific workflows without losing stability or traceability.",
+            "impact": "Operational Impact",
             "bullets": {
-                "first": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#589E8C]\"></span>Configurable floor plans with venue, area, and event rules.",
-                "second": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#589E8C]\"></span>Automatic table assignment and real-time alerts for staff and guests.",
-                "third": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#589E8C]\"></span>BI-ready exports and metrics that support business decisions."
+                "first": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#589E8C]\"></span>Floor plans configurable with rules by location, zones, and special events.",
+                "second": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#589E8C]\"></span>Automatic table assignment and real-time notifications for staff and customers.",
+                "third": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#589E8C]\"></span>BI-ready exports and metrics that follow business decisions."
             },
             "stack": "Stack",
             "next": "Next steps",
-            "nextText": "Automated reporting integration and smoother management experience.",
-            "schema": "Technical outline",
-            "schemaContent": "Web / staff bookings\n    ↓\nFlask API → MySQL\n    │\n    ├─ Celery workers → Emails/SMS\n    └─ Docker Compose orchestrates services"
+            "nextText": "Automatic report integration and management experience optimization.",
+            "schema": "Technical Schema",
+            "schemaContent": "Web Bookings / staff\n    ↓\nFlask API → MySQL\n    │\n    ├─ Celery workers → Emails/SMS\n    └─ Docker Compose coordinates services"
         },
         "micartaya": {
             "label": "Case study 02",
-            "title": "MiCartaYa — Digital 360º dining experience",
-            "paragraph1": "MiCartaYa redefines restaurant interaction through a <strong data-i18n=\"stack.saas\">production SaaS</strong> platform for digital menus and self-managed ordering. It resolves manual ordering bottlenecks and ensures menu information is always up to date.",
-            "paragraph2": "The core of the project is a high-availability WebSocket system connecting guests with the restaurant dashboard and printing hardware, eliminating transcription errors and optimizing service times.",
-            "impact": "Operational results",
+            "title": "MiCartaYa — Full Table Digitization",
+            "paragraph1": "MiCartaYa redefines restaurant interaction through a <strong data-i18n=\"stack.saas\"></strong> platform of digital menus and self-managed ordering. It solves the manual order-taking bottleneck and ensures menu information is always up to date.",
+            "paragraph2": "The core of the project is a high-availability WebSockets system connecting diners to the restaurant dashboard and printing hardware, eliminating transcription errors and optimizing service times.",
+            "impact": "Operational Results",
             "bullets": {
-                "first": "<span class=\"mt-1 h-2 w-2 rounded-full bg-blue-500\"></span>Drastic reduction in waiting times for orders and payments.",
-                "second": "<span class=\"mt-1 h-2 w-2 rounded-full bg-blue-500\"></span>Dynamic price and availability management with a single click.",
-                "third": "<span class=\"mt-1 h-2 w-2 rounded-full bg-blue-500\"></span>Automatic ticket printing in kitchen and bar via TCP/IP and USB protocols."
+                "first": "<span class=\"mt-1 h-2 w-2 rounded-full bg-blue-500\"></span>Drastic reduction in wait time for orders and payments.",
+                "second": "<span class=\"mt-1 h-2 w-2 rounded-full bg-blue-500\"></span>Dynamic management of prices and availability with a single click.",
+                "third": "<span class=\"mt-1 h-2 w-2 rounded-full bg-blue-500\"></span>Automatic kitchen and bar ticket printing via TCP/IP and USB protocols."
             },
             "stack": "Stack",
             "next": "Next steps",
-            "nextText": "Integrated at-table payments and customer loyalty features.",
+            "nextText": "Integrated payments from table and customer loyalty features.",
             "schema": "Architecture",
-            "schemaContent": "Guest (Mobile)\n    ↓\nNginx → FastAPI (WS)\n    │\n    ├─ PostgreSQL / Redis\n    └─ Printer Script (Local) → TPV"
+            "schemaContent": "Diner (Mobile)\n    ↓\nNginx → FastAPI (WS)\n    │\n    ├─ PostgreSQL / Redis\n    └─ Printer Script (Local) → POS"
         },
         "orderya": {
             "label": "Case study 03",
-            "title": "OrderYa — Integral order management",
-            "paragraph1": "OrderYa eliminates the chaos of order management between workshops and points of sale. It replaces spreadsheets and scattered messages with a centralized platform where each store places orders intuitively and the workshop views consolidated demand.",
-            "paragraph2": "Developed with <strong data-i18n=\"stack.fastapi\"></strong> and server-side rendering (Jinja2) to ensure speed and simplicity, the system manages complex catalogs, price lists per client, and automatic generation of delivery orders.",
+            "title": "OrderYa — Comprehensive Order Management",
+            "paragraph1": "OrderYa eliminates order management chaos between bakeries and points of sale. It replaces spreadsheets and scattered messages with a centralized platform where each shop orders intuitively and the bakery sees consolidated demand.",
+            "paragraph2": "Developed with <strong data-i18n=\"stack.fastapi\"></strong> and server-side rendering (Jinja2) for speed and simplicity, the system handles complex catalogs, price lists by customer, and automatic delivery order generation.",
             "directAccess": "→ OrderYa – Centralization and production management.",
-            "keyFeatures": "Key features",
+            "keyFeatures": "Key Features",
             "bullets": {
-                "first": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#ea580c]\"></span>Store portal with history and real-time status.",
-                "second": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#ea580c]\"></span>Barcode scanning to streamline order creation.",
+                "first": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#ea580c]\"></span>Shop portal with real-time history and status.",
+                "second": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#ea580c]\"></span>Barcode scanning to speed up order creation.",
                 "third": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#ea580c]\"></span>Template creation, product management, and data export."
             },
             "stack": "Stack",
             "status": {
                 "title": "Status",
-                "description": "In production. Managing daily orders for real workshops."
+                "description": "In production. Handling daily orders for actual bakeries."
             },
-            "schema": "Technical diagram",
-            "schemaContent": "Stores\n    ↓\nNginx → FastAPI\n    ↓\nMySQL (Persistence)\n    ↓\nProduction (PDF Lists/View)"
+            "schema": "Technical Schema",
+            "schemaContent": "Shops\n    ↓\nNginx → FastAPI\n    ↓\nMySQL (Persistence)\n    ↓\nProduction (PDF lists/View)"
         },
         "trato": {
             "label": "Case study 04",
-            "title": "Trato — Agile CRM for sales teams",
-            "paragraph1": "Trato centralizes quotes, follow-ups, and reminders in a lightweight CRM built for sales teams. Powered by <strong data-i18n=\"stack.fastapi\"></strong> and Uvicorn, it keeps every opportunity clear and actionable.",
-            "paragraph2": "Companies join through invitation codes and manage pipelines with custom stages, interaction timelines, and automated alerts. Celery orchestrates reminders, emails, and daily summaries from the primary VPS.",
+            "title": "Trato — Agile CRM for Sales Teams",
+            "paragraph1": "Trato centralizes quotes, follow-ups, and reminders in a lightweight CRM for sales teams. With a <strong data-i18n=\"stack.fastapi\"></strong> backend running with Uvicorn, it prioritizes response speed and clarity for every opportunity.",
+            "paragraph2": "Companies access via invite codes and manage pipelines with customizable statuses, interaction timelines, and automatic alerts. Celery tasks coordinate reminders, email sends, and daily summaries from the main VPS.",
             "impact": "Impact",
             "bullets": {
-                "first": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#F97068]\"></span>Controlled onboarding for companies and users via invitation codes.",
-                "second": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#F97068]\"></span>Follow-ups with automated reminders and a centralized opportunity timeline.",
-                "third": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#F97068]\"></span>Containerized deployment on the main VPS with backups and Celery monitoring."
+                "first": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#F97068]\"></span>Controlled company and user sign-ups through invite codes.",
+                "second": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#F97068]\"></span>Follow-ups with automatic reminders and centralized timeline per opportunity.",
+                "third": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#F97068]\"></span>Containerized deployment on main VPS with backups and Celery task monitoring."
             },
             "stack": "Stack",
             "status": {
                 "title": "Status",
-                "description": "Live on the primary VPS with basic monitoring and daily backups."
+                "description": "Production on main VPS with basic monitoring and daily backups."
             },
-            "schema": "Technical diagram",
-            "schemaContent": "Invited companies\n    ↓\nFastAPI + Uvicorn → MySQL\n    │\n    ├─ Celery workers → Reminders & emails\n    └─ Docker Compose → Primary VPS",
+            "schema": "Technical Schema",
+            "schemaContent": "Invited Companies\n    ↓\nFastAPI + Uvicorn → MySQL\n    │\n    ├─ Celery workers → Reminders and emails\n    └─ Docker Compose → Main VPS",
             "directAccess": "→ Trato – Agile CRM for quotes, follow-ups, and reminders."
         },
         "kobra": {
             "label": "Case study 05",
-            "title": "Kobra — Financial platform for Cybersur",
-            "paragraph1": "Kobra keeps Cybersur's financial operations on track. It automates invoicing, collections, and reminders from a robust <strong data-i18n=\"stack.fastapi\"></strong> backend.",
-            "paragraph2": "Scheduled jobs manage exports, data hygiene, and automatic reconciliations. Internal dashboards prioritize collection metrics and client SLAs so the finance team has day-to-day clarity.",
-            "results": "Key results",
+            "title": "Kobra — Financial Platform for Cybersur",
+            "paragraph1": "Kobra is the custom solution maintaining Cybersur financial operations. It automates billing, payments, and reminders from a robust <strong data-i18n=\"stack.fastapi\"></strong> backend.",
+            "paragraph2": "Scheduled cronjobs manage exports, data cleaning, and automatic reconciliations. Internal panels prioritize collection metrics and SLA by client so the finance team has daily clarity.",
+            "results": "Key Results",
             "bullets": {
-                "first": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#f28d1f]\"></span>Automated reminders and workflows that reduce overdue balances.",
-                "second": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#f28d1f]\"></span>Traceable cronjobs and cleanup pipelines that keep data consistent.",
-                "third": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#f28d1f]\"></span>Internal dashboards with collection and SLA metrics per client."
+                "first": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#f28d1f]\"></span>Automatic reminders and follow-up reducing delinquency.",
+                "second": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#f28d1f]\"></span>Cronjobs and data cleaning pipelines with full audit.",
+                "third": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#f28d1f]\"></span>Internal dashboards with collection metrics and client SLAs."
             },
             "stack": "Stack",
             "next": "Next steps",
-            "nextText": "Automate financial reports and reconciliations.",
-            "schema": "Technical outline",
-            "schemaContent": "Cybersur ops\n    ↓\nFastAPI → MySQL\n    │\n    ├─ Celery → Emails\n    └─ Cronjobs → Reports"
+            "nextText": "Automation of financial reports and reconciliations.",
+            "schema": "Technical Schema",
+            "schemaContent": "Cybersur Ops\n    ↓\nFastAPI → MySQL\n    │\n    ├─ Celery → Emails\n    └─ Cronjobs → Reports"
         },
         "beatlist": {
             "label": "Case study 06",
-            "title": "BeatList — Music suite for creators",
+            "title": "BeatList — Music Suite for Creators",
             "approval": "Spotify Approved",
-            "paragraph1": "BeatList empowers curators and creators to go beyond Spotify's default tooling. It connects the <strong data-i18n=\"stack.spotifyapi\"></strong> with advanced analysis and interactive experiences validated by Spotify for Developers.",
-            "paragraph2": "The Flask backend with <strong data-i18n=\"stack.oauth\"></strong> collects extended data and orchestrates Celery analyses to deliver metrics without blocking listeners. The frontend delivers players, dashboards, and mixing tools built for professionals and communities.",
-            "outcomes": "Results",
+            "paragraph1": "BeatList follows curators and creators who need to go beyond the standard Spotify manager. It connects the <strong data-i18n=\"stack.spotifyapi\"></strong> with advanced analysis and interactive experiences approved by Spotify for Developers.",
+            "paragraph2": "The Flask backend with <strong data-i18n=\"stack.oauth\"></strong> retrieves extended data and coordinates analysis with Celery to generate metrics without blocking users. The frontend offers players, dashboards, and mixing tools for pros and communities.",
+            "outcomes": "Outcomes",
             "bullets": {
-                "first": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#111827]\"></span>Intelligent playlist reorganization using energy and rhythm metrics.",
+                "first": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#111827]\"></span>Smart playlist reorganization with energy and rhythm metrics.",
                 "second": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#111827]\"></span>Dynamic dashboards and player with interactive experiences.",
-                "third": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#111827]\"></span>Celery-powered heavy processing keeps insights up to date on listening habits."
+                "third": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#111827]\"></span>Heavy processing with Celery keeping insights updated on listening habits."
             },
             "stack": "Stack",
             "stackItems": {
                 "first": "Flask · Python",
                 "second": "Spotify API · OAuth 2.0",
                 "third": "Modular JavaScript",
-                "fourth": "Celery for async analyses"
+                "fourth": "Celery for async analysis"
             },
             "next": "Next steps",
-            "nextText": "Collaborative mode and advanced exports are on the roadmap.",
-            "schema": "Technical outline",
-            "schemaContent": "Users\n    ↓\nFlask API (Spotify OAuth)\n    ↓\nCelery workers → Heavy analyses & insights\n    ↓\nDashboards + Player"
+            "nextText": "Collaborative mode and advanced exports in the roadmap.",
+            "schema": "Technical Schema",
+            "schemaContent": "Users\n    ↓\nFlask API (OAuth Spotify)\n    ↓\nCelery workers → Heavy analysis and insights\n    ↓\nDashboards + Player"
         },
         "ponme": {
             "label": "Case study 07",
-            "title": "Ponme — AI-powered Fashion Assistant",
-            "paragraph1": "Ponme is a B2C platform that applies multimodal models for personal closet management. It allows users to digitize their clothes and receive intelligent outfit suggestions generated by <strong data-i18n=\"stack.gemini\">Gemini</strong>.",
-            "paragraph2": "Using local computer vision techniques for image segmentation and advanced LLM reasoning for style matching, Ponme offers a seamless experience that optimizes the use of existing garments.",
+            "title": "Ponme — Personal Style & AI Assistant",
+            "paragraph1": "Ponme is a B2C platform applying multimodal models for personal wardrobe management. It allows users to digitize their clothes and receive smart outfit suggestions generated by <strong data-i18n=\"stack.gemini\">Gemini</strong>.",
+            "paragraph2": "Using local computer vision techniques for image segmentation and advanced LLM reasoning for style combination, Ponme offers a seamless experience that optimizes use of existing garments.",
             "impact": "AI Features",
             "bullets": {
                 "first": "<span class=\"mt-1 h-2 w-2 rounded-full bg-blue-500\"></span>AI-suggested combinations considering event context and local weather.",
                 "second": "<span class=\"mt-1 h-2 w-2 rounded-full bg-blue-500\"></span>Automatic garment cataloging (type, color, material) via visual analysis.",
-                "third": "<span class=\"mt-1 h-2 w-2 rounded-full bg-blue-500\"></span>PWA mode for a native mobile experience with fast loading and functional offline."
+                "third": "<span class=\"mt-1 h-2 w-2 rounded-full bg-blue-500\"></span>PWA mode for a mobile-native experience with fast load and offline functionality."
             },
             "stack": "Stack",
             "next": "Next steps",
-            "nextText": "Circular shopping recommendation algorithms and social fashion sharing.",
+            "nextText": "Circular purchase recommendation algorithms and social fashion sharing.",
             "schema": "Architecture",
             "schemaContent": "User (PWA)\n    ↓\nFastAPI → PostgreSQL\n    │\n    ├─ Rembg API → Background\n    └─ Google Gemini → Analysis"
         }

@@ -43,6 +43,48 @@ document.addEventListener('DOMContentLoaded', () => {
             return null;
         }, object);
 
+    const resolveTranslationValue = (langData, pageScope, keyPath) => {
+        if (!keyPath) return null;
+
+        const candidatePaths = [];
+        const hasExplicitScope = keyPath.startsWith('common.') || keyPath.startsWith('index.') || keyPath.startsWith('projects.');
+
+        if (hasExplicitScope) {
+            if (pageScope === 'index' && keyPath.startsWith('projects.')) {
+                candidatePaths.push(`index.${keyPath}`);
+            }
+            candidatePaths.push(keyPath);
+        } else {
+            candidatePaths.push(`${pageScope}.${keyPath}`);
+            candidatePaths.push(`common.${keyPath}`);
+            if (pageScope !== 'index') {
+                candidatePaths.push(`index.${keyPath}`);
+            }
+            if (pageScope !== 'projects') {
+                candidatePaths.push(`projects.${keyPath}`);
+            }
+            candidatePaths.push(keyPath);
+        }
+
+        if (keyPath.startsWith('index.') || keyPath.startsWith('projects.')) {
+            const unscoped = keyPath.split('.').slice(1).join('.');
+            if (unscoped) {
+                candidatePaths.push(unscoped);
+                candidatePaths.push(`common.${unscoped}`);
+            }
+        }
+
+        const seen = new Set();
+        for (const candidate of candidatePaths) {
+            if (!candidate || seen.has(candidate)) continue;
+            seen.add(candidate);
+            const value = getNestedValue(langData, candidate);
+            if (value != null) return value;
+        }
+
+        return null;
+    };
+
     const missingTranslations = new Set();
 
     const applyBindings = (groupData, bindings) => {
@@ -181,11 +223,9 @@ document.addEventListener('DOMContentLoaded', () => {
         applyBindings(langData?.[pageKey], translationBindings[pageKey]);
 
         // 2. Descubrimiento automático de elementos con data-i18n
-        const allData = { ...langData?.common, ...langData?.[pageKey], ...langData };
-
         document.querySelectorAll('[data-i18n]').forEach(el => {
             const key = el.getAttribute('data-i18n');
-            const value = getNestedValue(langData, key);
+            const value = resolveTranslationValue(langData, pageKey, key);
             if (value != null) {
                 el.textContent = value;
             } else {
@@ -195,7 +235,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         document.querySelectorAll('[data-i18n-html]').forEach(el => {
             const key = el.getAttribute('data-i18n-html');
-            const value = getNestedValue(langData, key);
+            const value = resolveTranslationValue(langData, pageKey, key);
             if (value != null) {
                 el.innerHTML = value;
             } else {
@@ -211,7 +251,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 if (attr.name.startsWith('data-i18n-attr-')) {
                     const targetAttr = attr.name.slice(15);
                     const key = attr.value;
-                    const value = getNestedValue(langData, key);
+                    const value = resolveTranslationValue(langData, pageKey, key);
                     if (value != null) {
                         el.setAttribute(targetAttr, value);
                     } else {
