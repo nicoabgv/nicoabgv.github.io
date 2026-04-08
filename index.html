@@ -63,8 +63,8 @@
                 </svg>
             </button>
             <div class="hidden items-center gap-4 text-sm font-medium text-slate-700 lg:flex">
-                <a class="transition hover:text-blue-600" href="#about" data-i18n="common.nav.about">Sobre mí</a>
-                <a class="transition hover:text-blue-600" href="#skills" data-i18n="common.nav.skills">Skills</a>
+                <a class="transition hover:text-blue-600" href="#about" data-i18n="common.nav.about">Perfil</a>
+                <a class="transition hover:text-blue-600" href="#skills" data-i18n="common.nav.skills">Qué hago</a>
                 <a class="transition hover:text-blue-600" href="#projects" data-i18n="common.nav.projects">Proyectos</a>
                 <a class="transition hover:text-blue-600" href="#contact" data-i18n="common.nav.contact">Contacto</a>
                 <a class="inline-flex items-center gap-2 rounded-full border border-slate-200 px-4 py-2 text-xs font-semibold uppercase tracking-widest text-slate-700 transition hover:border-blue-500 hover:text-blue-600"
@@ -86,8 +86,8 @@
         <div id="mobile-nav" data-mobile-menu
             class="hidden border-t border-slate-200 bg-white/95 px-6 py-4 shadow-lg transition duration-300 lg:hidden">
             <div class="flex flex-col gap-3 text-sm font-medium text-slate-700">
-                <a class="transition hover:text-blue-600" href="#about" data-i18n="common.nav.about">Sobre mí</a>
-                <a class="transition hover:text-blue-600" href="#skills" data-i18n="common.nav.skills">Skills</a>
+                <a class="transition hover:text-blue-600" href="#about" data-i18n="common.nav.about">Perfil</a>
+                <a class="transition hover:text-blue-600" href="#skills" data-i18n="common.nav.skills">Qué hago</a>
                 <a class="transition hover:text-blue-600" href="#projects" data-i18n="common.nav.projects">Proyectos</a>
                 <a class="transition hover:text-blue-600" href="#contact" data-i18n="common.nav.contact">Contacto</a>
                 <a class="inline-flex items-center gap-2 rounded-full border border-slate-200 px-4 py-2 text-xs font-semibold uppercase tracking-widest text-slate-700 transition hover:border-blue-500 hover:text-blue-600"
@@ -119,14 +119,15 @@
                     <p class="inline-flex items-center gap-3 text-xs font-semibold uppercase tracking-[0.4em] text-slate-500"
                         data-i18n-html="hero.taglineHtml">
                         <span class="h-px w-10 bg-slate-300"></span>
-                        Arquitectura de Software · Ciberseguridad Aplicada
+                        Ingeniero de software · Producto · Automatización
                     </p>
                     <h1 class="text-4xl font-bold leading-tight text-slate-900 sm:text-5xl" data-i18n="hero.title">
                         Soy Nicolás Álvarez, ingeniero de software.
                     </h1>
                     <p class="max-w-2xl text-lg text-slate-600" data-i18n="hero.description">
-                        Especialista en escalar productos con mentalidad de seguridad. Ayudo a empresas a automatizar
-                        operaciones complejas y asegurar sus flujos de datos críticos desde el primer despliegue.
+                        Diseño y desarrollo productos digitales con foco en claridad, automatización y ejecución
+                        técnica. Trabajo sobre todo en SaaS, herramientas internas y software que necesita funcionar de
+                        verdad en producción.
                     </p>
                     <div class="flex flex-wrap items-center gap-4">
                         <a href="#projects"
@@ -146,6 +147,33 @@
                                     d="M19 0H5C2.24 0 0 2.24 0 5v14c0 2.76 2.24 5 5 5h14c2.76 0 5-2.24 5-5V5c0-2.76-2.24-5-5-5ZM7.09 19.19H4.22V9h2.87v10.19ZM5.65 7.7c-.91 0-1.65-.74-1.65-1.65 0-.91.74-1.65 1.65-1.65.91 0 1.65.74 1.65 1.65 0 .91-.74 1.65-1.65 1.65Zm13.54 11.49h-2.87v-4.96c0-1.18-.02-2.7-1.65-2.7-1.65 0-1.9 1.29-1.9 2.62v5.04h-2.87V9h2.75v1.39h.04c.38-.72 1.31-1.47 2.7-1.47 2.89 0 3.42 1.9 3.42 4.36v5.91Z" />
                             </svg>
                         </a>
+                    </div>
+                    <div class="grid gap-3 sm:grid-cols-2 xl:grid-cols-4" data-animate>
+                        <div class="rounded-2xl border border-slate-200 bg-white/80 p-4 shadow-sm">
+                            <p class="text-[11px] font-semibold uppercase tracking-[0.25em] text-slate-400"
+                                data-i18n="hero.presentation.roleLabel">Rol</p>
+                            <p class="mt-2 text-sm font-semibold text-slate-900" data-i18n="hero.presentation.roleValue">
+                                Ingeniero de software
+                            </p>
+                        </div>
+                        <div class="rounded-2xl border border-slate-200 bg-white/80 p-4 shadow-sm">
+                            <p class="text-[11px] font-semibold uppercase tracking-[0.25em] text-slate-400"
+                                data-i18n="hero.presentation.locationLabel">Base</p>
+                            <p class="mt-2 text-sm font-semibold text-slate-900"
+                                data-i18n="hero.presentation.locationValue">Madrid, España</p>
+                        </div>
+                        <div class="rounded-2xl border border-slate-200 bg-white/80 p-4 shadow-sm">
+                            <p class="text-[11px] font-semibold uppercase tracking-[0.25em] text-slate-400"
+                                data-i18n="hero.presentation.focusLabel">Foco</p>
+                            <p class="mt-2 text-sm font-semibold text-slate-900"
+                                data-i18n="hero.presentation.focusValue">SaaS, automatización y producto</p>
+                        </div>
+                        <div class="rounded-2xl border border-slate-200 bg-white/80 p-4 shadow-sm">
+                            <p class="text-[11px] font-semibold uppercase tracking-[0.25em] text-slate-400"
+                                data-i18n="hero.presentation.experienceLabel">Experiencia</p>
+                            <p class="mt-2 text-sm font-semibold text-slate-900"
+                                data-i18n="hero.presentation.experienceValue">3+ años</p>
+                        </div>
                     </div>
                     <div class="mt-6 space-y-3 text-sm text-slate-600">
                         <p class="text-xs font-semibold uppercase tracking-[0.3em] text-slate-500"
@@ -240,7 +268,7 @@
             <div class="mx-auto flex w-full max-w-6xl flex-col gap-12 px-6 lg:flex-row">
                 <div class="w-full space-y-6 lg:w-2/3" data-animate>
                     <p class="text-xs font-semibold uppercase tracking-[0.3em] text-slate-500" data-i18n="about.label">
-                        Sobre mí</p>
+                        Perfil</p>
                     <h2 class="text-3xl font-semibold text-slate-900 sm:text-4xl" data-i18n="about.title">Formación
                         técnica con foco en
                         seguridad aplicada.</h2>
@@ -295,7 +323,7 @@
             <div class="mx-auto max-w-6xl space-y-12 px-6">
                 <div class="space-y-4" data-animate>
                     <p class="text-xs font-semibold uppercase tracking-[0.3em] text-slate-500" data-i18n="skills.label">
-                        Skills & Stack</p>
+                        Qué hago</p>
                     <h2 class="text-3xl font-semibold text-slate-900 sm:text-4xl" data-i18n="skills.title">Capas
                         técnicas que utilizo para crear
                         productos escalables.</h2>
@@ -438,6 +466,13 @@
                         <h2 class="mt-2 text-3xl font-semibold text-slate-900 sm:text-4xl" data-i18n="projects.title">
                             Soluciones que sostienen
                             operaciones reales.</h2>
+                        <p class="mt-4 max-w-3xl text-sm text-slate-600" data-i18n-html="projects.ecosystemHtml">
+                            MesasYa, MiCartaYa y OrderYa forman parte del ecosistema de <a
+                                class="font-semibold text-blue-600 transition hover:text-blue-700"
+                                href="https://yasolutions.es" target="_blank" rel="noreferrer">YaSolutions</a>, una
+                            línea de soluciones digitales para hostelería y operaciones. Aquí los presento desde la
+                            perspectiva de producto, arquitectura y ejecución técnica.
+                        </p>
                     </div>
                     <a href="projects.html"
                         class="inline-flex items-center gap-2 text-sm font-semibold text-blue-600 transition hover:text-blue-700">
@@ -960,8 +995,8 @@
             </div>
             <div class="mt-6 space-y-6 text-sm text-slate-600">
                 <p data-i18n-html="index.modals.kobra.paragraph1">
-                    Kobra es la solución a medida que construí para Cybersur. Con un stack de <strong
-                        data-i18n="stack.fastapi"></strong>, centraliza facturación, cobros y notificaciones para que el
+                    Kobra es la solución a medida que construí para Cybersur. Con un stack de FastAPI, Celery, MySQL y
+                    Docker, centraliza facturación, cobros y notificaciones para que el
                     equipo financiero trabaje con información coherente y actualizada.
                 </p>
                 <p data-i18n-html="index.modals.kobra.paragraph2">
@@ -1026,7 +1061,7 @@ FastAPI API → MySQL
             <div class="mt-6 space-y-6 text-sm text-slate-600">
                 <p data-i18n-html="index.modals.trato.paragraph1">
                     Trato es el CRM ligero que centraliza presupuestos, seguimientos y recordatorios en un flujo rápido.
-                    Sobre un backend en <strong data-i18n="stack.fastapi"></strong> desplegado con Uvicorn, permite a
+                    Sobre un backend en FastAPI, Celery, MySQL y Docker desplegado con Uvicorn, permite a
                     los equipos comerciales trabajar sin fricciones ni tiempos muertos.
                 </p>
                 <p data-i18n-html="index.modals.trato.paragraph2">
@@ -1094,8 +1129,8 @@ FastAPI + Uvicorn → MySQL
                     experiencia fluida.
                 </p>
                 <p data-i18n-html="index.modals.beatlist.paragraph2">
-                    Gracias a la integración oficial con la <strong data-i18n="stack.spotifyapi"></strong> y a la
-                    autenticación <strong data-i18n="stack.oauth"></strong> aprobada, el backend en Flask accede a datos
+                    Gracias a la integración oficial con la Spotify API y a la
+                    autenticación OAuth 2.0 aprobada, el backend en Flask accede a datos
                     extendidos con estabilidad profesional. El frontend en JavaScript ofrece dashboards y un reproductor
                     web con microinteracciones personalizadas.
                 </p>
@@ -1158,12 +1193,12 @@ Dashboards JS + Reproductor</pre>
             </div>
             <div class="mt-6 space-y-6 text-sm text-slate-600">
                 <p data-i18n-html="index.modals.mesasya.paragraph1">
-                    MesasYa es una plataforma <strong data-i18n="stack.saas"></strong> que digitaliza la gestión de
+                    MesasYa es una plataforma SaaS en producción que digitaliza la gestión de
                     reservas para restaurantes con múltiples sedes. Ofrece control granular de ocupación, automatización
                     de comunicaciones y dashboards listos para el gestor.
                 </p>
                 <p data-i18n-html="index.modals.mesasya.paragraph2">
-                    Con <strong data-i18n="stack.flaskcelery"></strong> como base, la solución se despliega con Docker
+                    Con Flask, Celery, MySQL y Docker como base, la solución se despliega con Docker
                     Compose y buenas prácticas de seguridad, manteniendo workflows personalizables por zona, servicio y
                     equipo. Las analíticas y exportaciones se adaptan a las decisiones del negocio.
                 </p>
@@ -1227,7 +1262,7 @@ Flask API → MySQL
                     automáticamente las listas de producción y reparto necesarias para la jornada.
                 </p>
                 <p data-i18n-html="index.modals.orderya.paragraph2">
-                    Construido con <strong data-i18n="stack.fastapi"></strong> para máxima velocidad, permite gestionar
+                    Construido con FastAPI, Celery, MySQL y Docker para máxima velocidad, permite gestionar
                     catálogos complejos, precios y usuarios con roles diferenciados. Todo ello desplegado de forma
                     segura y escalable.
                 </p>
@@ -1353,8 +1388,8 @@ Producción</pre>
                     en estilismo, clima y agenda.
                 </p>
                 <p data-i18n-html="index.modals.ponme.paragraph2">
-                    Implementado con <strong>FastAPI</strong> y <strong>React</strong>, el núcleo de la
-                    inteligencia reside en la integración con <strong data-i18n="stack.gemini"></strong> para el
+                    Implementado con FastAPI y React, el núcleo de la
+                    inteligencia reside en la integración con Google Gemini para el
                     análisis multimodal. Además, incluye procesamiento local de imágenes para la eliminación
                     automática de fondos, garantizando un catálogo visual coherente y profesional.
                 </p>

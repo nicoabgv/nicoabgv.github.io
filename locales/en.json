@@ -6,8 +6,8 @@
         "nav": {
             "brandName": "Nicolás Álvarez",
             "brandAria": "Home",
-            "about": "About",
-            "skills": "Skills",
+            "about": "Profile",
+            "skills": "What I do",
             "projects": "Projects",
             "contact": "Contact",
             "cv": "Download CV",
@@ -60,17 +60,27 @@
             "twitterDescription": "Software engineer. I build scalable, automated, production-ready products."
         },
         "hero": {
-            "taglineHtml": "<span class=\"h-px w-10 bg-slate-300\"></span>Software Architecture · Applied Cybersecurity",
+            "taglineHtml": "<span class=\"h-px w-10 bg-slate-300\"></span>Software engineer · Product · Automation",
             "title": "I'm Nicolás Álvarez, software engineer.",
-            "description": "Specialist in scaling products with a security mindset. I help companies automate complex operations and secure critical data flows from the first deployment.",
+            "description": "I design and build digital products with a focus on clarity, automation, and technical execution. Most of my work sits in SaaS, internal tools, and software that needs to perform well in production.",
             "primaryCta": "View projects",
             "secondaryCta": "LinkedIn",
+            "presentation": {
+                "roleLabel": "Role",
+                "roleValue": "Software engineer",
+                "locationLabel": "Base",
+                "locationValue": "Madrid, Spain",
+                "focusLabel": "Focus",
+                "focusValue": "SaaS, automation, and product",
+                "experienceLabel": "Experience",
+                "experienceValue": "3+ years"
+            },
             "summaryLabel": "Quick snapshot",
-            "summaryTitle": "I design and build secure, scalable, and well-structured web platforms.",
+            "summaryTitle": "I turn ideas into web products that are solid, clear, and ready to use.",
             "summaryItems": {
-                "first": "<span class=\"mt-1 h-2 w-2 rounded-full bg-blue-500\"></span>Python backend specialist with Flask and FastAPI, optimizing distributed processes through Celery.",
-                "second": "<span class=\"mt-1 h-2 w-2 rounded-full bg-blue-500\"></span>I build high-performance interfaces with React and Tailwind, prioritizing simplicity and speed.",
-                "third": "<span class=\"mt-1 h-2 w-2 rounded-full bg-blue-500\"></span>I integrate advanced cybersecurity into authentication, data handling, and automated deployments."
+                "first": "<span class=\"mt-1 h-2 w-2 rounded-full bg-blue-500\"></span>Python backend with Flask and FastAPI for systems that need order, automation, and reliability.",
+                "second": "<span class=\"mt-1 h-2 w-2 rounded-full bg-blue-500\"></span>Frontend with React and Tailwind when the product needs a clear, fast, and maintainable experience.",
+                "third": "<span class=\"mt-1 h-2 w-2 rounded-full bg-blue-500\"></span>Product-minded technical judgment to turn ideas into real solutions."
             },
             "live": {
                 "label": "Live projects",
@@ -85,10 +95,10 @@
             }
         },
         "about": {
-            "label": "About me",
-            "title": "Technical background with an applied security focus.",
-            "paragraph1": "I'm a software engineer in my final year of studies, with a two-year university specialization in applied cybersecurity. That journey let me integrate security best practices into backend work, authentication, and deployments without losing sight of the user experience.",
-            "paragraph2": "I work on SaaS solutions, API integrations, and automation with Python and JavaScript. My security focus is practical: I design coherent systems with clear data flows and documentation that keep every delivery maintainable and lower risk.",
+            "label": "Profile",
+            "title": "I build software with a product mindset and a strong technical foundation.",
+            "paragraph1": "I work across backend, frontend, and automation, with a strong focus on products that need structure, clarity, and sound technical decisions from the start. Most of my work lives in SaaS, internal tools, and operational flows where improvisation quickly becomes expensive.",
+            "paragraph2": "Beyond shipping code, I like shaping ideas: understanding the problem, deciding where complexity is worth it, and turning that into maintainable software. Security is part of that way of working, not as decoration, but as practical judgment.",
             "cardTitle": "Key facts",
             "details": {
                 "locationLabel": "Location",
@@ -102,12 +112,12 @@
             }
         },
         "skills": {
-            "label": "Skills & Stack",
-            "title": "Technical layers I use to create scalable products.",
+            "label": "What I do",
+            "title": "How I usually add value inside a project.",
             "cards": {
                 "backend": {
-                    "title": "Backend",
-                    "description": "APIs with Flask and FastAPI, distributed tasks with Celery, and MySQL persistence on containerized infrastructure.",
+                    "title": "Backend and automation",
+                    "description": "I design APIs, internal processes, and automations so the product can handle real usage without relying on manual patches.",
                     "tags": [
                         "Python",
                         "Flask · FastAPI",
@@ -116,8 +126,8 @@
                     ]
                 },
                 "frontend": {
-                    "title": "Frontend",
-                    "description": "Clean interfaces with JavaScript and Tailwind, leveraging React for fluidity and modularity.",
+                    "title": "Interface and experience",
+                    "description": "I build clean, understandable interfaces, making sure the product feels fast, clear, and easy to evolve.",
                     "tags": [
                         "JavaScript",
                         "Tailwind CSS",
@@ -125,8 +135,8 @@
                     ]
                 },
                 "devops": {
-                    "title": "DevOps",
-                    "description": "Docker and Compose containers, Nginx as a proxy, and automation via scripts and cronjobs on Ubuntu VPS.",
+                    "title": "Practical infrastructure",
+                    "description": "I set up simple, reliable environments with Docker, Nginx, and automation that help teams deploy and maintain without friction.",
                     "tags": [
                         "Docker",
                         "Docker Compose",
@@ -135,8 +145,8 @@
                     ]
                 },
                 "security": {
-                    "title": "Cybersecurity",
-                    "description": "Backend best practices, authentication, and deployments reinforced by my education in applied cybersecurity.",
+                    "title": "Applied security",
+                    "description": "I bring authentication, data, and deployment best practices into the build process as a natural part of development, not an afterthought.",
                     "tags": [
                         "Secure backend practices",
                         "Robust authentication",
@@ -148,6 +158,7 @@
         "projects": {
             "label": "Featured projects",
             "title": "Solutions that support real-world operations.",
+            "ecosystemHtml": "MesasYa, MiCartaYa, and OrderYa are part of the <a class=\"font-semibold text-blue-600 transition hover:text-blue-700\" href=\"https://yasolutions.es\" target=\"_blank\" rel=\"noreferrer\">YaSolutions</a> ecosystem, a line of digital solutions for hospitality and operations. I present them here from the perspective of product, architecture, and technical execution.",
             "seeAll": "View all case studies",
             "index": {
                 "caseStudies": "Case studies"
@@ -284,7 +295,7 @@
             "kobra": {
                 "tag": "Kobra",
                 "title": "Financial platform supporting Cybersur daily operations.",
-                "paragraph1": "Kobra is the custom solution I built for Cybersur. With a <strong data-i18n=\"stack.fastapi\"></strong> stack, it centralizes billing, payments, and notifications so the finance team works with coherent, up-to-date information.",
+                "paragraph1": "Kobra is the custom solution I built for Cybersur. With a FastAPI, Celery, MySQL and Docker stack, it centralizes billing, payments, and notifications so the finance team works with coherent, up-to-date information.",
                 "paragraph2": "Scheduled cronjobs manage data exports and cleaning, while alert and reminder pipelines log every action. The entire flow is designed for immediate visibility and to reduce manual, repetitive tasks.",
                 "bullets": {
                     "first": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#f28d1f]\"></span>Automatic workflows that drastically reduce follow-up and collection times.",
@@ -299,7 +310,7 @@
                 "tag": "BeatList",
                 "title": "Professional playlist management with the official Spotify seal.",
                 "paragraph1": "BeatList is the platform for music lovers, curators, and creators who need something more powerful than the native Spotify manager. It brings together advanced administration, discovery, and analytics in a seamless experience.",
-                "paragraph2": "Thanks to official integration with the <strong data-i18n=\"stack.spotifyapi\"></strong> and approved <strong data-i18n=\"stack.oauth\"></strong> authentication, the Flask backend accesses extended data with professional stability and delegates heavy analysis to Celery to keep the experience smooth. The JavaScript frontend offers dashboards and a web player with custom micro-interactions.",
+                "paragraph2": "Thanks to official integration with the Spotify API and approved OAuth 2.0 authentication, the Flask backend accesses extended data with professional stability and delegates heavy analysis to Celery to keep the experience smooth. The JavaScript frontend offers dashboards and a web player with custom micro-interactions.",
                 "bullets": {
                     "first": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#111827]\"></span>Merge, clean up, and reorganize playlists with smart rules based on metrics like energy or danceability.",
                     "second": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#111827]\"></span>Recommendation engine by favorite artists and genres, plus dashboards showing listening habits.",
@@ -312,8 +323,8 @@
             "mesasya": {
                 "tag": "MesasYa",
                 "title": "Smart reservations for restaurant chains.",
-                "paragraph1": "MesasYa is a <strong data-i18n=\"stack.saas\"></strong> platform that digitizes reservation management for restaurants with multiple locations. It offers granular occupancy control, communication automation, and manager-ready dashboards.",
-                "paragraph2": "With <strong data-i18n=\"stack.flaskcelery\"></strong> as the base, the solution is deployed with Docker Compose and security best practices, maintaining customizable workflows by zone, service, and team. Analytics and exports adapt to business decisions.",
+                "paragraph1": "MesasYa is a SaaS platform in production that digitizes reservation management for restaurants with multiple locations. It offers granular occupancy control, communication automation, and manager-ready dashboards.",
+                "paragraph2": "With Flask, Celery, MySQL and Docker as the base, the solution is deployed with Docker Compose and security best practices, maintaining customizable workflows by zone, service, and team. Analytics and exports adapt to business decisions.",
                 "bullets": {
                     "first": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#589E8C]\"></span>Interactive floor plans configurable by location, zone, and service.",
                     "second": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#589E8C]\"></span>Automatic notifications for internal teams and end customers.",
@@ -326,8 +337,8 @@
             "orderya": {
                 "tag": "OrderYa",
                 "title": "Unified production and delivery management.",
-                "paragraph1": "Built with <strong data-i18n=\"stack.fastapi\"></strong> for maximum speed, it allows managing complex catalogs, prices, and users with differentiated roles. All deployed securely and scalably.",
-                "paragraph2": "Built with <strong data-i18n=\"stack.fastapi\"></strong> for maximum speed, it allows managing complex catalogs, prices, and users with differentiated roles. All of this is deployed securely and scalably.",
+                "paragraph1": "Built with FastAPI, Celery, MySQL and Docker for maximum speed, it allows managing complex catalogs, prices, and users with differentiated roles. All deployed securely and scalably.",
+                "paragraph2": "The platform centralizes orders, production, and delivery with a technical base designed for day-to-day speed, clarity, and scalability.",
                 "bullets": {
                     "first": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#ea580c]\"></span>Unified order portal that eliminates transcription errors.",
                     "second": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#ea580c]\"></span>Automatic generation of production sheets and delivery notes.",
@@ -340,7 +351,7 @@
             "trato": {
                 "tag": "Trato",
                 "title": "Agile CRM for quotes, follow-ups, and reminders.",
-                "paragraph1": "Trato is the lightweight CRM that centralizes quotes, follow-ups, and reminders in a fast flow. On a <strong data-i18n=\"stack.fastapi\"></strong> stack deployed with Uvicorn, it lets sales teams work without friction.",
+                "paragraph1": "Trato is the lightweight CRM that centralizes quotes, follow-ups, and reminders in a fast flow. On a FastAPI, Celery, MySQL and Docker stack deployed with Uvicorn, it lets sales teams work without friction.",
                 "paragraph2": "Invite codes control company and user sign-ups, while Celery tasks automate reminders and daily summaries. The panel prioritizes operational speed on desktop and mobile.",
                 "bullets": {
                     "first": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#F97068]\"></span>Guided quote entry with customizable statuses and opportunity comments.",
@@ -354,7 +365,7 @@
             "micartaya": {
                 "tag": "MiCartaYa",
                 "title": "360º management of the restaurant experience.",
-                "paragraph1": "MiCartaYa is a comprehensive solution to digitize interaction between the restaurant and the customer. Based on <strong data-i18n=\"stack.fastapi\"></strong> and two-way communication, it makes order flow instant and error-free.",
+                "paragraph1": "MiCartaYa is a comprehensive solution to digitize interaction between the restaurant and the customer. Based on FastAPI, Celery, MySQL and Docker and two-way communication, it makes order flow instant and error-free.",
                 "paragraph2": "The system stands out for its remote printing engine that connects the cloud with physical kitchen printers, and an administration panel that allows managing complex menus with videos and multi-language support dynamically.",
                 "bullets": {
                     "first": "<span class=\"mt-1 h-2 w-2 rounded-full bg-blue-500\"></span>Real-time order reception with latency under 1 second thanks to WebSockets.",
@@ -368,7 +379,7 @@
             "ponme": {
                 "tag": "Ponme",
                 "title": "AI applied to smart personal style management.",
-                "paragraph1": "Ponme democratizes use of generative AI to solve the daily 'what do I wear' dilemma. It integrates the <strong data-i18n=\"stack.gemini\">Gemini</strong> API to understand not just what clothes you have, but how to combine them by context.",
+                "paragraph1": "Ponme democratizes use of generative AI to solve the daily 'what do I wear' dilemma. It integrates the Google Gemini API to understand not just what clothes you have, but how to combine them by context.",
                 "paragraph2": "The app processes images locally to remove backgrounds and uses multimodal models to extract garment metadata (color, fabric, style), allowing you to create a 'digital wardrobe' in minutes.",
                 "bullets": {
                     "first": "<span class=\"mt-1 h-2 w-2 rounded-full bg-blue-500\"></span>Smart outfit generation based on specific plans and weather variables.",
@@ -428,11 +439,16 @@
                 "ponme": "→ Ponme – Your AI-powered smart wardrobe."
             }
         },
+        "contact": {
+            "label": "Contact",
+            "title": "If you'd like to share a thought about these projects, feel free to write to me.",
+            "description": "I share these case studies to show how I think about product and architecture. If something resonates with you, I'd be glad to hear from you."
+        },
         "mesasya": {
             "label": "Case study 01",
             "title": "MesasYa — Multi-location SaaS Reservations",
-            "paragraph1": "MesasYa is a <strong data-i18n=\"stack.saas\"></strong> digitalizing booking management for restaurants with multiple locations. It brings interactive floor plans, customizable rules, and real-time notifications so every service runs without surprises.",
-            "paragraph2": "The <strong data-i18n=\"stack.flaskcelery\"></strong> backend uses Docker Compose and security best practices. Each restaurant configures zones, services, languages, and specific workflows without losing stability or traceability.",
+            "paragraph1": "MesasYa is a SaaS platform in production that digitizes booking management for restaurants with multiple locations. It brings interactive floor plans, customizable rules, and real-time notifications so every service runs without surprises.",
+            "paragraph2": "The Flask, Celery, MySQL and Docker backend uses Docker Compose and security best practices. Each restaurant configures zones, services, languages, and specific workflows without losing stability or traceability.",
             "impact": "Operational Impact",
             "bullets": {
                 "first": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#589E8C]\"></span>Floor plans configurable with rules by location, zones, and special events.",
@@ -448,7 +464,7 @@
         "micartaya": {
             "label": "Case study 02",
             "title": "MiCartaYa — Full Table Digitization",
-            "paragraph1": "MiCartaYa redefines restaurant interaction through a <strong data-i18n=\"stack.saas\"></strong> platform of digital menus and self-managed ordering. It solves the manual order-taking bottleneck and ensures menu information is always up to date.",
+            "paragraph1": "MiCartaYa redefines restaurant interaction through a SaaS platform in production for digital menus and self-managed ordering. It solves the manual order-taking bottleneck and ensures menu information is always up to date.",
             "paragraph2": "The core of the project is a high-availability WebSockets system connecting diners to the restaurant dashboard and printing hardware, eliminating transcription errors and optimizing service times.",
             "impact": "Operational Results",
             "bullets": {
@@ -466,7 +482,7 @@
             "label": "Case study 03",
             "title": "OrderYa — Comprehensive Order Management",
             "paragraph1": "OrderYa eliminates order management chaos between bakeries and points of sale. It replaces spreadsheets and scattered messages with a centralized platform where each shop orders intuitively and the bakery sees consolidated demand.",
-            "paragraph2": "Developed with <strong data-i18n=\"stack.fastapi\"></strong> and server-side rendering (Jinja2) for speed and simplicity, the system handles complex catalogs, price lists by customer, and automatic delivery order generation.",
+            "paragraph2": "Developed with FastAPI, Celery, MySQL and Docker and server-side rendering (Jinja2) for speed and simplicity, the system handles complex catalogs, price lists by customer, and automatic delivery order generation.",
             "directAccess": "→ OrderYa – Centralization and production management.",
             "keyFeatures": "Key Features",
             "bullets": {
@@ -485,7 +501,7 @@
         "trato": {
             "label": "Case study 04",
             "title": "Trato — Agile CRM for Sales Teams",
-            "paragraph1": "Trato centralizes quotes, follow-ups, and reminders in a lightweight CRM for sales teams. With a <strong data-i18n=\"stack.fastapi\"></strong> backend running with Uvicorn, it prioritizes response speed and clarity for every opportunity.",
+            "paragraph1": "Trato centralizes quotes, follow-ups, and reminders in a lightweight CRM for sales teams. With a FastAPI, Celery, MySQL and Docker backend running with Uvicorn, it prioritizes response speed and clarity for every opportunity.",
             "paragraph2": "Companies access via invite codes and manage pipelines with customizable statuses, interaction timelines, and automatic alerts. Celery tasks coordinate reminders, email sends, and daily summaries from the main VPS.",
             "impact": "Impact",
             "bullets": {
@@ -505,7 +521,7 @@
         "kobra": {
             "label": "Case study 05",
             "title": "Kobra — Financial Platform for Cybersur",
-            "paragraph1": "Kobra is the custom solution maintaining Cybersur financial operations. It automates billing, payments, and reminders from a robust <strong data-i18n=\"stack.fastapi\"></strong> backend.",
+            "paragraph1": "Kobra is the custom solution maintaining Cybersur financial operations. It automates billing, payments, and reminders from a robust FastAPI, Celery, MySQL and Docker backend.",
             "paragraph2": "Scheduled cronjobs manage exports, data cleaning, and automatic reconciliations. Internal panels prioritize collection metrics and SLA by client so the finance team has daily clarity.",
             "results": "Key Results",
             "bullets": {
@@ -523,8 +539,8 @@
             "label": "Case study 06",
             "title": "BeatList — Music Suite for Creators",
             "approval": "Spotify Approved",
-            "paragraph1": "BeatList follows curators and creators who need to go beyond the standard Spotify manager. It connects the <strong data-i18n=\"stack.spotifyapi\"></strong> with advanced analysis and interactive experiences approved by Spotify for Developers.",
-            "paragraph2": "The Flask backend with <strong data-i18n=\"stack.oauth\"></strong> retrieves extended data and coordinates analysis with Celery to generate metrics without blocking users. The frontend offers players, dashboards, and mixing tools for pros and communities.",
+            "paragraph1": "BeatList follows curators and creators who need to go beyond the standard Spotify manager. It connects the Spotify API with advanced analysis and interactive experiences approved by Spotify for Developers.",
+            "paragraph2": "The Flask backend with OAuth 2.0 retrieves extended data and coordinates analysis with Celery to generate metrics without blocking users. The frontend offers players, dashboards, and mixing tools for pros and communities.",
             "outcomes": "Outcomes",
             "bullets": {
                 "first": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#111827]\"></span>Smart playlist reorganization with energy and rhythm metrics.",
@@ -546,7 +562,7 @@
         "ponme": {
             "label": "Case study 07",
             "title": "Ponme — Personal Style & AI Assistant",
-            "paragraph1": "Ponme is a B2C platform applying multimodal models for personal wardrobe management. It allows users to digitize their clothes and receive smart outfit suggestions generated by <strong data-i18n=\"stack.gemini\">Gemini</strong>.",
+            "paragraph1": "Ponme is a B2C platform applying multimodal models for personal wardrobe management. It allows users to digitize their clothes and receive smart outfit suggestions generated by Gemini.",
             "paragraph2": "Using local computer vision techniques for image segmentation and advanced LLM reasoning for style combination, Ponme offers a seamless experience that optimizes use of existing garments.",
             "impact": "AI Features",
             "bullets": {
