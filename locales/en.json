@@ -38,11 +38,11 @@
         },
         "contact": {
             "label": "Contact",
-            "title": "Shall we talk about your next project?",
-            "description": "If you want to learn more about these projects or chat about new ideas, get in touch on LinkedIn.",
-            "direct": "You can also email me at nicoabgv@gmail.com or explore my code on GitHub.",
-            "messageLabel": "Project",
-            "messagePlaceholder": "Tell me about goals, timelines, or technical challenges",
+            "title": "Tell me what you're building.",
+            "description": "If you'd like to reach out, this form is the most direct way. Tell me who you are, what you're working on, or what you need help solving.",
+            "direct": "You can also email me at nicoabgv@gmail.com or take a look at my code on GitHub.",
+            "messageLabel": "Message",
+            "messagePlaceholder": "Hi Nicolás, I'm reaching out because...",
             "submit": "Send message",
             "nameLabel": "Name",
             "namePlaceholder": "Your name",
@@ -61,7 +61,7 @@
         },
         "hero": {
             "taglineHtml": "<span class=\"h-px w-10 bg-slate-300\"></span>Software Architecture · Applied Cybersecurity",
-            "title": "Technical architecture and software development for high-impact critical solutions.",
+            "title": "I'm Nicolás Álvarez, software engineer.",
             "description": "Specialist in scaling products with a security mindset. I help companies automate complex operations and secure critical data flows from the first deployment.",
             "primaryCta": "View projects",
             "secondaryCta": "LinkedIn",
@@ -77,8 +77,9 @@
                 "links": {
                     "mesasya": "→ MesasYa – Managing +50 restaurants and automated reservations.",
                     "micartaya": "→ MiCartaYa – Real-time ordering and multi-language digital menu.",
-                    "trato": "→ Trato – Agile CRM with smart reminders and optimized pipeline.",
+                    "orderya": "→ OrderYa – Order centralization and production planning for bakeries.",
                     "beatlist": "→ BeatList – Officially approved advanced Spotify analytics.",
+                    "trato": "→ Trato – Agile CRM with smart reminders and optimized pipeline.",
                     "ponme": "→ Ponme – Your intelligent fashion assistant powered by Gemini AI."
                 }
             }
@@ -97,10 +98,8 @@
                 "linkedinLabel": "LinkedIn",
                 "linkedinValue": "<a class=\"hover:text-blue-600\" href=\"https://www.linkedin.com/in/nicol%C3%A1s-%C3%A1lvarez-becerra-201773267/\" target=\"_blank\" rel=\"noreferrer\">/in/nicoabgv</a>",
                 "experienceLabel": "Years of experience",
-                "experienceValue": "2+"
-            },
-            "collaborationLabel": "Collaborations",
-            "collaborationText": "Open to technical collaborations, cross-project synergies, or simply exchanging ideas about product and development. Reach out via LinkedIn."
+                "experienceValue": "3+"
+            }
         },
         "skills": {
             "label": "Skills & Stack",

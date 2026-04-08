@@ -38,11 +38,11 @@
         },
         "contact": {
             "label": "Contacto",
-            "title": "¿Hablamos de tu próximo proyecto?",
-            "description": "Si quieres conocer más sobre estos proyectos o charlar sobre nuevas ideas, contáctame por LinkedIn.",
-            "direct": "También puedes escribirme a nicoabgv@gmail.com o explorar mi código en GitHub.",
-            "messageLabel": "Proyecto",
-            "messagePlaceholder": "Cuéntame sobre objetivos, plazos o retos técnicos",
+            "title": "Cuéntame qué estás construyendo.",
+            "description": "Si te apetece escribirme, este formulario es la forma más directa. Cuéntame quién eres, en qué estás trabajando o qué necesitas resolver.",
+            "direct": "También puedes escribirme a nicoabgv@gmail.com o echar un vistazo a mi código en GitHub.",
+            "messageLabel": "Mensaje",
+            "messagePlaceholder": "Hola Nicolás, te escribo porque...",
             "submit": "Enviar mensaje",
             "nameLabel": "Nombre",
             "namePlaceholder": "Tu nombre",
@@ -61,7 +61,7 @@
         },
         "hero": {
             "taglineHtml": "<span class=\"h-px w-10 bg-slate-300\"></span>Arquitectura de Software · Ciberseguridad Aplicada",
-            "title": "Arquitectura técnica y desarrollo de software para soluciones críticas de alto impacto.",
+            "title": "Soy Nicolás Álvarez, ingeniero de software.",
             "description": "Especialista en escalar productos con mentalidad de seguridad. Ayudo a empresas a automatizar operaciones complejas y asegurar flujos de datos críticos desde el primer despliegue.",
             "primaryCta": "Ver proyectos",
             "secondaryCta": "LinkedIn",
@@ -77,8 +77,9 @@
                 "links": {
                     "mesasya": "→ MesasYa – Gestionando +50 restaurantes y reservas automatizadas.",
                     "micartaya": "→ MiCartaYa – Pedidos en tiempo real y menú digital multiidioma.",
-                    "trato": "→ Trato – CRM ágil con recordatorios inteligentes y pipeline optimizado.",
+                    "orderya": "→ OrderYa – Centralización de pedidos y producción para obradores.",
                     "beatlist": "→ BeatList – Analítica avanzada de Spotify aprobada oficialmente.",
+                    "trato": "→ Trato – CRM ágil con recordatorios inteligentes y pipeline optimizado.",
                     "ponme": "→ Ponme – Tu asistente de moda inteligente potenciado por Gemini IA."
                 }
             }
@@ -97,10 +98,8 @@
                 "linkedinLabel": "LinkedIn",
                 "linkedinValue": "<a class=\"hover:text-blue-600\" href=\"https://www.linkedin.com/in/nicol%C3%A1s-%C3%A1lvarez-becerra-201773267/\" target=\"_blank\" rel=\"noreferrer\">/in/nicoabgv</a>",
                 "experienceLabel": "Años de experiencia",
-                "experienceValue": "2+"
-            },
-            "collaborationLabel": "Colaboraciones",
-            "collaborationText": "Abierto a colaboraciones técnicas, sinergias entre proyectos o simplemente intercambiar ideas sobre producto y desarrollo. Contáctame por LinkedIn."
+                "experienceValue": "3+"
+            }
         },
         "skills": {
             "label": "Skills & Stack",
