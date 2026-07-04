@@ -31,15 +31,10 @@
         "contact": {
             "label": "Contact",
             "title": "If any of this interests you, get in touch.",
-            "description": "The most direct way to reach me is this form. Tell me who you are and what you're working on.",
-            "direct": "You can also email me at nicoabgv@gmail.com or see my code on GitHub.",
-            "messageLabel": "Message",
-            "messagePlaceholder": "Hi Nicolás, I'm reaching out because...",
-            "submit": "Send message",
-            "nameLabel": "Name",
-            "namePlaceholder": "Your name",
-            "emailLabel": "Email",
-            "emailPlaceholder": "name@company.com"
+            "description": "The simplest way is a direct email. You can also reach me on LinkedIn or check the code on GitHub.",
+            "emailCta": "Send an email",
+            "linkedinCta": "Message on LinkedIn",
+            "githubCta": "View code on GitHub"
         }
     },
     "index": {
@@ -118,9 +113,9 @@
                 "title": "MiCartaYa",
                 "description": "Digital menu and ordering SaaS for restaurants: QR menu, mobile ordering, real-time management, and direct kitchen printing.",
                 "bullets": {
-                    "first": "<span class=\"mt-1 h-2 w-2 rounded-full bg-pine\"></span>Kitchen ticket printing over WebSocket, no polling.",
-                    "second": "<span class=\"mt-1 h-2 w-2 rounded-full bg-pine\"></span>Strict separation between order status and payment status: trusts only the Dojo webhook, never the browser redirect.",
-                    "third": "<span class=\"mt-1 h-2 w-2 rounded-full bg-pine\"></span>Multi-tenant by subdomain, with third-party credentials encrypted per restaurant."
+                    "first": "<span class=\"mt-1 h-2 w-2 rounded-full bg-pine\"></span>\"Reels\" video mode for products, a paid add-on (+€25/month) generating direct product revenue.",
+                    "second": "<span class=\"mt-1 h-2 w-2 rounded-full bg-pine\"></span>AI chatbot (SmartWaiter) that recommends dishes on the public menu, opt-in per restaurant.",
+                    "third": "<span class=\"mt-1 h-2 w-2 rounded-full bg-pine\"></span>Automatic menu translation with AI (Gemini, falling back to Google Translate without an API key)."
                 },
                 "directAccess": "→ MiCartaYa – Digital menu and ordering for restaurants.",
                 "hasModal": true,
@@ -128,11 +123,11 @@
                     "tag": "MiCartaYa",
                     "title": "Digital menu and real-time ordering for 14 restaurants.",
                     "paragraph1": "MiCartaYa digitizes the menu and ordering in the restaurant. The diner scans a QR code, orders from their phone, and the order reaches the kitchen in real time with direct ticket printing. It's in production with 14 restaurants.",
-                    "paragraph2": "The technical decision that shapes the system most is never trusting the browser for payment status: order and payment are separate states, and payment is only confirmed by the Dojo webhook against the database. Multi-tenant by subdomain, third-party credentials encrypted per restaurant, and public-menu caching without cookies for fast serving.",
+                    "paragraph2": "Beyond operations, the product carries applied AI: a chatbot (SmartWaiter) that recommends dishes on the public menu, opt-in per restaurant; automatic menu translation with Gemini (falling back to Google Translate); and a 'Reels' video mode for products that is its own paid add-on with recurring revenue.",
                     "bullets": {
                         "first": "<span class=\"mt-1 h-2 w-2 rounded-full bg-pine\"></span>WebSocket printer client: the ticket reaches the kitchen via instant push, no polling.",
-                        "second": "<span class=\"mt-1 h-2 w-2 rounded-full bg-pine\"></span>Payment integration (Dojo) and POS sync (DST), with payment status validated only by webhook.",
-                        "third": "<span class=\"mt-1 h-2 w-2 rounded-full bg-pine\"></span>Multi-tenant public menu by subdomain, with cookieless caching and analytics offloaded to Celery."
+                        "second": "<span class=\"mt-1 h-2 w-2 rounded-full bg-pine\"></span>Strict separation between order status and payment status: trusts only the Dojo webhook, never the browser redirect.",
+                        "third": "<span class=\"mt-1 h-2 w-2 rounded-full bg-pine\"></span>Multi-tenant by subdomain, third-party credentials encrypted per restaurant, and POS sync (DST)."
                     },
                     "next": "Next iteration: at-table payments and a loyalty program."
                 }
@@ -143,9 +138,9 @@
                 "title": "OrderYa",
                 "description": "Centralized ordering system between bakery and shops for hospitality, with order prediction and per-product profitability.",
                 "bullets": {
-                    "first": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#ea580c]\"></span>Multi-tenant by subdomain with company-to-company isolation.",
-                    "second": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#ea580c]\"></span>Order prediction engine and profitability module (per-product costs and margins with snapshots).",
-                    "third": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#ea580c]\"></span>POS integration (DST), PDF/Excel/barcode generation, and 4-role access control."
+                    "first": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#ea580c]\"></span>Automatically calculates whether each order is profitable: per-product costs and margins, with history.",
+                    "second": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#ea580c]\"></span>Order prediction engine to anticipate demand before it arrives.",
+                    "third": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#ea580c]\"></span>Multi-tenant with company-to-company isolation, POS integration (DST), and 4-role access control."
                 },
                 "directAccess": "→ OrderYa – Orders between bakery and shops for hospitality.",
                 "hasModal": true,
@@ -168,9 +163,9 @@
                 "title": "Ponme",
                 "description": "An app that builds your outfit in under a minute from your own digitized wardrobe, combining clothes with AI.",
                 "bullets": {
-                    "first": "<span class=\"mt-1 h-2 w-2 rounded-full bg-pine\"></span>Multimodal AI pipeline: automatic analysis of each garment (color, style, season) with Gemini.",
-                    "second": "<span class=\"mt-1 h-2 w-2 rounded-full bg-pine\"></span>Outfit generator based on context (weather, occasion) and weekly capsules.",
-                    "third": "<span class=\"mt-1 h-2 w-2 rounded-full bg-pine\"></span>Local background removal (Rembg) and automatic wardrobe cleanup detecting unused garments."
+                    "first": "<span class=\"mt-1 h-2 w-2 rounded-full bg-pine\"></span>Before you buy new clothes, it tells you if they're worth it with what you already own (smart purchase check, PRO).",
+                    "second": "<span class=\"mt-1 h-2 w-2 rounded-full bg-pine\"></span>Analyzes each garment with AI (color, style, season) and generates outfits based on weather and occasion.",
+                    "third": "<span class=\"mt-1 h-2 w-2 rounded-full bg-pine\"></span>Learns your style profile over time and packs your suitcase for trips."
                 },
                 "directAccess": "→ Ponme – Your AI wardrobe.",
                 "hasModal": true,
@@ -178,11 +173,11 @@
                     "tag": "Ponme",
                     "title": "Multimodal AI to solve 'what do I wear' in under a minute.",
                     "paragraph1": "Ponme digitizes your wardrobe and builds outfits combining clothes with AI. When you upload a garment, a multimodal pipeline analyzes it (color, style, season) and catalogs it on its own; then the generator proposes combinations based on weather and occasion. It's in production, with Stripe billing and real users.",
-                    "paragraph2": "One design detail that mattered for cost: there's a gate between real AI and demo, to control spend per email verification and avoid burning API budget on unconfirmed accounts. Garment backgrounds are removed locally with Rembg before processing.",
+                    "paragraph2": "Beyond generating outfits, it includes a smart purchase check (does this garment pay off with what I already own?), weekly capsules and a trip packing planner, a taste profile that learns from your choices, and a public outfit feed with shareable links that works as a built-in distribution channel.",
                     "bullets": {
-                        "first": "<span class=\"mt-1 h-2 w-2 rounded-full bg-pine\"></span>Automatic garment analysis and context-aware outfit generation.",
-                        "second": "<span class=\"mt-1 h-2 w-2 rounded-full bg-pine\"></span>Real-AI vs demo gate to control cost per unverified user.",
-                        "third": "<span class=\"mt-1 h-2 w-2 rounded-full bg-pine\"></span>Weekly capsules, planner, and automatic wardrobe cleanup."
+                        "first": "<span class=\"mt-1 h-2 w-2 rounded-full bg-pine\"></span>Real-AI vs demo gate to control cost per unverified user.",
+                        "second": "<span class=\"mt-1 h-2 w-2 rounded-full bg-pine\"></span>Smart purchase check and a taste profile learned over time (both PRO).",
+                        "third": "<span class=\"mt-1 h-2 w-2 rounded-full bg-pine\"></span>Public outfit feed with shareable links, designed as its own distribution channel."
                     },
                     "next": "Current focus: getting the product into more hands."
                 }

@@ -31,15 +31,10 @@
         "contact": {
             "label": "Contacto",
             "title": "Si algo de esto te interesa, escríbeme.",
-            "description": "La forma más directa de contactarme es este formulario. Cuéntame quién eres y en qué estás trabajando.",
-            "direct": "También puedes escribirme a nicoabgv@gmail.com o ver mi código en GitHub.",
-            "messageLabel": "Mensaje",
-            "messagePlaceholder": "Hola Nicolás, te escribo porque...",
-            "submit": "Enviar mensaje",
-            "nameLabel": "Nombre",
-            "namePlaceholder": "Tu nombre",
-            "emailLabel": "Email",
-            "emailPlaceholder": "nombre@empresa.com"
+            "description": "La forma más simple es un email directo. También puedes escribirme por LinkedIn o revisar el código en GitHub.",
+            "emailCta": "Enviar email",
+            "linkedinCta": "Escribir por LinkedIn",
+            "githubCta": "Ver código en GitHub"
         }
     },
     "index": {
@@ -118,9 +113,9 @@
                 "title": "MiCartaYa",
                 "description": "SaaS de carta digital y pedidos para restaurantes: menú por QR, pedido móvil, gestión en tiempo real e impresión directa en cocina.",
                 "bullets": {
-                    "first": "<span class=\"mt-1 h-2 w-2 rounded-full bg-pine\"></span>Impresión de tickets en cocina por WebSocket, sin polling.",
-                    "second": "<span class=\"mt-1 h-2 w-2 rounded-full bg-pine\"></span>Separación estricta entre estado de pedido y estado de pago: solo confía en el webhook de Dojo, nunca en el redirect del navegador.",
-                    "third": "<span class=\"mt-1 h-2 w-2 rounded-full bg-pine\"></span>Multi-tenant por subdominio y credenciales de terceros cifradas por restaurante."
+                    "first": "<span class=\"mt-1 h-2 w-2 rounded-full bg-pine\"></span>Modo \"Reels\" de vídeo para productos, feature de pago (+25€/mes) que genera ingresos directos del producto.",
+                    "second": "<span class=\"mt-1 h-2 w-2 rounded-full bg-pine\"></span>Chatbot con IA (SmartWaiter) que recomienda platos en la carta pública, activable por restaurante.",
+                    "third": "<span class=\"mt-1 h-2 w-2 rounded-full bg-pine\"></span>Traducción automática de la carta con IA (Gemini, con fallback a Google Translate si no hay API key)."
                 },
                 "directAccess": "→ MiCartaYa – Carta digital y pedidos para restaurantes.",
                 "hasModal": true,
@@ -128,11 +123,11 @@
                     "tag": "MiCartaYa",
                     "title": "Carta digital y pedidos en tiempo real para 14 restaurantes.",
                     "paragraph1": "MiCartaYa digitaliza la carta y el pedido en el restaurante. El comensal escanea un QR, pide desde el móvil, y el pedido llega a cocina en tiempo real con impresión directa del ticket. Está en producción con 14 restaurantes.",
-                    "paragraph2": "La decisión técnica que más condiciona el sistema es no fiarse nunca del navegador para el estado de pago: el pedido y el pago son estados separados, y el pago solo se confirma con el webhook de Dojo contra la base de datos. Multi-tenant por subdominio, credenciales de terceros cifradas por restaurante, y caché del menú público sin cookies para servir rápido.",
+                    "paragraph2": "Más allá de la operativa, el producto incorpora IA aplicada: un chatbot (SmartWaiter) que recomienda platos en la carta pública, activable por restaurante; traducción automática de la carta con Gemini (con fallback a Google Translate); y un modo de vídeo tipo 'Reels' para productos que es un add-on de pago con ingresos recurrentes propios.",
                     "bullets": {
                         "first": "<span class=\"mt-1 h-2 w-2 rounded-full bg-pine\"></span>Cliente de impresión por WebSocket: el ticket llega a cocina por push instantáneo, sin sondeo.",
-                        "second": "<span class=\"mt-1 h-2 w-2 rounded-full bg-pine\"></span>Integración de pagos (Dojo) y sincronización con TPV (DST), con estado de pago validado solo por webhook.",
-                        "third": "<span class=\"mt-1 h-2 w-2 rounded-full bg-pine\"></span>Menú público multi-tenant por subdominio, con caché sin cookies y analítica descargada a Celery."
+                        "second": "<span class=\"mt-1 h-2 w-2 rounded-full bg-pine\"></span>Separación estricta entre estado de pedido y estado de pago: solo confía en el webhook de Dojo, nunca en el redirect del navegador.",
+                        "third": "<span class=\"mt-1 h-2 w-2 rounded-full bg-pine\"></span>Multi-tenant por subdominio, credenciales de terceros cifradas por restaurante, y sincronización con TPV (DST)."
                     },
                     "next": "Siguiente iteración: pagos desde la mesa y programa de fidelización."
                 }
@@ -143,9 +138,9 @@
                 "title": "OrderYa",
                 "description": "Sistema centralizado de pedidos entre obrador y locales para hostelería, con predicción de pedidos y rentabilidad por producto.",
                 "bullets": {
-                    "first": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#ea580c]\"></span>Multi-tenant por subdominio con aislamiento entre empresas.",
-                    "second": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#ea580c]\"></span>Motor de predicción de pedidos y módulo de rentabilidad (costes y márgenes por producto con snapshots).",
-                    "third": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#ea580c]\"></span>Integración con TPV (DST), generación de PDF/Excel/códigos de barras y control de acceso por 4 roles."
+                    "first": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#ea580c]\"></span>Calcula automáticamente si cada pedido sale rentable: costes y márgenes por producto, con histórico.",
+                    "second": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#ea580c]\"></span>Motor de predicción de pedidos para anticipar la demanda antes de que llegue.",
+                    "third": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#ea580c]\"></span>Multi-tenant con aislamiento entre empresas, integración con TPV (DST) y control de acceso por 4 roles."
                 },
                 "directAccess": "→ OrderYa – Pedidos entre obrador y locales para hostelería.",
                 "hasModal": true,
@@ -168,9 +163,9 @@
                 "title": "Ponme",
                 "description": "App que arma tu outfit en menos de un minuto desde tu propio armario digitalizado, combinando la ropa con IA.",
                 "bullets": {
-                    "first": "<span class=\"mt-1 h-2 w-2 rounded-full bg-pine\"></span>Pipeline de IA multimodal: análisis automático de cada prenda (color, estilo, temporada) con Gemini.",
-                    "second": "<span class=\"mt-1 h-2 w-2 rounded-full bg-pine\"></span>Generador de outfits según contexto (clima, ocasión) y cápsulas semanales.",
-                    "third": "<span class=\"mt-1 h-2 w-2 rounded-full bg-pine\"></span>Eliminación de fondo local (Rembg) y limpieza automática del armario con detección de prendas en desuso."
+                    "first": "<span class=\"mt-1 h-2 w-2 rounded-full bg-pine\"></span>Antes de comprar ropa nueva, te dice si te compensa combinándola con lo que ya tienes (compra inteligente, PRO).",
+                    "second": "<span class=\"mt-1 h-2 w-2 rounded-full bg-pine\"></span>Analiza cada prenda con IA (color, estilo, temporada) y genera outfits según clima y ocasión.",
+                    "third": "<span class=\"mt-1 h-2 w-2 rounded-full bg-pine\"></span>Aprende tu perfil de estilo con el tiempo y te arma la maleta para tus viajes."
                 },
                 "directAccess": "→ Ponme – Tu armario con IA.",
                 "hasModal": true,
@@ -178,11 +173,11 @@
                     "tag": "Ponme",
                     "title": "IA multimodal para resolver el 'qué me pongo' en menos de un minuto.",
                     "paragraph1": "Ponme digitaliza tu armario y arma outfits combinando la ropa con IA. Al subir una prenda, un pipeline multimodal la analiza (color, estilo, temporada) y la cataloga sola; luego el generador propone combinaciones según el clima y la ocasión. Está en producción, con billing en Stripe y usuarios reales.",
-                    "paragraph2": "Un detalle de diseño que me importó por coste: hay una compuerta entre IA real y demo, para controlar el gasto por verificación de email y no quemar presupuesto de API en cuentas sin confirmar. El fondo de las prendas se elimina en local con Rembg antes de procesar.",
+                    "paragraph2": "Más allá de generar outfits, incluye un comprobador de compra inteligente (¿me compensa esta prenda con lo que ya tengo?), cápsulas semanales y planificador de maleta para viajes, un perfil de gustos que aprende de tus elecciones, y un feed público de outfits con enlaces compartibles que funciona como canal de distribución dentro del propio producto.",
                     "bullets": {
-                        "first": "<span class=\"mt-1 h-2 w-2 rounded-full bg-pine\"></span>Análisis automático de prenda y generación de outfits contexto-aware.",
-                        "second": "<span class=\"mt-1 h-2 w-2 rounded-full bg-pine\"></span>Compuerta IA-real vs demo para controlar el coste por usuario no verificado.",
-                        "third": "<span class=\"mt-1 h-2 w-2 rounded-full bg-pine\"></span>Cápsulas semanales, planificador y limpieza automática del armario."
+                        "first": "<span class=\"mt-1 h-2 w-2 rounded-full bg-pine\"></span>Compuerta IA-real vs demo para controlar el coste por usuario no verificado.",
+                        "second": "<span class=\"mt-1 h-2 w-2 rounded-full bg-pine\"></span>Comprobador de compra inteligente y perfil de gustos aprendido con el tiempo (ambos PRO).",
+                        "third": "<span class=\"mt-1 h-2 w-2 rounded-full bg-pine\"></span>Feed público de outfits con enlaces compartibles, pensado como canal de distribución propio."
                     },
                     "next": "Foco actual: llevar el producto a más gente."
                 }
