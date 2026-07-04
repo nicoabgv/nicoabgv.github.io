@@ -9,8 +9,7 @@ Portfolio minimalista y profesional construido con **Tailwind CSS** para present
 - **Hero interactivo:** Mensaje principal con animaciones suaves y CTA hacia los proyectos.
 - **Sobre mí:** Resumen profesional con datos clave y enlaces directos.
 - **Skills / Stack:** Categorías de Backend, Frontend, DevOps y Ciberseguridad con chips tecnológicos.
-- **Proyectos destacados:** Cards amplias con logos en SVG, bullets de valor y modales con la descripción extendida de Kobra, BeatList y MesasYa.
-- **Case studies completos:** Página `projects.html` con espacio para roadmap, métricas y material adicional.
+- **Proyectos destacados:** Cards amplias con logos, bullets de valor y modales con la descripción extendida (MiCartaYa, OrderYa, Ponme, BeatList, Orbe y Dedica), más una lista compacta de otros proyectos.
 - **Contacto optimizado:** Formulario listo para integrarse con FormSubmit y enlaces rápidos a email, LinkedIn y GitHub.
 - **Animaciones accesibles:** Transiciones con GSAP e integración con `prefers-reduced-motion`.
 - **SEO y sharing:** Metadatos para buscadores y Open Graph/Twitter Cards.
@@ -26,21 +25,20 @@ Portfolio minimalista y profesional construido con **Tailwind CSS** para present
 
 ## Estructura del Proyecto
 
-- `index.html`: Landing principal con hero, sobre mí, skills, proyectos y contacto.
-- `projects.html`: Case studies extendidos con espacio para documentación futura.
+- `index.html`: Página única con hero, sobre mí, skills, proyectos (con modales) y contacto.
 - `scripts.js`: Lógica de navegación, GSAP, parallax y modales accesibles.
 - `assets/`: Logos en SVG, favicon y recursos descargables (CV).
 
 ## Proyectos Destacados
 
-### [Kobra](projects.html#kobra)
-Plataforma financiera a medida para Cybersur. Automatiza facturación, recordatorios y exportaciones mediante FastAPI, Celery, MySQL y Docker.
+### MiCartaYa
+Carta digital y pedidos en tiempo real para restaurantes, en producción. FastAPI, MySQL, Redis, Celery y React.
 
-### [BeatList](projects.html#beatlist)
-Suite web para power users de Spotify. Gestiona playlists, recomendaciones y métricas avanzadas con Flask, OAuth y Celery para análisis en segundo plano.
+### OrderYa
+Pedidos entre obrador y locales con predicción y rentabilidad por producto. FastAPI, MySQL, Redis y Docker.
 
-### [MesasYa](projects.html#mesasya)
-SaaS de reservas multi-sede en producción. Controla ocupación, notificaciones y analítica para cadenas de restaurantes con Flask, Celery y Docker.
+### BeatList
+Analítica y gestión de playlists de Spotify, aprobada por Spotify. Flask, OAuth 2.0, Celery y Cohere.
 
 ## Cómo Ver el Proyecto
 
