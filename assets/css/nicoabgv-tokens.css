@@ -1,0 +1,70 @@
+/* Color/type/spacing tokens for this site.
+ * Prefijo --n-*. Tema oscuro: <html class="dark">. RGB triplets feed Tailwind's
+ * alpha-modifier syntax (e.g. bg-surface/70).
+ */
+@import url("https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&display=swap");
+
+:root {
+  color-scheme: light dark;
+
+  --n-bg: #FAF9F4;          --n-bg-rgb: 250 249 244;
+  --n-surface: #F4F1E9;     --n-surface-rgb: 244 241 233;
+  --n-surface-2: #ECE7DA;   --n-surface-2-rgb: 236 231 218;
+  --n-border: #E1DBC9;      --n-border-rgb: 225 219 201;
+
+  --n-pine-pale: #E7EEE0;
+  --n-moss: #7C9A72;
+  --n-pine: #3E5C42;        --n-pine-rgb: 62 92 66;
+  --n-pine-dark: #28402C;   --n-pine-dark-rgb: 40 64 44;
+
+  --n-text-strong: #28241C; --n-text-strong-rgb: 40 36 28;
+  --n-text: #6E6656;        --n-text-rgb: 110 102 86;
+  --n-text-muted: #A39B87;  --n-text-muted-rgb: 163 155 135;
+
+  --n-clay: #C79762;        --n-clay-rgb: 199 151 98;
+  --n-clay-dark: #96683A;   --n-clay-dark-rgb: 150 104 58;
+  --n-sand: #EAD9B8;
+
+  --n-radius-pill: 100px;
+  --n-radius-lg: 20px;
+  --n-radius-md: 14px;
+  --n-radius-sm: 10px;
+  --n-shadow-card: 0 2px 18px rgba(40, 36, 28, .05);
+  --n-shadow-raised: 0 10px 26px rgba(40, 64, 44, .18);
+  --n-glow: 0 0 0 3px rgba(62, 92, 66, .28);
+  --n-ease: cubic-bezier(.16, 1, .3, 1);
+
+  --n-font-head: "Sora", system-ui, -apple-system, sans-serif;
+  --n-font-body: "DM Sans", system-ui, -apple-system, sans-serif;
+}
+
+html.dark {
+  color-scheme: dark;
+
+  --n-bg: #1D1C17;          --n-bg-rgb: 29 28 23;
+  --n-surface: #25231C;     --n-surface-rgb: 37 35 28;
+  --n-surface-2: #2E2B22;   --n-surface-2-rgb: 46 43 34;
+  --n-border: #3A362A;      --n-border-rgb: 58 54 42;
+
+  --n-pine-pale: rgba(111, 160, 111, .14);
+  --n-moss: #A9C79E;
+  --n-pine: #6FA06F;        --n-pine-rgb: 111 160 111;
+  --n-pine-dark: #8FBE8A;   --n-pine-dark-rgb: 143 190 138;
+
+  --n-text-strong: #F1EEE4; --n-text-strong-rgb: 241 238 228;
+  --n-text: #B4AC96;        --n-text-rgb: 180 172 150;
+  --n-text-muted: #726B58;  --n-text-muted-rgb: 114 107 88;
+
+  --n-clay: #D9A870;        --n-clay-rgb: 217 168 112;
+  --n-clay-dark: #C79762;   --n-clay-dark-rgb: 199 151 98;
+  --n-sand: #8C6A4A;
+
+  --n-shadow-card: 0 2px 18px rgba(0, 0, 0, .25);
+  --n-shadow-raised: 0 10px 26px rgba(0, 0, 0, .35);
+  --n-glow: 0 0 0 3px rgba(111, 160, 111, .32);
+}
+
+body { font-family: var(--n-font-body); }
+h1, h2, h3, h4, h5, h6 { font-family: var(--n-font-head); letter-spacing: -.02em; }
+
+* { transition-timing-function: var(--n-ease); }

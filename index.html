@@ -7,27 +7,64 @@
     <title>Nicolás Álvarez · Ingeniero de Software</title>
     <meta name="description"
         content="Portfolio minimalista de Nicolás Álvarez. Ingeniero de software especializado en plataformas SaaS, automatización y productos con foco en ciberseguridad." />
-    <meta name="theme-color" content="#0f172a" />
+    <meta name="theme-color" content="#FAF9F4" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#1D1C17" media="(prefers-color-scheme: dark)" />
     <meta property="og:type" content="website" />
     <meta property="og:locale" content="es_ES" />
     <meta property="og:title" content="Portfolio · Nicolás Álvarez" />
     <meta property="og:description"
         content="Explora proyectos empresariales, SaaS y herramientas musicales construidos con stacks modernos y procesos robustos." />
-    <meta property="og:image" content="assets/favicon.svg" />
+    <meta property="og:image" content="assets/logo-icon.png" />
     <meta property="og:url" content="https://nicoabgv.github.io/" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Portfolio · Nicolás Álvarez" />
     <meta name="twitter:description"
         content="Ingeniero de software. Desarrollo de productos escalables, automatizados y listos para producción." />
-    <meta name="twitter:image" content="assets/favicon.svg" />
+    <meta name="twitter:image" content="assets/logo-icon.png" />
     <link rel="canonical" href="https://nicoabgv.github.io/" />
-    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+    <link rel="icon" href="assets/logo-icon.png" type="image/png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@500;700&family=Space+Mono:wght@400;700&display=swap"
-        rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/nicoabgv-tokens.css" />
+    <script>
+        (function () {
+            var stored = localStorage.getItem('theme');
+            var dark = stored ? stored === 'dark' : window.matchMedia('(prefers-color-scheme: dark)').matches;
+            document.documentElement.classList.toggle('dark', dark);
+        })();
+    </script>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['DM Sans', 'system-ui', 'sans-serif'],
+                        display: ['Sora', 'system-ui', 'sans-serif'],
+                    },
+                    colors: {
+                        bg: 'rgb(var(--n-bg-rgb) / <alpha-value>)',
+                        surface: 'rgb(var(--n-surface-rgb) / <alpha-value>)',
+                        surface2: 'rgb(var(--n-surface-2-rgb) / <alpha-value>)',
+                        line: 'rgb(var(--n-border-rgb) / <alpha-value>)',
+                        ink: 'rgb(var(--n-text-strong-rgb) / <alpha-value>)',
+                        body: 'rgb(var(--n-text-rgb) / <alpha-value>)',
+                        muted: 'rgb(var(--n-text-muted-rgb) / <alpha-value>)',
+                        pine: {
+                            DEFAULT: 'rgb(var(--n-pine-rgb) / <alpha-value>)',
+                            dark: 'rgb(var(--n-pine-dark-rgb) / <alpha-value>)',
+                            pale: 'var(--n-pine-pale)',
+                        },
+                        clay: {
+                            DEFAULT: 'rgb(var(--n-clay-rgb) / <alpha-value>)',
+                            dark: 'rgb(var(--n-clay-dark-rgb) / <alpha-value>)',
+                        },
+                    },
+                },
+            },
+        };
+    </script>
     <script type="text/javascript">
         (function (c, l, a, r, i, t, y) {
             c[a] = c[a] || function () { (c[a].q = c[a].q || []).push(arguments); };
@@ -35,25 +72,20 @@
             y = l.getElementsByTagName(r)[0]; y.parentNode.insertBefore(t, y);
         })(window, document, "clarity", "script", "w8ivj12pjm");
     </script>
-    <style>
-        :root {
-            color-scheme: light;
-        }
-    </style>
 </head>
 
-<body class="bg-slate-50 font-[\'Inter\',_sans-serif] text-slate-900 antialiased" data-page="index">
-    <header data-nav class="fixed inset-x-0 top-0 z-40 bg-white/70 backdrop-blur transition duration-300">
+<body class="bg-bg font-sans text-ink antialiased" data-page="index">
+    <header data-nav class="fixed inset-x-0 top-0 z-40 bg-surface/70 backdrop-blur transition duration-300">
         <nav class="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
             <a href="#hero"
-                class="flex items-center gap-2 text-lg font-semibold tracking-tight text-slate-900 transition hover:text-blue-600"
+                class="flex items-center gap-2 text-lg font-semibold tracking-tight text-ink transition hover:text-pine"
                 data-i18n-attr-aria-label="common.nav.brandAria">
-                <span
-                    class="flex h-10 w-10 items-center justify-center rounded-xl bg-slate-900 text-sm font-['Space_Mono',_monospace] font-bold uppercase tracking-widest text-white shadow-lg shadow-slate-900/10 transition group-hover:bg-blue-600">NA</span>
+                <img src="assets/logo-icon.png" alt="Logo nicoabgv" width="40" height="40"
+                    class="h-10 w-10 rounded-xl shadow-lg shadow-slate-900/10 transition" />
                 <span class="hidden sm:block" data-i18n="common.nav.brandName">Nicolás Álvarez</span>
             </a>
             <button type="button"
-                class="flex h-10 w-10 items-center justify-center rounded-full border border-slate-200 text-slate-700 transition hover:border-blue-500 hover:text-blue-600 lg:hidden"
+                class="flex h-10 w-10 items-center justify-center rounded-full border border-line text-body transition hover:border-pine hover:text-pine lg:hidden"
                 aria-controls="mobile-nav" aria-expanded="false" data-mobile-toggle
                 data-i18n-attr-aria-label="common.nav.openMenu">
                 <span class="sr-only" data-i18n="common.nav.openMenu">Abrir menú</span>
@@ -62,12 +94,12 @@
                     <path d="M4 7h16M4 12h16M4 17h16" />
                 </svg>
             </button>
-            <div class="hidden items-center gap-4 text-sm font-medium text-slate-700 lg:flex">
-                <a class="transition hover:text-blue-600" href="#about" data-i18n="common.nav.about">Perfil</a>
-                <a class="transition hover:text-blue-600" href="#skills" data-i18n="common.nav.skills">Qué hago</a>
-                <a class="transition hover:text-blue-600" href="#projects" data-i18n="common.nav.projects">Proyectos</a>
-                <a class="transition hover:text-blue-600" href="#contact" data-i18n="common.nav.contact">Contacto</a>
-                <a class="inline-flex items-center gap-2 rounded-full border border-slate-200 px-4 py-2 text-xs font-semibold uppercase tracking-widest text-slate-700 transition hover:border-blue-500 hover:text-blue-600"
+            <div class="hidden items-center gap-4 text-sm font-medium text-body lg:flex">
+                <a class="transition hover:text-pine" href="#about" data-i18n="common.nav.about">Perfil</a>
+                <a class="transition hover:text-pine" href="#skills" data-i18n="common.nav.skills">Qué hago</a>
+                <a class="transition hover:text-pine" href="#projects" data-i18n="common.nav.projects">Proyectos</a>
+                <a class="transition hover:text-pine" href="#contact" data-i18n="common.nav.contact">Contacto</a>
+                <a class="inline-flex items-center gap-2 rounded-full border border-line px-4 py-2 text-xs font-semibold uppercase tracking-widest text-body transition hover:border-pine hover:text-pine"
                     href="assets/cv_es.pdf" download data-cv-link data-i18n="common.nav.cv">
                     <span data-i18n="common.nav.cv">Descargar CV</span>
                     <svg class="h-3.5 w-3.5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
@@ -77,28 +109,47 @@
                     </svg>
                 </a>
                 <button type="button"
-                    class="inline-flex items-center gap-2 rounded-full border border-slate-200 px-3 py-2 text-xs font-semibold uppercase tracking-widest text-slate-700 transition hover:border-blue-500 hover:text-blue-600"
+                    class="inline-flex items-center gap-2 rounded-full border border-line px-3 py-2 text-xs font-semibold uppercase tracking-widest text-body transition hover:border-pine hover:text-pine"
                     data-language-toggle data-i18n-attr-aria-label="common.language.toggleAria">
                     <span aria-hidden="true" data-language-label>ES</span>
+                </button>
+                <button type="button" data-theme-toggle
+                    class="flex h-10 w-10 items-center justify-center rounded-full border border-line text-body transition hover:border-pine hover:text-pine"
+                    aria-label="Cambiar tema">
+                    <svg class="h-4 w-4 dark:hidden" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <circle cx="12" cy="12" r="4" />
+                        <path
+                            d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41" />
+                    </svg>
+                    <svg class="hidden h-4 w-4 dark:block" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79Z" />
+                    </svg>
                 </button>
             </div>
         </nav>
         <div id="mobile-nav" data-mobile-menu
-            class="hidden border-t border-slate-200 bg-white/95 px-6 py-4 shadow-lg transition duration-300 lg:hidden">
-            <div class="flex flex-col gap-3 text-sm font-medium text-slate-700">
-                <a class="transition hover:text-blue-600" href="#about" data-i18n="common.nav.about">Perfil</a>
-                <a class="transition hover:text-blue-600" href="#skills" data-i18n="common.nav.skills">Qué hago</a>
-                <a class="transition hover:text-blue-600" href="#projects" data-i18n="common.nav.projects">Proyectos</a>
-                <a class="transition hover:text-blue-600" href="#contact" data-i18n="common.nav.contact">Contacto</a>
-                <a class="inline-flex items-center gap-2 rounded-full border border-slate-200 px-4 py-2 text-xs font-semibold uppercase tracking-widest text-slate-700 transition hover:border-blue-500 hover:text-blue-600"
+            class="hidden border-t border-line bg-surface/95 px-6 py-4 shadow-lg transition duration-300 lg:hidden">
+            <div class="flex flex-col gap-3 text-sm font-medium text-body">
+                <a class="transition hover:text-pine" href="#about" data-i18n="common.nav.about">Perfil</a>
+                <a class="transition hover:text-pine" href="#skills" data-i18n="common.nav.skills">Qué hago</a>
+                <a class="transition hover:text-pine" href="#projects" data-i18n="common.nav.projects">Proyectos</a>
+                <a class="transition hover:text-pine" href="#contact" data-i18n="common.nav.contact">Contacto</a>
+                <a class="inline-flex items-center gap-2 rounded-full border border-line px-4 py-2 text-xs font-semibold uppercase tracking-widest text-body transition hover:border-pine hover:text-pine"
                     href="assets/cv_es.pdf" download data-cv-link data-i18n="common.nav.cv">
                     <span data-i18n="common.nav.cv">Descargar CV</span>
                 </a>
                 <button type="button"
-                    class="inline-flex items-center justify-center gap-2 rounded-full border border-slate-200 px-4 py-2 text-xs font-semibold uppercase tracking-widest text-slate-700 transition hover:border-blue-500 hover:text-blue-600"
+                    class="inline-flex items-center justify-center gap-2 rounded-full border border-line px-4 py-2 text-xs font-semibold uppercase tracking-widest text-body transition hover:border-pine hover:text-pine"
                     data-language-toggle data-i18n="common.language.toggleLabel"
                     data-i18n-attr-aria-label="common.language.toggleAria">
                     ES / EN
+                </button>
+                <button type="button" data-theme-toggle
+                    class="inline-flex items-center justify-center gap-2 rounded-full border border-line px-4 py-2 text-xs font-semibold uppercase tracking-widest text-body transition hover:border-pine hover:text-pine"
+                    aria-label="Cambiar tema">
+                    <span class="dark:hidden">Modo oscuro</span>
+                    <span class="hidden dark:inline">Modo claro</span>
                 </button>
             </div>
         </div>
@@ -107,31 +158,31 @@
     <main>
         <section id="hero" class="relative flex min-h-screen items-center overflow-hidden pt-28">
             <div class="pointer-events-none absolute inset-0 -z-10" data-parallax>
-                <div class="absolute inset-0 bg-gradient-to-b from-slate-100 via-white to-slate-100"></div>
-                <div class="absolute -left-20 top-20 h-56 w-56 rounded-full bg-blue-200/70 blur-3xl"></div>
+                <div class="absolute inset-0 bg-gradient-to-b from-surface2 via-surface to-surface2"></div>
+                <div class="absolute -left-20 top-20 h-56 w-56 rounded-full bg-pine-pale blur-3xl"></div>
                 <div
-                    class="absolute -right-24 bottom-12 hidden h-72 w-72 rounded-full bg-amber-200/60 blur-3xl md:block">
+                    class="absolute -right-24 bottom-12 hidden h-72 w-72 rounded-full bg-clay/40 blur-3xl md:block">
                 </div>
-                <div class="absolute inset-x-0 bottom-0 h-40 bg-gradient-to-t from-white"></div>
+                <div class="absolute inset-x-0 bottom-0 h-40 bg-gradient-to-t from-bg"></div>
             </div>
             <div class="mx-auto flex w-full max-w-6xl flex-col gap-16 px-6 py-20 lg:flex-row lg:items-center">
                 <div class="w-full space-y-8" data-animate>
-                    <p class="inline-flex items-center gap-3 text-xs font-semibold uppercase tracking-[0.4em] text-slate-500"
+                    <p class="inline-flex items-center gap-3 text-xs font-semibold uppercase tracking-[0.4em] text-muted"
                         data-i18n-html="hero.taglineHtml">
-                        <span class="h-px w-10 bg-slate-300"></span>
+                        <span class="h-px w-10 bg-line"></span>
                         Ingeniero de software · Producto · Automatización
                     </p>
-                    <h1 class="text-4xl font-bold leading-tight text-slate-900 sm:text-5xl" data-i18n="hero.title">
+                    <h1 class="text-4xl font-bold leading-tight text-ink sm:text-5xl" data-i18n="hero.title">
                         Soy Nicolás Álvarez, ingeniero de software.
                     </h1>
-                    <p class="max-w-2xl text-lg text-slate-600" data-i18n="hero.description">
+                    <p class="max-w-2xl text-lg text-body" data-i18n="hero.description">
                         Diseño y desarrollo productos digitales con foco en claridad, automatización y ejecución
                         técnica. Trabajo sobre todo en SaaS, herramientas internas y software que necesita funcionar de
                         verdad en producción.
                     </p>
                     <div class="flex flex-wrap items-center gap-4">
                         <a href="#projects"
-                            class="inline-flex items-center justify-center gap-2 rounded-full bg-blue-600 px-6 py-3 text-sm font-semibold text-white shadow-lg shadow-blue-600/20 transition hover:bg-blue-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600">
+                            class="inline-flex items-center justify-center gap-2 rounded-full bg-pine px-6 py-3 text-sm font-semibold text-white shadow-lg shadow-pine/30 transition hover:bg-pine-dark focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-pine">
                             <span data-i18n="hero.primaryCta">Ver proyectos</span>
                             <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                                 stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
@@ -140,7 +191,7 @@
                             </svg>
                         </a>
                         <a href="https://www.linkedin.com/in/nicolas-alvarez-becerra/" target="_blank" rel="noreferrer"
-                            class="inline-flex items-center gap-2 rounded-full border border-slate-200 px-6 py-3 text-sm font-semibold text-slate-700 transition hover:border-blue-500 hover:text-blue-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600">
+                            class="inline-flex items-center gap-2 rounded-full border border-line px-6 py-3 text-sm font-semibold text-body transition hover:border-pine hover:text-pine focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-pine">
                             <span data-i18n="hero.secondaryCta">LinkedIn</span>
                             <svg class="h-4 w-4" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
                                 <path
@@ -149,75 +200,75 @@
                         </a>
                     </div>
                     <div class="grid gap-3 sm:grid-cols-2 xl:grid-cols-4" data-animate>
-                        <div class="rounded-2xl border border-slate-200 bg-white/80 p-4 shadow-sm">
-                            <p class="text-[11px] font-semibold uppercase tracking-[0.25em] text-slate-400"
+                        <div class="rounded-2xl border border-line bg-surface/80 p-4 shadow-sm">
+                            <p class="text-[11px] font-semibold uppercase tracking-[0.25em] text-muted"
                                 data-i18n="hero.presentation.roleLabel">Rol</p>
-                            <p class="mt-2 text-sm font-semibold text-slate-900" data-i18n="hero.presentation.roleValue">
+                            <p class="mt-2 text-sm font-semibold text-ink" data-i18n="hero.presentation.roleValue">
                                 Ingeniero de software
                             </p>
                         </div>
-                        <div class="rounded-2xl border border-slate-200 bg-white/80 p-4 shadow-sm">
-                            <p class="text-[11px] font-semibold uppercase tracking-[0.25em] text-slate-400"
+                        <div class="rounded-2xl border border-line bg-surface/80 p-4 shadow-sm">
+                            <p class="text-[11px] font-semibold uppercase tracking-[0.25em] text-muted"
                                 data-i18n="hero.presentation.locationLabel">Base</p>
-                            <p class="mt-2 text-sm font-semibold text-slate-900"
+                            <p class="mt-2 text-sm font-semibold text-ink"
                                 data-i18n="hero.presentation.locationValue">Madrid, España</p>
                         </div>
-                        <div class="rounded-2xl border border-slate-200 bg-white/80 p-4 shadow-sm">
-                            <p class="text-[11px] font-semibold uppercase tracking-[0.25em] text-slate-400"
+                        <div class="rounded-2xl border border-line bg-surface/80 p-4 shadow-sm">
+                            <p class="text-[11px] font-semibold uppercase tracking-[0.25em] text-muted"
                                 data-i18n="hero.presentation.focusLabel">Foco</p>
-                            <p class="mt-2 text-sm font-semibold text-slate-900"
+                            <p class="mt-2 text-sm font-semibold text-ink"
                                 data-i18n="hero.presentation.focusValue">SaaS, automatización y producto</p>
                         </div>
-                        <div class="rounded-2xl border border-slate-200 bg-white/80 p-4 shadow-sm">
-                            <p class="text-[11px] font-semibold uppercase tracking-[0.25em] text-slate-400"
+                        <div class="rounded-2xl border border-line bg-surface/80 p-4 shadow-sm">
+                            <p class="text-[11px] font-semibold uppercase tracking-[0.25em] text-muted"
                                 data-i18n="hero.presentation.experienceLabel">Experiencia</p>
-                            <p class="mt-2 text-sm font-semibold text-slate-900"
+                            <p class="mt-2 text-sm font-semibold text-ink"
                                 data-i18n="hero.presentation.experienceValue">3+ años</p>
                         </div>
                     </div>
-                    <div class="mt-6 space-y-3 text-sm text-slate-600">
-                        <p class="text-xs font-semibold uppercase tracking-[0.3em] text-slate-500"
+                    <div class="mt-6 space-y-3 text-sm text-body">
+                        <p class="text-xs font-semibold uppercase tracking-[0.3em] text-muted"
                             data-i18n="hero.live.label">Proyectos en vivo</p>
                         <div class="flex flex-wrap gap-2 gap-y-4 sm:gap-4">
                             <a href="https://mesasya.es" target="_blank" rel="noreferrer"
-                                class="group inline-flex items-center gap-2 text-sm font-semibold text-slate-600 transition hover:text-[#1D494F]">
+                                class="group inline-flex items-center gap-2 text-sm font-semibold text-body transition hover:text-[#1D494F] dark:text-[#9DE1C1]">
                                 <span
-                                    class="flex h-8 w-8 items-center justify-center rounded-full bg-[#9DE1C1]/30 text-[10px] font-bold uppercase tracking-wide text-[#1D494F] transition group-hover:bg-[#9DE1C1] group-hover:text-[#112A2E]">MY</span>
+                                    class="flex h-8 w-8 items-center justify-center rounded-full bg-[#9DE1C1]/30 text-[10px] font-bold uppercase tracking-wide text-[#1D494F] dark:text-[#9DE1C1] transition group-hover:bg-[#9DE1C1] group-hover:text-[#112A2E]">MY</span>
                                 <span data-i18n-html="hero.live.links.mesasya">→ MesasYa – Plataforma SaaS de gestión de
                                     reservas para restaurantes.</span>
                             </a>
                             <a href="https://micartaya.es" target="_blank" rel="noreferrer"
-                                class="group inline-flex items-center gap-2 text-sm font-semibold text-slate-600 transition hover:text-blue-600">
+                                class="group inline-flex items-center gap-2 text-sm font-semibold text-body transition hover:text-pine">
                                 <span
-                                    class="flex h-8 w-8 items-center justify-center rounded-full bg-blue-100 text-[10px] font-bold uppercase tracking-wide text-blue-600 transition group-hover:bg-blue-600 group-hover:text-white">MC</span>
+                                    class="flex h-8 w-8 items-center justify-center rounded-full bg-pine-pale text-[10px] font-bold uppercase tracking-wide text-pine transition group-hover:bg-pine group-hover:text-white">MC</span>
                                 <span data-i18n-html="hero.live.links.micartaya">→ MiCartaYa – Menú digital y pedidos
                                     online
                                     para restaurantes.</span>
                             </a>
                             <a href="https://orderya.es" target="_blank" rel="noreferrer"
-                                class="group inline-flex items-center gap-2 text-sm font-semibold text-slate-600 transition hover:text-[#ea580c]">
+                                class="group inline-flex items-center gap-2 text-sm font-semibold text-body transition hover:text-[#ea580c]">
                                 <span
                                     class="flex h-8 w-8 items-center justify-center rounded-full bg-orange-100 text-[10px] font-bold uppercase tracking-wide text-[#ea580c] transition group-hover:bg-[#ea580c] group-hover:text-white">OY</span>
                                 <span data-i18n-html="hero.live.links.orderya">→ OrderYa – Centralización de pedidos y
                                     producción para obradores.</span>
                             </a>
                             <a href="https://beatlist.es" target="_blank" rel="noreferrer"
-                                class="group inline-flex items-center gap-2 text-sm font-semibold text-slate-600 transition hover:text-[#111827]">
+                                class="group inline-flex items-center gap-2 text-sm font-semibold text-body transition hover:text-[#111827] dark:text-[#E5E7EB]">
                                 <span
-                                    class="flex h-8 w-8 items-center justify-center rounded-full border border-slate-200 bg-white text-[10px] font-bold uppercase tracking-wide text-[#111827] transition group-hover:border-[#111827] group-hover:bg-[#111827] group-hover:text-white">BL</span>
+                                    class="flex h-8 w-8 items-center justify-center rounded-full border border-line bg-surface text-[10px] font-bold uppercase tracking-wide text-[#111827] dark:text-[#E5E7EB] transition group-hover:border-[#111827] group-hover:bg-[#111827] group-hover:text-white">BL</span>
                                 <span data-i18n-html="hero.live.links.beatlist">→ BeatList – Estadísticas y gestión
                                     avanzada de
                                     playlists de Spotify.</span>
                             </a>
                             <a href="https://tratocrm.com" target="_blank" rel="noreferrer"
-                                class="group inline-flex items-center gap-2 text-sm font-semibold text-slate-600 transition hover:text-[#F97068]">
+                                class="group inline-flex items-center gap-2 text-sm font-semibold text-body transition hover:text-[#F97068]">
                                 <span
                                     class="flex h-8 w-8 items-center justify-center rounded-full bg-red-100 text-[10px] font-bold uppercase tracking-wide text-[#F97068] transition group-hover:bg-[#F97068] group-hover:text-white">TR</span>
                                 <span data-i18n-html="hero.live.links.trato">→ Trato – CRM ágil para presupuestos y
                                     seguimientos.</span>
                             </a>
                             <a href="https://ponme.es" target="_blank" rel="noreferrer"
-                                class="group inline-flex items-center gap-2 text-sm font-semibold text-slate-600 transition hover:text-purple-600">
+                                class="group inline-flex items-center gap-2 text-sm font-semibold text-body transition hover:text-purple-600">
                                 <span
                                     class="flex h-8 w-8 items-center justify-center rounded-full bg-purple-100 text-[10px] font-bold uppercase tracking-wide text-purple-600 transition group-hover:bg-purple-600 group-hover:text-white">PM</span>
                                 <span data-i18n-html="hero.live.links.ponme">→ Ponme – Tu armario inteligente potenciado
@@ -229,28 +280,28 @@
                 </div>
                 <div class="w-full lg:w-auto" data-animate>
                     <div
-                        class="relative overflow-hidden rounded-3xl border border-slate-200 bg-white/80 p-10 shadow-xl shadow-slate-900/5 backdrop-blur">
-                        <div class="absolute -right-16 -top-16 h-48 w-48 rounded-full bg-blue-100 blur-3xl"></div>
-                        <div class="absolute -bottom-20 -left-10 h-56 w-56 rounded-full bg-amber-100 blur-3xl"></div>
+                        class="relative overflow-hidden rounded-3xl border border-line bg-surface/80 p-10 shadow-xl shadow-slate-900/5 backdrop-blur">
+                        <div class="absolute -right-16 -top-16 h-48 w-48 rounded-full bg-pine-pale blur-3xl"></div>
+                        <div class="absolute -bottom-20 -left-10 h-56 w-56 rounded-full bg-clay/20 blur-3xl"></div>
                         <div class="relative space-y-6">
-                            <p class="text-sm font-medium uppercase tracking-[0.3em] text-slate-400"
+                            <p class="text-sm font-medium uppercase tracking-[0.3em] text-muted"
                                 data-i18n="hero.summaryLabel">Resumen Express</p>
-                            <p class="text-xl font-semibold text-slate-800" data-i18n="hero.summaryTitle">Diseño y
+                            <p class="text-xl font-semibold text-ink" data-i18n="hero.summaryTitle">Diseño y
                                 desarrollo plataformas web seguras,
                                 escalables y bien estructuradas.</p>
-                            <ul class="space-y-4 text-sm text-slate-600">
+                            <ul class="space-y-4 text-sm text-body">
                                 <li class="flex items-start gap-3" data-i18n-html="hero.summaryItems.first">
-                                    <span class="mt-1 h-2 w-2 rounded-full bg-blue-500"></span>
+                                    <span class="mt-1 h-2 w-2 rounded-full bg-pine"></span>
                                     Especialista en backend Python con Flask y FastAPI, con tareas distribuidas mediante
                                     Celery y gestión eficiente de datos.
                                 </li>
                                 <li class="flex items-start gap-3" data-i18n-html="hero.summaryItems.second">
-                                    <span class="mt-1 h-2 w-2 rounded-full bg-blue-500"></span>
+                                    <span class="mt-1 h-2 w-2 rounded-full bg-pine"></span>
                                     Construyo interfaces limpias con JavaScript y React, priorizando la simplicidad y el
                                     rendimiento.
                                 </li>
                                 <li class="flex items-start gap-3" data-i18n-html="hero.summaryItems.third">
-                                    <span class="mt-1 h-2 w-2 rounded-full bg-blue-500"></span>
+                                    <span class="mt-1 h-2 w-2 rounded-full bg-pine"></span>
                                     Aplico buenas prácticas de ciberseguridad en autenticación, despliegues y protección
                                     de datos.
                                 </li>
@@ -263,21 +314,21 @@
 
         <section id="about" class="relative py-24">
             <div
-                class="pointer-events-none absolute inset-x-0 top-0 -z-10 h-40 bg-gradient-to-b from-slate-100 via-transparent to-transparent">
+                class="pointer-events-none absolute inset-x-0 top-0 -z-10 h-40 bg-gradient-to-b from-surface2 via-transparent to-transparent">
             </div>
             <div class="mx-auto flex w-full max-w-6xl flex-col gap-12 px-6 lg:flex-row">
                 <div class="w-full space-y-6 lg:w-2/3" data-animate>
-                    <p class="text-xs font-semibold uppercase tracking-[0.3em] text-slate-500" data-i18n="about.label">
+                    <p class="text-xs font-semibold uppercase tracking-[0.3em] text-muted" data-i18n="about.label">
                         Perfil</p>
-                    <h2 class="text-3xl font-semibold text-slate-900 sm:text-4xl" data-i18n="about.title">Formación
+                    <h2 class="text-3xl font-semibold text-ink sm:text-4xl" data-i18n="about.title">Formación
                         técnica con foco en
                         seguridad aplicada.</h2>
-                    <p class="text-lg text-slate-600" data-i18n="about.paragraph1">
+                    <p class="text-lg text-body" data-i18n="about.paragraph1">
                         Soy ingeniero de software en mi último año de carrera, con una especialización universitaria de
                         dos años en ciberseguridad aplicada. Ese recorrido me permitió integrar buenas prácticas de
                         seguridad en backend, autenticación y despliegues sin perder de vista la experiencia de usuario.
                     </p>
-                    <p class="text-lg text-slate-600" data-i18n="about.paragraph2">
+                    <p class="text-lg text-body" data-i18n="about.paragraph2">
                         Trabajo en soluciones SaaS, integraciones de APIs y automatizaciones sobre Python y JavaScript.
                         Mi enfoque en seguridad está orientado a la práctica: diseño sistemas coherentes, bien
                         documentados y con flujos de datos claros que facilitan la mantenibilidad y reducen riesgos.
@@ -285,30 +336,30 @@
                 </div>
                 <div class="w-full space-y-6 lg:w-1/3" data-animate>
                     <div class="grid gap-4">
-                        <div class="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm">
-                            <h3 class="text-sm font-semibold uppercase tracking-widest text-slate-500"
+                        <div class="rounded-3xl border border-line bg-surface p-6 shadow-sm">
+                            <h3 class="text-sm font-semibold uppercase tracking-widest text-muted"
                                 data-i18n="about.cardTitle">Datos clave</h3>
-                            <dl class="mt-4 space-y-3 text-sm text-slate-600">
+                            <dl class="mt-4 space-y-3 text-sm text-body">
                                 <div class="flex justify-between gap-6">
-                                    <dt class="font-medium text-slate-500" data-i18n="about.details.locationLabel">
+                                    <dt class="font-medium text-muted" data-i18n="about.details.locationLabel">
                                         Ubicación</dt>
                                     <dd data-i18n-html="about.details.locationValue">Madrid · España</dd>
                                 </div>
                                 <div class="flex justify-between gap-6">
-                                    <dt class="font-medium text-slate-500" data-i18n="about.details.emailLabel">Email
+                                    <dt class="font-medium text-muted" data-i18n="about.details.emailLabel">Email
                                     </dt>
-                                    <dd data-i18n-html="about.details.emailValue"><a class="hover:text-blue-600"
+                                    <dd data-i18n-html="about.details.emailValue"><a class="hover:text-pine"
                                             href="mailto:nicoabgv@gmail.com">nicoabgv@gmail.com</a></dd>
                                 </div>
                                 <div class="flex justify-between gap-6">
-                                    <dt class="font-medium text-slate-500" data-i18n="about.details.linkedinLabel">
+                                    <dt class="font-medium text-muted" data-i18n="about.details.linkedinLabel">
                                         LinkedIn</dt>
-                                    <dd data-i18n-html="about.details.linkedinValue"><a class="hover:text-blue-600"
+                                    <dd data-i18n-html="about.details.linkedinValue"><a class="hover:text-pine"
                                             href="https://www.linkedin.com/in/nicolas-alvarez-becerra/" target="_blank"
                                             rel="noreferrer">/in/nicoabgv</a></dd>
                                 </div>
                                 <div class="flex justify-between gap-6">
-                                    <dt class="font-medium text-slate-500" data-i18n="about.details.experienceLabel">
+                                    <dt class="font-medium text-muted" data-i18n="about.details.experienceLabel">
                                         Años de experiencia</dt>
                                     <dd data-i18n="about.details.experienceValue">3+</dd>
                                 </div>
@@ -319,21 +370,21 @@
             </div>
         </section>
 
-        <section id="skills" class="bg-white py-24">
+        <section id="skills" class="bg-surface py-24">
             <div class="mx-auto max-w-6xl space-y-12 px-6">
                 <div class="space-y-4" data-animate>
-                    <p class="text-xs font-semibold uppercase tracking-[0.3em] text-slate-500" data-i18n="skills.label">
+                    <p class="text-xs font-semibold uppercase tracking-[0.3em] text-muted" data-i18n="skills.label">
                         Qué hago</p>
-                    <h2 class="text-3xl font-semibold text-slate-900 sm:text-4xl" data-i18n="skills.title">Capas
+                    <h2 class="text-3xl font-semibold text-ink sm:text-4xl" data-i18n="skills.title">Capas
                         técnicas que utilizo para crear
                         productos escalables.</h2>
                 </div>
                 <div class="grid gap-6 md:grid-cols-2 xl:grid-cols-4" data-animate>
                     <article
-                        class="group flex flex-col gap-4 rounded-3xl border border-slate-200 bg-slate-50/80 p-6 transition hover:-translate-y-1 hover:border-blue-400 hover:shadow-lg">
+                        class="group flex flex-col gap-4 rounded-3xl border border-line bg-bg/80 p-6 transition hover:-translate-y-1 hover:border-pine hover:shadow-lg">
                         <div class="flex items-center gap-3">
                             <span
-                                class="flex h-12 w-12 items-center justify-center rounded-2xl bg-blue-100 text-blue-700">
+                                class="flex h-12 w-12 items-center justify-center rounded-2xl bg-pine-pale text-pine-dark">
                                 <svg class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                                     stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"
                                     aria-hidden="true">
@@ -342,28 +393,28 @@
                                     <path d="M9 4v16" />
                                 </svg>
                             </span>
-                            <h3 class="text-lg font-semibold text-slate-900" data-i18n="skills.cards.backend.title">
+                            <h3 class="text-lg font-semibold text-ink" data-i18n="skills.cards.backend.title">
                                 Backend</h3>
                         </div>
-                        <p class="text-sm text-slate-600" data-i18n="skills.cards.backend.description">APIs con Flask y
+                        <p class="text-sm text-body" data-i18n="skills.cards.backend.description">APIs con Flask y
                             FastAPI, tareas distribuidas con Celery y
                             persistencia en MySQL sobre infraestructura contenerizada.</p>
-                        <div class="flex flex-wrap gap-2 text-xs font-medium text-slate-500">
-                            <span class="rounded-full bg-white px-3 py-1"
+                        <div class="flex flex-wrap gap-2 text-xs font-medium text-muted">
+                            <span class="rounded-full bg-surface px-3 py-1"
                                 data-i18n="skills.cards.backend.tags.0">Python</span>
-                            <span class="rounded-full bg-white px-3 py-1" data-i18n="skills.cards.backend.tags.1">Flask
+                            <span class="rounded-full bg-surface px-3 py-1" data-i18n="skills.cards.backend.tags.1">Flask
                                 · FastAPI</span>
-                            <span class="rounded-full bg-white px-3 py-1"
+                            <span class="rounded-full bg-surface px-3 py-1"
                                 data-i18n="skills.cards.backend.tags.2">Celery</span>
-                            <span class="rounded-full bg-white px-3 py-1"
+                            <span class="rounded-full bg-surface px-3 py-1"
                                 data-i18n="skills.cards.backend.tags.3">MySQL</span>
                         </div>
                     </article>
                     <article
-                        class="group flex flex-col gap-4 rounded-3xl border border-slate-200 bg-slate-50/80 p-6 transition hover:-translate-y-1 hover:border-blue-400 hover:shadow-lg">
+                        class="group flex flex-col gap-4 rounded-3xl border border-line bg-bg/80 p-6 transition hover:-translate-y-1 hover:border-pine hover:shadow-lg">
                         <div class="flex items-center gap-3">
                             <span
-                                class="flex h-12 w-12 items-center justify-center rounded-2xl bg-blue-100 text-blue-700">
+                                class="flex h-12 w-12 items-center justify-center rounded-2xl bg-pine-pale text-pine-dark">
                                 <svg class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                                     stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"
                                     aria-hidden="true">
@@ -372,26 +423,26 @@
                                     <path d="M12 12v8" />
                                 </svg>
                             </span>
-                            <h3 class="text-lg font-semibold text-slate-900" data-i18n="skills.cards.frontend.title">
+                            <h3 class="text-lg font-semibold text-ink" data-i18n="skills.cards.frontend.title">
                                 Frontend</h3>
                         </div>
-                        <p class="text-sm text-slate-600" data-i18n="skills.cards.frontend.description">Interfaces
+                        <p class="text-sm text-body" data-i18n="skills.cards.frontend.description">Interfaces
                             limpias con JavaScript y Tailwind, apoyadas en
                             React para aportar fluidez y modularidad.</p>
-                        <div class="flex flex-wrap gap-2 text-xs font-medium text-slate-500">
-                            <span class="rounded-full bg-white px-3 py-1"
+                        <div class="flex flex-wrap gap-2 text-xs font-medium text-muted">
+                            <span class="rounded-full bg-surface px-3 py-1"
                                 data-i18n="skills.cards.frontend.tags.0">JavaScript</span>
-                            <span class="rounded-full bg-white px-3 py-1"
+                            <span class="rounded-full bg-surface px-3 py-1"
                                 data-i18n="skills.cards.frontend.tags.1">Tailwind CSS</span>
-                            <span class="rounded-full bg-white px-3 py-1"
+                            <span class="rounded-full bg-surface px-3 py-1"
                                 data-i18n="skills.cards.frontend.tags.2">React</span>
                         </div>
                     </article>
                     <article
-                        class="group flex flex-col gap-4 rounded-3xl border border-slate-200 bg-slate-50/80 p-6 transition hover:-translate-y-1 hover:border-blue-400 hover:shadow-lg">
+                        class="group flex flex-col gap-4 rounded-3xl border border-line bg-bg/80 p-6 transition hover:-translate-y-1 hover:border-pine hover:shadow-lg">
                         <div class="flex items-center gap-3">
                             <span
-                                class="flex h-12 w-12 items-center justify-center rounded-2xl bg-blue-100 text-blue-700">
+                                class="flex h-12 w-12 items-center justify-center rounded-2xl bg-pine-pale text-pine-dark">
                                 <svg class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                                     stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"
                                     aria-hidden="true">
@@ -400,28 +451,28 @@
                                     <path d="M9 8h6" />
                                 </svg>
                             </span>
-                            <h3 class="text-lg font-semibold text-slate-900" data-i18n="skills.cards.devops.title">
+                            <h3 class="text-lg font-semibold text-ink" data-i18n="skills.cards.devops.title">
                                 DevOps</h3>
                         </div>
-                        <p class="text-sm text-slate-600" data-i18n="skills.cards.devops.description">Contenedores con
+                        <p class="text-sm text-body" data-i18n="skills.cards.devops.description">Contenedores con
                             Docker y Compose, Nginx como proxy,
                             automatizaciones con scripts y cronjobs sobre VPS Ubuntu.</p>
-                        <div class="flex flex-wrap gap-2 text-xs font-medium text-slate-500">
-                            <span class="rounded-full bg-white px-3 py-1"
+                        <div class="flex flex-wrap gap-2 text-xs font-medium text-muted">
+                            <span class="rounded-full bg-surface px-3 py-1"
                                 data-i18n="skills.cards.devops.tags.0">Docker</span>
-                            <span class="rounded-full bg-white px-3 py-1" data-i18n="skills.cards.devops.tags.1">Docker
+                            <span class="rounded-full bg-surface px-3 py-1" data-i18n="skills.cards.devops.tags.1">Docker
                                 Compose</span>
-                            <span class="rounded-full bg-white px-3 py-1"
+                            <span class="rounded-full bg-surface px-3 py-1"
                                 data-i18n="skills.cards.devops.tags.2">Nginx</span>
-                            <span class="rounded-full bg-white px-3 py-1" data-i18n="skills.cards.devops.tags.3">Ubuntu
+                            <span class="rounded-full bg-surface px-3 py-1" data-i18n="skills.cards.devops.tags.3">Ubuntu
                                 VPS</span>
                         </div>
                     </article>
                     <article
-                        class="group flex flex-col gap-4 rounded-3xl border border-slate-200 bg-slate-50/80 p-6 transition hover:-translate-y-1 hover:border-blue-400 hover:shadow-lg">
+                        class="group flex flex-col gap-4 rounded-3xl border border-line bg-bg/80 p-6 transition hover:-translate-y-1 hover:border-pine hover:shadow-lg">
                         <div class="flex items-center gap-3">
                             <span
-                                class="flex h-12 w-12 items-center justify-center rounded-2xl bg-blue-100 text-blue-700">
+                                class="flex h-12 w-12 items-center justify-center rounded-2xl bg-pine-pale text-pine-dark">
                                 <svg class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                                     stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"
                                     aria-hidden="true">
@@ -434,18 +485,18 @@
                                     <path d="M6 14h2" />
                                 </svg>
                             </span>
-                            <h3 class="text-lg font-semibold text-slate-900" data-i18n="skills.cards.security.title">
+                            <h3 class="text-lg font-semibold text-ink" data-i18n="skills.cards.security.title">
                                 Ciberseguridad</h3>
                         </div>
-                        <p class="text-sm text-slate-600" data-i18n="skills.cards.security.description">Buenas prácticas
+                        <p class="text-sm text-body" data-i18n="skills.cards.security.description">Buenas prácticas
                             en backend, autenticación y despliegues
                             reforzadas por mi formación en ciberseguridad aplicada.</p>
-                        <div class="flex flex-wrap gap-2 text-xs font-medium text-slate-500">
-                            <span class="rounded-full bg-white px-3 py-1"
+                        <div class="flex flex-wrap gap-2 text-xs font-medium text-muted">
+                            <span class="rounded-full bg-surface px-3 py-1"
                                 data-i18n="skills.cards.security.tags.0">Buenas prácticas backend</span>
-                            <span class="rounded-full bg-white px-3 py-1"
+                            <span class="rounded-full bg-surface px-3 py-1"
                                 data-i18n="skills.cards.security.tags.1">Autenticación segura</span>
-                            <span class="rounded-full bg-white px-3 py-1"
+                            <span class="rounded-full bg-surface px-3 py-1"
                                 data-i18n="skills.cards.security.tags.2">Despliegues revisados</span>
                         </div>
                     </article>
@@ -455,27 +506,27 @@
 
         <section id="projects" class="relative overflow-hidden py-24">
             <div
-                class="pointer-events-none absolute inset-x-0 top-0 -z-10 h-40 bg-gradient-to-b from-white via-transparent to-transparent">
+                class="pointer-events-none absolute inset-x-0 top-0 -z-10 h-40 bg-gradient-to-b from-surface via-transparent to-transparent">
             </div>
             <div class="mx-auto max-w-6xl space-y-16 px-6">
                 <div class="flex flex-col gap-4 lg:flex-row lg:items-end lg:justify-between" data-animate>
                     <div>
-                        <p class="text-xs font-semibold uppercase tracking-[0.3em] text-slate-500"
+                        <p class="text-xs font-semibold uppercase tracking-[0.3em] text-muted"
                             data-i18n="projects.label">Proyectos destacados
                         </p>
-                        <h2 class="mt-2 text-3xl font-semibold text-slate-900 sm:text-4xl" data-i18n="projects.title">
+                        <h2 class="mt-2 text-3xl font-semibold text-ink sm:text-4xl" data-i18n="projects.title">
                             Soluciones que sostienen
                             operaciones reales.</h2>
-                        <p class="mt-4 max-w-3xl text-sm text-slate-600" data-i18n-html="projects.ecosystemHtml">
+                        <p class="mt-4 max-w-3xl text-sm text-body" data-i18n-html="projects.ecosystemHtml">
                             MesasYa, MiCartaYa y OrderYa forman parte del ecosistema de <a
-                                class="font-semibold text-blue-600 transition hover:text-blue-700"
+                                class="font-semibold text-pine transition hover:text-pine-dark"
                                 href="https://yasolutions.es" target="_blank" rel="noreferrer">YaSolutions</a>, una
                             línea de soluciones digitales para hostelería y operaciones. Aquí los presento desde la
                             perspectiva de producto, arquitectura y ejecución técnica.
                         </p>
                     </div>
                     <a href="projects.html"
-                        class="inline-flex items-center gap-2 text-sm font-semibold text-blue-600 transition hover:text-blue-700">
+                        class="inline-flex items-center gap-2 text-sm font-semibold text-pine transition hover:text-pine-dark">
                         <span data-i18n="projects.seeAll">Ver case studies completos</span>
                         <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"
                             stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
@@ -485,30 +536,30 @@
                 </div>
                 <div class="space-y-12">
                     <article data-project-id="mesasya"
-                        class="flex flex-col gap-10 rounded-3xl border border-slate-200 bg-white/90 p-8 shadow-lg shadow-slate-900/5 transition hover:-translate-y-1 hover:shadow-xl lg:flex-row"
+                        class="flex flex-col gap-10 rounded-3xl border border-line bg-surface/90 p-8 shadow-lg shadow-slate-900/5 transition hover:-translate-y-1 hover:shadow-xl lg:flex-row"
                         data-animate>
                         <figure
-                            class="flex w-full items-center justify-center rounded-2xl border border-[#9DE1C1]/70 bg-[#F4FFF9] p-6 lg:w-64">
+                            class="flex w-full items-center justify-center rounded-2xl border border-[#9DE1C1]/70 bg-[#F4FFF9] dark:bg-[#13241f] p-6 lg:w-64">
                             <img src="assets/mesasya-logo.svg" alt="Identidad del proyecto MesasYa" width="160"
                                 height="160" loading="lazy" class="h-32 w-32 object-contain" />
                         </figure>
                         <div class="flex w-full flex-col gap-6">
                             <div class="flex flex-wrap items-center gap-3">
                                 <span
-                                    class="rounded-full bg-[#9DE1C1]/20 px-3 py-1 text-xs font-semibold text-[#1D494F]"
+                                    class="rounded-full bg-[#9DE1C1]/20 px-3 py-1 text-xs font-semibold text-[#1D494F] dark:text-[#9DE1C1]"
                                     data-i18n="projects.mesasya.badge">SaaS en producción</span>
                                 <span
-                                    class="text-xs uppercase tracking-[0.25em] text-slate-400 font-['Space_Mono',_monospace]">Flask
+                                    class="text-xs uppercase tracking-[0.25em] text-muted font-['Space_Mono',_monospace]">Flask
                                     · Celery · Docker · MySQL</span>
                             </div>
                             <div class="space-y-4">
-                                <h3 class="text-2xl font-semibold text-slate-900">MesasYa</h3>
-                                <p class="text-base text-slate-600" data-i18n="projects.mesasya.description">
+                                <h3 class="text-2xl font-semibold text-ink">MesasYa</h3>
+                                <p class="text-base text-body" data-i18n="projects.mesasya.description">
                                     MesasYa es una plataforma integral para la gestión de reservas de restaurantes.
                                     Combina planos interactivos, automatización y analítica para ofrecer una operación
                                     robusta y personalizable que ya funciona en producción.
                                 </p>
-                                <ul class="space-y-2 text-sm text-slate-600">
+                                <ul class="space-y-2 text-sm text-body">
                                     <li class="flex items-start gap-3" data-i18n-html="projects.mesasya.bullets.first">
                                         <span class="mt-1 h-2 w-2 rounded-full bg-[#589E8C]"></span>
                                         Planos de sala configurables por sede, zona y servicio con asignación automática
@@ -528,7 +579,7 @@
                             </div>
                             <div class="flex flex-wrap items-center gap-4">
                                 <button type="button" data-modal-target="modal-mesaysa"
-                                    class="inline-flex items-center gap-2 rounded-full bg-slate-900 px-5 py-2.5 text-sm font-semibold text-white transition hover:bg-slate-800 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-slate-900">
+                                    class="inline-flex items-center gap-2 rounded-full bg-pine px-5 py-2.5 text-sm font-semibold text-white transition hover:bg-pine-dark focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-pine">
                                     <span data-i18n="projects.cta">Leer más</span>
                                     <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                                         stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"
@@ -537,7 +588,7 @@
                                     </svg>
                                 </button>
                                 <a href="projects.html#mesasya"
-                                    class="inline-flex items-center gap-2 text-sm font-semibold text-[#1D494F] transition hover:text-[#589E8C]">
+                                    class="inline-flex items-center gap-2 text-sm font-semibold text-[#1D494F] dark:text-[#9DE1C1] transition hover:text-[#589E8C]">
                                     <span data-i18n="projects.caseStudy">Case study</span>
                                     <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                                         stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"
@@ -546,7 +597,7 @@
                                     </svg>
                                 </a>
                                 <a href="https://mesasya.es" target="_blank" rel="noreferrer"
-                                    class="inline-flex items-center gap-2 rounded-full border border-[#9DE1C1]/70 px-5 py-2.5 text-sm font-semibold text-[#1D494F] transition hover:border-[#589E8C] hover:text-[#589E8C] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#589E8C]">
+                                    class="inline-flex items-center gap-2 rounded-full border border-[#9DE1C1]/70 px-5 py-2.5 text-sm font-semibold text-[#1D494F] dark:text-[#9DE1C1] transition hover:border-[#589E8C] hover:text-[#589E8C] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#589E8C]">
                                     <span data-i18n-html="projects.mesasya.directAccess">→ MesasYa – Plataforma SaaS
                                         de gestión de reservas para restaurantes.</span>
                                     <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor"
@@ -560,50 +611,50 @@
                         </div>
                     </article>
                     <article data-project-id="micartaya"
-                        class="flex flex-col gap-10 rounded-3xl border border-slate-200 bg-white/90 p-8 shadow-lg shadow-slate-900/5 transition hover:-translate-y-1 hover:shadow-xl lg:flex-row"
+                        class="flex flex-col gap-10 rounded-3xl border border-line bg-surface/90 p-8 shadow-lg shadow-slate-900/5 transition hover:-translate-y-1 hover:shadow-xl lg:flex-row"
                         data-animate>
                         <figure
-                            class="flex w-full items-center justify-center rounded-2xl border border-blue-200 bg-blue-50 p-6 lg:w-64">
+                            class="flex w-full items-center justify-center rounded-2xl border border-pine/30 bg-pine-pale p-6 lg:w-64">
                             <img src="assets/micartaya-logo.png" alt="Identidad del proyecto MiCartaYa" width="160"
                                 height="160" loading="lazy" class="h-32 w-32 object-contain" />
                         </figure>
                         <div class="flex w-full flex-col gap-6">
                             <div class="flex flex-wrap items-center gap-3">
-                                <span class="rounded-full bg-blue-100 px-3 py-1 text-xs font-semibold text-blue-700"
+                                <span class="rounded-full bg-pine-pale px-3 py-1 text-xs font-semibold text-pine-dark"
                                     data-i18n="projects.micartaya.badge">SaaS Producción</span>
                                 <span
-                                    class="text-xs uppercase tracking-[0.25em] text-slate-400 font-['Space_Mono',_monospace]">FastAPI
+                                    class="text-xs uppercase tracking-[0.25em] text-muted font-['Space_Mono',_monospace]">FastAPI
                                     · WebSockets · Docker · MySQL</span>
                             </div>
                             <div class="space-y-4">
-                                <h3 class="text-2xl font-semibold text-slate-900">MiCartaYa</h3>
-                                <p class="text-base text-slate-600" data-i18n="projects.micartaya.description">
+                                <h3 class="text-2xl font-semibold text-ink">MiCartaYa</h3>
+                                <p class="text-base text-body" data-i18n="projects.micartaya.description">
                                     Ecosistema digital para restaurantes que transforma la experiencia del comensal.
                                     Gestión de cartas QR, pedidos en mesa y sistema de impresión TPV en tiempo real.
                                 </p>
-                                <ul class="space-y-2 text-sm text-slate-600">
+                                <ul class="space-y-2 text-sm text-body">
                                     <li class="flex items-start gap-3"
                                         data-i18n-html="projects.micartaya.bullets.first">
-                                        <span class="mt-1 h-2 w-2 rounded-full bg-blue-500"></span>
+                                        <span class="mt-1 h-2 w-2 rounded-full bg-pine"></span>
                                         Cartas interactivas multiidioma con actualización instantánea y control de
                                         stock.
                                     </li>
                                     <li class="flex items-start gap-3"
                                         data-i18n-html="projects.micartaya.bullets.second">
-                                        <span class="mt-1 h-2 w-2 rounded-full bg-blue-500"></span>
+                                        <span class="mt-1 h-2 w-2 rounded-full bg-pine"></span>
                                         Comunicación mediante WebSockets para recepción de pedidos en menos de 1
                                         segundo.
                                     </li>
                                     <li class="flex items-start gap-3"
                                         data-i18n-html="projects.micartaya.bullets.third">
-                                        <span class="mt-1 h-2 w-2 rounded-full bg-blue-500"></span>
+                                        <span class="mt-1 h-2 w-2 rounded-full bg-pine"></span>
                                         Integración de impresión térmica remota para comandas automáticas en cocina.
                                     </li>
                                 </ul>
                             </div>
                             <div class="flex flex-wrap items-center gap-4">
                                 <button type="button" data-modal-target="modal-micartaya"
-                                    class="inline-flex items-center gap-2 rounded-full bg-slate-900 px-5 py-2.5 text-sm font-semibold text-white transition hover:bg-slate-800 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-slate-900">
+                                    class="inline-flex items-center gap-2 rounded-full bg-pine px-5 py-2.5 text-sm font-semibold text-white transition hover:bg-pine-dark focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-pine">
                                     <span data-i18n="projects.cta">Leer más</span>
                                     <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                                         stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"
@@ -612,7 +663,7 @@
                                     </svg>
                                 </button>
                                 <a href="projects.html#micartaya"
-                                    class="inline-flex items-center gap-2 text-sm font-semibold text-blue-600 transition hover:text-blue-700">
+                                    class="inline-flex items-center gap-2 text-sm font-semibold text-pine transition hover:text-pine-dark">
                                     <span data-i18n="projects.caseStudy">Case study</span>
                                     <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                                         stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"
@@ -621,7 +672,7 @@
                                     </svg>
                                 </a>
                                 <a href="https://micartaya.es" target="_blank" rel="noreferrer"
-                                    class="inline-flex items-center gap-2 rounded-full border border-blue-200 px-5 py-2.5 text-sm font-semibold text-blue-700 transition hover:border-blue-500 hover:text-blue-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-500">
+                                    class="inline-flex items-center gap-2 rounded-full border border-pine/30 px-5 py-2.5 text-sm font-semibold text-pine-dark transition hover:border-pine hover:text-pine focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-pine">
                                     <span data-i18n-html="projects.micartaya.directAccess">→ MiCartaYa – Plataforma de
                                         menú digital y pedidos online.</span>
                                     <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor"
@@ -636,7 +687,7 @@
                     </article>
 
                     <article data-project-id="orderya"
-                        class="flex flex-col gap-10 rounded-3xl border border-slate-200 bg-white/90 p-8 shadow-lg shadow-slate-900/5 transition hover:-translate-y-1 hover:shadow-xl lg:flex-row"
+                        class="flex flex-col gap-10 rounded-3xl border border-line bg-surface/90 p-8 shadow-lg shadow-slate-900/5 transition hover:-translate-y-1 hover:shadow-xl lg:flex-row"
                         data-animate>
                         <figure
                             class="flex w-full items-center justify-center rounded-2xl border border-orange-200 bg-orange-50 p-6 lg:w-64">
@@ -648,16 +699,16 @@
                                 <span class="rounded-full bg-orange-100 px-3 py-1 text-xs font-semibold text-[#ea580c]"
                                     data-i18n="projects.orderya.badge">Logística optimizada</span>
                                 <span
-                                    class="text-xs uppercase tracking-[0.25em] text-slate-400 font-['Space_Mono',_monospace]">FastAPI
+                                    class="text-xs uppercase tracking-[0.25em] text-muted font-['Space_Mono',_monospace]">FastAPI
                                     · Docker · MySQL · Jinja2</span>
                             </div>
                             <div class="space-y-4">
-                                <h3 class="text-2xl font-semibold text-slate-900">OrderYa</h3>
-                                <p class="text-base text-slate-600" data-i18n="projects.orderya.description">
+                                <h3 class="text-2xl font-semibold text-ink">OrderYa</h3>
+                                <p class="text-base text-body" data-i18n="projects.orderya.description">
                                     Centralización de pedidos para obradores. Sustituye hojas de cálculo por un flujo
                                     automatizado de producción y reparto.
                                 </p>
-                                <ul class="space-y-2 text-sm text-slate-600">
+                                <ul class="space-y-2 text-sm text-body">
                                     <li class="flex items-start gap-3" data-i18n-html="projects.orderya.bullets.first">
                                         <span class="mt-1 h-2 w-2 rounded-full bg-[#ea580c]"></span>
                                         -30% de tiempo en toma de datos al eliminar canales informales.
@@ -675,7 +726,7 @@
                             </div>
                             <div class="flex flex-wrap items-center gap-4">
                                 <button type="button" data-modal-target="modal-orderya"
-                                    class="inline-flex items-center gap-2 rounded-full bg-slate-900 px-5 py-2.5 text-sm font-semibold text-white transition hover:bg-slate-800 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-slate-900">
+                                    class="inline-flex items-center gap-2 rounded-full bg-pine px-5 py-2.5 text-sm font-semibold text-white transition hover:bg-pine-dark focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-pine">
                                     <span data-i18n="projects.cta">Leer más</span>
                                     <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                                         stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"
@@ -708,20 +759,20 @@
                     </article>
 
                     <article data-project-id="beatlist"
-                        class="flex flex-col gap-10 rounded-3xl border border-slate-200 bg-white/90 p-8 shadow-lg shadow-slate-900/5 transition hover:-translate-y-1 hover:shadow-xl lg:flex-row"
+                        class="flex flex-col gap-10 rounded-3xl border border-line bg-surface/90 p-8 shadow-lg shadow-slate-900/5 transition hover:-translate-y-1 hover:shadow-xl lg:flex-row"
                         data-animate>
                         <figure
-                            class="flex w-full items-center justify-center rounded-2xl border border-[#111827]/20 bg-[#F7F7FB] p-6 lg:w-64">
+                            class="flex w-full items-center justify-center rounded-2xl border border-[#111827]/20 bg-[#F7F7FB] dark:bg-[#232327] p-6 lg:w-64">
                             <img src="assets/beatlist-logo.svg" alt="Identidad del proyecto BeatList" width="160"
                                 height="160" loading="lazy" class="h-32 w-32 object-contain" />
                         </figure>
                         <div class="flex w-full flex-col gap-6">
                             <div class="flex flex-wrap items-center gap-3">
                                 <span
-                                    class="rounded-full bg-[#111827]/10 px-3 py-1 text-xs font-semibold text-[#111827]"
+                                    class="rounded-full bg-[#111827]/10 px-3 py-1 text-xs font-semibold text-[#111827] dark:text-[#E5E7EB]"
                                     data-i18n="projects.beatlist.badge">Plataforma musical</span>
                                 <span
-                                    class="inline-flex items-center gap-1 rounded-full border border-[#111827]/30 bg-white px-3 py-1 text-xs font-semibold text-[#111827]">
+                                    class="inline-flex items-center gap-1 rounded-full border border-[#111827]/30 bg-surface px-3 py-1 text-xs font-semibold text-[#111827] dark:text-[#E5E7EB]">
                                     <svg class="h-3.5 w-3.5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
                                         <path fill-rule="evenodd"
                                             d="M16.704 5.29a.75.75 0 0 1 .006 1.06l-7.25 7.5a.75.75 0 0 1-1.086.02L3.29 8.536a.75.75 0 0 1 1.06-1.06l4.21 4.209 6.72-6.956a.75.75 0 0 1 1.064.061Z"
@@ -730,33 +781,33 @@
                                     <span data-i18n="projects.beatlist.approval">Spotify Approved</span>
                                 </span>
                                 <span
-                                    class="text-xs uppercase tracking-[0.25em] text-slate-400 font-['Space_Mono',_monospace]">Flask
+                                    class="text-xs uppercase tracking-[0.25em] text-muted font-['Space_Mono',_monospace]">Flask
                                     · OAuth 2.0 · Celery · Spotify API</span>
                             </div>
                             <div class="space-y-4">
-                                <h3 class="text-2xl font-semibold text-slate-900">BeatList</h3>
-                                <p class="text-base text-slate-600" data-i18n="projects.beatlist.description">
+                                <h3 class="text-2xl font-semibold text-ink">BeatList</h3>
+                                <p class="text-base text-body" data-i18n="projects.beatlist.description">
                                     BeatList es la suite para melómanos y curadores que necesitan más que el gestor
                                     estándar de Spotify. Integra la API oficial con análisis profundos y
                                     experiencias
                                     interactivas avaladas por el programa de partners de Spotify.
                                 </p>
-                                <ul class="space-y-2 text-sm text-slate-600">
+                                <ul class="space-y-2 text-sm text-body">
                                     <li class="flex items-start gap-3" data-i18n-html="projects.beatlist.bullets.first">
-                                        <span class="mt-1 h-2 w-2 rounded-full bg-[#111827]"></span>
+                                        <span class="mt-1 h-2 w-2 rounded-full bg-[#111827] dark:bg-[#9CA3AF]"></span>
                                         Fusión y depuración de playlists con reglas inteligentes y métricas como
                                         energía
                                         o baile.
                                     </li>
                                     <li class="flex items-start gap-3"
                                         data-i18n-html="projects.beatlist.bullets.second">
-                                        <span class="mt-1 h-2 w-2 rounded-full bg-[#111827]"></span>
+                                        <span class="mt-1 h-2 w-2 rounded-full bg-[#111827] dark:bg-[#9CA3AF]"></span>
                                         Reproductor web con animaciones fluidas, recomendaciones y dashboards de
                                         hábitos
                                         de escucha.
                                     </li>
                                     <li class="flex items-start gap-3" data-i18n-html="projects.beatlist.bullets.third">
-                                        <span class="mt-1 h-2 w-2 rounded-full bg-[#111827]"></span>
+                                        <span class="mt-1 h-2 w-2 rounded-full bg-[#111827] dark:bg-[#9CA3AF]"></span>
                                         Análisis gestionados con Celery para procesar datos en segundo plano y
                                         ofrecer
                                         métricas precisas sin afectar la experiencia del usuario.
@@ -765,7 +816,7 @@
                             </div>
                             <div class="flex flex-wrap items-center gap-4">
                                 <button type="button" data-modal-target="modal-beatlist"
-                                    class="inline-flex items-center gap-2 rounded-full bg-slate-900 px-5 py-2.5 text-sm font-semibold text-white transition hover:bg-slate-800 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-slate-900">
+                                    class="inline-flex items-center gap-2 rounded-full bg-pine px-5 py-2.5 text-sm font-semibold text-white transition hover:bg-pine-dark focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-pine">
                                     <span data-i18n="projects.cta">Leer más</span>
                                     <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                                         stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"
@@ -774,7 +825,7 @@
                                     </svg>
                                 </button>
                                 <a href="projects.html#beatlist"
-                                    class="inline-flex items-center gap-2 text-sm font-semibold text-[#111827] transition hover:text-[#1f2937]">
+                                    class="inline-flex items-center gap-2 text-sm font-semibold text-[#111827] dark:text-[#E5E7EB] transition hover:text-[#1f2937]">
                                     <span data-i18n="projects.caseStudy">Case study</span>
                                     <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                                         stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"
@@ -783,7 +834,7 @@
                                     </svg>
                                 </a>
                                 <a href="https://beatlist.es" target="_blank" rel="noreferrer"
-                                    class="inline-flex items-center gap-2 rounded-full border border-[#111827]/30 px-5 py-2.5 text-sm font-semibold text-[#111827] transition hover:border-[#1f2937] hover:text-[#1f2937] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#1f2937]">
+                                    class="inline-flex items-center gap-2 rounded-full border border-[#111827]/30 px-5 py-2.5 text-sm font-semibold text-[#111827] dark:text-[#E5E7EB] transition hover:border-[#1f2937] hover:text-[#1f2937] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#1f2937]">
                                     <span data-i18n-html="projects.beatlist.directAccess">→ BeatList – Estadísticas y
                                         gestión avanzada de playlists de Spotify.</span>
                                     <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor"
@@ -798,41 +849,41 @@
                     </article>
 
                     <article data-project-id="ponme"
-                        class="flex flex-col gap-10 rounded-3xl border border-slate-200 bg-white/90 p-8 shadow-lg shadow-slate-900/5 transition hover:-translate-y-1 hover:shadow-xl lg:flex-row"
+                        class="flex flex-col gap-10 rounded-3xl border border-line bg-surface/90 p-8 shadow-lg shadow-slate-900/5 transition hover:-translate-y-1 hover:shadow-xl lg:flex-row"
                         data-animate>
                         <figure
-                            class="flex w-full items-center justify-center rounded-2xl border border-purple-200 bg-purple-50 p-6 lg:w-64">
+                            class="flex w-full items-center justify-center rounded-2xl border border-purple-200 dark:border-purple-800/60 bg-purple-50 dark:bg-purple-950/40 p-6 lg:w-64">
                             <img src="assets/ponme-logo.png" alt="Identidad del proyecto Ponme" width="160" height="160"
                                 loading="lazy" class="h-32 w-32 object-contain" />
                         </figure>
                         <div class="flex w-full flex-col gap-6">
                             <div class="flex flex-wrap items-center gap-3">
-                                <span class="rounded-full bg-purple-100 px-3 py-1 text-xs font-semibold text-purple-700"
+                                <span class="rounded-full bg-purple-100 px-3 py-1 text-xs font-semibold text-purple-700 dark:text-purple-300"
                                     data-i18n="projects.ponme.badge">B2C / IA</span>
                                 <span
-                                    class="text-xs uppercase tracking-[0.25em] text-slate-400 font-['Space_Mono',_monospace]">FastAPI
+                                    class="text-xs uppercase tracking-[0.25em] text-muted font-['Space_Mono',_monospace]">FastAPI
                                     · React · Gemini · Docker</span>
                             </div>
                             <div class="space-y-4">
-                                <h3 class="text-2xl font-semibold text-slate-900">Ponme</h3>
-                                <p class="text-base text-slate-600" data-i18n="projects.ponme.description">
+                                <h3 class="text-2xl font-semibold text-ink">Ponme</h3>
+                                <p class="text-base text-body" data-i18n="projects.ponme.description">
                                     Asistente de moda inteligente que digitaliza tu armario. Utiliza IA para sugerir
                                     looks personalizados basándose en tu propia ropa y el contexto del día.
                                 </p>
-                                <ul class="space-y-2 text-sm text-slate-600">
+                                <ul class="space-y-2 text-sm text-body">
                                     <li class="flex items-start gap-3" data-i18n-html="projects.ponme.bullets.first">
-                                        <span class="mt-1 h-2 w-2 rounded-full bg-purple-500"></span>
+                                        <span class="mt-1 h-2 w-2 rounded-full bg-purple-50 dark:bg-purple-950/400"></span>
                                         Análisis multimodal con Google Gemini para catalogar prendas por estilo y
                                         temporada.
                                     </li>
                                     <li class="flex items-start gap-3" data-i18n-html="projects.ponme.bullets.second">
-                                        <span class="mt-1 h-2 w-2 rounded-full bg-purple-500"></span>
+                                        <span class="mt-1 h-2 w-2 rounded-full bg-purple-50 dark:bg-purple-950/400"></span>
                                         Eliminación automática de fondos local para un catálogo de ropa profesional
                                         y
                                         limpio.
                                     </li>
                                     <li class="flex items-start gap-3" data-i18n-html="projects.ponme.bullets.third">
-                                        <span class="mt-1 h-2 w-2 rounded-full bg-purple-500"></span>
+                                        <span class="mt-1 h-2 w-2 rounded-full bg-purple-50 dark:bg-purple-950/400"></span>
                                         Generador de outfits adaptado a eventos, clima y estado de limpieza de las
                                         prendas.
                                     </li>
@@ -840,7 +891,7 @@
                             </div>
                             <div class="flex flex-wrap items-center gap-4">
                                 <button type="button" data-modal-target="modal-ponme"
-                                    class="inline-flex items-center gap-2 rounded-full bg-slate-900 px-5 py-2.5 text-sm font-semibold text-white transition hover:bg-slate-800 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-slate-900">
+                                    class="inline-flex items-center gap-2 rounded-full bg-pine px-5 py-2.5 text-sm font-semibold text-white transition hover:bg-pine-dark focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-pine">
                                     <span data-i18n="projects.cta">Leer más</span>
                                     <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                                         stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"
@@ -849,7 +900,7 @@
                                     </svg>
                                 </button>
                                 <a href="projects.html#ponme"
-                                    class="inline-flex items-center gap-2 text-sm font-semibold text-purple-600 transition hover:text-purple-700">
+                                    class="inline-flex items-center gap-2 text-sm font-semibold text-purple-600 transition hover:text-purple-700 dark:text-purple-300">
                                     <span data-i18n="projects.caseStudy">Case study</span>
                                     <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                                         stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"
@@ -858,7 +909,7 @@
                                     </svg>
                                 </a>
                                 <a href="https://ponme.es" target="_blank" rel="noreferrer"
-                                    class="inline-flex items-center gap-2 rounded-full border border-purple-200 px-5 py-2.5 text-sm font-semibold text-purple-700 transition hover:border-purple-500 hover:text-purple-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-purple-500">
+                                    class="inline-flex items-center gap-2 rounded-full border border-purple-200 dark:border-purple-800/60 px-5 py-2.5 text-sm font-semibold text-purple-700 dark:text-purple-300 transition hover:border-purple-500 hover:text-purple-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-purple-500">
                                     <span data-i18n-html="projects.ponme.directAccess">→ Ponme – Tu armario
                                         inteligente potenciado por IA.</span>
                                     <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor"
@@ -875,23 +926,23 @@
             </div>
         </section>
 
-        <section id="contact" class="bg-white py-24">
+        <section id="contact" class="bg-surface py-24">
             <div class="mx-auto max-w-6xl px-6">
                 <div class="grid gap-12 lg:grid-cols-[1.1fr,0.9fr]">
                     <div class="space-y-4" data-animate>
-                        <p class="text-xs font-semibold uppercase tracking-[0.3em] text-slate-500"
+                        <p class="text-xs font-semibold uppercase tracking-[0.3em] text-muted"
                             data-i18n="contact.label">Contacto</p>
-                        <h2 class="text-3xl font-semibold text-slate-900 sm:text-4xl" data-i18n="contact.title">Cuéntame
+                        <h2 class="text-3xl font-semibold text-ink sm:text-4xl" data-i18n="contact.title">Cuéntame
                             qué estás construyendo.
                         </h2>
-                        <p class="text-lg text-slate-600" data-i18n="contact.description">
+                        <p class="text-lg text-body" data-i18n="contact.description">
                             Si te apetece escribirme, este formulario es la forma más directa. Cuéntame quién eres, en
                             qué estás trabajando o qué necesitas resolver.
                         </p>
-                        <div class="space-y-2 text-sm text-slate-600">
-                            <p class="font-medium text-slate-500" data-i18n="contact.direct">También puedes escribirme
+                        <div class="space-y-2 text-sm text-body">
+                            <p class="font-medium text-muted" data-i18n="contact.direct">También puedes escribirme
                                 directamente a nicoabgv@gmail.com o explorar mi código en GitHub.</p>
-                            <a class="flex items-center gap-2 text-blue-600 transition hover:text-blue-700"
+                            <a class="flex items-center gap-2 text-pine transition hover:text-pine-dark"
                                 href="mailto:nicoabgv@gmail.com">
                                 <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                                     stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"
@@ -901,7 +952,7 @@
                                 </svg>
                                 nicoabgv@gmail.com
                             </a>
-                            <a class="flex items-center gap-2 text-blue-600 transition hover:text-blue-700"
+                            <a class="flex items-center gap-2 text-pine transition hover:text-pine-dark"
                                 href="https://github.com/nicoabgv" target="_blank" rel="noreferrer">
                                 <svg class="h-4 w-4" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
                                     <path fill-rule="evenodd"
@@ -912,36 +963,36 @@
                             </a>
                         </div>
                     </div>
-                    <div class="rounded-3xl border border-slate-200 bg-slate-50/70 p-8 shadow-sm" data-animate>
+                    <div class="rounded-3xl border border-line bg-bg/70 p-8 shadow-sm" data-animate>
                         <form class="space-y-6" action="https://formsubmit.co/nicoabgv@gmail.com" method="POST">
                             <div>
-                                <label class="block text-sm font-semibold text-slate-700" for="name"
+                                <label class="block text-sm font-semibold text-body" for="name"
                                     data-i18n="contact.nameLabel">Nombre</label>
                                 <input
-                                    class="mt-2 w-full rounded-2xl border border-slate-200 bg-white px-4 py-3 text-sm text-slate-700 shadow-sm focus:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-200"
+                                    class="mt-2 w-full rounded-2xl border border-line bg-surface px-4 py-3 text-sm text-body shadow-sm focus:border-pine focus:outline-none focus:ring-2 focus:ring-pine/30"
                                     type="text" id="name" name="name" placeholder="Tu nombre" required
                                     data-i18n-attr-placeholder="contact.namePlaceholder" />
                             </div>
                             <div>
-                                <label class="block text-sm font-semibold text-slate-700" for="email"
+                                <label class="block text-sm font-semibold text-body" for="email"
                                     data-i18n="contact.emailLabel">Email</label>
                                 <input
-                                    class="mt-2 w-full rounded-2xl border border-slate-200 bg-white px-4 py-3 text-sm text-slate-700 shadow-sm focus:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-200"
+                                    class="mt-2 w-full rounded-2xl border border-line bg-surface px-4 py-3 text-sm text-body shadow-sm focus:border-pine focus:outline-none focus:ring-2 focus:ring-pine/30"
                                     type="email" id="email" name="email" placeholder="nombre@empresa.com" required
                                     data-i18n-attr-placeholder="contact.emailPlaceholder" />
                             </div>
                             <div>
-                                <label class="block text-sm font-semibold text-slate-700" for="message"
+                                <label class="block text-sm font-semibold text-body" for="message"
                                     data-i18n="contact.messageLabel">Mensaje</label>
                                 <textarea
-                                    class="mt-2 min-h-[140px] w-full rounded-2xl border border-slate-200 bg-white px-4 py-3 text-sm text-slate-700 shadow-sm focus:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-200"
+                                    class="mt-2 min-h-[140px] w-full rounded-2xl border border-line bg-surface px-4 py-3 text-sm text-body shadow-sm focus:border-pine focus:outline-none focus:ring-2 focus:ring-pine/30"
                                     id="message" name="message"
                                     placeholder="Hola Nicolás, te escribo porque..." required
                                     data-i18n-attr-placeholder="contact.messagePlaceholder"></textarea>
                             </div>
                             <input type="hidden" name="_captcha" value="false" />
                             <button type="submit"
-                                class="inline-flex w-full items-center justify-center gap-2 rounded-full bg-blue-600 px-6 py-3 text-sm font-semibold text-white shadow-lg shadow-blue-600/20 transition hover:bg-blue-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600">
+                                class="inline-flex w-full items-center justify-center gap-2 rounded-full bg-pine px-6 py-3 text-sm font-semibold text-white shadow-lg shadow-pine/30 transition hover:bg-pine-dark focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-pine">
                                 <span data-i18n="contact.submit">Enviar mensaje</span>
                                 <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                                     stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"
@@ -957,16 +1008,16 @@
         </section>
     </main>
 
-    <footer class="border-t border-slate-200 bg-white/80">
+    <footer class="border-t border-line bg-surface/80">
         <div
-            class="mx-auto flex max-w-6xl flex-col gap-4 px-6 py-8 text-sm text-slate-500 md:flex-row md:items-center md:justify-between">
+            class="mx-auto flex max-w-6xl flex-col gap-4 px-6 py-8 text-sm text-muted md:flex-row md:items-center md:justify-between">
             <p>&copy; <span id="year"></span> Nicolás Álvarez. <span data-i18n="footer.rights">Todos los derechos
                     reservados.</span></p>
             <div class="flex flex-wrap items-center gap-4">
-                <a class="transition hover:text-blue-600" href="projects.html" data-i18n="footer.projects">Proyectos</a>
-                <a class="transition hover:text-blue-600" href="https://github.com/nicoabgv" target="_blank"
+                <a class="transition hover:text-pine" href="projects.html" data-i18n="footer.projects">Proyectos</a>
+                <a class="transition hover:text-pine" href="https://github.com/nicoabgv" target="_blank"
                     rel="noreferrer" data-i18n="footer.github">GitHub</a>
-                <a class="transition hover:text-blue-600" href="mailto:nicoabgv@gmail.com"
+                <a class="transition hover:text-pine" href="mailto:nicoabgv@gmail.com"
                     data-i18n="footer.contact">Contacto</a>
             </div>
         </div>
@@ -974,18 +1025,18 @@
 
     <!-- Modales de proyectos -->
     <div id="modal-kobra" data-modal class="fixed inset-0 z-50 hidden items-center justify-center px-4">
-        <div data-modal-overlay class="absolute inset-0 bg-slate-900/70"></div>
+        <div data-modal-overlay class="absolute inset-0 bg-black/70"></div>
         <article
-            class="relative z-10 max-h-[90vh] w-full max-w-3xl overflow-y-auto rounded-3xl border border-slate-200 bg-white p-8 shadow-2xl">
+            class="relative z-10 max-h-[90vh] w-full max-w-3xl overflow-y-auto rounded-3xl border border-line bg-surface p-8 shadow-2xl">
             <div class="flex items-start justify-between gap-6">
                 <div>
-                    <p class="text-xs font-semibold uppercase tracking-[0.3em] text-slate-500"
+                    <p class="text-xs font-semibold uppercase tracking-[0.3em] text-muted"
                         data-i18n="index.modals.kobra.tag">Kobra</p>
-                    <h3 class="mt-2 text-2xl font-semibold text-slate-900" data-i18n="index.modals.kobra.title">
+                    <h3 class="mt-2 text-2xl font-semibold text-ink" data-i18n="index.modals.kobra.title">
                         Plataforma financiera que sostiene el día a día de Cybersur.</h3>
                 </div>
                 <button type="button"
-                    class="rounded-full border border-slate-200 p-2 text-slate-500 transition hover:border-slate-400 hover:text-slate-700"
+                    class="rounded-full border border-line p-2 text-muted transition hover:border-line hover:text-body"
                     data-modal-close aria-label="Cerrar modal">
                     <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"
                         stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
@@ -993,7 +1044,7 @@
                     </svg>
                 </button>
             </div>
-            <div class="mt-6 space-y-6 text-sm text-slate-600">
+            <div class="mt-6 space-y-6 text-sm text-body">
                 <p data-i18n-html="index.modals.kobra.paragraph1">
                     Kobra es la solución a medida que construí para Cybersur. Con un stack de FastAPI, Celery, MySQL y
                     Docker, centraliza facturación, cobros y notificaciones para que el
@@ -1019,14 +1070,14 @@
                         Paneles internos con métricas esenciales para el seguimiento de cobros y pendientes.
                     </li>
                 </ul>
-                <p class="mt-4 text-sm text-slate-600" data-i18n="index.modals.kobra.next">Siguiente iteración: ampliar
+                <p class="mt-4 text-sm text-body" data-i18n="index.modals.kobra.next">Siguiente iteración: ampliar
                     reportes financieros internos y
                     automatizar conciliaciones.</p>
-                <details class="rounded-2xl border border-dashed border-[#F9A8A3]/60 bg-[#FDEAEA]/60 p-4">
-                    <summary class="cursor-pointer text-xs font-semibold uppercase tracking-[0.3em] text-slate-500"
+                <details class="rounded-2xl border border-dashed border-[#F9A8A3]/60 bg-[#FDEAEA]/60 dark:bg-[#241313] p-4">
+                    <summary class="cursor-pointer text-xs font-semibold uppercase tracking-[0.3em] text-muted"
                         data-i18n="index.modals.kobra.diagram">
                         Diagrama técnico</summary>
-                    <pre class="mt-3 whitespace-pre-wrap rounded-xl bg-white/80 p-4 font-['Space_Mono',_monospace] text-xs text-slate-700"
+                    <pre class="mt-3 whitespace-pre-wrap rounded-xl bg-surface/80 p-4 font-['Space_Mono',_monospace] text-xs text-body"
                         data-i18n="index.modals.kobra.diagramContent">Equipo Cybersur
     ↓
 FastAPI API → MySQL
@@ -1039,18 +1090,18 @@ FastAPI API → MySQL
     </div>
 
     <div id="modal-trato" data-modal class="fixed inset-0 z-50 hidden items-center justify-center px-4">
-        <div data-modal-overlay class="absolute inset-0 bg-slate-900/70"></div>
+        <div data-modal-overlay class="absolute inset-0 bg-black/70"></div>
         <article
-            class="relative z-10 max-h-[90vh] w-full max-w-3xl overflow-y-auto rounded-3xl border border-slate-200 bg-white p-8 shadow-2xl">
+            class="relative z-10 max-h-[90vh] w-full max-w-3xl overflow-y-auto rounded-3xl border border-line bg-surface p-8 shadow-2xl">
             <div class="flex items-start justify-between gap-6">
                 <div>
-                    <p class="text-xs font-semibold uppercase tracking-[0.3em] text-slate-500"
+                    <p class="text-xs font-semibold uppercase tracking-[0.3em] text-muted"
                         data-i18n="index.modals.trato.tag">Trato</p>
-                    <h3 class="mt-2 text-2xl font-semibold text-slate-900" data-i18n="index.modals.trato.title">CRM ágil
+                    <h3 class="mt-2 text-2xl font-semibold text-ink" data-i18n="index.modals.trato.title">CRM ágil
                         para presupuestos, seguimientos y recordatorios.</h3>
                 </div>
                 <button type="button"
-                    class="rounded-full border border-slate-200 p-2 text-slate-500 transition hover:border-slate-400 hover:text-slate-700"
+                    class="rounded-full border border-line p-2 text-muted transition hover:border-line hover:text-body"
                     data-modal-close aria-label="Cerrar modal">
                     <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"
                         stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
@@ -1058,7 +1109,7 @@ FastAPI API → MySQL
                     </svg>
                 </button>
             </div>
-            <div class="mt-6 space-y-6 text-sm text-slate-600">
+            <div class="mt-6 space-y-6 text-sm text-body">
                 <p data-i18n-html="index.modals.trato.paragraph1">
                     Trato es el CRM ligero que centraliza presupuestos, seguimientos y recordatorios en un flujo rápido.
                     Sobre un backend en FastAPI, Celery, MySQL y Docker desplegado con Uvicorn, permite a
@@ -1083,14 +1134,14 @@ FastAPI API → MySQL
                         Despliegue contenerizado en el VPS principal con backups y monitoreo básico integrado.
                     </li>
                 </ul>
-                <p class="mt-4 text-sm text-slate-600" data-i18n="index.modals.trato.next">Próximos pasos: ampliar
+                <p class="mt-4 text-sm text-body" data-i18n="index.modals.trato.next">Próximos pasos: ampliar
                     métricas de conversión e integrar
                     reportes automáticos para dirección.</p>
-                <details class="rounded-2xl border border-dashed border-[#F9A8A3]/60 bg-[#FDEAEA]/60 p-4">
-                    <summary class="cursor-pointer text-xs font-semibold uppercase tracking-[0.3em] text-slate-500"
+                <details class="rounded-2xl border border-dashed border-[#F9A8A3]/60 bg-[#FDEAEA]/60 dark:bg-[#241313] p-4">
+                    <summary class="cursor-pointer text-xs font-semibold uppercase tracking-[0.3em] text-muted"
                         data-i18n="index.modals.trato.diagram">
                         Diagrama técnico</summary>
-                    <pre class="mt-3 whitespace-pre-wrap rounded-xl bg-white/80 p-4 font-['Space_Mono',_monospace] text-xs text-slate-700"
+                    <pre class="mt-3 whitespace-pre-wrap rounded-xl bg-surface/80 p-4 font-['Space_Mono',_monospace] text-xs text-body"
                         data-i18n="index.modals.trato.diagramContent">Empresas invitadas
     ↓
 FastAPI + Uvicorn → MySQL
@@ -1103,18 +1154,18 @@ FastAPI + Uvicorn → MySQL
     </div>
 
     <div id="modal-beatlist" data-modal class="fixed inset-0 z-50 hidden items-center justify-center px-4">
-        <div data-modal-overlay class="absolute inset-0 bg-slate-900/70"></div>
+        <div data-modal-overlay class="absolute inset-0 bg-black/70"></div>
         <article
-            class="relative z-10 max-h-[90vh] w-full max-w-3xl overflow-y-auto rounded-3xl border border-slate-200 bg-white p-8 shadow-2xl">
+            class="relative z-10 max-h-[90vh] w-full max-w-3xl overflow-y-auto rounded-3xl border border-line bg-surface p-8 shadow-2xl">
             <div class="flex items-start justify-between gap-6">
                 <div>
-                    <p class="text-xs font-semibold uppercase tracking-[0.3em] text-slate-500"
+                    <p class="text-xs font-semibold uppercase tracking-[0.3em] text-muted"
                         data-i18n="index.modals.beatlist.tag">BeatList</p>
-                    <h3 class="mt-2 text-2xl font-semibold text-slate-900" data-i18n="index.modals.beatlist.title">
+                    <h3 class="mt-2 text-2xl font-semibold text-ink" data-i18n="index.modals.beatlist.title">
                         Gestión profesional de playlists con sello oficial de Spotify.</h3>
                 </div>
                 <button type="button"
-                    class="rounded-full border border-slate-200 p-2 text-slate-500 transition hover:border-slate-400 hover:text-slate-700"
+                    class="rounded-full border border-line p-2 text-muted transition hover:border-line hover:text-body"
                     data-modal-close aria-label="Cerrar modal" data-i18n-attr-aria-label="modals.closeAria">
                     <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"
                         stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
@@ -1122,7 +1173,7 @@ FastAPI + Uvicorn → MySQL
                     </svg>
                 </button>
             </div>
-            <div class="mt-6 space-y-6 text-sm text-slate-600">
+            <div class="mt-6 space-y-6 text-sm text-body">
                 <p data-i18n-html="index.modals.beatlist.paragraph1">
                     BeatList es la plataforma para melómanos, curadores y creadores que necesitan algo más potente que
                     el gestor nativo de Spotify. Reúne administración avanzada, descubrimiento y analítica en una
@@ -1136,29 +1187,29 @@ FastAPI + Uvicorn → MySQL
                 </p>
                 <ul class="space-y-2">
                     <li class="flex items-start gap-3" data-i18n-html="index.modals.beatlist.bullets.first">
-                        <span class="mt-1 h-2 w-2 rounded-full bg-[#111827]"></span>
+                        <span class="mt-1 h-2 w-2 rounded-full bg-[#111827] dark:bg-[#9CA3AF]"></span>
                         Fusión, depuración y reorganización de playlists con reglas inteligentes basadas en métricas
                         como energía o bailabilidad.
                     </li>
                     <li class="flex items-start gap-3" data-i18n-html="index.modals.beatlist.bullets.second">
-                        <span class="mt-1 h-2 w-2 rounded-full bg-[#111827]"></span>
+                        <span class="mt-1 h-2 w-2 rounded-full bg-[#111827] dark:bg-[#9CA3AF]"></span>
                         Motor de recomendaciones por artistas y géneros favoritos, sumado a dashboards que muestran
                         hábitos de escucha.
                     </li>
                     <li class="flex items-start gap-3" data-i18n-html="index.modals.beatlist.bullets.third">
-                        <span class="mt-1 h-2 w-2 rounded-full bg-[#111827]"></span>
+                        <span class="mt-1 h-2 w-2 rounded-full bg-[#111827] dark:bg-[#9CA3AF]"></span>
                         Análisis gestionados con Celery para procesar datos en segundo plano y ofrecer métricas precisas
                         sin afectar la experiencia del usuario.
                     </li>
                 </ul>
-                <p class="mt-4 text-sm text-slate-600" data-i18n="index.modals.beatlist.next">Posibles evoluciones:
+                <p class="mt-4 text-sm text-body" data-i18n="index.modals.beatlist.next">Posibles evoluciones:
                     sumar modo colaborativo o exportaciones de
                     insights en futuras versiones.</p>
-                <details class="rounded-2xl border border-dashed border-slate-200 bg-slate-50/80 p-4">
-                    <summary class="cursor-pointer text-xs font-semibold uppercase tracking-[0.3em] text-slate-500"
+                <details class="rounded-2xl border border-dashed border-line bg-bg/80 p-4">
+                    <summary class="cursor-pointer text-xs font-semibold uppercase tracking-[0.3em] text-muted"
                         data-i18n="index.modals.beatlist.diagram">
                         Diagrama técnico</summary>
-                    <pre class="mt-3 whitespace-pre-wrap rounded-xl bg-white/80 p-4 font-['Space_Mono',_monospace] text-xs text-slate-700"
+                    <pre class="mt-3 whitespace-pre-wrap rounded-xl bg-surface/80 p-4 font-['Space_Mono',_monospace] text-xs text-body"
                         data-i18n="index.modals.beatlist.diagramContent">Cliente web
     ↓
 Flask API (OAuth 2.0 Spotify)
@@ -1172,18 +1223,18 @@ Dashboards JS + Reproductor</pre>
     </div>
 
     <div id="modal-mesaysa" data-modal class="fixed inset-0 z-50 hidden items-center justify-center px-4">
-        <div data-modal-overlay class="absolute inset-0 bg-slate-900/70"></div>
+        <div data-modal-overlay class="absolute inset-0 bg-black/70"></div>
         <article
-            class="relative z-10 max-h-[90vh] w-full max-w-3xl overflow-y-auto rounded-3xl border border-slate-200 bg-white p-8 shadow-2xl">
+            class="relative z-10 max-h-[90vh] w-full max-w-3xl overflow-y-auto rounded-3xl border border-line bg-surface p-8 shadow-2xl">
             <div class="flex items-start justify-between gap-6">
                 <div>
-                    <p class="text-xs font-semibold uppercase tracking-[0.3em] text-slate-500"
+                    <p class="text-xs font-semibold uppercase tracking-[0.3em] text-muted"
                         data-i18n="index.modals.mesasya.tag">MesasYa</p>
-                    <h3 class="mt-2 text-2xl font-semibold text-slate-900" data-i18n="index.modals.mesasya.title">
+                    <h3 class="mt-2 text-2xl font-semibold text-ink" data-i18n="index.modals.mesasya.title">
                         Reservas inteligentes para cadenas de restauración.</h3>
                 </div>
                 <button type="button"
-                    class="rounded-full border border-slate-200 p-2 text-slate-500 transition hover:border-slate-400 hover:text-slate-700"
+                    class="rounded-full border border-line p-2 text-muted transition hover:border-line hover:text-body"
                     data-modal-close aria-label="Cerrar modal" data-i18n-attr-aria-label="modals.closeAria">
                     <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"
                         stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
@@ -1191,7 +1242,7 @@ Dashboards JS + Reproductor</pre>
                     </svg>
                 </button>
             </div>
-            <div class="mt-6 space-y-6 text-sm text-slate-600">
+            <div class="mt-6 space-y-6 text-sm text-body">
                 <p data-i18n-html="index.modals.mesasya.paragraph1">
                     MesasYa es una plataforma SaaS en producción que digitaliza la gestión de
                     reservas para restaurantes con múltiples sedes. Ofrece control granular de ocupación, automatización
@@ -1216,14 +1267,14 @@ Dashboards JS + Reproductor</pre>
                         Indicadores de demanda, capacidad y rendimiento exportables para decisiones estratégicas.
                     </li>
                 </ul>
-                <p class="mt-4 text-sm text-slate-600" data-i18n="index.modals.mesasya.next">Próximos pasos: integrar
+                <p class="mt-4 text-sm text-body" data-i18n="index.modals.mesasya.next">Próximos pasos: integrar
                     informes automáticos y seguir mejorando
                     la experiencia del gestor.</p>
-                <details class="rounded-2xl border border-dashed border-slate-200 bg-slate-50/80 p-4">
-                    <summary class="cursor-pointer text-xs font-semibold uppercase tracking-[0.3em] text-slate-500"
+                <details class="rounded-2xl border border-dashed border-line bg-bg/80 p-4">
+                    <summary class="cursor-pointer text-xs font-semibold uppercase tracking-[0.3em] text-muted"
                         data-i18n="index.modals.mesasya.diagram">
                         Diagrama técnico</summary>
-                    <pre class="mt-3 whitespace-pre-wrap rounded-xl bg-white/80 p-4 font-['Space_Mono',_monospace] text-xs text-slate-700"
+                    <pre class="mt-3 whitespace-pre-wrap rounded-xl bg-surface/80 p-4 font-['Space_Mono',_monospace] text-xs text-body"
                         data-i18n="index.modals.mesasya.diagramContent">Staff y reservas online
     ↓
 Flask API → MySQL
@@ -1236,18 +1287,18 @@ Flask API → MySQL
     </div>
 
     <div id="modal-orderya" data-modal class="fixed inset-0 z-50 hidden items-center justify-center px-4">
-        <div data-modal-overlay class="absolute inset-0 bg-slate-900/70"></div>
+        <div data-modal-overlay class="absolute inset-0 bg-black/70"></div>
         <article
-            class="relative z-10 max-h-[90vh] w-full max-w-3xl overflow-y-auto rounded-3xl border border-slate-200 bg-white p-8 shadow-2xl">
+            class="relative z-10 max-h-[90vh] w-full max-w-3xl overflow-y-auto rounded-3xl border border-line bg-surface p-8 shadow-2xl">
             <div class="flex items-start justify-between gap-6">
                 <div>
-                    <p class="text-xs font-semibold uppercase tracking-[0.3em] text-slate-500"
+                    <p class="text-xs font-semibold uppercase tracking-[0.3em] text-muted"
                         data-i18n="index.modals.orderya.tag">OrderYa</p>
-                    <h3 class="mt-2 text-2xl font-semibold text-slate-900" data-i18n="index.modals.orderya.title">
+                    <h3 class="mt-2 text-2xl font-semibold text-ink" data-i18n="index.modals.orderya.title">
                         Coordinación total entre producción y puntos de venta.</h3>
                 </div>
                 <button type="button"
-                    class="rounded-full border border-slate-200 p-2 text-slate-500 transition hover:border-slate-400 hover:text-slate-700"
+                    class="rounded-full border border-line p-2 text-muted transition hover:border-line hover:text-body"
                     data-modal-close aria-label="Cerrar modal" data-i18n-attr-aria-label="modals.closeAria">
                     <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"
                         stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
@@ -1255,7 +1306,7 @@ Flask API → MySQL
                     </svg>
                 </button>
             </div>
-            <div class="mt-6 space-y-6 text-sm text-slate-600">
+            <div class="mt-6 space-y-6 text-sm text-body">
                 <p data-i18n-html="index.modals.orderya.paragraph1">
                     OrderYa es la respuesta a la gestión caótica de pedidos en el sector de la alimentación y retail.
                     Centraliza todas las solicitudes de las tiendas en un único panel para el obrador, generando
@@ -1280,13 +1331,13 @@ Flask API → MySQL
                         Infraestructura robusta con Docker preparada para múltiples clientes.
                     </li>
                 </ul>
-                <p class="mt-4 text-sm text-slate-600" data-i18n="index.modals.orderya.next">Evolución: Integración
+                <p class="mt-4 text-sm text-body" data-i18n="index.modals.orderya.next">Evolución: Integración
                     futura con sistemas de facturación.</p>
-                <details class="rounded-2xl border border-dashed border-slate-200 bg-slate-50/80 p-4">
-                    <summary class="cursor-pointer text-xs font-semibold uppercase tracking-[0.3em] text-slate-500"
+                <details class="rounded-2xl border border-dashed border-line bg-bg/80 p-4">
+                    <summary class="cursor-pointer text-xs font-semibold uppercase tracking-[0.3em] text-muted"
                         data-i18n="index.modals.orderya.diagram">
                         Diagrama técnico</summary>
-                    <pre class="mt-3 whitespace-pre-wrap rounded-xl bg-white/80 p-4 font-['Space_Mono',_monospace] text-xs text-slate-700"
+                    <pre class="mt-3 whitespace-pre-wrap rounded-xl bg-surface/80 p-4 font-['Space_Mono',_monospace] text-xs text-body"
                         data-i18n="index.modals.orderya.diagramContent">Tiendas / Obrador
     ↓
 FastAPI
@@ -1300,18 +1351,18 @@ Producción</pre>
     </div>
 
     <div id="modal-micartaya" data-modal class="fixed inset-0 z-50 hidden items-center justify-center px-4">
-        <div data-modal-overlay class="absolute inset-0 bg-slate-900/70"></div>
+        <div data-modal-overlay class="absolute inset-0 bg-black/70"></div>
         <article
-            class="relative z-10 max-h-[90vh] w-full max-w-3xl overflow-y-auto rounded-3xl border border-slate-200 bg-white p-8 shadow-2xl">
+            class="relative z-10 max-h-[90vh] w-full max-w-3xl overflow-y-auto rounded-3xl border border-line bg-surface p-8 shadow-2xl">
             <div class="flex items-start justify-between gap-6">
                 <div>
-                    <p class="text-xs font-semibold uppercase tracking-[0.3em] text-slate-500"
+                    <p class="text-xs font-semibold uppercase tracking-[0.3em] text-muted"
                         data-i18n="index.modals.micartaya.tag">MiCartaYa</p>
-                    <h3 class="mt-2 text-2xl font-semibold text-slate-900" data-i18n="index.modals.micartaya.title">
+                    <h3 class="mt-2 text-2xl font-semibold text-ink" data-i18n="index.modals.micartaya.title">
                         Ecosistema digital completo para la gestión de restaurantes.</h3>
                 </div>
                 <button type="button"
-                    class="rounded-full border border-slate-200 p-2 text-slate-500 transition hover:border-slate-400 hover:text-slate-700"
+                    class="rounded-full border border-line p-2 text-muted transition hover:border-line hover:text-body"
                     data-modal-close aria-label="Cerrar modal" data-i18n-attr-aria-label="modals.closeAria">
                     <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"
                         stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
@@ -1319,7 +1370,7 @@ Producción</pre>
                     </svg>
                 </button>
             </div>
-            <div class="mt-6 space-y-6 text-sm text-slate-600">
+            <div class="mt-6 space-y-6 text-sm text-body">
                 <p data-i18n-html="index.modals.micartaya.paragraph1">
                     MiCartaYa nace de la necesidad de modernizar la interacción entre restaurante y comensal. No es
                     solo una carta QR; es un sistema bidireccional donde los pedidos fluyen directamente a la cocina
@@ -1332,25 +1383,25 @@ Producción</pre>
                 </p>
                 <ul class="space-y-2">
                     <li class="flex items-start gap-3" data-i18n-html="index.modals.micartaya.bullets.first">
-                        <span class="mt-1 h-2 w-2 rounded-full bg-blue-500"></span>
+                        <span class="mt-1 h-2 w-2 rounded-full bg-pine"></span>
                         Gestión centralizada de cartas multiidioma con analítica de consumo.
                     </li>
                     <li class="flex items-start gap-3" data-i18n-html="index.modals.micartaya.bullets.second">
-                        <span class="mt-1 h-2 w-2 rounded-full bg-blue-500"></span>
+                        <span class="mt-1 h-2 w-2 rounded-full bg-pine"></span>
                         Recepción de pedidos instantánea a través de canales WebSocket seguros.
                     </li>
                     <li class="flex items-start gap-3" data-i18n-html="index.modals.micartaya.bullets.third">
-                        <span class="mt-1 h-2 w-2 rounded-full bg-blue-500"></span>
+                        <span class="mt-1 h-2 w-2 rounded-full bg-pine"></span>
                         Infraestructura basada en FastAPI y Docker, optimizada para baja latencia.
                     </li>
                 </ul>
-                <p class="mt-4 text-sm text-slate-600" data-i18n="index.modals.micartaya.next">Evolución:
+                <p class="mt-4 text-sm text-body" data-i18n="index.modals.micartaya.next">Evolución:
                     Integración de pagos directos mediante Stripe.</p>
-                <details class="rounded-2xl border border-dashed border-slate-200 bg-slate-50/80 p-4">
-                    <summary class="cursor-pointer text-xs font-semibold uppercase tracking-[0.3em] text-slate-500"
+                <details class="rounded-2xl border border-dashed border-line bg-bg/80 p-4">
+                    <summary class="cursor-pointer text-xs font-semibold uppercase tracking-[0.3em] text-muted"
                         data-i18n="index.modals.micartaya.diagram">
                         Diagrama técnico</summary>
-                    <pre class="mt-3 whitespace-pre-wrap rounded-xl bg-white/80 p-4 font-['Space_Mono',_monospace] text-xs text-slate-700"
+                    <pre class="mt-3 whitespace-pre-wrap rounded-xl bg-surface/80 p-4 font-['Space_Mono',_monospace] text-xs text-body"
                         data-i18n="index.modals.micartaya.diagramContent">Comensal (App) ↔ WebSockets ↔ Backend (FastAPI)
                                     ↓
                                 MySQL DB
@@ -1362,18 +1413,18 @@ Producción</pre>
     </div>
 
     <div id="modal-ponme" data-modal class="fixed inset-0 z-50 hidden items-center justify-center px-4">
-        <div data-modal-overlay class="absolute inset-0 bg-slate-900/70"></div>
+        <div data-modal-overlay class="absolute inset-0 bg-black/70"></div>
         <article
-            class="relative z-10 max-h-[90vh] w-full max-w-3xl overflow-y-auto rounded-3xl border border-slate-200 bg-white p-8 shadow-2xl">
+            class="relative z-10 max-h-[90vh] w-full max-w-3xl overflow-y-auto rounded-3xl border border-line bg-surface p-8 shadow-2xl">
             <div class="flex items-start justify-between gap-6">
                 <div>
-                    <p class="text-xs font-semibold uppercase tracking-[0.3em] text-slate-500"
+                    <p class="text-xs font-semibold uppercase tracking-[0.3em] text-muted"
                         data-i18n="index.modals.ponme.tag">Ponme</p>
-                    <h3 class="mt-2 text-2xl font-semibold text-slate-900" data-i18n="index.modals.ponme.title">Tu
+                    <h3 class="mt-2 text-2xl font-semibold text-ink" data-i18n="index.modals.ponme.title">Tu
                         asistente personal de moda impulsado por Inteligencia Artificial.</h3>
                 </div>
                 <button type="button"
-                    class="rounded-full border border-slate-200 p-2 text-slate-500 transition hover:border-slate-400 hover:text-slate-700"
+                    class="rounded-full border border-line p-2 text-muted transition hover:border-line hover:text-body"
                     data-modal-close aria-label="Cerrar modal" data-i18n-attr-aria-label="modals.closeAria">
                     <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"
                         stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
@@ -1381,7 +1432,7 @@ Producción</pre>
                     </svg>
                 </button>
             </div>
-            <div class="mt-6 space-y-6 text-sm text-slate-600">
+            <div class="mt-6 space-y-6 text-sm text-body">
                 <p data-i18n-html="index.modals.ponme.paragraph1">
                     Ponme utiliza Inteligencia Artificial para digitalizar y gestionar tu armario personal.
                     Mediante modelos de visión, analiza tus prendas y ofrece recomendaciones de outfits basadas
@@ -1395,25 +1446,25 @@ Producción</pre>
                 </p>
                 <ul class="space-y-2">
                     <li class="flex items-start gap-3" data-i18n-html="index.modals.ponme.bullets.first">
-                        <span class="mt-1 h-2 w-2 rounded-full bg-purple-500"></span>
+                        <span class="mt-1 h-2 w-2 rounded-full bg-purple-50 dark:bg-purple-950/400"></span>
                         Análisis multimodal con Google Gemini para catalogar prendas por estilo y temporada.
                     </li>
                     <li class="flex items-start gap-3" data-i18n-html="index.modals.ponme.bullets.second">
-                        <span class="mt-1 h-2 w-2 rounded-full bg-purple-500"></span>
+                        <span class="mt-1 h-2 w-2 rounded-full bg-purple-50 dark:bg-purple-950/400"></span>
                         Eliminación automática de fondos local para un catálogo de ropa profesional y uniforme.
                     </li>
                     <li class="flex items-start gap-3" data-i18n-html="index.modals.ponme.bullets.third">
-                        <span class="mt-1 h-2 w-2 rounded-full bg-purple-500"></span>
+                        <span class="mt-1 h-2 w-2 rounded-full bg-purple-50 dark:bg-purple-950/400"></span>
                         Generador de outfits adaptado a eventos, clima y estado de limpieza de las prendas.
                     </li>
                 </ul>
-                <p class="mt-4 text-sm text-slate-600" data-i18n="index.modals.ponme.next">Próximos pasos:
+                <p class="mt-4 text-sm text-body" data-i18n="index.modals.ponme.next">Próximos pasos:
                     planificador de maletas inteligente y sugerencias de compra basadas en huecos del armario.</p>
-                <details class="rounded-2xl border border-dashed border-slate-200 bg-slate-50/80 p-4">
-                    <summary class="cursor-pointer text-xs font-semibold uppercase tracking-[0.3em] text-slate-500"
+                <details class="rounded-2xl border border-dashed border-line bg-bg/80 p-4">
+                    <summary class="cursor-pointer text-xs font-semibold uppercase tracking-[0.3em] text-muted"
                         data-i18n="index.modals.ponme.diagram">
                         Diagrama técnico</summary>
-                    <pre class="mt-3 whitespace-pre-wrap rounded-xl bg-white/80 p-4 font-['Space_Mono',_monospace] text-xs text-slate-700"
+                    <pre class="mt-3 whitespace-pre-wrap rounded-xl bg-surface/80 p-4 font-['Space_Mono',_monospace] text-xs text-body"
                         data-i18n="index.modals.ponme.diagramContent">Usuario (React) ↔ FastAPI ↔ Gemini Vision API
                                     ↓
                                 PostgreSQL

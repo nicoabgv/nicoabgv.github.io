@@ -60,7 +60,7 @@
             "twitterDescription": "Software engineer. I build scalable, automated, production-ready products."
         },
         "hero": {
-            "taglineHtml": "<span class=\"h-px w-10 bg-slate-300\"></span>Software engineer · Product · Automation",
+            "taglineHtml": "<span class=\"h-px w-10 bg-line\"></span>Software engineer · Product · Automation",
             "title": "I'm Nicolás Álvarez, software engineer.",
             "description": "I design and build digital products with a focus on clarity, automation, and technical execution. Most of my work sits in SaaS, internal tools, and software that needs to perform well in production.",
             "primaryCta": "View projects",
@@ -78,9 +78,9 @@
             "summaryLabel": "Quick snapshot",
             "summaryTitle": "I turn ideas into web products that are solid, clear, and ready to use.",
             "summaryItems": {
-                "first": "<span class=\"mt-1 h-2 w-2 rounded-full bg-blue-500\"></span>Python backend with Flask and FastAPI for systems that need order, automation, and reliability.",
-                "second": "<span class=\"mt-1 h-2 w-2 rounded-full bg-blue-500\"></span>Frontend with React and Tailwind when the product needs a clear, fast, and maintainable experience.",
-                "third": "<span class=\"mt-1 h-2 w-2 rounded-full bg-blue-500\"></span>Product-minded technical judgment to turn ideas into real solutions."
+                "first": "<span class=\"mt-1 h-2 w-2 rounded-full bg-pine\"></span>Python backend with Flask and FastAPI for systems that need order, automation, and reliability.",
+                "second": "<span class=\"mt-1 h-2 w-2 rounded-full bg-pine\"></span>Frontend with React and Tailwind when the product needs a clear, fast, and maintainable experience.",
+                "third": "<span class=\"mt-1 h-2 w-2 rounded-full bg-pine\"></span>Product-minded technical judgment to turn ideas into real solutions."
             },
             "live": {
                 "label": "Live projects",
@@ -104,9 +104,9 @@
                 "locationLabel": "Location",
                 "locationValue": "Madrid · Spain",
                 "emailLabel": "Email",
-                "emailValue": "<a class=\"hover:text-blue-600\" href=\"mailto:nicoabgv@gmail.com\">nicoabgv@gmail.com</a>",
+                "emailValue": "<a class=\"hover:text-pine\" href=\"mailto:nicoabgv@gmail.com\">nicoabgv@gmail.com</a>",
                 "linkedinLabel": "LinkedIn",
-                "linkedinValue": "<a class=\"hover:text-blue-600\" href=\"https://www.linkedin.com/in/nicol%C3%A1s-%C3%A1lvarez-becerra-201773267/\" target=\"_blank\" rel=\"noreferrer\">/in/nicoabgv</a>",
+                "linkedinValue": "<a class=\"hover:text-pine\" href=\"https://www.linkedin.com/in/nicol%C3%A1s-%C3%A1lvarez-becerra-201773267/\" target=\"_blank\" rel=\"noreferrer\">/in/nicoabgv</a>",
                 "experienceLabel": "Years of experience",
                 "experienceValue": "3+"
             }
@@ -158,7 +158,7 @@
         "projects": {
             "label": "Featured projects",
             "title": "Solutions that support real-world operations.",
-            "ecosystemHtml": "MesasYa, MiCartaYa, and OrderYa are part of the <a class=\"font-semibold text-blue-600 transition hover:text-blue-700\" href=\"https://yasolutions.es\" target=\"_blank\" rel=\"noreferrer\">YaSolutions</a> ecosystem, a line of digital solutions for hospitality and operations. I present them here from the perspective of product, architecture, and technical execution.",
+            "ecosystemHtml": "MesasYa, MiCartaYa, and OrderYa are part of the <a class=\"font-semibold text-pine transition hover:text-pine-dark\" href=\"https://yasolutions.es\" target=\"_blank\" rel=\"noreferrer\">YaSolutions</a> ecosystem, a line of digital solutions for hospitality and operations. I present them here from the perspective of product, architecture, and technical execution.",
             "seeAll": "View all case studies",
             "index": {
                 "caseStudies": "Case studies"
@@ -187,9 +187,9 @@
                 "title": "MiCartaYa",
                 "description": "Digital ecosystem transforming the ordering experience. Unifies QR menus with automatic kitchen printing.",
                 "bullets": {
-                    "first": "<span class=\"mt-1 h-2 w-2 rounded-full bg-blue-500\"></span>Instant ordering via WebSockets: from table to kitchen in under a second.",
-                    "second": "<span class=\"mt-1 h-2 w-2 rounded-full bg-blue-500\"></span>Real-time stock control: immediate synchronization between menu and inventory.",
-                    "third": "<span class=\"mt-1 h-2 w-2 rounded-full bg-blue-500\"></span>Zero transcription errors: direct integration with POS printing systems."
+                    "first": "<span class=\"mt-1 h-2 w-2 rounded-full bg-pine\"></span>Instant ordering via WebSockets: from table to kitchen in under a second.",
+                    "second": "<span class=\"mt-1 h-2 w-2 rounded-full bg-pine\"></span>Real-time stock control: immediate synchronization between menu and inventory.",
+                    "third": "<span class=\"mt-1 h-2 w-2 rounded-full bg-pine\"></span>Zero transcription errors: direct integration with POS printing systems."
                 },
                 "directAccess": "→ MiCartaYa – Real-time ordering and multi-language digital menu.",
                 "caseStudy": {
@@ -276,9 +276,9 @@
                 "title": "Ponme",
                 "description": "Wardrobe digitization through multimodal IA. Analyzes garments and generates combinations based on context.",
                 "bullets": {
-                    "first": "<span class=\"mt-1 h-2 w-2 rounded-full bg-blue-500\"></span>AI-driven outfits based on specific plans and weather variables.",
-                    "second": "<span class=\"mt-1 h-2 w-2 rounded-full bg-blue-500\"></span>Device-side image processing to guarantee privacy and speed.",
-                    "third": "<span class=\"mt-1 h-2 w-2 rounded-full bg-blue-500\"></span>Usage tracking system to help rotate clothes and improve sustainability."
+                    "first": "<span class=\"mt-1 h-2 w-2 rounded-full bg-pine\"></span>AI-driven outfits based on specific plans and weather variables.",
+                    "second": "<span class=\"mt-1 h-2 w-2 rounded-full bg-pine\"></span>Device-side image processing to guarantee privacy and speed.",
+                    "third": "<span class=\"mt-1 h-2 w-2 rounded-full bg-pine\"></span>Usage tracking system to help rotate clothes and improve sustainability."
                 },
                 "directAccess": "→ Ponme – Your intelligent fashion assistant powered by Gemini AI.",
                 "caseStudy": {
@@ -368,9 +368,9 @@
                 "paragraph1": "MiCartaYa is a comprehensive solution to digitize interaction between the restaurant and the customer. Based on FastAPI, Celery, MySQL and Docker and two-way communication, it makes order flow instant and error-free.",
                 "paragraph2": "The system stands out for its remote printing engine that connects the cloud with physical kitchen printers, and an administration panel that allows managing complex menus with videos and multi-language support dynamically.",
                 "bullets": {
-                    "first": "<span class=\"mt-1 h-2 w-2 rounded-full bg-blue-500\"></span>Real-time order reception with latency under 1 second thanks to WebSockets.",
-                    "second": "<span class=\"mt-1 h-2 w-2 rounded-full bg-blue-500\"></span>Total stock control and product availability with immediate reflection in the public menu.",
-                    "third": "<span class=\"mt-1 h-2 w-2 rounded-full bg-blue-500\"></span>Centralized management of multiple sedes, allergens, and visual brand customization."
+                    "first": "<span class=\"mt-1 h-2 w-2 rounded-full bg-pine\"></span>Real-time order reception with latency under 1 second thanks to WebSockets.",
+                    "second": "<span class=\"mt-1 h-2 w-2 rounded-full bg-pine\"></span>Total stock control and product availability with immediate reflection in the public menu.",
+                    "third": "<span class=\"mt-1 h-2 w-2 rounded-full bg-pine\"></span>Centralized management of multiple sedes, allergens, and visual brand customization."
                 },
                 "next": "Next steps: payment gateway integration and support for home delivery.",
                 "diagram": "Technical Diagram",
@@ -382,9 +382,9 @@
                 "paragraph1": "Ponme democratizes use of generative AI to solve the daily 'what do I wear' dilemma. It integrates the Google Gemini API to understand not just what clothes you have, but how to combine them by context.",
                 "paragraph2": "The app processes images locally to remove backgrounds and uses multimodal models to extract garment metadata (color, fabric, style), allowing you to create a 'digital wardrobe' in minutes.",
                 "bullets": {
-                    "first": "<span class=\"mt-1 h-2 w-2 rounded-full bg-blue-500\"></span>Smart outfit generation based on specific plans and weather variables.",
-                    "second": "<span class=\"mt-1 h-2 w-2 rounded-full bg-blue-500\"></span>Device-side image processing to guarantee privacy and speed.",
-                    "third": "<span class=\"mt-1 h-2 w-2 rounded-full bg-blue-500\"></span>Usage tracking system to help rotate garments and improve sustainability."
+                    "first": "<span class=\"mt-1 h-2 w-2 rounded-full bg-pine\"></span>Smart outfit generation based on specific plans and weather variables.",
+                    "second": "<span class=\"mt-1 h-2 w-2 rounded-full bg-pine\"></span>Device-side image processing to guarantee privacy and speed.",
+                    "third": "<span class=\"mt-1 h-2 w-2 rounded-full bg-pine\"></span>Usage tracking system to help rotate garments and improve sustainability."
                 },
                 "next": "Next steps: smart packing planner and purchase suggestions based on closet gaps.",
                 "diagram": "Technical Diagram",
@@ -419,13 +419,13 @@
             "description": "Every project starts from a different challenge. Here you will find the architecture decisions, operational flows, and learnings that allowed launching reliable and measurable solutions.",
             "indexLabel": "Project Index",
             "indexItems": {
-                "mesasya": "01 — MesasYa <span class=\"text-xs text-slate-400\">SaaS Restaurant</span>",
-                "micartaya": "02 — MiCartaYa <span class=\"text-xs text-slate-400\">QR Menu / Orders</span>",
-                "orderya": "03 — OrderYa <span class=\"text-xs text-slate-400\">Order Management</span>",
-                "trato": "04 — Trato <span class=\"text-xs text-slate-400\">Agile CRM</span>",
-                "kobra": "05 — Kobra <span class=\"text-xs text-slate-400\">Internal Fintech</span>",
-                "beatlist": "06 — BeatList <span class=\"text-xs text-slate-400\">Music Analysis</span>",
-                "ponme": "07 — Ponme <span class=\"text-xs text-slate-400\">AI Fashion Assistant</span>"
+                "mesasya": "01 — MesasYa <span class=\"text-xs text-muted\">SaaS Restaurant</span>",
+                "micartaya": "02 — MiCartaYa <span class=\"text-xs text-muted\">QR Menu / Orders</span>",
+                "orderya": "03 — OrderYa <span class=\"text-xs text-muted\">Order Management</span>",
+                "trato": "04 — Trato <span class=\"text-xs text-muted\">Agile CRM</span>",
+                "kobra": "05 — Kobra <span class=\"text-xs text-muted\">Internal Fintech</span>",
+                "beatlist": "06 — BeatList <span class=\"text-xs text-muted\">Music Analysis</span>",
+                "ponme": "07 — Ponme <span class=\"text-xs text-muted\">AI Fashion Assistant</span>"
             }
         },
         "directAccess": {
@@ -468,9 +468,9 @@
             "paragraph2": "The core of the project is a high-availability WebSockets system connecting diners to the restaurant dashboard and printing hardware, eliminating transcription errors and optimizing service times.",
             "impact": "Operational Results",
             "bullets": {
-                "first": "<span class=\"mt-1 h-2 w-2 rounded-full bg-blue-500\"></span>Drastic reduction in wait time for orders and payments.",
-                "second": "<span class=\"mt-1 h-2 w-2 rounded-full bg-blue-500\"></span>Dynamic management of prices and availability with a single click.",
-                "third": "<span class=\"mt-1 h-2 w-2 rounded-full bg-blue-500\"></span>Automatic kitchen and bar ticket printing via TCP/IP and USB protocols."
+                "first": "<span class=\"mt-1 h-2 w-2 rounded-full bg-pine\"></span>Drastic reduction in wait time for orders and payments.",
+                "second": "<span class=\"mt-1 h-2 w-2 rounded-full bg-pine\"></span>Dynamic management of prices and availability with a single click.",
+                "third": "<span class=\"mt-1 h-2 w-2 rounded-full bg-pine\"></span>Automatic kitchen and bar ticket printing via TCP/IP and USB protocols."
             },
             "stack": "Stack",
             "next": "Next steps",
@@ -566,9 +566,9 @@
             "paragraph2": "Using local computer vision techniques for image segmentation and advanced LLM reasoning for style combination, Ponme offers a seamless experience that optimizes use of existing garments.",
             "impact": "AI Features",
             "bullets": {
-                "first": "<span class=\"mt-1 h-2 w-2 rounded-full bg-blue-500\"></span>AI-suggested combinations considering event context and local weather.",
-                "second": "<span class=\"mt-1 h-2 w-2 rounded-full bg-blue-500\"></span>Automatic garment cataloging (type, color, material) via visual analysis.",
-                "third": "<span class=\"mt-1 h-2 w-2 rounded-full bg-blue-500\"></span>PWA mode for a mobile-native experience with fast load and offline functionality."
+                "first": "<span class=\"mt-1 h-2 w-2 rounded-full bg-pine\"></span>AI-suggested combinations considering event context and local weather.",
+                "second": "<span class=\"mt-1 h-2 w-2 rounded-full bg-pine\"></span>Automatic garment cataloging (type, color, material) via visual analysis.",
+                "third": "<span class=\"mt-1 h-2 w-2 rounded-full bg-pine\"></span>PWA mode for a mobile-native experience with fast load and offline functionality."
             },
             "stack": "Stack",
             "next": "Next steps",

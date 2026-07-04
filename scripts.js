@@ -35,6 +35,14 @@ document.addEventListener('DOMContentLoaded', () => {
     const languageToggles = document.querySelectorAll('[data-language-toggle]');
     const cvLinks = document.querySelectorAll('[data-cv-link]');
 
+    const themeToggles = document.querySelectorAll('[data-theme-toggle]');
+    themeToggles.forEach((toggle) => {
+        toggle.addEventListener('click', () => {
+            const isDark = document.documentElement.classList.toggle('dark');
+            localStorage.setItem('theme', isDark ? 'dark' : 'light');
+        });
+    });
+
     const getNestedValue = (object, path) =>
         path.split('.').reduce((accumulator, key) => {
             if (accumulator && Object.prototype.hasOwnProperty.call(accumulator, key)) {
@@ -302,9 +310,9 @@ document.addEventListener('DOMContentLoaded', () => {
     const updateNav = () => {
         if (!nav) return;
         if (window.scrollY > 16) {
-            nav.classList.add('bg-white/90', 'shadow-lg');
+            nav.classList.add('bg-surface/90', 'shadow-lg');
         } else {
-            nav.classList.remove('bg-white/90', 'shadow-lg');
+            nav.classList.remove('bg-surface/90', 'shadow-lg');
         }
     };
     updateNav();
