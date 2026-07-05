@@ -84,8 +84,17 @@
             <a href="#hero"
                 class="flex items-center gap-2 text-lg font-semibold tracking-tight text-ink transition hover:text-pine"
                 data-i18n-attr-aria-label="common.nav.brandAria">
-                <img src="assets/logo-icon.png" alt="Logo nicoabgv" width="40" height="40"
+                <img src="assets/logo-icon.png" alt="Logo nicoabgv" width="40" height="40" data-logo-img
                     class="h-10 w-10 rounded-xl shadow-lg shadow-slate-900/10 transition" />
+                <script>
+                    (function () {
+                        var stored = localStorage.getItem('theme');
+                        var dark = stored ? stored === 'dark' : window.matchMedia('(prefers-color-scheme: dark)').matches;
+                        if (dark) {
+                            document.currentScript.previousElementSibling.src = 'assets/logo-icon-dark.png';
+                        }
+                    })();
+                </script>
                 <span class="hidden sm:block" data-i18n="common.nav.brandName">Nicolás Álvarez</span>
             </a>
             <button type="button"

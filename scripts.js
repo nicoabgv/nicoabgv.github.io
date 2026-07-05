@@ -35,10 +35,14 @@ document.addEventListener('DOMContentLoaded', () => {
     const languageToggles = document.querySelectorAll('[data-language-toggle]');
     const cvLinks = document.querySelectorAll('[data-cv-link]');
 
-    const updateFavicon = (isDark) => {
+    const updateLogos = (isDark) => {
         const favicon = document.querySelector('link[rel="icon"]');
         if (favicon) {
             favicon.href = isDark ? 'assets/logo-icon-dark.png' : 'assets/logo-icon.png';
+        }
+        const navLogo = document.querySelector('[data-logo-img]');
+        if (navLogo) {
+            navLogo.src = isDark ? 'assets/logo-icon-dark.png' : 'assets/logo-icon.png';
         }
     };
 
@@ -47,7 +51,7 @@ document.addEventListener('DOMContentLoaded', () => {
         toggle.addEventListener('click', () => {
             const isDark = document.documentElement.classList.toggle('dark');
             localStorage.setItem('theme', isDark ? 'dark' : 'light');
-            updateFavicon(isDark);
+            updateLogos(isDark);
         });
     });
 
@@ -56,7 +60,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if (!localStorage.getItem('theme')) {
             const isDark = e.matches;
             document.documentElement.classList.toggle('dark', isDark);
-            updateFavicon(isDark);
+            updateLogos(isDark);
         }
     };
     if (mediaQuery.addEventListener) {
