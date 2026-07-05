@@ -35,13 +35,35 @@ document.addEventListener('DOMContentLoaded', () => {
     const languageToggles = document.querySelectorAll('[data-language-toggle]');
     const cvLinks = document.querySelectorAll('[data-cv-link]');
 
+    const updateFavicon = (isDark) => {
+        const favicon = document.querySelector('link[rel="icon"]');
+        if (favicon) {
+            favicon.href = isDark ? 'assets/logo-icon-dark.png' : 'assets/logo-icon.png';
+        }
+    };
+
     const themeToggles = document.querySelectorAll('[data-theme-toggle]');
     themeToggles.forEach((toggle) => {
         toggle.addEventListener('click', () => {
             const isDark = document.documentElement.classList.toggle('dark');
             localStorage.setItem('theme', isDark ? 'dark' : 'light');
+            updateFavicon(isDark);
         });
     });
+
+    const mediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
+    const handleSystemThemeChange = (e) => {
+        if (!localStorage.getItem('theme')) {
+            const isDark = e.matches;
+            document.documentElement.classList.toggle('dark', isDark);
+            updateFavicon(isDark);
+        }
+    };
+    if (mediaQuery.addEventListener) {
+        mediaQuery.addEventListener('change', handleSystemThemeChange);
+    } else if (mediaQuery.addListener) {
+        mediaQuery.addListener(handleSystemThemeChange);
+    }
 
     const getNestedValue = (object, path) =>
         path.split('.').reduce((accumulator, key) => {
