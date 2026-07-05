@@ -113,9 +113,9 @@
                 "title": "MiCartaYa",
                 "description": "SaaS de carta digital y pedidos para restaurantes: menú por QR, pedido móvil, gestión en tiempo real e impresión directa en cocina.",
                 "bullets": {
-                    "first": "<span class=\"mt-1 h-2 w-2 rounded-full bg-pine\"></span>Modo \"Reels\" de vídeo para productos, feature de pago (+25€/mes) que genera ingresos directos del producto.",
-                    "second": "<span class=\"mt-1 h-2 w-2 rounded-full bg-pine\"></span>Chatbot con IA (SmartWaiter) que recomienda platos en la carta pública, activable por restaurante.",
-                    "third": "<span class=\"mt-1 h-2 w-2 rounded-full bg-pine\"></span>Traducción automática de la carta con IA (Gemini, con fallback a Google Translate si no hay API key)."
+                    "first": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#e8360b]\"></span>Modo \"Reels\" de vídeo para productos, feature de pago (+25€/mes) que genera ingresos directos del producto.",
+                    "second": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#e8360b]\"></span>Chatbot con IA (SmartWaiter) que recomienda platos en la carta pública, activable por restaurante.",
+                    "third": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#e8360b]\"></span>Traducción automática de la carta con IA (Gemini, con fallback a Google Translate si no hay API key)."
                 },
                 "directAccess": "→ MiCartaYa – Carta digital y pedidos para restaurantes.",
                 "hasModal": true,
@@ -125,9 +125,9 @@
                     "paragraph1": "MiCartaYa digitaliza la carta y el pedido en el restaurante. El comensal escanea un QR, pide desde el móvil, y el pedido llega a cocina en tiempo real con impresión directa del ticket. Está en producción con 14 restaurantes.",
                     "paragraph2": "Más allá de la operativa, el producto incorpora IA aplicada: un chatbot (SmartWaiter) que recomienda platos en la carta pública, activable por restaurante; traducción automática de la carta con Gemini (con fallback a Google Translate); y un modo de vídeo tipo 'Reels' para productos que es un add-on de pago con ingresos recurrentes propios.",
                     "bullets": {
-                        "first": "<span class=\"mt-1 h-2 w-2 rounded-full bg-pine\"></span>Cliente de impresión por WebSocket: el ticket llega a cocina por push instantáneo, sin sondeo.",
-                        "second": "<span class=\"mt-1 h-2 w-2 rounded-full bg-pine\"></span>Separación estricta entre estado de pedido y estado de pago: solo confía en el webhook de Dojo, nunca en el redirect del navegador.",
-                        "third": "<span class=\"mt-1 h-2 w-2 rounded-full bg-pine\"></span>Multi-tenant por subdominio, credenciales de terceros cifradas por restaurante, y sincronización con TPV (DST)."
+                        "first": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#e8360b]\"></span>Cliente de impresión por WebSocket: el ticket llega a cocina por push instantáneo, sin sondeo.",
+                        "second": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#e8360b]\"></span>Separación estricta entre estado de pedido y estado de pago: solo confía en el webhook de Dojo, nunca en el redirect del navegador.",
+                        "third": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#e8360b]\"></span>Multi-tenant por subdominio, credenciales de terceros cifradas por restaurante, y sincronización con TPV (DST)."
                     },
                     "next": "Siguiente iteración: pagos desde la mesa y programa de fidelización."
                 }
@@ -138,9 +138,9 @@
                 "title": "OrderYa",
                 "description": "Sistema centralizado de pedidos entre obrador y locales para hostelería, con predicción de pedidos y rentabilidad por producto.",
                 "bullets": {
-                    "first": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#ea580c]\"></span>Calcula automáticamente si cada pedido sale rentable: costes y márgenes por producto, con histórico.",
-                    "second": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#ea580c]\"></span>Motor de predicción de pedidos para anticipar la demanda antes de que llegue.",
-                    "third": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#ea580c]\"></span>Multi-tenant con aislamiento entre empresas, integración con TPV (DST) y control de acceso por 4 roles."
+                    "first": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#e8360b]\"></span>Calcula automáticamente si cada pedido sale rentable: costes y márgenes por producto, con histórico.",
+                    "second": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#e8360b]\"></span>Motor de predicción de pedidos para anticipar la demanda antes de que llegue.",
+                    "third": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#e8360b]\"></span>Multi-tenant con aislamiento entre empresas, integración con TPV (DST) y control de acceso por 4 roles."
                 },
                 "directAccess": "→ OrderYa – Pedidos entre obrador y locales para hostelería.",
                 "hasModal": true,
@@ -150,9 +150,9 @@
                     "paragraph1": "OrderYa centraliza los pedidos entre un obrador y sus puntos de venta. Sustituye WhatsApp y hojas de cálculo por un flujo único donde cada local pide y el obrador ve la demanda consolidada. En producción para un restaurante y una panadería.",
                     "paragraph2": "Más allá del CRUD, incorpora lógica de negocio real: un motor de predicción de pedidos, un módulo de rentabilidad que calcula costes y márgenes por producto con snapshots, y stock mínimo por local. El aislamiento entre empresas es estricto, multi-tenant por subdominio.",
                     "bullets": {
-                        "first": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#ea580c]\"></span>Predicción de pedidos y cierre mensual con splits por proveedor.",
-                        "second": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#ea580c]\"></span>Rentabilidad por producto con costes, márgenes y snapshots históricos.",
-                        "third": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#ea580c]\"></span>Sincronización de artículos con TPV (DST) y exportación a PDF/Excel/código de barras."
+                        "first": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#e8360b]\"></span>Predicción de pedidos y cierre mensual con splits por proveedor.",
+                        "second": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#e8360b]\"></span>Rentabilidad por producto con costes, márgenes y snapshots históricos.",
+                        "third": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#e8360b]\"></span>Sincronización de artículos con TPV (DST) y exportación a PDF/Excel/código de barras."
                     },
                     "next": "Siguiente iteración: afinar la predicción con históricos y calendario de festivos."
                 }
@@ -163,9 +163,9 @@
                 "title": "Ponme",
                 "description": "App que arma tu outfit en menos de un minuto desde tu propio armario digitalizado, combinando la ropa con IA.",
                 "bullets": {
-                    "first": "<span class=\"mt-1 h-2 w-2 rounded-full bg-pine\"></span>Antes de comprar ropa nueva, te dice si te compensa combinándola con lo que ya tienes (compra inteligente, PRO).",
-                    "second": "<span class=\"mt-1 h-2 w-2 rounded-full bg-pine\"></span>Analiza cada prenda con IA (color, estilo, temporada) y genera outfits según clima y ocasión.",
-                    "third": "<span class=\"mt-1 h-2 w-2 rounded-full bg-pine\"></span>Aprende tu perfil de estilo con el tiempo y te arma la maleta para tus viajes."
+                    "first": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#c2855a]\"></span>Antes de comprar ropa nueva, te dice si te compensa combinándola con lo que ya tienes (compra inteligente, PRO).",
+                    "second": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#c2855a]\"></span>Analiza cada prenda con IA (color, estilo, temporada) y genera outfits según clima y ocasión.",
+                    "third": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#c2855a]\"></span>Aprende tu perfil de estilo con el tiempo y te arma la maleta para tus viajes."
                 },
                 "directAccess": "→ Ponme – Tu armario con IA.",
                 "hasModal": true,
@@ -175,9 +175,9 @@
                     "paragraph1": "Ponme digitaliza tu armario y arma outfits combinando la ropa con IA. Al subir una prenda, un pipeline multimodal la analiza (color, estilo, temporada) y la cataloga sola; luego el generador propone combinaciones según el clima y la ocasión. Está en producción, con billing en Stripe y usuarios reales.",
                     "paragraph2": "Más allá de generar outfits, incluye un comprobador de compra inteligente (¿me compensa esta prenda con lo que ya tengo?), cápsulas semanales y planificador de maleta para viajes, un perfil de gustos que aprende de tus elecciones, y un feed público de outfits con enlaces compartibles que funciona como canal de distribución dentro del propio producto.",
                     "bullets": {
-                        "first": "<span class=\"mt-1 h-2 w-2 rounded-full bg-pine\"></span>Compuerta IA-real vs demo para controlar el coste por usuario no verificado.",
-                        "second": "<span class=\"mt-1 h-2 w-2 rounded-full bg-pine\"></span>Comprobador de compra inteligente y perfil de gustos aprendido con el tiempo (ambos PRO).",
-                        "third": "<span class=\"mt-1 h-2 w-2 rounded-full bg-pine\"></span>Feed público de outfits con enlaces compartibles, pensado como canal de distribución propio."
+                        "first": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#c2855a]\"></span>Compuerta IA-real vs demo para controlar el coste por usuario no verificado.",
+                        "second": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#c2855a]\"></span>Comprobador de compra inteligente y perfil de gustos aprendido con el tiempo (ambos PRO).",
+                        "third": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#c2855a]\"></span>Feed público de outfits con enlaces compartibles, pensado como canal de distribución propio."
                     },
                     "next": "Foco actual: llevar el producto a más gente."
                 }

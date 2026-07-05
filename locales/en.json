@@ -113,9 +113,9 @@
                 "title": "MiCartaYa",
                 "description": "Digital menu and ordering SaaS for restaurants: QR menu, mobile ordering, real-time management, and direct kitchen printing.",
                 "bullets": {
-                    "first": "<span class=\"mt-1 h-2 w-2 rounded-full bg-pine\"></span>\"Reels\" video mode for products, a paid add-on (+€25/month) generating direct product revenue.",
-                    "second": "<span class=\"mt-1 h-2 w-2 rounded-full bg-pine\"></span>AI chatbot (SmartWaiter) that recommends dishes on the public menu, opt-in per restaurant.",
-                    "third": "<span class=\"mt-1 h-2 w-2 rounded-full bg-pine\"></span>Automatic menu translation with AI (Gemini, falling back to Google Translate without an API key)."
+                    "first": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#e8360b]\"></span>\"Reels\" video mode for products, a paid add-on (+€25/month) generating direct product revenue.",
+                    "second": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#e8360b]\"></span>AI chatbot (SmartWaiter) that recommends dishes on the public menu, opt-in per restaurant.",
+                    "third": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#e8360b]\"></span>Automatic menu translation with AI (Gemini, falling back to Google Translate without an API key)."
                 },
                 "directAccess": "→ MiCartaYa – Digital menu and ordering for restaurants.",
                 "hasModal": true,
@@ -125,9 +125,9 @@
                     "paragraph1": "MiCartaYa digitizes the menu and ordering in the restaurant. The diner scans a QR code, orders from their phone, and the order reaches the kitchen in real time with direct ticket printing. It's in production with 14 restaurants.",
                     "paragraph2": "Beyond operations, the product carries applied AI: a chatbot (SmartWaiter) that recommends dishes on the public menu, opt-in per restaurant; automatic menu translation with Gemini (falling back to Google Translate); and a 'Reels' video mode for products that is its own paid add-on with recurring revenue.",
                     "bullets": {
-                        "first": "<span class=\"mt-1 h-2 w-2 rounded-full bg-pine\"></span>WebSocket printer client: the ticket reaches the kitchen via instant push, no polling.",
-                        "second": "<span class=\"mt-1 h-2 w-2 rounded-full bg-pine\"></span>Strict separation between order status and payment status: trusts only the Dojo webhook, never the browser redirect.",
-                        "third": "<span class=\"mt-1 h-2 w-2 rounded-full bg-pine\"></span>Multi-tenant by subdomain, third-party credentials encrypted per restaurant, and POS sync (DST)."
+                        "first": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#e8360b]\"></span>WebSocket printer client: the ticket reaches the kitchen via instant push, no polling.",
+                        "second": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#e8360b]\"></span>Strict separation between order status and payment status: trusts only the Dojo webhook, never the browser redirect.",
+                        "third": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#e8360b]\"></span>Multi-tenant by subdomain, third-party credentials encrypted per restaurant, and POS sync (DST)."
                     },
                     "next": "Next iteration: at-table payments and a loyalty program."
                 }
@@ -138,9 +138,9 @@
                 "title": "OrderYa",
                 "description": "Centralized ordering system between bakery and shops for hospitality, with order prediction and per-product profitability.",
                 "bullets": {
-                    "first": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#ea580c]\"></span>Automatically calculates whether each order is profitable: per-product costs and margins, with history.",
-                    "second": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#ea580c]\"></span>Order prediction engine to anticipate demand before it arrives.",
-                    "third": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#ea580c]\"></span>Multi-tenant with company-to-company isolation, POS integration (DST), and 4-role access control."
+                    "first": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#e8360b]\"></span>Automatically calculates whether each order is profitable: per-product costs and margins, with history.",
+                    "second": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#e8360b]\"></span>Order prediction engine to anticipate demand before it arrives.",
+                    "third": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#e8360b]\"></span>Multi-tenant with company-to-company isolation, POS integration (DST), and 4-role access control."
                 },
                 "directAccess": "→ OrderYa – Orders between bakery and shops for hospitality.",
                 "hasModal": true,
@@ -150,9 +150,9 @@
                     "paragraph1": "OrderYa centralizes ordering between a bakery and its points of sale. It replaces WhatsApp and spreadsheets with a single flow where each shop orders and the bakery sees consolidated demand. In production for one restaurant and one bakery.",
                     "paragraph2": "Beyond CRUD, it carries real business logic: an order prediction engine, a profitability module that computes per-product costs and margins with snapshots, and minimum stock per shop. Company isolation is strict, multi-tenant by subdomain.",
                     "bullets": {
-                        "first": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#ea580c]\"></span>Order prediction and monthly close with per-supplier splits.",
-                        "second": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#ea580c]\"></span>Per-product profitability with costs, margins, and historical snapshots.",
-                        "third": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#ea580c]\"></span>Article sync with POS (DST) and export to PDF/Excel/barcode."
+                        "first": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#e8360b]\"></span>Order prediction and monthly close with per-supplier splits.",
+                        "second": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#e8360b]\"></span>Per-product profitability with costs, margins, and historical snapshots.",
+                        "third": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#e8360b]\"></span>Article sync with POS (DST) and export to PDF/Excel/barcode."
                     },
                     "next": "Next iteration: refine prediction with historical data and holiday calendars."
                 }
@@ -163,9 +163,9 @@
                 "title": "Ponme",
                 "description": "An app that builds your outfit in under a minute from your own digitized wardrobe, combining clothes with AI.",
                 "bullets": {
-                    "first": "<span class=\"mt-1 h-2 w-2 rounded-full bg-pine\"></span>Before you buy new clothes, it tells you if they're worth it with what you already own (smart purchase check, PRO).",
-                    "second": "<span class=\"mt-1 h-2 w-2 rounded-full bg-pine\"></span>Analyzes each garment with AI (color, style, season) and generates outfits based on weather and occasion.",
-                    "third": "<span class=\"mt-1 h-2 w-2 rounded-full bg-pine\"></span>Learns your style profile over time and packs your suitcase for trips."
+                    "first": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#c2855a]\"></span>Before you buy new clothes, it tells you if they're worth it with what you already own (smart purchase check, PRO).",
+                    "second": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#c2855a]\"></span>Analyzes each garment with AI (color, style, season) and generates outfits based on weather and occasion.",
+                    "third": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#c2855a]\"></span>Learns your style profile over time and packs your suitcase for trips."
                 },
                 "directAccess": "→ Ponme – Your AI wardrobe.",
                 "hasModal": true,
@@ -175,9 +175,9 @@
                     "paragraph1": "Ponme digitizes your wardrobe and builds outfits combining clothes with AI. When you upload a garment, a multimodal pipeline analyzes it (color, style, season) and catalogs it on its own; then the generator proposes combinations based on weather and occasion. It's in production, with Stripe billing and real users.",
                     "paragraph2": "Beyond generating outfits, it includes a smart purchase check (does this garment pay off with what I already own?), weekly capsules and a trip packing planner, a taste profile that learns from your choices, and a public outfit feed with shareable links that works as a built-in distribution channel.",
                     "bullets": {
-                        "first": "<span class=\"mt-1 h-2 w-2 rounded-full bg-pine\"></span>Real-AI vs demo gate to control cost per unverified user.",
-                        "second": "<span class=\"mt-1 h-2 w-2 rounded-full bg-pine\"></span>Smart purchase check and a taste profile learned over time (both PRO).",
-                        "third": "<span class=\"mt-1 h-2 w-2 rounded-full bg-pine\"></span>Public outfit feed with shareable links, designed as its own distribution channel."
+                        "first": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#c2855a]\"></span>Real-AI vs demo gate to control cost per unverified user.",
+                        "second": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#c2855a]\"></span>Smart purchase check and a taste profile learned over time (both PRO).",
+                        "third": "<span class=\"mt-1 h-2 w-2 rounded-full bg-[#c2855a]\"></span>Public outfit feed with shareable links, designed as its own distribution channel."
                     },
                     "next": "Current focus: getting the product into more hands."
                 }
