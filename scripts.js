@@ -379,19 +379,20 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         }
 
-        gsap.utils.toArray('[data-animate]').forEach((element) => {
+        gsap.utils.toArray('[data-animate]').forEach((element, i) => {
             gsap.fromTo(
                 element,
-                { autoAlpha: 0, y: 40 },
+                { autoAlpha: 0, y: 24 },
                 {
                     autoAlpha: 1,
                     y: 0,
-                    duration: 1,
-                    ease: 'power2.out',
+                    duration: 0.7,
+                    ease: 'power3.out',
+                    delay: i * 0.04,
                     scrollTrigger: {
                         trigger: element,
-                        start: 'top 85%',
-                        toggleActions: 'play none none reverse',
+                        start: 'top 92%',
+                        toggleActions: 'play none none none',
                     },
                 },
             );
