@@ -258,8 +258,15 @@
                 }
             },
             "othersLabel": "Otros proyectos",
+            "yasolutions": {
+                "title": "YaSolutions",
+                "description": "La web central de FirmaYa, PresupuestoYa y todos los productos de la familia Ya.",
+                "cta": "Visitar yasolutions.es →"
+            },
             "others": {
-                "trato": "CRM multi-tenant de ventas y presupuestos, con 2FA, API keys con rate-limiting y seguimientos automatizados por Celery.",
+                "trato": "CRM multiempresa con 2FA, seguimientos automatizados y API keys con rate limiting para integraciones. Conecta por SSO con PresupuestoYa y sincroniza clientes, productos y presupuestos en tiempo real.",
+                "firmaya": "Plataforma interna de firma electrónica simple: editor visual sobre PDF, firma manuscrita desde móvil o navegador y expediente de evidencias con hashes y trazabilidad completa.",
+                "presupuestoya": "SaaS multiempresa para crear y presentar presupuestos comerciales interactivos, con catálogo multimedia, aceptación online, auditoría y conexión controlada por SSO con Trato.",
                 "kobra": "Plataforma interna de facturación y cobros: automatiza avisos, recordatorios y exportaciones con cronjobs trazables.",
                 "mesasya": "Plataforma de reservas y gestión de mesas para restaurantes, con disponibilidad en tiempo real vía SSE (Flask).",
                 "tpvpanel": "Panel + agente que inventaría y monitoriza remotamente un parque de TPVs (hardware, SO, versiones) y los ubica en un mapa.",

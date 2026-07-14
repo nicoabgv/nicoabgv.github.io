@@ -258,8 +258,15 @@
                 }
             },
             "othersLabel": "Other projects",
+            "yasolutions": {
+                "title": "YaSolutions",
+                "description": "The central website for FirmaYa, PresupuestoYa, and every product in the Ya family.",
+                "cta": "Visit yasolutions.es →"
+            },
             "others": {
-                "trato": "Multi-tenant sales and quotes CRM, with 2FA, rate-limited API keys, and automated follow-ups via Celery.",
+                "trato": "Multi-tenant CRM with 2FA, automated follow-ups, and rate-limited API keys for integrations. It connects to PresupuestoYa through SSO and syncs clients, products, and quotes in real time.",
+                "firmaya": "Internal simple electronic-signature platform: visual PDF field editor, handwritten signing from mobile or browser, and a complete evidence trail with hashes and audit history.",
+                "presupuestoya": "Multi-tenant SaaS for creating and presenting interactive sales quotes, with a multimedia catalog, online acceptance, auditing, and controlled SSO integration with Trato.",
                 "kobra": "Internal billing and collections platform: automates alerts, reminders, and exports with traceable cronjobs.",
                 "mesasya": "Reservation and table-management platform for restaurants, with real-time availability via SSE (Flask).",
                 "tpvpanel": "Panel + agent that inventories and remotely monitors a fleet of POS systems (hardware, OS, versions) and maps their location.",
