@@ -16,6 +16,17 @@ Aplicación para analizar y gestionar playlists de Spotify con una experiencia o
 
 La API de Spotify ofrece los datos, pero una herramienta útil debe manejar autorización, tokens que caducan, paginación, límites de uso y playlists que cambian. En colecciones grandes, volver a descargar y recalcular todo en cada visita degrada tanto la experiencia como el consumo de API.
 
+## Alcance funcional
+
+- Creación, fusión y reorganización de playlists.
+- Alta y eliminación de canciones sin salir de la aplicación.
+- Reproductor web e histórico de las últimas reproducciones.
+- Análisis de playlists y atributos musicales.
+- Recomendaciones por géneros, artistas y pistas favoritas.
+- Feed de lanzamientos recientes de artistas seguidos.
+- Análisis de perfil asistido por Cohere, con modo demo sin llamadas externas.
+- Interfaz internacionalizada mediante Flask-Babel.
+
 ## Arquitectura
 
 ```mermaid
@@ -29,6 +40,16 @@ flowchart LR
     JOBS --> CACHE
     WEB --> REC["Cohere · recomendaciones"]
 ```
+
+## Flujo de un análisis
+
+1. OAuth entrega el contexto del usuario y la aplicación comprueba o renueva el acceso a Spotify.
+2. El backend obtiene la playlist, su `snapshot_id` y las páginas de canciones.
+3. Si existe un resultado para esa combinación de usuario, playlist y snapshot, se reutiliza.
+4. En caso contrario se crea un trabajo y se devuelve inmediatamente un identificador.
+5. El análisis se ejecuta en el pool interno o en Celery, según el despliegue.
+6. Redis conserva progreso y resultado para que el navegador pueda consultar el estado.
+7. Un cambio de snapshot invalida naturalmente el análisis anterior.
 
 ## Decisiones técnicas
 
@@ -51,6 +72,23 @@ Los trabajos extensos publican su avance en Redis. El frontend puede informar de
 ### Recomendaciones separadas del dato original
 
 La capa de recomendación puede usar Cohere, pero no modifica ni sustituye los metadatos obtenidos de Spotify. Los datos del proveedor y las inferencias permanecen diferenciados.
+
+## Rendimiento y límites externos
+
+- La concurrencia global del analizador es configurable para no saturar una instancia.
+- Los lanzamientos recientes se memoizan por artista y ventana temporal.
+- Una respuesta sin lanzamientos usa una caducidad mayor para evitar consultas repetidas sin valor.
+- El número de artistas procesados por solicitud se limita según la cuota disponible.
+- El análisis por IA tiene límites propios por minuto y hora.
+- El modo demo permite enseñar el flujo sin gastar cuota de Cohere ni exponer una clave.
+- La configuración de Gunicorn adapta procesos e hilos a CPU y concurrencia esperada.
+
+## Trade-offs
+
+- `ThreadPoolExecutor` permite ejecutar BeatList sin infraestructura adicional; Celery queda disponible para despliegues con trabajos más largos.
+- La caché por snapshot prioriza corrección sobre una política puramente temporal.
+- Los resultados recientes sí usan TTL porque Spotify no ofrece un snapshot equivalente para ese feed.
+- Más paralelismo reduce el tiempo de análisis, pero aumenta el riesgo de alcanzar los límites de Spotify; por eso se configura y no se fija en código.
 
 ## Retos y soluciones
 

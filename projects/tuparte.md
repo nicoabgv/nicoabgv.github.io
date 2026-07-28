@@ -18,6 +18,18 @@ Un reparto fijo por porcentajes deja de ser útil cuando cambian los ingresos, a
 
 TuParte transforma esas variables en una recomendación explicable. No se limita a visualizar saldos: evalúa el estado financiero, protege mínimos, adapta los pesos y muestra qué habría ocurrido sin aplicar la adaptación.
 
+## Alcance funcional
+
+- Registro de ingresos y distribución entre pockets de gasto, ahorro e inversión.
+- Lectura conjunta de liquidez disponible, inversión acumulada y aporte fijo.
+- Incorporación de gastos previstos antes de calcular el reparto.
+- Metas vinculadas a una categoría, con colchón adicional, progreso y prioridad.
+- Aportaciones, retiradas, ajustes y correcciones sin borrar el histórico.
+- Alertas descartables para pockets bajos y situaciones de inversión elevada.
+- Comparación entre plan base y plan adaptativo.
+- Panel mensual con indicadores, evolución y visualizaciones.
+- Persistencia local sin conexión ni acceso automático a cuentas bancarias.
+
 ## Arquitectura
 
 ```mermaid
@@ -108,6 +120,17 @@ El producto no necesita acceso bancario. Mantiene históricos, metas y correccio
 ### Control final del usuario
 
 Las alertas pueden descartarse, las cantidades pueden editarse y el reparto debe cuadrar antes de guardarse. El motor aconseja; no mueve dinero ni ejecuta operaciones financieras.
+
+## Casos límite y consistencia
+
+- Los importes negativos se normalizan antes de entrar en ratios y puntuaciones.
+- Los cocientes con liquidez o inversión cero producen estados controlados, no divisiones inválidas.
+- Cada factor del safety score se limita a un rango conocido antes de combinarse.
+- Los pesos se normalizan; si la configuración suma cero, se aplica una distribución uniforme segura.
+- Las filas CSV defectuosas se omiten y quedan registradas como advertencia.
+- Los nombres antiguos de pockets se migran durante la lectura.
+- Las columnas ausentes se completan para conservar compatibilidad con históricos anteriores.
+- El editor final detecta tanto dinero sin asignar como una distribución superior al ingreso.
 
 ## Retos y soluciones
 

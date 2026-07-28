@@ -18,6 +18,17 @@ Una carta digital aislada resuelve poco. El reto real es conectar lo que ve el c
 
 MiCartaYa reúne carta pública, pedidos, administración y servicios externos, manteniendo separados los datos y la configuración de cada restaurante.
 
+## Alcance funcional
+
+- Carta pública por QR con familias, productos, tamaños, extras, alérgenos, imágenes y vídeo.
+- Distintas experiencias de navegación, incluida una vista vertical tipo Reels.
+- Pedido desde el móvil, seguimiento en panel y envío inmediato a cocina.
+- Mesas y restaurantes configurables, con operación separada por tenant.
+- Pago en mesa, pago externo o pago online mediante Dojo, configurable por restaurante.
+- Sincronización de carta y envío de pedidos al TPV DST.
+- SmartWaiter para recomendaciones y traducción masiva de la carta.
+- Paneles diferenciados para plataforma, distribuidores y restaurantes.
+
 ## Arquitectura
 
 ```mermaid
@@ -35,6 +46,18 @@ flowchart LR
 ```
 
 El diagrama muestra límites funcionales, no la topología interna ni los contratos privados.
+
+## Flujo de un pedido
+
+1. El dominio o subdominio identifica el restaurante antes de resolver la carta.
+2. El cliente selecciona productos, tamaños y opciones; el backend reconstruye y valida el pedido con el catálogo vigente.
+3. Si el pago online está activo, el backend crea una sesión alojada por Dojo. Los datos de tarjeta no pasan por MiCartaYa.
+4. El webhook firmado confirma el resultado del cobro y actualiza el estado de pago de forma idempotente.
+5. El pedido se registra con un estado operativo independiente del estado del pago.
+6. Cuando DST está configurado, se envía al TPV con el modo de pago correspondiente.
+7. Redis distribuye el evento al panel y al cliente de impresión mediante WebSocket.
+
+Si se pierde el canal en tiempo real, el panel mantiene un ciclo de consulta de respaldo. La impresora anterior basada en polling también se conserva como mecanismo de rollback durante la transición.
 
 ## Decisiones técnicas
 
@@ -55,6 +78,16 @@ DST, Dojo, almacenamiento e IA se aíslan del dominio mediante servicios especí
 ### Impresión como borde local
 
 La plataforma envía eventos en tiempo real a un cliente instalado en el restaurante. El cliente local resuelve la impresora y el sistema operativo, mientras el servidor conserva el estado central del pedido.
+
+## Operación y seguridad
+
+- Redis funciona como broker de Celery, caché y canal pub/sub para repartir eventos entre varias instancias.
+- Celery Worker procesa traducciones y trabajos lentos; Celery Beat programa informes periódicos.
+- Imágenes y vídeos se almacenan en Cloudflare R2 para no depender del disco del contenedor web.
+- Las credenciales de Dojo y DST se cifran antes de persistirse y permanecen separadas por restaurante.
+- CORS, hosts permitidos y resolución de tenant se derivan del dominio público configurado.
+- La API limita tamaño y codificación de peticiones antes de llegar a la base de datos.
+- Backend y frontend envían errores a Sentry; los eventos operativos relevantes quedan auditados.
 
 ## Retos y soluciones
 

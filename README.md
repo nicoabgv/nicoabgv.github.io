@@ -71,5 +71,3 @@ La web es una página estática construida con HTML, Tailwind CSS, JavaScript y 
 ## Privacidad
 
 Los repositorios de los productos son privados. Los casos de estudio omiten deliberadamente código propietario, credenciales, endpoints internos, datos de clientes, reglas de negocio sensibles y detalles que puedan comprometer la seguridad. Los diagramas son vistas simplificadas de alto nivel.
-
-Para añadir otro proyecto se puede partir de [`projects/_template.md`](projects/_template.md).

@@ -18,6 +18,17 @@ Una firma dibujada sobre un PDF no basta para construir un flujo fiable. Es nece
 
 FirmaYa coordina preparación, invitación, firma pública y generación de documentos sin presentar una firma simple como si fuera cualificada o certificada.
 
+## Alcance funcional
+
+- Administración multiempresa de usuarios, permisos y firmantes.
+- Preparación de envíos con uno o varios documentos y campos posicionados sobre el PDF.
+- Envío por correo, recordatorios, reenvío, caducidad, rechazo y cancelación.
+- Tres niveles de verificación: enlace, confirmación de datos y OTP por correo.
+- Firma manuscrita desde el mismo dispositivo o mediante QR móvil de un solo uso.
+- Generación separada de PDF firmado, evidencias PDF/JSON y código de verificación.
+- Textos legales versionados y personalización de marca por empresa.
+- Exportación, copias de seguridad y restauración de metadatos y documentos.
+
 ## Arquitectura
 
 ```mermaid
@@ -43,6 +54,34 @@ sequenceDiagram
     API-->>S: Confirma finalización
 ```
 
+## Ciclo de vida del envío
+
+Vista simplificada de las transiciones principales:
+
+```mermaid
+stateDiagram-v2
+    [*] --> Borrador
+    Borrador --> Preparando
+    Preparando --> Enviado
+    Preparando --> ErrorEnvio
+    ErrorEnvio --> Preparando
+    Enviado --> Entregado
+    Enviado --> Abierto
+    Entregado --> Abierto
+    Abierto --> EnProgreso
+    Abierto --> Firmado
+    EnProgreso --> Firmado
+    Abierto --> Rechazado
+    Enviado --> Caducado
+    Enviado --> Cancelado
+    Firmado --> [*]
+    Rechazado --> [*]
+    Caducado --> [*]
+    Cancelado --> [*]
+```
+
+Los estados finales son inmutables. Un envío pendiente puede reenviarse sin crear otro contrato y solo los borradores admiten eliminación lógica.
+
 ## Decisiones técnicas
 
 ### Alcance legal explícito
@@ -64,6 +103,22 @@ La creación del PDF definitivo y del informe de evidencias se protege con bloqu
 ### Auditoría append-only
 
 Consentimiento, verificaciones y cambios relevantes se registran como eventos añadidos a la cronología, sin reescribir silenciosamente los anteriores.
+
+## Seguridad documental
+
+- Los tokens públicos son largos y no predecibles; la base de datos conserva su hash.
+- Los enlaces se invalidan al firmar, rechazar, cancelar o caducar el envío.
+- El QR móvil usa un token efímero de un solo uso y una actualización atómica para evitar repetición.
+- Los PDFs se validan por MIME, firma mágica, tamaño, páginas y apertura real con PyMuPDF.
+- Original, documento firmado y evidencias son archivos diferentes; el original nunca se sobrescribe.
+- Las descargas pasan por rutas autorizadas y auditadas, con claves de almacenamiento no derivadas del nombre original.
+- El acceso interno usa cookies HttpOnly, refresh rotatorio, CSRF, Argon2, rate limiting y MFA TOTP configurable.
+
+## Operación y verificación
+
+Celery saca del ciclo HTTP el correo y la generación documental. Celery Beat gestiona caducidades, recordatorios y limpieza programada. El almacenamiento está abstraído para poder cambiar el volumen local por S3 sin alterar el dominio.
+
+Las pruebas automatizadas cubren permisos, validación de PDF, firma completa, consentimiento, OTP, QR de un solo uso, rechazo, caducidad, idempotencia, hashes y generación de evidencias. Un smoke test atraviesa Nginx, API, worker y correo local como un flujo real.
 
 ## Retos y soluciones
 

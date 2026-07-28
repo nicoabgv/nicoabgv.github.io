@@ -18,6 +18,18 @@ Cuando varios locales piden a un mismo obrador, una lista de cantidades no basta
 
 OrderYa digitaliza ese flujo y añade herramientas de previsión, inventario mínimo y rentabilidad para apoyar decisiones de producción.
 
+## Alcance funcional
+
+- Catálogo compartido de productos, familias y proveedores.
+- Creación, edición y reutilización de pedidos mediante plantillas.
+- Consola de obrador para consolidar, dividir por proveedor, servir y finalizar.
+- Tratamiento de productos especiales, cantidades por peso o unidades y configuraciones de tartas.
+- Sesiones de inventario y stock mínimo específico para cada local.
+- Sugerencias de pedido construidas desde el histórico.
+- Rentabilidad por producto, mes y temporada.
+- Informes y exportaciones en PDF, Excel y CSV.
+- Notificaciones transaccionales y registro de entregas de correo.
+
 ## Arquitectura
 
 ```mermaid
@@ -33,6 +45,23 @@ flowchart LR
     API <--> ADAPTER["Adaptador DST"]
     ADAPTER <--> DST["ERP DST"]
 ```
+
+## Flujo operativo
+
+```mermaid
+stateDiagram-v2
+    [*] --> Pendiente: el local envía
+    Pendiente --> Parcial: el obrador sirve una parte
+    Pendiente --> Servido: pedido completo
+    Parcial --> Servido: completa cantidades
+    Servido --> EnReparto: sale del obrador
+    EnReparto --> Finalizado: entrega cerrada
+    Finalizado --> [*]
+```
+
+El backend gobierna las transiciones y conserva el histórico. Local, obrador y administración obtienen vistas distintas del mismo pedido; no mantienen copias independientes.
+
+La previsión usa consumos anteriores para sugerir cantidades, pero el local puede modificarlas antes de enviar. Inventario, stock mínimo y rentabilidad se apoyan en el mismo catálogo para evitar definiciones incompatibles entre módulos.
 
 ## Decisiones técnicas
 
@@ -51,6 +80,21 @@ Las sugerencias se calculan a partir del histórico operativo y se presentan com
 ### Rentabilidad cerca de la operación
 
 Costes, precios y cantidades se convierten en métricas por producto y periodo. Mantener estos cálculos en backend da una definición única a paneles y exportaciones.
+
+## Operación y seguridad
+
+- El contexto de empresa se resuelve al principio de la petición y se vuelve a comprobar en las consultas.
+- Los permisos se aplican en servidor para superadministración, administración de empresa, obrador y local.
+- Las credenciales de DST se descifran únicamente al realizar una comunicación con el proveedor.
+- Redis soporta límites de uso y coordinación de procesos; Sentry centraliza errores operativos.
+- Los documentos generados se abstraen detrás de un servicio de almacenamiento compatible con objetos.
+- Las migraciones de base de datos forman parte del despliegue y los cambios del modelo se mantienen aditivos cuando deben convivir con datos existentes.
+
+## Trade-offs
+
+- La interfaz renderizada en servidor reduce la infraestructura del frontend, a cambio de acoplar más estrechamente vistas y rutas.
+- La previsión se mantiene explicable y revisable; se renuncia a automatizar por completo una decisión de producción.
+- DST se usa dentro de una frontera limitada. No replicar todas las funciones del ERP evita un acoplamiento bidireccional difícil de operar.
 
 ## Retos y soluciones
 
