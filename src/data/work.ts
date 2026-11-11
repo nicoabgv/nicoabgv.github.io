@@ -222,11 +222,11 @@ export const JOBS: Job[] = [
     stack: ['FastAPI', 'React', 'MySQL', 'Docker'],
     es: {
       detail: ['Intranet propia que centraliza salud de contenedores por cron en el host, roadmap, runbooks de incidentes y métricas de negocio.'],
-      hook: ['Intranet', 'monitorización y estado real de cada proyecto'],
+      hook: ['30+', 'proyectos y contenedores vigilados desde mi propia intranet'],
     },
     en: {
       detail: ['In-house intranet centralising host container health via cron, roadmap, incident runbooks, and business metrics.'],
-      hook: ['Intranet', 'monitoring and live status across every project'],
+      hook: ['30+', 'projects and containers monitored from my own intranet'],
     },
   },
   {
@@ -237,12 +237,12 @@ export const JOBS: Job[] = [
     es: {
       title: 'Infraestructura',
       detail: ['VPS propio con Docker, proxy inverso Nginx, MySQL y Redis centrales, aislamiento de puertos en localhost y copias diarias off-site.'],
-      hook: ['VPS', 'despliegue en contenedores con defensa perimetral'],
+      hook: ['1', 'VPS propio con Docker, Nginx y copias diarias fuera'],
     },
     en: {
       title: 'Infrastructure',
       detail: ['Dedicated VPS with Docker, Nginx reverse proxy, shared MySQL and Redis, localhost port binding, and daily off-site backups.'],
-      hook: ['VPS', 'containerised deployments with perimeter defence'],
+      hook: ['1', 'dedicated VPS running Docker, Nginx and daily off-site backups'],
     },
   },
   {
@@ -253,11 +253,11 @@ export const JOBS: Job[] = [
     stack: ['Kotlin', 'SQLite', 'React', 'Android'],
     es: {
       detail: ['Arquitectura local-first con Hub Kotlin/JVM y SQLite para pedidos, caja, cobros y stock resistentes a caídas de internet.'],
-      hook: ['Local-first', 'cobro y pedidos resilientes sin depender de la nube'],
+      hook: ['100%', 'operativo en cobro y pedidos aunque se caiga internet'],
     },
     en: {
       detail: ['Local-first architecture with Kotlin/JVM Hub and SQLite for orders, till, payments, and stock resilient to network drops.'],
-      hook: ['Local-first', 'resilient till and orders without cloud dependency'],
+      hook: ['100%', 'operational for orders and billing even offline'],
     },
   },
   {
@@ -266,14 +266,14 @@ export const JOBS: Job[] = [
     status: 'live',
     stack: ['Node.js', 'Python', 'React', 'GPU'],
     es: {
-      title: 'Plataforma de IA & Reconocimiento Facial',
+      title: 'Biometría & Reconocimiento Facial',
       detail: ['Arquitectura desacoplada: API en Node, panel SPA en React y microservicio de biometría facial en Python (face_mvp) integrado en pipeline en vivo.'],
-      hook: ['Biometría', 'pipeline de reconocimiento facial y transcripción en vivo'],
+      hook: ['RTX', 'reconocimiento facial y transcripción acelerados por GPU'],
     },
     en: {
-      title: 'AI Platform & Facial Recognition',
+      title: 'Biometrics & Facial Recognition',
       detail: ['Decoupled architecture: Node API, React SPA dashboard, and Python face biometrics microservice (face_mvp) integrated into a live pipeline.'],
-      hook: ['Biometrics', 'live facial recognition pipeline and audio transcription'],
+      hook: ['RTX', 'hardware-accelerated facial recognition and transcription'],
     },
   },
   {
@@ -284,12 +284,12 @@ export const JOBS: Job[] = [
     es: {
       title: 'Clips Automatizados con IA',
       detail: ['Pipeline de corte inteligente de vídeo con transcripción automática mediante Whisper y detección de caras acelerada por hardware.'],
-      hook: ['GPU propia', 'transcripción y segmentación de vídeo aceleradas por hardware'],
+      hook: ['0', 'edición manual: corte y transcripción automatizados con IA'],
     },
     en: {
       title: 'Automated AI Video Clipping',
       detail: ['Intelligent video clipping pipeline with automated Whisper transcription and hardware-accelerated face detection.'],
-      hook: ['In-house GPU', 'hardware-accelerated transcription and video segmentation'],
+      hook: ['0', 'manual editing: automated video clipping and transcription'],
     },
   },
   {
@@ -300,12 +300,12 @@ export const JOBS: Job[] = [
     es: {
       title: 'Análisis Electoral con LLM',
       detail: ['Explorador de microdatos sociopolíticos por olas con un motor LLM que redacta conclusiones narrativas y genera gráficos analíticos.'],
-      hook: ['DeepSeek', 'análisis narrativo de sondeos y microdatos electorales'],
+      hook: ['LLM', 'extracción de narrativa y gráficos sobre olas de microdatos'],
     },
     en: {
       title: 'Electoral Analysis with LLMs',
       detail: ['Sociopolitical microdata explorer across waves with an LLM engine drafting narrative conclusions and generating analytical charts.'],
-      hook: ['DeepSeek', 'narrative analysis of polling waves and electoral microdata'],
+      hook: ['LLM', 'narrative extraction and charts from electoral microdata waves'],
     },
   },
   {
@@ -316,12 +316,12 @@ export const JOBS: Job[] = [
     es: {
       title: 'Inteligencia Geoespacial',
       detail: ['Plataforma de audiencias sobre mapas y puntos de interés alimentada de forma continua mediante canalizaciones de scraping sobre boletines oficiales.'],
-      hook: ['Geoespacial', 'mapa de audiencias y puntos de interés alimentado por boletines'],
+      hook: ['24/7', 'extracción automatizada de audiencias desde boletines oficiales'],
     },
     en: {
       title: 'Geospatial Intelligence',
       detail: ['Audience and points-of-interest mapping platform continuously fed by automated web scraping pipelines over official gazettes.'],
-      hook: ['Geospatial', 'audience and POI mapping fed by official gazettes'],
+      hook: ['24/7', 'automated audience extraction from official gazettes'],
     },
   },
   {
@@ -332,11 +332,11 @@ export const JOBS: Job[] = [
     stack: ['Python', 'Streamlit', 'pandas', 'Altair'],
     es: {
       detail: ['Motor determinista que reparte cada ingreso según un safety score (liquidez, colchón, metas), sin modelos opacos.'],
-      hook: ['Matemático', 'reparto financiero adaptativo con reglas explicables'],
+      hook: ['0%', 'azar: reparto financiero adaptativo con reglas deterministas'],
     },
     en: {
       detail: ['Deterministic engine splitting income via a safety score (liquidity, buffer, goals), without opaque models.'],
-      hook: ['Mathematical', 'adaptive financial split with explainable rules'],
+      hook: ['0%', 'chance: adaptive financial split with deterministic rules'],
     },
   },
   {
@@ -347,11 +347,11 @@ export const JOBS: Job[] = [
     stack: ['Node.js', 'TypeScript', 'PostgreSQL', 'Redis'],
     es: {
       detail: ['Sistema de auditoría y sondas que verifican el contenido real de los servicios para detectar degradaciones que un ping 200 no ve.'],
-      hook: ['Observabilidad', 'auditoría de eventos y sondas activas de contenido'],
+      hook: ['3.600', 'eventos de telemetría y auditoría con sondas activas'],
     },
     en: {
       detail: ['Audit and probe system checking actual page content to catch regressions that a simple HTTP 200 ping misses.'],
-      hook: ['Observability', 'event audit trails and deep content probes'],
+      hook: ['3,600', 'telemetry and audit events with deep content probes'],
     },
   },
   {
@@ -362,11 +362,11 @@ export const JOBS: Job[] = [
     stack: ['FastAPI', 'PostgreSQL', 'Celery', 'GotelGest'],
     es: {
       detail: ['Sincronización segura con el ERP corporativo (GotelGest) e integración con el sistema de cobros bajo contrato de solo lectura.'],
-      hook: ['Integración ERP', 'sincronización con el sistema de gestión y cobros'],
+      hook: ['ERP', 'sincronización directa de clientes y facturas con GotelGest'],
     },
     en: {
       detail: ['Secure sync with the corporate ERP (GotelGest) and integration with the collections system under read-only contracts.'],
-      hook: ['ERP Integration', 'synchronisation with corporate billing and collections'],
+      hook: ['ERP', 'direct sync of customers and invoices with GotelGest'],
     },
   },
 ];

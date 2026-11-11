@@ -57,7 +57,7 @@ const T = {
       ['Publicar', 'Instagram y TikTok, tras revisión'],
       ['Métricas', 'lo que funciona vuelve a las guías'],
     ],
-    behindKicker: 'Lo que no se ve',
+    behindKicker: 'Arquitectura & Sistemas',
     behindTitle: (
       <>
         Lo que hay <em>detrás.</em>
@@ -115,7 +115,7 @@ const T = {
       ['Publish', 'Instagram and TikTok, after review'],
       ['Metrics', 'what works feeds the guidelines'],
     ],
-    behindKicker: 'Behind the scenes',
+    behindKicker: 'Architecture & Systems',
     behindTitle: (
       <>
         What runs <em>underneath.</em>
