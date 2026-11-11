@@ -3,69 +3,180 @@ import 'lenis/dist/lenis.css';
 import React, { useEffect, useRef, useState } from 'react';
 import { PROFILE } from './data/profile';
 import { usePrefersReducedMotion } from './hooks/usePrefersReducedMotion';
-import { JOBS, Job, STATUS_LABEL, WORLD_LABEL } from './data/work';
+import { JOBS, Job, Lang, STATUS_LABEL, WORLD_LABEL } from './data/work';
 import './app.css';
 
-// Background of the floating preview card for each project with a screenshot.
+// The page language comes from <html lang>: index.html is Spanish, en/index.html is English.
+const LANG: Lang = document.documentElement.lang === 'en' ? 'en' : 'es';
+
+const T = {
+  es: {
+    nav: ['Proyectos', 'Contacto'],
+    other: { label: 'EN', href: '/en/', title: 'English version' },
+    clockLabel: 'Hora en Jerez',
+    role: (
+      <>
+        Ingeniero de software.
+        <br />
+        Construyo y mantengo <em>más de 30 proyectos,</em>
+        <br />
+        de la idea al servidor.
+      </>
+    ),
+    about: (
+      <>
+        Llevo tres años haciendo software. Empecé con BeatList y hoy tengo apps funcionando en{' '}
+        <em>restaurantes, tiendas</em> y en el móvil de quien usa Ponme. Uso agentes de IA igual que uso Docker: me
+        ayudan a ir más rápido, pero las decisiones y el despliegue son míos.
+      </>
+    ),
+    numbers: [
+      ['3', 'años haciendo software propio'],
+      ['14', 'restaurantes usan MiCartaYa'],
+      ['2026', 'me gradué, con especialidad en ciberseguridad'],
+    ],
+    workHead: ['Proyectos', 'Dónde', 'Estado'],
+    visit: 'Visitar',
+    shotAlt: 'Captura de',
+    view: 'Ver',
+    pautaKicker: 'Herramienta interna',
+    pautaTag: (
+      <>
+        mi fábrica de <em>vídeos y carruseles.</em>
+      </>
+    ),
+    pautaLead:
+      'La uso para el contenido de Ponme y YaSolutions. Escribo el brief, una IA propone el guion siguiendo mis guías y Pauta le pone voz y subtítulos y monta la pieza con Remotion. Yo elijo el gancho y publico.',
+    steps: [
+      ['Idea', 'brief del proyecto'],
+      ['Guion', 'propuesto con mis guías'],
+      ['Gancho', 'elijo yo entre varias opciones'],
+      ['Voz', 'locución sintética'],
+      ['Subtítulos', 'sincronizados con la voz'],
+      ['Render', 'vídeo o carrusel con Remotion'],
+      ['Publicar', 'Instagram y TikTok, tras revisión'],
+      ['Métricas', 'lo que funciona vuelve a las guías'],
+    ],
+    behindKicker: 'Lo que no se ve',
+    behindTitle: (
+      <>
+        Lo que hay <em>detrás.</em>
+      </>
+    ),
+    behindHint: 'Sigue bajando →',
+    contactKicker: 'Contacto',
+    contactLine: 'Si quieres hablar de trabajo o de alguno de estos proyectos, escríbeme.',
+    cv: PROFILE.cvEs,
+  },
+  en: {
+    nav: ['Projects', 'Contact'],
+    other: { label: 'ES', href: '/', title: 'Versión en español' },
+    clockLabel: 'Time in Jerez',
+    role: (
+      <>
+        Software engineer.
+        <br />
+        I build and run <em>30+ projects,</em>
+        <br />
+        from idea to server.
+      </>
+    ),
+    about: (
+      <>
+        I have been building software for three years. I started with BeatList; today my apps run in{' '}
+        <em>restaurants, shops</em> and on the phones of Ponme users. I use AI agents the way I use Docker: they
+        help me move faster, but the decisions and the deploys are mine.
+      </>
+    ),
+    numbers: [
+      ['3', 'years building my own software'],
+      ['14', 'restaurants use MiCartaYa'],
+      ['2026', 'graduated, specialising in cybersecurity'],
+    ],
+    workHead: ['Projects', 'Where', 'Status'],
+    visit: 'Visit',
+    shotAlt: 'Screenshot of',
+    view: 'View',
+    pautaKicker: 'Internal tool',
+    pautaTag: (
+      <>
+        my <em>video and carousel</em> factory.
+      </>
+    ),
+    pautaLead:
+      'I use it for Ponme and YaSolutions content. I write the brief, an AI drafts the script from my guidelines, and Pauta adds voice and captions and assembles the piece with Remotion. I pick the hook and publish.',
+    steps: [
+      ['Idea', 'project brief'],
+      ['Script', 'drafted from my guidelines'],
+      ['Hook', 'I pick from several options'],
+      ['Voice', 'synthetic voice-over'],
+      ['Captions', 'synced to the voice'],
+      ['Render', 'video or carousel with Remotion'],
+      ['Publish', 'Instagram and TikTok, after review'],
+      ['Metrics', 'what works feeds the guidelines'],
+    ],
+    behindKicker: 'Behind the scenes',
+    behindTitle: (
+      <>
+        What runs <em>underneath.</em>
+      </>
+    ),
+    behindHint: 'Keep scrolling →',
+    contactKicker: 'Contact',
+    contactLine: 'If you want to talk about work or any of these projects, drop me a line.',
+    cv: PROFILE.cvEn,
+  },
+}[LANG];
+
+// Background of the floating preview card for each listed project.
 const PREVIEW_BG: Record<string, string> = {
   ponme: '#CDD3BC',
+  orbe: '#DDE3D3',
+  dedica: '#E4E8DE',
   micartaya: '#1F2B3C',
   presupuestoya: '#DCC7A6',
   orderya: '#38443A',
-  tratoya: '#C9D4DE',
   beatlist: '#1A1A1A',
-  orbe: '#DFE4D6',
-  dedica: '#E6DED2',
 };
 
-// The list shows only finished products with a screenshot; the rest goes to the horizontal section.
 const LIST_IDS = ['ponme', 'orbe', 'dedica', 'micartaya', 'presupuestoya', 'orderya', 'beatlist'];
 const WORK = LIST_IDS.map((id) => JOBS.find((j) => j.id === id)!);
-const WITH_SHOT = WORK;
 const BEHIND = JOBS.filter((j) => !LIST_IDS.includes(j.id) && j.id !== 'pauta');
-
-// One big figure or word per card, so cards without a screenshot still have a focal point.
-const HOOK: Record<string, [string, string]> = {
-  mirador: ['32', 'sistemas vigilados desde mi propia intranet'],
-  servidor: ['11', 'servidores en los que despliego y opero'],
-  yatelemetry: ['3.600', 'eventos definidos para 11 apps'],
-  tpv: ['3', 'apps que siguen cobrando aunque se caiga internet'],
-  firmaya: ['SHA-256', 'para comprobar cada documento firmado'],
-  intranet: ['ERP', 'la intranet lee los clientes del programa de gestión'],
-  'sw-clips': ['GPU', 'propia para cortar vídeos con IA'],
-  'sw-encuestas': ['Chat', 'que responde preguntas sobre encuestas electorales'],
-  'sw-audiencias': ['Word', 'informes generados desde un mapa'],
-  'sw-mapas': ['0', 'datos que liguen una respuesta a quien contesta'],
-  'sw-telemetria': ['1', 'panel con el estado de todos los proyectos'],
-  tratoya: ['CRM', 'cada oportunidad con su siguiente paso apuntado'],
-};
-// Pauta: the content pipeline, lit step by step as you scroll through its section.
-const PAUTA_STEPS: [string, string][] = [
-  ['Idea', 'brief del proyecto'],
-  ['Guion', 'la IA lo escribe con las guías y la biblioteca'],
-  ['Gancho', 'elijo yo entre varias opciones'],
-  ['Voz', 'locución sintética'],
-  ['Subtítulos', 'sincronizados con la voz'],
-  ['Render', 'vídeo o carrusel con Remotion'],
-  ['Publicar', 'Instagram y TikTok, tras revisión'],
-  ['Métricas', 'lo que funciona vuelve a las guías'],
-];
 
 const CARD_TONES = ['fo-tone-dark', 'fo-tone-accent', 'fo-tone-light'];
 const DARK = { bg: '#121212', ink: '#EDEDE8' };
-const pinnedOn = () => window.matchMedia('(min-width: 861px) and (hover: hover)').matches;
 const BASE = { bg: '#E9E7E2', ink: '#121212' };
+const pinnedOn = () => window.matchMedia('(min-width: 861px) and (hover: hover)').matches;
+const title = (j: Job) => j.name ?? j[LANG].title ?? '';
 
-function useJerezClock(): string {
-  const fmt = () =>
-    new Date().toLocaleTimeString('es-ES', { hour: '2-digit', minute: '2-digit', timeZone: 'Europe/Madrid' });
-  const [t, setT] = useState(fmt);
+function useJerezTime(): { text: string; h: number; m: number } {
+  const read = () => {
+    const parts = new Intl.DateTimeFormat('es-ES', {
+      hour: '2-digit',
+      minute: '2-digit',
+      hour12: false,
+      timeZone: 'Europe/Madrid',
+    }).formatToParts(new Date());
+    const h = Number(parts.find((p) => p.type === 'hour')?.value ?? 0);
+    const m = Number(parts.find((p) => p.type === 'minute')?.value ?? 0);
+    return { text: `${String(h).padStart(2, '0')}:${String(m).padStart(2, '0')}`, h, m };
+  };
+  const [t, setT] = useState(read);
   useEffect(() => {
-    const id = window.setInterval(() => setT(fmt()), 15000);
+    const id = window.setInterval(() => setT(read()), 15000);
     return () => window.clearInterval(id);
   }, []);
   return t;
 }
+
+// Tiny analog clock showing the real time in Jerez.
+const Clock: React.FC<{ h: number; m: number }> = ({ h, m }) => (
+  <svg className="fo-clock" viewBox="0 0 40 40" aria-hidden="true">
+    <circle cx="20" cy="20" r="18" />
+    <line x1="20" y1="20" x2="20" y2="10" style={{ transform: `rotate(${(h % 12) * 30 + m * 0.5}deg)` }} />
+    <line x1="20" y1="20" x2="20" y2="6" style={{ transform: `rotate(${m * 6}deg)` }} />
+  </svg>
+);
 
 export const App: React.FC = () => {
   const still = usePrefersReducedMotion();
@@ -79,7 +190,7 @@ export const App: React.FC = () => {
   const pautaRef = useRef<HTMLElement>(null);
   const [hovered, setHovered] = useState<string | null>(null);
   const [open, setOpen] = useState<string | null>(null);
-  const clock = useJerezClock();
+  const time = useJerezTime();
 
   // Inertial smooth scroll; it drives the native scroll position, so the rAF loop below still reads scrollY.
   useEffect(() => {
@@ -88,8 +199,8 @@ export const App: React.FC = () => {
     return () => lenis.destroy();
   }, [still]);
 
-  // One rAF loop: name marquee (direction follows scroll), hero circle, preview card + "Ver"
-  // bubble trailing the cursor, and the page color of the section in the middle of the screen.
+  // One rAF loop: name marquee (direction follows scroll), hero circle, preview card + "View"
+  // bubble trailing the cursor, pinned cards, Pauta steps and the page color of the middle section.
   useEffect(() => {
     const root = rootRef.current;
     if (!root) return;
@@ -161,14 +272,13 @@ export const App: React.FC = () => {
         }
       }
 
-      // Pauta: progress through its section lights the pipeline steps in order.
+      // Pauta: lights the pipeline steps from when the row enters until it reaches mid-screen.
       const pauta = pautaRef.current;
       if (pauta) {
-        // Measured on the step row itself: lights up from when it enters until it reaches mid-screen.
         const r = (pauta.querySelector('.fo-steps') as HTMLElement).getBoundingClientRect();
         const p = Math.max(0, Math.min(1, (vh * 0.9 - r.top) / (vh * 0.45)));
         pauta.style.setProperty('--p', String(p));
-        const lit = Math.floor(p * (PAUTA_STEPS.length + 0.5));
+        const lit = Math.floor(p * (T.steps.length + 0.5));
         pauta.querySelectorAll('.fo-step').forEach((el, i) => el.classList.toggle('is-lit', i < lit));
       }
 
@@ -191,7 +301,7 @@ export const App: React.FC = () => {
     };
   }, [still]);
 
-  const previewIndex = WITH_SHOT.findIndex((j) => j.id === hovered);
+  const previewIndex = WORK.findIndex((j) => j.id === hovered);
   const showPreview = previewIndex >= 0 && open !== hovered;
 
   return (
@@ -201,10 +311,13 @@ export const App: React.FC = () => {
       style={{ ['--bg' as string]: BASE.bg, ['--ink' as string]: BASE.ink }}
     >
       <header className="fo-top">
-        <a href="/" className="fo-mark">© Nico Álvarez</a>
+        <a href={LANG === 'en' ? '/en/' : '/'} className="fo-mark">© Nico Álvarez</a>
         <nav>
-          <a href="#proyectos">Proyectos</a>
-          <a href="#contacto">Contacto</a>
+          <a href="#proyectos">{T.nav[0]}</a>
+          <a href="#contacto">{T.nav[1]}</a>
+          <a href={T.other.href} hrefLang={LANG === 'en' ? 'es' : 'en'} title={T.other.title} className="fo-lang">
+            {T.other.label}
+          </a>
         </nav>
       </header>
 
@@ -212,16 +325,16 @@ export const App: React.FC = () => {
       <section className="fo-hero" data-bg={BASE.bg} data-ink={BASE.ink}>
         <div ref={blobRef} className="fo-blob" aria-hidden="true" />
         <div className="fo-where">
-          <span>En Jerez<br />{clock}</span>
-          <i aria-hidden="true">◐</i>
+          <span>
+            {T.clockLabel}
+            <br />
+            <b>{time.text}</b>
+          </span>
+          <Clock h={time.h} m={time.m} />
         </div>
         <p className="fo-role">
           <span aria-hidden="true">↘</span>
-          Ingeniero de software.
-          <br />
-          Con agentes de IA como equipo,
-          <br />
-          mantengo <em>más de 30 sistemas.</em>
+          {T.role}
         </p>
         <h1 className="fo-name">
           <span className="fo-sr">Nico Álvarez</span>
@@ -237,25 +350,24 @@ export const App: React.FC = () => {
 
       {/* ── About ── */}
       <section className="fo-about" data-bg={BASE.bg} data-ink={BASE.ink}>
-        <p className="fo-reveal">
-          Llevo tres años haciendo software. Empecé con BeatList y hoy tengo apps funcionando en
-          <em>restaurantes, tiendas</em> y en el móvil de quien usa Ponme. Trabajo con Claude Code y Codex como
-          compañeros: ellos escriben y prueban, yo decido, reviso y despliego.
-        </p>
+        <p className="fo-reveal">{T.about}</p>
         <ul className="fo-numbers fo-reveal">
-          <li><b>3</b>años haciendo software propio</li>
-          <li><b>14</b>restaurantes usan MiCartaYa</li>
-          <li><b>2026</b>me gradué, con especialidad en ciberseguridad</li>
+          {T.numbers.map(([n, l]) => (
+            <li key={l}>
+              <b>{n}</b>
+              {l}
+            </li>
+          ))}
         </ul>
       </section>
 
-      {/* ── Work list with floating preview (Dennis Snellenberg-style) ── */}
+      {/* ── Project list with floating preview ── */}
       <section id="proyectos" className="fo-work" data-bg={BASE.bg} data-ink={BASE.ink}>
         <div className="fo-work-head">
-          <span>Proyectos</span>
+          <span>{T.workHead[0]}</span>
           <span className="fo-work-cols" aria-hidden="true">
-            <span>Dónde</span>
-            <span>Estado</span>
+            <span>{T.workHead[1]}</span>
+            <span>{T.workHead[2]}</span>
           </span>
         </div>
         <ul className="fo-list" onPointerLeave={() => setHovered(null)}>
@@ -272,23 +384,18 @@ export const App: React.FC = () => {
         </ul>
       </section>
 
-      {/* ── Pauta, featured on its own ── */}
+      {/* ── Pauta ── */}
       <section ref={pautaRef} className="fo-pauta" data-bg="#FF5B26" data-ink="#111111">
         <div className="fo-pauta-head">
-          <p className="fo-kicker">Herramienta interna</p>
+          <p className="fo-kicker">{T.pautaKicker}</p>
           <h2 className="fo-pauta-name">Pauta</h2>
-          <p className="fo-pauta-tag">
-            mi fábrica de <em>vídeos y carruseles.</em>
-          </p>
+          <p className="fo-pauta-tag">{T.pautaTag}</p>
         </div>
         <div className="fo-pauta-body">
-          <p className="fo-pauta-lead">
-            La uso para el contenido de Ponme y YaSolutions. Una IA escribe el guion siguiendo mis guías, Pauta le
-            pone voz y subtítulos y monta la pieza con Remotion. Yo elijo el gancho y publico.
-          </p>
+          <p className="fo-pauta-lead">{T.pautaLead}</p>
         </div>
         <ol className="fo-steps">
-          {PAUTA_STEPS.map(([t, d], i) => (
+          {T.steps.map(([t, d], i) => (
             <li key={t} className="fo-step">
               <span className="fo-step-n">{String(i + 1).padStart(2, '0')}</span>
               <b>{t}</b>
@@ -296,7 +403,7 @@ export const App: React.FC = () => {
             </li>
           ))}
         </ol>
-        <p className="fo-stack">Remotion · TypeScript · Node.js · Claude Code / Codex · Fish Audio · ElevenLabs</p>
+        <p className="fo-stack">Remotion · TypeScript · Node.js · Fish Audio · ElevenLabs</p>
       </section>
 
       {/* ── Behind the scenes: pinned, scrolls sideways ── */}
@@ -304,61 +411,64 @@ export const App: React.FC = () => {
         <div className="fo-behind-sticky">
           <div ref={railRef} className="fo-behind-rail">
             <div className="fo-behind-intro">
-              <p className="fo-kicker">Lo que no se ve</p>
-              <h2>
-                Lo que hay <em>detrás.</em>
-              </h2>
-              <p className="fo-behind-hint">Sigue bajando →</p>
+              <p className="fo-kicker">{T.behindKicker}</p>
+              <h2>{T.behindTitle}</h2>
+              <p className="fo-behind-hint">{T.behindHint}</p>
             </div>
-            {BEHIND.map((j, i) => (
-              <article key={j.id} className={`fo-tile ${CARD_TONES[i % CARD_TONES.length]}`}>
-                <header>
-                  <span>{String(i + 1).padStart(2, '0')}</span>
-                  <span>{WORLD_LABEL[j.world]} · {STATUS_LABEL[j.status]}</span>
-                </header>
-                <p className="fo-tile-big">{HOOK[j.id]?.[0] ?? '—'}</p>
-                <p className="fo-tile-lead">{HOOK[j.id]?.[1]}</p>
-                <div className="fo-tile-foot">
-                  <h3>{j.name ?? j.title}</h3>
-                  <p>{j.detail[0]}</p>
-                  <p className="fo-tile-stack">{j.stack.slice(0, 4).join(' · ')}</p>
-                </div>
-              </article>
-            ))}
+            {BEHIND.map((j, i) => {
+              const c = j[LANG];
+              return (
+                <article key={j.id} className={`fo-tile ${CARD_TONES[i % CARD_TONES.length]}`}>
+                  <header>
+                    <span>{String(i + 1).padStart(2, '0')}</span>
+                    <span>
+                      {WORLD_LABEL[LANG][j.world]} · {STATUS_LABEL[LANG][j.status]}
+                    </span>
+                  </header>
+                  <p className="fo-tile-big">{c.hook?.[0] ?? '—'}</p>
+                  <p className="fo-tile-lead">{c.hook?.[1]}</p>
+                  <div className="fo-tile-foot">
+                    <h3>{title(j)}</h3>
+                    <p>{c.detail[0]}</p>
+                    <p className="fo-tile-stack">{j.stack.slice(0, 4).join(' · ')}</p>
+                  </div>
+                </article>
+              );
+            })}
           </div>
         </div>
       </section>
 
       {/* ── Contact ── */}
       <section id="contacto" className="fo-contact" data-bg={DARK.bg} data-ink={DARK.ink}>
-        <p className="fo-kicker fo-reveal">Contacto</p>
-        <p className="fo-contact-line fo-reveal">Si quieres hablar de trabajo o de alguno de estos proyectos, escríbeme.</p>
+        <p className="fo-kicker fo-reveal">{T.contactKicker}</p>
+        <p className="fo-contact-line fo-reveal">{T.contactLine}</p>
         <a className="fo-mail fo-reveal" href={`mailto:${PROFILE.email}`}>
           {PROFILE.email}
         </a>
         <div className="fo-contact-links fo-reveal">
           <a href={PROFILE.linkedin} target="_blank" rel="noreferrer">LinkedIn ↗</a>
           <a href={PROFILE.github} target="_blank" rel="noreferrer">GitHub ↗</a>
-          <a href={PROFILE.cvEs} target="_blank" rel="noreferrer">CV ↗</a>
+          <a href={T.cv} target="_blank" rel="noreferrer">CV ↗</a>
         </div>
         <footer className="fo-foot">
           <span>© {new Date().getFullYear()} Nico Álvarez</span>
-          <span>Jerez · {clock}</span>
+          <span>Jerez · {time.text}</span>
         </footer>
       </section>
 
       {/* Floating preview: one strip with every screenshot, slid to the hovered one. */}
       <div ref={cardRef} className={`fo-card${showPreview ? ' is-on' : ''}`} aria-hidden="true">
         <div className="fo-card-strip" style={{ transform: `translateY(${-Math.max(previewIndex, 0) * 100}%)` }}>
-          {WITH_SHOT.map((j) => (
+          {WORK.map((j) => (
             <div key={j.id} className="fo-card-slide" style={{ background: PREVIEW_BG[j.id] ?? '#ddd' }}>
-              <img src={j.shot ?? j.logo} alt="" className={j.shot ? undefined : 'fo-card-logo'} />
+              <img src={j.shot} alt="" />
             </div>
           ))}
         </div>
       </div>
       <div ref={viewRef} className={`fo-view${showPreview ? ' is-on' : ''}`} aria-hidden="true">
-        Ver
+        {T.view}
       </div>
     </div>
   );
@@ -373,29 +483,31 @@ const WorkRow: React.FC<{ job: Job; open: boolean; dim: boolean; onHover: () => 
 }) => (
   <li className={`fo-row${open ? ' is-open' : ''}${dim ? ' is-dim' : ''}`} onPointerEnter={onHover}>
     <button type="button" onClick={onToggle} aria-expanded={open}>
-      <span className="fo-row-title">{job.name ?? job.title}</span>
-      <span className="fo-row-where">{WORLD_LABEL[job.world]}</span>
-      <span className="fo-row-status">{STATUS_LABEL[job.status]}</span>
+      <span className="fo-row-title">{title(job)}</span>
+      <span className="fo-row-where">{WORLD_LABEL[LANG][job.world]}</span>
+      <span className="fo-row-status">{STATUS_LABEL[LANG][job.status]}</span>
     </button>
     <div className="fo-row-body">
       <div>
         <div className="fo-row-inner">
           <div>
             <ul>
-              {job.detail.map((d) => (
+              {job[LANG].detail.map((d) => (
                 <li key={d}>{d}</li>
               ))}
             </ul>
             <p className="fo-stack">{job.stack.join('  ·  ')}</p>
             {job.link && (
               <a className="fo-visit" href={job.link.href} target="_blank" rel="noreferrer">
-                <span>Visitar {job.link.label}</span>
+                <span>
+                  {T.visit} {job.link.label}
+                </span>
               </a>
             )}
           </div>
           {job.shot && (
             <a className="fo-row-shot" href={job.link?.href} target="_blank" rel="noreferrer" tabIndex={-1}>
-              <img src={job.shot} alt={`Captura de ${job.name}`} loading="lazy" />
+              <img src={job.shot} alt={`${T.shotAlt} ${title(job)}`} loading="lazy" />
             </a>
           )}
         </div>
