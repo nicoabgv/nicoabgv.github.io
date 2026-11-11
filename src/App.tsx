@@ -13,7 +13,7 @@ const T = {
   es: {
     nav: ['Proyectos', 'Contacto'],
     other: { label: 'EN', href: '/en/', title: 'English version' },
-    clockLabel: 'Hora en Jerez',
+    clockLabel: 'Hora local',
     role: (
       <>
         Ingeniero de software.
@@ -25,9 +25,9 @@ const T = {
     ),
     about: (
       <>
-        Llevo tres años haciendo software. Empecé con BeatList y hoy tengo apps funcionando en{' '}
-        <em>restaurantes, tiendas</em> y en el móvil de quien usa Ponme. Uso agentes de IA igual que uso Docker: me
-        ayudan a ir más rápido, pero las decisiones y el despliegue son míos.
+        Llevo tres años haciendo software. Empecé con BeatList y hoy tengo apps funcionando en&nbsp;
+        <em>restaurantes, tiendas</em> y en el día a día de los usuarios de Ponme. Uso agentes de IA igual que uso
+        Docker: me ayudan a ir más rápido, pero las decisiones y el despliegue son míos.
       </>
     ),
     numbers: [
@@ -46,10 +46,10 @@ const T = {
       </>
     ),
     pautaLead:
-      'La uso para el contenido de Ponme y YaSolutions. Escribo el brief, una IA propone el guion siguiendo mis guías y Pauta le pone voz y subtítulos y monta la pieza con Remotion. Yo elijo el gancho y publico.',
+      'La uso para el contenido de Ponme y YaSolutions. Escribo el brief, una IA propone el guión siguiendo mis guías y Pauta le pone voz y subtítulos y monta la pieza con Remotion. Yo elijo el gancho y publico.',
     steps: [
       ['Idea', 'brief del proyecto'],
-      ['Guion', 'propuesto con mis guías'],
+      ['Guión', 'propuesto con mis guías'],
       ['Gancho', 'elijo yo entre varias opciones'],
       ['Voz', 'locución sintética'],
       ['Subtítulos', 'sincronizados con la voz'],
@@ -71,7 +71,7 @@ const T = {
   en: {
     nav: ['Projects', 'Contact'],
     other: { label: 'ES', href: '/', title: 'Versión en español' },
-    clockLabel: 'Time in Jerez',
+    clockLabel: 'Local time',
     role: (
       <>
         Software engineer.
@@ -83,9 +83,9 @@ const T = {
     ),
     about: (
       <>
-        I have been building software for three years. I started with BeatList; today my apps run in{' '}
-        <em>restaurants, shops</em> and on the phones of Ponme users. I use AI agents the way I use Docker: they
-        help me move faster, but the decisions and the deploys are mine.
+        I have been building software for three years. I started with BeatList; today my apps run in&nbsp;
+        <em>restaurants, shops</em> and in the daily routine of Ponme users. I use AI agents the way I use Docker:
+        they help me move faster, but the decisions and the deploys are mine.
       </>
     ),
     numbers: [
