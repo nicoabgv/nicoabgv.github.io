@@ -126,12 +126,18 @@
 .fo-numbers li {
   display: flex;
   align-items: baseline;
-  gap: 16px;
+  gap: 20px;
   padding-bottom: 14px;
   border-bottom: 1px solid color-mix(in srgb, var(--ink) 18%, transparent);
   font-size: 15px;
 }
-.fo-numbers b { font-size: clamp(40px, 4vw, 64px); font-weight: 500; letter-spacing: -0.04em; min-width: 2.2ch; }
+.fo-numbers b {
+  font-size: clamp(40px, 4vw, 64px);
+  font-weight: 500;
+  letter-spacing: -0.04em;
+  min-width: 4.2ch;
+  flex: none;
+}
 
 /* ── Reveal on scroll ──────────────────── */
 .fo-reveal { opacity: 0; transform: translateY(36px); transition: opacity 1s var(--ease), transform 1s var(--ease); }
@@ -335,7 +341,7 @@
 .fo-behind-rail {
   display: flex;
   gap: 20px;
-  padding: 0 var(--pad);
+  padding: 24px var(--pad);
   will-change: transform;
 }
 .fo-behind-intro {
@@ -378,20 +384,20 @@
   opacity: 0.7;
 }
 .fo-tile-big {
-  margin: auto 0 6px;
-  font-size: clamp(72px, 8vw, 150px);
+  margin: auto 0 8px;
+  font-size: clamp(48px, 6vw, 96px);
   font-weight: 500;
-  line-height: 0.85;
-  letter-spacing: -0.06em;
-  overflow-wrap: anywhere;
+  line-height: 0.9;
+  letter-spacing: -0.05em;
+  white-space: nowrap;
 }
 .fo-tile-lead {
   margin: 0 0 auto;
   font-family: var(--serif);
   font-style: italic;
-  font-size: clamp(20px, 1.7vw, 26px);
-  line-height: 1.15;
-  max-width: 18ch;
+  font-size: clamp(17px, 1.4vw, 22px);
+  line-height: 1.25;
+  max-width: 28ch;
 }
 .fo-tile-foot { padding-top: 18px; border-top: 1px solid currentColor; border-color: color-mix(in srgb, currentColor 25%, transparent); }
 .fo-tile-foot h3 { margin: 0 0 6px; font-size: 18px; font-weight: 600; letter-spacing: -0.01em; }
@@ -401,7 +407,7 @@
 /* Phones / touch: no pinning, plain swipe with snap. */
 @media (max-width: 860px), (hover: none) {
   .fo-behind-sticky { position: static; height: auto; padding: 96px 0; }
-  .fo-behind-rail { overflow-x: auto; scroll-snap-type: x mandatory; scrollbar-width: none; width: 100%; padding-bottom: 8px; }
+  .fo-behind-rail { overflow-x: auto; scroll-snap-type: x mandatory; scrollbar-width: none; width: 100%; padding: 24px var(--pad); }
   .fo-behind-intro { width: 78vw; }
   .fo-tile { width: 78vw; height: 480px; scroll-snap-align: center; }
 }
